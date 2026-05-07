@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kapitel 0 – Kroul · Einführung in die Logistik</title>
+<style>
+:root {
+  --bg: #f5f4f0; --surface: #ffffff; --border: #e8e6df;
+  --text: #1a1916; --text-2: #6b6860;
+  --sidebar-bg: #1e1e1e; --sidebar-text: #e0ddd6; --sidebar-active: #4a90d9;
+  --blue: #3b6fd4; --blue-bg: #eef3fc;
+  --green: #2d7a4f; --green-bg: #eaf5ef;
+  --yellow: #b8860b; --yellow-bg: #fdf9e3;
+  --red: #c0392b; --red-bg: #fdf0ee;
+  --purple: #6c3483; --purple-bg: #f5eefb;
+  --radius: 8px;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: var(--bg); color: var(--text); display: flex; min-height: 100vh; font-size: 15px; line-height: 1.7; }
+
+aside { width: 240px; min-width: 240px; background: var(--sidebar-bg); color: var(--sidebar-text); display: flex; flex-direction: column; position: sticky; top: 0; height: 100vh; overflow-y: auto; }
+.sidebar-header { padding: 1.25rem 1rem 0.75rem; border-bottom: 1px solid #333; }
+.sidebar-back { font-size: 12px; color: #888; text-decoration: none; display: block; margin-bottom: 0.5rem; }
+.sidebar-back:hover { color: #ccc; }
+.sidebar-logo { font-size: 13px; color: #aaa; margin-bottom: 2px; }
+.sidebar-sub { font-size: 11px; color: #666; }
+.sidebar-chapter { padding: 0.6rem 1rem 0.2rem; font-size: 10px; text-transform: uppercase; letter-spacing: 0.1em; color: #555; margin-top: 0.5rem; }
+.sidebar-nav a { display: block; padding: 0.4rem 1rem 0.4rem 1.25rem; font-size: 13px; color: #bbb; text-decoration: none; border-left: 2px solid transparent; transition: all 0.15s; }
+.sidebar-nav a:hover { color: #fff; background: #2a2a2a; }
+.sidebar-nav a.active { color: #fff; border-left-color: var(--sidebar-active); background: #252525; }
+
+main { flex: 1; max-width: 840px; padding: 2.5rem 3rem; overflow-x: hidden; }
+
+.page-label { font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.12em; color: var(--text-2); margin-bottom: 0.4rem; }
+h1 { font-size: 28px; font-weight: 700; line-height: 1.2; margin-bottom: 0.3rem; }
+.page-sub { color: var(--text-2); font-size: 14px; margin-bottom: 2rem; }
+h2 { font-size: 20px; font-weight: 700; margin: 2.5rem 0 0.25rem; padding-top: 1rem; border-top: 2px solid var(--border); }
+h2 .num { font-size: 12px; font-weight: 600; color: var(--blue); background: var(--blue-bg); padding: 2px 8px; border-radius: 4px; margin-right: 8px; font-family: monospace; vertical-align: middle; }
+h3 { font-size: 15px; font-weight: 700; margin: 1.5rem 0 0.6rem; }
+p { margin-bottom: 0.7rem; font-size: 14.5px; }
+
+.merksatz { background: var(--yellow-bg); border-left: 4px solid var(--yellow); border-radius: 0 var(--radius) var(--radius) 0; padding: 0.75rem 1rem; margin: 0.75rem 0; }
+.merksatz .label { font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; color: var(--yellow); margin-bottom: 0.3rem; }
+.merksatz p { font-size: 14px; margin: 0; }
+.tipp { background: var(--blue-bg); border-left: 4px solid var(--blue); border-radius: 0 var(--radius) var(--radius) 0; padding: 0.75rem 1rem; margin: 0.75rem 0; }
+.tipp .label { font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; color: var(--blue); margin-bottom: 0.3rem; }
+.tipp p { font-size: 14px; margin: 0; }
+.pruefung { background: var(--purple-bg); border-left: 4px solid var(--purple); border-radius: 0 var(--radius) var(--radius) 0; padding: 0.75rem 1rem; margin: 0.75rem 0; }
+.pruefung .label { font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; color: var(--purple); margin-bottom: 0.3rem; }
+.pruefung p { font-size: 14px; margin: 0; }
+.beispiel { background: var(--green-bg); border-left: 4px solid var(--green); border-radius: 0 var(--radius) var(--radius) 0; padding: 0.75rem 1rem; margin: 0.75rem 0; }
+.beispiel .label { font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; color: var(--green); margin-bottom: 0.3rem; }
+.beispiel p { font-size: 14px; margin: 0 0 0.3rem; }
+
+.def-box { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 0.85rem 1.1rem; margin: 0.6rem 0; }
+.def-term { font-size: 13px; font-weight: 700; color: var(--blue); margin-bottom: 0.25rem; }
+.def-text { font-size: 14px; color: var(--text); line-height: 1.6; }
+
+.def-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0.6rem; margin: 0.75rem 0; }
+@media (max-width: 700px) { .def-grid { grid-template-columns: 1fr; } }
+
+.table-wrap { overflow-x: auto; margin: 0.75rem 0; }
+table { width: 100%; border-collapse: collapse; font-size: 13px; }
+th { background: #2a2a2a; color: #fff; padding: 0.5rem 0.75rem; text-align: left; font-size: 11px; text-transform: uppercase; letter-spacing: 0.05em; }
+td { padding: 0.5rem 0.75rem; border-bottom: 1px solid var(--border); vertical-align: top; line-height: 1.5; }
+tr:last-child td { border-bottom: none; }
+tr:nth-child(even) td { background: #fafaf8; }
+
+ul.lernliste { margin: 0.5rem 0 0.75rem 1.25rem; }
+ul.lernliste li { font-size: 14px; margin-bottom: 0.3rem; }
+ul.lernliste li::marker { color: var(--blue); }
+
+/* Quiz */
+.quiz-wrap { margin: 1.5rem 0; }
+.quiz-block { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 1rem 1.25rem; margin-bottom: 0.75rem; }
+.quiz-nr { font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; color: var(--text-2); margin-bottom: 0.4rem; }
+.quiz-frage { font-size: 15px; font-weight: 600; margin-bottom: 0.75rem; }
+.quiz-options { display: flex; flex-direction: column; gap: 0.4rem; }
+.quiz-btn { text-align: left; padding: 0.55rem 1rem; border: 1px solid var(--border); border-radius: 6px; background: #fff; font-size: 14px; cursor: pointer; transition: all 0.15s; }
+.quiz-btn:hover:not(:disabled) { background: var(--blue-bg); border-color: var(--blue); }
+.quiz-btn.correct { background: var(--green-bg) !important; border-color: var(--green) !important; color: var(--green); font-weight: 600; }
+.quiz-btn.wrong { background: var(--red-bg) !important; border-color: var(--red) !important; color: var(--red); }
+.quiz-feedback { font-size: 13px; margin-top: 0.5rem; padding: 0.5rem 0.75rem; border-radius: 6px; display: none; }
+.quiz-feedback.show { display: block; }
+.quiz-feedback.ok { background: var(--green-bg); color: var(--green); }
+.quiz-feedback.nope { background: var(--red-bg); color: var(--red); }
+.quiz-score { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 1rem 1.25rem; text-align: center; display: none; margin-top: 1rem; }
+.quiz-score.show { display: block; }
+.quiz-score-num { font-size: 36px; font-weight: 700; color: var(--blue); }
+
+/* Notizen */
+.notiz-btn { display: flex; align-items: center; gap: 0.4rem; background: none; border: 1px dashed #ccc; border-radius: 6px; padding: 0.3rem 0.75rem; font-size: 12px; color: #999; cursor: pointer; margin-top: 0.5rem; transition: all 0.15s; }
+.notiz-btn:hover { border-color: #999; color: #666; }
+.notiz-area { display: none; width: 100%; margin-top: 0.5rem; border: 1px solid #ddd; border-radius: 6px; padding: 0.5rem 0.75rem; font-size: 13px; font-family: inherit; resize: vertical; background: #fffef8; min-height: 60px; }
+.notiz-area:focus { outline: none; border-color: var(--blue); }
+.merksatz .notiz-btn, .tipp .notiz-btn, .pruefung .notiz-btn,
+.beispiel .notiz-btn, .def-box .notiz-btn { margin-top: 0.6rem; font-size: 11px; padding: 0.2rem 0.6rem; opacity: 0.6; }
+.merksatz .notiz-btn:hover, .tipp .notiz-btn:hover, .pruefung .notiz-btn:hover,
+.beispiel .notiz-btn:hover, .def-box .notiz-btn:hover { opacity: 1; }
+.merksatz .notiz-area, .tipp .notiz-area, .pruefung .notiz-area,
+.beispiel .notiz-area, .def-box .notiz-area { font-size: 12px; min-height: 45px; }
+
+/* Fortschritt */
+.progress-bar { position: fixed; top: 0; left: 240px; right: 0; height: 3px; background: var(--border); z-index: 100; }
+.progress-fill { height: 100%; background: var(--blue); width: 0%; transition: width 0.1s; }
+hr { border: none; border-top: 1px solid var(--border); margin: 2rem 0; }
+
+@media (max-width: 800px) { aside { display: none; } main { padding: 1.5rem 1.25rem; } .progress-bar { left: 0; } }
+</style>
+</head>
+<body>
+
+<div class="progress-bar"><div class="progress-fill" id="progress"></div></div>
+
+<aside>
+  <div class="sidebar-header">
+    <a href="index.html" class="sidebar-back">← Übersicht</a>
+    <div class="sidebar-logo">Logistik Lernportal</div>
+    <div class="sidebar-sub">Dozent: Raphael Kroul</div>
+  </div>
+
+  <div class="sidebar-chapter">Grundlagen</div>
+  <nav class="sidebar-nav">
+    <a href="#pruefung">Prüfungsstruktur & Hilfsmittel</a>
+    <a href="#entwicklung">Entwicklung der Logistik</a>
+    <a href="#definition">Definition Logistik</a>
+    <a href="#sieben-r">Die 7 R der Logistik</a>
+  </nav>
+
+  <div class="sidebar-chapter">Logistikbereiche</div>
+  <nav class="sidebar-nav">
+    <a href="#fachdisziplinen">Fachdisziplinen</a>
+    <a href="#logistische-kette">Logistische Kette</a>
+    <a href="#informationslogistik">Informationslogistik</a>
+    <a href="#kontraktlogistik">Kontraktlogistik & xPL</a>
+  </nav>
+
+  <div class="sidebar-chapter">Supply Chain</div>
+  <nav class="sidebar-nav">
+    <a href="#opp">Order Penetration Point</a>
+    <a href="#postponement">Postponement & Speculation</a>
+    <a href="#scm">Supply Chain Management</a>
+    <a href="#bullwhip">Bullwhip-Effekt</a>
+  </nav>
+
+  <div class="sidebar-chapter">Selbsttest</div>
+  <nav class="sidebar-nav">
+    <a href="#quiz">Mini-Quiz (10 Fragen)</a>
+  </nav>
+
+  <div style="margin-top:auto;padding:1rem;border-top:1px solid #2a2a2a">
+    <a href="notizen.html" style="display:flex;align-items:center;gap:0.5rem;font-size:13px;color:#aaa;text-decoration:none;padding:0.4rem 0.25rem;border-radius:6px" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='#aaa'">
+      📝 Meine Notizen
+    </a>
+  </div>
+</aside>
+
+<main>
+
+<div class="page-label">Kapitel 0 · Dozent: Raphael Kroul · 03.03.2026</div>
+<h1>Einführung in die Logistik</h1>
+<p class="page-sub">Lernaufbereitung des Foliensatzes – mit Merksätzen, Erklärungen und Selbsttest</p>
+
+<!-- ══ PRÜFUNGSSTRUKTUR ══ -->
+<h2 id="pruefung"><span class="num">0.1</span>Prüfungsstruktur & zugelassene Hilfsmittel</h2>
+<p>Der Kurs besteht aus zwei betrieblichen Situationsbeschreibungen mit je 100 Punkten. Kroul unterrichtet das Fach <strong>„Logistische Lösungen umsetzen, bewerten und weiterentwickeln"</strong> mit 110 Unterrichtseinheiten.</p>
+
+<div class="table-wrap">
+  <table>
+    <tr><th>Fach</th><th>Dozent</th><th>Punkte (ca.)</th></tr>
+    <tr><td>Logistische Anforderungen ermitteln, analysieren und bewerten</td><td>Benedikt Plab</td><td>§4 Abs.1 → 30 / 20</td></tr>
+    <tr><td>Logistische Lösungen entwickeln und planen</td><td>Gruber Christian</td><td>§4 Abs.2 → 35 / 35</td></tr>
+    <tr><td><strong>Logistische Lösungen umsetzen, bewerten und weiterentwickeln</strong></td><td><strong>Raphael Kroul</strong></td><td>§4 Abs.3 → 20 / 30</td></tr>
+    <tr><td>Kommunikation, Führung und Zusammenarbeit</td><td>Kerstin Gruchala</td><td>§4 Abs.4 → 15 / 15</td></tr>
+  </table>
+</div>
+
+<div class="tipp">
+  <div class="label">Zugelassene Hilfsmittel in der Prüfung</div>
+  <p>Dokumentenechtes Schreibmaterial · Lineal · netzunabhängiger, nicht kommunikationsfähiger Taschenrechner · Gesetzestexte (BGB, HGB, Arbeitsgesetze) · <strong>Formelsammlung für kaufmännische Abschlüsse nach BBiG</strong> (wird von der IHK gestellt)</p>
+</div>
+
+<div class="pruefung">
+  <div class="label">Wichtig für Gesetzestexte</div>
+  <p>Für die Frühjahrssprüfung gilt Rechtsstand 31.12. des Vorjahres, für die Herbstprüfung 1.1. des laufenden Jahres. Nur <strong>unkommentierte Fassungen</strong> – Klebezettel, Unterstreichungen und Normenverweise sind erlaubt.</p>
+</div>
+
+<!-- ══ ENTWICKLUNG ══ -->
+<h2 id="entwicklung"><span class="num">0.2</span>Entwicklung der Logistik in Deutschland</h2>
+<p>Logistik ist heute der <strong>drittgrößte Wirtschaftsbereich</strong> in Deutschland. Über 3,35 Millionen Menschen sind direkt in der Logistikbranche beschäftigt (Stand 2023) – das sind über 7 % aller deutschen Arbeitnehmer. Der Umsatz liegt bei über 310 Milliarden Euro pro Jahr.</p>
+
+<div class="merksatz">
+  <div class="label">Gründe für die Bedeutung der Logistik</div>
+  <p>Zunehmende Globalisierung · Nutzung von Standorten mit Kostenvorteilen · Wegfall von Grenzen · Outsourcing-Vorgänge · Verbreitung von Just-in-time · Entwicklung der Informationstechnologie · Standardisierung der Transportmittel</p>
+</div>
+
+<h3>Entwicklung der Logistik im Zeitverlauf</h3>
+<div class="table-wrap">
+  <table>
+    <tr><th>Jahrzehnt</th><th>Stufe</th><th>Ziel</th></tr>
+    <tr><td><strong>1970er</strong></td><td>Klassische Logistik – Funktionen nebeneinander (Beschaffung, Transport, Produktion, Lager, Absatz)</td><td>Optimierung abgegrenzter Einzelfunktionen</td></tr>
+    <tr><td><strong>1980er</strong></td><td>Logistik als Querschnittsfunktion – verbindet alle Bereiche inkl. Kunde</td><td>Optimierung funktionsübergreifender Abläufe</td></tr>
+    <tr><td><strong>1990er</strong></td><td>Funktionale Integration – Prozesskette vom Kunden über Entwicklung bis Entsorgung</td><td>Aufbau und Optimierung von Prozessketten</td></tr>
+    <tr><td><strong>1990er (spät)</strong></td><td>Unternehmensübergreifende Integration – Logistikdienstleister verbinden Lieferant, Produzent, Handel, Kunde</td><td>Aufbau von Wertschöpfungsketten</td></tr>
+    <tr><td><strong>2000er–heute</strong></td><td>Weltweite Integration von Wertschöpfungsketten zu globalen Netzwerken unter Einbezug sozio-ökonomischer Faktoren</td><td>Aufbau und Optimierung globaler Netzwerke</td></tr>
+  </table>
+</div>
+
+<h3>Aktuelle Trends (BVL 2023)</h3>
+<div class="def-grid">
+  <div class="def-box"><div class="def-term">🔐 #1 Cybersicherheit</div><div class="def-text">Größte Herausforderung 2023 – Schutz vernetzter Lieferketten vor Angriffen</div></div>
+  <div class="def-box"><div class="def-term">💻 #2 Digitalisierung der Geschäftsprozesse</div><div class="def-text">Automatisierung, papierlose Prozesse, ERP-Systeme</div></div>
+  <div class="def-box"><div class="def-term">👷 #3 Fachkräftemangel</div><div class="def-text">Größter Engpass: IT-Fachkräfte (48 %), Ingenieure (40 %), Lagermitarbeiter (36 %)</div></div>
+  <div class="def-box"><div class="def-term">🌿 #7 Nachhaltigkeit</div><div class="def-text">Stark gestiegen gegenüber 2020 – ökologischer Druck auf Supply Chains wächst</div></div>
+</div>
+
+<!-- ══ DEFINITION ══ -->
+<h2 id="definition"><span class="num">0.3</span>Definition Logistik</h2>
+
+<div class="def-box">
+  <div class="def-term">Definition nach Kluck (1997) – Kroul verwendet diese gerne</div>
+  <div class="def-text">Die Logistik umfasst alle planerischen, ausführenden, steuernden und regelnden Maßnahmen und Instrumente, um einen <strong>zieloptimalen Material-, Wert- und Informationsfluss</strong> im Rahmen der betrieblichen Leistungserstellung zu ermöglichen. Dieser Transformationsprozess erstreckt sich von der Beschaffung über die Produktion bis hin zur Distribution.</div>
+</div>
+
+<div class="tipp">
+  <div class="label">Betriebswirtschaftliche vs. ingenieurwissenschaftliche Sicht</div>
+  <p><strong>Ingenieurwissenschaften:</strong> Logistik = Transportlehre (inner- und außerbetriebliche Transporteinrichtungen und ihre Vernetzung)<br>
+  <strong>Wirtschaftswissenschaften:</strong> Logistik = Organisation und Steuerung des gesamten Wertschöpfungsprozesses – Güter-, Leistungs-, Geld-, Personal- und Informationsströme „von der Quelle bis zur Senke" → Logistik ist eine <strong>Querschnittsfunktion</strong> die den gesamten Betrieb durchzieht.</p>
+</div>
+
+<div class="merksatz">
+  <div class="label">Kernaussage</div>
+  <p>Logistik erzeugt Material- und Informationsflüsse <strong>zwischen</strong> Lieferanten und Unternehmen, <strong>innerhalb</strong> eines Unternehmens und <strong>von</strong> einem Unternehmen zu seinen Kunden. Sie ist eine <strong>Managementfunktion</strong> – Planung, Steuerung und Kontrolle.</p>
+</div>
+
+<!-- ══ 7 R ══ -->
+<h2 id="sieben-r"><span class="num">0.4</span>Die 7 R der Logistik</h2>
+<p>Die Kernaufgaben der Logistik lassen sich in den 6 R (nach Plowman) zusammenfassen, die oft um ein 7. R erweitert werden:</p>
+
+<div class="def-grid">
+  <div class="def-box"><div class="def-term">1. Richtiges Gut</div><div class="def-text">Das richtige Produkt / die richtige Leistung / Information</div></div>
+  <div class="def-box"><div class="def-term">2. Richtige Menge</div><div class="def-text">Weder zu viel noch zu wenig</div></div>
+  <div class="def-box"><div class="def-term">3. Richtiger Ort</div><div class="def-text">Genau da wo es gebraucht wird</div></div>
+  <div class="def-box"><div class="def-term">4. Richtiger Zeitpunkt</div><div class="def-text">Pünktlich – nicht zu früh, nicht zu spät</div></div>
+  <div class="def-box"><div class="def-term">5. Richtige Kosten</div><div class="def-text">Wirtschaftlich – optimales Kosten-Nutzen-Verhältnis</div></div>
+  <div class="def-box"><div class="def-term">6. Richtige Qualität</div><div class="def-text">In der vereinbarten Beschaffenheit</div></div>
+  <div class="def-box"><div class="def-term" style="color:var(--purple)">7. Richtige Information</div><div class="def-text">Erweiterung nach Plowman – Informationsfluss begleitet jeden Materialfluss</div></div>
+</div>
+
+<div class="pruefung">
+  <div class="label">Prüfungshinweis</div>
+  <p>Die 7 R kommen häufig als Definitionsfrage. Kroul fragt gerne: „Was versteht man unter den 6/7 R der Logistik?" – alle aufzählen und kurz erklären können.</p>
+</div>
+
+<hr>
+
+<!-- ══ FACHDISZIPLINEN ══ -->
+<h2 id="fachdisziplinen"><span class="num">0.5</span>Fachdisziplinen der Logistik</h2>
+
+<div class="table-wrap">
+  <table>
+    <tr><th>Bereich</th><th>Kernaufgaben</th></tr>
+    <tr><td><strong>Beschaffungslogistik</strong></td><td>Disposition · Planung, Steuerung und Kontrolle des Materialflusses vom Lieferanten ins Unternehmen</td></tr>
+    <tr><td><strong>Produktionslogistik</strong></td><td>Produktionsorganisation · Auftragsplanung und -steuerung · Kapazitätsplanung · Mengengerüste · Änderungsmanagement</td></tr>
+    <tr><td><strong>Distributionslogistik</strong></td><td>Auftragsabwicklung · JIT/JIS-Abwicklung · Transportplanung zum Kunden · Tourenplanung · Bestimmung der Distributionskanäle · Festlegen des Servicegrades</td></tr>
+    <tr><td><strong>Entsorgungslogistik</strong></td><td>Entsorgung von Abfallprodukten · Recycling · Mengen- und Kostenplanung · Möglichkeiten der Weiter-, Wieder- und Weiterverwendung</td></tr>
+    <tr><td><strong>Transportlogistik</strong></td><td>Interne und externe Transportsysteme · Raumüberbrückung</td></tr>
+    <tr><td><strong>Instandhaltungslogistik</strong></td><td>Optimale Betriebsbereitschaft der Anlagen sicherstellen</td></tr>
+    <tr><td><strong>Ersatzteillogistik</strong></td><td>Optimale Beschaffung und Bereithaltung von Ersatzteilen</td></tr>
+    <tr><td><strong>Verpackungslogistik</strong></td><td>Optimale Verpackungsprozesse und Anlieferung</td></tr>
+  </table>
+</div>
+
+<!-- ══ LOGISTISCHE KETTE ══ -->
+<h2 id="logistische-kette"><span class="num">0.6</span>Die Logistische Kette</h2>
+
+<div class="def-box">
+  <div class="def-term">Definition: Logistische Kette</div>
+  <div class="def-text">Verknüpfung aller logistischen Prozesse vom Lieferanten bis hin zum Kunden. Sie besteht aus drei Arten von Prozessen:<br>
+  <strong>Physische Prozesse</strong> (Transport, Lager, Umschlag) · <strong>Informationsprozesse</strong> (vorauseilend und begleitend) · <strong>Monetäre Geldflüsse</strong></div>
+</div>
+
+<div class="merksatz">
+  <div class="label">Die 3 Grundfunktionen der Logistik (TUL)</div>
+  <p><strong>Transport</strong> = Raumüberbrückung (Ware von A nach B bringen)<br>
+  <strong>Umschlag</strong> = Vereinzelung oder Bündelung von Warenströmen<br>
+  <strong>Lager</strong> = Zeitüberbrückung (Ware bis zum Bedarf vorhalten)</p>
+</div>
+
+<div class="beispiel">
+  <div class="label">Logistische Kette am Beispiel Schokolade (Kroul-Folie)</div>
+  <p>Zutaten 18 ct → Produktion 6 ct → Verpackung 4 ct → Logistik 2 ct → Werbung 8 ct → Gewinn Produzent 3 ct → Personal 8 ct → Lagerung 4 ct → Fläche/Energie 5 ct → MwSt 5 ct → Gewinn Handel 1 ct → <strong>Endpreis 69 ct</strong></p>
+  <p>→ Logistik macht nur 2 ct aus – aber ohne sie geht nichts!</p>
+</div>
+
+<!-- ══ INFORMATIONSLOGISTIK ══ -->
+<h2 id="informationslogistik"><span class="num">0.7</span>Informationslogistik</h2>
+<p>Begleitet den Materialfluss und stellt Informationen zur Verfügung. Datenqualität, -geschwindigkeit und -genauigkeit beeinflussen direkt den Unternehmenserfolg.</p>
+
+<div class="table-wrap">
+  <table>
+    <tr><th>Was wird übermittelt?</th><th>An wen?</th></tr>
+    <tr><td>Aufträge · Produktionsstände · Lagerbestände · Qualität · Termintreue · Sachnummern · Kritische Situationen</td><td>Kunden · Lieferanten · Interne und externe Ansprechpartner</td></tr>
+  </table>
+</div>
+
+<div class="tipp">
+  <div class="label">Digitale Technologien in der Logistik (Bitkom-Studie)</div>
+  <p>Im Einsatz: Big Data Analytics (20 %) · Vorausschauende Wartung (10 %) · 3D-Druck (10 %)<br>
+  Geplant: Big Data Analytics (21 %) · Vorausschauende Wartung (15 %) · Künstliche Intelligenz (8 %)</p>
+</div>
+
+<!-- ══ KONTRAKTLOGISTIK / xPL ══ -->
+<h2 id="kontraktlogistik"><span class="num">0.8</span>Kontraktlogistik & die xPL-Stufen</h2>
+
+<div class="def-box">
+  <div class="def-term">Kontraktlogistik – Merkmale</div>
+  <div class="def-text">Integrierte Leistungsbündel · Kundenspezifisch gestaltet · Längere Vertragsbasis · Basisleistungen (Transport, Umschlag, Lagerung) ergänzbar um <strong>Value Added Services / Mehrwertleistungen</strong></div>
+</div>
+
+<div class="table-wrap">
+  <table>
+    <tr><th>Stufe</th><th>Bezeichnung</th><th>Aufgaben des Dienstleisters</th><th>Beispiel</th></tr>
+    <tr><td><strong>1PL</strong></td><td>First Party Logistics</td><td>Übernahme der Transporttätigkeiten</td><td>LKW-Unternehmen</td></tr>
+    <tr><td><strong>2PL</strong></td><td>Second Party Logistics</td><td>Transport + Umschlag + Lagerung</td><td>Spediteur mit eigenem Lager</td></tr>
+    <tr><td><strong>3PL</strong></td><td>Third Party Logistics</td><td>Gesamte Logistik inkl. Zusatzdienste (Montage etc.)</td><td>DHL Solutions, DB Schenker</td></tr>
+    <tr><td><strong>4PL</strong></td><td>Fourth Party Logistics</td><td>Enge Partnerschaft – entwickelt und optimiert gesamte Geschäftsprozesse</td><td>Accenture Supply Chain</td></tr>
+    <tr><td><strong>5PL</strong></td><td>Fifth Party Logistics</td><td>Beratungsleistungen zur Optimierung unternehmensübergreifender Lieferketten</td><td>Strategieberatung + SCM</td></tr>
+  </table>
+</div>
+
+<div class="pruefung">
+  <div class="label">Prüfungshinweis</div>
+  <p>Kroul bringt die xPL-Stufen gerne als Zuordnungsaufgabe: „Nennen Sie für jede Ausprägung ein Beispiel aus der Praxis." Lerne die Tabelle auswendig – besonders den Unterschied zwischen 3PL (operativ) und 4PL (strategisch-optimierend).</p>
+</div>
+
+<hr>
+
+<!-- ══ ORDER PENETRATION POINT ══ -->
+<h2 id="opp"><span class="num">0.9</span>Order Penetration Point (OPP)</h2>
+
+<div class="def-box">
+  <div class="def-term">Definition: Order Penetration Point (OPP)</div>
+  <div class="def-text">Der OPP ist die <strong>Grenze zwischen prognosegetriebener und kundenauftragsbezogener Lieferkette</strong>. Vor dem OPP wird auf Vorrat produziert (Prognose), nach dem OPP erst auf Kundenauftrag reagiert.</div>
+</div>
+
+<div class="table-wrap">
+  <table>
+    <tr><th>Fall</th><th>Strategie</th><th>OPP-Position</th><th>Beispiel</th></tr>
+    <tr><td>1</td><td>Make to Stock (end product)</td><td>Direkt beim Händler</td><td>Lebensmittel im Supermarkt</td></tr>
+    <tr><td>2</td><td>Make to Stock (generic product)</td><td>Beim Endprodukt</td><td>Wurst (Standardsortiment)</td></tr>
+    <tr><td>3</td><td>Assemble to Order</td><td>Bei der Baugruppe</td><td>Automobilzulieferer – JIS-Fertigung</td></tr>
+    <tr><td>4</td><td>Make to Order</td><td>Fast beim Lieferanten</td><td>Hausbau – Fensterbestellung</td></tr>
+    <tr><td>5</td><td>Purchase and Make to Order</td><td>Ganz vorne (Rohstoffe)</td><td>Spezialkonstruktion, Förderanlage Flughafen</td></tr>
+  </table>
+</div>
+
+<div class="merksatz">
+  <div class="label">Merksatz</div>
+  <p>Je weiter der OPP <strong>nach links</strong> (Richtung Rohstoff) liegt, desto länger die Lieferzeit – dafür geringere Lagerbestände. Je weiter <strong>nach rechts</strong> (Richtung Kunde), desto schneller die Lieferung – aber höhere Lagerkosten.</p>
+</div>
+
+<!-- ══ POSTPONEMENT ══ -->
+<h2 id="postponement"><span class="num">0.10</span>Postponement & Speculation</h2>
+
+<div class="def-grid">
+  <div class="def-box">
+    <div class="def-term">Postponement (Verschieben)</div>
+    <div class="def-text">Kundenbezogene Wertschöpfungsprozesse werden so spät wie möglich ausgeführt – möglichst nah am Kundenauftrag. <strong>Ziel:</strong> Risiken durch falsche Prognosen vermeiden. Bestände werden <strong>zentral</strong> (Zentrallager) gehalten.</div>
+  </div>
+  <div class="def-box">
+    <div class="def-term">Speculation (Spekulation)</div>
+    <div class="def-text">Wertschöpfung erfolgt früh auf Basis von Prognosen – Waren werden <strong>dezentral</strong> (in vielen kundennahen Lagern) bevorratet. <strong>Vorteil:</strong> Schnelle Lieferung. <strong>Risiko:</strong> Falsche Prognose → zu viel oder zu wenig Bestand.</div>
+  </div>
+</div>
+
+<div class="tipp">
+  <div class="label">Verteilungsmöglichkeiten</div>
+  <p><strong>Zentral (Postponement):</strong> Alle Bestände an einem Lagerort für gesamtes Absatzgebiet<br>
+  <strong>Selektiv (Zwischenform):</strong> Bestände aufgeteilt – manche dezentral, manche zentral<br>
+  <strong>Dezentral (Speculation):</strong> Bestände in mehreren kundennahen Lagern</p>
+</div>
+
+<!-- ══ SCM ══ -->
+<h2 id="scm"><span class="num">0.11</span>Supply Chain Management (SCM)</h2>
+
+<div class="def-box">
+  <div class="def-term">Definition SCM (nach Lackes)</div>
+  <div class="def-text">SCM bezeichnet den Aufbau und die Verwaltung integrierter Logistikketten – Material- und Informationsflüsse über den gesamten Wertschöpfungsprozess, ausgehend von der Rohstoffgewinnung über die Veredlungsstufen bis hin zum Endverbraucher.<br>
+  <em>„Von der Baumwollpflanze bis zum Jeanskunden / Von der Kupfermine bis zum Automobilkunden"</em></div>
+</div>
+
+<h3>Die drei SCM-Management-Ebenen</h3>
+<div class="table-wrap">
+  <table>
+    <tr><th>Ebene</th><th>Name</th><th>Ziel</th><th>Teilbereiche</th></tr>
+    <tr><td><strong>Organisations­management</strong></td><td>Strukturell</td><td>Überführung unternehmensbezogener Strukturen in unternehmensübergreifende Prozesse</td><td>Gemeinsame Ziele · einheitliches Prozessverständnis · Planen, Beschaffen, Herstellen, Liefern</td></tr>
+    <tr><td><strong>Technologie­management</strong></td><td>Informatorisch</td><td>Reibungslose Abläufe durch IT-Integration aller Partner</td><td>E-Commerce · Internet/Extranet/Intranet · Advanced Planning Systems</td></tr>
+    <tr><td><strong>Beziehungs­management</strong></td><td>Human</td><td>Vertrauensvolle Zusammenarbeit zur Nutzung von Synergieeffekten</td><td>Kompromissbereitschaft · offene Kommunikation · Austausch sensibler Informationen</td></tr>
+  </table>
+</div>
+
+<h3>Die drei SCM-Grundtypen</h3>
+<div class="table-wrap">
+  <table>
+    <tr><th>Typ</th><th>Strategie</th><th>Beispiel</th><th>Vorteile</th><th>Nachteile</th></tr>
+    <tr><td><strong>1</strong></td><td>Push-Push: Synchronisierung des Materialflusses</td><td>Zara (Fast Fashion)</td><td>Einfache Planung, stabile Abläufe</td><td>Hohe Lagerbestände, Risiko bei Fehlprognose</td></tr>
+    <tr><td><strong>2</strong></td><td>Push-Pull: Mass Customizing durch Kombination von Standards</td><td>Dell (PC-Konfiguration)</td><td>Individuelle Produkte, geringere Fertigwarenlager</td><td>Aufwändigere Steuerung, längere Lieferzeit</td></tr>
+    <tr><td><strong>3</strong></td><td>Make to Order bei flexibler Supply Chain</td><td>Automobilindustrie</td><td>Höchste Flexibilität, kundenindividuell</td><td>Hohe Lieferzeiten, komplexe Koordination</td></tr>
+  </table>
+</div>
+
+<div class="merksatz">
+  <div class="label">Ziele des SCM</div>
+  <p>Orientierung am Endkunden · Steigerung der Kundenzufriedenheit · Rasche Anpassung an Marktveränderungen · Reduzierung des Bullwhip-Effekts · Vermeidung von Out-of-Stock · Senkung der Lagerbestände entlang der gesamten Supply Chain · Kostenvorteile durch Gesamtoptimierung · Verkürzung von Lieferzeiten</p>
+</div>
+
+<!-- ══ BULLWHIP ══ -->
+<h2 id="bullwhip"><span class="num">0.12</span>Bullwhip-Effekt (Peitschenschlag-Effekt)</h2>
+
+<div class="def-box">
+  <div class="def-term">Definition: Bullwhip-Effekt</div>
+  <div class="def-text">Bereits kleine Veränderungen der Endkundennachfrage führen zu <strong>sich aufschaukelnden Schwankungen</strong> der Bestellmengen entlang der Lieferkette – wie ein Peitschenschlag. Je mehr Stufen beteiligt sind, desto stärker der Effekt.</div>
+</div>
+
+<div class="beispiel">
+  <div class="label">Warum entsteht der Bullwhip-Effekt?</div>
+  <p>Jede Stufe (Einzelhändler → Großhändler → Hersteller → Rohstofflieferant) hält eigene Sicherheitsbestände, um Fehlbestände zu vermeiden. Wenn der Endkunde plötzlich mehr kauft, bestellen alle Stufen gleichzeitig mehr – und ordentlich „auf Sicherheit".</p>
+  <p>→ Aus einer kleinen Schwankung beim Kunden wird eine riesige Welle beim Lieferanten.</p>
+</div>
+
+<div class="tipp">
+  <div class="label">SCM als Lösung</div>
+  <p>SCM reduziert den Bullwhip-Effekt durch <strong>Informationstransparenz</strong> (alle Stufen sehen die echte Endkundennachfrage) und <strong>koordiniertes Bestellen</strong> – statt jede Stufe allein plant.</p>
+</div>
+
+<hr>
+
+<!-- ══ QUIZ ══ -->
+<h2 id="quiz"><span class="num">Quiz</span>Mini-Quiz – 10 Fragen aus Krouls Check-Up</h2>
+<p style="font-size:14px;color:var(--text-2);margin-bottom:1rem;">Die gleichen Fragen die Kroul in seinem Microsoft Forms Check-Up stellt. Teste dich!</p>
+
+<div class="quiz-wrap" id="quizWrap">
+
+  <div class="quiz-block" id="q1">
+    <div class="quiz-nr">Frage 1 von 10</div>
+    <div class="quiz-frage">Wie wird Logistik aus betriebswirtschaftlicher Sicht verstanden?</div>
+    <div class="quiz-options">
+      <button class="quiz-btn" onclick="answer('q1',this,false,'A')">A) Reine Transportlehre</button>
+      <button class="quiz-btn" onclick="answer('q1',this,true,'B')">B) Organisation und Steuerung des gesamten Wertschöpfungsprozesses</button>
+      <button class="quiz-btn" onclick="answer('q1',this,false,'C')">C) Ausschließlich Lagerhaltung</button>
+      <button class="quiz-btn" onclick="answer('q1',this,false,'D')">D) Nur internationale Warenbewegungen</button>
+    </div>
+    <div class="quiz-feedback" id="q1-fb"></div>
+  </div>
+
+  <div class="quiz-block" id="q2">
+    <div class="quiz-nr">Frage 2 von 10</div>
+    <div class="quiz-frage">Welche Aussage beschreibt die Logistik als Querschnittsfunktion richtig?</div>
+    <div class="quiz-options">
+      <button class="quiz-btn" onclick="answer('q2',this,false,'A')">A) Sie betrifft nur die Versandabteilung.</button>
+      <button class="quiz-btn" onclick="answer('q2',this,false,'B')">B) Sie verbindet ausschließlich Lieferanten mit Kunden.</button>
+      <button class="quiz-btn" onclick="answer('q2',this,true,'C')">C) Sie durchzieht funktionsübergreifend den gesamten Betrieb.</button>
+      <button class="quiz-btn" onclick="answer('q2',this,false,'D')">D) Sie ist nur für physische Transporte zuständig.</button>
+    </div>
+    <div class="quiz-feedback" id="q2-fb"></div>
+  </div>
+
+  <div class="quiz-block" id="q3">
+    <div class="quiz-nr">Frage 3 von 10</div>
+    <div class="quiz-frage">Welche der folgenden Antworten gehört NICHT zu den „6 R" der Logistik?</div>
+    <div class="quiz-options">
+      <button class="quiz-btn" onclick="answer('q3',this,false,'A')">A) Richtige Menge</button>
+      <button class="quiz-btn" onclick="answer('q3',this,false,'B')">B) Richtiger Ort</button>
+      <button class="quiz-btn" onclick="answer('q3',this,true,'C')">C) Richtige Werbung</button>
+      <button class="quiz-btn" onclick="answer('q3',this,false,'D')">D) Richtige Qualität</button>
+    </div>
+    <div class="quiz-feedback" id="q3-fb"></div>
+  </div>
+
+  <div class="quiz-block" id="q4">
+    <div class="quiz-nr">Frage 4 von 10</div>
+    <div class="quiz-frage">Welche Erweiterung wird häufig als „7. R" ergänzt?</div>
+    <div class="quiz-options">
+      <button class="quiz-btn" onclick="answer('q4',this,false,'A')">A) Richtige Verpackung</button>
+      <button class="quiz-btn" onclick="answer('q4',this,true,'B')">B) Richtige Information</button>
+      <button class="quiz-btn" onclick="answer('q4',this,false,'C')">C) Richtige Personalstärke</button>
+      <button class="quiz-btn" onclick="answer('q4',this,false,'D')">D) Richtige Produktionsanlage</button>
+    </div>
+    <div class="quiz-feedback" id="q4-fb"></div>
+  </div>
+
+  <div class="quiz-block" id="q5">
+    <div class="quiz-nr">Frage 5 von 10</div>
+    <div class="quiz-frage">Was beschreibt eine logistische Kette?</div>
+    <div class="quiz-options">
+      <button class="quiz-btn" onclick="answer('q5',this,false,'A')">A) Die Lagerung von Waren in einem Zentrallager</button>
+      <button class="quiz-btn" onclick="answer('q5',this,true,'B')">B) Die Verknüpfung aller logistischen Prozesse vom Lieferanten bis zum Kunden</button>
+      <button class="quiz-btn" onclick="answer('q5',this,false,'C')">C) Nur monetäre Zahlungsströme</button>
+      <button class="quiz-btn" onclick="answer('q5',this,false,'D')">D) Eine IT-Software zur Transportplanung</button>
+    </div>
+    <div class="quiz-feedback" id="q5-fb"></div>
+  </div>
+
+  <div class="quiz-block" id="q6">
+    <div class="quiz-nr">Frage 6 von 10</div>
+    <div class="quiz-frage">Was kennzeichnet den Order Penetration Point (OPP)?</div>
+    <div class="quiz-options">
+      <button class="quiz-btn" onclick="answer('q6',this,false,'A')">A) Er beschreibt den Zeitpunkt der Rechnungsstellung.</button>
+      <button class="quiz-btn" onclick="answer('q6',this,true,'B')">B) Er trennt prognosegetriebene von kundenauftragsbezogenen Prozessen.</button>
+      <button class="quiz-btn" onclick="answer('q6',this,false,'C')">C) Er ist der Ort der Qualitätsprüfung.</button>
+      <button class="quiz-btn" onclick="answer('q6',this,false,'D')">D) Er definiert den Lagerbestand.</button>
+    </div>
+    <div class="quiz-feedback" id="q6-fb"></div>
+  </div>
+
+  <div class="quiz-block" id="q7">
+    <div class="quiz-nr">Frage 7 von 10</div>
+    <div class="quiz-frage">Was versteht man unter dem Bullwhip-Effekt?</div>
+    <div class="quiz-options">
+      <button class="quiz-btn" onclick="answer('q7',this,false,'A')">A) Gleichmäßige Bedarfsentwicklung entlang der Lieferkette</button>
+      <button class="quiz-btn" onclick="answer('q7',this,false,'B')">B) Reduzierung von Lagerbeständen durch Just-in-Time</button>
+      <button class="quiz-btn" onclick="answer('q7',this,true,'C')">C) Aufschaukelung von Nachfrageschwankungen entlang der Supply Chain</button>
+      <button class="quiz-btn" onclick="answer('q7',this,false,'D')">D) Verkürzung der Lieferzeiten durch Digitalisierung</button>
+    </div>
+    <div class="quiz-feedback" id="q7-fb"></div>
+  </div>
+
+  <div class="quiz-block" id="q8">
+    <div class="quiz-nr">Frage 8 von 10</div>
+    <div class="quiz-frage">Welches Ziel verfolgt das Supply Chain Management (SCM)?</div>
+    <div class="quiz-options">
+      <button class="quiz-btn" onclick="answer('q8',this,false,'A')">A) Maximierung einzelner Abteilungsgewinne</button>
+      <button class="quiz-btn" onclick="answer('q8',this,true,'B')">B) Optimierung des Gesamtprozesses über mehrere Stufen hinweg</button>
+      <button class="quiz-btn" onclick="answer('q8',this,false,'C')">C) Erhöhung der Sicherheitsbestände</button>
+      <button class="quiz-btn" onclick="answer('q8',this,false,'D')">D) Reduzierung der Informationsflüsse</button>
+    </div>
+    <div class="quiz-feedback" id="q8-fb"></div>
+  </div>
+
+  <div class="quiz-block" id="q9">
+    <div class="quiz-nr">Frage 9 von 10</div>
+    <div class="quiz-frage">Welche Aufgabe übernimmt die Informationslogistik?</div>
+    <div class="quiz-options">
+      <button class="quiz-btn" onclick="answer('q9',this,false,'A')">A) Durchführung von Transporten</button>
+      <button class="quiz-btn" onclick="answer('q9',this,false,'B')">B) Recycling von Abfallstoffen</button>
+      <button class="quiz-btn" onclick="answer('q9',this,true,'C')">C) Bereitstellung und Steuerung relevanter Informationen entlang des Materialflusses</button>
+      <button class="quiz-btn" onclick="answer('q9',this,false,'D')">D) Ausschließlich Finanzbuchhaltung</button>
+    </div>
+    <div class="quiz-feedback" id="q9-fb"></div>
+  </div>
+
+  <div class="quiz-block" id="q10">
+    <div class="quiz-nr">Frage 10 von 10</div>
+    <div class="quiz-frage">Was ist Kontraktlogistik?</div>
+    <div class="quiz-options">
+      <button class="quiz-btn" onclick="answer('q10',this,false,'A')">A) Nur der reine Transport von Waren</button>
+      <button class="quiz-btn" onclick="answer('q10',this,false,'B')">B) Einmalige Beförderung ohne Vertrag</button>
+      <button class="quiz-btn" onclick="answer('q10',this,true,'C')">C) Kundenspezifische, integrierte Logistikleistungen auf längerer Vertragsbasis</button>
+      <button class="quiz-btn" onclick="answer('q10',this,false,'D')">D) Ausschließlich internationale Transportdienstleistungen</button>
+    </div>
+    <div class="quiz-feedback" id="q10-fb"></div>
+  </div>
+
+</div>
+
+<div class="quiz-score" id="scoreBox">
+  <div style="font-size:13px;color:var(--text-2);margin-bottom:0.3rem;">Dein Ergebnis</div>
+  <div class="quiz-score-num" id="scoreNum"></div>
+  <div style="font-size:14px;color:var(--text-2);margin-top:0.25rem;">von 10 Punkten</div>
+  <div id="scoreFeedback" style="font-size:14px;margin-top:0.5rem;"></div>
+</div>
+
+</main>
+
+<script>
+// Fortschrittsbalken
+window.addEventListener('scroll', () => {
+  const total = document.body.scrollHeight - window.innerHeight;
+  document.getElementById('progress').style.width = (total > 0 ? (window.scrollY / total) * 100 : 0) + '%';
+}, { passive: true });
+
+// Quiz
+const correct_answers = { q1:'B', q2:'C', q3:'C', q4:'B', q5:'B', q6:'B', q7:'C', q8:'B', q9:'C', q10:'C' };
+const explanations = {
+  q1: 'Aus betriebswirtschaftlicher Sicht umfasst Logistik die gesamte Organisation und Steuerung des Wertschöpfungsprozesses – weit mehr als nur Transport.',
+  q2: 'Logistik durchzieht als Querschnittsfunktion funktionsübergreifend den gesamten Betrieb – von Beschaffung bis Entsorgung.',
+  q3: 'Die 6 R sind: richtiges Gut, Menge, Ort, Zeitpunkt, Kosten, Qualität. Werbung gehört nicht dazu.',
+  q4: 'Das 7. R nach Plowman ist die richtige Information – der Informationsfluss begleitet jeden Materialfluss.',
+  q5: 'Die logistische Kette verknüpft alle logistischen Prozesse (physisch, informatorisch, monetär) vom Lieferanten bis zum Kunden.',
+  q6: 'Der OPP trennt die prognosegetriebene Lieferkette von der kundenauftragsbezogenen – er ist der Auftragsentkopplungspunkt.',
+  q7: 'Der Bullwhip-Effekt beschreibt das Aufschaukeln von Nachfrageschwankungen entlang der Supply Chain – wie ein Peitschenschlag.',
+  q8: 'SCM zielt auf die Gesamtoptimierung des Lieferprozesses über alle Stufen – nicht auf Einzeloptimierung einzelner Bereiche.',
+  q9: 'Informationslogistik begleitet den Materialfluss und stellt alle relevanten Informationen für alle Beteiligten bereit.',
+  q10: 'Kontraktlogistik = kundenspezifische, integrierte Logistikleistungen auf längerer Vertragsbasis, ergänzbar um Value Added Services.'
+};
+let score = 0;
+let answered = 0;
+
+function answer(id, btn, correct, letter) {
+  const block = document.getElementById(id);
+  const btns = block.querySelectorAll('.quiz-btn');
+  btns.forEach(b => b.disabled = true);
+  btn.classList.add(correct ? 'correct' : 'wrong');
+  if (!correct) {
+    btns.forEach(b => { if (b.textContent.startsWith(correct_answers[id])) b.classList.add('correct'); });
+  }
+  const fb = document.getElementById(id + '-fb');
+  fb.textContent = (correct ? '✓ Richtig! ' : '✗ Leider falsch. ') + explanations[id];
+  fb.className = 'quiz-feedback show ' + (correct ? 'ok' : 'nope');
+  if (correct) score++;
+  answered++;
+  if (answered === 10) {
+    const box = document.getElementById('scoreBox');
+    document.getElementById('scoreNum').textContent = score + '/10';
+    const msgs = ['Weiter üben – lies die Inhalte nochmal durch!', 'Guter Start – einige Lücken noch schließen.', 'Solide – fast alles sitzt!', 'Sehr gut! Du hast das Kapitel im Griff.', 'Perfekt! Kroul wäre stolz.'];
+    document.getElementById('scoreFeedback').textContent = msgs[Math.min(Math.floor(score / 2), 4)];
+    box.className = 'quiz-score show';
+    box.scrollIntoView({ behavior: 'smooth', block: 'center' });
+  }
+}
+
+// Notizen
+function toggleNotiz(btn) {
+  const a = btn.nextElementSibling;
+  if (a.style.display === 'block') { a.style.display = 'none'; btn.textContent = '✏ Notiz hinzufügen'; }
+  else { a.style.display = 'block'; btn.textContent = '✏ Notiz schließen'; a.focus(); }
+}
+
+function init(prefix) {
+  const selectors = ['.merksatz', '.tipp', '.pruefung', '.beispiel', '.def-box'];
+  let counter = 0;
+  selectors.forEach(sel => {
+    document.querySelectorAll(sel).forEach(el => {
+      if (el.querySelector('.notiz-btn')) return;
+      const k = prefix + counter++;
+      const btn = document.createElement('button');
+      btn.className = 'notiz-btn';
+      btn.textContent = '✏ Notiz hinzufügen';
+      btn.onclick = function() { toggleNotiz(this); };
+      const area = document.createElement('textarea');
+      area.className = 'notiz-area';
+      area.placeholder = 'Deine Notiz…';
+      try { const s = localStorage.getItem(k); if (s) { area.value = s; area.style.display = 'block'; btn.textContent = '✏ Notiz schließen'; } } catch(e) {}
+      area.addEventListener('input', () => { try { localStorage.setItem(k, area.value); } catch(e) {} });
+      el.appendChild(btn);
+      el.appendChild(area);
+    });
+  });
+
+  // Aktiver Sidebar-Link
+  const navLinks = document.querySelectorAll('.sidebar-nav a');
+  document.querySelectorAll('[id]').forEach(s => {
+    new IntersectionObserver(entries => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          navLinks.forEach(l => l.classList.remove('active'));
+          const l = document.querySelector('.sidebar-nav a[href="#' + e.target.id + '"]');
+          if (l) l.classList.add('active');
+        }
+      });
+    }, { threshold: 0.2 }).observe(s);
+  });
+}
+
+init('kapitel_kroul_0_');
+</script>
+</body>
+</html>
