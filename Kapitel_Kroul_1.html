@@ -1,0 +1,810 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kapitel 1 – Kroul · Changemanagement</title>
+<style>
+:root {
+  --bg: #f5f4f0; --surface: #ffffff; --border: #e8e6df;
+  --text: #1a1916; --text-2: #6b6860;
+  --sidebar-bg: #1e1e1e; --sidebar-text: #e0ddd6; --sidebar-active: #4a90d9;
+  --blue: #3b6fd4; --blue-bg: #eef3fc; --blue-border: #c3d3fd;
+  --green: #2d7a4f; --green-bg: #eaf5ef; --green-border: #a7dfc0;
+  --yellow: #b8860b; --yellow-bg: #fdf9e3; --yellow-border: #f5d48a;
+  --red: #c0392b; --red-bg: #fdf0ee; --red-border: #f8b4b4;
+  --purple: #6c3483; --purple-bg: #f5eefb; --purple-border: #c8b8f8;
+  --radius: 8px;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: var(--bg); color: var(--text); display: flex; min-height: 100vh; font-size: 15px; line-height: 1.7; }
+
+/* ── PROGRESS ── */
+.progress-bar { position: fixed; top: 0; left: 0; width: 100%; height: 3px; background: #ddd; z-index: 999; }
+.progress-fill { height: 100%; background: var(--blue); width: 0; transition: width 0.1s; }
+
+/* ── SIDEBAR ── */
+aside { width: 240px; min-width: 240px; background: var(--sidebar-bg); color: var(--sidebar-text); display: flex; flex-direction: column; position: sticky; top: 0; height: 100vh; overflow-y: auto; }
+.sidebar-header { padding: 1.25rem 1rem 0.75rem; border-bottom: 1px solid #333; }
+.sidebar-back { font-size: 12px; color: #888; text-decoration: none; display: block; margin-bottom: 0.5rem; }
+.sidebar-back:hover { color: #ccc; }
+.sidebar-logo { font-size: 13px; color: #aaa; margin-bottom: 2px; }
+.sidebar-sub { font-size: 11px; color: #666; }
+.sidebar-chapter { padding: 0.6rem 1rem 0.2rem; font-size: 10px; text-transform: uppercase; letter-spacing: 0.1em; color: #555; margin-top: 0.5rem; }
+.sidebar-nav a { display: block; padding: 0.4rem 1rem 0.4rem 1.25rem; font-size: 13px; color: #bbb; text-decoration: none; border-left: 2px solid transparent; transition: all 0.15s; }
+.sidebar-nav a:hover { color: #fff; background: #2a2a2a; }
+.sidebar-nav a.active { color: #fff; border-left-color: var(--sidebar-active); background: #2a2a2a; }
+.sidebar-bottom { margin-top: auto; padding: 1rem; border-top: 1px solid #2a2a2a; }
+.sidebar-bottom a { display: flex; align-items: center; gap: 0.5rem; font-size: 13px; color: #aaa; text-decoration: none; padding: 0.4rem 0.25rem; border-radius: 6px; }
+.sidebar-bottom a:hover { color: #fff; }
+
+/* ── MAIN ── */
+main { flex: 1; padding: 2.5rem 3rem 4rem; max-width: 860px; }
+.page-label { font-size: 12px; color: var(--text-2); text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 0.5rem; }
+h1 { font-size: 28px; font-weight: 700; margin-bottom: 0.4rem; }
+.page-sub { font-size: 15px; color: var(--text-2); margin-bottom: 2.5rem; }
+h2 { font-size: 20px; font-weight: 600; margin: 2.5rem 0 0.75rem; padding-top: 0.5rem; display: flex; align-items: center; gap: 0.6rem; }
+h2 .num { font-size: 12px; background: var(--blue); color: #fff; padding: 2px 8px; border-radius: 20px; font-weight: 500; }
+h3 { font-size: 16px; font-weight: 600; margin: 1.5rem 0 0.5rem; }
+p { margin-bottom: 0.75rem; color: var(--text); }
+ul, ol { margin: 0.5rem 0 0.75rem 1.5rem; }
+li { margin-bottom: 0.3rem; }
+strong { color: var(--text); }
+
+/* ── CARDS ── */
+.merksatz { background: var(--yellow-bg); border-left: 3px solid var(--yellow-border); border-radius: var(--radius); padding: 1rem 1.1rem; margin: 1rem 0; }
+.merksatz .label { font-size: 11px; text-transform: uppercase; letter-spacing: 0.08em; color: var(--yellow); font-weight: 600; margin-bottom: 0.4rem; }
+.definition { background: var(--blue-bg); border-left: 3px solid var(--blue-border); border-radius: var(--radius); padding: 1rem 1.1rem; margin: 1rem 0; }
+.definition .label { font-size: 11px; text-transform: uppercase; letter-spacing: 0.08em; color: var(--blue); font-weight: 600; margin-bottom: 0.4rem; }
+.tipp { background: var(--green-bg); border-left: 3px solid var(--green-border); border-radius: var(--radius); padding: 1rem 1.1rem; margin: 1rem 0; }
+.tipp .label { font-size: 11px; text-transform: uppercase; letter-spacing: 0.08em; color: var(--green); font-weight: 600; margin-bottom: 0.4rem; }
+.pruefung { background: var(--purple-bg); border-left: 3px solid var(--purple-border); border-radius: var(--radius); padding: 1rem 1.1rem; margin: 1rem 0; }
+.pruefung .label { font-size: 11px; text-transform: uppercase; letter-spacing: 0.08em; color: var(--purple); font-weight: 600; margin-bottom: 0.4rem; }
+.warnung { background: var(--red-bg); border-left: 3px solid var(--red-border); border-radius: var(--radius); padding: 1rem 1.1rem; margin: 1rem 0; }
+.warnung .label { font-size: 11px; text-transform: uppercase; letter-spacing: 0.08em; color: var(--red); font-weight: 600; margin-bottom: 0.4rem; }
+
+/* ── TABLE ── */
+.table-wrap { overflow-x: auto; margin: 1rem 0; }
+table { width: 100%; border-collapse: collapse; font-size: 14px; }
+th { background: #f0ede8; text-align: left; padding: 8px 12px; font-weight: 600; border-bottom: 2px solid var(--border); }
+td { padding: 8px 12px; border-bottom: 1px solid var(--border); vertical-align: top; }
+tr:hover td { background: #faf9f7; }
+
+/* ── VERGLEICH ── */
+.compare { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin: 1rem 0; }
+.compare-box { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 1rem; }
+.compare-box .label { font-size: 12px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 0.5rem; }
+.compare-box.blau .label { color: var(--blue); }
+.compare-box.gruen .label { color: var(--green); }
+
+/* ── PHASEN ── */
+.phasen { display: flex; gap: 0; margin: 1.25rem 0; border-radius: var(--radius); overflow: hidden; border: 1px solid var(--border); }
+.phase { flex: 1; padding: 0.9rem 0.75rem; text-align: center; background: var(--surface); border-right: 1px solid var(--border); position: relative; }
+.phase:last-child { border-right: none; }
+.phase-num { font-size: 11px; color: var(--text-2); font-weight: 600; margin-bottom: 0.2rem; }
+.phase-name { font-size: 13px; font-weight: 600; color: var(--text); }
+.phase-sub { font-size: 11px; color: var(--text-2); margin-top: 0.25rem; }
+.phase.blue { background: var(--blue-bg); }
+.phase.green { background: var(--green-bg); }
+.phase.yellow { background: var(--yellow-bg); }
+
+/* ── AUFGABE/LÖSUNG ── */
+.aufgabe-box { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); margin: 1.5rem 0; overflow: hidden; }
+.aufgabe-header { padding: 0.75rem 1.1rem; background: #f7f5f0; border-bottom: 1px solid var(--border); display: flex; align-items: center; gap: 0.6rem; font-weight: 600; font-size: 14px; cursor: pointer; user-select: none; }
+.aufgabe-header .tag { font-size: 11px; padding: 2px 8px; border-radius: 20px; font-weight: 500; }
+.tag-aufgabe { background: #fff3cd; color: #856404; }
+.tag-loesung { background: #d1edda; color: #155724; }
+.aufgabe-body { padding: 1.1rem; }
+.loesung-body { padding: 1.1rem; background: #f9fdf9; display: none; border-top: 1px solid var(--border); }
+.loesung-body.open { display: block; }
+.toggle-btn { margin-top: 0.75rem; font-size: 13px; color: var(--blue); cursor: pointer; border: none; background: none; padding: 0; text-decoration: underline; }
+
+/* ── NOTIZ ── */
+.notiz-section { margin-top: 0.75rem; }
+.notiz-btn { font-size: 12px; color: var(--text-2); cursor: pointer; border: 1px dashed #ccc; background: none; padding: 3px 10px; border-radius: 4px; transition: all 0.15s; }
+.notiz-btn:hover { color: var(--yellow); border-color: var(--yellow); }
+.notiz-area { display: none; width: 100%; margin-top: 0.5rem; border: 1px solid #ddd; border-radius: 6px; padding: 0.6rem; font-size: 13px; resize: vertical; min-height: 70px; font-family: inherit; background: #fffef9; }
+.notiz-area:focus { outline: none; border-color: var(--yellow-border); }
+
+/* ── QUIZ ── */
+.quiz-q { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 1.1rem; margin: 0.75rem 0; }
+.quiz-q p { font-weight: 500; margin-bottom: 0.6rem; }
+.quiz-opt { display: block; padding: 6px 10px; border-radius: 6px; cursor: pointer; font-size: 14px; margin-bottom: 4px; border: 1px solid transparent; transition: background 0.1s; }
+.quiz-opt:hover { background: #f0ede8; }
+.quiz-opt.richtig { background: #d4edda; border-color: #a7dfc0; color: #155724; }
+.quiz-opt.falsch { background: #f8d7da; border-color: #f8b4b4; color: #721c24; }
+.quiz-erkl { font-size: 13px; color: var(--green); margin-top: 0.5rem; display: none; }
+.quiz-erkl.show { display: block; }
+
+/* ── NOTIZEN ── */
+.notiz-btn { display: flex; align-items: center; gap: 0.4rem; background: none; border: 1px dashed #ccc; border-radius: 6px; padding: 0.3rem 0.75rem; font-size: 12px; color: #999; cursor: pointer; margin-top: 0.6rem; transition: all 0.15s; }
+.notiz-btn:hover { border-color: #999; color: #666; }
+.notiz-area { display: none; width: 100%; margin-top: 0.5rem; border: 1px solid #ddd; border-radius: 6px; padding: 0.5rem 0.75rem; font-size: 13px; font-family: inherit; resize: vertical; background: #fffef8; min-height: 60px; }
+.notiz-area:focus { outline: none; border-color: var(--blue); }
+
+/* ── DIVIDER ── */
+.section-div { border: none; border-top: 1px solid var(--border); margin: 2rem 0; }
+</style>
+</head>
+<body>
+
+<div class="progress-bar"><div class="progress-fill" id="progress"></div></div>
+
+<aside>
+  <div class="sidebar-header">
+    <a href="index.html" class="sidebar-back">← Übersicht</a>
+    <div class="sidebar-logo">Logistik Lernportal</div>
+    <div class="sidebar-sub">Dozent: Raphael Kroul</div>
+  </div>
+
+  <div class="sidebar-chapter">Kapitel 1.1</div>
+  <nav class="sidebar-nav">
+    <a href="#einfuehrung">Einleitung & Grundbegriffe</a>
+    <a href="#definition">Definition Changemanagement</a>
+    <a href="#kondratieff">Kondratieff-Zyklen</a>
+    <a href="#gruende">Gründe für Wandel</a>
+    <a href="#ansatzpunkte">Ansatzpunkte</a>
+  </nav>
+
+  <div class="sidebar-chapter">Kapitel 1.2</div>
+  <nav class="sidebar-nav">
+    <a href="#einsatzbereiche">Einsatzbereiche</a>
+    <a href="#fuehrungsaufgabe">Führungsaufgabe</a>
+    <a href="#pdca">PDCA-Zyklus</a>
+    <a href="#wandelarten">Arten des Wandels</a>
+    <a href="#erfolgsfaktoren">Erfolgsfaktoren</a>
+    <a href="#umsetzung">Erfolgreiche Umsetzung</a>
+    <a href="#kotter">Kotter (8 Phasen)</a>
+    <a href="#lewin">Lewin (3 Phasen)</a>
+    <a href="#streich">Streich (7 Phasen)</a>
+    <a href="#krueger">Krüger (5 Stufen)</a>
+  </nav>
+
+  <div class="sidebar-chapter">Übungen</div>
+  <nav class="sidebar-nav">
+    <a href="#aufgaben">Übungsaufgaben</a>
+    <a href="#quiz">Mini-Quiz</a>
+  </nav>
+
+  <div class="sidebar-bottom">
+    <a href="notizen.html">📝 Meine Notizen</a>
+  </div>
+</aside>
+
+<main>
+
+<div class="page-label">Kapitel 1 · Dozent: Raphael Kroul · 05.03.2026</div>
+<h1>Gestaltung von Veränderungsprozessen</h1>
+<p class="page-sub">Changemanagement bei der Einführung logistischer Lösungen – Theorien, Modelle und Praxisbeispiele</p>
+
+<!-- ══ 1.1 EINLEITUNG ══ -->
+<h2 id="einfuehrung"><span class="num">1.1</span>Einleitung: Wandel als Konstante</h2>
+
+<p>Schon der griechische Philosoph Heraklit wusste es ca. 500 v. Chr.: <em>„Nichts ist so beständig wie der Wandel."</em> Unternehmen sind heute schneller als je zuvor gezwungen, sich zu verändern – durch Globalisierung, digitale Transformation, Finanzkrisen und gesellschaftlichen Wandel.</p>
+
+<div class="merksatz">
+  <div class="label">Merksatz</div>
+  <p>Nur wer den ständig erforderlichen Veränderungsprozess als festen Bestandteil unternehmerischen Denkens begreift und professionell gestaltet, wird dauerhaft erfolgreich sein.</p>
+</div>
+
+<h2 id="definition"><span class="num">1.1</span>Definition Changemanagement</h2>
+
+<div class="definition">
+  <div class="label">Definition</div>
+  <p><strong>Changemanagement</strong> ist das Management von Veränderungen – die geplante Gestaltung des Wandels. Es umfasst die bewusste Gestaltung von Kommunikations- und Organisationsstrukturen.</p>
+</div>
+
+<p>Andere Begriffe für Changemanagement:</p>
+<ul>
+  <li>Organisationsentwicklung</li>
+  <li>Transformation</li>
+  <li>Wandel / Krisenmanagement</li>
+  <li>Business Reengineering</li>
+</ul>
+
+<p>Changemanagement bedeutet, Veränderungsprozesse auf Unternehmens- und persönlicher Ebene zu <strong>planen, initiieren, realisieren, reflektieren und stabilisieren</strong>. Das Spektrum reicht von der strategischen Ausrichtung bis zur Persönlichkeitsentwicklung einzelner Mitarbeiter.</p>
+
+<div class="definition">
+  <div class="label">Vereinfachte Definition</div>
+  <p><strong>Zustand A → Veränderung (Change) → Zustand B</strong><br>
+  A = Ausgangszustand &nbsp;|&nbsp; B = Zielzustand</p>
+</div>
+
+<p>Changemanagement zielt auf planmäßige, mittel- bis langfristig wirksame Veränderung von Verhaltensmustern und Fähigkeiten, um zielgerichtet Prozesse und Kommunikationsstrukturen zu optimieren. Dafür ist eine <strong>ganzheitliche Betrachtungsweise</strong> der Organisation notwendig.</p>
+
+<!-- ══ KONDRATIEFF ══ -->
+<h2 id="kondratieff"><span class="num">1.1</span>Kondratieff-Zyklen: Wirtschaftlicher Wandel</h2>
+
+<p>Der Russe Nikolai Kondratieff stellte in den 1920er Jahren die These auf: Die Wirtschaft wächst und schrumpft in <strong>langen Zyklen</strong>. Ein neuer Wellenkamm entsteht, wenn bahnbrechende Erfindungen einen Innovationsschub auslösen.</p>
+
+<div class="table-wrap">
+  <table>
+    <tr><th>Zyklus</th><th>Basisinnovation</th><th>Zeitraum (ca.)</th></tr>
+    <tr><td>1. Kondratieff</td><td>Dampfmaschine</td><td>ab 1800</td></tr>
+    <tr><td>2. Kondratieff</td><td>Stahl / Eisenbahn (Massenfertigung)</td><td>ab 1850</td></tr>
+    <tr><td>3. Kondratieff</td><td>Chemie & Elektrotechnik</td><td>ab 1900</td></tr>
+    <tr><td>4. Kondratieff</td><td>Auto, Telefon, Computer, TV</td><td>ab 1950</td></tr>
+    <tr><td>5. Kondratieff</td><td>Computer + Telefon + Internet (Verschmelzung)</td><td>ab 1990</td></tr>
+    <tr><td>6. Kondratieff</td><td>Gesundheit (ökologisch & sozial)</td><td>ab 20XX</td></tr>
+  </table>
+</div>
+
+<div class="tipp">
+  <div class="label">Schlüsselerkenntnis</div>
+  <p>Produktivitätsfortschritte werden heute nicht mehr in erster Linie durch bessere Hardware oder Kapital erzielt. Die <strong>wirklichen Durchbrüche</strong> entstehen, wenn man die Art und Weise, wie Menschen zusammenarbeiten, neu gestaltet.</p>
+</div>
+
+<!-- ══ GRÜNDE ══ -->
+<h2 id="gruende"><span class="num">1.1</span>Gründe und Anlässe für Veränderung</h2>
+
+<div class="compare">
+  <div class="compare-box blau">
+    <div class="label" style="color:var(--red)">Externe Auslöser</div>
+    <ul>
+      <li>Märkte verändern sich durch Internet & Globalisierung</li>
+      <li>Neue Technologien / Megatrends (z.B. E-Mobilität)</li>
+      <li>Wirtschaftskrisen oder Naturkatastrophen</li>
+      <li>Politische Reformen, neue Gesetze</li>
+      <li>Demografischer Strukturwandel</li>
+      <li>Wertewandel der Verbraucher</li>
+      <li>Eintritt neuer Marktteilnehmer</li>
+    </ul>
+  </div>
+  <div class="compare-box gruen">
+    <div class="label" style="color:var(--blue)">Interne Auslöser</div>
+    <ul>
+      <li>Neuausrichtung des Produktportfolios</li>
+      <li>Digitalisierung interner Prozesse</li>
+      <li>Strategiewechsel</li>
+      <li>Reaktion auf Fehlentscheidungen</li>
+      <li>Einführung neuer Managementsysteme</li>
+    </ul>
+  </div>
+</div>
+
+<p>Aktuelle Beispiele: Krieg in der Ukraine / Corona (akute Krise), Umstellung Verbrenner → Elektro (neue Jobprofile, additive Produktion), Digitalisierung. In einer <strong>VUCA-Welt</strong> (Volatility, Uncertainty, Complexity, Ambiguity) ist Wandel die neue Normalität.</p>
+
+<!-- ══ ANSATZPUNKTE ══ -->
+<h2 id="ansatzpunkte"><span class="num">1.1</span>Ansatzpunkte des Changemanagements</h2>
+
+<p>Change Management setzt primär an <strong>drei Punkten</strong> an:</p>
+
+<div class="compare" style="grid-template-columns:1fr 1fr 1fr">
+  <div class="compare-box" style="border-top:3px solid var(--blue)">
+    <div class="label" style="color:var(--blue)">Struktur</div>
+    <ul style="font-size:13px">
+      <li>Strategie</li>
+      <li>Aufbauorganisation</li>
+      <li>Ablauforganisation</li>
+      <li>Ressourcen</li>
+      <li>Technologie</li>
+    </ul>
+  </div>
+  <div class="compare-box" style="border-top:3px solid var(--yellow)">
+    <div class="label" style="color:var(--yellow)">Kultur</div>
+    <ul style="font-size:13px">
+      <li>Symbole</li>
+      <li>Werte & Normen</li>
+      <li>Grundannahmen</li>
+    </ul>
+  </div>
+  <div class="compare-box" style="border-top:3px solid var(--green)">
+    <div class="label" style="color:var(--green)">Individuum</div>
+    <ul style="font-size:13px">
+      <li>Fähigkeiten</li>
+      <li>Rollen</li>
+      <li>Verhalten</li>
+    </ul>
+  </div>
+</div>
+
+<div class="merksatz">
+  <div class="label">Wichtig</div>
+  <p>Ein Wandel <strong>nur auf individueller und struktureller Ebene</strong>, ohne Einbeziehung der Unternehmenskultur, ist oft mit erheblichen Problemen behaftet oder zum Scheitern verurteilt. Die Unternehmenskultur ist von Einzelpersonen weitgehend unabhängig und verändert sich langsam.</p>
+</div>
+
+
+<hr class="section-div">
+
+<!-- ══ 1.2 EINSATZBEREICHE ══ -->
+<h2 id="einsatzbereiche"><span class="num">1.2</span>Einsatzbereiche des Changemanagements</h2>
+
+<p>Changemanagement kann in nahezu <strong>allen Unternehmensbereichen</strong> eingesetzt werden:</p>
+<ul>
+  <li>Reorganisation eines Bereiches oder des gesamten Unternehmens</li>
+  <li>Veränderung einzelner Prozesse (z.B. Warenannahme)</li>
+  <li>Strategiewechsel, Einführung neuer Managementsysteme</li>
+  <li>Grundlegende technische Systemwechsel</li>
+  <li>Reaktion auf Fehlentscheidungen der Vergangenheit</li>
+</ul>
+
+<div class="tipp">
+  <div class="label">Logistik-Beispiele</div>
+  <p>Einsatz von <strong>Telematik-Systemen</strong>, Anlieferung im <strong>Cross-Docking</strong>, plötzlicher Wegfall wichtiger Lieferanten durch Insolvenz oder Embargo.</p>
+</div>
+
+<!-- ══ FÜHRUNGSAUFGABE ══ -->
+<h2 id="fuehrungsaufgabe"><span class="num">1.2</span>Changemanagement als Führungsaufgabe</h2>
+
+<div class="definition">
+  <div class="label">Was Change Management leisten muss</div>
+  <p><strong># Organisation:</strong> „Strukturen schaffen, damit sich Menschen verändern <em>können</em>"<br>
+  <strong># Mensch:</strong> „Menschen begleiten, damit sie sich verändern <em>wollen</em>"</p>
+</div>
+
+<p>Aufgaben des Managements:</p>
+<ul>
+  <li>Notwendige Veränderungen <strong>rechtzeitig erkennen</strong></li>
+  <li>Neugestaltung von Prozessen sinnvoll planen und koordinieren</li>
+  <li>Veränderungsprozesse begleiten, beobachten und kontrollieren</li>
+  <li>Instrumente einsetzen: <strong>PDCA-Regelkreis</strong> oder <strong>Balanced Scorecard</strong></li>
+</ul>
+
+<div class="warnung">
+  <div class="label">Häufiger Fehler</div>
+  <p>Führungskräfte unterschätzen oft den Umfang der anfallenden Aufgaben – vor allem in Bezug auf die <strong>Mitarbeiterbetreuung</strong>. Nur durch zentrale Steuerung aller Bereiche durch das Management ist Changemanagement erfolgreich und koordiniert möglich.</p>
+</div>
+
+<!-- ══ PDCA ══ -->
+<h2 id="pdca"><span class="num">1.2</span>PDCA-Zyklus (Deming-Kreis)</h2>
+
+<p>Der PDCA-Zyklus ist ein <strong>iterativer Prozess zur kontinuierlichen Verbesserung</strong> von Prozessen, Produkten und Dienstleistungen.</p>
+
+<div class="phasen">
+  <div class="phase blue">
+    <div class="phase-num">Plan</div>
+    <div class="phase-name">Planen</div>
+    <div class="phase-sub">Problem identifizieren, Ziele setzen, Konzept entwickeln</div>
+  </div>
+  <div class="phase" style="background:#fff8e1">
+    <div class="phase-num">Do</div>
+    <div class="phase-name">Umsetzen</div>
+    <div class="phase-sub">Pilotprojekt, Maßnahmen implementieren, dokumentieren</div>
+  </div>
+  <div class="phase" style="background:#ffeaea">
+    <div class="phase-num">Check</div>
+    <div class="phase-name">Überprüfen</div>
+    <div class="phase-sub">Ergebnisse mit Zielen vergleichen, Abweichungen analysieren</div>
+  </div>
+  <div class="phase green">
+    <div class="phase-num">Act</div>
+    <div class="phase-name">Handeln</div>
+    <div class="phase-sub">Standardisieren (Erfolg) oder Zyklus neu starten (Misserfolg)</div>
+  </div>
+</div>
+
+<div class="table-wrap">
+  <table>
+    <tr><th>Bereich</th><th>PDCA-Anwendungsbeispiel</th></tr>
+    <tr><td><strong>Logistik</strong></td><td>Verbesserung von Lieferprozessen, Lagerbestandskontrolle, Transportwege optimieren</td></tr>
+    <tr><td><strong>Produktion</strong></td><td>Qualitätssicherung, Reduktion von Ausschuss, Effizienzsteigerung</td></tr>
+    <tr><td><strong>Dienstleistungen</strong></td><td>Kundenzufriedenheit verbessern, Bearbeitungszeiten optimieren</td></tr>
+  </table>
+</div>
+
+<div class="tipp">
+  <div class="label">Vorteile des PDCA</div>
+  <p>Fördert systematische & kontinuierliche Verbesserung · Unterstützt agiles Denken durch iterative Zyklen · Erleichtert das Lernen aus Erfahrungen</p>
+</div>
+
+
+<!-- ══ WANDELARTEN ══ -->
+<h2 id="wandelarten"><span class="num">1.2</span>Arten des Wandels</h2>
+
+<div class="table-wrap">
+  <table>
+    <tr><th></th><th>Wandel 2. Ordnung (revolutionär)</th><th>Wandel 1. Ordnung (evolutionär)</th></tr>
+    <tr><td><strong>Konzept</strong></td><td>Grundlegende Veränderungen nur unter Druck durchsetzbar</td><td>Veränderungen schrittweise an Mitarbeitende vermitteln</td></tr>
+    <tr><td><strong>Ziel</strong></td><td>Hohe Effizienz</td><td>Effizienz UND Humanität</td></tr>
+    <tr><td><strong>Charakteristik</strong></td><td>Fundamentaler & radikaler Wandel in kurzer Zeit</td><td>Fortschritt in kleinen Schritten über längeren Zeitraum</td></tr>
+    <tr><td><strong>Rolle Management</strong></td><td>Eher autoritärer Führungsstil, Mitarbeitende kaum eingebunden</td><td>Kooperativer Führungsstil, Management begleitet Mitarbeitende</td></tr>
+  </table>
+</div>
+
+<p>Die Art des Wandels hängt ab von: <strong>Dringlichkeit</strong> der Veränderung · <strong>Größe</strong> des Unternehmens · Art des <strong>Führungsstils</strong> · <strong>Umfang</strong> der Veränderung. Die Grenzen zwischen 1. und 2. Ordnung sind fließend.</p>
+
+<!-- ══ ERFOLGSFAKTOREN ══ -->
+<h2 id="erfolgsfaktoren"><span class="num">1.2</span>Erfolgsfaktoren von Changemanagement</h2>
+
+<p>Die betroffenen Mitarbeitenden müssen <strong>möglichst frühzeitig</strong> in den Veränderungsprozess einbezogen werden.</p>
+
+<div class="tipp">
+  <div class="label">Checkliste: Voraussetzungen für erfolgreiche Changeprojekte</div>
+  <ul>
+    <li>☑ Zeitnahe Einbindung der betroffenen Mitarbeitenden</li>
+    <li>☑ Klare, realistische Zielsetzung</li>
+    <li>☑ Offene Kommunikation des Managements</li>
+    <li>☑ Erschaffung eines attraktiven Zielbildes für die Mitarbeitenden</li>
+    <li>☑ Berücksichtigung von Ängsten, Konflikten und Widerständen</li>
+    <li>☑ Kommunikation der Notwendigkeit zur Veränderung</li>
+    <li>☑ Einheitliche Kommunikation der Führungskräfte</li>
+  </ul>
+</div>
+
+<!-- ══ UMSETZUNG ══ -->
+<h2 id="umsetzung"><span class="num">1.2</span>Erfolgreiche Umsetzung des Changemanagements</h2>
+
+<p>Geplantes und koordiniertes Vorgehen ist unabdingbar. Die vier Phasen:</p>
+
+<div class="phasen">
+  <div class="phase blue">
+    <div class="phase-num">Phase 1</div>
+    <div class="phase-name">Erkennen & Analysieren</div>
+    <div class="phase-sub">Problem früh wahrnehmen, Ursachen analysieren</div>
+  </div>
+  <div class="phase" style="background:#fff8e1">
+    <div class="phase-num">Phase 2</div>
+    <div class="phase-name">Planen</div>
+    <div class="phase-sub">Sollzustand, Ziele, Konzept, Meilensteine</div>
+  </div>
+  <div class="phase" style="background:#ffeaea">
+    <div class="phase-num">Phase 3</div>
+    <div class="phase-name">Umsetzen</div>
+    <div class="phase-sub">Einbindung aller MA, Dialog, Controlling</div>
+  </div>
+  <div class="phase green">
+    <div class="phase-num">Phase 4</div>
+    <div class="phase-name">Erfolgskontrolle</div>
+    <div class="phase-sub">PDCA, Soll-Ist-Vergleich, Kennzahlen</div>
+  </div>
+</div>
+
+<h3>Phase 3 – Umsetzung: Aufgaben des Managements</h3>
+<div class="compare">
+  <div class="compare-box">
+    <div class="label" style="color:var(--blue)">Kommunikation & Führung</div>
+    <ul style="font-size:13px">
+      <li>Information über Sinn und Ziel der Veränderung</li>
+      <li>Vorleben der Veränderungsbereitschaft</li>
+      <li>Dialog mit Mitarbeitenden</li>
+      <li>Darstellung der Notwendigkeit</li>
+      <li>Motivation der Mitarbeitenden</li>
+    </ul>
+  </div>
+  <div class="compare-box">
+    <div class="label" style="color:var(--green)">Organisation & Kontrolle</div>
+    <ul style="font-size:13px">
+      <li>Beteiligungsmöglichkeiten schaffen</li>
+      <li>Controllinginstrumente entwickeln (Change Scorecard)</li>
+      <li>Schulungsbedarf ermitteln</li>
+      <li>Sach- und Finanzmittel festlegen</li>
+      <li>Neues Verhalten stabilisieren</li>
+    </ul>
+  </div>
+</div>
+
+
+<hr class="section-div">
+
+<!-- ══ KOTTER ══ -->
+<h2 id="kotter"><span class="num">1.2</span>8-Phasen-Modell nach John P. Kotter</h2>
+
+<p>Kotters Modell ist detailreicher als Lewins und besteht aus acht aufeinander aufbauenden Phasen:</p>
+
+<div class="table-wrap">
+  <table>
+    <tr><th>#</th><th>Phase</th><th>Kerninhalt</th></tr>
+    <tr><td>1</td><td><strong>Veränderungswillen initiieren</strong></td><td>Verständnis für Defizite schaffen → Dringlichkeit erzeugen → Bewusstsein für Notwendigkeit wecken</td></tr>
+    <tr><td>2</td><td><strong>Führung aufbauen</strong></td><td>Führungsteam aus Mitarbeitenden mit unterschiedlichen Kompetenzen bilden</td></tr>
+    <tr><td>3</td><td><strong>Vision entwickeln</strong></td><td>Gemeinsam Ziele formulieren, Richtung der Veränderung festlegen, Mitarbeitende einbinden</td></tr>
+    <tr><td>4</td><td><strong>Vision kommunizieren</strong></td><td>Vision an jeden Mitarbeitenden herantragen und verinnerlichen lassen – Führung als Vorbild</td></tr>
+    <tr><td>5</td><td><strong>Hindernisse beseitigen</strong></td><td>Festgefahrene Strukturen und sperrende Mitarbeitende identifizieren und überwinden</td></tr>
+    <tr><td>6</td><td><strong>Erfolge sichtbar machen</strong></td><td>Jeden Teilerfolg kommunizieren – steigert Motivation und Akzeptanz</td></tr>
+    <tr><td>7</td><td><strong>Veränderungen weiter durchführen</strong></td><td>Nicht nachlassen, auch wenn erste Erfolge eingetreten sind – Tempo halten</td></tr>
+    <tr><td>8</td><td><strong>Veränderung verankern</strong></td><td>Neuen Standard in der Unternehmensstruktur festigen (wie Lewins „Refreezing")</td></tr>
+  </table>
+</div>
+
+<div class="tipp">
+  <div class="label">Gemeinsamkeit Kotter & Lewin</div>
+  <p>Beide Methoden schaffen zunächst ein <strong>Bewusstsein für die Notwendigkeit</strong> einer Veränderung und führen diese dann in <strong>kleinen Schritten</strong> durch, bis sie abgeschlossen werden kann. Die Methoden verfolgen im Kern fast immer den gleichen Ansatz.</p>
+</div>
+
+
+<!-- ══ LEWIN ══ -->
+<h2 id="lewin"><span class="num">1.2</span>3-Phasen-Modell nach Kurt Lewin (Feldtheorie)</h2>
+
+<p>Lewin unterscheidet zwei entgegengesetzte Kräfte: <strong>Driving Forces</strong> (Kräfte, die Wandel fördern) und <strong>Restraining Forces</strong> (Widerstände). Ziel: ein <strong>Gleichgewicht</strong> herstellen. Zu viel Druck in eine Richtung führt entweder zum Stillstand oder zur Überforderung.</p>
+
+<div class="phasen">
+  <div class="phase blue">
+    <div class="phase-num">1. Phase</div>
+    <div class="phase-name">Unfreezing</div>
+    <div class="phase-sub">Auftauen: Bereitschaft für Wandel schaffen, Notwendigkeit kommunizieren</div>
+  </div>
+  <div class="phase" style="background:#fff8e1">
+    <div class="phase-num">2. Phase</div>
+    <div class="phase-name">Moving</div>
+    <div class="phase-sub">Bewegen: Veränderung durchführen, Konzeption und Umsetzung</div>
+  </div>
+  <div class="phase green">
+    <div class="phase-num">3. Phase</div>
+    <div class="phase-name">Freezing</div>
+    <div class="phase-sub">Einfrieren: Veränderung stabilisieren, Rückfall verhindern, Erfolg erlebbar machen</div>
+  </div>
+</div>
+
+
+<!-- ══ STREICH ══ -->
+<h2 id="streich"><span class="num">1.2</span>7-Phasen-Modell nach Richard K. Streich</h2>
+
+<p>Streich beschreibt die <strong>emotionalen Reaktionen</strong> von Menschen im Veränderungsprozess. Auf der Sachebene sind Prozesse logisch – in der Praxis entscheidet die emotionale Führung. Die wahrgenommene persönliche Kompetenz (WK) verläuft in einer charakteristischen Kurve:</p>
+
+<div class="table-wrap">
+  <table>
+    <tr><th>#</th><th>Phase</th><th>Emotionale Reaktion</th><th>WK-Verlauf</th></tr>
+    <tr><td>1</td><td><strong>Schock</strong></td><td>Konfrontation mit Unerwarteten; eigene Handlungsentwürfe versagen</td><td>↓ sinkt</td></tr>
+    <tr><td>2</td><td><strong>Verneinung</strong></td><td>Werte werden aktiviert: „Das brauchen wir nicht!" – überhöhte Selbsteinschätzung</td><td>↑ steigt (falsch)</td></tr>
+    <tr><td>3</td><td><strong>Rationale Einsicht</strong></td><td>Notwendigkeit wird erkannt, aber kurzfristige Lösungen statt Verhaltensänderung</td><td>↓ sinkt</td></tr>
+    <tr><td>4</td><td><strong>Emotionale Akzeptanz</strong></td><td>„Krisis": Bereitschaft, Werte und Verhalten in Frage zu stellen. Chancen und Risiken!</td><td>↓ Tiefpunkt</td></tr>
+    <tr><td>5</td><td><strong>Ausprobieren</strong></td><td>Lernen: neue Verhaltensweisen üben – Erfolge und Misserfolge</td><td>↑ steigt langsam</td></tr>
+    <tr><td>6</td><td><strong>Erkenntnis</strong></td><td>Wissen, wann neue Verhaltensweisen angemessen sind – erweitertes Bewusstsein</td><td>↑ übertrifft Ausgangsniveau</td></tr>
+    <tr><td>7</td><td><strong>Integration</strong></td><td>Neue Denk- und Verhaltensweisen vollständig integriert – Startpunkt für neue Herausforderungen</td><td>↑↑ hoch</td></tr>
+  </table>
+</div>
+
+<div class="warnung">
+  <div class="label">Kritische Phase: Phase 4 – Emotionale Akzeptanz</div>
+  <p>Diese Phase ist die schwierigste. Gelingt es nicht, die Bereitschaft zur Verhaltensänderung zu wecken, kommt es zur erneuten Ablehnung und der Veränderungsprozess wird verlangsamt oder gestoppt.</p>
+</div>
+
+
+<!-- ══ KRÜGER ══ -->
+<h2 id="krueger"><span class="num">1.2</span>5-Stufen-Modell nach Wilfried Krüger</h2>
+
+<div class="phasen" style="flex-wrap:wrap">
+  <div class="phase blue" style="min-width:18%">
+    <div class="phase-num">1</div>
+    <div class="phase-name">Initialisierung</div>
+    <div class="phase-sub">Dringlichkeit erkennen, Projektteam bilden</div>
+  </div>
+  <div class="phase" style="background:#fff8e1;min-width:18%">
+    <div class="phase-num">2</div>
+    <div class="phase-name">Konzeption</div>
+    <div class="phase-sub">Detailplan, Softwareauswahl, Meilensteine</div>
+  </div>
+  <div class="phase" style="background:#ffeaea;min-width:18%">
+    <div class="phase-num">3</div>
+    <div class="phase-name">Mobilisierung</div>
+    <div class="phase-sub">MA gewinnen, Change-Agents einsetzen</div>
+  </div>
+  <div class="phase green" style="min-width:18%">
+    <div class="phase-num">4</div>
+    <div class="phase-name">Umsetzung</div>
+    <div class="phase-sub">Pilotprojekte, Schulungen, Anpassungen</div>
+  </div>
+  <div class="phase" style="background:var(--purple-bg);min-width:18%">
+    <div class="phase-num">5</div>
+    <div class="phase-name">Verfestigung</div>
+    <div class="phase-sub">In Unternehmenskultur verankern, Reviews</div>
+  </div>
+</div>
+
+<div class="pruefung">
+  <div class="label">Wichtig für die Prüfung</div>
+  <p>In Prüfungsaufgaben zu <strong>Veränderungsprozessen</strong> können auch klassische logistische Funktionen vorkommen (z.B. Kommissionierung, Bedarfsermittlungsmethoden). Immer den Kontext beachten!</p>
+</div>
+
+
+<hr class="section-div">
+
+<!-- ══ AUFGABEN ══ -->
+<h2 id="aufgaben"><span class="num">Übung</span>Prüfungsaufgaben mit Lösungen</h2>
+
+<!-- Aufgabe 1: PDCA -->
+<div class="aufgabe-box">
+  <div class="aufgabe-header">
+    <span class="tag tag-aufgabe">Aufgabe</span> PDCA-Zyklus – Optimierung der Lagerprozesse
+  </div>
+  <div class="aufgabe-body">
+    <p>Ein Logistikunternehmen, das Waren für mehrere Einzelhandelskunden lagert und ausliefert, hat in den letzten Wochen häufig Probleme mit der Lagerverwaltung. Es kommt zu Verzögerungen und falschen Auslieferungen. Das Unternehmen möchte seine Lagerprozesse verbessern.</p>
+    <p><strong>Aufgabe:</strong> Wende den PDCA-Zyklus an, um einen Plan zur Optimierung der Lagerprozesse zu entwickeln.</p>
+    <button class="toggle-btn" onclick="toggleLoesung(this)">→ Lösung anzeigen</button>
+  </div>
+  <div class="loesung-body">
+    <p><strong>Plan:</strong> Informationen sammeln (Mitarbeiterbefragung, Bestandsdaten auswerten) → Ursachen identifizieren (unübersichtliche Lagerorganisation, fehlende Bestandskontrolle, mangelnde Schulung) → Ziele setzen (z.B. Fehlerquote um 20 % senken) → Maßnahmen planen: digitales Lagerverwaltungssystem einführen, Schulungen durchführen, Zonen für Schnelldreher einrichten.</p>
+    <p><strong>Do:</strong> Maßnahmen testweise in einem Teilbereich umsetzen, Prozess dokumentieren, Feedback sammeln.</p>
+    <p><strong>Check:</strong> Daten vor/nach Einführung vergleichen (Fehlerquote, Zeitersparnis), Mitarbeiterbefragung, Zielerreichung analysieren.</p>
+    <p><strong>Act:</strong> Bei Erfolg → Änderungen auf gesamtes Lager ausweiten und standardisieren. Bei Misserfolg → Maßnahmen anpassen (Layout, intensivere Schulungen) und Zyklus neu starten.</p>
+  </div>
+</div>
+
+<!-- Aufgabe 2: Kotter WMS -->
+<div class="aufgabe-box">
+  <div class="aufgabe-header">
+    <span class="tag tag-aufgabe">Aufgabe</span> Kotter 8-Phasen – Einführung eines Warehouse-Management-Systems (WMS)
+  </div>
+  <div class="aufgabe-body">
+    <p>Die Phasen des Change Managements nach Kotter sollen auf die Einführung eines neuen WMS in einem Logistikzentrum angewendet werden. Das bestehende System ist veraltet; Fehler führen zu Verzögerungen in der Auftragsabwicklung.</p>
+    <p><strong>Aufgabe:</strong> Wende alle 8 Phasen nach Kotter auf dieses Beispiel an.</p>
+    <button class="toggle-btn" onclick="toggleLoesung(this)">→ Lösung anzeigen</button>
+  </div>
+  <div class="loesung-body">
+    <p><strong>1. Dringlichkeit erzeugen:</strong> Geschäftsführung initiiert Kampagne, die zeigt wie ineffizient das alte System ist und die Wettbewerbsfähigkeit gefährdet.</p>
+    <p><strong>2. Führungsteam bilden:</strong> Interdisziplinäres Team aus IT-Führungskräften, Lagerleitern und externen Beratern – technisches Wissen + operative Erfahrung.</p>
+    <p><strong>3. Vision entwickeln:</strong> „Ein automatisiertes WMS, das Fehler reduziert, Bestandsverwaltung optimiert und Lieferzeiten verkürzt." Strategie: Schulungen, stufenweiser Rollout, IT-Integration.</p>
+    <p><strong>4. Vision kommunizieren:</strong> Regelmäßige Meetings, E-Mails, Plakate im Lager, Informationsveranstaltungen mit konkreten Beispielen (Zeit- und Kostenersparnis).</p>
+    <p><strong>5. Hindernisse beseitigen:</strong> Gezielte Schulungen für erfahrene Lagerarbeiter, „Change-Botschafter" benennen, Mitarbeiterfeedback ernst nehmen.</p>
+    <p><strong>6. Kurzfristige Erfolge:</strong> Pilotlager – nach einem Monat Fehlerquote um 20 % gesunken → unternehmensweit kommunizieren.</p>
+    <p><strong>7. Veränderung weiter vorantreiben:</strong> Rollout auf weitere Lager, Erfahrungen aus Pilot nutzen, regelmäßige Erfolgskontrollen.</p>
+    <p><strong>8. In Unternehmenskultur verankern:</strong> WMS als Standard für alle Standorte, Kultur der kontinuierlichen Verbesserung, WMS-Kompetenz Teil der Mitarbeiterbewertung.</p>
+  </div>
+</div>
+
+<!-- Aufgabe 3: Lewin Fördertechnik -->
+<div class="aufgabe-box">
+  <div class="aufgabe-header">
+    <span class="tag tag-aufgabe">Aufgabe</span> Lewin 3-Phasen – Einführung automatisierter Fördertechnik
+  </div>
+  <div class="aufgabe-body">
+    <p>Ein Logistikzentrum will manuelle Handhabung durch automatisierte Fördertechnik ersetzen. Mitarbeiter haben Angst vor Jobverlust und leisten Widerstand.</p>
+    <p><strong>Aufgabe:</strong> Wende das 3-Phasen-Modell nach Lewin inkl. Feldtheorie an.</p>
+    <button class="toggle-btn" onclick="toggleLoesung(this)">→ Lösung anzeigen</button>
+  </div>
+  <div class="loesung-body">
+    <p><strong>1. Unfreezing:</strong> Hemmkräfte: Widerstand der Mitarbeiter (Unsicherheit, Gewohnheit). Treibkräfte: Effizienzsteigerung, Kostensenkung. → Dringlichkeit vermitteln, Vorteile kommunizieren (bessere Arbeitsbedingungen, anspruchsvollere Aufgaben), transparent machen: niemand verliert seinen Job, stattdessen Weiterbildungen.</p>
+    <p><strong>2. Moving:</strong> Einführung des Fördersystems; Mitarbeiter werden auf Überwachung und Steuerung geschult. Treibkräfte stärken (Effizienzgewinne betonen), Hemmkräfte durch Schulung und direkte Einbindung abbauen. Pilotprojekte starten, Feedback-Schleifen einrichten.</p>
+    <p><strong>3. Refreezing:</strong> Neue Norm etablieren, positive Ergebnisse feiern (Fehlerreduktion, schnellere Abwicklung). System regelmäßig überprüfen und optimieren. Regelmäßige Treffen, Anreiz- und Belohnungssystem für gute Leistungen.</p>
+  </div>
+</div>
+
+<!-- Aufgabe 4: Krüger -->
+<div class="aufgabe-box">
+  <div class="aufgabe-header">
+    <span class="tag tag-aufgabe">Aufgabe</span> Krüger 5-Stufen – Digitalisierung der Lieferkette
+  </div>
+  <div class="aufgabe-body">
+    <p>Ein großes Logistikunternehmen plant, seine Lieferkette zu digitalisieren (manuelle Prozesse automatisieren, vernetzte Lieferkette). Als Change-Manager sollen die fünf Phasen nach Krüger mit konkreten Maßnahmen belegt werden.</p>
+    <button class="toggle-btn" onclick="toggleLoesung(this)">→ Lösung anzeigen</button>
+  </div>
+  <div class="loesung-body">
+    <p><strong>1. Initialisierung:</strong> Notwendigkeit erkennen, Dringlichkeit festlegen, Projektteam bilden, Machbarkeitsanalyse. Maßnahme: Workshops und Informationsveranstaltungen, Bewusstsein schärfen.</p>
+    <p><strong>2. Konzeption:</strong> Detaillierten Projektplan erstellen (Meilensteine, Zeitrahmen, Verantwortlichkeiten), Softwarelösung auswählen, IT-Integration planen, Schulungskonzept.</p>
+    <p><strong>3. Mobilisierung:</strong> Mitarbeiter gewinnen, Widerstände erkennen (Jobverlust-Angst). Maßnahme: Kommunikationsplan, Change-Agents in den Abteilungen, regelmäßige Updates und offene Fragen beantworten.</p>
+    <p><strong>4. Umsetzung:</strong> System schrittweise einführen, Pilotprojekte in ausgewählten Abteilungen, Fehler erfassen und anpassen, bevor vollständige Implementierung.</p>
+    <p><strong>5. Verfestigung:</strong> In Unternehmenskultur verankern, Prozesse standardisieren, kontinuierliche Schulungsprogramme, regelmäßige Reviews zur Erfolgsmessung.</p>
+  </div>
+</div>
+
+<hr class="section-div">
+
+<!-- ══ QUIZ ══ -->
+<h2 id="quiz"><span class="num">Quiz</span>Wissens-Check</h2>
+<p>Teste dein Wissen zu Kapitel 1.1 und 1.2 – klick auf eine Antwort.</p>
+
+<div class="quiz-q">
+  <p>1. Was versteht man unter Changemanagement?</p>
+  <div class="quiz-opt" onclick="quizCheck(this, false)">a) Spontane, ungeplante Reaktion auf Marktveränderungen</div>
+  <div class="quiz-opt" onclick="quizCheck(this, true)">b) Die geplante Gestaltung von Wandel in Unternehmen</div>
+  <div class="quiz-opt" onclick="quizCheck(this, false)">c) Ausschließlich technische Systemumstellungen</div>
+  <div class="quiz-erkl">✓ Changemanagement ist die geplante, bewusste Gestaltung von Veränderungsprozessen – auf Unternehmens- und persönlicher Ebene.</div>
+</div>
+
+<div class="quiz-q">
+  <p>2. Welche drei Ansatzpunkte hat das Changemanagement laut Lehrbuch?</p>
+  <div class="quiz-opt" onclick="quizCheck(this, false)">a) Personal, Finanzen, Technik</div>
+  <div class="quiz-opt" onclick="quizCheck(this, true)">b) Struktur, Kultur, Individuum</div>
+  <div class="quiz-opt" onclick="quizCheck(this, false)">c) Vision, Mission, Strategie</div>
+  <div class="quiz-erkl">✓ Struktur (Aufbau-/Ablauforganisation), Kultur (Werte, Normen, Symbole) und Individuum (Fähigkeiten, Rollen, Verhalten) – alle drei müssen berücksichtigt werden.</div>
+</div>
+
+<div class="quiz-q">
+  <p>3. In welcher Reihenfolge laufen die PDCA-Phasen ab?</p>
+  <div class="quiz-opt" onclick="quizCheck(this, false)">a) Do → Plan → Act → Check</div>
+  <div class="quiz-opt" onclick="quizCheck(this, true)">b) Plan → Do → Check → Act</div>
+  <div class="quiz-opt" onclick="quizCheck(this, false)">c) Act → Plan → Do → Check</div>
+  <div class="quiz-erkl">✓ Plan (Planen) → Do (Umsetzen) → Check (Überprüfen) → Act (Handeln). Der Zyklus beginnt danach wieder von vorn.</div>
+</div>
+
+<div class="quiz-q">
+  <p>4. Was kennzeichnet den Wandel 2. Ordnung?</p>
+  <div class="quiz-opt" onclick="quizCheck(this, false)">a) Schrittweise Veränderungen über einen langen Zeitraum</div>
+  <div class="quiz-opt" onclick="quizCheck(this, false)">b) Kooperativer Führungsstil mit eingebundenen Mitarbeitenden</div>
+  <div class="quiz-opt" onclick="quizCheck(this, true)">c) Fundamentaler und radikaler Wandel in kurzer Zeit, oft unter Druck</div>
+  <div class="quiz-erkl">✓ Wandel 2. Ordnung ist revolutionär: grundlegende Änderungen in kurzer Zeit, eher autoritärer Führungsstil, Mitarbeitende kaum eingebunden. Ziel: hohe Effizienz.</div>
+</div>
+
+<div class="quiz-q">
+  <p>5. Was beschreibt Kotters Phase „Hindernisse beseitigen" (Phase 5)?</p>
+  <div class="quiz-opt" onclick="quizCheck(this, false)">a) Das Aufstellen einer Unternehmensstruktur</div>
+  <div class="quiz-opt" onclick="quizCheck(this, true)">b) Identifizierung und Überwindung von Widerständen – Personen und Strukturen</div>
+  <div class="quiz-opt" onclick="quizCheck(this, false)">c) Die Entwicklung eines neuen Produktes</div>
+  <div class="quiz-erkl">✓ In Phase 5 werden Probleme ermittelt (festgefahrene Strukturen, sperrende Mitarbeitende) und alle motiviert, diese Hindernisse zu beseitigen.</div>
+</div>
+
+<div class="quiz-q">
+  <p>6. Welche Phase ist nach Streich die kritischste und risikoreichste?</p>
+  <div class="quiz-opt" onclick="quizCheck(this, false)">a) Phase 1 – Schock</div>
+  <div class="quiz-opt" onclick="quizCheck(this, true)">b) Phase 4 – Emotionale Akzeptanz (Krisis)</div>
+  <div class="quiz-opt" onclick="quizCheck(this, false)">c) Phase 7 – Integration</div>
+  <div class="quiz-erkl">✓ Phase 4 ist die „Krisis" – hier entscheidet sich, ob Menschen bereit sind, Werte und Verhalten zu ändern. Gelingt es nicht, kommt es zur erneuten Ablehnung.</div>
+</div>
+
+<div class="quiz-q">
+  <p>7. Was sind die 3 Phasen nach Lewins Modell?</p>
+  <div class="quiz-opt" onclick="quizCheck(this, false)">a) Initialisierung, Konzeption, Verfestigung</div>
+  <div class="quiz-opt" onclick="quizCheck(this, false)">b) Plan, Do, Check</div>
+  <div class="quiz-opt" onclick="quizCheck(this, true)">c) Unfreezing, Moving, Freezing</div>
+  <div class="quiz-erkl">✓ Unfreezing (Auftauen), Moving (Bewegen/Verändern), Freezing/Refreezing (Einfrieren/Stabilisieren) – das 3-Phasen-Modell von Kurt Lewin.</div>
+</div>
+
+<div class="quiz-q">
+  <p>8. Nenne zwei typische Logistik-Beispiele für Changemanagement.</p>
+  <div class="quiz-opt" onclick="quizCheck(this, false)">a) Einführung einer neuen Kaffeemaschine und Renovierung des Pausenraums</div>
+  <div class="quiz-opt" onclick="quizCheck(this, true)">b) Einsatz von Telematik-Systemen und Cross-Docking-Einführung</div>
+  <div class="quiz-opt" onclick="quizCheck(this, false)">c) Gehaltserhöhungen und neue Dienstkleidung</div>
+  <div class="quiz-erkl">✓ Telematik-Systeme, Cross-Docking, aber auch der Wegfall von Lieferanten durch Insolvenz/Embargo sind klassische Logistik-Changemanagement-Beispiele.</div>
+</div>
+
+</main>
+
+<script>
+// Fortschrittsbalken
+window.addEventListener('scroll', () => {
+  const total = document.documentElement.scrollHeight - window.innerHeight;
+  const pct = total > 0 ? (window.scrollY / total) * 100 : 0;
+  document.getElementById('progress').style.width = pct + '%';
+}, { passive: true });
+
+// Aktiver Sidebar-Link
+const sections = document.querySelectorAll('[id]');
+const navLinks = document.querySelectorAll('.sidebar-nav a');
+window.addEventListener('scroll', () => {
+  let current = '';
+  sections.forEach(s => { if (window.scrollY >= s.offsetTop - 120) current = s.id; });
+  navLinks.forEach(a => {
+    a.classList.remove('active');
+    if (a.getAttribute('href') === '#' + current) a.classList.add('active');
+  });
+}, { passive: true });
+
+// Notizen – automatisch ans Ende jeder Card anhängen
+function toggleNotiz(btn) {
+  const a = btn.nextElementSibling;
+  if (a.style.display === 'block') { a.style.display = 'none'; btn.textContent = '✏ Notiz hinzufügen'; }
+  else { a.style.display = 'block'; btn.textContent = '✏ Notiz schließen'; a.focus(); }
+}
+
+function init(prefix) {
+  const selectors = ['.merksatz', '.definition', '.tipp', '.warnung', '.pruefung', '.compare-box', '.aufgabe-box'];
+  let counter = 0;
+  selectors.forEach(sel => {
+    document.querySelectorAll(sel).forEach(el => {
+      if (el.querySelector('.notiz-btn')) return;
+      const k = prefix + counter++;
+      const btn = document.createElement('button');
+      btn.className = 'notiz-btn';
+      btn.textContent = '✏ Notiz hinzufügen';
+      btn.onclick = function() { toggleNotiz(this); };
+      const area = document.createElement('textarea');
+      area.className = 'notiz-area';
+      area.placeholder = 'Deine Notiz…';
+      try { const s = localStorage.getItem(k); if (s) { area.value = s; area.style.display = 'block'; btn.textContent = '✏ Notiz schließen'; } } catch(e) {}
+      area.addEventListener('input', () => { try { localStorage.setItem(k, area.value); } catch(e) {} });
+      el.appendChild(btn);
+      el.appendChild(area);
+    });
+  });
+}
+
+init('kapitel_kroul_1_');
+
+// Lösung Toggle
+function toggleLoesung(btn) {
+  const body = btn.closest('.aufgabe-body').nextElementSibling;
+  const open = body.classList.toggle('open');
+  btn.textContent = open ? '→ Lösung ausblenden' : '→ Lösung anzeigen';
+}
+
+// Quiz
+function quizCheck(el, richtig) {
+  const q = el.closest('.quiz-q');
+  q.querySelectorAll('.quiz-opt').forEach(o => o.onclick = null);
+  el.classList.add(richtig ? 'richtig' : 'falsch');
+  const erkl = q.querySelector('.quiz-erkl');
+  erkl.classList.add('show');
+}
+</script>
+
+</body>
+</html>
