@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Meine Notizen – Logistik Lernportal</title>
+<style>:root {
+  --bg: #f5f4f0; --surface: #ffffff; --border: #e8e6df;
+  --text: #1a1916; --text-2: #6b6860;
+  --sidebar-bg: #1e1e1e; --sidebar-text: #e0ddd6; --sidebar-active: #4a90d9;
+  --blue: #3b6fd4; --blue-bg: #eef3fc;
+  --green: #2d7a4f; --green-bg: #eaf5ef;
+  --yellow: #b8860b; --yellow-bg: #fdf9e3;
+  --red: #c0392b; --red-bg: #fdf0ee;
+  --purple: #6c3483; --purple-bg: #f5eefb;
+  --radius: 8px;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: var(--bg); color: var(--text); display: flex; min-height: 100vh; font-size: 15px; line-height: 1.65; }
+aside { width: 240px; min-width: 240px; background: var(--sidebar-bg); color: var(--sidebar-text); display: flex; flex-direction: column; position: sticky; top: 0; height: 100vh; overflow-y: auto; }
+.sidebar-header { padding: 1.25rem 1rem 0.75rem; border-bottom: 1px solid #333; }
+.sidebar-back { font-size: 12px; color: #888; text-decoration: none; display: block; margin-bottom: 0.5rem; }
+.sidebar-back:hover { color: #ccc; }
+.sidebar-logo { font-size: 13px; color: #aaa; margin-bottom: 2px; }
+.sidebar-sub { font-size: 11px; color: #666; }
+.sidebar-chapter { padding: 0.6rem 1rem 0.2rem; font-size: 10px; text-transform: uppercase; letter-spacing: 0.1em; color: #555; margin-top: 0.5rem; }
+.sidebar-nav a { display: block; padding: 0.4rem 1rem 0.4rem 1.25rem; font-size: 13px; color: #bbb; text-decoration: none; border-left: 2px solid transparent; transition: all 0.15s; }
+.sidebar-nav a:hover { color: #fff; background: #2a2a2a; }
+.sidebar-nav a.active { color: #fff; border-left-color: var(--sidebar-active); background: #252525; }
+main { flex: 1; max-width: 820px; padding: 2.5rem 3rem; overflow-x: hidden; }
+.section-block { margin-bottom: 3rem; }
+.section-label { font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.12em; color: var(--text-2); margin-bottom: 0.4rem; }
+h2 { font-size: 26px; font-weight: 700; line-height: 1.2; margin-bottom: 0.4rem; }
+.section-subtitle { color: var(--text-2); font-size: 14px; margin-bottom: 1.5rem; }
+h3 { font-size: 14px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: var(--text-2); margin: 1.5rem 0 0.75rem; padding-bottom: 0.3rem; border-bottom: 1px solid var(--border); }
+h4 { font-size: 15px; font-weight: 600; margin: 1.25rem 0 0.5rem; }
+p { margin-bottom: 0.6rem; }
+ul, ol { padding-left: 1.4rem; margin-bottom: 0.75rem; }
+li { margin-bottom: 0.25rem; }
+.card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 1rem 1.25rem; margin-bottom: 0.75rem; }
+.card-label { font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 0.4rem; }
+.card-title { font-size: 16px; font-weight: 700; margin-bottom: 0.3rem; }
+.card p { font-size: 14px; margin: 0 0 0.3rem; }
+.card.blue { border-left: 3px solid var(--blue); background: var(--blue-bg); }
+.card.green { border-left: 3px solid var(--green); background: var(--green-bg); }
+.card.yellow { border-left: 3px solid var(--yellow); background: var(--yellow-bg); }
+.card.red { border-left: 3px solid var(--red); background: var(--red-bg); }
+.card.purple { border-left: 3px solid var(--purple); background: var(--purple-bg); }
+.card.blue .card-label { color: var(--blue); }
+.card.green .card-label { color: var(--green); }
+.card.yellow .card-label { color: var(--yellow); }
+.card.red .card-label { color: var(--red); }
+.card.purple .card-label { color: var(--purple); }
+.merksatz { background: var(--yellow-bg); border: 1px solid #e6d98a; border-left: 4px solid var(--yellow); border-radius: var(--radius); padding: 0.9rem 1.1rem; margin: 0.75rem 0; }
+.merksatz .merksatz-label { font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; color: var(--yellow); margin-bottom: 0.3rem; }
+.merksatz p { font-size: 14px; margin: 0; }
+.pruefungstipp { background: var(--purple-bg); border: 1px solid #c9a8e8; border-left: 4px solid var(--purple); border-radius: var(--radius); padding: 0.9rem 1.1rem; margin: 0.75rem 0; }
+.pruefungstipp .pt-label { font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; color: var(--purple); margin-bottom: 0.3rem; }
+.pruefungstipp p { font-size: 14px; margin: 0; }
+.grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 0.75rem; margin: 0.75rem 0; }
+.grid-3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 0.75rem; margin: 0.75rem 0; }
+.grid-card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 0.85rem 1rem; }
+.grid-card .gc-label { font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: var(--text-2); margin-bottom: 0.3rem; }
+.grid-card .gc-title { font-size: 14px; font-weight: 700; margin-bottom: 0.3rem; }
+.grid-card p, .grid-card li { font-size: 13px; }
+.steps { margin: 0.75rem 0; }
+.step { display: flex; gap: 0.75rem; margin-bottom: 0.5rem; align-items: flex-start; }
+.step-num { min-width: 26px; height: 26px; background: var(--blue); color: #fff; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 12px; font-weight: 700; flex-shrink: 0; margin-top: 1px; }
+.step-body { font-size: 14px; }
+.step-body strong { display: block; margin-bottom: 0.1rem; }
+.table-wrap { overflow-x: auto; margin: 0.75rem 0; }
+table { width: 100%; border-collapse: collapse; font-size: 13px; }
+th { background: #2a2a2a; color: #fff; padding: 0.5rem 0.75rem; text-align: left; font-size: 11px; text-transform: uppercase; letter-spacing: 0.05em; }
+td { padding: 0.45rem 0.75rem; border-bottom: 1px solid var(--border); vertical-align: top; }
+tr:last-child td { border-bottom: none; }
+tr:nth-child(even) td { background: #fafaf8; }
+.formel { background: #1e1e1e; color: #f0ede6; border-radius: var(--radius); padding: 1rem 1.25rem; font-family: 'Courier New', monospace; font-size: 13px; line-height: 1.9; margin: 0.75rem 0; }
+.notiz-btn { display: flex; align-items: center; gap: 0.4rem; background: none; border: 1px dashed #ccc; border-radius: 6px; padding: 0.3rem 0.75rem; font-size: 12px; color: #999; cursor: pointer; margin-top: 0.5rem; transition: all 0.15s; }
+.notiz-btn:hover { border-color: #999; color: #666; }
+.notiz-area { display: none; width: 100%; margin-top: 0.5rem; border: 1px solid #ddd; border-radius: 6px; padding: 0.5rem 0.75rem; font-size: 13px; font-family: inherit; resize: vertical; background: #fffef8; min-height: 60px; }
+.notiz-area:focus { outline: none; border-color: var(--blue); }
+hr.sep { border: none; border-top: 1px solid var(--border); margin: 2.5rem 0; }
+@media (max-width: 800px) { aside { display: none; } main { padding: 1.5rem 1.25rem; } .grid-2, .grid-3 { grid-template-columns: 1fr; } }
+
+body { display: block; }
+main { max-width: 760px; margin: 0 auto; padding: 2.5rem 2rem; }
+.export-btn { display: inline-flex; align-items: center; gap: 0.5rem; background: #2d7a4f; color: #fff; border: none; border-radius: 8px; padding: 0.75rem 1.5rem; font-size: 14px; font-weight: 600; cursor: pointer; transition: background 0.15s; }
+.export-btn:hover { background: #235f3d; }
+.import-btn { display: inline-flex; align-items: center; gap: 0.5rem; background: none; color: #3b6fd4; border: 2px solid #3b6fd4; border-radius: 8px; padding: 0.75rem 1.5rem; font-size: 14px; font-weight: 600; cursor: pointer; transition: all 0.15s; }
+.import-btn:hover { background: #eef3fc; }
+.notiz-entry { background: #fff; border: 1px solid #e8e6df; border-radius: 8px; padding: 1rem 1.25rem; margin-bottom: 0.75rem; }
+.notiz-entry .seite { font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; color: #3b6fd4; margin-bottom: 0.2rem; }
+.notiz-entry .inhalt { font-size: 14px; color: #1a1916; white-space: pre-wrap; }
+.notiz-entry .key { font-size: 11px; color: #aaa; margin-top: 0.3rem; }
+.empty-state { text-align: center; padding: 3rem; color: #aaa; font-size: 14px; }
+.count-badge { display: inline-block; background: #eef3fc; color: #3b6fd4; font-size: 11px; font-weight: 700; padding: 2px 8px; border-radius: 4px; margin-left: 0.5rem; }
+.status-msg { font-size: 13px; padding: 0.5rem 0.75rem; border-radius: 6px; margin-top: 0.75rem; display: none; }
+.status-msg.success { background: #eaf5ef; color: #2d7a4f; display: block; }
+.status-msg.error { background: #fdf0ee; color: #c0392b; display: block; }
+.btn-row { display: flex; gap: 1rem; flex-wrap: wrap; margin: 1.5rem 0; }
+.seiten-label { font-size: 12px; font-weight: 700; color: #6b6860; text-transform: uppercase; letter-spacing: 0.08em; margin: 1.5rem 0 0.5rem; padding-bottom: 0.3rem; border-bottom: 1px solid #e8e6df; }
+</style>
+</head>
+<body>
+<main>
+
+  <div class="section-label">Logistik Lernportal · Persönlich</div>
+  <h2>Meine Notizen <span class="count-badge" id="notiz-count">0</span></h2>
+  <p style="color:var(--text-2);font-size:14px;margin-bottom:0.25rem">Alle Notizen aus allen Skripten auf einen Blick.</p>
+  <p style="color:var(--text-2);font-size:13px">Notizen werden lokal in deinem Browser gespeichert. Exportiere sie regelmäßig als Backup – oder schicke die Datei weiter damit andere sie importieren können.</p>
+
+  <div class="btn-row">
+    <button class="export-btn" onclick="exportNotizen()">⬇ Notizen exportieren (.json)</button>
+    <label class="import-btn">
+      ⬆ Notizen importieren
+      <input type="file" accept=".json" onchange="importNotizen(event)" style="display:none">
+    </label>
+    <button onclick="clearAll()" style="background:none;border:1px solid #e8e6df;border-radius:8px;padding:0.75rem 1rem;font-size:13px;color:#aaa;cursor:pointer">🗑 Alle löschen</button>
+  </div>
+
+  <div id="status-msg" class="status-msg"></div>
+
+  <div class="merksatz" style="margin-bottom:1.5rem">
+    <div class="merksatz-label">💡 So funktioniert es</div>
+    <p>Schreibe Notizen direkt in den Skripten (bei jeder Karte, jedem Merksatz etc.) – sie erscheinen hier automatisch. Exportiere sie als .json-Datei als Backup. Bei einem neuen Gerät oder nach einem Fehler einfach die Datei wieder importieren. Du kannst die Datei auch an jemanden schicken – der kann sie bei sich importieren und hat dann dieselben Notizen.</p>
+  </div>
+
+  <div id="notizen-container"></div>
+
+  <div style="margin-top:2rem;padding-top:1.5rem;border-top:1px solid var(--border)">
+    <div class="section-label" style="margin-bottom:0.75rem">Schnellzugriff Skripte</div>
+    <div style="display:flex;flex-wrap:wrap;gap:0.5rem">
+      <a href="kapitel_0_einfuehrung.html" style="font-size:13px;color:var(--blue);text-decoration:none;background:var(--blue-bg);padding:4px 10px;border-radius:4px">Kap. 0</a>
+      <a href="kap1_1_logistische_ablaeufe.html" style="font-size:13px;color:var(--blue);text-decoration:none;background:var(--blue-bg);padding:4px 10px;border-radius:4px">Kap. 1.1 Abläufe</a>
+      <a href="kapitel_1_1.html" style="font-size:13px;color:var(--blue);text-decoration:none;background:var(--blue-bg);padding:4px 10px;border-radius:4px">Kap. 1.1 Planung</a>
+      <a href="kapitel_1_2_logistiksysteme.html" style="font-size:13px;color:var(--blue);text-decoration:none;background:var(--blue-bg);padding:4px 10px;border-radius:4px">Kap. 1.2</a>
+      <a href="kommunikation_fuehrung.html" style="font-size:13px;color:var(--blue);text-decoration:none;background:var(--blue-bg);padding:4px 10px;border-radius:4px">Kommunikation</a>
+      <a href="aufgaben.html" style="font-size:13px;color:var(--blue);text-decoration:none;background:var(--blue-bg);padding:4px 10px;border-radius:4px">Aufgaben</a>
+      <a href="formelsammlung.html" style="font-size:13px;color:var(--blue);text-decoration:none;background:var(--blue-bg);padding:4px 10px;border-radius:4px">Formelsammlung</a>
+    </div>
+  </div>
+
+  <p style="font-size:12px;color:var(--text-2);text-align:center;margin-top:2rem">
+    <a href="index.html" style="color:var(--text-2);text-decoration:none">← Zurück zur Übersicht</a>
+  </p>
+
+</main>
+<script>
+// Alle bekannten Seiten-Prefixe
+const PREFIXES = {
+  'kapitel_0_einfuehrung_': 'Kapitel 0 – Einführung',
+  'kap1_1_logistische_ablaeufe_': 'Kap. 1.1 – Logistische Abläufe',
+  'kapitel_1_1_': 'Kapitel 1.1 – Logistische Lösungen',
+  'kapitel_1_2_logistiksysteme_': 'Kapitel 1.2 – Logistiksysteme',
+  'kommunikation_fuehrung_': 'Kommunikation, Führung & Zusammenarbeit',
+  'aufgaben_': 'Aufgaben',
+  'formelsammlung_': 'Formelsammlung',
+};
+
+function getAllNotizen() {
+  const result = {};
+  for (let i = 0; i < localStorage.length; i++) {
+    const key = localStorage.key(i);
+    const val = localStorage.getItem(key);
+    if (val && val.trim()) {
+      result[key] = val;
+    }
+  }
+  return result;
+}
+
+function getPrefixLabel(key) {
+  for (const [prefix, label] of Object.entries(PREFIXES)) {
+    if (key.startsWith(prefix)) return label;
+  }
+  return 'Unbekannte Seite';
+}
+
+function renderNotizen() {
+  const all = getAllNotizen();
+  const container = document.getElementById('notizen-container');
+  const count = document.getElementById('notiz-count');
+  const keys = Object.keys(all);
+  count.textContent = keys.length;
+
+  if (keys.length === 0) {
+    container.innerHTML = '<div class="empty-state">Noch keine Notizen vorhanden.<br>Schreibe Notizen in den Skripten – sie erscheinen hier automatisch.</div>';
+    return;
+  }
+
+  // Gruppieren nach Seite
+  const grouped = {};
+  keys.forEach(key => {
+    const label = getPrefixLabel(key);
+    if (!grouped[label]) grouped[label] = [];
+    grouped[label].push({ key, val: all[key] });
+  });
+
+  let html = '';
+  for (const [seite, entries] of Object.entries(grouped)) {
+    html += `<div class="seiten-label">${seite}</div>`;
+    entries.forEach(({ key, val }) => {
+      html += `<div class="notiz-entry">
+        <div class="inhalt">${val.replace(/</g,'&lt;').replace(/>/g,'&gt;')}</div>
+        <div class="key">${key}</div>
+      </div>`;
+    });
+  }
+  container.innerHTML = html;
+}
+
+function exportNotizen() {
+  const all = getAllNotizen();
+  const count = Object.keys(all).length;
+  if (count === 0) {
+    showStatus('Keine Notizen zum Exportieren vorhanden.', 'error');
+    return;
+  }
+  const data = JSON.stringify({ version: 1, exported: new Date().toISOString(), notizen: all }, null, 2);
+  const blob = new Blob([data], { type: 'application/json' });
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  a.href = url;
+  a.download = 'lernportal_notizen_' + new Date().toISOString().slice(0,10) + '.json';
+  a.click();
+  URL.revokeObjectURL(url);
+  showStatus('✓ ' + count + ' Notizen exportiert!', 'success');
+}
+
+function importNotizen(e) {
+  const file = e.target.files[0];
+  if (!file) return;
+  const reader = new FileReader();
+  reader.onload = function(ev) {
+    try {
+      const data = JSON.parse(ev.target.result);
+      if (!data.notizen) throw new Error('Ungültiges Format');
+      let count = 0;
+      for (const [key, val] of Object.entries(data.notizen)) {
+        localStorage.setItem(key, val);
+        count++;
+      }
+      showStatus('✓ ' + count + ' Notizen importiert!', 'success');
+      renderNotizen();
+    } catch(err) {
+      showStatus('Fehler beim Import: ' + err.message, 'error');
+    }
+  };
+  reader.readAsText(file);
+  e.target.value = '';
+}
+
+function clearAll() {
+  if (!confirm('Wirklich ALLE Notizen löschen? Das kann nicht rückgängig gemacht werden!')) return;
+  const all = getAllNotizen();
+  Object.keys(all).forEach(key => localStorage.removeItem(key));
+  showStatus('Alle Notizen gelöscht.', 'success');
+  renderNotizen();
+}
+
+function showStatus(msg, type) {
+  const el = document.getElementById('status-msg');
+  el.textContent = msg;
+  el.className = 'status-msg ' + type;
+  setTimeout(() => { el.style.display = 'none'; }, 4000);
+}
+
+renderNotizen();
+</script>
+</body>
+</html>
