@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mathe-Grundlagen – IHK Logistik</title>
+<style>
+:root {
+  --bg: #f5f4f0; --surface: #ffffff; --border: #e8e6df;
+  --text: #1a1916; --text-2: #6b6860;
+  --sidebar-bg: #1e1e1e; --sidebar-text: #e0ddd6; --sidebar-active: #4a90d9;
+  --blue: #3b6fd4; --blue-bg: #eef3fc;
+  --green: #2d7a4f; --green-bg: #eaf5ef;
+  --yellow: #b8860b; --yellow-bg: #fdf9e3;
+  --red: #c0392b; --red-bg: #fdf0ee;
+  --purple: #6c3483; --purple-bg: #f5eefb;
+  --radius: 8px;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: var(--bg); color: var(--text); display: flex; min-height: 100vh; font-size: 15px; line-height: 1.65; }
+
+aside { width: 240px; min-width: 240px; background: var(--sidebar-bg); color: var(--sidebar-text); display: flex; flex-direction: column; position: sticky; top: 0; height: 100vh; overflow-y: auto; }
+.sidebar-header { padding: 1.25rem 1rem 0.75rem; border-bottom: 1px solid #333; }
+.sidebar-back { font-size: 12px; color: #888; text-decoration: none; display: block; margin-bottom: 0.5rem; }
+.sidebar-back:hover { color: #ccc; }
+.sidebar-logo { font-size: 13px; color: #aaa; margin-bottom: 2px; }
+.sidebar-sub { font-size: 11px; color: #666; }
+.sidebar-chapter { padding: 0.6rem 1rem 0.2rem; font-size: 10px; text-transform: uppercase; letter-spacing: 0.1em; color: #555; margin-top: 0.5rem; }
+.sidebar-nav a { display: block; padding: 0.4rem 1rem 0.4rem 1.25rem; font-size: 13px; color: #bbb; text-decoration: none; border-left: 2px solid transparent; transition: all 0.15s; }
+.sidebar-nav a:hover { color: #fff; background: #2a2a2a; }
+.sidebar-nav a.active { color: #fff; border-left-color: var(--sidebar-active); background: #252525; }
+
+main { flex: 1; max-width: 820px; padding: 2.5rem 3rem; overflow-x: hidden; }
+.section-block { margin-bottom: 3rem; }
+.section-label { font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.12em; color: var(--text-2); margin-bottom: 0.4rem; }
+h2 { font-size: 26px; font-weight: 700; line-height: 1.2; margin-bottom: 0.4rem; }
+.section-subtitle { color: var(--text-2); font-size: 14px; margin-bottom: 1.5rem; }
+h3 { font-size: 14px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: var(--text-2); margin: 1.5rem 0 0.75rem; padding-bottom: 0.3rem; border-bottom: 1px solid var(--border); }
+h4 { font-size: 15px; font-weight: 600; margin: 1.25rem 0 0.5rem; }
+p { margin-bottom: 0.6rem; }
+
+.card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 1rem 1.25rem; margin-bottom: 0.75rem; }
+.card.blue  { border-left: 3px solid var(--blue);   background: var(--blue-bg); }
+.card.green { border-left: 3px solid var(--green);  background: var(--green-bg); }
+.card.yellow{ border-left: 3px solid var(--yellow); background: var(--yellow-bg); }
+.card.red   { border-left: 3px solid var(--red);    background: var(--red-bg); }
+.card.purple{ border-left: 3px solid var(--purple); background: var(--purple-bg); }
+.card-label { font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 0.4rem; }
+.card.blue   .card-label { color: var(--blue); }
+.card.green  .card-label { color: var(--green); }
+.card.yellow .card-label { color: var(--yellow); }
+.card.red    .card-label { color: var(--red); }
+.card.purple .card-label { color: var(--purple); }
+.card p { font-size: 14px; margin: 0 0 0.3rem; }
+
+.merksatz { background: var(--yellow-bg); border: 1px solid #e6d98a; border-left: 4px solid var(--yellow); border-radius: var(--radius); padding: 0.9rem 1.1rem; margin: 0.75rem 0; }
+.merksatz .merksatz-label { font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; color: var(--yellow); margin-bottom: 0.3rem; }
+.merksatz p { font-size: 14px; margin: 0; }
+
+.pruefungstipp { background: var(--purple-bg); border: 1px solid #c9a8e8; border-left: 4px solid var(--purple); border-radius: var(--radius); padding: 0.9rem 1.1rem; margin: 0.75rem 0; }
+.pruefungstipp .pt-label { font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; color: var(--purple); margin-bottom: 0.3rem; }
+.pruefungstipp p { font-size: 14px; margin: 0; }
+
+.table-wrap { overflow-x: auto; margin: 0.75rem 0; }
+table { width: 100%; border-collapse: collapse; font-size: 13px; }
+th { background: #2a2a2a; color: #fff; padding: 0.5rem 0.75rem; text-align: left; font-size: 11px; text-transform: uppercase; letter-spacing: 0.05em; }
+td { padding: 0.45rem 0.75rem; border-bottom: 1px solid var(--border); vertical-align: top; }
+tr:last-child td { border-bottom: none; }
+tr:nth-child(even) td { background: #fafaf8; }
+
+.formel-block { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); margin-bottom: 1rem; overflow: hidden; }
+.formel-header { background: #f0f0ec; padding: 0.5rem 1rem; display: flex; align-items: center; gap: 0.75rem; }
+.formel-nr { font-size: 10px; font-weight: 700; color: var(--blue); background: var(--blue-bg); padding: 2px 8px; border-radius: 4px; font-family: monospace; }
+.formel-name { font-size: 13px; font-weight: 700; }
+.formel-body { padding: 0.75rem 1rem; }
+.formel-eq { background: #1e1e1e; color: #f0ede6; border-radius: 6px; padding: 0.6rem 1rem; font-family: 'Courier New', monospace; font-size: 14px; line-height: 1.7; margin: 0.4rem 0; }
+.formel-eq.green { background: #1a3a2a; color: #7dd5a5; }
+.formel-eq.amber { background: #2a1e00; color: #f0c060; }
+.formel-desc { font-size: 13px; color: var(--text-2); margin-top: 0.4rem; }
+
+/* Schritt-Kette */
+.steps { display: flex; flex-direction: column; gap: 0; margin: 0.75rem 0; }
+.step-row { display: flex; gap: 0; align-items: stretch; }
+.step-nr { min-width: 36px; background: #2a2a2a; color: #fff; font-size: 12px; font-weight: 700; display: flex; align-items: center; justify-content: center; border-radius: 6px 0 0 6px; flex-shrink: 0; }
+.step-body { flex: 1; background: #1e1e1e; color: #f0ede6; font-family: 'Courier New', monospace; font-size: 13px; padding: 0.55rem 1rem; border-radius: 0 6px 6px 0; line-height: 1.6; }
+.step-why { font-size: 12px; color: #888; font-family: -apple-system, sans-serif; padding: 0.25rem 1rem 0.5rem 1rem; background: #f8f8f4; border: 1px solid var(--border); border-top: none; border-radius: 0 0 6px 6px; margin-bottom: 0.5rem; }
+.step-result { background: #1a3a2a; color: #7dd5a5; font-family: 'Courier New', monospace; font-size: 14px; font-weight: 700; padding: 0.55rem 1rem; border-radius: 0 6px 6px 0; line-height: 1.6; flex: 1; }
+
+/* Waage-Visualisierung */
+.waage { display: flex; align-items: center; gap: 0; margin: 0.75rem 0; font-family: 'Courier New', monospace; font-size: 14px; }
+.waage-left { background: #eef3fc; border: 1px solid #c0d4f5; border-radius: 6px 0 0 6px; padding: 0.6rem 1rem; flex: 1; text-align: center; color: var(--blue); font-weight: 600; }
+.waage-mid { background: #2a2a2a; color: #fff; padding: 0.6rem 0.75rem; font-size: 18px; font-weight: 700; }
+.waage-right { background: #eaf5ef; border: 1px solid #8ecfb0; border-radius: 0 6px 6px 0; padding: 0.6rem 1rem; flex: 1; text-align: center; color: var(--green); font-weight: 600; }
+
+/* Quiz */
+.quiz-block { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 1rem 1.25rem; margin-bottom: 0.75rem; }
+.quiz-frage { font-size: 15px; font-weight: 600; margin-bottom: 0.75rem; }
+.quiz-options { display: flex; flex-direction: column; gap: 0.4rem; }
+.quiz-btn { text-align: left; padding: 0.55rem 1rem; border: 1px solid var(--border); border-radius: 6px; background: #fff; font-size: 14px; cursor: pointer; transition: all 0.15s; }
+.quiz-btn:hover { background: var(--blue-bg); border-color: var(--blue); }
+.quiz-btn.correct { background: var(--green-bg); border-color: var(--green); color: var(--green); font-weight: 600; }
+.quiz-btn.wrong { background: var(--red-bg); border-color: var(--red); color: var(--red); }
+.quiz-feedback { font-size: 13px; margin-top: 0.5rem; display: none; padding: 0.5rem 0.75rem; border-radius: 6px; }
+.quiz-feedback.show { display: block; }
+.quiz-feedback.ok { background: var(--green-bg); color: var(--green); }
+.quiz-feedback.nope { background: var(--red-bg); color: var(--red); }
+
+hr.sep { border: none; border-top: 1px solid var(--border); margin: 2.5rem 0; }
+@media (max-width: 800px) { aside { display: none; } main { padding: 1.5rem 1.25rem; } }
+</style>
+</head>
+<body>
+
+<aside>
+  <div class="sidebar-header">
+    <a href="index.html" class="sidebar-back">← Übersicht</a>
+    <div class="sidebar-logo">Logistik Lernportal</div>
+    <div class="sidebar-sub">Mathe-Grundlagen</div>
+  </div>
+
+  <div class="sidebar-chapter">Grundrechenarten</div>
+  <nav class="sidebar-nav">
+    <a href="#grundregeln">Punkt vor Strich & Klammern</a>
+    <a href="#brueche">Brüche & Prozent</a>
+    <a href="#wurzel">Wurzeln & Quadrieren</a>
+  </nav>
+
+  <div class="sidebar-chapter">Gleichungen umstellen</div>
+  <nav class="sidebar-nav">
+    <a href="#waageprinzip">Das Waage-Prinzip</a>
+    <a href="#gegenoperationen">Gegenoperationen</a>
+    <a href="#schritt-fuer-schritt">Schritt für Schritt</a>
+    <a href="#beispiele">Praxisbeispiele</a>
+  </nav>
+
+  <div class="sidebar-chapter">Logistik-Formeln</div>
+  <nav class="sidebar-nav">
+    <a href="#andler">Andler-Formel (√)</a>
+    <a href="#glaettung">Exponentielle Glättung</a>
+    <a href="#kennzahlen">Lagerkennzahlen</a>
+  </nav>
+
+  <div class="sidebar-chapter">Übungen</div>
+  <nav class="sidebar-nav">
+    <a href="#quiz">Mini-Quiz</a>
+  </nav>
+
+  <div style="margin-top:auto;padding:1rem;border-top:1px solid #2a2a2a">
+    <a href="aufgaben.html" style="display:flex;align-items:center;gap:0.5rem;font-size:13px;color:#aaa;text-decoration:none;padding:0.4rem 0.25rem;border-radius:6px;transition:color 0.15s" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='#aaa'">
+      📝 Zu den Aufgaben
+    </a>
+  </div>
+</aside>
+
+<main>
+
+<div class="section-block">
+  <div class="section-label">Mathe-Grundlagen · IHK Fachwirt Logistik</div>
+  <h2>Mathematik-Grundlagen</h2>
+  <p class="section-subtitle">Alles was du für den Fachwirt brauchst – klar erklärt, mit Praxisbezug zur Logistik</p>
+</div>
+
+<!-- ══════════════════════════════════════
+     GRUNDRECHENARTEN
+══════════════════════════════════════ -->
+<h3 id="grundregeln">Punkt vor Strich & Klammern</h3>
+
+<div class="card yellow">
+  <div class="card-label">Merksatz</div>
+  <p><strong>K · P · S</strong> – Klammern zuerst, dann Punkt (× ÷), dann Strich (+ −)</p>
+</div>
+
+<div class="formel-block">
+  <div class="formel-header"><span class="formel-nr">Regel</span><span class="formel-name">Reihenfolge der Rechenoperationen</span></div>
+  <div class="formel-body">
+    <div class="formel-eq">1. Klammern  →  2. × und ÷  →  3. + und −</div>
+    <div class="formel-desc">Beispiel: 3 + 4 × 2 = 3 + 8 = <strong>11</strong> (NICHT 14 – erst × dann +)</div>
+    <div class="formel-eq green" style="margin-top:.5rem;">( 3 + 4 ) × 2 = 7 × 2 = 14  ← Klammer ändert alles!</div>
+  </div>
+</div>
+
+<div class="card blue">
+  <div class="card-label">Logistik-Bezug</div>
+  <p>Bei der Andler-Formel steht unter dem Wurzelzeichen ein ganzer Bruch – der Zähler und Nenner werden <strong>komplett getrennt</strong> berechnet, bevor du dividierst. Das Wurzelzeichen wirkt wie eine große Klammer.</p>
+</div>
+
+<h3 id="brueche">Brüche & Prozent</h3>
+
+<div class="formel-block">
+  <div class="formel-header"><span class="formel-nr">Regel</span><span class="formel-name">Bruch = Division</span></div>
+  <div class="formel-body">
+    <div class="formel-eq">a / b  bedeutet:  a ÷ b</div>
+    <div class="formel-eq amber">Lagerdauer = 360 / Umschlagshäufigkeit  →  360 ÷ 4,8 = 75 Tage</div>
+    <div class="formel-desc">Ein Bruch ist nichts anderes als eine Divisionsaufgabe. Zähler ÷ Nenner.</div>
+  </div>
+</div>
+
+<div class="formel-block">
+  <div class="formel-header"><span class="formel-nr">Regel</span><span class="formel-name">Prozent umrechnen</span></div>
+  <div class="formel-body">
+    <div class="formel-eq">p %  =  p ÷ 100  =  0,0p</div>
+    <div class="formel-eq green">15 % = 15 ÷ 100 = 0,15</div>
+    <div class="formel-eq green">20 % = 20 ÷ 100 = 0,20</div>
+    <div class="formel-desc">In Formeln wie der Andler-Formel steht der Lagerhaltungskostensatz als Dezimalzahl – also immer erst umrechnen!</div>
+  </div>
+</div>
+
+<h3 id="wurzel">Wurzeln & Quadrieren</h3>
+
+<div class="formel-block">
+  <div class="formel-header"><span class="formel-nr">Regel</span><span class="formel-name">Wurzel und Quadrat sind Gegenoperationen</span></div>
+  <div class="formel-body">
+    <div class="formel-eq">√( x )  →  Welche Zahl × sich selbst ergibt x?</div>
+    <div class="formel-eq green">√16 = 4,  weil  4 × 4 = 16</div>
+    <div class="formel-eq green">√100 = 10,  weil  10 × 10 = 100</div>
+    <div class="formel-eq amber">√16.000.000 = 4.000  ←  Andler-Formel Ergebnis</div>
+    <div class="formel-desc">Beim Taschenrechner: Zahl eingeben → √ drücken. Bei großen Zahlen: Nullen paarweise kürzen hilft (√1.000.000 = 1.000).</div>
+  </div>
+</div>
+
+<hr class="sep">
+
+<!-- ══════════════════════════════════════
+     GLEICHUNGEN UMSTELLEN
+══════════════════════════════════════ -->
+<h3 id="waageprinzip">Das Waage-Prinzip</h3>
+
+<p style="font-size:14px;color:var(--text-2);margin-bottom:.75rem;">Eine Gleichung ist wie eine Waage – links und rechts muss immer das Gleiche sein. Wenn du auf einer Seite etwas änderst, musst du auf der anderen Seite dasselbe tun.</p>
+
+<div class="waage">
+  <div class="waage-left">linke Seite</div>
+  <div class="waage-mid">=</div>
+  <div class="waage-right">rechte Seite</div>
+</div>
+
+<div class="card green">
+  <div class="card-label">Grundregel</div>
+  <p>Was du auf einer Seite machst, machst du auf <strong>beiden</strong> Seiten. Dann bleibt die Gleichung ausgeglichen.</p>
+</div>
+
+<h3 id="gegenoperationen">Gegenoperationen – die 4 Fälle</h3>
+
+<div class="table-wrap">
+  <table>
+    <tr><th>Was steht da?</th><th>Gegenoperation</th><th>Beispiel</th><th>Ergebnis</th></tr>
+    <tr><td>+ 5 (addiert)</td><td>− 5 auf beiden Seiten</td><td>x + 5 = 12</td><td>x = 12 − 5 = <strong>7</strong></td></tr>
+    <tr><td>− 3 (subtrahiert)</td><td>+ 3 auf beiden Seiten</td><td>x − 3 = 9</td><td>x = 9 + 3 = <strong>12</strong></td></tr>
+    <tr><td>× 4 (multipliziert)</td><td>÷ 4 auf beiden Seiten</td><td>4x = 20</td><td>x = 20 ÷ 4 = <strong>5</strong></td></tr>
+    <tr><td>÷ 2 (dividiert)</td><td>× 2 auf beiden Seiten</td><td>x ÷ 2 = 6</td><td>x = 6 × 2 = <strong>12</strong></td></tr>
+  </table>
+</div>
+
+<div class="merksatz">
+  <div class="merksatz-label">Merksatz</div>
+  <p>Gesucht ist immer: <strong>Variable alleine auf einer Seite.</strong> Alles andere Schritt für Schritt auf die andere Seite schieben – immer mit der Gegenoperation.</p>
+</div>
+
+<h3 id="schritt-fuer-schritt">Schritt für Schritt – Formel umstellen</h3>
+
+<p style="font-size:14px;color:var(--text-2);margin-bottom:.75rem;"><strong>Beispiel aus dem Unterricht:</strong> α ist unbekannt, alles andere ist gegeben.</p>
+
+<div class="formel-block">
+  <div class="formel-header"><span class="formel-nr">Aufgabe</span><span class="formel-name">Glättungsfaktor α aus der Formel herauslösen</span></div>
+  <div class="formel-body">
+    <div class="formel-eq">Ausgangssituation:  504,5  =  α · 500  +  (1 − α) · 515</div>
+  </div>
+</div>
+
+<div class="steps">
+  <div class="step-row">
+    <div class="step-nr">1</div>
+    <div class="step-body">504,5  =  500α  +  515  −  515α</div>
+  </div>
+  <div class="step-why">Klammer auflösen: (1 − α) · 515 = 1·515 − α·515 = 515 − 515α</div>
+
+  <div class="step-row">
+    <div class="step-nr">2</div>
+    <div class="step-body">504,5  −  515  =  500α  −  515α</div>
+  </div>
+  <div class="step-why">515 auf die linke Seite bringen → Gegenoperation: − 515 auf beiden Seiten</div>
+
+  <div class="step-row">
+    <div class="step-nr">3</div>
+    <div class="step-body">−10,5  =  −15α</div>
+  </div>
+  <div class="step-why">Links: 504,5 − 515 = −10,5 · Rechts: 500α − 515α = −15α (α-Terme zusammenfassen)</div>
+
+  <div class="step-row">
+    <div class="step-nr">4</div>
+    <div class="step-body">−10,5  ÷  (−15)  =  α</div>
+  </div>
+  <div class="step-why">α ist mit −15 multipliziert → Gegenoperation: durch −15 teilen auf beiden Seiten</div>
+
+  <div class="step-row">
+    <div class="step-nr">✓</div>
+    <div class="step-result">α  =  0,7</div>
+  </div>
+  <div class="step-why">Minus ÷ Minus = Plus → −10,5 ÷ −15 = 10,5 ÷ 15 = 0,7</div>
+</div>
+
+<div class="card green">
+  <div class="card-label">Probe – immer machen!</div>
+  <p>Ergebnis zurückeinsetzen: 0,7 · 500 + 0,3 · 515 = 350 + 154,5 = <strong>504,5 ✓</strong></p>
+</div>
+
+<hr class="sep">
+
+<!-- ══════════════════════════════════════
+     LOGISTIK-FORMELN ERKLÄRT
+══════════════════════════════════════ -->
+<h3 id="andler">Andler-Formel – optimale Bestellmenge</h3>
+
+<div class="formel-block">
+  <div class="formel-header"><span class="formel-nr">Formel</span><span class="formel-name">Andlersche Formel</span></div>
+  <div class="formel-body">
+    <div class="formel-eq">x_opt  =  √(  2 × Jahresbedarf × Bestellkosten  /  Einstandspreis × Lagerkostensatz  )</div>
+    <div class="formel-desc" style="margin-top:.6rem;"><strong>Wichtig:</strong> Lagerkostensatz als Dezimalzahl (15 % → 0,15)</div>
+  </div>
+</div>
+
+<div class="steps">
+  <div class="step-row">
+    <div class="step-nr">1</div>
+    <div class="step-body">Zähler:  2 × 80.000 × 180  =  28.800.000</div>
+  </div>
+  <div class="step-why">Erst alles im Zähler ausrechnen (oben im Bruch)</div>
+
+  <div class="step-row">
+    <div class="step-nr">2</div>
+    <div class="step-body">Nenner:  12 × 0,15  =  1,80</div>
+  </div>
+  <div class="step-why">Dann alles im Nenner ausrechnen (unten im Bruch) – 15 % = 0,15!</div>
+
+  <div class="step-row">
+    <div class="step-nr">3</div>
+    <div class="step-body">Bruch:  28.800.000  ÷  1,80  =  16.000.000</div>
+  </div>
+  <div class="step-why">Jetzt Zähler ÷ Nenner</div>
+
+  <div class="step-row">
+    <div class="step-nr">✓</div>
+    <div class="step-result">√16.000.000  =  4.000 Stück</div>
+  </div>
+  <div class="step-why">Wurzel ziehen → Taschenrechner oder: √16.000.000 = √16 × √1.000.000 = 4 × 1.000 = 4.000</div>
+</div>
+
+<h3 id="glaettung">Exponentielle Glättung – Formel umstellen</h3>
+
+<div class="table-wrap">
+  <table>
+    <tr><th>Gesucht</th><th>Formel umgestellt</th><th>Wann gebraucht?</th></tr>
+    <tr><td><strong>Vorhersage F̂(t+1)</strong></td><td>F̂(t+1) = α · X(t) + (1−α) · F̂(t)</td><td>Normalfall: nächste Periode prognostizieren</td></tr>
+    <tr><td><strong>Glättungsfaktor α</strong></td><td>α = (F̂(t+1) − F̂(t)) ÷ (X(t) − F̂(t))</td><td>α unbekannt, alle anderen Werte gegeben</td></tr>
+    <tr><td><strong>Ist-Wert X(t)</strong></td><td>X(t) = (F̂(t+1) − (1−α) · F̂(t)) ÷ α</td><td>Verbrauch unbekannt, Prognose bekannt</td></tr>
+  </table>
+</div>
+
+<div class="merksatz">
+  <div class="merksatz-label">Merksatz α umstellen</div>
+  <p>Kurzweg: α = <strong>(Neue Prognose − Alte Prognose) ÷ (Ist-Wert − Alte Prognose)</strong><br>
+  Im Beispiel: (504,5 − 515) ÷ (500 − 515) = −10,5 ÷ −15 = <strong>0,7</strong></p>
+</div>
+
+<h3 id="kennzahlen">Lagerkennzahlen – die 3 wichtigen</h3>
+
+<div class="formel-block">
+  <div class="formel-header"><span class="formel-nr">1</span><span class="formel-name">Lagerumschlagshäufigkeit</span></div>
+  <div class="formel-body">
+    <div class="formel-eq">U  =  Jahresverbrauch  ÷  Ø Lagerbestand</div>
+    <div class="formel-desc">Wie oft wird das Lager pro Jahr komplett umgeschlagen? Hoher Wert = gut (wenig Kapital gebunden).</div>
+    <div class="formel-eq green">Beispiel: 96 t ÷ 20 t = 4,8-mal pro Jahr</div>
+  </div>
+</div>
+
+<div class="formel-block">
+  <div class="formel-header"><span class="formel-nr">2</span><span class="formel-name">Lagerdauer</span></div>
+  <div class="formel-body">
+    <div class="formel-eq">D  =  360 Tage  ÷  Lagerumschlagshäufigkeit</div>
+    <div class="formel-desc">Wie lange liegt ein Artikel durchschnittlich im Lager? Niedrige Lagerdauer = schnelle Bewegung.</div>
+    <div class="formel-eq green">Beispiel: 360 ÷ 4,8 = 75 Tage</div>
+  </div>
+</div>
+
+<div class="formel-block">
+  <div class="formel-header"><span class="formel-nr">3</span><span class="formel-name">Ø Lagerbestand (mit Sicherheitsbestand)</span></div>
+  <div class="formel-body">
+    <div class="formel-eq">Ø LB  =  (optimale Bestellmenge ÷ 2)  +  Sicherheitsbestand</div>
+    <div class="formel-desc">Die Hälfte der Bestellmenge liegt im Durchschnitt im Lager – plus der Sicherheitspuffer der immer da ist.</div>
+    <div class="formel-eq green">Beispiel: 4.000 ÷ 2 + 500 = 2.500 Stück</div>
+  </div>
+</div>
+
+<hr class="sep">
+
+<!-- ══════════════════════════════════════
+     MINI-QUIZ
+══════════════════════════════════════ -->
+<h3 id="quiz">Mini-Quiz – teste dich selbst</h3>
+
+<div class="quiz-block" id="q1">
+  <div class="quiz-frage">1 · Was ist die Gegenoperation zu „× 6"?</div>
+  <div class="quiz-options">
+    <button class="quiz-btn" onclick="answer('q1',this,false)">− 6 auf beiden Seiten</button>
+    <button class="quiz-btn" onclick="answer('q1',this,true)">÷ 6 auf beiden Seiten</button>
+    <button class="quiz-btn" onclick="answer('q1',this,false)">+ 6 auf beiden Seiten</button>
+  </div>
+  <div class="quiz-feedback" id="q1-fb"></div>
+</div>
+
+<div class="quiz-block" id="q2">
+  <div class="quiz-frage">2 · Du hast: 3x = 21 · Wie lautet x?</div>
+  <div class="quiz-options">
+    <button class="quiz-btn" onclick="answer('q2',this,false)">x = 63</button>
+    <button class="quiz-btn" onclick="answer('q2',this,false)">x = 18</button>
+    <button class="quiz-btn" onclick="answer('q2',this,true)">x = 7</button>
+  </div>
+  <div class="quiz-feedback" id="q2-fb"></div>
+</div>
+
+<div class="quiz-block" id="q3">
+  <div class="quiz-frage">3 · Was ergibt −15 ÷ −3?</div>
+  <div class="quiz-options">
+    <button class="quiz-btn" onclick="answer('q3',this,false)">−5</button>
+    <button class="quiz-btn" onclick="answer('q3',this,true)">+5</button>
+    <button class="quiz-btn" onclick="answer('q3',this,false)">45</button>
+  </div>
+  <div class="quiz-feedback" id="q3-fb"></div>
+</div>
+
+<div class="quiz-block" id="q4">
+  <div class="quiz-frage">4 · Lagerdauer = 360 ÷ ? · Bei einem Lagerumschlag von 8-mal pro Jahr?</div>
+  <div class="quiz-options">
+    <button class="quiz-btn" onclick="answer('q4',this,false)">2.880 Tage</button>
+    <button class="quiz-btn" onclick="answer('q4',this,true)">45 Tage</button>
+    <button class="quiz-btn" onclick="answer('q4',this,false)">30 Tage</button>
+  </div>
+  <div class="quiz-feedback" id="q4-fb"></div>
+</div>
+
+<div class="quiz-block" id="q5">
+  <div class="quiz-frage">5 · 20 % als Dezimalzahl?</div>
+  <div class="quiz-options">
+    <button class="quiz-btn" onclick="answer('q5',this,false)">2,0</button>
+    <button class="quiz-btn" onclick="answer('q5',this,false)">0,02</button>
+    <button class="quiz-btn" onclick="answer('q5',this,true)">0,20</button>
+  </div>
+  <div class="quiz-feedback" id="q5-fb"></div>
+</div>
+
+</main>
+
+<script>
+const feedbacks = {
+  q1: { ok: 'Genau! Multiplikation wird durch Division rückgängig gemacht.', nope: 'Nicht ganz. Die Gegenoperation zu × ist ÷ – du teilst beide Seiten durch dieselbe Zahl.' },
+  q2: { ok: 'Richtig! 3x = 21 → x = 21 ÷ 3 = 7.', nope: 'Nicht ganz. 3x = 21 → durch 3 teilen → x = 21 ÷ 3 = 7.' },
+  q3: { ok: 'Korrekt! Minus ÷ Minus = Plus. Merke: Gleiches Vorzeichen → positives Ergebnis.', nope: 'Aufgepasst: Minus ÷ Minus = Plus! Verschiedene Vorzeichen ergeben Minus, gleiche ergeben Plus.' },
+  q4: { ok: 'Super! 360 ÷ 8 = 45 Tage.', nope: 'Nicht ganz. Lagerdauer = 360 ÷ Umschlagshäufigkeit = 360 ÷ 8 = 45 Tage.' },
+  q5: { ok: 'Richtig! Prozent ÷ 100 = Dezimalzahl. 20 ÷ 100 = 0,20.', nope: 'Nicht ganz. Prozent immer durch 100 teilen: 20 % = 20 ÷ 100 = 0,20.' }
+};
+
+function answer(id, btn, correct) {
+  const block = document.getElementById(id);
+  const btns = block.querySelectorAll('.quiz-btn');
+  btns.forEach(b => b.disabled = true);
+  btn.classList.add(correct ? 'correct' : 'wrong');
+  const fb = document.getElementById(id + '-fb');
+  fb.textContent = correct ? '✓ ' + feedbacks[id].ok : '✗ ' + feedbacks[id].nope;
+  fb.className = 'quiz-feedback show ' + (correct ? 'ok' : 'nope');
+}
+
+const sections = document.querySelectorAll('[id]');
+const navLinks = document.querySelectorAll('.sidebar-nav a');
+window.addEventListener('scroll', () => {
+  let current = '';
+  sections.forEach(s => { if (window.scrollY >= s.offsetTop - 100) current = s.id; });
+  navLinks.forEach(a => {
+    a.classList.remove('active');
+    if (a.getAttribute('href') === '#' + current) a.classList.add('active');
+  });
+});
+</script>
+</body>
+</html>
