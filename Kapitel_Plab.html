@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Kapitel 1.1 – Plab · Logistische Abläufe &amp; Systemanalyse</title>
+<title>Kapitel 1.1–1.2 – Plab · Logistische Abläufe &amp; Systemanalyse</title>
 <style>
 :root {
   --bg: #f5f4f0; --surface: #ffffff; --border: #e8e6df;
@@ -140,6 +140,32 @@ ol li { margin-bottom: 0.4rem; font-size: 14px; }
     <a href="#organisation">Organisation</a>
     <a href="#orgformen">Organisationsformen</a>
     <a href="#schnittstellen">Schnittstellen</a>
+  </nav>
+  <div class="sidebar-chapter">1.2 Logistiksysteme</div>
+  <nav class="sidebar-nav">
+    <a href="#logsysteme">Grundlagen Systeme</a>
+    <a href="#ik-systeme">I&amp;K-Systeme</a>
+    <a href="#transport-grundlagen">Transport Grundlagen</a>
+    <a href="#foerdermittel">Fördermittel</a>
+    <a href="#verkehrstraeger">Verkehrsträger</a>
+    <a href="#spedition">Speditionskonzepte</a>
+    <a href="#incoterms">Incoterms 2020</a>
+    <a href="#vertraege">Verträge &amp; Recht</a>
+    <a href="#umschlag">Umschlagsysteme</a>
+  </nav>
+  <div class="sidebar-chapter">1.2.4–1.2.7</div>
+  <nav class="sidebar-nav">
+    <a href="#lager-grundlagen">Lager Grundlagen</a>
+    <a href="#lagerorganisation">Lagerorganisation</a>
+    <a href="#lagerablaeufe">Lagerabläufe</a>
+    <a href="#kommissionierung">Kommissionierung</a>
+    <a href="#beschaffungslog">Beschaffungslogistik</a>
+    <a href="#produktionslog">Produktionslogistik</a>
+    <a href="#distributionslog">Distributionslogistik</a>
+    <a href="#reverselogistik">Reverse Logistik</a>
+    <a href="#recycling">Recycling &amp; Abfall</a>
+    <a href="#materialfluss">Materialflussanalyse</a>
+    <a href="#gestaltung">Gestaltungsprinzipien</a>
   </nav>
 </aside>
 
@@ -804,6 +830,1059 @@ Produktionswert
   </table>
 
   <div class="merksatz">ERP-Systeme ermöglichen die Digitalisierung und Automatisierung logistischer Prozesse – ohne ERP kein modernes SCM!</div>
+  <div class="note-area"><button class="note-btn" onclick="toggleNote(this)">✏ Notiz hinzufügen</button><textarea class="note-input" style="display:none" placeholder="Deine Notizen..."></textarea></div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════ -->
+<!-- KAPITEL 1.2 – LOGISTIKSYSTEME              -->
+<!-- ═══════════════════════════════════════════ -->
+
+<div style="margin: 2.5rem 0 1.5rem; padding: 1rem 1.25rem; background: var(--sidebar-bg); border-radius: var(--radius); color: #e0ddd6;">
+  <div style="font-size:11px; text-transform:uppercase; letter-spacing:0.08em; color:#888; margin-bottom:0.3rem;">Kapitel 1.2</div>
+  <div style="font-size:18px; font-weight:600;">Logistiksysteme</div>
+  <div style="font-size:13px; color:#aaa; margin-top:0.2rem;">Folien 111–190 · Benedikt Plab</div>
+</div>
+
+<!-- GRUNDLAGEN LOGISTIKSYSTEME -->
+<section id="logsysteme">
+  <h2>1.2.1 Grundlagen von Logistiksystemen</h2>
+
+  <h3>Bestandteile logistischer Systeme</h3>
+  <div class="card blue">
+    <div class="label">Feste Elemente</div>
+    <div class="def">Ständige, immaterielle Bestandteile des Systems zur Erbringung der logistischen Leistung:<br><br>
+    Informationsübertragende · Informationserfassende · Informationsverarbeitende · Informationsspeichernde · Informationsdarstellende Elemente</div>
+  </div>
+
+  <h3>Logistik- und Transformationsprozesse</h3>
+  <table>
+    <tr><th>Prozess</th><th>Art der Veränderung</th><th>System</th></tr>
+    <tr><td><strong>Transport</strong></td><td>Räumliche Veränderung des Objekts</td><td>Transportsystem</td></tr>
+    <tr><td><strong>Umschlag</strong></td><td>Quantitative Veränderung des Objekts</td><td>Umschlagsystem</td></tr>
+    <tr><td><strong>Lagerung</strong></td><td>Zeitliche und/oder qualitative Veränderung</td><td>Lagersystem</td></tr>
+    <tr><td><strong>Kommissionierung</strong></td><td>Quantitative und/oder qualitative Veränderung</td><td>Kommissioniersystem</td></tr>
+  </table>
+
+  <h3>Order-to-Payment-Systeme</h3>
+  <div class="merksatz">S = Platzhalter für verschiedene Systemvarianten – beschreibt den Auslöser des logistischen Prozesses</div>
+  <div class="grid3">
+    <div class="card green">
+      <div class="label">Kurzes S</div>
+      <div class="term">Make to Stock</div>
+      <div class="def">Produktion auf Vorrat<br><em>Beispiel: Lebensmittel, „weiße" Ware</em></div>
+    </div>
+    <div class="card amber">
+      <div class="label">Mittleres S</div>
+      <div class="term">Make to Order</div>
+      <div class="def">Produktion auf Bestellung<br><em>Beispiel: Automobilbranche</em></div>
+    </div>
+    <div class="card blue">
+      <div class="label">Langes S</div>
+      <div class="term">Engineer to Order</div>
+      <div class="def">Entwicklung und Produktion nach Kundenspezifikation<br><em>Beispiel: Sondermaschinenbau</em></div>
+    </div>
+  </div>
+  <div class="note-area"><button class="note-btn" onclick="toggleNote(this)">✏ Notiz hinzufügen</button><textarea class="note-input" style="display:none" placeholder="Deine Notizen..."></textarea></div>
+</section>
+
+<!-- I&K-SYSTEME -->
+<section id="ik-systeme">
+  <h2>1.2.2 Informations- und Kommunikationssysteme</h2>
+
+  <div class="card green">
+    <div class="label">Grundregeln der I&amp;K-Systematik</div>
+    <div class="def">
+      • Zu jedem Materialfluss existiert mindestens ein Informationsfluss<br>
+      • Informationen <strong>starten, steuern, kontrollieren und schließen</strong> Prozesse ab
+    </div>
+  </div>
+
+  <h3>Informationsarten im logistischen System</h3>
+  <div class="grid2">
+    <div class="mini-card"><div class="mini-title">📅 Vorbereitende Informationen</div><div class="mini-text">Planung und Vorbereitung des Prozesses</div></div>
+    <div class="mini-card"><div class="mini-title">➡️ Vorauseilende Informationen</div><div class="mini-text">Laufen dem Materialfluss voraus (z.B. Avis)</div></div>
+    <div class="mini-card"><div class="mini-title">📦 Begleitende Informationen</div><div class="mini-text">Laufen mit dem Materialfluss (z.B. Lieferschein)</div></div>
+    <div class="mini-card"><div class="mini-title">✅ Abschließende Informationen</div><div class="mini-text">Bestätigung und Abschluss des Prozesses (z.B. Rechnung)</div></div>
+  </div>
+
+  <h3>Ziele von I&amp;K-Systemen – die 6 Richtigen</h3>
+  <div class="merksatz">Richtige Informationen · zur richtigen Zeit · in der richtigen Menge · in der richtigen Qualität · am richtigen Ort · zu den richtigen Kosten</div>
+
+  <h3>Voraussetzungen für I&amp;K-Systeme</h3>
+  <div class="card blue">
+    <div class="def">
+      <strong>Hardware</strong> – physische Geräte und Infrastruktur<br><br>
+      <strong>Software:</strong><br>
+      &nbsp;&nbsp;→ Basissoftware (Betriebssystem etc.)<br>
+      &nbsp;&nbsp;→ Anwendersoftware:<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;◆ Standardsoftware (z.B. SAP)<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;◆ Individualsoftware (maßgeschneidert)
+    </div>
+  </div>
+
+  <h3>Methoden der Datenerfassung</h3>
+  <div class="grid2">
+    <div class="mini-card"><div class="mini-title">👁 Optische Systeme</div><div class="mini-text">Barcode, QR-Code, Scanner</div></div>
+    <div class="mini-card"><div class="mini-title">📡 Funksysteme</div><div class="mini-text">RFID, WLAN, Bluetooth</div></div>
+    <div class="mini-card"><div class="mini-title">📠 Analoge Systeme</div><div class="mini-text">Papierbelege, manuelle Erfassung</div></div>
+    <div class="mini-card"><div class="mini-title">💾 Digitale Systeme</div><div class="mini-text">EDI, elektronische Datenübertragung</div></div>
+  </div>
+
+  <h3>EDI-Standards der Datenübertragung</h3>
+  <table>
+    <tr><th>Standard</th><th>Einsatzbereich</th></tr>
+    <tr><td><strong>EDIFACT</strong></td><td>International gültiger Standard für den elektronischen Datenaustausch (UN-Standard)</td></tr>
+    <tr><td><strong>SEDAS</strong></td><td>Standardregelungen im deutschen Konsumgüterhandel</td></tr>
+    <tr><td><strong>VDA</strong></td><td>Verband der Automobilindustrie – Branchenstandard der Automobilindustrie</td></tr>
+    <tr><td><strong>SWIFT</strong></td><td>Finanzsektor – Datenaustausch zwischen Banken</td></tr>
+  </table>
+
+  <h3>Bestandteile von I&amp;K-Systemen</h3>
+  <div class="grid2">
+    <div class="mini-card"><div class="mini-title">👤 Manware</div><div class="mini-text">Menschen, die das System bedienen und pflegen</div></div>
+    <div class="mini-card"><div class="mini-title">📋 Orgware</div><div class="mini-text">Organisatorische Regelungen und Prozesse</div></div>
+    <div class="mini-card"><div class="mini-title">🌐 Netzwerke</div><div class="mini-text">Verbindungen zwischen den Systemkomponenten</div></div>
+    <div class="mini-card"><div class="mini-title">💻 Informationssysteme</div><div class="mini-text">ERP, WMS, TMS und weitere Softwaresysteme</div></div>
+  </div>
+
+  <h3>Maßnahmen zur Einführung von I&amp;K-Systemen</h3>
+  <div class="card amber">
+    <div class="def">
+      • Zeitliche Strukturierung der Prozesse<br>
+      • Frühzeitige Einbindung aller Betroffenen<br>
+      • Personalschulungen Hardware und Software<br>
+      • Unterstützung in der Einführungs- und Nutzungsphase
+    </div>
+  </div>
+  <div class="note-area"><button class="note-btn" onclick="toggleNote(this)">✏ Notiz hinzufügen</button><textarea class="note-input" style="display:none" placeholder="Deine Notizen..."></textarea></div>
+</section>
+
+<!-- TRANSPORT GRUNDLAGEN -->
+<section id="transport-grundlagen">
+  <h2>1.2.3 Transport- und Umschlagsysteme – Grundlagen</h2>
+
+  <div class="card green">
+    <div class="label">Definition Transport (DIN 30781)</div>
+    <div class="def">Transport ist die Überwindung räumlicher Distanzen von Personen, Gütern und Nachrichten (Informationen) mit manuellen oder technischen Mitteln.</div>
+  </div>
+
+  <div class="card blue">
+    <div class="label">Definition Transportkette (DIN 30781)</div>
+    <div class="def">Eine Transportkette ist die Folge von technisch und organisatorisch miteinander verknüpften Vorgängen, bei denen Personen, Güter oder Nachrichten von einer Quelle zu einem Ziel bewegt werden. Die Transportkette ist als System aufzufassen.</div>
+  </div>
+
+  <h3>Elemente von Transportsystemen</h3>
+  <div class="grid3">
+    <div class="mini-card"><div class="mini-title">📦 Transport- &amp; Fördereinheiten</div><div class="mini-text">Paletten, Container, Ladeeinheiten</div></div>
+    <div class="mini-card"><div class="mini-title">🚛 Transporttechnik</div><div class="mini-text">Fahrzeuge, Kräne, Förderbänder</div></div>
+    <div class="mini-card"><div class="mini-title">⚙️ Fördermittel</div><div class="mini-text">Stetig- und Unstetigförderer</div></div>
+    <div class="mini-card"><div class="mini-title">📋 Transportorganisation</div><div class="mini-text">Planung, Steuerung, Disposition</div></div>
+    <div class="mini-card"><div class="mini-title">🖥 Transportsteuerung</div><div class="mini-text">IT-Systeme zur Prozesssteuerung</div></div>
+  </div>
+
+  <h3>Kriterien zur Auswahl von Transportsystemen</h3>
+  <div class="grid3">
+    <div class="mini-card"><div class="mini-title">📐 Produkteigenschaften</div><div class="mini-text">Größe, Gewicht, Empfindlichkeit des Gutes</div></div>
+    <div class="mini-card"><div class="mini-title">📊 Förderintensität</div><div class="mini-text">Menge pro Zeiteinheit</div></div>
+    <div class="mini-card"><div class="mini-title">📏 Förderstrecke</div><div class="mini-text">Distanz und Streckenführung</div></div>
+    <div class="mini-card"><div class="mini-title">⚡ Leistung</div><div class="mini-text">Kapazität und Geschwindigkeit</div></div>
+    <div class="mini-card"><div class="mini-title">💰 Kosten</div><div class="mini-text">Investitions- und Betriebskosten</div></div>
+    <div class="mini-card"><div class="mini-title">⚖️ Gesetze</div><div class="mini-text">Rechtliche Rahmenbedingungen</div></div>
+  </div>
+  <div class="note-area"><button class="note-btn" onclick="toggleNote(this)">✏ Notiz hinzufügen</button><textarea class="note-input" style="display:none" placeholder="Deine Notizen..."></textarea></div>
+</section>
+
+<!-- FÖRDERMITTEL -->
+<section id="foerdermittel">
+  <h2>Fördermittel (innerbetrieblich)</h2>
+
+  <h3>Funktionen von Förderhilfsmitteln</h3>
+  <div class="grid2">
+    <div class="mini-card"><div class="mini-title">📦 Aufnahme &amp; Bündelung</div><div class="mini-text">Zusammenfassen von Einzelgütern zu Ladeeinheiten</div></div>
+    <div class="mini-card"><div class="mini-title">🛡 Schutz</div><div class="mini-text">Schutz vor Beschädigung und Diebstahl</div></div>
+    <div class="mini-card"><div class="mini-title">🤝 Einfaches Handling</div><div class="mini-text">Standardisierte Handhabung und Übergabe</div></div>
+    <div class="mini-card"><div class="mini-title">🏪 Lagerfähigkeit</div><div class="mini-text">Stapelbarkeit, Regalfähigkeit</div></div>
+    <div class="mini-card"><div class="mini-title">📡 Informationsweitergabe</div><div class="mini-text">Barcode, RFID-Tag, Lieferinformationen</div></div>
+  </div>
+
+  <h3>Einteilung von Fördermitteln</h3>
+  <table>
+    <tr><th>Kriterium</th><th>Ausprägungen</th></tr>
+    <tr><td><strong>Flurabhängigkeit</strong></td><td>Flurfrei · flurgebunden · aufgeständert</td></tr>
+    <tr><td><strong>Automatisierungsgrad</strong></td><td>Manuell · maschinell</td></tr>
+    <tr><td><strong>Beweglichkeit</strong></td><td>Ortsfest · frei fahrbar · geführt fahrbar</td></tr>
+    <tr><td><strong>Antriebsart</strong></td><td>Einzelantrieb · Muskelkraft · Schwerkraft · mit/ohne Zugmittel</td></tr>
+  </table>
+
+  <h3>Stetigförderer</h3>
+  <div class="grid2">
+    <div class="card green">
+      <div class="label">Einsatzgebiete</div>
+      <div class="def">Bewegung großer Mengen des gleichen Gutes · gleiche Orte für Aufnahme und Ablage (z.B. Montagelinie)</div>
+    </div>
+    <div class="card blue">
+      <div class="label">Beispiele</div>
+      <div class="def">Gurtförderer · Kettenförderer · Rollenbahnförderer · Schwingrinnen · Schneckenförderer · Deckenkreisförderer · Brecherwerke</div>
+    </div>
+  </div>
+  <div class="grid2">
+    <div class="card green">
+      <div class="label">Vorteile</div>
+      <div class="def">Permanente Einsatzbereitschaft · geringer Personalbedarf · niedrige Betriebskosten · hohe Förderleistung · multifunktionell · einfach automatisierbar</div>
+    </div>
+    <div class="card red">
+      <div class="label">Nachteile</div>
+      <div class="def">Hohe Investitionskosten · meist ortsgebunden · starre Streckenführung · hoher Auslastungsgrad für Wirtschaftlichkeit nötig</div>
+    </div>
+  </div>
+
+  <h3>Unstetigförderer</h3>
+  <div class="card amber">
+    <div class="label">Einsatzgebiete</div>
+    <div class="def">Kein kontinuierlicher Güterstrom notwendig. Beispiele: Krananlagen · Serienhebezeuge · Flurförderfahrzeuge · Aufzüge</div>
+  </div>
+
+  <h3>Flurförderfahrzeuge (Stapler)</h3>
+  <div class="grid2">
+    <div class="mini-card">
+      <div class="mini-title">Merkmale</div>
+      <div class="mini-text">Antriebsart · konstruktiver Aufbau · Arbeitsfläche/Größe · Tragkraft · Gabelsystem · Einsatz innen/außen</div>
+    </div>
+    <div class="mini-card">
+      <div class="mini-title">Häufige Bauarten</div>
+      <div class="mini-text">Frontstapler · Schubmaststapler · Gabelhubwagen · Seitenstapler · Schmalgangstapler (Regalstapler)</div>
+    </div>
+  </div>
+  <div class="card red">
+    <div class="label">⚠️ Sicherheitsgrundsätze Stapler</div>
+    <div class="def">• Tragkraft beachten (Lastdiagramm)<br>• Keine Personen unter schwebenden Lasten<br>• Bedienung nur durch ausgebildetes Personal<br>• Geeignete Traglastmittel verwenden (Paletten etc.)</div>
+  </div>
+
+  <h3>Hebezeuge</h3>
+  <div class="grid2">
+    <div class="mini-card">
+      <div class="mini-title">Ortsfeste Hebezeuge</div>
+      <div class="mini-text">Aufzüge · Hebebühnen · Hebebaum · Hebezeug</div>
+    </div>
+    <div class="mini-card">
+      <div class="mini-title">Fahrbare Hebezeuge (Kräne)</div>
+      <div class="mini-text">Brückenkräne · Portalkräne · Laufkräne · Fahrzeugkräne · Säulenschwenkkräne · Stapelkräne · Drehkräne</div>
+    </div>
+  </div>
+  <div class="card blue">
+    <div class="label">Vorteile Krananlagen</div>
+    <div class="def">Kein Blockieren der Bodenfläche · geeignet für große Hallen, große Lasten und hohe Gewichte</div>
+  </div>
+  <div class="note-area"><button class="note-btn" onclick="toggleNote(this)">✏ Notiz hinzufügen</button><textarea class="note-input" style="display:none" placeholder="Deine Notizen..."></textarea></div>
+</section>
+
+<!-- VERKEHRSTRÄGER -->
+<section id="verkehrstraeger">
+  <h2>Außerbetriebliche Verkehrsträger</h2>
+
+  <div class="card amber">
+    <div class="label">Besonderheit Werkverkehr</div>
+    <div class="def">Mit eigenem Fahrzeug · eigene Produkte · für den eigenen Gebrauch · mit eigenem Personal transportieren.</div>
+  </div>
+
+  <table>
+    <tr><th>Verkehrsträger</th><th>Vorteile</th><th>Nachteile</th></tr>
+    <tr>
+      <td><strong>🚛 Straße</strong></td>
+      <td>Kostengünstig · flexibel · flächendeckend verfügbar</td>
+      <td>Witterungsabhängig · niedrige Ladebegrenzung · nicht alle Güter zugelassen</td>
+    </tr>
+    <tr>
+      <td><strong>🚂 Schiene</strong></td>
+      <td>Hohes Ladegewicht · witterungsunabhängig · Gefahrguttransport möglich</td>
+      <td>Gleisanschluss notwendig · Zusatzkosten bei kombiniertem Verkehr</td>
+    </tr>
+    <tr>
+      <td><strong>🚢 Binnenschiff</strong></td>
+      <td>Extrem hohes Ladegewicht · große Laderäume · kostengünstig (bes. Schüttgut)</td>
+      <td>Anlegestelle erforderlich · Zusatzkosten bei Kombination · begrenztes Wasserstraßennetz</td>
+    </tr>
+    <tr>
+      <td><strong>🛳 Seeschiff</strong></td>
+      <td>Extrem hohes Ladegewicht · große Laderäume · Spezialschiffe für alle Güter</td>
+      <td>Anlegestelle erforderlich · Zusatzkosten · oft an Schifffahrtsrouten gebunden</td>
+    </tr>
+    <tr>
+      <td><strong>✈️ Luftfracht</strong></td>
+      <td>Sehr schnell · zuverlässig und termintreu</td>
+      <td>Oft Spezialverpackung nötig · höchste Kosten · extrem aufwändig</td>
+    </tr>
+    <tr>
+      <td><strong>🔀 Kombiniert</strong></td>
+      <td>Nutzung der Vorteile verschiedener Systeme</td>
+      <td>Zeitverlust durch Umschlagspunkte · hohe Störanfälligkeit durch Koordinationsaufwand</td>
+    </tr>
+  </table>
+
+  <h3>Kombinierter Verkehr – Formen</h3>
+  <table>
+    <tr><th>Kombination</th><th>Bezeichnung</th></tr>
+    <tr><td>Straße/Schiene</td><td>Rollende Landstraße · Sattelaufliegertransport · Wechselbehälter</td></tr>
+    <tr><td>Straße/Schifffahrt</td><td>RoRo-Verkehr (Roll-on/Roll-off) – „Schwimmende Landstraße"</td></tr>
+    <tr><td>Binnen-/Seeschifffahrt</td><td>LASH-Verkehr (Leichter an Bord Schiff)</td></tr>
+    <tr><td>Alle Modi</td><td>Container · Rail-Ro-Cargo (Haus-zu-Haus)</td></tr>
+  </table>
+
+  <h3>Einflüsse auf die Transportkosten</h3>
+  <div class="grid3">
+    <div class="mini-card"><div class="mini-title">📏 Transportstrecke</div><div class="mini-text">Entfernung zwischen Quelle und Ziel</div></div>
+    <div class="mini-card"><div class="mini-title">⚖️ Ladungsgewicht</div><div class="mini-text">Volumen- vs. Gewichtsfracht</div></div>
+    <div class="mini-card"><div class="mini-title">📦 Art des Gutes</div><div class="mini-text">Gefahrgut, Kühlware, Sperrgut etc.</div></div>
+    <div class="mini-card"><div class="mini-title">🔄 Umschlagskosten</div><div class="mini-text">Kosten beim Wechsel des Verkehrsträgers</div></div>
+    <div class="mini-card"><div class="mini-title">➕ Zusatzleistungen</div><div class="mini-text">Versicherung, Zölle, Sonderausstattung</div></div>
+  </div>
+  <div class="note-area"><button class="note-btn" onclick="toggleNote(this)">✏ Notiz hinzufügen</button><textarea class="note-input" style="display:none" placeholder="Deine Notizen..."></textarea></div>
+</section>
+
+<!-- SPEDITIONSKONZEPTE -->
+<section id="spedition">
+  <h2>Speditionskonzepte &amp; Transportorganisation</h2>
+
+  <table>
+    <tr><th>Konzept</th><th>Beschreibung</th></tr>
+    <tr>
+      <td><strong>Komplettladung (FTL/FCL)</strong></td>
+      <td>Full Truck/Container Load – ein Auftraggeber, ein Fahrzeug</td>
+    </tr>
+    <tr>
+      <td><strong>Teilladung</strong></td>
+      <td>Mehrere Auftraggeber teilen ein Fahrzeug (Sammelladung/LTL)</td>
+    </tr>
+    <tr>
+      <td><strong>Milk-Run</strong></td>
+      <td>Kein separater Hauptlauf – Rundreise zu mehreren Start-/Zielpunkten (z.B. JIT-Belieferung)</td>
+    </tr>
+    <tr>
+      <td><strong>Transshipment</strong></td>
+      <td>Knoten als Sammelpunkt für den Hauptlauf (Sendungen werden gebündelt)</td>
+    </tr>
+    <tr>
+      <td><strong>Gebietsspediteur</strong></td>
+      <td>Verschiedene Spediteure beliefern Knoten für den gemeinsamen Hauptlauf</td>
+    </tr>
+    <tr>
+      <td><strong>Cross-Docking</strong></td>
+      <td>Zentraler Umschlagspunkt verschiedener Hauptläufe – keine Lagerung, nur Umschlag</td>
+    </tr>
+  </table>
+
+  <h3>Hub-and-Spoke-System</h3>
+  <div class="prozess-steps">
+    <div class="prozess-step"><div class="step-num">Vorlauf</div><div class="step-name">Sammeln</div><div class="step-sub">Güter von Spoke einsammeln</div></div>
+    <div class="prozess-step"><div class="step-num">Verdichten</div><div class="step-name">Hub</div><div class="step-sub">Bündelung am zentralen Knoten</div></div>
+    <div class="prozess-step"><div class="step-num">Hauptlauf</div><div class="step-name">Hub ↔ Hub</div><div class="step-sub">Haupttransport zwischen Hubs</div></div>
+    <div class="prozess-step"><div class="step-num">Nachlauf</div><div class="step-name">Ausliefern</div><div class="step-sub">Verteilung zum Ziel-Spoke</div></div>
+  </div>
+
+  <h3>Organisation außerbetrieblicher Transport</h3>
+  <div class="grid2">
+    <div class="mini-card"><div class="mini-title">🏢 Güterverkehrszentren</div><div class="mini-text">Zentrale Anlaufstellen für verschiedene Spediteure</div></div>
+    <div class="mini-card"><div class="mini-title">🏙 City-Logistik</div><div class="mini-text">Lösung für die „letzte Meile" in Städten</div></div>
+    <div class="mini-card"><div class="mini-title">💻 Hochleistungs-IT</div><div class="mini-text">EDIFACT und andere EDI-Systeme zur Koordination</div></div>
+    <div class="mini-card"><div class="mini-title">📊 Frachtbörsen</div><div class="mini-text">Vermittler zwischen Frachtführern und Auftraggebern</div></div>
+  </div>
+
+  <h3>Eigen- vs. Fremdtransport</h3>
+  <div class="grid2">
+    <div class="card blue">
+      <div class="label">Quantitative Merkmale</div>
+      <div class="def">Variable Kosten · Versicherung · Haftung</div>
+    </div>
+    <div class="card purple">
+      <div class="label">Qualitative Merkmale</div>
+      <div class="def">Know-How · Verfügbarkeit · Einflussnahme auf den Prozess</div>
+    </div>
+  </div>
+  <div class="note-area"><button class="note-btn" onclick="toggleNote(this)">✏ Notiz hinzufügen</button><textarea class="note-input" style="display:none" placeholder="Deine Notizen..."></textarea></div>
+</section>
+
+<!-- INCOTERMS -->
+<section id="incoterms">
+  <h2>Incoterms 2020</h2>
+
+  <div class="card green">
+    <div class="label">Was sind Incoterms?</div>
+    <div class="term">International Commercial Terms</div>
+    <div class="def">
+      International gültige Handelsklauseln mit Regelungen zu:<br>
+      • <strong>Gefahrenübergang</strong> (Wer trägt das Risiko wann?)<br>
+      • <strong>Transportkostenübernahme</strong> (Wer zahlt was?)<br>
+      • <strong>Transportversicherung</strong> (Wer ist verpflichtet?)<br><br>
+      ⚠️ Anwendung muss ausdrücklich vereinbart werden · Klauseln müssen um genauen Ort ergänzt werden
+    </div>
+  </div>
+
+  <h3>Die 4 Klauselgruppen</h3>
+  <div class="grid2">
+    <div class="card green">
+      <div class="label">E-Klauseln</div>
+      <div class="term">Fast keine Kosten für Verkäufer</div>
+      <div class="def">Käufer übernimmt fast alle Kosten und Risiken ab Werk</div>
+    </div>
+    <div class="card blue">
+      <div class="label">F-Klauseln</div>
+      <div class="term">Geringe Kosten für Verkäufer</div>
+      <div class="def">Verkäufer liefert bis zum Übergabepunkt – Hauptfracht trägt Käufer</div>
+    </div>
+    <div class="card amber">
+      <div class="label">C-Klauseln</div>
+      <div class="term">Hauptkosten für Verkäufer</div>
+      <div class="def">Verkäufer zahlt Hauptfracht, aber Risiko geht früher über</div>
+    </div>
+    <div class="card red">
+      <div class="label">D-Klauseln</div>
+      <div class="term">Fast alle Kosten für Verkäufer</div>
+      <div class="def">Verkäufer trägt alle Kosten und Risiken bis zum Zielort</div>
+    </div>
+  </div>
+
+  <h3>Alle Incoterms 2020 im Überblick</h3>
+  <table>
+    <tr><th>Kürzel</th><th>Bezeichnung</th><th>Gruppe</th></tr>
+    <tr><td><strong>EXW</strong></td><td>Ex Works – Ab Werk</td><td><span class="tag green">E</span></td></tr>
+    <tr><td><strong>FCA</strong></td><td>Free Carrier – Frei Frachtführer</td><td><span class="tag blue">F</span></td></tr>
+    <tr><td><strong>FAS</strong></td><td>Free Alongside Ship – Frei Längsseite Schiff</td><td><span class="tag blue">F</span></td></tr>
+    <tr><td><strong>FOB</strong></td><td>Free on Board – Frei an Bord</td><td><span class="tag blue">F</span></td></tr>
+    <tr><td><strong>CFR</strong></td><td>Cost &amp; Freight – Kosten und Fracht</td><td><span class="tag amber">C</span></td></tr>
+    <tr><td><strong>CIF</strong></td><td>Cost, Insurance &amp; Freight – Kosten, Versicherung, Fracht</td><td><span class="tag amber">C</span></td></tr>
+    <tr><td><strong>CPT</strong></td><td>Carriage Paid To – Frachtfrei bis</td><td><span class="tag amber">C</span></td></tr>
+    <tr><td><strong>CIP</strong></td><td>Carriage &amp; Insurance Paid To – Frachtfrei versichert bis</td><td><span class="tag amber">C</span></td></tr>
+    <tr><td><strong>DAP</strong></td><td>Delivered at Place – Geliefert benannter Ort</td><td><span class="tag red">D</span></td></tr>
+    <tr><td><strong>DPU</strong></td><td>Delivered at Place Unloaded – Geliefert benannter Ort entladen</td><td><span class="tag red">D</span></td></tr>
+    <tr><td><strong>DDP</strong></td><td>Delivered Duty Paid – Geliefert verzollt</td><td><span class="tag red">D</span></td></tr>
+  </table>
+  <div class="merksatz">Merkhilfe: E = Einziger Abholpunkt · F = Fracht zahlt Käufer · C = Cost trägt Verkäufer (teils) · D = Delivered = Verkäufer liefert komplett</div>
+  <div class="note-area"><button class="note-btn" onclick="toggleNote(this)">✏ Notiz hinzufügen</button><textarea class="note-input" style="display:none" placeholder="Deine Notizen..."></textarea></div>
+</section>
+
+<!-- VERTRÄGE & RECHT -->
+<section id="vertraege">
+  <h2>Transportverträge, Haftung &amp; Außenhandelsrecht</h2>
+
+  <h3>Transportverträge</h3>
+  <div class="grid3">
+    <div class="mini-card"><div class="mini-title">§ 407 ff HGB</div><div class="mini-text">Frachtvertrag</div></div>
+    <div class="mini-card"><div class="mini-title">§ 453 ff HGB</div><div class="mini-text">Speditionsvertrag</div></div>
+    <div class="mini-card"><div class="mini-title">§ 476 ff HGB</div><div class="mini-text">Seehandel</div></div>
+  </div>
+
+  <h3>Wichtige Vertragsarten (BGB)</h3>
+  <div class="grid2">
+    <div class="card blue">
+      <div class="label">Kaufvertrag § 433 BGB</div>
+      <div class="def">Übergabe einer mangelfreien Sache + Übergabe der vereinbarten Bezahlung</div>
+    </div>
+    <div class="card purple">
+      <div class="label">Werkvertrag § 631 BGB</div>
+      <div class="def">Herstellung + Abnahme des versprochenen Werkes<br><em>Werklieferungsvertrag: Auftragnehmer verwendet eigene Stoffe</em></div>
+    </div>
+  </div>
+
+  <h3>Internationale Transportdokumente</h3>
+  <table>
+    <tr><th>Dokument</th><th>Verkehrsträger</th></tr>
+    <tr><td><strong>CMR</strong></td><td>Straße – Internationaler Frachtbrief</td></tr>
+    <tr><td><strong>COTIF</strong></td><td>Bahn – Internationales Eisenbahn-Übereinkommen</td></tr>
+    <tr><td><strong>Warschauer Abkommen</strong></td><td>Luftfracht</td></tr>
+    <tr><td><strong>UNCLOS</strong></td><td>Seeverkehr – UN-Seerechtsübereinkommen</td></tr>
+    <tr><td><strong>Incoterms 2020</strong></td><td>Alle Modi – Handelsklauseln</td></tr>
+  </table>
+
+  <h3>Protektionismus im Außenhandel</h3>
+  <div class="grid2">
+    <div class="card red">
+      <div class="label">Importbeschränkungen</div>
+      <div class="def">Zölle (tarifäre Hemmnisse) · Kontingente · Bürokratieaufbau</div>
+    </div>
+    <div class="card amber">
+      <div class="label">Exportförderung</div>
+      <div class="def">Subventionen · Dumping (Unterpreisverkauf im Ausland)</div>
+    </div>
+  </div>
+
+  <h3>Funktionen von Zöllen</h3>
+  <div class="grid2">
+    <div class="mini-card"><div class="mini-title">🏭 Schutzfunktion</div><div class="mini-text">Schutz der heimischen Wirtschaft vor ausländischer Konkurrenz</div></div>
+    <div class="mini-card"><div class="mini-title">💰 Fiskalische Funktion</div><div class="mini-text">Einnahmequelle des Staates</div></div>
+  </div>
+
+  <h3>Rechtsbereiche des internationalen Warenverkehrs</h3>
+  <div class="card blue">
+    <div class="def">Außenwirtschaftsrecht · Europäisches Zollrecht · AWG (Außenwirtschaftsgesetz) · AWV (Außenwirtschaftsverordnung) · Umsatzsteuergesetz · UstDVO · Einschlägige Europäische Verordnungen</div>
+  </div>
+  <div class="note-area"><button class="note-btn" onclick="toggleNote(this)">✏ Notiz hinzufügen</button><textarea class="note-input" style="display:none" placeholder="Deine Notizen..."></textarea></div>
+</section>
+
+<!-- UMSCHLAGSYSTEME -->
+<section id="umschlag">
+  <h2>Umschlagsysteme und Umschlaglogistik</h2>
+
+  <div class="prozess-steps">
+    <div class="prozess-step"><div class="step-num">①</div><div class="step-name">Entladung</div><div class="step-sub">Ankommende Ware entladen</div></div>
+    <div class="prozess-step"><div class="step-num">②</div><div class="step-name">Umschlag</div><div class="step-sub">Sortieren, Prüfen, Bereitstellen</div></div>
+    <div class="prozess-step"><div class="step-num">③</div><div class="step-name">Beladung</div><div class="step-sub">Verladung auf nächsten Träger</div></div>
+  </div>
+
+  <h3>Kriterien für Umschlagsysteme</h3>
+  <div class="grid3">
+    <div class="mini-card"><div class="mini-title">📐 Verfügbare Flächen</div><div class="mini-text">Grundlage für Planung und Kapazität</div></div>
+    <div class="mini-card"><div class="mini-title">⚙️ Technische Ausstattung</div><div class="mini-text">Kräne, Fördertechnik, Tore, Rampen</div></div>
+    <div class="mini-card"><div class="mini-title">📋 Organisation</div><div class="mini-text">Prozesse, Zeitfenster, Personal</div></div>
+  </div>
+
+  <h3>Ziele der Umschlaglogistik</h3>
+  <div class="grid2">
+    <div class="card blue">
+      <div class="label">Allgemeine Ziele</div>
+      <div class="def">Physische Abwicklung · Puffermöglichkeiten · Automatisierbarkeit</div>
+    </div>
+    <div class="card green">
+      <div class="label">Kostenziele</div>
+      <div class="def">Optimale Nutzung von Fläche und Einrichtung · niedrige Personal- und Betriebskosten</div>
+    </div>
+    <div class="card purple">
+      <div class="label">Serviceziele</div>
+      <div class="def">Hohe Liefertreue · hoher Servicegrad</div>
+    </div>
+  </div>
+  <div class="note-area"><button class="note-btn" onclick="toggleNote(this)">✏ Notiz hinzufügen</button><textarea class="note-input" style="display:none" placeholder="Deine Notizen..."></textarea></div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════ -->
+<!-- KAPITEL 1.2.4 – LAGER- UND KOMMISSIONIERSYSTEME -->
+<!-- ═══════════════════════════════════════════════ -->
+
+<div style="margin: 2.5rem 0 1.5rem; padding: 1rem 1.25rem; background: var(--sidebar-bg); border-radius: var(--radius); color: #e0ddd6;">
+  <div style="font-size:11px; text-transform:uppercase; letter-spacing:0.08em; color:#888; margin-bottom:0.3rem;">Kapitel 1.2.4–1.2.7</div>
+  <div style="font-size:18px; font-weight:600;">Lager-, Kommissionier- und Subsysteme</div>
+  <div style="font-size:13px; color:#aaa; margin-top:0.2rem;">Folien 191–266 · Benedikt Plab</div>
+</div>
+
+<!-- LAGER GRUNDLAGEN -->
+<section id="lager-grundlagen">
+  <h2>1.2.4 Lager- und Kommissioniersysteme – Grundlagen</h2>
+
+  <div class="prozess-steps">
+    <div class="prozess-step"><div class="step-num">①</div><div class="step-name">Wareneingang</div></div>
+    <div class="prozess-step"><div class="step-num">②</div><div class="step-name">Lagerung</div></div>
+    <div class="prozess-step"><div class="step-num">③</div><div class="step-name">Kommissionierung</div></div>
+    <div class="prozess-step"><div class="step-num">④</div><div class="step-name">Warenausgang / Bereitstellung</div></div>
+  </div>
+
+  <h3>Die 3 Faktoren der Lagergestaltung</h3>
+  <div class="grid3">
+    <div class="card blue"><div class="label">1. Lagergestaltung</div><div class="def">Bauart, Einrichtung, Hilfsmittel</div></div>
+    <div class="card green"><div class="label">2. Lagerorganisation</div><div class="def">Strategien, Platzsysteme, Einlagerung</div></div>
+    <div class="card purple"><div class="label">3. Arbeitsabläufe</div><div class="def">WE, Kommissionierung, WA, Pflege, Kontrolle</div></div>
+  </div>
+
+  <h3>Abhängigkeiten der Lagergestaltung</h3>
+  <div class="grid2">
+    <div class="mini-card"><div class="mini-title">📦 Art des Lagergutes</div><div class="mini-text">Geometrie, Gewicht, Empfindlichkeit, Gefahrstoff</div></div>
+    <div class="mini-card"><div class="mini-title">📊 Geplante Lagermengen</div><div class="mini-text">Kapazitätsplanung und Fläche</div></div>
+    <div class="mini-card"><div class="mini-title">⏱ Zugriffszeiten</div><div class="mini-text">Wie schnell muss auf Ware zugegriffen werden?</div></div>
+    <div class="mini-card"><div class="mini-title">🔄 Durchlaufzeiten</div><div class="mini-text">Wie schnell soll die Ware durch das Lager fließen?</div></div>
+    <div class="mini-card"><div class="mini-title">🚛 Transportwege</div><div class="mini-text">Innerbetriebliche Wege und Fördertechnik</div></div>
+    <div class="mini-card"><div class="mini-title">🎯 Ziele der Lagerhaltung</div><div class="mini-text">Puffer, Spekulation, Versorgungssicherung</div></div>
+  </div>
+
+  <h3>Lagerbauarten</h3>
+  <table>
+    <tr><th>Bauart</th><th>Beschreibung / Beispiel</th></tr>
+    <tr><td><strong>Offenes Lager</strong></td><td>Schüttgut, Halden – keine bauliche Einhausung</td></tr>
+    <tr><td><strong>Halb offenes Lager</strong></td><td>Überdacht, aber seitlich offen</td></tr>
+    <tr><td><strong>Geschlossenes Lager</strong></td><td>Vollständige Halle – Standardfall</td></tr>
+    <tr><td><strong>Speziallager</strong></td><td>Silo, Tank, Gaslager, Kühlhaus</td></tr>
+  </table>
+
+  <h3>Lagereinrichtung</h3>
+  <div class="grid2">
+    <div class="card blue">
+      <div class="label">Statische Einrichtung</div>
+      <div class="def">Gut bleibt am Platz<br><em>Beispiel: Palettenregallager</em></div>
+    </div>
+    <div class="card green">
+      <div class="label">Dynamische Einrichtung</div>
+      <div class="def">Gut bewegt sich durch das Lager<br><em>Beispiel: Durchlaufregal, Verschieberegal</em></div>
+    </div>
+  </div>
+
+  <h3>Klassifizierung der Lagereinrichtung</h3>
+  <div class="grid3">
+    <div class="mini-card"><div class="mini-title">Bodenlager</div><div class="mini-text">Stapelware direkt auf dem Boden</div></div>
+    <div class="mini-card"><div class="mini-title">Fachregallager</div><div class="mini-text">Für Kleinteile und Stückgut</div></div>
+    <div class="mini-card"><div class="mini-title">Palettenregallager</div><div class="mini-text">Standard für Paletten – FIFO/LIFO möglich</div></div>
+    <div class="mini-card"><div class="mini-title">Paletten-Einfahrregal</div><div class="mini-text">Hohe Verdichtung – LIFO-Prinzip</div></div>
+    <div class="mini-card"><div class="mini-title">Durchlaufregallager</div><div class="mini-text">FIFO automatisch durch Schwerkraft</div></div>
+    <div class="mini-card"><div class="mini-title">Hochregallager</div><div class="mini-text">Automatisiertes Lager mit Regalbediengerät</div></div>
+  </div>
+  <div class="note-area"><button class="note-btn" onclick="toggleNote(this)">✏ Notiz hinzufügen</button><textarea class="note-input" style="display:none" placeholder="Deine Notizen..."></textarea></div>
+</section>
+
+<!-- LAGERORGANISATION -->
+<section id="lagerorganisation">
+  <h2>Lagerorganisation</h2>
+
+  <div class="grid2">
+    <div class="card blue">
+      <div class="label">Zentrale Lagerhaltung</div>
+      <div class="def">• Geringe Gesamtbestände<br>• Geringere Kapitalbindung<br>• Kostenvorteile durch Automatisierung</div>
+    </div>
+    <div class="card green">
+      <div class="label">Dezentrale Lagerhaltung</div>
+      <div class="def">• Überschaubare Lagereinheiten<br>• Kürzere Transportwege<br>• Schnellere Bereitstellung</div>
+    </div>
+  </div>
+
+  <h3>Platzsysteme</h3>
+  <div class="grid2">
+    <div class="card amber">
+      <div class="label">Magazinprinzip – Festplatzsystem</div>
+      <div class="term">Statische Lagerung</div>
+      <div class="def">Jeder Artikel hat einen festen Lagerplatz<br><br>✅ Keine EDV nötig, wenig störanfällig<br>❌ Keine optimale Flächennutzung</div>
+    </div>
+    <div class="card purple">
+      <div class="label">Lokalisierprinzip – Freiplatzsystem</div>
+      <div class="term">Chaotische Lagerung</div>
+      <div class="def">Ware wird dem nächsten freien Platz zugewiesen<br><br>✅ Optimale Flächennutzung, weniger Platzbedarf<br>❌ Hohe EDV-Kosten, bei Störung keine Entnahme möglich</div>
+    </div>
+  </div>
+
+  <h3>Ein-/Auslagerungsstrategien</h3>
+  <table>
+    <tr><th>Strategie</th><th>Bedeutung</th><th>Geeignetes Regal</th></tr>
+    <tr><td><strong>FIFO</strong></td><td>First In – First Out (älteste Ware zuerst)</td><td>Durchlaufregal</td></tr>
+    <tr><td><strong>LIFO</strong></td><td>Last In – First Out (neueste Ware zuerst)</td><td>Einschubregal</td></tr>
+    <tr><td><strong>HIFO</strong></td><td>Highest In – First Out (teuerste Ware zuerst)</td><td>Palettenregal</td></tr>
+    <tr><td><strong>LOFO</strong></td><td>Lowest In – First Out (günstigste Ware zuerst)</td><td>Palettenregal</td></tr>
+    <tr><td><strong>FEFO</strong></td><td>First Expired – First Out (kürzestes MHD zuerst)</td><td>Durchlaufregal</td></tr>
+  </table>
+  <div class="merksatz">FEFO ist Pflicht bei Lebensmitteln und Pharmazeutika – kürzestes Mindesthaltbarkeitsdatum zuerst entnehmen!</div>
+
+  <h3>Efficient Unit Load</h3>
+  <div class="card blue">
+    <div class="def">Standardisierung von Packmitteln · Abstimmung auf alle beteiligten Transportmittel · Abstimmung an den Maßen der Güter (Europalette als Standard)</div>
+  </div>
+  <div class="note-area"><button class="note-btn" onclick="toggleNote(this)">✏ Notiz hinzufügen</button><textarea class="note-input" style="display:none" placeholder="Deine Notizen..."></textarea></div>
+</section>
+
+<!-- LAGERABLÄUFE -->
+<section id="lagerablaeufe">
+  <h2>Arbeitsabläufe im Lager</h2>
+
+  <h3>Wareneingangsablauf (12 Schritte)</h3>
+  <div class="card green">
+    <div class="def">
+      <ol style="margin:0; padding-left:1.2rem;">
+        <li>Prüfung der Bestelldaten mit dem Lieferschein</li>
+        <li>Überprüfung der Ware auf Transportschäden</li>
+        <li>Freigabe der Lieferung zur Entladung</li>
+        <li>Annahme der Ware und erste Sichtkontrolle</li>
+        <li>Eingangskontrolle (Bestellmenge, Lieferschein, Liefermenge)</li>
+        <li>Qualitätskontrolle und Mängelprüfung</li>
+        <li>Stichprobenentnahme</li>
+        <li><em>(Zwischenlagerung im gesperrten Bereich bei Beanstandung)</em></li>
+        <li>Mängelfeststellung auf dem Lieferschein</li>
+        <li>Erfassung der Ware im Wareneingang</li>
+        <li>Vergabe Lagerplatz</li>
+        <li>Einlagerung der Ware</li>
+      </ol>
+    </div>
+  </div>
+
+  <h3>Warenausgang</h3>
+  <div class="prozess-steps">
+    <div class="prozess-step"><div class="step-name">Entnahmeauftrag</div><div class="step-sub">Auftrag annehmen</div></div>
+    <div class="prozess-step"><div class="step-name">Kommissionierung</div><div class="step-sub">Ware zusammenstellen</div></div>
+    <div class="prozess-step"><div class="step-name">Verpackung</div><div class="step-sub">Versandfertig machen</div></div>
+    <div class="prozess-step"><div class="step-name">Bereitstellung</div><div class="step-sub">Zum Versand bereitstellen</div></div>
+    <div class="prozess-step"><div class="step-name">Buchung</div><div class="step-sub">Bestandsveränderung buchen</div></div>
+  </div>
+
+  <h3>Lagerpflege</h3>
+  <div class="grid3">
+    <div class="mini-card"><div class="mini-title">🌡 Umweltbedingungen</div><div class="mini-text">Temperatur, Feuchtigkeit, Belüftung überwachen</div></div>
+    <div class="mini-card"><div class="mini-title">🏷 Kennzeichnungen</div><div class="mini-text">Etiketten, MHD, Chargen kontrollieren</div></div>
+    <div class="mini-card"><div class="mini-title">🔧 Lagermittel</div><div class="mini-text">Regale, Paletten, Fördermittel überwachen</div></div>
+  </div>
+
+  <h3>Lagerkontrolle &amp; Inventur</h3>
+  <table>
+    <tr><th>Art</th><th>Rechtsgrundlage</th><th>Beschreibung</th></tr>
+    <tr><td><strong>Stichtagsinventur</strong></td><td>§ 240 HGB</td><td>Vollständige Zählung zu einem bestimmten Stichtag (z.B. 31.12.)</td></tr>
+    <tr><td><strong>Stichprobeninventur</strong></td><td>§ 241 HGB</td><td>Hochrechnung auf Gesamtbestand anhand von Stichproben</td></tr>
+    <tr><td><strong>Permanente Inventur</strong></td><td>§ 241 HGB</td><td>Laufende Erfassung über das ganze Jahr verteilt</td></tr>
+    <tr><td><strong>Verlegte Inventur</strong></td><td>§ 241 HGB</td><td>Inventur bis 3 Monate vor oder 2 Monate nach dem Stichtag</td></tr>
+  </table>
+
+  <h3>Datenerfassung im Lagerbereich</h3>
+  <div class="grid3">
+    <div class="mini-card"><div class="mini-title">📊 EAN-Code</div><div class="mini-text">Barcode-System für Identifikation, Information, Klassifikation</div></div>
+    <div class="mini-card"><div class="mini-title">📡 RFID-Technik</div><div class="mini-text">Funkbasierte Erfassung ohne Sichtkontakt</div></div>
+    <div class="mini-card"><div class="mini-title">🏷 Materialnummer</div><div class="mini-text">Identifikation · Information · Klassifikation</div></div>
+  </div>
+  <div class="note-area"><button class="note-btn" onclick="toggleNote(this)">✏ Notiz hinzufügen</button><textarea class="note-input" style="display:none" placeholder="Deine Notizen..."></textarea></div>
+</section>
+
+<!-- KOMMISSIONIERUNG -->
+<section id="kommissionierung">
+  <h2>Kommissionierung</h2>
+
+  <h3>Grundprinzipien</h3>
+  <div class="grid3">
+    <div class="mini-card"><div class="mini-title">👤 vs. 🤖</div><div class="mini-text">Mensch vs. Maschine / Automat</div></div>
+    <div class="mini-card"><div class="mini-title">📦 zur 👤</div><div class="mini-text">Ware zur Person (z.B. Automat, Karussell)</div></div>
+    <div class="mini-card"><div class="mini-title">👤 zur 📦</div><div class="mini-text">Person zur Ware (klassischer Picker im Regal)</div></div>
+    <div class="mini-card"><div class="mini-title">1-stufig</div><div class="mini-text">Ein Auftrag wird vollständig kommissioniert</div></div>
+    <div class="mini-card"><div class="mini-title">Mehrstufig</div><div class="mini-text">Mehrere Aufträge gleichzeitig (Batch-Picking)</div></div>
+  </div>
+
+  <h3>Kommissionierstrategien</h3>
+  <table>
+    <tr><th>Strategie</th><th>Auftragsweise</th><th>Artikelweise</th></tr>
+    <tr>
+      <td><strong>Sequenziell</strong></td>
+      <td>Alle Artikel eines Auftrags nacheinander</td>
+      <td>Ein Artikel für mehrere Aufträge nacheinander</td>
+    </tr>
+    <tr>
+      <td><strong>Parallel</strong></td>
+      <td>Alle Artikel eines Auftrags gleichzeitig (verschiedene Zonen)</td>
+      <td>Alle Artikel für mehrere Aufträge gleichzeitig</td>
+    </tr>
+  </table>
+
+  <div class="card blue">
+    <div class="label">Roll-Cage-Sequencing</div>
+    <div class="def">Beladung von Rollcontainern in der Reihenfolge, wie die Artikel beim Empfänger entladen werden sollen – minimiert Handling beim Kunden.</div>
+  </div>
+
+  <h3>Kommissioniertechniken</h3>
+  <div class="grid3">
+    <div class="mini-card"><div class="mini-title">📋 Pick-Listen</div><div class="mini-text">Klassische Variante – Papierliste oder Tablet</div></div>
+    <div class="mini-card"><div class="mini-title">🎙 Pick-by-Voice</div><div class="mini-text">Sprachgesteuerte Kommissionierung</div></div>
+    <div class="mini-card"><div class="mini-title">💡 Pick-by-Light</div><div class="mini-text">Leuchtanzeige am Regalfach zeigt Entnahme an</div></div>
+    <div class="mini-card"><div class="mini-title">👓 Pick-by-Vision</div><div class="mini-text">Augmented Reality / Smart Glasses</div></div>
+    <div class="mini-card"><div class="mini-title">🤖 Roboter/Automaten</div><div class="mini-text">Vollautomatisierte Entnahme</div></div>
+  </div>
+  <div class="note-area"><button class="note-btn" onclick="toggleNote(this)">✏ Notiz hinzufügen</button><textarea class="note-input" style="display:none" placeholder="Deine Notizen..."></textarea></div>
+</section>
+
+<!-- ═══════════════════════════════════ -->
+<!-- 1.2.5 SUBSYSTEME                   -->
+<!-- ═══════════════════════════════════ -->
+
+<div style="margin: 2.5rem 0 1.5rem; padding: 1rem 1.25rem; background: var(--sidebar-bg); border-radius: var(--radius); color: #e0ddd6;">
+  <div style="font-size:11px; text-transform:uppercase; letter-spacing:0.08em; color:#888; margin-bottom:0.3rem;">Kapitel 1.2.5</div>
+  <div style="font-size:18px; font-weight:600;">Subsysteme verschiedener Logistiksysteme</div>
+</div>
+
+<!-- BESCHAFFUNGSLOGISTIK -->
+<section id="beschaffungslog">
+  <h2>1. Beschaffungslogistik</h2>
+
+  <h3>Bestandteile</h3>
+  <div class="grid3">
+    <div class="mini-card"><div class="mini-title">📋 Bedarfskalkulation</div></div>
+    <div class="mini-card"><div class="mini-title">📥 Wareneingang</div></div>
+    <div class="mini-card"><div class="mini-title">🏪 Lagerung</div></div>
+    <div class="mini-card"><div class="mini-title">🔄 Umschlag</div></div>
+    <div class="mini-card"><div class="mini-title">📦 Bereitstellung</div></div>
+    <div class="mini-card"><div class="mini-title">🚛 Transport</div></div>
+  </div>
+
+  <h3>Organisationsstrategien</h3>
+  <div class="grid3">
+    <div class="mini-card"><div class="mini-title">🏢 Zentral</div><div class="mini-text">Eine zentrale Einkaufsabteilung für alle</div></div>
+    <div class="mini-card"><div class="mini-title">🏘 Dezentral</div><div class="mini-text">Jeder Bereich kauft selbst ein</div></div>
+    <div class="mini-card"><div class="mini-title">👑 Lead Buyer</div><div class="mini-text">Ein Bereich kauft für alle ein (Kompetenzcenter)</div></div>
+  </div>
+
+  <h3>Materialbedarfsplanung</h3>
+  <div class="grid3">
+    <div class="card blue">
+      <div class="label">Nach Qualitätsstandards</div>
+      <div class="def">Low-Cost · Standard · Premium</div>
+    </div>
+    <div class="card green">
+      <div class="label">Nach Bestimmungsmethoden</div>
+      <div class="def"><strong>Deterministisch:</strong> Aus Stücklisten und Produktionsplänen<br><strong>Stochastisch:</strong> Aus Vergangenheitswerten (Statistik)<br><strong>Heuristisch:</strong> Schätzung/Erfahrungswerte</div>
+    </div>
+    <div class="card amber">
+      <div class="label">Nach Bereitstellungsmethoden</div>
+      <div class="def"><strong>Bestandsoptimiert:</strong> Vorrat halten<br><strong>Bestandsvermeidend:</strong><br>→ Bedarfsorientiert<br>→ Produktionssynchron (JIT/JIS/KANBAN/WoW)</div>
+    </div>
+  </div>
+
+  <h3>KANBAN – Voraussetzungen</h3>
+  <div class="card purple">
+    <div class="label">Exkurs: Wann funktioniert KANBAN?</div>
+    <div class="def">
+      • Hohe Prozesskontinuität<br>
+      • Harmonisierte Kapazitäten<br>
+      • Geringe Variantenvielfalt<br>
+      • Relativ kontinuierlicher Bedarf<br>
+      • Räumliche Nähe innerhalb der Lieferkette<br>
+      • Kurze Rüstzeiten
+    </div>
+  </div>
+
+  <h3>Sourcing-Strategien</h3>
+  <table>
+    <tr><th>Dimension</th><th>Ausprägungen</th></tr>
+    <tr><td><strong>Autonomie (Lieferantenanzahl)</strong></td><td>Single Sourcing · Dual Sourcing · Multiple Sourcing</td></tr>
+    <tr><td><strong>Geografisch</strong></td><td>Local · Regional · National · Global</td></tr>
+    <tr><td><strong>Komplettierungsgrad</strong></td><td>Einzelteil · Modul · Gesamtsystem</td></tr>
+    <tr><td><strong>Lieferantenbeziehung</strong></td><td>Individuelle Beschaffung · Kooperative Beschaffung</td></tr>
+  </table>
+  <div class="note-area"><button class="note-btn" onclick="toggleNote(this)">✏ Notiz hinzufügen</button><textarea class="note-input" style="display:none" placeholder="Deine Notizen..."></textarea></div>
+</section>
+
+<!-- PRODUKTIONSLOGISTIK -->
+<section id="produktionslog">
+  <h2>2. Produktionslogistik</h2>
+
+  <div class="grid3">
+    <div class="mini-card"><div class="mini-title">📐 Strategisch</div><div class="mini-text">Bestimmung des Produktionslayouts</div></div>
+    <div class="mini-card"><div class="mini-title">⚙️ Taktisch</div><div class="mini-text">Auswahl geeigneter Transportmittel</div></div>
+    <div class="mini-card"><div class="mini-title">📦 Operativ</div><div class="mini-text">Bereitstellung des Materials</div></div>
+  </div>
+
+  <h3>Ziele der Produktionslogistik</h3>
+  <div class="card green">
+    <div class="def">Reduzierung der Durchlaufzeiten · Reduzierung von Beständen in der Produktion · Harmonisierung der Produktionskapazitäten</div>
+  </div>
+
+  <h3>Durchlaufzeit – Bestandteile &amp; Einflüsse</h3>
+  <div class="grid2">
+    <div class="card blue">
+      <div class="label">Bestandteile der Durchlaufzeit</div>
+      <div class="def">Bearbeitungszeit · Transportzeiten · Kontrollzeiten · Lieg- und Wartezeiten</div>
+    </div>
+    <div class="card amber">
+      <div class="label">Einfluss auf…</div>
+      <div class="def">Kosten · Liquidität · Flexibilität · Umsatz · Liefertreue · Kundenzufriedenheit</div>
+    </div>
+  </div>
+
+  <h3>Reduzierung der Durchlaufzeit</h3>
+  <div class="card green">
+    <div class="def">
+      • Reduzierung der Liege- und Kontrollzeiten<br>
+      • Einsatz geeigneter Qualitätssicherungssysteme<br>
+      • Verkürzung der Rüstzeiten<br>
+      • Verkürzung der Transportzeiten<br>
+      • Auflösen von Kapazitätsengpässen<br>
+      • Fremdvergabe (Outsourcing)
+    </div>
+  </div>
+
+  <h3>Planungssysteme der Produktion</h3>
+  <table>
+    <tr><th>System</th><th>Beschreibung</th></tr>
+    <tr><td><strong>Vorwärtsterminierung</strong></td><td>Start vom frühestmöglichen Datum → ermittelt frühesten Fertigstellungstermin</td></tr>
+    <tr><td><strong>Rückwärtsterminierung</strong></td><td>Start vom Liefertermin rückwärts → ermittelt spätestmöglichen Starttermin</td></tr>
+    <tr><td><strong>Kapazitätsterminierung</strong></td><td>Engpassorientierte Planung – Engpass bestimmt den Takt</td></tr>
+    <tr><td><strong>Push-System</strong></td><td>Bringsystem – Material wird in den Prozess gedrückt (Planung steuert)</td></tr>
+    <tr><td><strong>Pull-System</strong></td><td>Holsystem – Nachfolgeprozess zieht Material bei Bedarf (KANBAN)</td></tr>
+  </table>
+
+  <h3>Trends in der Produktionslogistik</h3>
+  <div class="grid3">
+    <div class="mini-card"><div class="mini-title">🤖 Automatisierung</div><div class="mini-text">Roboter, AGV, vollautomatisierte Linien</div></div>
+    <div class="mini-card"><div class="mini-title">📱 On-Demand-Fertigung</div><div class="mini-text">Produktion erst bei Auftragseingang</div></div>
+    <div class="mini-card"><div class="mini-title">🏭 Fließfertigung</div><div class="mini-text">Kontinuierlicher Fluss ohne Puffer</div></div>
+    <div class="mini-card"><div class="mini-title">🚫 Staplerfreie Produktion</div><div class="mini-text">AGV und Fördertechnik statt Stapler</div></div>
+    <div class="mini-card"><div class="mini-title">🔄 Synchronized Production</div><div class="mini-text">Synchronisierung aller Produktionsstufen</div></div>
+  </div>
+  <div class="note-area"><button class="note-btn" onclick="toggleNote(this)">✏ Notiz hinzufügen</button><textarea class="note-input" style="display:none" placeholder="Deine Notizen..."></textarea></div>
+</section>
+
+<!-- DISTRIBUTIONSLOGISTIK -->
+<section id="distributionslog">
+  <h2>3. Distributionslogistik</h2>
+
+  <h3>Aufgaben</h3>
+  <div class="grid2">
+    <div class="mini-card"><div class="mini-title">🌍 Externe Marktversorgung</div><div class="mini-text">Kunden beliefern – der eigentliche Zweck</div></div>
+    <div class="mini-card"><div class="mini-title">🏪 Bestandsoptimierte Lagerhaltung</div><div class="mini-text">Auf Kundenseite Bestände optimieren</div></div>
+    <div class="mini-card"><div class="mini-title">📅 Liefertermineinhaltung</div><div class="mini-text">Pünktlichkeit als Kernkompetenz</div></div>
+    <div class="mini-card"><div class="mini-title">🔀 Überbrückungsfunktion</div><div class="mini-text">Räumliche und zeitliche Überbrückung</div></div>
+  </div>
+
+  <h3>Lieferservice optimieren</h3>
+  <div class="card blue">
+    <div class="label">Lieferservice-Dimensionen</div>
+    <div class="def">
+      <strong>Lieferzeit:</strong> Wie lange dauert es von Bestellung bis Erhalt?<br>
+      <strong>Termintreue:</strong> Wird der versprochene Termin eingehalten?<br>
+      <strong>Lieferbereitschaft:</strong> Ist die Ware ab Lager verfügbar?<br><br>
+      ⚠️ <strong>Kano-Modell beachten!</strong> Mehr Lieferservice ≠ automatisch mehr Kundenzufriedenheit
+    </div>
+  </div>
+
+  <h3>Lieferkosten optimieren</h3>
+  <div class="grid2">
+    <div class="mini-card"><div class="mini-title">💰 Bestandskosten</div></div>
+    <div class="mini-card"><div class="mini-title">📋 Auftragsabwicklung</div></div>
+    <div class="mini-card"><div class="mini-title">🚛 TUL-Kosten</div><div class="mini-text">Transport, Umschlag, Lagerung</div></div>
+    <div class="mini-card"><div class="mini-title">❌ Fehlmengenkosten</div><div class="mini-text">Kosten bei Out-of-Stock</div></div>
+  </div>
+
+  <h3>Planungsebenen der Distribution</h3>
+  <table>
+    <tr><th>Ebene</th><th>Aufgaben</th></tr>
+    <tr><td><strong>Strategisch</strong></td><td>Standortwahl · Art der Lagerhaltung · Distributionswege · Transportmittelauswahl</td></tr>
+    <tr><td><strong>Taktisch</strong></td><td>Festlegung des Servicelevels · Personalplanung (grob)</td></tr>
+    <tr><td><strong>Operativ</strong></td><td>Tourenplanung · Personalplanung (fein)</td></tr>
+    <tr><td><strong>Administrativ</strong></td><td>Auftragsabwicklung · Dokumentation</td></tr>
+  </table>
+  <div class="note-area"><button class="note-btn" onclick="toggleNote(this)">✏ Notiz hinzufügen</button><textarea class="note-input" style="display:none" placeholder="Deine Notizen..."></textarea></div>
+</section>
+
+<!-- REVERSE LOGISTIK -->
+<section id="reverselogistik">
+  <h2>Reverse Logistik (Sonderform Distribution)</h2>
+
+  <h3>Ersatzteillogistik</h3>
+  <div class="card purple">
+    <div class="label">Wettbewerbsdifferenzierung</div>
+    <div class="def">Bewirtschaftung der Ersatzteile nach:<br>
+    Ausfallhäufigkeit · Ausfallfolgen · Wiederbeschaffungszeit · Lagerkosten · Umschlagshäufigkeit · Lieferzeitabsprachen · Verfügbarkeit · Angemessenheit der Kosten</div>
+  </div>
+
+  <h3>Formen der Reverse Logistik</h3>
+  <div class="grid2">
+    <div class="mini-card"><div class="mini-title">🔄 Retourenlogistik</div><div class="mini-text">Rückgaben und Reklamationen vom Kunden</div></div>
+    <div class="mini-card"><div class="mini-title">🔧 Rücknahmelogistik</div><div class="mini-text">Reparaturen – Artikel werden zurückgenommen</div></div>
+    <div class="mini-card"><div class="mini-title">📦 Behälter-/Pfandlogistik</div><div class="mini-text">Mehrwegbehälter und Großladungsträger</div></div>
+    <div class="mini-card"><div class="mini-title">🗑 Entsorgungslogistik</div><div class="mini-text">TUL + Sammlung, Sortierung, Aufbereitung</div></div>
+  </div>
+
+  <h3>Abfallhierarchie (Priorität von oben nach unten)</h3>
+  <div class="prozess-steps" style="flex-direction:column; gap:0.4rem;">
+    <div class="prozess-step" style="background:var(--green-bg); border-color:var(--green);"><div class="step-name">1. Abfallvermeidung</div><div class="step-sub">Beste Lösung – gar keinen Abfall erzeugen</div></div>
+    <div class="prozess-step" style="background:var(--blue-bg); border-color:var(--blue);"><div class="step-name">2. Wiederverwendung</div><div class="step-sub">Produkt oder Teil erneut verwenden</div></div>
+    <div class="prozess-step" style="background:var(--blue-bg); border-color:var(--blue);"><div class="step-name">3. Recycling</div><div class="step-sub">Stoff oder Material wiederverwerten</div></div>
+    <div class="prozess-step" style="background:var(--yellow-bg); border-color:var(--yellow);"><div class="step-name">4. Energetische Verwertung</div><div class="step-sub">Verbrennen mit Energiegewinnung</div></div>
+    <div class="prozess-step" style="background:var(--red-bg); border-color:var(--red);"><div class="step-name">5. Abfallbeseitigung</div><div class="step-sub">Letzte Option – Deponie etc.</div></div>
+  </div>
+
+  <h3>Warum nimmt Entsorgungslogistik an Bedeutung zu?</h3>
+  <div class="card amber">
+    <div class="def">Gesetzliche Anforderungen (KrWG) · steigendes Umweltbewusstsein · Nachhaltigkeit als Wettbewerbsfaktor · steigende Entsorgungskosten · Kostenvorteile durch Wiederverwendung</div>
+  </div>
+  <div class="note-area"><button class="note-btn" onclick="toggleNote(this)">✏ Notiz hinzufügen</button><textarea class="note-input" style="display:none" placeholder="Deine Notizen..."></textarea></div>
+</section>
+
+<!-- RECYCLING -->
+<section id="recycling">
+  <h2>Recycling &amp; Abfallrecht</h2>
+
+  <h3>Definition Recycling</h3>
+  <div class="card green">
+    <div class="def">Prozess der Wiederverwertung und -verwendung · Kreislaufprozess zur Schonung natürlicher Ressourcen · Minimierung der Neuzufuhr von Stoffen</div>
+  </div>
+
+  <h3>Formen des Recyclings</h3>
+  <div class="grid2">
+    <div class="card blue">
+      <div class="label">Verwertung (für neuen Zweck)</div>
+      <div class="def">Wiederverwertung · Weiterverwertung</div>
+    </div>
+    <div class="card green">
+      <div class="label">Verwendung (für gleichen Zweck)</div>
+      <div class="def">Wiederverwendung · Weiterverwendung</div>
+    </div>
+  </div>
+
+  <h3>Gemischtes vs. Getrenntes Recycling</h3>
+  <div class="grid2">
+    <div class="card amber">
+      <div class="label">Gemischtes Recycling</div>
+      <div class="def">✅ Wenige Sammelbehälter<br>❌ Zusätzlicher Sortieraufwand nötig</div>
+    </div>
+    <div class="card blue">
+      <div class="label">Getrenntes Recycling</div>
+      <div class="def">✅ Reinstoffe bereits getrennt<br>❌ Viele Sammelbehälter nötig</div>
+    </div>
+  </div>
+
+  <h3>Wichtige Rechtsvorschriften</h3>
+  <div class="card blue">
+    <div class="label">Gesetzliche Grundlagen</div>
+    <div class="def">
+      <strong>KrWG</strong> – Kreislaufwirtschaftsgesetz (§ 3 Abfall, § 23 Produktverantwortung)<br>
+      Verordnung über Betriebsbeauftragte für Abfallwirtschaft<br>
+      Verpackungsverordnung (§ 4 Transport-, § 5 Um-, § 6 Verkaufsverpackungen)<br>
+      Abfallbestimmungsverordnung · Reststoffbestimmungsverordnung · TA Abfall
+    </div>
+  </div>
+
+  <h3>Ansatzpunkte zur Abfallvermeidung</h3>
+  <div class="grid3">
+    <div class="mini-card"><div class="mini-title">🚫 Ausschuss vermeiden</div></div>
+    <div class="mini-card"><div class="mini-title">📦 Verpackung verringern</div></div>
+    <div class="mini-card"><div class="mini-title">⚗️ R/H/B-Stoffe reduzieren</div></div>
+    <div class="mini-card"><div class="mini-title">♻️ Abfälle wiederverwenden</div></div>
+    <div class="mini-card"><div class="mini-title">🔧 Reparabel designen</div></div>
+  </div>
+  <div class="note-area"><button class="note-btn" onclick="toggleNote(this)">✏ Notiz hinzufügen</button><textarea class="note-input" style="display:none" placeholder="Deine Notizen..."></textarea></div>
+</section>
+
+<!-- MATERIALFLUSSANALYSE -->
+<section id="materialfluss">
+  <h2>1.2.6 Methoden der Materialflussanalyse</h2>
+
+  <table>
+    <tr><th>Methode</th><th>Zweck / Beschreibung</th></tr>
+    <tr>
+      <td><strong>Sankey-Diagramm</strong></td>
+      <td>Visualisierung von Mengenströmen – Breite der Pfeile entspricht der Menge</td>
+    </tr>
+    <tr>
+      <td><strong>Mengen-Wege-Diagramm</strong></td>
+      <td>Darstellung von Materialmengen auf räumlichen Wegen im Betrieb</td>
+    </tr>
+    <tr>
+      <td><strong>Materialfluss-/Transportmatrix</strong></td>
+      <td>Tabellarische Darstellung der Transportströme zwischen Bereichen</td>
+    </tr>
+    <tr>
+      <td><strong>Wertstromanalyse</strong></td>
+      <td>Identifikation wertsteigernder (Herstellung), wertneutraler (Rüsten) und wertsenkender (Wartezeiten, Ausschuss) Prozessschritte</td>
+    </tr>
+  </table>
+
+  <div class="merksatz">Die Wertstromanalyse ist das wichtigste Werkzeug zur Identifikation von Verschwendung (Muda) im Prozess – direkte Verbindung zum Toyota 3M Modell!</div>
+  <div class="note-area"><button class="note-btn" onclick="toggleNote(this)">✏ Notiz hinzufügen</button><textarea class="note-input" style="display:none" placeholder="Deine Notizen..."></textarea></div>
+</section>
+
+<!-- GESTALTUNGSPRINZIPIEN -->
+<section id="gestaltung">
+  <h2>1.2.7 Gestaltung von Logistiksystemen</h2>
+
+  <div class="grid3">
+    <div class="card green">
+      <div class="label">Einfachheitsprinzip</div>
+      <div class="def">Logistiksysteme so einfach wie möglich gestalten – Komplexität reduziert Störanfälligkeit und Kosten.</div>
+    </div>
+    <div class="card blue">
+      <div class="label">Entkoppelungsprinzip</div>
+      <div class="def">Teilsysteme so gestalten, dass Störungen in einem Bereich nicht direkt auf andere übergreifen (Puffer, Entkopplungspunkte).</div>
+    </div>
+    <div class="card purple">
+      <div class="label">Näherungsprinzip</div>
+      <div class="def">Zusammengehörige Funktionen räumlich nähern – kurze Wege reduzieren Transport- und Zeitaufwand.</div>
+    </div>
+  </div>
   <div class="note-area"><button class="note-btn" onclick="toggleNote(this)">✏ Notiz hinzufügen</button><textarea class="note-input" style="display:none" placeholder="Deine Notizen..."></textarea></div>
 </section>
 
