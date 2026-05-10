@@ -49,6 +49,21 @@ main { max-width: 960px; margin: 0 auto; padding: 2.5rem 2rem 4rem; }
 .section-label { font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.1em; color: var(--text-3); margin-bottom: 1rem; margin-top: 2rem; padding-bottom: 0.4rem; border-bottom: 1px solid var(--border); }
 .section-label:first-of-type { margin-top: 0; }
 
+/* TEACHER ROWS */
+.teacher-row { margin-bottom: 1.75rem; }
+.teacher-label { display: flex; align-items: center; gap: 0.6rem; margin-bottom: 0.75rem; flex-wrap: wrap; }
+.teacher-dot { width: 10px; height: 10px; border-radius: 50%; flex-shrink: 0; }
+.teacher-dot.blue   { background: var(--blue); }
+.teacher-dot.green  { background: var(--green); }
+.teacher-dot.amber  { background: var(--amber); }
+.teacher-dot.purple { background: var(--purple); }
+.teacher-name { font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.07em; }
+.teacher-name.blue   { color: var(--blue); }
+.teacher-name.green  { color: var(--green); }
+.teacher-name.amber  { color: var(--amber); }
+.teacher-name.purple { color: var(--purple); }
+.teacher-fach { font-size: 12px; color: var(--text-3); border-left: 1px solid var(--border); padding-left: 0.6rem; }
+
 /* CARD GRID */
 .card-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1rem; margin-bottom: 0.5rem; }
 
@@ -117,72 +132,95 @@ footer { text-align: center; padding: 2rem; font-size: 12px; color: var(--text-3
 <main>
 
   <!-- LERNKAPITEL -->
-  <div class="section-label">📖 Lernkapitel – Skripte</div>
-  <div class="card-grid">
+  <div class="section-label">📖 Lernkapitel – nach Dozent</div>
 
-    <!-- Plab 1.1 + 1.2 -->
-    <a href="Kapitel_Plab.html" class="card blue">
-      <div class="card-tag blue">Benedikt Plab</div>
-      <div class="card-title">Logistische Abläufe &amp; Logistiksystemanalyse</div>
-      <div class="card-teacher">Kapitel 1.1 · 1.2.1 – 1.2.7</div>
-      <div class="card-desc">Logistikstruktur, Prozessmanagement, SCM, Bullwhip-Effekt, Transport, Lager, Kommissionierung, Incoterms, Subsysteme.</div>
-      <div class="card-footer">
-        <div class="card-topics">
-          <span class="card-topic">Transport</span>
-          <span class="card-topic">Lager</span>
-          <span class="card-topic">SCM</span>
-          <span class="card-topic">Incoterms</span>
+  <!-- BENEDIKT PLAB -->
+  <div class="teacher-row">
+    <div class="teacher-label">
+      <div class="teacher-dot blue"></div>
+      <span class="teacher-name blue">Benedikt Plab</span>
+      <span class="teacher-fach">Logistische Anforderungen ermitteln, analysieren und bewerten</span>
+    </div>
+    <div class="card-grid">
+      <a href="Kapitel_Plab.html" class="card blue">
+        <div class="card-title">Logistische Abläufe &amp; Logistiksystemanalyse</div>
+        <div class="card-teacher">Kapitel 1.1 · 1.2.1 – 1.2.7</div>
+        <div class="card-desc">Logistikstruktur, Prozessmanagement, SCM, Bullwhip-Effekt, Transport, Lager, Kommissionierung, Incoterms, Subsysteme.</div>
+        <div class="card-footer">
+          <div class="card-topics"><span class="card-topic">Transport</span><span class="card-topic">Lager</span><span class="card-topic">SCM</span><span class="card-topic">Incoterms</span></div>
+          <span class="card-arrow">→</span>
         </div>
-        <span class="card-arrow">→</span>
-      </div>
-    </a>
+      </a>
+    </div>
+  </div>
 
-    <!-- Gruber -->
-    <a href="Kapitel_Gruber.html" class="card green">
-      <div class="card-tag green">Christian Gruber</div>
-      <div class="card-title">Logistische Lösungen entwickeln &amp; planen</div>
-      <div class="card-teacher">Kapitel 1.2 · Logistische Planung</div>
-      <div class="card-desc">Beschaffungsstrategien, ABC/XYZ-Analyse, Bestellverfahren, Andlersche Formel, Lagerlogistik, Kennzahlen, Nachhaltigkeit.</div>
-      <div class="card-footer">
-        <div class="card-topics">
-          <span class="card-topic">ABC/XYZ</span>
-          <span class="card-topic">Andler</span>
-          <span class="card-topic">Kennzahlen</span>
+  <!-- CHRISTIAN GRUBER -->
+  <div class="teacher-row">
+    <div class="teacher-label">
+      <div class="teacher-dot green"></div>
+      <span class="teacher-name green">Christian Gruber</span>
+      <span class="teacher-fach">Logistische Lösungen entwickeln und planen</span>
+    </div>
+    <div class="card-grid">
+      <a href="Kapitel_Gruber.html" class="card green">
+        <div class="card-title">Logistische Lösungen entwickeln &amp; planen</div>
+        <div class="card-teacher">Kapitel 1.2 · Logistische Planung</div>
+        <div class="card-desc">Beschaffungsstrategien, ABC/XYZ-Analyse, Bestellverfahren, Andlersche Formel, Lagerlogistik, Kennzahlen, Nachhaltigkeit.</div>
+        <div class="card-footer">
+          <div class="card-topics"><span class="card-topic">ABC/XYZ</span><span class="card-topic">Andler</span><span class="card-topic">Kennzahlen</span></div>
+          <span class="card-arrow">→</span>
         </div>
-        <span class="card-arrow">→</span>
-      </div>
-    </a>
+      </a>
+    </div>
+  </div>
 
-    <!-- Kroul -->
-    <a href="Kapitel_Kroul.html" class="card amber">
-      <div class="card-tag amber">Raphael Kroul</div>
-      <div class="card-title">Einführung in die Logistik</div>
-      <div class="card-teacher">Kapitel 0 · Grundlagen</div>
-      <div class="card-desc">Entwicklung der Logistik, Bedeutung in Deutschland, logistische Grundbegriffe, Logistik 4.0, Nachhaltigkeit.</div>
-      <div class="card-footer">
-        <div class="card-topics">
-          <span class="card-topic">Grundlagen</span>
-          <span class="card-topic">Logistik 4.0</span>
+  <!-- RAPHAEL KROUL -->
+  <div class="teacher-row">
+    <div class="teacher-label">
+      <div class="teacher-dot amber"></div>
+      <span class="teacher-name amber">Raphael Kroul</span>
+      <span class="teacher-fach">Logistische Lösungen umsetzen, bewerten und weiterentwickeln</span>
+    </div>
+    <div class="card-grid">
+      <a href="Kapitel_Kroul.html" class="card amber">
+        <div class="card-title">Einführung in die Logistik</div>
+        <div class="card-teacher">Kapitel 0 · Grundlagen</div>
+        <div class="card-desc">Entwicklung der Logistik, Bedeutung in Deutschland, logistische Grundbegriffe, Supply Chain, OPP, Bullwhip-Effekt.</div>
+        <div class="card-footer">
+          <div class="card-topics"><span class="card-topic">Grundlagen</span><span class="card-topic">SCM</span><span class="card-topic">OPP</span></div>
+          <span class="card-arrow">→</span>
         </div>
-        <span class="card-arrow">→</span>
-      </div>
-    </a>
-
-    <!-- Kroul 1 -->
-    <a href="Kapitel_Kroul_1.html" class="card amber">
-      <div class="card-tag amber">Raphael Kroul</div>
-      <div class="card-title">Logistische Lösungen umsetzen &amp; bewerten</div>
-      <div class="card-teacher">Kapitel 3 · Umsetzung &amp; Weiterentwicklung</div>
-      <div class="card-desc">Kennzahlensysteme, Prozessbewertung, Qualitätsmanagement, Controlling in der Logistik.</div>
-      <div class="card-footer">
-        <div class="card-topics">
-          <span class="card-topic">Controlling</span>
-          <span class="card-topic">Kennzahlen</span>
+      </a>
+      <a href="Kapitel_Kroul_1.html" class="card amber">
+        <div class="card-title">Logistische Lösungen umsetzen &amp; bewerten</div>
+        <div class="card-teacher">Kapitel 3 · Umsetzung &amp; Weiterentwicklung</div>
+        <div class="card-desc">Kennzahlensysteme, Prozessbewertung, Qualitätsmanagement, Controlling in der Logistik.</div>
+        <div class="card-footer">
+          <div class="card-topics"><span class="card-topic">Controlling</span><span class="card-topic">Kennzahlen</span></div>
+          <span class="card-arrow">→</span>
         </div>
-        <span class="card-arrow">→</span>
-      </div>
-    </a>
+      </a>
+    </div>
+  </div>
 
+  <!-- KERSTIN GRUCHALA -->
+  <div class="teacher-row">
+    <div class="teacher-label">
+      <div class="teacher-dot purple"></div>
+      <span class="teacher-name purple">Kerstin Gruchala</span>
+      <span class="teacher-fach">Kommunikation, Führung und Zusammenarbeit</span>
+    </div>
+    <div class="card-grid">
+      <a href="Kapitel_Gruchala.html" class="card purple">
+        <div class="card-title">Kommunikation, Führung &amp; Zusammenarbeit</div>
+        <div class="card-teacher">Kapitel 1–7 · Vollständiges Modul</div>
+        <div class="card-desc">Kommunikationsmodelle, Personalmanagement, Führungsstile, Motivation, Maslow, Ausbildung (BBiG), Arbeitsschutz.</div>
+        <div class="card-footer">
+          <div class="card-topics"><span class="card-topic">Führung</span><span class="card-topic">Maslow</span><span class="card-topic">BBiG</span></div>
+          <span class="card-arrow">→</span>
+        </div>
+      </a>
+    </div>
   </div>
 
   <!-- WERKZEUGE -->
