@@ -629,7 +629,7 @@ function toggleNotiz(btn) {
 }
 
 function init(prefix) {
-  const selectors = ['.merksatz', '.tipp', '.pruefung', '.beispiel', '.def-box'];
+  const selectors = ['.merksatz', '.tipp', '.pruefung', '.beispiel', '.def-box', '.table-wrap', '.def-grid'];
   let counter = 0;
   selectors.forEach(sel => {
     document.querySelectorAll(sel).forEach(el => {
@@ -647,6 +647,25 @@ function init(prefix) {
       el.appendChild(btn);
       el.appendChild(area);
     });
+  });
+  // Notiz nach jedem h2-Abschnitt
+  document.querySelectorAll('h2').forEach(h2 => {
+    if (h2.nextElementSibling && h2.nextElementSibling.querySelector && h2.nextElementSibling.querySelector('.notiz-btn')) return;
+    const k = prefix + 'h2_' + counter++;
+    const wrap = document.createElement('div');
+    wrap.style.cssText = 'margin: 0.25rem 0 0.75rem;';
+    const btn = document.createElement('button');
+    btn.className = 'notiz-btn';
+    btn.textContent = '✏ Notiz zum Abschnitt';
+    btn.onclick = function() { toggleNotiz(this); };
+    const area = document.createElement('textarea');
+    area.className = 'notiz-area';
+    area.placeholder = 'Deine Notiz zu diesem Abschnitt…';
+    try { const s = localStorage.getItem(k); if (s) { area.value = s; area.style.display = 'block'; btn.textContent = '✏ Notiz schließen'; } } catch(e) {}
+    area.addEventListener('input', () => { try { localStorage.setItem(k, area.value); } catch(e) {} });
+    wrap.appendChild(btn);
+    wrap.appendChild(area);
+    h2.insertAdjacentElement('afterend', wrap);
   });
 
   // Aktiver Sidebar-Link
