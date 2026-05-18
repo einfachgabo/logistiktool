@@ -147,6 +147,19 @@ tr:nth-child(even) td { background: #fafaf8; }
 
 hr.sep { border: none; border-top: 1px solid var(--border); margin: 2.5rem 0; }
 
+/* ── Notizfeld für Textaufgaben ── */
+.aufgabe-notiz-wrap { padding: 0.75rem 1.5rem 1rem; border-top: 1px solid var(--border); background: #fdfcf8; }
+.aufgabe-notiz-label { font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; color: var(--text-2); margin-bottom: 0.4rem; }
+.aufgabe-notiz-area { width: 100%; min-height: 80px; border: 1px dashed #ccc; border-radius: 6px; padding: 0.6rem 0.75rem; font-size: 13px; font-family: inherit; resize: vertical; background: #fff; color: var(--text); }
+.aufgabe-notiz-area:focus { outline: none; border-color: var(--blue); }
+.toggle-btn { width: 100%; padding: 0.65rem 1rem; background: #f5f4f0; border: none; border-top: 1px solid var(--border); font-size: 13px; color: var(--text-2); cursor: pointer; text-align: left; display: flex; align-items: center; gap: 0.5rem; }
+.toggle-btn:hover { background: #eeede8; color: var(--text); }
+.toggle-btn .toggle-arrow { font-size: 10px; transition: transform 0.2s; display: inline-block; }
+.toggle-btn.open .toggle-arrow { transform: rotate(90deg); }
+.loesung-plab { display: none; border-top: 1px solid var(--border); padding: 1.25rem 1.5rem; background: #f0f5f0; }
+.loesung-plab.visible { display: block; }
+.loesung-plab .loesung-label { font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; color: var(--green); margin-bottom: 0.85rem; }
+
 @media (max-width: 800px) { aside { display: none; } main { padding: 1.5rem 1.25rem; } }
 </style>
 </head>
@@ -185,6 +198,16 @@ hr.sep { border: none; border-top: 1px solid var(--border); margin: 2.5rem 0; }
     <a href="#a3-576">Fremdbezugsteil (576.000)</a>
     <a href="#a2-industrie-ag">Industrie AG</a>
     <a href="#a2-feinblech">Feinbleche Edelstahl</a>
+  </nav>
+
+  <div class="sidebar-chapter">Theorie · Plab</div>
+  <nav class="sidebar-nav">
+    <a href="#plab-rechnungspruefung">Rechnungsprüfung</a>
+    <a href="#plab-lieferantenauswahl">Lieferantenauswahl</a>
+    <a href="#plab-ladungssicherung">Ladungssicherung</a>
+    <a href="#plab-redistribution">Redistribution</a>
+    <a href="#plab-trends">Trends der Logistik</a>
+    <a href="#plab-foerdermittel">Fördermittel</a>
   </nav>
 
   <div style="margin-top:auto;padding:1rem;border-top:1px solid #2a2a2a">
@@ -1064,6 +1087,267 @@ hr.sep { border: none; border-top: 1px solid var(--border); margin: 2.5rem 0; }
   </div>
 </div>
 
+
+<hr class="sep">
+<h3 id="plab-theorie">Theorie · Plab</h3>
+
+<!-- ═══ Aufgabe 7: Rechnungsprüfung ═══ -->
+<div class="aufgabe-block" id="plab-rechnungspruefung">
+  <div class="aufgabe-meta">
+    <span>Aufgabe 7 · <strong>Rechnungsprüfung</strong></span>
+    <span class="punkte-badge">12 Punkte</span>
+  </div>
+  <div class="aufgabe-body">
+    <div class="aufgabe-text">
+      <p>Bei der Frisch &amp; Fit GmbH soll der Bereich „Beschaffungscontrolling" weiter ausgebaut werden. Zur Effizienzsteigerung wird auch über eine Neustrukturierung der Funktion <strong>„Rechnungsprüfung"</strong> nachgedacht.</p>
+      <p>Eine Rechnungsprüfung findet in der Regel in dreifacher Hinsicht statt: <strong>sachlich, preislich und rechnerisch.</strong></p>
+    </div>
+    <div class="teilaufgaben">
+      <div class="teil"><div class="teil-badge">a</div><div class="teil-text">Erläutern Sie die konkreten Inhalte dieser drei Teilaufgaben anhand von jeweils zwei Beispielen.</div><div class="teil-punkte">6 Pkt.</div></div>
+      <div class="teil"><div class="teil-badge">b</div><div class="teil-text">Das Unternehmen steht vor der Wahl, die Rechnungsprüfung dem Einkauf oder dem Rechnungswesen/Controlling zuzuordnen. Beschreiben Sie für jede Alternative einen Vorteil.</div><div class="teil-punkte">2 Pkt.</div></div>
+      <div class="teil"><div class="teil-badge">c</div><div class="teil-text">Erläutern Sie drei Sachverhalte, die bei der Prüfung einer Eingangsrechnung (über 100 €) aus umsatzsteuerrechtlicher Sicht zwingend untersucht werden müssen.</div><div class="teil-punkte">3 Pkt.</div></div>
+      <div class="teil"><div class="teil-badge">d</div><div class="teil-text">Welche steuerrechtliche Konsequenz ergibt sich, wenn eine Eingangsrechnung akzeptiert wird, bei der Pflichtangaben fehlen?</div><div class="teil-punkte">1 Pkt.</div></div>
+    </div>
+  </div>
+  <div class="aufgabe-notiz-wrap">
+    <div class="aufgabe-notiz-label">✏ Meine Antwort</div>
+    <textarea class="aufgabe-notiz-area" data-plab-key="plab_rechnungspruefung" placeholder="Schreibe deine Lösung hier..."></textarea>
+  </div>
+  <button class="toggle-btn" onclick="togglePlab(this)"><span class="toggle-arrow">▶</span>&nbsp;Lösungsvorschlag einblenden</button>
+  <div class="loesung-plab">
+    <div class="loesung-label">✓ Lösungsvorschlag</div>
+    <div class="l-block">
+      <div class="l-title"><div class="l-badge">a</div>Inhalte der Rechnungsprüfung</div>
+      <div class="l-step"><strong>Sachliche Prüfung:</strong> Wurde die Ware/Leistung tatsächlich geliefert? Stimmen Art, Menge und Qualität mit dem Auftrag überein? → Abgleich mit Lieferschein und Bestelldaten</div>
+      <div class="l-step"><strong>Preisliche Prüfung:</strong> Stimmen die Preise mit Angebot/Vertrag überein? Wurden vereinbarte Rabatte, Skonti und Konditionen berücksichtigt?</div>
+      <div class="l-step"><strong>Rechnerische Prüfung:</strong> Sind alle Rechenoperationen korrekt? (Menge × Preis, korrekte MwSt.-Berechnung, Endsumme)</div>
+    </div>
+    <div class="l-block">
+      <div class="l-title"><div class="l-badge">b</div>Organisatorische Zuordnung</div>
+      <div class="l-step"><strong>Einkauf:</strong> Direkter Zugang zu Bestelldaten und Lieferantenkonditionen – schneller Abgleich möglich</div>
+      <div class="l-step"><strong>Rechnungswesen/Controlling:</strong> Klare Trennung von Bestellung und Prüfung – Vier-Augen-Prinzip, höhere Kontrollfunktion</div>
+    </div>
+    <div class="l-block">
+      <div class="l-title"><div class="l-badge">c</div>Umsatzsteuerrechtliche Pflichtangaben (§14 UStG)</div>
+      <div class="l-step">1. Vollständiger Name und Anschrift von Lieferant und Empfänger</div>
+      <div class="l-step">2. Steuernummer oder USt-IdNr. des Ausstellers</div>
+      <div class="l-step">3. Ausstellungsdatum und fortlaufende Rechnungsnummer, Menge/Art der Leistung, Nettobetrag, Steuersatz und ausgewiesener Steuerbetrag</div>
+    </div>
+    <div class="l-block">
+      <div class="l-title"><div class="l-badge">d</div>Steuerrechtliche Konsequenz</div>
+      <div class="l-step">Das Unternehmen verliert den <strong>Vorsteuerabzug</strong> – die MwSt. kann nicht vom Finanzamt zurückgefordert werden.</div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══ Aufgabe 6: Lieferantenauswahl ═══ -->
+<div class="aufgabe-block" id="plab-lieferantenauswahl">
+  <div class="aufgabe-meta">
+    <span>Aufgabe 6 · <strong>Lieferantenauswahl</strong></span>
+    <span class="punkte-badge">9 Punkte</span>
+  </div>
+  <div class="aufgabe-body">
+    <div class="aufgabe-text">
+      <p>Für einen Automobilkunden benötigt die Huber AG ein Metallelement, das mit Kunststoffteilen zu einem komplexen Bauteil verbunden wird. Der Preis ist vorgegeben und nicht verhandelbar. Drei Firmen sind als mögliche Lieferanten in der engeren Wahl.</p>
+    </div>
+    <div class="teilaufgaben">
+      <div class="teil"><div class="teil-badge">a</div><div class="teil-text">Erstellen Sie einen Katalog mit sechs Kriterien, die für die Bestimmung und Auswahl der Lieferanten maßgeblich sind.</div><div class="teil-punkte">3 Pkt.</div></div>
+      <div class="teil"><div class="teil-badge">b</div><div class="teil-text">Wählen Sie drei dieser Kriterien aus und bewerten Sie diese mit Punkten zwischen 1 und 5. Begründen Sie Ihre Bewertung.</div><div class="teil-punkte">3 Pkt.</div></div>
+      <div class="teil"><div class="teil-badge">c</div><div class="teil-text">Erläutern Sie vor dem Hintergrund des gegebenen Sachverhaltes den Begriff des Lieferantenmanagements.</div><div class="teil-punkte">3 Pkt.</div></div>
+    </div>
+  </div>
+  <div class="aufgabe-notiz-wrap">
+    <div class="aufgabe-notiz-label">✏ Meine Antwort</div>
+    <textarea class="aufgabe-notiz-area" data-plab-key="plab_lieferantenauswahl" placeholder="Schreibe deine Lösung hier..."></textarea>
+  </div>
+  <button class="toggle-btn" onclick="togglePlab(this)"><span class="toggle-arrow">▶</span>&nbsp;Lösungsvorschlag einblenden</button>
+  <div class="loesung-plab">
+    <div class="loesung-label">✓ Lösungsvorschlag</div>
+    <div class="l-block">
+      <div class="l-title"><div class="l-badge">a</div>Kriterien zur Lieferantenauswahl</div>
+      <div class="l-step">1. Lieferzuverlässigkeit / Termintreue</div>
+      <div class="l-step">2. Qualitätsstandards / Zertifizierungen (z.B. ISO 9001, IATF 16949)</div>
+      <div class="l-step">3. Flexibilität bei Mengen- und Terminänderungen</div>
+      <div class="l-step">4. Finanzielle Stabilität des Lieferanten</div>
+      <div class="l-step">5. Geografische Nähe / Transportkosten</div>
+      <div class="l-step">6. Referenzen und Erfahrung in der Automobilbranche</div>
+    </div>
+    <div class="l-block">
+      <div class="l-title"><div class="l-badge">b</div>Beispielbewertung</div>
+      <div class="l-step"><strong>Qualitätsstandards (5 Pkt.):</strong> Sicherheitsrelevantes Bauteil – höchste Qualität zwingend erforderlich</div>
+      <div class="l-step"><strong>Lieferzuverlässigkeit (4 Pkt.):</strong> Verzögerungen stoppen JIT-Produktion, hohe Folgekosten</div>
+      <div class="l-step"><strong>Flexibilität (3 Pkt.):</strong> Schwankende Abrufmengen im Automobilbereich erfordern Anpassungsfähigkeit</div>
+    </div>
+    <div class="l-block">
+      <div class="l-title"><div class="l-badge">c</div>Lieferantenmanagement</div>
+      <div class="l-step">Systematische Auswahl, Bewertung, Entwicklung und Pflege von Lieferantenbeziehungen mit dem Ziel, langfristig zuverlässige, qualitativ hochwertige und kosteneffiziente Beschaffung sicherzustellen. Da der Preis fix ist, erfolgt die Differenzierung ausschließlich über Qualität, Zuverlässigkeit und Service.</div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══ Aufgabe 9: Ladungssicherung ═══ -->
+<div class="aufgabe-block" id="plab-ladungssicherung">
+  <div class="aufgabe-meta">
+    <span>Aufgabe 9 · <strong>Ladungssicherung</strong></span>
+    <span class="punkte-badge">8 Punkte</span>
+  </div>
+  <div class="aufgabe-body">
+    <div class="aufgabe-text">
+      <p>Bei einem Transport von Celle nach Regensburg kam der Lkw in eine Verkehrskontrolle. Die Polizei beanstandete die Ladungssicherung. Das Gewicht der Sendung inklusive Palette betrug <strong>800 kg</strong>. Das Warenbegleitpapier enthielt den Hinweis: <em>„Der Fahrer ist für die Beladung inklusive Ladungssicherung zuständig und alleine verantwortlich."</em></p>
+    </div>
+    <div class="teilaufgaben">
+      <div class="teil"><div class="teil-badge">a</div><div class="teil-text">Erläutern Sie, wer und aus welchen Gründen in diesem Fall welche Verantwortung für die Ladungssicherung sowie die Beladung trägt.</div><div class="teil-punkte">4 Pkt.</div></div>
+      <div class="teil"><div class="teil-badge">b</div><div class="teil-text">Beschreiben Sie, was man unter formschlüssiger Ladungssicherung versteht.</div><div class="teil-punkte">2 Pkt.</div></div>
+      <div class="teil"><div class="teil-badge">c</div><div class="teil-text">Wie viel Kilogramm müssen gemäß VDI-Richtlinie 2700 nach vorne, auf die Seite und nach hinten gesichert werden? <em>(Hinweis: 1 daN ≈ 1 kg)</em></div><div class="teil-punkte">2 Pkt.</div></div>
+    </div>
+  </div>
+  <div class="aufgabe-notiz-wrap">
+    <div class="aufgabe-notiz-label">✏ Meine Antwort</div>
+    <textarea class="aufgabe-notiz-area" data-plab-key="plab_ladungssicherung" placeholder="Schreibe deine Lösung hier..."></textarea>
+  </div>
+  <button class="toggle-btn" onclick="togglePlab(this)"><span class="toggle-arrow">▶</span>&nbsp;Lösungsvorschlag einblenden</button>
+  <div class="loesung-plab">
+    <div class="loesung-label">✓ Lösungsvorschlag</div>
+    <div class="l-block">
+      <div class="l-title"><div class="l-badge">a</div>Verantwortung</div>
+      <div class="l-step"><strong>Verlader/Absender:</strong> Trägt nach § 22 StVO die Hauptverantwortung für ordnungsgemäße Beladung und Sicherung. Diese Pflicht kann nicht wirksam per Warenbegleitpapier vollständig auf den Fahrer übertragen werden.</div>
+      <div class="l-step"><strong>Frachtführer/Fahrer:</strong> Ist verpflichtet, den Zustand der Ladung vor Fahrtantritt zu prüfen und bei erkennbaren Mängeln die Fahrt zu verweigern. Der Hinweis im Begleitpapier entbindet ihn nicht von dieser Pflicht.</div>
+      <div class="l-step"><strong>Fazit:</strong> Beide tragen Mitverantwortung – Verlader für die Beladung, Fahrer für die Überprüfung und ggf. Nachsicherung.</div>
+    </div>
+    <div class="l-block">
+      <div class="l-title"><div class="l-badge">b</div>Formschlüssige Ladungssicherung</div>
+      <div class="l-step">Das Ladegut wird so eng von anderen Gütern, der Fahrzeugwand oder Hilfsmitteln (z.B. Ladebalken, Füllmaterial) umschlossen, dass es sich nicht verschieben kann – ohne dass zusätzliche Zurrkräfte notwendig sind. Die Sicherung erfolgt durch <strong>Kraftschluss durch Form</strong>, nicht durch Zurren.</div>
+    </div>
+    <div class="l-block">
+      <div class="l-title"><div class="l-badge">c</div>Sicherungskräfte nach VDI 2700 (800 kg)</div>
+      <div class="l-step"><strong>Nach vorne:</strong> 0,8 × 800 kg = <span class="l-result">640 kg</span></div>
+      <div class="l-step"><strong>Zur Seite:</strong> 0,5 × 800 kg = <span class="l-result">400 kg</span></div>
+      <div class="l-step"><strong>Nach hinten:</strong> 0,5 × 800 kg = <span class="l-result">400 kg</span></div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══ Aufgabe 9: Redistribution ═══ -->
+<div class="aufgabe-block" id="plab-redistribution">
+  <div class="aufgabe-meta">
+    <span>Aufgabe 9 · <strong>Redistribution (KrWG)</strong></span>
+    <span class="punkte-badge">7 Punkte</span>
+  </div>
+  <div class="aufgabe-body">
+    <div class="aufgabe-text">
+      <p>Im Rahmen der Zertifizierung der Logistik der Exquisit GmbH wird auch der Prozess der <strong>Redistribution</strong> untersucht.</p>
+    </div>
+    <div class="teilaufgaben">
+      <div class="teil"><div class="teil-badge">a</div><div class="teil-text">Beschreiben Sie den Begriff Redistributionslogistik und welche Pflichten die Exquisit GmbH im Rahmen der Redistribution hat.</div><div class="teil-punkte">4 Pkt.</div></div>
+      <div class="teil"><div class="teil-badge">b</div><div class="teil-text">Formulieren Sie, was das Kreislaufwirtschaftsgesetz (KrWG) im Rahmen der Redistribution vorschreibt und welche Zielhierarchie vom Gesetzgeber vorgegeben wird.</div><div class="teil-punkte">3 Pkt.</div></div>
+    </div>
+  </div>
+  <div class="aufgabe-notiz-wrap">
+    <div class="aufgabe-notiz-label">✏ Meine Antwort</div>
+    <textarea class="aufgabe-notiz-area" data-plab-key="plab_redistribution" placeholder="Schreibe deine Lösung hier..."></textarea>
+  </div>
+  <button class="toggle-btn" onclick="togglePlab(this)"><span class="toggle-arrow">▶</span>&nbsp;Lösungsvorschlag einblenden</button>
+  <div class="loesung-plab">
+    <div class="loesung-label">✓ Lösungsvorschlag</div>
+    <div class="l-block">
+      <div class="l-title"><div class="l-badge">a</div>Redistributionslogistik</div>
+      <div class="l-step"><strong>Begriff:</strong> Redistributionslogistik umfasst alle logistischen Prozesse zur Rückführung von Waren, Verpackungen, Altprodukten und Reststoffen vom Verbraucher/Handel zurück zum Hersteller oder einer Verwertungsanlage (Reverse Logistics).</div>
+      <div class="l-step"><strong>Pflichten der Exquisit GmbH:</strong> Rücknahme von Verpackungen und Altprodukten, Sicherstellung der ordnungsgemäßen Entsorgung/Verwertung, Dokumentation der Rückführströme, Einhaltung gesetzlicher Quoten (z.B. Verpackungsgesetz)</div>
+    </div>
+    <div class="l-block">
+      <div class="l-title"><div class="l-badge">b</div>Kreislaufwirtschaftsgesetz (KrWG) – Zielhierarchie</div>
+      <div class="l-step">Das KrWG schreibt vor, Abfall zu vermeiden und gibt folgende <strong>5-stufige Hierarchie</strong> vor:</div>
+      <div class="l-step">1. <strong>Vermeidung</strong> – Abfall gar nicht erst entstehen lassen</div>
+      <div class="l-step">2. <strong>Vorbereitung zur Wiederverwendung</strong> – Reinigung, Reparatur</div>
+      <div class="l-step">3. <strong>Recycling</strong> – Wertstoffliche Verwertung</div>
+      <div class="l-step">4. <strong>Sonstige Verwertung</strong> – z.B. energetische Verwertung</div>
+      <div class="l-step">5. <strong>Beseitigung</strong> – Deponie als letztes Mittel</div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══ Aufgabe 5: Trends der Logistik ═══ -->
+<div class="aufgabe-block" id="plab-trends">
+  <div class="aufgabe-meta">
+    <span>Aufgabe 5 · <strong>Trends der Logistik</strong></span>
+    <span class="punkte-badge">12 Punkte</span>
+  </div>
+  <div class="aufgabe-body">
+    <div class="aufgabe-text">
+      <p>Die zwingend notwendige Kostenreduzierung der Steiger Bergbautechnik GmbH macht es erforderlich, den Logistikprozess sowie die einzelnen Bausteine der Logistik zu optimieren. Diese Optimierung muss aus Gründen der internationalen Vertriebsstrukturen in die weltweiten Trends der Logistik eingebettet sein.</p>
+    </div>
+    <div class="teilaufgaben">
+      <div class="teil"><div class="teil-badge">a</div><div class="teil-text">Beschreiben Sie vier internationale Trends der Logistik.</div><div class="teil-punkte">4 Pkt.</div></div>
+      <div class="teil"><div class="teil-badge">b</div><div class="teil-text">Formulieren Sie drei betriebliche Ziele des Logistikprozesses für das Unternehmen.</div><div class="teil-punkte">3 Pkt.</div></div>
+      <div class="teil"><div class="teil-badge">c</div><div class="teil-text">Erläutern Sie die Aufgabenstellung der Distribution und beschreiben Sie drei Kernfunktionen der Distribution.</div><div class="teil-punkte">5 Pkt.</div></div>
+    </div>
+  </div>
+  <div class="aufgabe-notiz-wrap">
+    <div class="aufgabe-notiz-label">✏ Meine Antwort</div>
+    <textarea class="aufgabe-notiz-area" data-plab-key="plab_trends" placeholder="Schreibe deine Lösung hier..."></textarea>
+  </div>
+  <button class="toggle-btn" onclick="togglePlab(this)"><span class="toggle-arrow">▶</span>&nbsp;Lösungsvorschlag einblenden</button>
+  <div class="loesung-plab">
+    <div class="loesung-label">✓ Lösungsvorschlag</div>
+    <div class="l-block">
+      <div class="l-title"><div class="l-badge">a</div>Internationale Trends der Logistik</div>
+      <div class="l-step">1. <strong>Digitalisierung &amp; Industrie 4.0:</strong> Vernetzung aller Prozesse, Echtzeit-Daten, KI-gestützte Steuerung</div>
+      <div class="l-step">2. <strong>Nachhaltigkeit / Green Logistics:</strong> CO₂-Reduktion, alternative Antriebe, Kreislaufwirtschaft</div>
+      <div class="l-step">3. <strong>Globalisierung der Lieferketten:</strong> weltweite Beschaffung und Distribution mit steigender Komplexität</div>
+      <div class="l-step">4. <strong>E-Commerce &amp; Omnichannel-Logistik:</strong> steigende Anforderungen an Schnelligkeit, Flexibilität und Retouren</div>
+    </div>
+    <div class="l-block">
+      <div class="l-title"><div class="l-badge">b</div>Betriebliche Ziele des Logistikprozesses</div>
+      <div class="l-step">1. Senkung der Logistikkosten durch Prozessoptimierung</div>
+      <div class="l-step">2. Verkürzung der Lieferzeiten und Erhöhung der Liefertreue</div>
+      <div class="l-step">3. Reduzierung der Lagerbestände und Kapitalbindung</div>
+    </div>
+    <div class="l-block">
+      <div class="l-title"><div class="l-badge">c</div>Distribution</div>
+      <div class="l-step"><strong>Aufgabe:</strong> Die Distribution umfasst alle Aktivitäten zur Überbrückung von Raum und Zeit zwischen Hersteller und Endkunden – vom Warenausgang bis zur Übergabe an den Empfänger.</div>
+      <div class="l-step"><strong>Kernfunktionen:</strong></div>
+      <div class="l-step">1. <strong>Lagerung:</strong> Bereitstellung und Bevorratung von Fertigwaren zur bedarfsgerechten Lieferung</div>
+      <div class="l-step">2. <strong>Transport:</strong> physische Beförderung der Ware zum Kunden über geeignete Verkehrsträger</div>
+      <div class="l-step">3. <strong>Auftragsabwicklung:</strong> Bearbeitung und Steuerung von Kundenaufträgen inkl. Kommissionierung und Versanddokumentation</div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══ Aufgabe 7: Fördermittel ═══ -->
+<div class="aufgabe-block" id="plab-foerdermittel">
+  <div class="aufgabe-meta">
+    <span>Aufgabe 7 · <strong>Werkstatt- vs. Fließfertigung &amp; Fördermittel</strong></span>
+    <span class="punkte-badge">10 Punkte</span>
+  </div>
+  <div class="aufgabe-body">
+    <div class="aufgabe-text">
+      <p>Zur Verbesserung der Kostensituation soll ein Projektteam die Fertigungsorganisation auf Rationalisierungspotenziale untersuchen. Es ist angedacht, in zwei Fertigungsbereichen von einer Werkstattfertigung auf eine Fließfertigung umzustellen. Ein wichtiger Punkt im Zusammenhang mit der Umstellung ist die Auswahl eines geeigneten Fördermittels.</p>
+    </div>
+    <div class="teilaufgaben">
+      <div class="teil"><div class="teil-badge">a</div><div class="teil-text">Erläutern Sie anhand von zwei Merkmalen den Unterschied zwischen Werkstattfertigung und Fließfertigung.</div><div class="teil-punkte">4 Pkt.</div></div>
+      <div class="teil"><div class="teil-badge">b</div><div class="teil-text">Beschreiben Sie, was unter Stetigförderer und Unstetigförderer verstanden wird, und geben Sie je ein Beispiel an.</div><div class="teil-punkte">6 Pkt.</div></div>
+    </div>
+  </div>
+  <div class="aufgabe-notiz-wrap">
+    <div class="aufgabe-notiz-label">✏ Meine Antwort</div>
+    <textarea class="aufgabe-notiz-area" data-plab-key="plab_foerdermittel" placeholder="Schreibe deine Lösung hier..."></textarea>
+  </div>
+  <button class="toggle-btn" onclick="togglePlab(this)"><span class="toggle-arrow">▶</span>&nbsp;Lösungsvorschlag einblenden</button>
+  <div class="loesung-plab">
+    <div class="loesung-label">✓ Lösungsvorschlag</div>
+    <div class="l-block">
+      <div class="l-title"><div class="l-badge">a</div>Werkstatt- vs. Fließfertigung</div>
+      <div class="l-step"><strong>Werkstattfertigung:</strong> Gleichartige Maschinen/Arbeitsplätze sind räumlich zusammengefasst. Jedes Produkt nimmt einen individuellen Weg durch die Fertigung. → Hohe Flexibilität, aber lange Transportwege und Wartezeiten.</div>
+      <div class="l-step"><strong>Fließfertigung:</strong> Maschinen/Arbeitsplätze sind in der Reihenfolge des Fertigungsprozesses angeordnet. Das Produkt durchläuft die Stationen getaktet. → Geringe Flexibilität, aber kurze Durchlaufzeiten und hohe Effizienz.</div>
+    </div>
+    <div class="l-block">
+      <div class="l-title"><div class="l-badge">b</div>Stetigförderer &amp; Unstetigförderer</div>
+      <div class="l-step"><strong>Stetigförderer:</strong> Fördert kontinuierlich und unterbrechungslos in einer Richtung. Der Förderfluss ist gleichmäßig und dauerhaft. → Beispiel: Förderband, Rollenbahn, Kettenförderer</div>
+      <div class="l-step"><strong>Unstetigförderer:</strong> Fördert diskontinuierlich – Aufnahme, Transport und Abgabe erfolgen abwechselnd mit Leer- und Lastfahrten. → Beispiel: Gabelstapler, Kran, Routenzug</div>
+    </div>
+  </div>
+</div>
+
 </main>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
@@ -1199,6 +1483,28 @@ function andler_chart() {
     }
   });
 }
+
+function togglePlab(btn) {
+  const loesung = btn.nextElementSibling;
+  const isOpen = loesung.classList.contains('visible');
+  loesung.classList.toggle('visible', !isOpen);
+  btn.classList.toggle('open', !isOpen);
+  const arrow = btn.querySelector('.toggle-arrow');
+  arrow.style.transform = isOpen ? '' : 'rotate(90deg)';
+  btn.childNodes[1].textContent = isOpen ? ' Lösungsvorschlag einblenden' : ' Lösungsvorschlag ausblenden';
+}
+
+// Notizfelder für Plab-Aufgaben speichern
+document.addEventListener('DOMContentLoaded', function() {
+  document.querySelectorAll('.aufgabe-notiz-area').forEach(function(ta) {
+    const key = ta.dataset.plabKey;
+    if (!key) return;
+    ta.value = localStorage.getItem(key) || '';
+    ta.addEventListener('input', function() {
+      localStorage.setItem(key, ta.value);
+    });
+  });
+});
 
 function toggle(btn) {
   const loesung = btn.nextElementSibling;
