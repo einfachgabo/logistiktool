@@ -33,6 +33,7 @@ aside { width: 240px; min-width: 240px; background: var(--sidebar-bg); color: va
 main { flex: 1; max-width: 840px; padding: 2.5rem 3rem; overflow-x: hidden; }
 
 /* Headings */
+.skript-ref { font-size: 11px; color: var(--text-2); background: var(--border); display: inline-block; padding: 2px 8px; border-radius: 4px; margin: -0.5rem 0 0.75rem; font-style: italic; }
 .page-label { font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.12em; color: var(--text-2); margin-bottom: 0.4rem; }
 h1 { font-size: 28px; font-weight: 700; line-height: 1.2; margin-bottom: 0.3rem; }
 .page-sub { color: var(--text-2); font-size: 14px; margin-bottom: 2rem; }
@@ -808,35 +809,42 @@ hr { border: none; border-top: 1px solid var(--border); margin: 2rem 0; }
 
 <!-- ══ 1.27 Lagerlogistik ══ -->
 <h2 id="lagerlogistik"><span class="num">1.27</span>Lagerlogistik – Aufgaben & Funktionen</h2>
-<div class="def-box"><div class="def-term">Aufgaben eines Lagers</div><div class="def-text">
-  • Wareneingang · Materiallagerung · Materialabgang · Lagerverwaltung
+<p class="skript-ref">📖 Skript Abschnitt 1.5.8 – Lagerlogistik/Logistikzentrum</p>
+<div class="def-box"><div class="def-term">Kernaufgaben eines Lagers</div><div class="def-text">
+  <strong>Wareneingang</strong> – Annahme, Kontrolle, Einlagerung<br>
+  <strong>Materiallagerung</strong> – Sichere, ordnungsgemäße Aufbewahrung<br>
+  <strong>Materialabgang</strong> – Kommissionierung, Ausgabe, Versand<br>
+  <strong>Lagerverwaltung</strong> – Bestandsführung, Inventur, Dokumentation
 </div></div>
 <div class="table-wrap"><table>
-  <tr><th>Funktion</th><th>Beschreibung</th></tr>
-  <tr><td><strong>Mengenmäßige Anpassung</strong></td><td>Ausgleich von Schwankungen in Beschaffung, Absatz und betrieblichem Leistungsprozess</td></tr>
-  <tr><td><strong>Zeitliche Anpassung</strong></td><td>Materialien stehen vor ihrer Verwendung bereit; Erzeugnisse vor dem Verkauf</td></tr>
-  <tr><td><strong>Qualitative Anpassung</strong></td><td>Wertverbesserung im Verlauf der Lagerzeit – z.B. Holz, Wein, Bananen</td></tr>
-  <tr><td><strong>Wertmäßige Anpassung</strong></td><td>Ausnutzen besonderer Marktlagen (Spekulation) – ohne zwingende technische Gründe</td></tr>
+  <tr><th>Funktion</th><th>Beschreibung</th><th>Beispiel</th></tr>
+  <tr><td><strong>Mengenmäßige Anpassung</strong></td><td>Ausgleich von Schwankungen in Beschaffung, Absatz und Leistungsprozess</td><td>Saisonware auf Vorrat produzieren</td></tr>
+  <tr><td><strong>Zeitliche Anpassung</strong></td><td>Materialien vor Verwendung bereitstellen; Erzeugnisse vor Verkauf verfügbar</td><td>Fertigware wartet auf Abholtermin</td></tr>
+  <tr><td><strong>Qualitative Anpassung</strong></td><td>Wertverbesserung im Verlauf der Lagerzeit</td><td>Holz trocknen, Wein reifen, Bananen nachreifen</td></tr>
+  <tr><td><strong>Wertmäßige Anpassung</strong></td><td>Ausnutzen besonderer Marktsituationen (Spekulation) – ohne zwingende technische Gründe</td><td>Rohstoffe bei niedrigem Preis einkaufen & einlagern</td></tr>
 </table></div>
+<div class="tipp"><div class="label">Merksatz Lagerfunktionen</div><p>Die 4 Funktionen = <strong>Menge · Zeit · Qualität · Wert</strong>. Jede Funktion hat eine andere Begründung für die Notwendigkeit eines Lagers.</p></div>
 
 <!-- ══ 1.28 Lagerarten ══ -->
 <h2 id="lagerarten"><span class="num">1.28</span>Lagerarten</h2>
+<p class="skript-ref">📖 Skript Abschnitt 1.5.8.2–1.5.8.3 – Funktionen & Arten der Läger</p>
 <h3>Nach der Materialflusskette (Lagerstufen)</h3>
-<div class="mini-grid">
-  <div class="mini-card"><strong>Rohstofflager</strong></div>
-  <div class="mini-card"><strong>Hilfsstofflager</strong></div>
-  <div class="mini-card"><strong>Zwischenproduktelager</strong></div>
-  <div class="mini-card"><strong>Fertigproduktelager</strong></div>
-  <div class="mini-card"><strong>Abfalllager</strong></div>
-</div>
+<div class="table-wrap"><table>
+  <tr><th>Lagerart</th><th>Inhalt</th></tr>
+  <tr><td><strong>Rohstofflager</strong></td><td>Eingekaufte Rohstoffe vor der Verarbeitung</td></tr>
+  <tr><td><strong>Hilfsstofflager</strong></td><td>Materialien die nicht direkt ins Produkt eingehen (z.B. Schmierstoffe)</td></tr>
+  <tr><td><strong>Zwischenproduktelager</strong></td><td>Halbfertige Produkte zwischen Fertigungsstufen</td></tr>
+  <tr><td><strong>Fertigproduktelager</strong></td><td>Fertige Waren vor dem Versand/Verkauf</td></tr>
+  <tr><td><strong>Abfalllager</strong></td><td>Rückstände, Ausschuss, Recyclingmaterialien</td></tr>
+</table></div>
 
-<h3>Nach dem Standort</h3>
+<h3>Nach dem Standort (Skript 1.5.8.3.2)</h3>
 <div class="table-wrap"><table>
   <tr><th>Zentrale Lagerung</th><th>Dezentrale Lagerung</th></tr>
   <tr><td>Keine Mehrfachlagerung · weniger Kapitalbindung · bessere Bestandsüberwachung · leichter automatisierbar · geringerer Dispositionsaufwand</td><td>Geringere Transportkosten · schnellere Belieferung · kurze Wege · Lagertechnik besser angepasst</td></tr>
 </table></div>
 
-<h3>Nach der Bauart</h3>
+<h3>Nach der Bauart (Skript 1.5.8.3.3)</h3>
 <div class="table-wrap"><table>
   <tr><th>Art</th><th>Merkmale</th><th>Beispiele</th></tr>
   <tr><td><strong>Offenes Lager</strong></td><td>Kein Schutz vor Witterung · meist eingezäunt</td><td>Natursteine, Autos, Rohholz</td></tr>
@@ -847,32 +855,39 @@ hr { border: none; border-top: 1px solid var(--border); margin: 2rem 0; }
   <tr><td><strong>Hochregallager</strong></td><td>EDV-gesteuert · sehr hohe Investitionskosten · FIFO/LIFO möglich</td><td>Automatisierte Logistikzentren</td></tr>
 </table></div>
 
-<h3>Fördermittel</h3>
+<h3>Fördermittel (Skript 1.5.8.3.4)</h3>
 <div class="table-wrap"><table>
-  <tr><th>Art</th><th>Beispiele</th></tr>
-  <tr><td><strong>Flurfördermittel</strong></td><td>Handgabelhubwagen, Handkarren, Gabelstapler</td></tr>
-  <tr><td><strong>Flurfreie Fördermittel</strong></td><td>Krane – keine Bodennutzung, in Häfen/Containerbahnhöfen</td></tr>
-  <tr><td><strong>Stetigfördermittel</strong></td><td>Transportbänder, Rollenbahnen, Kreisförderer – fördern kontinuierlich</td></tr>
+  <tr><th>Art</th><th>Merkmale</th><th>Beispiele</th></tr>
+  <tr><td><strong>Flurfördermittel</strong></td><td>Bodennah, beweglich – transportieren am Boden</td><td>Handgabelhubwagen, Handkarren, Gabelstapler</td></tr>
+  <tr><td><strong>Flurfreie Fördermittel</strong></td><td>Keine Bodennutzung – bei fehlenden Verkehrswegen oder Schwerlast</td><td>Krane in Häfen, Containerbahnhöfen</td></tr>
+  <tr><td><strong>Stetigfördermittel</strong></td><td>Fest installiert – fördern kontinuierlich ohne Unterbrechung</td><td>Transportbänder, Rollenbahnen, Kreisförderer</td></tr>
 </table></div>
+<div class="merksatz"><div class="label">Unstetig vs. Stetig</div><p><strong>Unstetigförderer</strong> (z.B. Gabelstapler) = Leer- und Lastfahrten wechseln ab. <strong>Stetigförderer</strong> = kontinuierlicher Materialfluss ohne Unterbrechung. → Relevant für Fragen zur Fördermittelwahl bei Werkstatt- vs. Fließfertigung!</p></div>
 
 <!-- ══ 1.29 Lagerordnungssysteme ══ -->
 <h2 id="lagerordnung"><span class="num">1.29</span>Lagerordnungssysteme</h2>
+<p class="skript-ref">📖 Skript Abschnitt 1.5.8.4 – Lagerordnungssysteme</p>
 <div class="table-wrap"><table>
   <tr><th>System</th><th>Prinzip</th><th>Vorteile</th><th>Nachteile</th></tr>
-  <tr><td><strong>Festplatzstrategie</strong></td><td>Jedem Material ein fester Lagerplatz</td><td>Übersichtlich, leicht auffindbar</td><td>Begrenzter Platz, bei Auftragsspitzen problematisch</td></tr>
-  <tr><td><strong>Freiplatzstrategie</strong></td><td>Ware auf den nächsten freien Platz</td><td>Optimale Flächennutzung, einfache Inventur</td><td>Zwingend EDV-Lagerverwaltung notwendig</td></tr>
+  <tr><td><strong>Festplatzstrategie</strong></td><td>Jedem Material ein fester, definierter Lagerplatz</td><td>Übersichtlich, leicht auffindbar, kein EDV-System zwingend nötig</td><td>Begrenzte Kapazität; bei Auftragsspitzen reicht Platz nicht – Fremdlagerung nötig; Inventur kann aufwendig sein</td></tr>
+  <tr><td><strong>Freiplatzstrategie</strong></td><td>Eingehende Ware auf den nächsten freien Lagerplatz</td><td>Optimale Flächennutzung, einfache Tagesinventur, flexibel</td><td>Zwingend EDV-Lagerverwaltung notwendig – sonst nicht wiederfindbar</td></tr>
 </table></div>
+<div class="tipp"><div class="label">Praxis-Hinweis</div><p>In der Realität nutzen die meisten Betriebe eine <strong>Kombination</strong>: A-Güter auf Festplätzen, C-Güter auf Freiplätzen. Dies optimiert Übersichtlichkeit und Flächennutzung gleichzeitig.</p></div>
 
 <!-- ══ 1.30 Verbrauchsfolgeverfahren ══ -->
 <h2 id="verbrauchsfolge"><span class="num">1.30</span>Verbrauchsfolgeverfahren (FIFO / LIFO)</h2>
+<p class="skript-ref">📖 Skript Abschnitt 1.5.8.5 – Verbrauchsfolgeverfahren</p>
+<p>Dienen dem Grundsatz der <strong>Einzelbewertung</strong> – zur Feststellung des wertmäßigen Lagerbestands bei unterschiedlichen Einkaufspreisen.</p>
 <div class="table-wrap"><table>
-  <tr><th>Verfahren</th><th>Prinzip</th><th>Besonderheit</th></tr>
-  <tr><td><strong>LIFO</strong> (Last in – First out)</td><td>Zuletzt beschaffte Güter werden zuerst verbraucht/veräußert</td><td>Anschaffungskosten zu möglichst gegenwartsnahen Preisen</td></tr>
-  <tr><td><strong>FIFO</strong> (First in – First out)</td><td>Zuerst beschaffte Güter werden zuerst verbraucht (§256 HGB)</td><td>Endbestand = aus letzten Lieferungen; fortlaufende Aufzeichnung aller Zugänge nötig</td></tr>
+  <tr><th>Verfahren</th><th>Prinzip</th><th>Bewertung</th><th>Typischer Einsatz</th></tr>
+  <tr><td><strong>LIFO</strong><br><em>Last in – First out</em></td><td>Zuletzt beschaffte Güter werden zuerst verbraucht/veräußert</td><td>Lagerbestand bewertet zu älteren (niedrigeren) Preisen → geringerer Buchwert</td><td>Bei steigenden Preisen steuerlich vorteilhaft</td></tr>
+  <tr><td><strong>FIFO</strong><br><em>First in – First out</em></td><td>Zuerst beschaffte Güter werden zuerst verbraucht (§256 Satz 1 HGB ausdrücklich zugelassen)</td><td>Endbestand = aus letzten Lieferungen → aktuellere Preise im Bestand</td><td>Verderbliche Waren, MHD-relevante Produkte</td></tr>
 </table></div>
+<div class="merksatz"><div class="label">Merksatz</div><p>FIFO = wie ein Supermarktregal – der älteste Artikel vorne. LIFO = wie ein Bücherstapel – das Zuletzt-Obenauf-Gelegte wird zuerst genommen. Bei Hochregallagern mit EDV sind beide Verfahren vollständig umsetzbar.</p></div>
 
 <!-- ══ 1.31 Lagerkennzahlen ══ -->
 <h2 id="lagerkennzahlen"><span class="num">1.31</span>Lagerkennzahlen – Beschaffungscontrolling</h2>
+<p class="skript-ref">📖 Skript Abschnitt 1.5.8.6 – Beschaffungscontrolling</p>
 <div class="formel-block">
   <div class="formel-header"><span class="formel-badge">1</span><span class="formel-name">Servicegrad (Lieferbereitschaftsgrad)</span></div>
   <div class="formel-body">
@@ -916,6 +931,7 @@ hr { border: none; border-top: 1px solid var(--border); margin: 2rem 0; }
 
 <!-- ══ 1.33 Verpackung ══ -->
 <h2 id="verpackung"><span class="num">1.33</span>Verpackung</h2>
+<p class="skript-ref">📖 Skript Abschnitt 1.5.9 – Verpackung</p>
 <div class="table-wrap"><table>
   <tr><th>Funktion</th><th>Details</th></tr>
   <tr><td><strong>Schutzfunktion</strong></td><td>Licht, Nässe, Temperatur, mechanische Belastung, Diebstahl, Staub</td></tr>
@@ -935,26 +951,34 @@ hr { border: none; border-top: 1px solid var(--border); margin: 2rem 0; }
 
 <!-- ══ 1.34 Entsorgung ══ -->
 <h2 id="entsorgung"><span class="num">1.34</span>Entsorgung & Kreislaufwirtschaftsgesetz (KrWG)</h2>
+<p class="skript-ref">📖 Skript Abschnitt 1.5.10 – Entsorgung</p>
 <div class="table-wrap"><table>
-  <tr><th>Klassifikation</th><th>Entstehungsgründe</th></tr>
-  <tr><td><strong>Materialabfall</strong></td><td>Verschnitt, Rückstände von Rohstoffen</td></tr>
-  <tr><td><strong>Fertigungsausschuss</strong></td><td>Fehlerhafte Materialien/Güter, nicht verkaufbar</td></tr>
-  <tr><td><strong>Lagerhüter</strong></td><td>MHD überschritten, Produkte vom Markt genommen</td></tr>
-  <tr><td><strong>Nicht absetzbare Endprodukte</strong></td><td>Überschussproduktion, Fehlproduktionen</td></tr>
-  <tr><td><strong>Pack- und Packhilfsmittel</strong></td><td>Transportschutz, Verpackungsmaterial</td></tr>
-  <tr><td><strong>Betriebsmittelabfälle</strong></td><td>Ausgediente Altmaschinen und Anlagen</td></tr>
+  <tr><th>Abfallklasse</th><th>Entstehungsgründe</th><th>Beispiel</th></tr>
+  <tr><td><strong>Materialabfall</strong></td><td>Verschnitt, Rückstände von Rohstoffen – nicht mehr für Produktion einsetzbar</td><td>Metallspäne, Schnittreste</td></tr>
+  <tr><td><strong>Fertigungsausschuss</strong></td><td>Fehlerhafte Materialien/Güter – nicht verkaufbar</td><td>Risse, Maßabweichungen</td></tr>
+  <tr><td><strong>Lagerhüter</strong></td><td>MHD überschritten, Produkte vom Markt genommen, nicht mehr benötigt</td><td>Abgelaufene Lebensmittel, veraltete Ersatzteile</td></tr>
+  <tr><td><strong>Nicht absetzbare Endprodukte</strong></td><td>Überschussproduktion, Fehlproduktionen</td><td>Zu viel produzierte Saisonware</td></tr>
+  <tr><td><strong>Pack- & Packhilfsmittel</strong></td><td>Transportschutz nach Einmalnutzung</td><td>Stretchfolie, Kartonagen</td></tr>
+  <tr><td><strong>Betriebsmittelabfälle</strong></td><td>Ausgediente Anlagen & Maschinen</td><td>Altmaschinen, Altöl</td></tr>
 </table></div>
-<div class="merksatz"><div class="label">§6 KrWG – Abfallhierarchie (5 Stufen)</div><p>
-  1. <strong>Vermeidung</strong> → 2. <strong>Vorbereitung zur Wiederverwendung</strong> → 3. <strong>Recycling</strong> → 4. <strong>Sonstige Verwertung</strong> (energetisch) → 5. <strong>Beseitigung</strong> (Deponie als letztes Mittel)
+<div class="merksatz"><div class="label">§6 KrWG – Abfallhierarchie (5 Stufen) – Reihenfolge ist Pflicht!</div><p>
+  1. <strong>Vermeidung</strong> – Abfall gar nicht erst entstehen lassen<br>
+  2. <strong>Vorbereitung zur Wiederverwendung</strong> – Trennen & Sammeln (z.B. Glasflaschen)<br>
+  3. <strong>Recycling</strong> – Wertstoffe zurück in Kreislauf (z.B. Kunststoff → Blumentöpfe)<br>
+  4. <strong>Sonstige Verwertung</strong> – energetische Verwertung (Verbrennung, Kraft-Wärme-Kopplung)<br>
+  5. <strong>Beseitigung</strong> – Deponie, Kompostierung – nur als letztes Mittel!
 </p></div>
+<div class="tipp"><div class="label">§2 KrWG – Geltungsbereich</div><p>Gilt für: Vermeidung, Verwertung, Beseitigung und sonstige Maßnahmen der Abfallbewirtschaftung. Gilt NICHT für: Kernbrennstäbe, Tierkörperbeseitigung, Kampfmittel.</p></div>
 
 <!-- ══ 1.35 Potentialanalyse ══ -->
 <h2 id="potentialanalyse"><span class="num">1.35</span>Potentialanalyse</h2>
+<p class="skript-ref">📖 Skript Abschnitt 1.6 – Entscheidungen für die Umsetzung / Potentialanalyse</p>
 <div class="def-box"><div class="def-term">Ziel</div><div class="def-text">Anforderungen/Wünsche der Kunden werden den eigenen Möglichkeiten gegenübergestellt. Ähnlich der SWOT-Analyse werden Stärken & Schwächen beschrieben und Potenziale zur Leistungsverbesserung herausgearbeitet.</div></div>
 <div class="tipp"><div class="label">5 Einzelanalysen der Potentialanalyse</div><p>1. Anforderungsanalyse · 2. Leistungsanalyse · 3. Prozessanalyse · 4. Strukturanalyse · 5. Benchmarking</p></div>
 
 <!-- ══ 1.36 Nutzwertanalyse ══ -->
 <h2 id="nutzwertanalyse"><span class="num">1.36</span>Nutzwertanalyse</h2>
+<p class="skript-ref">📖 Skript Abschnitt 1.6 – Entscheidungen für die Umsetzung / Nutzwertanalyse</p>
 <div class="def-box"><div class="def-term">Zweck</div><div class="def-text">Entscheidungsprozess für die Auswahl verschiedener Angebote und möglichen Lieferanten erleichtern und transparent gestalten. Nicht nur Einkäufer, sondern alle betroffenen Abteilungen müssen beteiligt werden.</div></div>
 <div class="table-wrap"><table>
   <tr><th>Schritt</th><th>Inhalt</th></tr>
