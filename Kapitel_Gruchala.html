@@ -7,7 +7,7 @@
 <style>
 :root { --bg:#f5f4f0;--surface:#fff;--border:#e8e6df;--text:#1a1916;--text-2:#6b6860;--sidebar-bg:#1e1e1e;--sidebar-active:#4a90d9;--blue:#3b6fd4;--blue-bg:#eef3fc;--green:#2d7a4f;--green-bg:#eaf5ef;--yellow:#b8860b;--yellow-bg:#fdf9e3;--red:#c0392b;--red-bg:#fdf0ee;--purple:#6c3483;--purple-bg:#f5eefb;--radius:8px; }
 *{box-sizing:border-box;margin:0;padding:0;}
-body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;background:var(--bg);color:var(--text);display:flex;min-height:100vh;font-size:15px;line-height:1.7;}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;background:var(--bg);color:var(--text);min-height:100vh;font-size:15px;line-height:1.7;overflow-x:hidden;}.layout{display:flex;min-height:100vh;}
 aside{width:240px;min-width:240px;background:var(--sidebar-bg);color:#e0ddd6;display:flex;flex-direction:column;position:sticky;top:0;height:100vh;overflow-y:auto;}
 .sidebar-header{padding:1.25rem 1rem .75rem;border-bottom:1px solid #333;}
 .sidebar-back{font-size:12px;color:#888;text-decoration:none;display:block;margin-bottom:.5rem;}
@@ -18,7 +18,7 @@ aside{width:240px;min-width:240px;background:var(--sidebar-bg);color:#e0ddd6;dis
 .sidebar-nav a{display:block;padding:.4rem 1rem .4rem 1.25rem;font-size:13px;color:#bbb;text-decoration:none;border-left:2px solid transparent;transition:all .15s;}
 .sidebar-nav a:hover{color:#fff;background:#2a2a2a;}
 .sidebar-nav a.active{color:#fff;border-left-color:var(--sidebar-active);background:#252525;}
-main{flex:1;max-width:840px;padding:2.5rem 3rem;overflow-x:hidden;}
+main{flex:1;min-width:0;padding:2.5rem 3rem;overflow-x:hidden;}
 .page-label{font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:.12em;color:var(--text-2);margin-bottom:.4rem;}
 h1{font-size:28px;font-weight:700;line-height:1.2;margin-bottom:.3rem;}
 .page-sub{color:var(--text-2);font-size:14px;margin-bottom:2rem;}
@@ -66,6 +66,7 @@ hr{border:none;border-top:1px solid var(--border);margin:2rem 0;}
 </head>
 <body>
 <div class="progress-bar"><div class="progress-fill" id="progress"></div></div>
+<div class="layout">
 <aside>
   <div class="sidebar-header">
     <a href="index.html" class="sidebar-back">← Übersicht</a>
@@ -75,47 +76,43 @@ hr{border:none;border-top:1px solid var(--border);margin:2rem 0;}
   <div class="sidebar-chapter">Kommunikation</div>
   <nav class="sidebar-nav">
     <a href="#kap1-komm">Kap. 1 – Kommunikation</a>
-    <a href="#kap1-1-1">1.1.1 Team & Abteilungen</a>
-    <a href="#kap1-1-2">1.1.2 Externe Partner</a>
-    <a href="#kap1-1-3">1.1.3 Interkulturell</a>
-    <a href="#kap1-1-4">1.1.4 Konflikt & Mobbing</a>
-    <a href="#kap1-2">1.2 Präsentation</a>
+    <a href="#kap1-1-1" style="padding-left:1.75rem;font-size:12px;">1.1.1 Team & Abteilungen</a>
+    <a href="#kap1-1-2" style="padding-left:1.75rem;font-size:12px;">1.1.2 Externe Partner</a>
+    <a href="#kap1-1-3" style="padding-left:1.75rem;font-size:12px;">1.1.3 Interkulturell</a>
+    <a href="#kap1-1-4" style="padding-left:1.75rem;font-size:12px;">1.1.4 Konflikt & Mobbing</a>
+    <a href="#kap1-2" style="padding-left:1.75rem;font-size:12px;">1.2 Präsentation</a>
     <a href="#kap2-ziele">Kap. 2 – Personalauswahl</a>
-    <a href="#kap2-1-1">2.1.1 Ziele des Unternehmens</a>
-    <a href="#kap2-1-2">2.1.2 Personalmarketing</a>
-    <a href="#kap2-2">2.2 Personalbedarf</a>
-    <a href="#kap2-3">2.3 Anforderungsprofile</a>
-    <a href="#kap2-4">2.4 Personalbeschaffung</a>
-    <a href="#kap2-5">2.5 Personalauswahl</a>
+    <a href="#kap2-1-1" style="padding-left:1.75rem;font-size:12px;">2.1.1 Ziele des Unternehmens</a>
+    <a href="#kap2-1-2" style="padding-left:1.75rem;font-size:12px;">2.1.2 Personalmarketing</a>
+    <a href="#kap2-2" style="padding-left:1.75rem;font-size:12px;">2.2 Personalbedarf</a>
+    <a href="#kap2-3" style="padding-left:1.75rem;font-size:12px;">2.3 Anforderungsprofile</a>
+    <a href="#kap2-4" style="padding-left:1.75rem;font-size:12px;">2.4 Personalbeschaffung</a>
+    <a href="#kap2-5" style="padding-left:1.75rem;font-size:12px;">2.5 Personalauswahl</a>
     <a href="#kap3-arbzeit">Kap. 3 – Personaleinsatz</a>
-    <a href="#kap3-1">3.1 Arbeitszeitgesetz</a>
-    <a href="#kap3-2">3.2 Personalverwaltung</a>
-    <a href="#kap3-betriebsrat">3.3 Betriebsrat</a>
+    <a href="#kap3-1" style="padding-left:1.75rem;font-size:12px;">3.1 Arbeitszeitgesetz</a>
+    <a href="#kap3-2" style="padding-left:1.75rem;font-size:12px;">3.2 Personalverwaltung</a>
+    <a href="#kap3-betriebsrat" style="padding-left:1.75rem;font-size:12px;">3.3 Betriebsrat</a>
     <a href="#kap4-fuehrungsstile">Kap. 4 – Führung</a>
-    <a href="#kap4-1">4.1 Klassische Führungsstile</a>
-    <a href="#kap4-2">4.2 Blake & Mouton</a>
-    <a href="#kap4-3">4.3 Reifegradmodell</a>
-    <a href="#kap4-4">4.4 Motivation & Maslow</a>
-    <a href="#kap4-5">4.5 Gruppen & Tuckman</a>
-    <a href="#kap4-instrumente">4.6 Führungsinstrumente</a>
-    <a href="#kap4-management-by">4.7 Management-by</a>
+    <a href="#kap4-1" style="padding-left:1.75rem;font-size:12px;">4.1 Klassische Stile</a>
+    <a href="#kap4-2" style="padding-left:1.75rem;font-size:12px;">4.2 Blake & Mouton</a>
+    <a href="#kap4-3" style="padding-left:1.75rem;font-size:12px;">4.3 Reifegradmodell</a>
+    <a href="#kap4-4" style="padding-left:1.75rem;font-size:12px;">4.4 Motivation & Maslow</a>
+    <a href="#kap4-5" style="padding-left:1.75rem;font-size:12px;">4.5 Gruppen & Tuckman</a>
+    <a href="#kap4-instrumente" style="padding-left:1.75rem;font-size:12px;">4.6 Instrumente</a>
+    <a href="#kap4-management-by" style="padding-left:1.75rem;font-size:12px;">4.7 Management-by</a>
     <a href="#kap5-ausbildung">Kap. 5 – Berufsausbildung</a>
-    <a href="#kap5-1">5.1 Anforderungen</a>
-    <a href="#kap5-2">5.2 Beteiligte</a>
-    <a href="#kap5-3">5.3 Ausbildungsplan</a>
-    <a href="#kap5-4">5.4 Lehrmethoden</a>
-    <a href="#kap5-5">5.5 Prüfung & Abschluss</a>
+    <a href="#kap5-1" style="padding-left:1.75rem;font-size:12px;">5.1–5.3 Grundlagen</a>
+    <a href="#kap5-4" style="padding-left:1.75rem;font-size:12px;">5.4 Lehrmethoden</a>
+    <a href="#kap5-5" style="padding-left:1.75rem;font-size:12px;">5.5 Prüfung</a>
     <a href="#kap6-weiterbildung">Kap. 6 – Weiterbildung</a>
-    <a href="#kap6-1">6.1 PE-Planung</a>
-    <a href="#kap6-2">6.2 Maßnahmen</a>
-    <a href="#kap6-3">6.3 Erfolgskontrolle</a>
+    <a href="#kap6-1" style="padding-left:1.75rem;font-size:12px;">6.1 PE-Planung</a>
+    <a href="#kap6-2" style="padding-left:1.75rem;font-size:12px;">6.2 Maßnahmen</a>
+    <a href="#kap6-3" style="padding-left:1.75rem;font-size:12px;">6.3 Erfolgskontrolle</a>
     <a href="#kap7-arbeitsschutz">Kap. 7 – Arbeitsschutz</a>
-    <a href="#kap7-1">7.1 Rechtliche Grundlagen</a>
-    <a href="#kap7-1-2">7.1.2 Duales System</a>
-    <a href="#kap7-1-3">7.1.3 Gefährdungsbeurteilung</a>
-    <a href="#kap7-1-4">7.1.4 Sozialer Schutz</a>
-    <a href="#kap7-2">7.2 Gesundheitsschutz</a>
-    <a href="#kap7-3">7.3 Unterweisung</a>
+    <a href="#kap7-1" style="padding-left:1.75rem;font-size:12px;">7.1 Grundlagen & Duales System</a>
+    <a href="#kap7-1-3" style="padding-left:1.75rem;font-size:12px;">7.1.3 Gefährdungsbeurteilung</a>
+    <a href="#kap7-2" style="padding-left:1.75rem;font-size:12px;">7.2 Gesundheitsschutz</a>
+    <a href="#kap7-3" style="padding-left:1.75rem;font-size:12px;">7.3 Unterweisung</a>
   </nav>
   <div class="sidebar-chapter">Personalmanagement</div>
   <nav class="sidebar-nav">
