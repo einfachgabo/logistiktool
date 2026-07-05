@@ -62,6 +62,28 @@ ul.lernliste li::marker{color:var(--blue);}
 .progress-fill{height:100%;background:var(--blue);width:0%;transition:width .1s;}
 hr{border:none;border-top:1px solid var(--border);margin:2rem 0;}
 @media(max-width:800px){aside{display:none;}main{padding:1.5rem 1.25rem;}.progress-bar{left:0;}}
+
+/* ===== Wissens-Check ===== */
+.quiz-wrap { margin: 1.5rem 0; }
+.quiz-topic { font-size:11px; font-weight:700; text-transform:uppercase; letter-spacing:0.1em; color:var(--text-2); margin:1.75rem 0 0.75rem; padding-bottom:0.35rem; border-bottom:1px solid var(--border); }
+.quiz-block { background:var(--surface); border:1px solid var(--border); border-radius:8px; padding:1rem 1.25rem; margin-bottom:0.75rem; }
+.quiz-nr { font-size:10px; font-weight:700; text-transform:uppercase; letter-spacing:0.1em; color:var(--text-2); margin-bottom:0.4rem; display:flex; justify-content:space-between; gap:0.5rem; flex-wrap:wrap; }
+.quiz-frage { font-size:15px; font-weight:600; margin-bottom:0.75rem; }
+.quiz-options { display:flex; flex-direction:column; gap:0.4rem; }
+.quiz-btn { text-align:left; padding:0.55rem 1rem; border:1px solid var(--border); border-radius:6px; background:#fff; font-size:14px; cursor:pointer; transition:all 0.15s; font-family:inherit; }
+.quiz-btn:hover:not(:disabled) { background:#eef3fc; border-color:#3b6fd4; }
+.quiz-btn.correct { background:#eaf5ef !important; border-color:#2d7a4f !important; color:#2d7a4f; font-weight:600; }
+.quiz-btn.wrong { background:#fdf0ee !important; border-color:#c0392b !important; color:#c0392b; }
+.quiz-btn:disabled { cursor:default; }
+.quiz-feedback { font-size:13px; margin-top:0.5rem; padding:0.5rem 0.75rem; border-radius:6px; display:none; }
+.quiz-feedback.show { display:block; }
+.quiz-feedback.ok { background:#eaf5ef; color:#2d7a4f; }
+.quiz-feedback.nope { background:#fdf0ee; color:#c0392b; }
+.quiz-scorebar { position:sticky; bottom:0; background:var(--surface); border:1px solid var(--border); border-radius:8px; padding:0.6rem 1rem; margin-top:1rem; display:flex; align-items:center; gap:0.75rem; flex-wrap:wrap; font-size:13px; box-shadow:0 -2px 12px rgba(0,0,0,0.06); }
+.quiz-scorebar b { color:#3b6fd4; }
+.quiz-reset { font-size:12px; padding:0.35rem 0.8rem; border:1px solid var(--border); border-radius:6px; background:#fff; cursor:pointer; }
+.quiz-reset:hover { background:#eef3fc; border-color:#3b6fd4; }
+
 </style>
 </head>
 <body>
@@ -132,6 +154,10 @@ hr{border:none;border-top:1px solid var(--border);margin:2rem 0;}
     <a href="#kap6-weiterbildung">Weiterbildung</a>
     <a href="#kap7-arbeitsschutz">Arbeitsschutz</a>
   </nav>
+<div class="sidebar-chapter">Selbsttest</div>
+<nav class="sidebar-nav">
+<a href="#wissenscheck">🎯 Wissens-Check (40 Fragen)</a>
+</nav>
 </aside>
 <main>
 <div class="page-label">Kommunikation, Führung & Zusammenarbeit · Dozentin: Kerstin Gruchala · IHK</div>
@@ -141,22 +167,22 @@ hr{border:none;border-top:1px solid var(--border);margin:2rem 0;}
 <h2 id="kap1-komm"><span class="num">Kap. 1</span>Situationsgerechte Kommunikation</h2>
 <p>Kommunikation ist der <strong>entscheidende Erfolgsfaktor</strong> jedes Unternehmens. Sie ist vielfältig und schwer interpretierbar – "Nur weil man etwas hört, heißt das nicht, dass es auch verstanden wurde."</p>
 <h3>Axiome nach Paul Watzlawick</h3>
-<div class="def-box"><div class="def-term">Was ist ein Axiom?</div><div class="def-text">Ein Grundsatz, den man nicht beweisen muss. Watzlawick's Axiome erklären warum Kommunikation so komplex und fehleranfällig ist.</div></div>
-<div class="merksatz"><div class="label">Wichtigstes Axiom</div><p><strong>"Man kann nicht nicht kommunizieren."</strong> – Auch Schweigen, Gestik und Mimik sind Kommunikation. Jede Verhaltensweise sendet eine Botschaft.</p></div>
+<div data-notiz-id="24" class="def-box"><div class="def-term">Was ist ein Axiom?</div><div class="def-text">Ein Grundsatz, den man nicht beweisen muss. Watzlawick's Axiome erklären warum Kommunikation so komplex und fehleranfällig ist.</div></div>
+<div data-notiz-id="0" class="merksatz"><div class="label">Wichtigstes Axiom</div><p><strong>"Man kann nicht nicht kommunizieren."</strong> – Auch Schweigen, Gestik und Mimik sind Kommunikation. Jede Verhaltensweise sendet eine Botschaft.</p></div>
 <h3>Das Nachrichtenquadrat (Schulz von Thun)</h3>
 <p>In jeder Äußerung können gleichzeitig <strong>vier Ebenen</strong> enthalten sein:</p>
 <div class="def-grid">
-  <div class="def-box"><div class="def-term">1. Sachinhalt</div><div class="def-text">Übermittlung sachlicher Informationen<br><em>"Ist noch Kaffee da?"</em></div></div>
-  <div class="def-box"><div class="def-term">2. Beziehungshinweis</div><div class="def-text">Wie stehen die Beteiligten zueinander?<br><em>"Immer muss ich Kaffee kochen!"</em></div></div>
-  <div class="def-box"><div class="def-term">3. Selbstkundgabe</div><div class="def-text">Sprecher teilt etwas über sich mit<br><em>"Ich mag Kaffee."</em></div></div>
-  <div class="def-box"><div class="def-term">4. Appell</div><div class="def-text">Aufforderung zu handeln<br><em>"Ich will, dass du Kaffee kochst!"</em></div></div>
+  <div data-notiz-id="25" class="def-box"><div class="def-term">1. Sachinhalt</div><div class="def-text">Übermittlung sachlicher Informationen<br><em>"Ist noch Kaffee da?"</em></div></div>
+  <div data-notiz-id="26" class="def-box"><div class="def-term">2. Beziehungshinweis</div><div class="def-text">Wie stehen die Beteiligten zueinander?<br><em>"Immer muss ich Kaffee kochen!"</em></div></div>
+  <div data-notiz-id="27" class="def-box"><div class="def-term">3. Selbstkundgabe</div><div class="def-text">Sprecher teilt etwas über sich mit<br><em>"Ich mag Kaffee."</em></div></div>
+  <div data-notiz-id="28" class="def-box"><div class="def-term">4. Appell</div><div class="def-text">Aufforderung zu handeln<br><em>"Ich will, dass du Kaffee kochst!"</em></div></div>
 </div>
-<div class="pruefung"><div class="label">Prüfungshinweis</div><p>Das Nachrichtenquadrat kommt sehr häufig – entweder als Definitionsfrage oder als Anwendungsaufgabe: "Analysieren Sie folgende Aussage anhand der vier Ebenen."</p></div>
+<div data-notiz-id="18" class="pruefung"><div class="label">Prüfungshinweis</div><p>Das Nachrichtenquadrat kommt sehr häufig – entweder als Definitionsfrage oder als Anwendungsaufgabe: "Analysieren Sie folgende Aussage anhand der vier Ebenen."</p></div>
 
 <h2 id="kap1-feedback"><span class="num">1.1</span>Feedback & Moderation</h2>
-<div class="def-box"><div class="def-term">Was ist Feedback?</div><div class="def-text">Rückmeldung zum wahrgenommenen Verhalten auf <strong>freiwilliger Basis</strong>. Feedback verlangt keine Veränderungen! Die drei W's: <strong>Wahrnehmung · Wirkung · Wunsch</strong></div></div>
-<div class="merksatz"><div class="label">Unterschied: Kritik vs. Anerkennung vs. Feedback</div><p><strong>Kritik</strong> = objektive Analyse von Defiziten + Vereinbarungen (bei Fehlern nötig)<br><strong>Anerkennung</strong> = besonders gute Leistungen hervorheben<br><strong>Feedback</strong> = freiwillige Rückmeldung zum Verhalten, keine Änderung gefordert</p></div>
-<div class="tipp"><div class="label">Feedback-Regeln</div><p>Beschreiben statt bewerten · Konkret und situationsbezogen · Ich-Botschaften · Zeitnah · Selbst- und Fremdbild abgleichen · Positives vor Negativem · Empfänger entscheidet selbst</p></div>
+<div data-notiz-id="29" class="def-box"><div class="def-term">Was ist Feedback?</div><div class="def-text">Rückmeldung zum wahrgenommenen Verhalten auf <strong>freiwilliger Basis</strong>. Feedback verlangt keine Veränderungen! Die drei W's: <strong>Wahrnehmung · Wirkung · Wunsch</strong></div></div>
+<div data-notiz-id="1" class="merksatz"><div class="label">Unterschied: Kritik vs. Anerkennung vs. Feedback</div><p><strong>Kritik</strong> = objektive Analyse von Defiziten + Vereinbarungen (bei Fehlern nötig)<br><strong>Anerkennung</strong> = besonders gute Leistungen hervorheben<br><strong>Feedback</strong> = freiwillige Rückmeldung zum Verhalten, keine Änderung gefordert</p></div>
+<div data-notiz-id="10" class="tipp"><div class="label">Feedback-Regeln</div><p>Beschreiben statt bewerten · Konkret und situationsbezogen · Ich-Botschaften · Zeitnah · Selbst- und Fremdbild abgleichen · Positives vor Negativem · Empfänger entscheidet selbst</p></div>
 <div class="table-wrap"><table>
   <tr><th>Moderationsphase</th><th>Inhalt</th></tr>
   <tr><td><strong>1. Einstieg</strong></td><td>Begrüßung, Ablauf und Ziel beschreiben</td></tr>
@@ -168,7 +194,7 @@ hr{border:none;border-top:1px solid var(--border);margin:2rem 0;}
 </table></div>
 
 <h2 id="kap1-konflikt"><span class="num">1.2</span>Konflikt & Mobbing</h2>
-<div class="def-box"><div class="def-term">Konflikt</div><div class="def-text">Zusammenprall verschiedener Meinungen mit unvereinbaren Handlungsplänen. Konflikte sind normal und haben auch <strong>positive Wirkungen</strong>: Probleme erkennen · Interesse zeigen · Energien freisetzen · Gruppe formen</div></div>
+<div data-notiz-id="30" class="def-box"><div class="def-term">Konflikt</div><div class="def-text">Zusammenprall verschiedener Meinungen mit unvereinbaren Handlungsplänen. Konflikte sind normal und haben auch <strong>positive Wirkungen</strong>: Probleme erkennen · Interesse zeigen · Energien freisetzen · Gruppe formen</div></div>
 <div class="table-wrap"><table>
   <tr><th>Konfliktart</th><th>Entstehung</th></tr>
   <tr><td><strong>Intrapersonell</strong></td><td>Rollenkonflikt – z.B. als FK anders handeln müssen als man möchte</td></tr>
@@ -178,12 +204,12 @@ hr{border:none;border-top:1px solid var(--border);margin:2rem 0;}
   <tr><td><strong>Beziehungskonflikt</strong></td><td>Störung der Beziehungsebene (Antipathie, Vorurteile)</td></tr>
 </table></div>
 <div class="def-grid3">
-  <div class="def-box"><div class="def-term" style="color:var(--green)">Stufen 1–3: Win-Win</div><div class="def-text">Anfangsstadium – Beteiligte können Konflikt selbst beilegen</div></div>
-  <div class="def-box"><div class="def-term" style="color:var(--yellow)">Stufen 4–6: Mediation</div><div class="def-text">Nur noch durch neutrale Vermittlerperson lösbar</div></div>
-  <div class="def-box"><div class="def-term" style="color:var(--red)">Stufen 7–9: Lose-Lose</div><div class="def-text">Beide Parteien haben bis zum Letzten bekämpft – niemand gewinnt</div></div>
+  <div data-notiz-id="31" class="def-box"><div class="def-term" style="color:var(--green)">Stufen 1–3: Win-Win</div><div class="def-text">Anfangsstadium – Beteiligte können Konflikt selbst beilegen</div></div>
+  <div data-notiz-id="32" class="def-box"><div class="def-term" style="color:var(--yellow)">Stufen 4–6: Mediation</div><div class="def-text">Nur noch durch neutrale Vermittlerperson lösbar</div></div>
+  <div data-notiz-id="33" class="def-box"><div class="def-term" style="color:var(--red)">Stufen 7–9: Lose-Lose</div><div class="def-text">Beide Parteien haben bis zum Letzten bekämpft – niemand gewinnt</div></div>
 </div>
-<div class="merksatz"><div class="label">Merksatz Glasl</div><p>Sobald Konflikte über Stufe 3 hinausgehen, ist Win-Win kaum mehr möglich. Führungskraft muss Konflikte frühzeitig erkennen!</p></div>
-<div class="def-box"><div class="def-term">Mobbing</div><div class="def-text">Systematische Ausgrenzung über längeren Zeitraum. Folgen: Kommunikationsstörung · Krankenstand · Imageschaden. Frühwarnsignale: Ironie · mangelndes Zuhören · Herabsetzung</div></div>
+<div data-notiz-id="2" class="merksatz"><div class="label">Merksatz Glasl</div><p>Sobald Konflikte über Stufe 3 hinausgehen, ist Win-Win kaum mehr möglich. Führungskraft muss Konflikte frühzeitig erkennen!</p></div>
+<div data-notiz-id="34" class="def-box"><div class="def-term">Mobbing</div><div class="def-text">Systematische Ausgrenzung über längeren Zeitraum. Folgen: Kommunikationsstörung · Krankenstand · Imageschaden. Frühwarnsignale: Ironie · mangelndes Zuhören · Herabsetzung</div></div>
 
 <h2 id="kap1-praesentation"><span class="num">1.3</span>Zielgruppengerechte Präsentation</h2>
 <div class="table-wrap"><table>
@@ -192,20 +218,20 @@ hr{border:none;border-top:1px solid var(--border);margin:2rem 0;}
   <tr><td>Hauptteil</td><td>Themen kurz und prägnant</td><td>ca. 75 %</td></tr>
   <tr><td>Schluss</td><td>Zusammenfassung · Fazit</td><td>ca. 10 %</td></tr>
 </table></div>
-<div class="tipp"><div class="label">4 Voraussetzungen für Verständlichkeit (Schulz von Thun)</div><p><strong>Einfachheit</strong> – kurze Sätze, bekannte Worte · <strong>Kürze/Prägnanz</strong> – zielorientiert · <strong>Anregende Zusätze</strong> – Beispiele, Medien · <strong>Gliederung</strong> – Struktur und Überleitungen</p></div>
+<div data-notiz-id="11" class="tipp"><div class="label">4 Voraussetzungen für Verständlichkeit (Schulz von Thun)</div><p><strong>Einfachheit</strong> – kurze Sätze, bekannte Worte · <strong>Kürze/Prägnanz</strong> – zielorientiert · <strong>Anregende Zusätze</strong> – Beispiele, Medien · <strong>Gliederung</strong> – Struktur und Überleitungen</p></div>
 
 <hr>
 <h2 id="kap2-bedarf"><span class="num">Kap. 2</span>Personalbedarf & Planung</h2>
 <div class="rechnung">Personalbestand HEUTE<br>+ Zugänge (Neueinstellungen, Rückkehrer...)<br>− Abgänge (Kündigungen, Rente, Elternzeit...)<br><span class="r-result">= Fortgeschriebener Personalbestand</span></div>
 <div class="rechnung">Bruttopersonalbedarf<br>− Fortgeschriebener Personalbestand<br><span class="r-result">= Nettopersonalbedarf (= Handlungsbedarf)</span></div>
-<div class="merksatz"><div class="label">Bruttopersonalbedarf</div><p><strong>Einsatzbedarf</strong> (normale Aufgaben) + <strong>Reservebedarf</strong> (Fehlzeiten: Urlaub, Krankheit)</p></div>
-<div class="tipp"><div class="label">Methoden zur Bedarfsermittlung</div><p><strong>Schätzverfahren</strong> (Erfahrungswerte / Delphi-Methode) · <strong>Stellenplanmethode</strong> · <strong>REFA-Verfahren (IST)</strong> – tatsächliche Zeiten messen · <strong>MTM-Methode (SOLL)</strong> – Bewegungsabläufe planen</p></div>
+<div data-notiz-id="3" class="merksatz"><div class="label">Bruttopersonalbedarf</div><p><strong>Einsatzbedarf</strong> (normale Aufgaben) + <strong>Reservebedarf</strong> (Fehlzeiten: Urlaub, Krankheit)</p></div>
+<div data-notiz-id="12" class="tipp"><div class="label">Methoden zur Bedarfsermittlung</div><p><strong>Schätzverfahren</strong> (Erfahrungswerte / Delphi-Methode) · <strong>Stellenplanmethode</strong> · <strong>REFA-Verfahren (IST)</strong> – tatsächliche Zeiten messen · <strong>MTM-Methode (SOLL)</strong> – Bewegungsabläufe planen</p></div>
 <h3>Die 4 Handlungskompetenzen</h3>
 <div class="def-grid">
-  <div class="def-box"><div class="def-term">Fachkompetenz</div><div class="def-text">Fachwissen, Kenntnisse, Fertigkeiten</div></div>
-  <div class="def-box"><div class="def-term">Methodenkompetenz</div><div class="def-text">Problemlösung, Arbeitsorganisation, Analyse</div></div>
-  <div class="def-box"><div class="def-term">Sozialkompetenz</div><div class="def-text">Teamfähigkeit, Kommunikation, Kooperation</div></div>
-  <div class="def-box"><div class="def-term">Persönlichkeitskompetenz</div><div class="def-text">Eigenverantwortung, Belastbarkeit, Flexibilität</div></div>
+  <div data-notiz-id="35" class="def-box"><div class="def-term">Fachkompetenz</div><div class="def-text">Fachwissen, Kenntnisse, Fertigkeiten</div></div>
+  <div data-notiz-id="36" class="def-box"><div class="def-term">Methodenkompetenz</div><div class="def-text">Problemlösung, Arbeitsorganisation, Analyse</div></div>
+  <div data-notiz-id="37" class="def-box"><div class="def-term">Sozialkompetenz</div><div class="def-text">Teamfähigkeit, Kommunikation, Kooperation</div></div>
+  <div data-notiz-id="38" class="def-box"><div class="def-term">Persönlichkeitskompetenz</div><div class="def-text">Eigenverantwortung, Belastbarkeit, Flexibilität</div></div>
 </div>
 
 <h2 id="kap2-beschaffung"><span class="num">2.1</span>Personalbeschaffung</h2>
@@ -214,10 +240,10 @@ hr{border:none;border-top:1px solid var(--border);margin:2rem 0;}
   <tr><td><strong>Vorteile</strong></td><td>Motivationssteigerung · kürzere Einarbeitung · geringeres Risiko · Mitarbeiterbindung</td><td>Direkte Besetzung · neue Ideen · passende Qualifikation · höhere Akzeptanz bei FK-Stellen</td></tr>
   <tr><td><strong>Nachteile</strong></td><td>Betriebsblindheit · Kettenversetzungen · Akzeptanzprobleme im Kollegenkreis</td><td>Hohes Fehlbesetzungsrisiko · hohe Kosten · lange Einarbeitung · Frustration Stammpersonal</td></tr>
 </table></div>
-<div class="tipp"><div class="label">Stellenanzeige – die 5 W's</div><p><strong>Wir sind…</strong> (Unternehmen) · <strong>Wir haben…</strong> (Stelle) · <strong>Wir suchen…</strong> (Qualifikationen) · <strong>Wir bieten…</strong> (Leistungen) · <strong>Wir bitten…</strong> (Bewerbungsweg)</p></div>
+<div data-notiz-id="13" class="tipp"><div class="label">Stellenanzeige – die 5 W's</div><p><strong>Wir sind…</strong> (Unternehmen) · <strong>Wir haben…</strong> (Stelle) · <strong>Wir suchen…</strong> (Qualifikationen) · <strong>Wir bieten…</strong> (Leistungen) · <strong>Wir bitten…</strong> (Bewerbungsweg)</p></div>
 
 <h2 id="kap2-auswahl"><span class="num">2.2</span>Personalauswahl</h2>
-<div class="merksatz"><div class="label">Wichtig: AGG beachten!</div><p>Keine Diskriminierung bei der Auswahl! Bei Indiz für Diskriminierung → <strong>Beweislastumkehr</strong>. Prozess dokumentieren, <strong>2 Monate aufbewahren</strong>. Betriebsrat bei standardisierten Verfahren beteiligen!</p></div>
+<div data-notiz-id="4" class="merksatz"><div class="label">Wichtig: AGG beachten!</div><p>Keine Diskriminierung bei der Auswahl! Bei Indiz für Diskriminierung → <strong>Beweislastumkehr</strong>. Prozess dokumentieren, <strong>2 Monate aufbewahren</strong>. Betriebsrat bei standardisierten Verfahren beteiligen!</p></div>
 <div class="table-wrap"><table>
   <tr><th>Instrument</th><th>Was wird geprüft</th><th>Besonderheit</th></tr>
   <tr><td><strong>Bewerbungsunterlagen</strong></td><td>Anschreiben, Lebenslauf (Zeitanalyse, Lücken), Zeugnisse</td><td>Rücksendepflicht! Eigentum des Bewerbers.</td></tr>
@@ -240,20 +266,20 @@ hr{border:none;border-top:1px solid var(--border);margin:2rem 0;}
 </table></div>
 <h3>Arbeitszeitmodelle</h3>
 <div class="def-grid">
-  <div class="def-box"><div class="def-term">Gleitzeit</div><div class="def-text">Kernarbeitszeit (z.B. 9–15 Uhr) + flexible Rand­zeiten</div></div>
-  <div class="def-box"><div class="def-term">Vertrauensarbeitszeit</div><div class="def-text">Keine Zeitkontrolle – Mitarbeiter steuert eigenverantwortlich</div></div>
-  <div class="def-box"><div class="def-term">Jahresarbeitszeitkonto</div><div class="def-text">Stundenzahl für längeren Zeitraum fixiert, variabel abrufbar</div></div>
-  <div class="def-box"><div class="def-term">KAPOVAZ</div><div class="def-text">Kapazitätsorientiert variabel – Arbeit auf Abruf</div></div>
+  <div data-notiz-id="39" class="def-box"><div class="def-term">Gleitzeit</div><div class="def-text">Kernarbeitszeit (z.B. 9–15 Uhr) + flexible Rand­zeiten</div></div>
+  <div data-notiz-id="40" class="def-box"><div class="def-term">Vertrauensarbeitszeit</div><div class="def-text">Keine Zeitkontrolle – Mitarbeiter steuert eigenverantwortlich</div></div>
+  <div data-notiz-id="41" class="def-box"><div class="def-term">Jahresarbeitszeitkonto</div><div class="def-text">Stundenzahl für längeren Zeitraum fixiert, variabel abrufbar</div></div>
+  <div data-notiz-id="42" class="def-box"><div class="def-term">KAPOVAZ</div><div class="def-text">Kapazitätsorientiert variabel – Arbeit auf Abruf</div></div>
 </div>
 
 <h2 id="kap3-betriebsrat"><span class="num">3.1</span>Betriebsrat (BetrVG)</h2>
-<div class="def-box"><div class="def-term">Aufgabe des Betriebsrats</div><div class="def-text">Darüber wachen, dass Gesetze und Verordnungen eingehalten werden. Umfassende Rechte im Unternehmen – von Information bis echte Mitbestimmung.</div></div>
+<div data-notiz-id="43" class="def-box"><div class="def-term">Aufgabe des Betriebsrats</div><div class="def-text">Darüber wachen, dass Gesetze und Verordnungen eingehalten werden. Umfassende Rechte im Unternehmen – von Information bis echte Mitbestimmung.</div></div>
 <div class="table-wrap"><table>
   <tr><th>Recht</th><th>Bedeutung</th><th>Beispiel</th></tr>
   <tr><td><strong>Informationsrecht</strong></td><td>Schwächeres Recht – AG muss beraten, informieren, anhören</td><td>Planung Betriebsstätten, technische Anlagen</td></tr>
   <tr><td><strong>Mitbestimmungsrecht</strong></td><td>Starkes Recht – Zustimmung nötig oder BR kann widersprechen</td><td>Einstellung, Versetzung, Kündigung, Sozialleistungen</td></tr>
 </table></div>
-<div class="pruefung"><div class="label">Prüfungshinweis Betriebsrat</div><p>VOR Kündigungen muss der BR angehört werden → kann innerhalb einer Woche widersprechen. Ab 20 Beschäftigten: Mitbestimmung bei personellen Einzelmaßnahmen (Einstellung, Versetzung, Ein-/Umgruppierung).</p></div>
+<div data-notiz-id="19" class="pruefung"><div class="label">Prüfungshinweis Betriebsrat</div><p>VOR Kündigungen muss der BR angehört werden → kann innerhalb einer Woche widersprechen. Ab 20 Beschäftigten: Mitbestimmung bei personellen Einzelmaßnahmen (Einstellung, Versetzung, Ein-/Umgruppierung).</p></div>
 
 <hr>
 <h2 id="kap4-fuehrungsstile"><span class="num">Kap. 4</span>Klassische Führungsstile (1-dimensional)</h2>
@@ -267,11 +293,11 @@ hr{border:none;border-top:1px solid var(--border);margin:2rem 0;}
 <h2 id="kap4-moderne"><span class="num">4.1</span>Blake & Mouton – Hersey & Blanchard</h2>
 <h3>Verhaltensgitter Blake & Mouton (2-dimensional)</h3>
 <div class="def-grid">
-  <div class="def-box"><div class="def-term">(1,1) Gleichgültig</div><div class="def-text">„Verarmter Stil" – bemerkenswerte Passivität, innerlich gekündigt</div></div>
-  <div class="def-box"><div class="def-term">(1,9) Entgegenkommend</div><div class="def-text">„Country-Club" – gutes Klima, aber wirtschaftlicher Erfolg nicht gesichert</div></div>
-  <div class="def-box"><div class="def-term">(9,1) Diktatorisch</div><div class="def-text">„Befehl & Gehorsam" – Ergebnis zählt, Mitarbeiter spielen keine Rolle</div></div>
-  <div class="def-box"><div class="def-term">(5,5) Status-quo</div><div class="def-text">„Middle of the Road" – goldene Mitte</div></div>
-  <div class="def-box"><div class="def-term" style="color:var(--green)">(9,9) Ideal</div><div class="def-text">„Team-Stil" – Königsweg: hoher Fokus auf Mitarbeiter UND Ergebnisse</div></div>
+  <div data-notiz-id="44" class="def-box"><div class="def-term">(1,1) Gleichgültig</div><div class="def-text">„Verarmter Stil" – bemerkenswerte Passivität, innerlich gekündigt</div></div>
+  <div data-notiz-id="45" class="def-box"><div class="def-term">(1,9) Entgegenkommend</div><div class="def-text">„Country-Club" – gutes Klima, aber wirtschaftlicher Erfolg nicht gesichert</div></div>
+  <div data-notiz-id="46" class="def-box"><div class="def-term">(9,1) Diktatorisch</div><div class="def-text">„Befehl & Gehorsam" – Ergebnis zählt, Mitarbeiter spielen keine Rolle</div></div>
+  <div data-notiz-id="47" class="def-box"><div class="def-term">(5,5) Status-quo</div><div class="def-text">„Middle of the Road" – goldene Mitte</div></div>
+  <div data-notiz-id="48" class="def-box"><div class="def-term" style="color:var(--green)">(9,9) Ideal</div><div class="def-text">„Team-Stil" – Königsweg: hoher Fokus auf Mitarbeiter UND Ergebnisse</div></div>
 </div>
 <h3>Situatives Führen – Reifegradmodell (Hersey & Blanchard)</h3>
 <div class="table-wrap"><table>
@@ -281,12 +307,12 @@ hr{border:none;border-top:1px solid var(--border);margin:2rem 0;}
   <tr><td><strong>R3</strong></td><td>Fähig, aber nicht willig</td><td>Partizipieren – einbeziehen, motivieren</td></tr>
   <tr><td><strong>R4</strong></td><td>Willig und fähig</td><td>Delegieren – Aufgaben vollständig übertragen</td></tr>
 </table></div>
-<div class="pruefung"><div class="label">Prüfungshinweis Reifegradmodell</div><p>Kommt häufig als Fallaufgabe: "Neuer Mitarbeiter, motiviert aber unerfahren – welchen Stil?" → R2 → Trainieren. "Erfahrener Mitarbeiter, der demotiviert wirkt?" → R3 → Partizipieren.</p></div>
+<div data-notiz-id="20" class="pruefung"><div class="label">Prüfungshinweis Reifegradmodell</div><p>Kommt häufig als Fallaufgabe: "Neuer Mitarbeiter, motiviert aber unerfahren – welchen Stil?" → R2 → Trainieren. "Erfahrener Mitarbeiter, der demotiviert wirkt?" → R3 → Partizipieren.</p></div>
 
 <h2 id="kap4-motivation"><span class="num">4.2</span>Motivation & Maslow</h2>
 <div class="def-grid">
-  <div class="def-box"><div class="def-term">Intrinsische Motivation</div><div class="def-text">Von innen – Sinn und Erfüllung in der Arbeit sehen. Langfristig nachhaltiger.</div></div>
-  <div class="def-box"><div class="def-term">Extrinsische Motivation</div><div class="def-text">Von außen – Gehalt, Sicherheit, Status. Wirkt kurzfristiger.</div></div>
+  <div data-notiz-id="49" class="def-box"><div class="def-term">Intrinsische Motivation</div><div class="def-text">Von innen – Sinn und Erfüllung in der Arbeit sehen. Langfristig nachhaltiger.</div></div>
+  <div data-notiz-id="50" class="def-box"><div class="def-term">Extrinsische Motivation</div><div class="def-text">Von außen – Gehalt, Sicherheit, Status. Wirkt kurzfristiger.</div></div>
 </div>
 <div class="table-wrap"><table>
   <tr><th>Stufe</th><th>Bedürfnis</th><th>Beispiele Arbeitskontext</th></tr>
@@ -296,17 +322,17 @@ hr{border:none;border-top:1px solid var(--border);margin:2rem 0;}
   <tr><td><strong>2</strong></td><td>Sicherheitsbedürfnisse</td><td>Sicherer Arbeitsplatz, festes Gehalt</td></tr>
   <tr><td><strong>1</strong></td><td>Physiologische Grundbedürfnisse</td><td>Angemessenes Gehalt, Pausen, Raumtemperatur</td></tr>
 </table></div>
-<div class="merksatz"><div class="label">Maslow-Merksatz</div><p>Stufen 1–4 = Defizitbedürfnisse (Unzufriedenheit wenn nicht erfüllt). Stufe 5 = Wachstumsbedürfnis. Führungskraft muss wissen auf welcher Stufe Mitarbeiter steht – und dort ansetzen!</p></div>
-<div class="def-box"><div class="def-term">Gruppenentwicklung nach Tuckman (5 Phasen)</div><div class="def-text"><strong>1. Forming</strong> – Kennenlernen · <strong>2. Storming</strong> – Konflikte, Machtkämpfe · <strong>3. Norming</strong> – Regeln entstehen · <strong>4. Performing</strong> – Hochleistungsphase · <strong>5. Adjourning</strong> – Auflösung (nur bei temporären Gruppen). Bei jeder Gruppenveränderung neu durchlebt!</div></div>
+<div data-notiz-id="5" class="merksatz"><div class="label">Maslow-Merksatz</div><p>Stufen 1–4 = Defizitbedürfnisse (Unzufriedenheit wenn nicht erfüllt). Stufe 5 = Wachstumsbedürfnis. Führungskraft muss wissen auf welcher Stufe Mitarbeiter steht – und dort ansetzen!</p></div>
+<div data-notiz-id="51" class="def-box"><div class="def-term">Gruppenentwicklung nach Tuckman (5 Phasen)</div><div class="def-text"><strong>1. Forming</strong> – Kennenlernen · <strong>2. Storming</strong> – Konflikte, Machtkämpfe · <strong>3. Norming</strong> – Regeln entstehen · <strong>4. Performing</strong> – Hochleistungsphase · <strong>5. Adjourning</strong> – Auflösung (nur bei temporären Gruppen). Bei jeder Gruppenveränderung neu durchlebt!</div></div>
 
 <h2 id="kap4-instrumente"><span class="num">4.3</span>Führungsinstrumente</h2>
 <div class="def-grid">
-  <div class="def-box"><div class="def-term">Direkte Instrumente</div><div class="def-text">Delegation · Kontrolle · Zielvorgabe · Zielvereinbarung · Kritik · Anerkennung</div></div>
-  <div class="def-box"><div class="def-term">Indirekte Instrumente</div><div class="def-text">Anreizsysteme · Arbeitsbedingungen · Personalentwicklung · Unternehmenskultur</div></div>
+  <div data-notiz-id="52" class="def-box"><div class="def-term">Direkte Instrumente</div><div class="def-text">Delegation · Kontrolle · Zielvorgabe · Zielvereinbarung · Kritik · Anerkennung</div></div>
+  <div data-notiz-id="53" class="def-box"><div class="def-term">Indirekte Instrumente</div><div class="def-text">Anreizsysteme · Arbeitsbedingungen · Personalentwicklung · Unternehmenskultur</div></div>
 </div>
-<div class="merksatz"><div class="label">SMART-Formel – jedes Ziel muss SMART sein!</div><p><strong>S</strong>pezifisch · <strong>M</strong>essbar · <strong>A</strong>kzeptiert · <strong>R</strong>ealistisch · <strong>T</strong>erminiert</p></div>
-<div class="beispiel"><div class="label">SMART-Beispiel (Gruchala-Folie)</div><p><strong>Schlecht:</strong> "Umsatzsteigerung"</p><p><strong>Gut:</strong> "Die Bruttoumsätze der Produktkategorie 'Damenhüte' steigen im 2. Quartal um mind. 15 % gegenüber Vorjahr."</p></div>
-<div class="tipp"><div class="label">Mitarbeitergespräch – mind. 1x jährlich</div><p>Vorbereitung + neutrale Räumlichkeiten · Themen: Beurteilung Vorperiode · Zielvereinbarung · Personalentwicklung · Entgelt · Kritik & Anerkennung</p></div>
+<div data-notiz-id="6" class="merksatz"><div class="label">SMART-Formel – jedes Ziel muss SMART sein!</div><p><strong>S</strong>pezifisch · <strong>M</strong>essbar · <strong>A</strong>kzeptiert · <strong>R</strong>ealistisch · <strong>T</strong>erminiert</p></div>
+<div data-notiz-id="23" class="beispiel"><div class="label">SMART-Beispiel (Gruchala-Folie)</div><p><strong>Schlecht:</strong> "Umsatzsteigerung"</p><p><strong>Gut:</strong> "Die Bruttoumsätze der Produktkategorie 'Damenhüte' steigen im 2. Quartal um mind. 15 % gegenüber Vorjahr."</p></div>
+<div data-notiz-id="14" class="tipp"><div class="label">Mitarbeitergespräch – mind. 1x jährlich</div><p>Vorbereitung + neutrale Räumlichkeiten · Themen: Beurteilung Vorperiode · Zielvereinbarung · Personalentwicklung · Entgelt · Kritik & Anerkennung</p></div>
 
 <h2 id="kap4-management-by"><span class="num">4.4</span>Management-by-Modelle</h2>
 <div class="table-wrap"><table>
@@ -320,10 +346,10 @@ hr{border:none;border-top:1px solid var(--border);margin:2rem 0;}
 
 <hr>
 <h2 id="kap5-ausbildung"><span class="num">Kap. 5</span>Berufsausbildung (BBiG)</h2>
-<div class="def-box"><div class="def-term">Ausbildungsordnung – Mindestinhalte (§5 BBiG)</div><div class="def-text">Berufsbezeichnung · Ausbildungsdauer · Ausbildungsberufsbild · Ausbildungsrahmenplan · Prüfungsanforderungen</div></div>
+<div data-notiz-id="54" class="def-box"><div class="def-term">Ausbildungsordnung – Mindestinhalte (§5 BBiG)</div><div class="def-text">Berufsbezeichnung · Ausbildungsdauer · Ausbildungsberufsbild · Ausbildungsrahmenplan · Prüfungsanforderungen</div></div>
 <div class="def-grid">
-  <div class="def-box"><div class="def-term">Persönliche Eignung Ausbilder</div><div class="def-text">Nicht geeignet: wer gegen BBiG/Jugendarbeitsschutzgesetz verstoßen hat oder Freiheitsstrafe mind. 2 Jahre</div></div>
-  <div class="def-box"><div class="def-term">Fachliche Eignung</div><div class="def-text">Abschlussprüfung + Berufserfahrung + <strong>AdA-Schein</strong> (Ausbildereignungsverordnung)</div></div>
+  <div data-notiz-id="55" class="def-box"><div class="def-term">Persönliche Eignung Ausbilder</div><div class="def-text">Nicht geeignet: wer gegen BBiG/Jugendarbeitsschutzgesetz verstoßen hat oder Freiheitsstrafe mind. 2 Jahre</div></div>
+  <div data-notiz-id="56" class="def-box"><div class="def-term">Fachliche Eignung</div><div class="def-text">Abschlussprüfung + Berufserfahrung + <strong>AdA-Schein</strong> (Ausbildereignungsverordnung)</div></div>
 </div>
 <div class="table-wrap"><table>
   <tr><th>Anzahl Fachkräfte</th><th>Max. Azubis</th></tr>
@@ -332,35 +358,35 @@ hr{border:none;border-top:1px solid var(--border);margin:2rem 0;}
   <tr><td>Nebenberuflicher Ausbilder</td><td>max. 3 Azubis</td></tr>
   <tr><td>Hauptberuflicher Ausbilder</td><td>max. 16 Azubis</td></tr>
 </table></div>
-<div class="tipp"><div class="label">Beteiligte an der Ausbildung</div><p>IHK (Überwachung, Prüfungen) · Berufsschule (Theorie) · Ausbildungsbetrieb (Praxis) · Ausbilder (Betreuung vor Ort) · Eltern (bei Minderjährigen) · Prüfungsausschuss. Max. ¼ der Ausbildungszeit im Ausland – Kosten trägt Ausbilder.</p></div>
+<div data-notiz-id="15" class="tipp"><div class="label">Beteiligte an der Ausbildung</div><p>IHK (Überwachung, Prüfungen) · Berufsschule (Theorie) · Ausbildungsbetrieb (Praxis) · Ausbilder (Betreuung vor Ort) · Eltern (bei Minderjährigen) · Prüfungsausschuss. Max. ¼ der Ausbildungszeit im Ausland – Kosten trägt Ausbilder.</p></div>
 
 <h2 id="kap6-weiterbildung"><span class="num">Kap. 6</span>Berufliche Entwicklung & Weiterbildung</h2>
 <div class="def-grid">
-  <div class="def-box"><div class="def-term">Into-the-job</div><div class="def-text">Vor oder beim Einstieg – Einarbeitung, Probezeit, Ausbildung</div></div>
-  <div class="def-box"><div class="def-term">On-the-job</div><div class="def-text">Während der Arbeit – Delegation, Job Rotation, Mentoring, Projektarbeit</div></div>
-  <div class="def-box"><div class="def-term">Off-the-job</div><div class="def-text">Extern – Seminare, Kurse, Studium, Coaching</div></div>
-  <div class="def-box"><div class="def-term">Out-of-the-job</div><div class="def-text">Beim Ausscheiden – Outplacement, Vorruhestand</div></div>
+  <div data-notiz-id="57" class="def-box"><div class="def-term">Into-the-job</div><div class="def-text">Vor oder beim Einstieg – Einarbeitung, Probezeit, Ausbildung</div></div>
+  <div data-notiz-id="58" class="def-box"><div class="def-term">On-the-job</div><div class="def-text">Während der Arbeit – Delegation, Job Rotation, Mentoring, Projektarbeit</div></div>
+  <div data-notiz-id="59" class="def-box"><div class="def-term">Off-the-job</div><div class="def-text">Extern – Seminare, Kurse, Studium, Coaching</div></div>
+  <div data-notiz-id="60" class="def-box"><div class="def-term">Out-of-the-job</div><div class="def-text">Beim Ausscheiden – Outplacement, Vorruhestand</div></div>
 </div>
 
 <h2 id="kap7-arbeitsschutz"><span class="num">Kap. 7</span>Gestaltung des Arbeitsschutzes</h2>
-<div class="def-box"><div class="def-term">Ziel des Arbeitsschutzes</div><div class="def-text">Schutz von Gesundheit, Sicherheit und Wohlbefinden der Beschäftigten. Gesetzliche Grundlage: <strong>ArbSchG</strong> + DGUV-Unfallverhütungsvorschriften.</div></div>
+<div data-notiz-id="61" class="def-box"><div class="def-term">Ziel des Arbeitsschutzes</div><div class="def-text">Schutz von Gesundheit, Sicherheit und Wohlbefinden der Beschäftigten. Gesetzliche Grundlage: <strong>ArbSchG</strong> + DGUV-Unfallverhütungsvorschriften.</div></div>
 <div class="def-grid">
-  <div class="def-box"><div class="def-term">Technische Maßnahmen</div><div class="def-text">Ergonomische Arbeitsplätze · Schutzausrüstung (Helm, Sicherheitsschuhe) · Maschinensicherheit</div></div>
-  <div class="def-box"><div class="def-term">Organisatorische Maßnahmen</div><div class="def-text">Sicherheitsunterweisungen · Gefährdungsbeurteilung · Notfallpläne · Betriebsanweisungen</div></div>
-  <div class="def-box"><div class="def-term">Personelle Maßnahmen</div><div class="def-text">Schulungen · Sicherheitsbeauftragter · Betriebsarzt</div></div>
-  <div class="def-box"><div class="def-term">Gefährdungsbeurteilung (§5 ArbSchG)</div><div class="def-text">Pflicht des Arbeitgebers – systematische Analyse aller Gefährdungen am Arbeitsplatz</div></div>
+  <div data-notiz-id="62" class="def-box"><div class="def-term">Technische Maßnahmen</div><div class="def-text">Ergonomische Arbeitsplätze · Schutzausrüstung (Helm, Sicherheitsschuhe) · Maschinensicherheit</div></div>
+  <div data-notiz-id="63" class="def-box"><div class="def-term">Organisatorische Maßnahmen</div><div class="def-text">Sicherheitsunterweisungen · Gefährdungsbeurteilung · Notfallpläne · Betriebsanweisungen</div></div>
+  <div data-notiz-id="64" class="def-box"><div class="def-term">Personelle Maßnahmen</div><div class="def-text">Schulungen · Sicherheitsbeauftragter · Betriebsarzt</div></div>
+  <div data-notiz-id="65" class="def-box"><div class="def-term">Gefährdungsbeurteilung (§5 ArbSchG)</div><div class="def-text">Pflicht des Arbeitgebers – systematische Analyse aller Gefährdungen am Arbeitsplatz</div></div>
 </div>
-<div class="pruefung"><div class="label">Prüfungshinweis Arbeitsschutz</div><p>Pflichten des Arbeitgebers: Gefährdungsbeurteilung · Schutzmaßnahmen · Unterweisungen · Betriebsarzt · Sicherheitsbeauftragten benennen · DGUV-Vorschriften einhalten.</p></div>
+<div data-notiz-id="21" class="pruefung"><div class="label">Prüfungshinweis Arbeitsschutz</div><p>Pflichten des Arbeitgebers: Gefährdungsbeurteilung · Schutzmaßnahmen · Unterweisungen · Betriebsarzt · Sicherheitsbeauftragten benennen · DGUV-Vorschriften einhalten.</p></div>
 
 
 <!-- ── 1.1.2 Externe Partner ── -->
 <h2 id="kap1-1-2"><span class="num">1.1.2</span>Gestaltung mit externen Partnern</h2>
-<div class="def-box"><div class="def-term">Externe Partner</div><div class="def-text">z.B. Behörden, Kundschaft, Lieferanten, Kapitalgeber. Externe Partner erfordern häufig eine andere Art & Form der Information. Beachte: <strong>rechtliche Einschränkungen & Vorgaben</strong> (Form, Frist)!</div></div>
-<div class="tipp"><div class="label">Zu klärende Fragen</div><p>Wer kommuniziert mit wem? · In welcher Form? · Mit welcher Frist? · Was ist rechtlich bindend? → Regelung in der Ablauforganisation</p></div>
+<div data-notiz-id="66" class="def-box"><div class="def-term">Externe Partner</div><div class="def-text">z.B. Behörden, Kundschaft, Lieferanten, Kapitalgeber. Externe Partner erfordern häufig eine andere Art & Form der Information. Beachte: <strong>rechtliche Einschränkungen & Vorgaben</strong> (Form, Frist)!</div></div>
+<div data-notiz-id="16" class="tipp"><div class="label">Zu klärende Fragen</div><p>Wer kommuniziert mit wem? · In welcher Form? · Mit welcher Frist? · Was ist rechtlich bindend? → Regelung in der Ablauforganisation</p></div>
 
 <!-- ── 1.1.3 Interkulturell ── -->
 <h2 id="kap1-1-3"><span class="num">1.1.3</span>Interkulturelle Anforderungen</h2>
-<div class="def-box"><div class="def-term">Interkulturelle Kommunikation</div><div class="def-text">Noch anspruchsvoller als normale Kommunikation – unterschiedliche Kulturkreise haben verschiedene Kommunikationsmuster, Werte und Erwartungen.</div></div>
+<div data-notiz-id="67" class="def-box"><div class="def-term">Interkulturelle Kommunikation</div><div class="def-text">Noch anspruchsvoller als normale Kommunikation – unterschiedliche Kulturkreise haben verschiedene Kommunikationsmuster, Werte und Erwartungen.</div></div>
 <div class="table-wrap"><table>
   <tr><th>Herausforderung</th><th>Beispiel</th></tr>
   <tr><td>Unterschiedliche Sprachen & Begriffe</td><td>Fachbegriffe haben keine direkte Übersetzung</td></tr>
@@ -378,11 +404,11 @@ hr{border:none;border-top:1px solid var(--border);margin:2rem 0;}
   <tr><td><strong>Wirtschaftliche Ziele</strong></td><td>Gewinnmaximierung · Personalkosten gering halten · Kreativität & Erfahrungen nutzen · flexibler Einsatz</td></tr>
   <tr><td><strong>Soziale Ziele</strong></td><td>Angemessene Entlohnung · gute Arbeitsbedingungen · zeitgemäße Führung</td></tr>
 </table></div>
-<div class="merksatz"><div class="label">Merksatz – Zielkonflikt</div><p>Soziale Ziele kosten Geld – aber: <strong>unerfüllte soziale Ziele → Leistung sinkt!</strong> Wirtschaftliche Ziele können nur durch Erfüllung sozialer Ziele erreicht werden.</p></div>
+<div data-notiz-id="7" class="merksatz"><div class="label">Merksatz – Zielkonflikt</div><p>Soziale Ziele kosten Geld – aber: <strong>unerfüllte soziale Ziele → Leistung sinkt!</strong> Wirtschaftliche Ziele können nur durch Erfüllung sozialer Ziele erreicht werden.</p></div>
 
 <!-- ── 2.1.2 Personalmarketing ── -->
 <h2 id="kap2-1-2"><span class="num">2.1.2</span>Personalmarketing & Employer Branding</h2>
-<div class="def-box"><div class="def-term">Personalmarketing</div><div class="def-text">Alle Maßnahmen, die das Arbeitgeberimage auf dem internen & externen Arbeitsmarkt positiv prägen.<br><strong>Employer Branding</strong> = Arbeitgeber als Marke – Identifikation & Wunsch, im Unternehmen arbeiten zu dürfen.</div></div>
+<div data-notiz-id="68" class="def-box"><div class="def-term">Personalmarketing</div><div class="def-text">Alle Maßnahmen, die das Arbeitgeberimage auf dem internen & externen Arbeitsmarkt positiv prägen.<br><strong>Employer Branding</strong> = Arbeitgeber als Marke – Identifikation & Wunsch, im Unternehmen arbeiten zu dürfen.</div></div>
 <div class="table-wrap"><table>
   <tr><th>Internes Personalmarketing</th><th>Externes Personalmarketing</th></tr>
   <tr><td>Kooperative Führung · flache Hierarchien · Delegation · Zielvereinbarungen · Mitarbeitergespräche · Social Benefits</td><td>Analyse Arbeitsmarkt · Zielgruppen lokalisieren · Social Media · Jobmessen · Aktivitäten der Konkurrenz beobachten</td></tr>
@@ -444,7 +470,7 @@ hr{border:none;border-top:1px solid var(--border);margin:2rem 0;}
   <tr><td><strong>4</strong></td><td>Performing</td><td>Hochleistungsphase – effiziente Zusammenarbeit</td></tr>
   <tr><td><strong>5</strong></td><td>Adjourning</td><td>Auflösung – nur bei temporären Gruppen</td></tr>
 </table></div>
-<div class="merksatz"><div class="label">Merksatz</div><p>Bei jeder Veränderung in der Gruppe werden die Phasen <strong>neu durchlebt!</strong></p></div>
+<div data-notiz-id="8" class="merksatz"><div class="label">Merksatz</div><p>Bei jeder Veränderung in der Gruppe werden die Phasen <strong>neu durchlebt!</strong></p></div>
 
 <hr>
 
@@ -462,15 +488,15 @@ hr{border:none;border-top:1px solid var(--border);margin:2rem 0;}
 </table></div>
 
 <h2 id="kap5-pruefung"><span class="num">5.5</span>Prüfung & Abschluss</h2>
-<div class="def-box"><div class="def-term">Voraussetzungen zur Abschlussprüfung (§43 BBiG)</div><div class="def-text">Ausbildungszeit absolviert · Ausbildungsnachweis (Berichtsheft) geführt · Zwischenprüfung/AP Teil 1 abgelegt. Prüfungsgebühr trägt Arbeitgeber. Azubi ist freizustellen!</div></div>
-<div class="pruefung"><div class="label">Wichtig</div><p>Bei Bestehen endet das Ausbildungsverhältnis automatisch. Weiterbeschäftigung ohne Vereinbarung → <strong>unbefristetes Arbeitsverhältnis!</strong> Nichtbestehen: 2x Wiederholung möglich.</p></div>
+<div data-notiz-id="69" class="def-box"><div class="def-term">Voraussetzungen zur Abschlussprüfung (§43 BBiG)</div><div class="def-text">Ausbildungszeit absolviert · Ausbildungsnachweis (Berichtsheft) geführt · Zwischenprüfung/AP Teil 1 abgelegt. Prüfungsgebühr trägt Arbeitgeber. Azubi ist freizustellen!</div></div>
+<div data-notiz-id="22" class="pruefung"><div class="label">Wichtig</div><p>Bei Bestehen endet das Ausbildungsverhältnis automatisch. Weiterbeschäftigung ohne Vereinbarung → <strong>unbefristetes Arbeitsverhältnis!</strong> Nichtbestehen: 2x Wiederholung möglich.</p></div>
 
 <hr>
 
 <!-- ── 7. Arbeitsschutz – Gefährdungsbeurteilung & STOP ── -->
 <h2 id="kap7-gefaehrdung"><span class="num">7.1.3</span>Gefährdungsbeurteilung (§5 ArbSchG)</h2>
-<div class="merksatz"><div class="label">Pflicht des Arbeitgebers!</div><p>Systematische Analyse aller Gefährdungen. Auch bei neuen Tätigkeiten, nach Unfällen, bei Änderungen → regelmäßige Überprüfung!</p></div>
-<div class="tipp"><div class="label">Dokumentation (§6 ArbSchG)</div><p>Formfrei (Papier oder elektronisch). Mindestinhalte: Gefährdungen · Schutzmaßnahmen inkl. Termine & Verantwortliche · Wirksamkeitsprüfung · Datum</p></div>
+<div data-notiz-id="9" class="merksatz"><div class="label">Pflicht des Arbeitgebers!</div><p>Systematische Analyse aller Gefährdungen. Auch bei neuen Tätigkeiten, nach Unfällen, bei Änderungen → regelmäßige Überprüfung!</p></div>
+<div data-notiz-id="17" class="tipp"><div class="label">Dokumentation (§6 ArbSchG)</div><p>Formfrei (Papier oder elektronisch). Mindestinhalte: Gefährdungen · Schutzmaßnahmen inkl. Termine & Verantwortliche · Wirksamkeitsprüfung · Datum</p></div>
 
 <h2 id="kap7-stop"><span class="num">7.1.4</span>STOP-Prinzip – Rangfolge der Schutzmaßnahmen</h2>
 <div class="table-wrap"><table>
@@ -486,6 +512,224 @@ hr{border:none;border-top:1px solid var(--border);margin:2rem 0;}
   <tr><td><strong>Wiederholungsunterweisung</strong></td><td>Mind. 1x jährlich (Jugendliche 2x)</td></tr>
   <tr><td><strong>Anlassunterweisung</strong></td><td>Nach Unfällen oder Fehlverhalten</td></tr>
 </table></div>
+
+
+<hr/>
+<!-- WISSENS-CHECK -->
+<section id="wissenscheck">
+<h2>🎯 Wissens-Check – Kommunikation, Führung & Zusammenarbeit</h2>
+<p style="font-size:14px;color:var(--text-2);margin-bottom:0.5rem;">Fragen zu allen Kapiteln des Gruchala-Moduls – von Watzlawick und Schulz von Thun über Personal, ArbZG und Führungsstile bis BBiG und Arbeitsschutz. Mit Erklärung und Kapitelverweis; dein Stand wird automatisch gespeichert.</p>
+<div class="quiz-wrap">
+<div class="quiz-topic">Kommunikation · Kap. 1</div><div class="quiz-block" id="pq1" data-expl="„Man kann nicht nicht kommunizieren“ – auch Schweigen, Gestik und Mimik senden Botschaften. (Kap. 1)">
+<div class="quiz-nr"><span>Frage 1 von 40</span><span>Kap. 1</span></div>
+<div class="quiz-frage">Wie lautet Watzlawicks wichtigstes Axiom?</div>
+<div class="quiz-options"><button class="quiz-btn" onclick="pqAnswer('pq1',this,false)">A) Schweigen ist keine Kommunikation</button><button class="quiz-btn" onclick="pqAnswer('pq1',this,false)">B) Worte sind wichtiger als Körpersprache</button><button class="quiz-btn" onclick="pqAnswer('pq1',this,false)">C) Kommunikation ist immer freiwillig</button><button class="quiz-btn" onclick="pqAnswer('pq1',this,true)">D) Man kann nicht nicht kommunizieren</button></div>
+<div class="quiz-feedback" id="pq1-fb"></div>
+</div><div class="quiz-block" id="pq2" data-expl="Digital = die Worte selbst, analog = Körpersprache, Tonfall, Mimik. Beide Ebenen wirken immer gleichzeitig. (Kap. 1 · Axiome)">
+<div class="quiz-nr"><span>Frage 2 von 40</span><span>Kap. 1 · Axiome</span></div>
+<div class="quiz-frage">„Kommunikation ist digital und analog“ (Axiom 4) bedeutet …</div>
+<div class="quiz-options"><button class="quiz-btn" onclick="pqAnswer('pq2',this,true)">A) Worte (digital) plus Körpersprache (analog) wirken zusammen</button><button class="quiz-btn" onclick="pqAnswer('pq2',this,false)">B) Es gibt nur schriftliche und mündliche Kommunikation</button><button class="quiz-btn" onclick="pqAnswer('pq2',this,false)">C) Kommunikation läuft über Computer</button><button class="quiz-btn" onclick="pqAnswer('pq2',this,false)">D) Analoge Kommunikation ist veraltet</button></div>
+<div class="quiz-feedback" id="pq2-fb"></div>
+</div><div class="quiz-block" id="pq3" data-expl="Jede Äußerung enthält gleichzeitig: Sachinhalt (Information), Beziehungshinweis (wie stehen wir zueinander), Selbstkundgabe (etwas über den Sprecher) und Appell (Aufforderung). (Kap. 1)">
+<div class="quiz-nr"><span>Frage 3 von 40</span><span>Kap. 1</span></div>
+<div class="quiz-frage">Welche vier Ebenen hat das Nachrichtenquadrat nach Schulz von Thun?</div>
+<div class="quiz-options"><button class="quiz-btn" onclick="pqAnswer('pq3',this,false)">A) Sender, Empfänger, Kanal, Störung</button><button class="quiz-btn" onclick="pqAnswer('pq3',this,false)">B) Frage, Antwort, Feedback, Aktion</button><button class="quiz-btn" onclick="pqAnswer('pq3',this,true)">C) Sachinhalt, Beziehungshinweis, Selbstkundgabe, Appell</button><button class="quiz-btn" onclick="pqAnswer('pq3',this,false)">D) Inhalt, Form, Zeit, Ort</button></div>
+<div class="quiz-feedback" id="pq3-fb"></div>
+</div><div class="quiz-block" id="pq4" data-expl="Die Aussage transportiert vor allem, wie die Beteiligten zueinander stehen (Vorwurf, gefühlte Ungerechtigkeit) – der Beziehungshinweis. (Kap. 1)">
+<div class="quiz-nr"><span>Frage 4 von 40</span><span>Kap. 1</span></div>
+<div class="quiz-frage">„Immer muss ich Kaffee kochen!“ betont welche Ebene des Nachrichtenquadrats?</div>
+<div class="quiz-options"><button class="quiz-btn" onclick="pqAnswer('pq4',this,false)">A) Appell</button><button class="quiz-btn" onclick="pqAnswer('pq4',this,true)">B) Beziehungshinweis</button><button class="quiz-btn" onclick="pqAnswer('pq4',this,false)">C) Sachinhalt</button><button class="quiz-btn" onclick="pqAnswer('pq4',this,false)">D) Selbstkundgabe</button></div>
+<div class="quiz-feedback" id="pq4-fb"></div>
+</div><div class="quiz-block" id="pq5" data-expl="Feedback = freiwillige Rückmeldung (Wahrnehmung · Wirkung · Wunsch), verlangt keine Änderung. Kritik = objektive Analyse von Defiziten mit Vereinbarungen. Anerkennung = gute Leistungen hervorheben. (Kap. 1.1)">
+<div class="quiz-nr"><span>Frage 5 von 40</span><span>Kap. 1.1</span></div>
+<div class="quiz-frage">Was unterscheidet Feedback von Kritik?</div>
+<div class="quiz-options"><button class="quiz-btn" onclick="pqAnswer('pq5',this,false)">A) Feedback verlangt sofortige Verhaltensänderung</button><button class="quiz-btn" onclick="pqAnswer('pq5',this,false)">B) Es gibt keinen Unterschied</button><button class="quiz-btn" onclick="pqAnswer('pq5',this,false)">C) Kritik ist immer positiv</button><button class="quiz-btn" onclick="pqAnswer('pq5',this,true)">D) Feedback ist eine freiwillige Rückmeldung zum Verhalten und verlangt keine Veränderung</button></div>
+<div class="quiz-feedback" id="pq5-fb"></div>
+</div><div class="quiz-block" id="pq6" data-expl="Die 6 Phasen: Einstieg → Ideensammlung (ohne Kommentieren!) → Bewertung → Ausarbeitung → Maßnahmen (mit Verantwortlichen &amp; Terminen) → Abschluss. (Kap. 1.1)">
+<div class="quiz-nr"><span>Frage 6 von 40</span><span>Kap. 1.1</span></div>
+<div class="quiz-frage">In welcher Moderationsphase gilt: Brainstorming ohne Kommentieren?</div>
+<div class="quiz-options"><button class="quiz-btn" onclick="pqAnswer('pq6',this,true)">A) Ideensammlung</button><button class="quiz-btn" onclick="pqAnswer('pq6',this,false)">B) Maßnahmen</button><button class="quiz-btn" onclick="pqAnswer('pq6',this,false)">C) Bewertung</button><button class="quiz-btn" onclick="pqAnswer('pq6',this,false)">D) Einstieg</button></div>
+<div class="quiz-feedback" id="pq6-fb"></div>
+</div><div class="quiz-topic">Konflikt & Präsentation · Kap. 1.2–1.3</div><div class="quiz-block" id="pq7" data-expl="Verteilungskonflikt = Streit um Ressourcen (Mitarbeiter, Budget, Raum, Zeit). Beziehungskonflikt = gestörte Beziehungsebene; Bewertungskonflikt = unterschiedliche Zielvorstellungen. (Kap. 1.2)">
+<div class="quiz-nr"><span>Frage 7 von 40</span><span>Kap. 1.2</span></div>
+<div class="quiz-frage">Ein Streit um Budget, Räume oder Personal ist typischerweise ein …</div>
+<div class="quiz-options"><button class="quiz-btn" onclick="pqAnswer('pq7',this,false)">A) Beziehungskonflikt</button><button class="quiz-btn" onclick="pqAnswer('pq7',this,false)">B) intrapersoneller Konflikt</button><button class="quiz-btn" onclick="pqAnswer('pq7',this,true)">C) Verteilungskonflikt</button><button class="quiz-btn" onclick="pqAnswer('pq7',this,false)">D) Bewertungskonflikt</button></div>
+<div class="quiz-feedback" id="pq7-fb"></div>
+</div><div class="quiz-block" id="pq8" data-expl="Stufen 1–3: Win-Win (selbst lösbar), Stufen 4–6: Mediation nötig, Stufen 7–9: Lose-Lose. Ab Stufe 4 ist Win-Win kaum mehr möglich – Konflikte früh erkennen! (Kap. 1.2)">
+<div class="quiz-nr"><span>Frage 8 von 40</span><span>Kap. 1.2</span></div>
+<div class="quiz-frage">Was gilt für die Eskalationsstufen 4–6 nach Glasl?</div>
+<div class="quiz-options"><button class="quiz-btn" onclick="pqAnswer('pq8',this,false)">A) Der Konflikt ist beendet</button><button class="quiz-btn" onclick="pqAnswer('pq8',this,false)">B) Beide Parteien haben verloren (Lose-Lose)</button><button class="quiz-btn" onclick="pqAnswer('pq8',this,false)">C) Die Beteiligten lösen den Konflikt selbst (Win-Win)</button><button class="quiz-btn" onclick="pqAnswer('pq8',this,true)">D) Nur noch durch eine neutrale Vermittlerperson lösbar (Mediation)</button></div>
+<div class="quiz-feedback" id="pq8-fb"></div>
+</div><div class="quiz-block" id="pq9" data-expl="Mobbing = systematische Ausgrenzung über längeren Zeitraum. Frühwarnsignale: Ironie, mangelndes Zuhören, Herabsetzung. Folgen: Kommunikationsstörung, Krankenstand, Imageschaden. (Kap. 1.2)">
+<div class="quiz-nr"><span>Frage 9 von 40</span><span>Kap. 1.2</span></div>
+<div class="quiz-frage">Was kennzeichnet Mobbing?</div>
+<div class="quiz-options"><button class="quiz-btn" onclick="pqAnswer('pq9',this,false)">A) Konkurrenz um eine Beförderung</button><button class="quiz-btn" onclick="pqAnswer('pq9',this,true)">B) Systematische Ausgrenzung über einen längeren Zeitraum</button><button class="quiz-btn" onclick="pqAnswer('pq9',this,false)">C) Sachliche Kritik im Mitarbeitergespräch</button><button class="quiz-btn" onclick="pqAnswer('pq9',this,false)">D) Ein einmaliger heftiger Streit</button></div>
+<div class="quiz-feedback" id="pq9-fb"></div>
+</div><div class="quiz-block" id="pq10" data-expl="Einleitung (Vorstellung, Ziel, Ablauf) ca. 15 %, Hauptteil ca. 75 %, Schluss (Zusammenfassung, Fazit) ca. 10 %. (Kap. 1.3)">
+<div class="quiz-nr"><span>Frage 10 von 40</span><span>Kap. 1.3</span></div>
+<div class="quiz-frage">Wie sollten die Anteile einer Präsentation verteilt sein?</div>
+<div class="quiz-options"><button class="quiz-btn" onclick="pqAnswer('pq10',this,false)">A) Hauptteil 100 %</button><button class="quiz-btn" onclick="pqAnswer('pq10',this,true)">B) Einleitung ca. 15 %, Hauptteil ca. 75 %, Schluss ca. 10 %</button><button class="quiz-btn" onclick="pqAnswer('pq10',this,false)">C) Je ein Drittel</button><button class="quiz-btn" onclick="pqAnswer('pq10',this,false)">D) Einleitung 50 %, Rest 50 %</button></div>
+<div class="quiz-feedback" id="pq10-fb"></div>
+</div><div class="quiz-block" id="pq11" data-expl="Einfachheit (kurze Sätze, bekannte Worte), Kürze/Prägnanz, anregende Zusätze (Beispiele, Medien) und Gliederung (Struktur, Überleitungen). (Kap. 1.3)">
+<div class="quiz-nr"><span>Frage 11 von 40</span><span>Kap. 1.3</span></div>
+<div class="quiz-frage">Welche 4 Voraussetzungen für Verständlichkeit nennt Schulz von Thun?</div>
+<div class="quiz-options"><button class="quiz-btn" onclick="pqAnswer('pq11',this,false)">A) Sachlichkeit, Neutralität, Distanz, Formalität</button><button class="quiz-btn" onclick="pqAnswer('pq11',this,true)">B) Einfachheit, Kürze/Prägnanz, anregende Zusätze, Gliederung</button><button class="quiz-btn" onclick="pqAnswer('pq11',this,false)">C) Lautstärke, Tempo, Pausen, Blickkontakt</button><button class="quiz-btn" onclick="pqAnswer('pq11',this,false)">D) Humor, Spannung, Emotion, Wiederholung</button></div>
+<div class="quiz-feedback" id="pq11-fb"></div>
+</div><div class="quiz-block" id="pq12" data-expl="Das Handout enthält mindestens den Inhalt der Präsentation und wird erst am Ende ausgehändigt – sonst liest das Publikum statt zuzuhören. (Kap. 1.3.2)">
+<div class="quiz-nr"><span>Frage 12 von 40</span><span>Kap. 1.3.2</span></div>
+<div class="quiz-frage">Wann sollte das Handout ausgehändigt werden?</div>
+<div class="quiz-options"><button class="quiz-btn" onclick="pqAnswer('pq12',this,false)">A) Gar nicht</button><button class="quiz-btn" onclick="pqAnswer('pq12',this,false)">B) Vor der Präsentation</button><button class="quiz-btn" onclick="pqAnswer('pq12',this,false)">C) Während des Hauptteils</button><button class="quiz-btn" onclick="pqAnswer('pq12',this,true)">D) Erst am Ende</button></div>
+<div class="quiz-feedback" id="pq12-fb"></div>
+</div><div class="quiz-topic">Personal · Kap. 2</div><div class="quiz-block" id="pq13" data-expl="Nettopersonalbedarf = Bruttopersonalbedarf − fortgeschriebener Personalbestand. Der Bruttobedarf besteht aus Einsatzbedarf + Reservebedarf (für Fehlzeiten). (Kap. 2)">
+<div class="quiz-nr"><span>Frage 13 von 40</span><span>Kap. 2</span></div>
+<div class="quiz-frage">Bruttopersonalbedarf − fortgeschriebener Personalbestand = ?</div>
+<div class="quiz-options"><button class="quiz-btn" onclick="pqAnswer('pq13',this,false)">A) Einsatzbedarf</button><button class="quiz-btn" onclick="pqAnswer('pq13',this,true)">B) Nettopersonalbedarf (Handlungsbedarf)</button><button class="quiz-btn" onclick="pqAnswer('pq13',this,false)">C) Reservebedarf</button><button class="quiz-btn" onclick="pqAnswer('pq13',this,false)">D) Ersatzbedarf</button></div>
+<div class="quiz-feedback" id="pq13-fb"></div>
+</div><div class="quiz-block" id="pq14" data-expl="REFA = IST-Verfahren (tatsächliche Zeiten messen); MTM = SOLL-Methode (Bewegungsabläufe planen). Daneben: Schätzverfahren (Delphi) und Stellenplanmethode. (Kap. 2)">
+<div class="quiz-nr"><span>Frage 14 von 40</span><span>Kap. 2</span></div>
+<div class="quiz-frage">Was misst das REFA-Verfahren?</div>
+<div class="quiz-options"><button class="quiz-btn" onclick="pqAnswer('pq14',this,false)">A) Das Betriebsklima</button><button class="quiz-btn" onclick="pqAnswer('pq14',this,false)">B) Die Motivation der Mitarbeiter</button><button class="quiz-btn" onclick="pqAnswer('pq14',this,true)">C) Tatsächliche IST-Zeiten</button><button class="quiz-btn" onclick="pqAnswer('pq14',this,false)">D) Geplante SOLL-Bewegungsabläufe</button></div>
+<div class="quiz-feedback" id="pq14-fb"></div>
+</div><div class="quiz-block" id="pq15" data-expl="Fach- (Wissen), Methoden- (Problemlösung, Organisation), Sozial- (Team, Kommunikation) und Persönlichkeitskompetenz (Eigenverantwortung, Belastbarkeit). (Kap. 2)">
+<div class="quiz-nr"><span>Frage 15 von 40</span><span>Kap. 2</span></div>
+<div class="quiz-frage">Teamfähigkeit und Kooperation gehören zu welcher Handlungskompetenz?</div>
+<div class="quiz-options"><button class="quiz-btn" onclick="pqAnswer('pq15',this,false)">A) Fachkompetenz</button><button class="quiz-btn" onclick="pqAnswer('pq15',this,false)">B) Methodenkompetenz</button><button class="quiz-btn" onclick="pqAnswer('pq15',this,false)">C) Persönlichkeitskompetenz</button><button class="quiz-btn" onclick="pqAnswer('pq15',this,true)">D) Sozialkompetenz</button></div>
+<div class="quiz-feedback" id="pq15-fb"></div>
+</div><div class="quiz-block" id="pq16" data-expl="Intern: Motivation, kurze Einarbeitung, geringes Risiko – aber Betriebsblindheit, Kettenversetzungen, Akzeptanzprobleme. Extern: neue Ideen, aber teuer und riskanter. (Kap. 2.1)">
+<div class="quiz-nr"><span>Frage 16 von 40</span><span>Kap. 2.1</span></div>
+<div class="quiz-frage">Welcher Nachteil gehört zur INTERNEN Personalbeschaffung?</div>
+<div class="quiz-options"><button class="quiz-btn" onclick="pqAnswer('pq16',this,false)">A) Lange Einarbeitung</button><button class="quiz-btn" onclick="pqAnswer('pq16',this,false)">B) Hohes Fehlbesetzungsrisiko</button><button class="quiz-btn" onclick="pqAnswer('pq16',this,true)">C) Betriebsblindheit und Kettenversetzungen</button><button class="quiz-btn" onclick="pqAnswer('pq16',this,false)">D) Hohe Kosten</button></div>
+<div class="quiz-feedback" id="pq16-fb"></div>
+</div><div class="quiz-block" id="pq17" data-expl="Bei einem Indiz für Diskriminierung greift die Beweislastumkehr. Deshalb: Prozess dokumentieren und 2 Monate aufbewahren; Betriebsrat bei standardisierten Verfahren beteiligen. (Kap. 2.2)">
+<div class="quiz-nr"><span>Frage 17 von 40</span><span>Kap. 2.2</span></div>
+<div class="quiz-frage">Was passiert nach dem AGG bei einem Indiz für Diskriminierung im Auswahlverfahren?</div>
+<div class="quiz-options"><button class="quiz-btn" onclick="pqAnswer('pq17',this,false)">A) Nichts, der Bewerber muss alles beweisen</button><button class="quiz-btn" onclick="pqAnswer('pq17',this,true)">B) Beweislastumkehr – der Arbeitgeber muss beweisen, dass nicht diskriminiert wurde</button><button class="quiz-btn" onclick="pqAnswer('pq17',this,false)">C) Der Betriebsrat entscheidet</button><button class="quiz-btn" onclick="pqAnswer('pq17',this,false)">D) Die Stelle wird automatisch neu ausgeschrieben</button></div>
+<div class="quiz-feedback" id="pq17-fb"></div>
+</div><div class="quiz-block" id="pq18" data-expl="Objektiv = unabhängig vom Prüfer, reliabel = zuverlässig/wiederholbar, valide = misst wirklich das, was gemessen werden soll. (Kap. 2.2)">
+<div class="quiz-nr"><span>Frage 18 von 40</span><span>Kap. 2.2</span></div>
+<div class="quiz-frage">Ein Einstellungstest muss objektiv, reliabel und valide sein. Was bedeutet „reliabel“?</div>
+<div class="quiz-options"><button class="quiz-btn" onclick="pqAnswer('pq18',this,true)">A) Der Test liefert bei Wiederholung dieselben Ergebnisse</button><button class="quiz-btn" onclick="pqAnswer('pq18',this,false)">B) Der Test trifft das Messziel</button><button class="quiz-btn" onclick="pqAnswer('pq18',this,false)">C) Der Test ist kostenlos</button><button class="quiz-btn" onclick="pqAnswer('pq18',this,false)">D) Der Test ist unterhaltsam</button></div>
+<div class="quiz-feedback" id="pq18-fb"></div>
+</div><div class="quiz-topic">Arbeitsrecht · Kap. 3</div><div class="quiz-block" id="pq19" data-expl="Nach Arbeitsende: mindestens 11 Stunden ununterbrochene Ruhezeit (ArbZG). (Kap. 3)">
+<div class="quiz-nr"><span>Frage 19 von 40</span><span>Kap. 3</span></div>
+<div class="quiz-frage">Wie lange muss die Ruhezeit nach Arbeitsende mindestens sein?</div>
+<div class="quiz-options"><button class="quiz-btn" onclick="pqAnswer('pq19',this,false)">A) 8 Stunden</button><button class="quiz-btn" onclick="pqAnswer('pq19',this,false)">B) 10 Stunden</button><button class="quiz-btn" onclick="pqAnswer('pq19',this,false)">C) 24 Stunden</button><button class="quiz-btn" onclick="pqAnswer('pq19',this,true)">D) 11 Stunden ununterbrochen</button></div>
+<div class="quiz-feedback" id="pq19-fb"></div>
+</div><div class="quiz-block" id="pq20" data-expl="6–9 h → 30 Min, über 9 h → 45 Min; Pausenabschnitte mind. 15 Min; spätestens nach 6 h ist eine Pause Pflicht. (Kap. 3)">
+<div class="quiz-nr"><span>Frage 20 von 40</span><span>Kap. 3</span></div>
+<div class="quiz-frage">Welche Pause ist bei 6–9 Stunden Arbeitszeit vorgeschrieben?</div>
+<div class="quiz-options"><button class="quiz-btn" onclick="pqAnswer('pq20',this,true)">A) 30 Minuten</button><button class="quiz-btn" onclick="pqAnswer('pq20',this,false)">B) 45 Minuten</button><button class="quiz-btn" onclick="pqAnswer('pq20',this,false)">C) 15 Minuten</button><button class="quiz-btn" onclick="pqAnswer('pq20',this,false)">D) 60 Minuten</button></div>
+<div class="quiz-feedback" id="pq20-fb"></div>
+</div><div class="quiz-block" id="pq21" data-expl="Normal 8 h/Tag (48 h/Woche); Erhöhung auf 10 h möglich, wenn im Ausgleichszeitraum von 6 Monaten im Schnitt 8 h eingehalten werden. (Kap. 3)">
+<div class="quiz-nr"><span>Frage 21 von 40</span><span>Kap. 3</span></div>
+<div class="quiz-frage">Wann darf die tägliche Arbeitszeit auf 10 Stunden erhöht werden?</div>
+<div class="quiz-options"><button class="quiz-btn" onclick="pqAnswer('pq21',this,false)">A) Nur mit Zustimmung des Kunden</button><button class="quiz-btn" onclick="pqAnswer('pq21',this,false)">B) Nie</button><button class="quiz-btn" onclick="pqAnswer('pq21',this,true)">C) Wenn der Durchschnitt über 6 Monate bei 8 Stunden bleibt</button><button class="quiz-btn" onclick="pqAnswer('pq21',this,false)">D) Immer freitags</button></div>
+<div class="quiz-feedback" id="pq21-fb"></div>
+</div><div class="quiz-block" id="pq22" data-expl="Mutterschutz: max. 8 h/Tag, keine Nachtarbeit, Beschäftigungsverbot 6 Wochen vor und 8 Wochen nach der Geburt. (Kap. 3)">
+<div class="quiz-nr"><span>Frage 22 von 40</span><span>Kap. 3</span></div>
+<div class="quiz-frage">Wie lauten die Beschäftigungsverbote im Mutterschutz?</div>
+<div class="quiz-options"><button class="quiz-btn" onclick="pqAnswer('pq22',this,false)">A) 8 Wochen vor / 6 Wochen nach der Geburt</button><button class="quiz-btn" onclick="pqAnswer('pq22',this,false)">B) 4 Wochen vor / 4 Wochen nach der Geburt</button><button class="quiz-btn" onclick="pqAnswer('pq22',this,true)">C) 6 Wochen vor / 8 Wochen nach der Geburt</button><button class="quiz-btn" onclick="pqAnswer('pq22',this,false)">D) 12 Wochen vor / 12 Wochen nach der Geburt</button></div>
+<div class="quiz-feedback" id="pq22-fb"></div>
+</div><div class="quiz-block" id="pq23" data-expl="KAPOVAZ = kapazitätsorientierte variable Arbeitszeit (Arbeit auf Abruf). Gleitzeit = Kernzeit + flexible Randzeiten; Vertrauensarbeitszeit = keine Zeitkontrolle. (Kap. 3)">
+<div class="quiz-nr"><span>Frage 23 von 40</span><span>Kap. 3</span></div>
+<div class="quiz-frage">Was ist KAPOVAZ?</div>
+<div class="quiz-options"><button class="quiz-btn" onclick="pqAnswer('pq23',this,false)">A) Vertrauensarbeitszeit ohne Kontrolle</button><button class="quiz-btn" onclick="pqAnswer('pq23',this,false)">B) Ein Gleitzeitmodell mit Kernarbeitszeit</button><button class="quiz-btn" onclick="pqAnswer('pq23',this,false)">C) Ein Jahresarbeitszeitkonto</button><button class="quiz-btn" onclick="pqAnswer('pq23',this,true)">D) Kapazitätsorientierte variable Arbeitszeit – Arbeit auf Abruf</button></div>
+<div class="quiz-feedback" id="pq23-fb"></div>
+</div><div class="quiz-block" id="pq24" data-expl="Vor Kündigungen muss der Betriebsrat angehört werden – er kann innerhalb einer Woche widersprechen. Ab 20 Beschäftigten: Mitbestimmung bei personellen Einzelmaßnahmen. (Kap. 3.1)">
+<div class="quiz-nr"><span>Frage 24 von 40</span><span>Kap. 3.1</span></div>
+<div class="quiz-frage">Was gilt VOR einer Kündigung in Bezug auf den Betriebsrat?</div>
+<div class="quiz-options"><button class="quiz-btn" onclick="pqAnswer('pq24',this,true)">A) Der BR muss angehört werden und kann innerhalb einer Woche widersprechen</button><button class="quiz-btn" onclick="pqAnswer('pq24',this,false)">B) Der BR darf nicht informiert werden</button><button class="quiz-btn" onclick="pqAnswer('pq24',this,false)">C) Der BR muss zustimmen, sonst ist die Kündigung nichtig</button><button class="quiz-btn" onclick="pqAnswer('pq24',this,false)">D) Der BR spricht die Kündigung selbst aus</button></div>
+<div class="quiz-feedback" id="pq24-fb"></div>
+</div><div class="quiz-topic">Führung & Motivation · Kap. 4</div><div class="quiz-block" id="pq25" data-expl="Laissez-faire („lass sie machen“): Unabhängigkeit und eigene Erfahrungen – aber schwer messbare Leistung und Gefahr der Ausnutzung. (Kap. 4)">
+<div class="quiz-nr"><span>Frage 25 von 40</span><span>Kap. 4</span></div>
+<div class="quiz-frage">Welcher klassische Führungsstil hat die Nachteile „Leistung schwer messbar, kann ausgenutzt werden“?</div>
+<div class="quiz-options"><button class="quiz-btn" onclick="pqAnswer('pq25',this,false)">A) Kooperativ</button><button class="quiz-btn" onclick="pqAnswer('pq25',this,true)">B) Laissez-faire</button><button class="quiz-btn" onclick="pqAnswer('pq25',this,false)">C) Autoritär</button><button class="quiz-btn" onclick="pqAnswer('pq25',this,false)">D) Bürokratisch</button></div>
+<div class="quiz-feedback" id="pq25-fb"></div>
+</div><div class="quiz-block" id="pq26" data-expl="(9,9) = Team-Stil: hoher Fokus auf Mitarbeiter UND Ergebnisse. (1,1) verarmt, (1,9) Country-Club, (9,1) Befehl &amp; Gehorsam, (5,5) Mitte. (Kap. 4.1)">
+<div class="quiz-nr"><span>Frage 26 von 40</span><span>Kap. 4.1</span></div>
+<div class="quiz-frage">Welcher Punkt im Verhaltensgitter von Blake &amp; Mouton gilt als Ideal (Königsweg)?</div>
+<div class="quiz-options"><button class="quiz-btn" onclick="pqAnswer('pq26',this,true)">A) (9,9)</button><button class="quiz-btn" onclick="pqAnswer('pq26',this,false)">B) (9,1)</button><button class="quiz-btn" onclick="pqAnswer('pq26',this,false)">C) (5,5)</button><button class="quiz-btn" onclick="pqAnswer('pq26',this,false)">D) (1,1)</button></div>
+<div class="quiz-feedback" id="pq26-fb"></div>
+</div><div class="quiz-block" id="pq27" data-expl="R1 nicht willig/nicht fähig → Anweisen; R2 willig/nicht fähig → Trainieren; R3 fähig/nicht willig → Partizipieren; R4 willig und fähig → Delegieren. (Kap. 4.1)">
+<div class="quiz-nr"><span>Frage 27 von 40</span><span>Kap. 4.1</span></div>
+<div class="quiz-frage">Neuer Mitarbeiter: motiviert, aber noch unerfahren (R2). Welcher Führungsstil nach Hersey &amp; Blanchard?</div>
+<div class="quiz-options"><button class="quiz-btn" onclick="pqAnswer('pq27',this,false)">A) Delegieren</button><button class="quiz-btn" onclick="pqAnswer('pq27',this,true)">B) Trainieren</button><button class="quiz-btn" onclick="pqAnswer('pq27',this,false)">C) Anweisen</button><button class="quiz-btn" onclick="pqAnswer('pq27',this,false)">D) Partizipieren</button></div>
+<div class="quiz-feedback" id="pq27-fb"></div>
+</div><div class="quiz-block" id="pq28" data-expl="Stufen 1–4 (Grundbedürfnisse, Sicherheit, soziale Bedürfnisse, Anerkennung) = Defizitbedürfnisse; Stufe 5 (Selbstverwirklichung) = Wachstumsbedürfnis. (Kap. 4.2)">
+<div class="quiz-nr"><span>Frage 28 von 40</span><span>Kap. 4.2</span></div>
+<div class="quiz-frage">Welche Maslow-Stufen sind Defizitbedürfnisse?</div>
+<div class="quiz-options"><button class="quiz-btn" onclick="pqAnswer('pq28',this,true)">A) Stufen 1–4</button><button class="quiz-btn" onclick="pqAnswer('pq28',this,false)">B) Nur Stufe 1</button><button class="quiz-btn" onclick="pqAnswer('pq28',this,false)">C) Nur Stufe 5</button><button class="quiz-btn" onclick="pqAnswer('pq28',this,false)">D) Stufen 3–5</button></div>
+<div class="quiz-feedback" id="pq28-fb"></div>
+</div><div class="quiz-block" id="pq29" data-expl="Intrinsisch = von innen (Sinn, Erfüllung) – langfristig nachhaltiger. Extrinsisch = von außen (Gehalt, Sicherheit, Status) – wirkt kurzfristiger. (Kap. 4.2)">
+<div class="quiz-nr"><span>Frage 29 von 40</span><span>Kap. 4.2</span></div>
+<div class="quiz-frage">Was ist intrinsische Motivation?</div>
+<div class="quiz-options"><button class="quiz-btn" onclick="pqAnswer('pq29',this,true)">A) Motivation von innen – Sinn und Erfüllung in der Arbeit selbst</button><button class="quiz-btn" onclick="pqAnswer('pq29',this,false)">B) Motivation durch Druck</button><button class="quiz-btn" onclick="pqAnswer('pq29',this,false)">C) Motivation durch Gehalt und Status</button><button class="quiz-btn" onclick="pqAnswer('pq29',this,false)">D) Motivation durch Prämien</button></div>
+<div class="quiz-feedback" id="pq29-fb"></div>
+</div><div class="quiz-block" id="pq30" data-expl="Forming (Kennenlernen) → Storming (Konflikte, Rollenklärung) → Norming (Regeln) → Performing (Hochleistung) → Adjourning (Auflösung). Bei jeder Gruppenveränderung neu durchlebt! (Kap. 4.5)">
+<div class="quiz-nr"><span>Frage 30 von 40</span><span>Kap. 4.5</span></div>
+<div class="quiz-frage">In welcher Tuckman-Phase entstehen Konflikte und Machtkämpfe?</div>
+<div class="quiz-options"><button class="quiz-btn" onclick="pqAnswer('pq30',this,false)">A) Performing</button><button class="quiz-btn" onclick="pqAnswer('pq30',this,false)">B) Forming</button><button class="quiz-btn" onclick="pqAnswer('pq30',this,false)">C) Norming</button><button class="quiz-btn" onclick="pqAnswer('pq30',this,true)">D) Storming</button></div>
+<div class="quiz-feedback" id="pq30-fb"></div>
+</div><div class="quiz-block" id="pq31" data-expl="SMART: Spezifisch, Messbar, Akzeptiert, Realistisch, Terminiert. Schlecht: „Umsatzsteigerung“ – gut: konkretes Ziel mit Zahl und Termin. (Kap. 4.3)">
+<div class="quiz-nr"><span>Frage 31 von 40</span><span>Kap. 4.3</span></div>
+<div class="quiz-frage">Wofür steht SMART bei Zielvereinbarungen?</div>
+<div class="quiz-options"><button class="quiz-btn" onclick="pqAnswer('pq31',this,false)">A) Schnell, Modern, Agil, Robust, Transparent</button><button class="quiz-btn" onclick="pqAnswer('pq31',this,false)">B) Sicher, Machbar, Attraktiv, Relevant, Testbar</button><button class="quiz-btn" onclick="pqAnswer('pq31',this,false)">C) Strategisch, Motivierend, Ambitioniert, Realistisch, Tragfähig</button><button class="quiz-btn" onclick="pqAnswer('pq31',this,true)">D) Spezifisch, Messbar, Akzeptiert, Realistisch, Terminiert</button></div>
+<div class="quiz-feedback" id="pq31-fb"></div>
+</div><div class="quiz-block" id="pq32" data-expl="by Exception: hohe Eigenverantwortung, FK greift nur bei Abweichungen ein. by Objectives = Zielvereinbarung (SMART), by Delegation = Aufgaben+Vollmacht+Verantwortung, by Results = Zielvorgabe/Ergebnisse. (Kap. 4.4)">
+<div class="quiz-nr"><span>Frage 32 von 40</span><span>Kap. 4.4</span></div>
+<div class="quiz-frage">„Eingriff der Führungskraft nur im Ausnahmefall“ beschreibt welches Management-by-Modell?</div>
+<div class="quiz-options"><button class="quiz-btn" onclick="pqAnswer('pq32',this,false)">A) Management by Delegation</button><button class="quiz-btn" onclick="pqAnswer('pq32',this,true)">B) Management by Exception</button><button class="quiz-btn" onclick="pqAnswer('pq32',this,false)">C) Management by Objectives</button><button class="quiz-btn" onclick="pqAnswer('pq32',this,false)">D) Management by Results</button></div>
+<div class="quiz-feedback" id="pq32-fb"></div>
+</div><div class="quiz-topic">Ausbildung, Weiterbildung & Arbeitsschutz · Kap. 5–7</div><div class="quiz-block" id="pq33" data-expl="Nebenberuflicher Ausbilder: max. 3 Azubis; hauptberuflich: max. 16. Faustregel Fachkräfte: 1–2 Fachkräfte → 1 Azubi, 3–5 → 2 Azubis. (Kap. 5)">
+<div class="quiz-nr"><span>Frage 33 von 40</span><span>Kap. 5</span></div>
+<div class="quiz-frage">Wie viele Azubis darf ein nebenberuflicher Ausbilder maximal betreuen?</div>
+<div class="quiz-options"><button class="quiz-btn" onclick="pqAnswer('pq33',this,true)">A) 3</button><button class="quiz-btn" onclick="pqAnswer('pq33',this,false)">B) 8</button><button class="quiz-btn" onclick="pqAnswer('pq33',this,false)">C) 1</button><button class="quiz-btn" onclick="pqAnswer('pq33',this,false)">D) 16</button></div>
+<div class="quiz-feedback" id="pq33-fb"></div>
+</div><div class="quiz-block" id="pq34" data-expl="Fachliche Eignung: Abschlussprüfung, Berufserfahrung und AdA-Schein (Ausbildereignungsverordnung). Persönlich ungeeignet: wer gegen BBiG/JArbSchG verstoßen hat oder mind. 2 Jahre Freiheitsstrafe. (Kap. 5)">
+<div class="quiz-nr"><span>Frage 34 von 40</span><span>Kap. 5</span></div>
+<div class="quiz-frage">Was gehört zur fachlichen Eignung eines Ausbilders?</div>
+<div class="quiz-options"><button class="quiz-btn" onclick="pqAnswer('pq34',this,true)">A) Abschlussprüfung + Berufserfahrung + AdA-Schein</button><button class="quiz-btn" onclick="pqAnswer('pq34',this,false)">B) Nur ein Führerschein</button><button class="quiz-btn" onclick="pqAnswer('pq34',this,false)">C) Mindestens 10 Jahre Betriebszugehörigkeit</button><button class="quiz-btn" onclick="pqAnswer('pq34',this,false)">D) Ein Studium</button></div>
+<div class="quiz-feedback" id="pq34-fb"></div>
+</div><div class="quiz-block" id="pq35" data-expl="Mit Bestehen endet das Ausbildungsverhältnis automatisch – Weiterbeschäftigung ohne Vereinbarung führt zu einem unbefristeten Arbeitsverhältnis. Nichtbestehen: 2× Wiederholung möglich. (Kap. 5.5)">
+<div class="quiz-nr"><span>Frage 35 von 40</span><span>Kap. 5.5</span></div>
+<div class="quiz-frage">Was passiert, wenn ein Azubi nach bestandener Prüfung ohne Vereinbarung weiterbeschäftigt wird?</div>
+<div class="quiz-options"><button class="quiz-btn" onclick="pqAnswer('pq35',this,false)">A) Nichts</button><button class="quiz-btn" onclick="pqAnswer('pq35',this,true)">B) Es entsteht automatisch ein unbefristetes Arbeitsverhältnis</button><button class="quiz-btn" onclick="pqAnswer('pq35',this,false)">C) Die Ausbildung verlängert sich</button><button class="quiz-btn" onclick="pqAnswer('pq35',this,false)">D) Die Prüfung wird ungültig</button></div>
+<div class="quiz-feedback" id="pq35-fb"></div>
+</div><div class="quiz-block" id="pq36" data-expl="into = Einstieg/Einarbeitung, on = während der Arbeit (Delegation, Job Rotation, Mentoring, Projekte), off = extern (Seminare, Studium), out = beim Ausscheiden (Outplacement). (Kap. 6)">
+<div class="quiz-nr"><span>Frage 36 von 40</span><span>Kap. 6</span></div>
+<div class="quiz-frage">Job Rotation und Mentoring sind Beispiele für …</div>
+<div class="quiz-options"><button class="quiz-btn" onclick="pqAnswer('pq36',this,true)">A) on-the-job</button><button class="quiz-btn" onclick="pqAnswer('pq36',this,false)">B) into-the-job</button><button class="quiz-btn" onclick="pqAnswer('pq36',this,false)">C) off-the-job</button><button class="quiz-btn" onclick="pqAnswer('pq36',this,false)">D) out-of-the-job</button></div>
+<div class="quiz-feedback" id="pq36-fb"></div>
+</div><div class="quiz-block" id="pq37" data-expl="STOP-Rangfolge: Substitution (Gefahr beseitigen) → Technisch (Schutzeinrichtungen) → Organisatorisch (Abläufe, Unterweisung) → Persönlich (PSA als letztes Mittel). (Kap. 7.1.4)">
+<div class="quiz-nr"><span>Frage 37 von 40</span><span>Kap. 7.1.4</span></div>
+<div class="quiz-frage">Wofür steht das „S“ im STOP-Prinzip des Arbeitsschutzes?</div>
+<div class="quiz-options"><button class="quiz-btn" onclick="pqAnswer('pq37',this,false)">A) Schutzkleidung</button><button class="quiz-btn" onclick="pqAnswer('pq37',this,true)">B) Substitution – Gefahren beseitigen</button><button class="quiz-btn" onclick="pqAnswer('pq37',this,false)">C) Sicherheit</button><button class="quiz-btn" onclick="pqAnswer('pq37',this,false)">D) Schulung</button></div>
+<div class="quiz-feedback" id="pq37-fb"></div>
+</div><div class="quiz-block" id="pq38" data-expl="Die Gefährdungsbeurteilung ist Pflicht des Arbeitgebers – systematische Analyse aller Gefährdungen, auch bei neuen Tätigkeiten, nach Unfällen und bei Änderungen. Dokumentation nach §6 ArbSchG. (Kap. 7)">
+<div class="quiz-nr"><span>Frage 38 von 40</span><span>Kap. 7</span></div>
+<div class="quiz-frage">Wer ist zur Gefährdungsbeurteilung nach §5 ArbSchG verpflichtet?</div>
+<div class="quiz-options"><button class="quiz-btn" onclick="pqAnswer('pq38',this,true)">A) Der Arbeitgeber</button><button class="quiz-btn" onclick="pqAnswer('pq38',this,false)">B) Jeder Mitarbeiter selbst</button><button class="quiz-btn" onclick="pqAnswer('pq38',this,false)">C) Die Berufsgenossenschaft</button><button class="quiz-btn" onclick="pqAnswer('pq38',this,false)">D) Der Betriebsrat</button></div>
+<div class="quiz-feedback" id="pq38-fb"></div>
+</div><div class="quiz-block" id="pq39" data-expl="Erstunterweisung vor neuer Tätigkeit, Wiederholungsunterweisung mind. 1× jährlich (bei Jugendlichen 2×), Anlassunterweisung nach Unfällen oder Fehlverhalten. (Kap. 7)">
+<div class="quiz-nr"><span>Frage 39 von 40</span><span>Kap. 7</span></div>
+<div class="quiz-frage">Wie oft ist die Wiederholungsunterweisung im Arbeitsschutz mindestens durchzuführen?</div>
+<div class="quiz-options"><button class="quiz-btn" onclick="pqAnswer('pq39',this,true)">A) 1× jährlich (Jugendliche 2×)</button><button class="quiz-btn" onclick="pqAnswer('pq39',this,false)">B) Alle 5 Jahre</button><button class="quiz-btn" onclick="pqAnswer('pq39',this,false)">C) Monatlich</button><button class="quiz-btn" onclick="pqAnswer('pq39',this,false)">D) Nur bei Neueinstellung</button></div>
+<div class="quiz-feedback" id="pq39-fb"></div>
+</div><div class="quiz-block" id="pq40" data-expl="Vier-Stufen-Methode = psychomotorisch (praktische Fertigkeiten). Lehrgespräch/Kurzvortrag = kognitiv, Rollenspiel = affektiv, Leittext-/Projektmethode = alle drei Bereiche. (Kap. 5.4)">
+<div class="quiz-nr"><span>Frage 40 von 40</span><span>Kap. 5.4</span></div>
+<div class="quiz-frage">Die Vier-Stufen-Methode (Vorbereiten → Vorführen → Nachmachen → Üben) zielt vor allem auf welchen Lernzielbereich?</div>
+<div class="quiz-options"><button class="quiz-btn" onclick="pqAnswer('pq40',this,true)">A) Psychomotorisch</button><button class="quiz-btn" onclick="pqAnswer('pq40',this,false)">B) Sozial</button><button class="quiz-btn" onclick="pqAnswer('pq40',this,false)">C) Kognitiv</button><button class="quiz-btn" onclick="pqAnswer('pq40',this,false)">D) Affektiv</button></div>
+<div class="quiz-feedback" id="pq40-fb"></div>
+</div>
+</div>
+<div class="quiz-scorebar">
+<span>Beantwortet: <b class="pq-ans">0/40</b></span>
+<span>Richtig: <b class="pq-right">0</b></span>
+<span style="flex:1"></span>
+<button class="quiz-reset" onclick="pqResetWrong(this)">↺ Nur falsche zurücksetzen</button>
+<button class="quiz-reset" onclick="pqResetAll(this)">↺ Alles zurücksetzen</button>
+</div>
+</section>
 
 </main>
 <script>
@@ -504,7 +748,7 @@ function init(prefix){
   selectors.forEach(sel=>{
     document.querySelectorAll(sel).forEach(el=>{
       if(el.querySelector('.notiz-btn'))return;
-      const k=prefix+counter++;
+      const k = prefix + (el.dataset.notizId !== undefined ? el.dataset.notizId : 'x' + (counter++));
       const btn=document.createElement('button');
       btn.className='notiz-btn';btn.textContent='✏ Notiz hinzufügen';
       btn.onclick=function(){toggleNotiz(this);};
@@ -530,6 +774,68 @@ function init(prefix){
 }
 init('kapitel_gruchala_');
 </script>
-<script src="notizen.js"></script>
+<script src="notizen.js">
+// ===== Wissens-Check =====
+const PQ_KEY = 'gruchalaquiz_';
+function pqState(){ const s={}; for(let i=0;i<localStorage.length;i++){ const k=localStorage.key(i); if(k&&k.startsWith(PQ_KEY)) s[k.slice(PQ_KEY.length)]=localStorage.getItem(k); } return s; }
+function pqAnswer(id, btn, correct){
+  const block=document.getElementById(id);
+  block.querySelectorAll('.quiz-btn').forEach(b=>b.disabled=true);
+  btn.classList.add(correct?'correct':'wrong');
+  if(!correct){ block.querySelectorAll('.quiz-btn').forEach(b=>{ const on=b.getAttribute('onclick'); if(on&&on.indexOf('true')>-1) b.classList.add('correct'); }); }
+  const fb=document.getElementById(id+'-fb');
+  fb.textContent=(correct?'\u2713 Richtig! ':'\u2717 Leider falsch. ')+block.dataset.expl;
+  fb.className='quiz-feedback show '+(correct?'ok':'nope');
+  try{ localStorage.setItem(PQ_KEY+id, correct?'1':'0'); }catch(e){}
+  pqUpdateBars();
+}
+function pqRestore(){
+  const s=pqState();
+  Object.keys(s).forEach(id=>{
+    const block=document.getElementById(id); if(!block) return;
+    block.querySelectorAll('.quiz-btn').forEach(b=>{
+      b.disabled=true;
+      if((b.getAttribute('onclick')||'').indexOf('true')>-1) b.classList.add('correct');
+    });
+    const fb=document.getElementById(id+'-fb');
+    fb.textContent=(s[id]==='1'?'\u2713 Richtig beantwortet. ':'\u2717 Zuletzt falsch. ')+block.dataset.expl;
+    fb.className='quiz-feedback show '+(s[id]==='1'?'ok':'nope');
+  });
+  pqUpdateBars();
+}
+function pqUpdateBars(){
+  const s=pqState();
+  document.querySelectorAll('.quiz-scorebar').forEach(bar=>{
+    const sec=bar.closest('section'); if(!sec) return;
+    const blocks=sec.querySelectorAll('.quiz-block');
+    let ans=0, right=0;
+    blocks.forEach(b=>{ const v=s[b.id]; if(v!==undefined){ ans++; if(v==='1') right++; } });
+    const a=bar.querySelector('.pq-ans'), r=bar.querySelector('.pq-right');
+    if(a) a.textContent=ans+'/'+blocks.length;
+    if(r) r.textContent=right;
+  });
+}
+function pqResetBlock(id){
+  localStorage.removeItem(PQ_KEY+id);
+  const block=document.getElementById(id); if(!block) return;
+  block.querySelectorAll('.quiz-btn').forEach(b=>{ b.disabled=false; b.classList.remove('correct','wrong'); });
+  const fb=document.getElementById(id+'-fb'); fb.className='quiz-feedback'; fb.textContent='';
+}
+function pqResetWrong(btn){
+  const sec=btn.closest('section');
+  const s=pqState(); let first=null;
+  sec.querySelectorAll('.quiz-block').forEach(b=>{ if(s[b.id]==='0'){ pqResetBlock(b.id); if(!first) first=b.id; } });
+  pqUpdateBars();
+  if(first) document.getElementById(first).scrollIntoView({behavior:'smooth',block:'center'});
+  else alert('Aktuell keine falsch beantworteten Fragen \u2013 stark!');
+}
+function pqResetAll(btn){
+  if(!confirm('Wirklich den Quiz-Fortschritt zur\u00fccksetzen?')) return;
+  const sec=btn.closest('section');
+  sec.querySelectorAll('.quiz-block').forEach(b=>pqResetBlock(b.id));
+  pqUpdateBars();
+}
+document.addEventListener('DOMContentLoaded', pqRestore);
+</script>
 </body>
 </html>
