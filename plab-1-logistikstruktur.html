@@ -1,0 +1,1923 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kapitel 1.1 · Logistikstruktur &amp; Grundlagen</title>
+<link rel="stylesheet" href="assets/portal.css">
+</head>
+<body class="mit-sidebar">
+
+<aside class="sidebar"></aside>
+
+<main class="inhalt">
+
+<div class="kopf-label">Benedikt Plab · Kapitel 1.1 · Folien 1–110 · Stand 10.03.2026</div>
+<h1>Logistikstruktur &amp; Grundlagen</h1>
+<p class="kopf-sub">Das analytische Fundament des Prüfungsteils „Logistische Anforderungen ermitteln, analysieren und bewerten“. Nach diesem Kapitel kannst du einen Logistikbetrieb zerlegen: in Ziele, Prozesse, Wertschöpfung, Umfeld, Ressourcen und Organisation – und du kannst sagen, an welcher Stelle es klemmt.</p>
+
+<div class="block lernziel" data-notiz="ziel-kapitel">
+  <div class="b-label">Wenn du hier durch bist, kannst du</div>
+  <ul>
+    <li>Formal- und Sachziele unterscheiden und einen Zielkonflikt an einem Beispiel zeigen</li>
+    <li>Brutto- und Nettowertschöpfung rechnen – zu Hersteller- und zu Marktpreisen</li>
+    <li>einen Prozess in Nutz-, Stütz-, Blind- und Fehlleistung zerlegen und den Prozesswirkungsgrad ermitteln</li>
+    <li>Effektivität und Effizienz sauber auseinanderhalten</li>
+    <li>Umfeld- und Systemfaktoren eines Logistikbetriebs benennen und ihre Wirkung erklären</li>
+    <li>Aufbau- und Ablauforganisation trennen und die sechs Organisationsformen bewerten</li>
+  </ul>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════════ -->
+<section class="abschnitt" id="logistik-begriff" data-gruppe="Grundlagen">
+  <div class="ab-kopf"><h2><span class="ab-nr">1.1.1</span>Der Begriff der Logistik</h2></div>
+
+  <div class="block einstieg" data-notiz="ein-begriff">
+    <div class="b-label">Worum es geht</div>
+    <p>Ein Kunde bestellt online eine Waschmaschine. Zwei Tage später steht sie in seiner Küche. Zwischen dem Klick und der Küche liegen: ein Bestand, der irgendwo vorgehalten wurde, eine Auftragsdatei, die durch drei EDV-Systeme lief, ein Kommissionierer, ein Lkw, ein Zwei-Mann-Handling, eine Rechnung und eine Zahlung. Bewegt haben sich dabei <strong>drei ganz verschiedene Dinge</strong>: die Maschine, die Daten und das Geld. Genau diese drei Ströme meint das Fach, wenn es „Logistik“ sagt.</p>
+  </div>
+
+  <p>Im Alltag denkt fast jeder bei Logistik an den Lkw. Das Skript von Plab beginnt bewusst mit dieser Alltagsvorstellung – „Transport von Waren und Gütern“ – und stellt sofort die zweite, entscheidende Hälfte daneben: die <strong>Vernetzung von Maßnahmen und Prozessen</strong> hinsichtlich Material-, Wert- und Informationsfluss. Der Transport ist die sichtbare Spitze. Die Arbeit, um die es in diesem Kapitel geht, liegt in der Vernetzung.</p>
+
+  <div class="block def" data-notiz="def-logistik-plab">
+    <div class="b-label">Definition</div>
+    <div class="b-term">Logistik</div>
+    <p>Der Transport von Waren und Gütern sowie die <strong>Vernetzung aller Maßnahmen und Prozesse</strong>, die den Material-, Wert- und Informationsfluss betreffen. Das übergeordnete Konzept, das diese Vernetzung über die Grenzen des eigenen Unternehmens hinaus denkt, ist das <strong>Supply Chain Management (SCM)</strong>.</p>
+  </div>
+
+  <h3>Die drei Ströme, die du auseinanderhalten musst</h3>
+  <div class="raster" data-notiz="raster-drei-stroeme">
+    <div class="karte blue"><div class="k-titel">Materialfluss</div><div class="k-text">Die physische Bewegung: Rohstoff, Halbfertigteil, Fertigware, Retoure, Abfall. Er läuft in aller Regel <strong>vorwärts</strong> vom Lieferanten zum Kunden – und bei Retouren zurück.</div></div>
+    <div class="karte teal"><div class="k-titel">Informationsfluss</div><div class="k-text">Auftrag, Bestand, Termin, Störmeldung, Lieferavis. Er läuft dem Material <strong>voraus</strong>, begleitet es und meldet <strong>zurück</strong> – also in beide Richtungen.</div></div>
+    <div class="karte amber"><div class="k-titel">Wertfluss</div><div class="k-text">Die Geldseite: Zahlungen, Kapitalbindung im Bestand, Kosten je Prozessschritt. Er läuft dem Material typischerweise <strong>entgegen</strong> – die Ware nach vorn, das Geld zurück.</div></div>
+  </div>
+
+  <div class="block beispiel" data-notiz="bsp-drei-stroeme">
+    <div class="b-label">Beispiel: eine Palette Fliesen</div>
+    <p>Ein Baustoffhändler bestellt am Montag 24 Paletten Fliesen beim Hersteller. Der <strong>Informationsfluss</strong> startet zuerst: Die Bestellung geht per EDI ins ERP-System des Herstellers, der Wareneingang des Händlers bekommt ein Lieferavis für Donnerstag. Am Mittwoch startet der <strong>Materialfluss</strong>: Die Paletten werden aus dem Fertigwarenlager kommissioniert, verladen, gefahren, am Donnerstag entladen. Der <strong>Wertfluss</strong> kommt zuletzt und in Gegenrichtung: Rechnung Freitag, Zahlung nach 30 Tagen.</p>
+    <p>Die Aussage dieses Beispiels: Alle drei Ströme betreffen dieselbe Palette, aber sie laufen zu verschiedenen Zeiten und in verschiedene Richtungen. Wer nur den Lkw sieht, sieht ein Drittel des Problems.</p>
+  </div>
+
+  <h3>Logistik im Wandel der Zeit</h3>
+  <p>Das Skript stellt dem Begriff eine historische Einordnung voran. Der Gedanke dahinter: Logistik war nicht immer das, was sie heute ist. Sie hat sich von einer <em>ausführenden Hilfsfunktion</em> („bring die Ware weg“) zu einer <em>steuernden Managementfunktion</em> entwickelt, die vor der Ware plant und über Unternehmensgrenzen hinweg koordiniert. Warum das passiert ist, steht im Detail in Krouls Kapitel 0 – Globalisierung, Outsourcing, Just-in-time, IT und Standardisierung haben die Wege verlängert, die Puffer verkleinert und die Zahl der Beteiligten erhöht.</p>
+
+  <div class="block merk" data-notiz="merk-warum-vernetzung">
+    <div class="b-label">Der rote Faden dieses Kapitels</div>
+    <p>Je mehr Beteiligte und je weniger Puffer, desto wichtiger wird die <strong>Abstimmung</strong>. Deshalb dreht sich Kapitel 1.1 im Kern nicht um Fahrzeuge oder Regale, sondern um <strong>Ziele, Prozesse und Schnittstellen</strong>. Das ist der Blickwinkel des Prüfungsteils „analysieren und bewerten“.</p>
+  </div>
+
+  <div class="block achtung" data-notiz="ach-logistik-nur-transport">
+    <div class="b-label">Typische Verwechslung</div>
+    <p>„Logistik ist Transport“ ist die häufigste Falschantwort. Transport ist ein Teil des Materialflusses – und der Materialfluss ist einer von drei Strömen. Wer Logistik in der Prüfung als Transport definiert, verliert Punkte, selbst wenn die anschließenden Beispiele stimmen. Nenne immer alle drei Ströme <strong>und</strong> das Wort „Vernetzung“ oder „Steuerung“.</p>
+  </div>
+
+  <div class="block pruefung" data-notiz="pru-begriff">
+    <div class="b-label">So kommt das in der Prüfung</div>
+    <p>Als Einstiegsfrage einer Situationsbeschreibung: „Erläutern Sie den Begriff der Logistik.“ Antworte in zwei Bausteinen: (1) physische Bewegung von Waren und Gütern, (2) Vernetzung aller Maßnahmen und Prozesse für Material-, Wert- und Informationsfluss. Ein Halbsatz zum SCM als übergeordnetem Konzept rundet die Antwort ab und kostet nichts.</p>
+  </div>
+
+  <div class="abfrage-liste">
+    <div class="abfrage-kopf">Selbstabfrage</div>
+    <details class="abfrage"><summary>Welche drei Flüsse vernetzt die Logistik?</summary>
+      <div class="antwort"><p>Materialfluss, Wertfluss und Informationsfluss.</p></div></details>
+    <details class="abfrage"><summary>In welche Richtungen laufen Material-, Informations- und Wertfluss?</summary>
+      <div class="antwort"><p>Der Materialfluss vorwärts vom Lieferanten zum Kunden (bei Retouren zurück), der Informationsfluss in beide Richtungen – er läuft dem Material voraus, begleitet es und meldet zurück –, der Wertfluss dem Material entgegen: Ware nach vorn, Geld zurück.</p></div></details>
+    <details class="abfrage"><summary>Welches Konzept steht dem Logistikbegriff übergeordnet?</summary>
+      <div class="antwort"><p>Das Supply Chain Management (SCM): Es denkt die Vernetzung über die Grenzen des eigenen Unternehmens hinaus, vom Lieferanten bis zum Kunden.</p></div></details>
+    <details class="abfrage"><summary>Warum ist „Logistik = Transport“ als Prüfungsantwort falsch?</summary>
+      <div class="antwort"><p>Weil Transport nur ein Teil des Materialflusses ist. Die Definition verlangt zusätzlich Wert- und Informationsfluss sowie die Vernetzung und Steuerung der Prozesse.</p></div></details>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════ -->
+<section class="abschnitt" id="logistik-ziele" data-gruppe="Grundlagen">
+  <div class="ab-kopf"><h2><span class="ab-nr">1.1.2</span>Ziele der Logistik</h2></div>
+
+  <div class="block einstieg" data-notiz="ein-ziele">
+    <div class="b-label">Worum es geht</div>
+    <p>Die Geschäftsführung eines Ersatzteilhändlers gibt zwei Vorgaben aus: „Die Lieferfähigkeit muss auf 98 % steigen“ und „die Lagerkosten müssen um 15 % sinken“. Beides klingt vernünftig. Beides steht in derselben Präsentation. Und beides gleichzeitig ist kaum zu machen – denn hohe Lieferfähigkeit braucht Bestand, und Bestand kostet Lagerplatz und Kapital. Genau das ist ein <strong>Zielkonflikt</strong>, und ihn zu erkennen ist eine der Kernfähigkeiten in Plabs Prüfungsteil.</p>
+  </div>
+
+  <h3>Formalziele und Sachziele</h3>
+  <p>Das Skript unterteilt die Ziele der Logistik in zwei Ebenen. Sie beantworten unterschiedliche Fragen und werden deshalb regelmäßig verwechselt.</p>
+
+  <div class="raster-2" data-notiz="raster-ziel-ebenen">
+    <div class="karte green">
+      <div class="k-titel">Formalziele</div>
+      <div class="k-text">Sie betreffen die <strong>Leistungserfüllung</strong> – also das, was am Ende herauskommen soll und woran man den Erfolg misst. Beispiele: Lieferbereitschaft, Termintreue, Wirtschaftlichkeit, Lieferqualität. Formalziele sind messbar formulierte Ergebnisgrößen.</div>
+    </div>
+    <div class="karte blue">
+      <div class="k-titel">Sachziele</div>
+      <div class="k-text">Sie betreffen den <strong>Weg dorthin</strong> und werden nach Reichweite unterschieden: <strong>strategisch</strong> (langfristig, z. B. ein neues Zentrallager), <strong>taktisch</strong> (mittelfristig, z. B. Lieferantenstruktur) und <strong>operativ</strong> (kurzfristig, z. B. die Tourenplanung von morgen).</div>
+    </div>
+  </div>
+
+  <div class="block def" data-notiz="def-formalziel">
+    <div class="b-label">Definition</div>
+    <div class="b-term">Formalziel</div>
+    <p>Ein Ziel, das die <strong>Leistungserfüllung</strong> beschreibt: welches Ergebnis in welcher Güte erreicht werden soll. Es sagt nichts darüber, mit welchen Maßnahmen das geschieht. „Termintreue 97 %“ ist ein Formalziel.</p>
+  </div>
+
+  <div class="block def" data-notiz="def-sachziel">
+    <div class="b-label">Definition</div>
+    <div class="b-term">Sachziel</div>
+    <p>Ein Ziel, das die <strong>konkrete Maßnahme oder den Gegenstand</strong> beschreibt, mit dem das Formalziel erreicht werden soll – zeitlich gestaffelt in strategisch, taktisch und operativ. „Einführung eines Lagerverwaltungssystems bis Q3“ ist ein Sachziel.</p>
+  </div>
+
+  <h3>Komplementäre und konkurrierende Ziele</h3>
+  <p>Ziele stehen selten allein. Sobald du zwei davon nebeneinanderlegst, entsteht eine von drei Beziehungen – und die musst du in einer Prüfungsaufgabe benennen können.</p>
+
+  <div class="tab" data-notiz="tab-zielbeziehungen">
+    <table>
+      <thead><tr><th>Beziehung</th><th>Bedeutung</th><th>Beispiel aus der Logistik</th></tr></thead>
+      <tbody>
+        <tr><td><strong>komplementär</strong></td><td>Die Ziele unterstützen sich gegenseitig. Wer das eine verbessert, verbessert das andere mit.</td><td>Kürzere Durchlaufzeit <em>und</em> höhere Kundenzufriedenheit; niedrigere Fehlerquote <em>und</em> geringere Nacharbeitskosten.</td></tr>
+        <tr><td><strong>konkurrierend</strong></td><td>Die Ziele behindern sich. Ein Fortschritt beim einen kostet Boden beim anderen.</td><td>Niedrige Bestandskosten <em>gegen</em> hohe Lieferbereitschaft; niedrige Frachtkosten <em>gegen</em> kurze Lieferzeit.</td></tr>
+        <tr><td><strong>indifferent</strong></td><td>Die Ziele haben nichts miteinander zu tun.</td><td>Die Gestaltung der Werbebroschüre und die Rüstzeit an der Verpackungsanlage.</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="block beispiel" data-notiz="bsp-zielkonflikt">
+    <div class="b-label">Beispiel: der Zielkonflikt im Ersatzteillager</div>
+    <p>Der Ersatzteilhändler aus dem Einstieg führt 12.000 Artikel. 98 % Lieferfähigkeit hieße: Auch der Artikel, der zweimal im Jahr gefragt wird, muss liegen. Für diese Langsamdreher braucht er Sicherheitsbestand, den er über Monate finanziert und für den er Fläche vorhält. Genau dieser Bestand ist es, den das zweite Ziel – 15 % weniger Lagerkosten – angreift.</p>
+    <p>Die Lösung heißt in der Praxis nicht „eines der beiden Ziele streichen“, sondern <strong>differenzieren</strong>: hohe Lieferfähigkeit für die umsatzstarken A-Teile, für seltene Teile ein längeres Lieferversprechen mit Streckengeschäft ab Hersteller. Damit wird aus dem Konflikt ein bewusst gewählter Kompromiss. Genau diese Argumentation erwartet die IHK.</p>
+  </div>
+
+  <div class="block achtung" data-notiz="ach-formal-sach">
+    <div class="b-label">Typische Verwechslung</div>
+    <p><strong>Formalziel ≠ Sachziel.</strong> Merke dir die Frage, auf die jedes antwortet: Das Formalziel beantwortet <em>„Welches Ergebnis?“</em>, das Sachziel <em>„Womit und wann?“</em>. „Lieferzeit von 5 auf 3 Tage senken“ ist ein Formalziel. „Ein Regionallager in Erfurt eröffnen“ ist ein Sachziel, mit dem man dieses Formalziel erreichen will.</p>
+  </div>
+
+  <div class="block pruefung" data-notiz="pru-ziele">
+    <div class="b-label">So kommt das in der Prüfung</div>
+    <p>Sehr häufig als Analyseaufgabe: In der Situationsbeschreibung stehen zwei Vorgaben der Geschäftsleitung, und du sollst „die Zielbeziehung benennen und begründen“. Punkte gibt es für die Benennung (<em>konkurrierend</em>) <strong>und</strong> für die Begründung über den Wirkmechanismus (<em>höhere Lieferbereitschaft verlangt höheren Sicherheitsbestand, der die Bestandskosten treibt</em>). Nur das Wort zu nennen bringt in der Regel die halbe Punktzahl.</p>
+  </div>
+
+  <div class="abfrage-liste">
+    <div class="abfrage-kopf">Selbstabfrage</div>
+    <details class="abfrage"><summary>Was unterscheidet Formalziele von Sachzielen?</summary>
+      <div class="antwort"><p>Formalziele beschreiben die Leistungserfüllung, also das angestrebte Ergebnis (z. B. 97 % Termintreue). Sachziele beschreiben die Maßnahme bzw. den Gegenstand und werden in strategisch, taktisch und operativ unterteilt.</p></div></details>
+    <details class="abfrage"><summary>Nenne ein Paar konkurrierender Logistikziele und begründe den Konflikt.</summary>
+      <div class="antwort"><p>Hohe Lieferbereitschaft gegen niedrige Bestandskosten: Lieferbereitschaft entsteht durch Sicherheitsbestand, und dieser Bestand bindet Kapital und Fläche – also steigen genau die Kosten, die gesenkt werden sollen.</p></div></details>
+    <details class="abfrage"><summary>Was heißt „komplementäre Ziele“?</summary>
+      <div class="antwort"><p>Die Ziele unterstützen sich gegenseitig – ein Fortschritt beim einen bringt auch beim anderen einen Fortschritt, z. B. kürzere Durchlaufzeit und höhere Kundenzufriedenheit.</p></div></details>
+    <details class="abfrage"><summary>Ist „Aufbau eines Zentrallagers“ ein Formal- oder ein Sachziel?</summary>
+      <div class="antwort"><p>Ein Sachziel, und zwar ein strategisches – es beschreibt die Maßnahme. Das zugehörige Formalziel wäre etwa „Lieferzeit auf 24 Stunden senken“.</p></div></details>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════ -->
+<section class="abschnitt" id="aufgaben-objekte" data-gruppe="Grundlagen">
+  <div class="ab-kopf"><h2><span class="ab-nr">1.1.3</span>Aufgaben, Objekte und Tätigkeiten</h2></div>
+
+  <div class="block einstieg" data-notiz="ein-aufgaben">
+    <div class="b-label">Worum es geht</div>
+    <p>Eine Apotheke bekommt morgens um 6:30 Uhr ihre Bestellung vom Pharmagroßhandel: genau die bestellten Präparate, in genau der bestellten Stückzahl, in der richtigen Filiale, vor Öffnung, ungebrochene Kühlkette. Fällt nur eine dieser Bedingungen aus, ist die Lieferung nicht „fast richtig“, sondern ein Problem. Die Aufgaben der Logistik sind deshalb als Liste von Bedingungen formuliert, die <strong>gleichzeitig</strong> gelten müssen.</p>
+  </div>
+
+  <h3>Die Aufgaben – die „Richtigen“</h3>
+  <div class="tab" data-notiz="tab-fuenf-richtige">
+    <table>
+      <thead><tr><th>Aufgabe</th><th>Was dahintersteckt</th><th>Was passiert, wenn sie verletzt wird</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Richtige Produkte, Dienstleistungen und Informationen</strong></td><td>Genau der bestellte Artikel bzw. die bestellte Leistung – samt der zugehörigen Daten und Papiere.</td><td>Falschlieferung, Retoure, Nacharbeit, im Extremfall Produktionsstillstand beim Kunden.</td></tr>
+        <tr><td><strong>Richtige Menge</strong></td><td>Weder zu wenig noch zu viel.</td><td>Zu wenig: Fehlmenge und Stillstand. Zu viel: ungeplante Lagerung, gebundenes Kapital.</td></tr>
+        <tr><td><strong>Richtiger Ort</strong></td><td>Der konkrete Bedarfsort, nicht nur „das Werk“.</td><td>Innerbetriebliche Umlagerung, Suchzeiten, zusätzliche Handlingkosten.</td></tr>
+        <tr><td><strong>Richtige Zeit</strong></td><td>Pünktlich im Sinne von: nicht zu spät <em>und</em> nicht zu früh.</td><td>Zu spät: Stillstand. Zu früh: Rampenstau und Zwischenlagerung, die niemand eingeplant hat.</td></tr>
+        <tr><td><strong>Richtige Qualität</strong></td><td>Im vereinbarten Zustand: unbeschädigt, in der zugesagten Güte, mit Nachweisen.</td><td>Reklamation, Sperrbestand, Sonderprüfung, Vertrauensverlust beim Kunden.</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="block achtung" data-notiz="ach-fuenf-sieben-r">
+    <div class="b-label">Fünf oder sieben „R“?</div>
+    <p>Plabs Folie nennt <strong>fünf</strong> Aufgaben, wobei „richtige Informationen“ bereits in die erste Zeile eingebaut ist. Krouls Kapitel 0 arbeitet mit den <strong>6 bzw. 7 R</strong> und führt Kosten und Information zusätzlich einzeln auf. Beide Fassungen meinen dasselbe. <strong>Für die Prüfung:</strong> Nenne die fünf aus Plabs Liste und ergänze „zu den richtigen Kosten“ – damit bist du in jeder Zählweise vollständig.</p>
+  </div>
+
+  <h3>Die Objekte – womit die Logistik es zu tun hat</h3>
+  <p>Das Skript zählt fünf Objektarten auf. Wichtig ist die Erkenntnis dahinter: Logistik ist nicht auf Güter beschränkt. Alles, was von einer Quelle zu einer Senke bewegt und dabei zeitlich, räumlich und mengenmäßig angepasst werden muss, ist ein logistisches Objekt.</p>
+
+  <div class="raster" data-notiz="raster-objekte">
+    <div class="karte blue"><div class="k-titel">Güter</div><div class="k-text">Rohstoffe, Halbfertig- und Fertigprodukte, Ersatzteile, Verpackungen, Abfälle.</div></div>
+    <div class="karte teal"><div class="k-titel">Personen</div><div class="k-text">Personentransport und Mobilität – etwa Werksverkehr, Schichtbusse, aber auch Personaleinsatzplanung im Lager.</div></div>
+    <div class="karte amber"><div class="k-titel">Kapital</div><div class="k-text">Finanzströme entlang der Kette: Zahlungen, Kapitalbindung, Sicherheiten im Außenhandel.</div></div>
+    <div class="karte green"><div class="k-titel">Energie</div><div class="k-text">Versorgung und Transport von Energie – Strom, Kraftstoff, Wärme, zunehmend Ladeinfrastruktur.</div></div>
+    <div class="karte purple"><div class="k-titel">Informationen</div><div class="k-text">Aufträge, Bestände, Termine, Dokumente, Rückmeldungen. Ohne sie ist keiner der anderen vier Ströme steuerbar.</div></div>
+  </div>
+
+  <h3>Die Tätigkeiten – drei Arten von Arbeit</h3>
+  <div class="phasen" data-notiz="phasen-taetigkeiten">
+    <div class="phase"><div class="p-nr">physisch</div><div class="p-name">Anfassen</div><div class="p-text">Lagern, Transportieren, Umschlagen, Kommissionieren, Verpacken – die Arbeit an der Ware selbst.</div></div>
+    <div class="phase"><div class="p-nr">administrativ</div><div class="p-name">Abwickeln</div><div class="p-text">Informations- und Auftragsabwicklung, Belege, Fakturierung, Zollpapiere – die Arbeit an den Daten.</div></div>
+    <div class="phase"><div class="p-nr">dispositiv</div><div class="p-name">Entscheiden</div><div class="p-text">Planung, Steuerung, Überwachung – die Arbeit an der Frage, was überhaupt getan werden soll.</div></div>
+  </div>
+
+  <div class="block beispiel" data-notiz="bsp-taetigkeiten">
+    <div class="b-label">Beispiel: ein Wareneingang, drei Tätigkeitsarten</div>
+    <p>Ein Lkw meldet sich am Tor. Der Disponent hat ihm morgens ein Zeitfenster zugewiesen und entschieden, dass die Ware ins Blocklager statt ins Regal geht – das ist <strong>dispositiv</strong>. Der Staplerfahrer entlädt die Paletten und fährt sie auf den Stellplatz – <strong>physisch</strong>. Die Sachbearbeiterin bucht den Wareneingang im ERP, prüft Lieferschein gegen Bestellung und gibt die Rechnung frei – <strong>administrativ</strong>.</p>
+    <p>Der Punkt für die Analyse: Nur die physische Tätigkeit sieht man. Die beiden anderen verursachen aber oft den größeren Teil der Zeit und der Kosten – und dort liegen in Prüfungsfällen meistens die Fehler.</p>
+  </div>
+
+  <div class="block merk" data-notiz="merk-taetigkeiten">
+    <div class="b-label">Merksatz</div>
+    <p><strong>Physisch = an der Ware. Administrativ = an den Daten. Dispositiv = an der Entscheidung.</strong> Wenn du einen Prozess in einer Prüfungsaufgabe zerlegen sollst, ordne jeden Schritt zuerst einer dieser drei Arten zu. Danach fällt dir die Schwachstelle fast von selbst auf.</p>
+  </div>
+
+  <div class="block pruefung" data-notiz="pru-aufgaben">
+    <div class="b-label">So kommt das in der Prüfung</div>
+    <p>Zwei Varianten sind üblich. Erstens die Zuordnungsaufgabe: „Ordnen Sie die beschriebenen Tätigkeiten den logistischen Tätigkeitsarten zu.“ Zweitens die Fehleranalyse: Ein Fall beschreibt eine Lieferung, und du sollst benennen, welche logistische Aufgabe verletzt wurde. Formuliere die Antwort immer in der Form „verletzt ist die <em>richtige Zeit</em>, weil …“.</p>
+  </div>
+
+  <div class="abfrage-liste">
+    <div class="abfrage-kopf">Selbstabfrage</div>
+    <details class="abfrage"><summary>Nenne die fünf Aufgaben der Logistik aus dem Skript.</summary>
+      <div class="antwort"><p>Richtige Produkte/Dienstleistungen/Informationen, richtige Menge, richtiger Ort, richtige Zeit, richtige Qualität.</p></div></details>
+    <details class="abfrage"><summary>Welche fünf Objekte der Logistik gibt es?</summary>
+      <div class="antwort"><p>Güter, Personen, Kapital, Energie und Informationen.</p></div></details>
+    <details class="abfrage"><summary>Was ist der Unterschied zwischen administrativen und dispositiven Tätigkeiten?</summary>
+      <div class="antwort"><p>Administrative Tätigkeiten wickeln ab, was entschieden ist (Auftrags- und Informationsabwicklung, Belege). Dispositive Tätigkeiten treffen die Entscheidung selbst – Planung, Steuerung, Überwachung.</p></div></details>
+    <details class="abfrage"><summary>Warum ist eine zu frühe Lieferung ein Verstoß gegen die Aufgaben der Logistik?</summary>
+      <div class="antwort"><p>Weil „richtige Zeit“ beidseitig gemeint ist. Zu früh gelieferte Ware belegt Rampe und Fläche, muss ungeplant zwischengelagert werden und bindet Kapital früher als kalkuliert.</p></div></details>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════ -->
+<section class="abschnitt" id="bedeutung-logistik" data-gruppe="Bedeutung &amp; Struktur">
+  <div class="ab-kopf"><h2><span class="ab-nr">1.1.4</span>Betriebswirtschaftliche und volkswirtschaftliche Bedeutung</h2></div>
+
+  <div class="block einstieg" data-notiz="ein-bedeutung">
+    <div class="b-label">Worum es geht</div>
+    <p>Ein Maschinenbauer hat 9 Mio. € Umsatz und 2,4 Mio. € Lagerbestand. Der Bestand ist Geld, das eingekauft, aber noch nicht verdient wurde – es liegt im Regal statt auf dem Konto. Senkt der Betrieb den Bestand um ein Viertel, hat er 600.000 € frei, ohne einen einzigen Auftrag mehr zu bekommen. Das ist die betriebswirtschaftliche Bedeutung der Logistik in einem Satz: Sie wirkt auf das Ergebnis, ohne dass der Vertrieb mehr verkaufen muss.</p>
+  </div>
+
+  <h3>Betriebswirtschaftliche Bedeutung – die Wirkung im eigenen Betrieb</h3>
+  <div class="tab" data-notiz="tab-bwl-bedeutung">
+    <table>
+      <thead><tr><th>Hebel</th><th>Wie er wirkt</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Kapitalbindung senken</strong></td><td>Jeder Artikel im Lager ist bezahltes, aber nicht verdientes Geld. Weniger Bestand heißt mehr freie Liquidität, weniger Zinsaufwand und eine bessere Bilanzstruktur.</td></tr>
+        <tr><td><strong>Kosten senken</strong></td><td>Transport-, Lager-, Handling- und Fehlerkosten sind direkt beeinflussbar. Wer Blind- und Fehlleistung aus den Prozessen nimmt (Abschnitt 1.1.11), senkt Kosten ohne Qualitätsverlust.</td></tr>
+        <tr><td><strong>Komplementäre und substitutive Güter</strong></td><td>Güter, die sich <em>ergänzen</em> (Drucker und Toner) kann man bündeln – gemeinsam beschaffen, lagern, ausliefern. Güter, die sich <em>ersetzen</em> lassen, geben Spielraum bei Engpässen: Ist Variante A nicht lieferbar, geht auch B.</td></tr>
+        <tr><td><strong>Wettbewerbsvorteile erarbeiten</strong></td><td>Lieferzeit, Termintreue und Lieferqualität sind für viele Kunden das Entscheidungskriterium – gerade dann, wenn sich die Produkte kaum unterscheiden.</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="block def" data-notiz="def-komplementaer-substitutiv">
+    <div class="b-label">Begriffe</div>
+    <div class="b-term">Komplementäre und substitutive Güter</div>
+    <p><strong>Komplementär</strong> heißt: Die Güter ergänzen sich, sie werden gemeinsam nachgefragt. Steigt der Absatz des einen, steigt der des anderen mit (Kaffeemaschine und Kapseln).<br>
+    <strong>Substitutiv</strong> heißt: Die Güter ersetzen einander. Steigt der Absatz des einen, sinkt der des anderen (Butter und Margarine).<br>
+    Für die Logistik ist das eine Planungsfrage: Komplementärgüter kann man bündeln, Substitutionsgüter sind eine Reserve bei Lieferengpässen.</p>
+  </div>
+
+  <div class="block beispiel" data-notiz="bsp-kapitalbindung">
+    <div class="b-label">Beispiel: was 600.000 € weniger Bestand bedeuten</div>
+    <p>Der Maschinenbauer aus dem Einstieg finanziert seinen Bestand über einen Kontokorrentkredit zu 8 %. 600.000 € weniger Bestand sparen also rund 48.000 € Zinsen im Jahr. Dazu kommen die Lagerhaltungskosten: Fläche, Handling, Versicherung, Schwund – je nach Branche 10 bis 20 % des Bestandswerts, hier also noch einmal 60.000 bis 120.000 €.</p>
+    <p>Das Unternehmen hat rund 100.000 bis 170.000 € pro Jahr gewonnen, ohne einen zusätzlichen Kunden. Genau mit dieser Rechnung begründet man in einer Prüfungsantwort, warum Logistik eine betriebswirtschaftliche und keine technische Frage ist.</p>
+  </div>
+
+  <h3>Volkswirtschaftliche Bedeutung – die Wirkung auf ganze Länder</h3>
+  <p>Eine Ebene höher betrachtet ist Logistik die Voraussetzung dafür, dass eine Volkswirtschaft überhaupt am Welthandel teilnehmen kann. Das Skript nennt zwei Blöcke: erstens, was Logistik ermöglicht, zweitens, welche Rahmenbedingungen ein Land dafür schaffen muss.</p>
+
+  <div class="raster-2" data-notiz="raster-vwl">
+    <div class="karte blue">
+      <div class="k-titel">Was Logistik ermöglicht</div>
+      <div class="k-text">Globalisierte Ströme an Waren, Dienstleistungen und Informationen · Volkswirtschaften konkurrieren um dieselben globalen Ressourcen · Logistik schafft die Grundvoraussetzung für globale Beschaffung, Produktion und Distribution aller volkswirtschaftlich notwendigen Güter.</div>
+    </div>
+    <div class="karte teal">
+      <div class="k-titel">Was ein Land dafür leisten muss</div>
+      <div class="k-text">Internationale Vertragsgrundlagen schaffen · Infrastruktur aufbauen und pflegen (Straße, Schiene, Häfen) · Standortvorteile aufbauen und pflegen · fortschrittliche Nachrichtennetze bereitstellen · Einbindung in internationale Banken- und Finanzsysteme.</div>
+    </div>
+  </div>
+
+  <div class="block merk" data-notiz="merk-vwl-kette">
+    <div class="b-label">Der Zusammenhang, auf den es ankommt</div>
+    <p>Beide Spalten hängen zusammen: <strong>Ohne Infrastruktur, Verträge, Netze und Finanzsysteme gibt es keine globalen Ströme.</strong> Deshalb ist Logistikpolitik Standortpolitik – ein Land ohne funktionierende Häfen und Datenleitungen kann noch so günstig produzieren, es kommt nicht an den Markt.</p>
+  </div>
+
+  <h3>Logistik als strategischer Faktor</h3>
+  <p>Aus beiden Ebenen zusammen entsteht das, was das Skript den strategischen Faktor der Logistik nennt. Der Kern ist eine Spannung: <strong>dezentral beschaffen und produzieren, aber zentral steuern.</strong></p>
+
+  <div class="phasen" data-notiz="phasen-strategischer-faktor">
+    <div class="phase"><div class="p-nr">dezentral</div><div class="p-name">Beschaffung weltweit</div><div class="p-text">Eingekauft wird dort, wo Preis, Qualität und Verfügbarkeit stimmen.</div></div>
+    <div class="phase"><div class="p-nr">dezentral</div><div class="p-name">Produktion weltweit</div><div class="p-text">Gefertigt wird dort, wo Kosten, Know-how oder Marktnähe passen.</div></div>
+    <div class="phase"><div class="p-nr">Ziel</div><div class="p-name">Kostensenkung in der Supply Chain</div><div class="p-text">Nicht in einem Bereich, sondern über die gesamte Kette gerechnet.</div></div>
+    <div class="phase"><div class="p-nr">zentral</div><div class="p-name">Steuerung aller Prozesse</div><div class="p-text">Eine Stelle behält Bestände, Termine und Kosten der gesamten Kette im Blick.</div></div>
+  </div>
+
+  <div class="block def" data-notiz="def-erp">
+    <div class="b-label">Definition</div>
+    <div class="b-term">ERP-System (Enterprise Resource Planning)</div>
+    <p>Eine unternehmensweite Software, in der alle betrieblichen Ressourcen und Vorgänge in <strong>einer gemeinsamen Datenbasis</strong> geführt werden – Material, Aufträge, Bestände, Kapazitäten, Finanzen, Personal. In der Logistik leistet sie zweierlei: <strong>Digitalisierung</strong> der Prozesse (Vorgänge existieren als Daten statt als Papier) und <strong>Automatisierung</strong> (Standardabläufe laufen ohne manuelles Zutun).</p>
+  </div>
+
+  <p>Das ERP-System ist damit die technische Antwort auf die Spannung „dezentral handeln, zentral steuern“. Ohne eine gemeinsame Datenbasis kann eine Zentrale nicht sehen, was in fünfzehn Werken und vierzig Lägern tatsächlich passiert – und dann bleibt die zentrale Steuerung eine Absichtserklärung.</p>
+
+  <div class="block pruefung" data-notiz="pru-bedeutung">
+    <div class="b-label">So kommt das in der Prüfung</div>
+    <p>Die betriebswirtschaftliche Bedeutung wird gern als Begründungsfrage gestellt: „Begründen Sie, warum eine Bestandssenkung für das Unternehmen wirtschaftlich vorteilhaft ist.“ Argumentiere über <strong>Kapitalbindung, Zinsen und Lagerhaltungskosten</strong> – und nenne im zweiten Satz auch die Kehrseite (sinkende Lieferbereitschaft), denn Bewertungsfragen verlangen immer beide Richtungen. Die volkswirtschaftliche Bedeutung kommt meist als kurze Aufzählungsfrage.</p>
+  </div>
+
+  <div class="abfrage-liste">
+    <div class="abfrage-kopf">Selbstabfrage</div>
+    <details class="abfrage"><summary>Nenne die vier betriebswirtschaftlichen Wirkungen der Logistik.</summary>
+      <div class="antwort"><p>Kapitalbindung senken, Kosten senken, komplementäre und substitutive Güter nutzen, Wettbewerbsvorteile erarbeiten.</p></div></details>
+    <details class="abfrage"><summary>Was ist der Unterschied zwischen komplementären und substitutiven Gütern?</summary>
+      <div class="antwort"><p>Komplementäre Güter ergänzen sich und werden gemeinsam nachgefragt (Drucker und Toner). Substitutive Güter ersetzen sich gegenseitig (Butter und Margarine) und sind deshalb eine Reserve bei Lieferengpässen.</p></div></details>
+    <details class="abfrage"><summary>Welche Rahmenbedingungen muss ein Staat für globale Logistik schaffen?</summary>
+      <div class="antwort"><p>Internationale Vertragsgrundlagen, Infrastruktur, Standortvorteile, fortschrittliche Nachrichtennetze und die Einbindung in internationale Banken- und Finanzsysteme.</p></div></details>
+    <details class="abfrage"><summary>Was ist mit „dezentral beschaffen, zentral steuern“ gemeint?</summary>
+      <div class="antwort"><p>Beschaffung und Produktion finden weltweit dort statt, wo die Bedingungen am besten sind. Damit die Gesamtkosten der Kette trotzdem beherrschbar bleiben, werden alle logistischen Prozesse zentral gesteuert – technisch über ein einheitliches ERP-System.</p></div></details>
+    <details class="abfrage"><summary>Welche zwei Leistungen erbringt ein ERP-System in der Logistik?</summary>
+      <div class="antwort"><p>Digitalisierung der Prozesse und Automatisierung der Prozesse – beides auf Basis einer gemeinsamen Datenbasis für das gesamte Unternehmen.</p></div></details>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════ -->
+<section class="abschnitt" id="teilbereiche-management" data-gruppe="Bedeutung &amp; Struktur">
+  <div class="ab-kopf"><h2><span class="ab-nr">1.1.5</span>Teilbereiche der Unternehmenslogistik und Managementansätze</h2></div>
+
+  <div class="block einstieg" data-notiz="ein-teilbereiche">
+    <div class="b-label">Worum es geht</div>
+    <p>Geh in Gedanken durch eine Fabrik – aber folge nicht den Menschen, sondern der Ware. Sie kommt am Tor an und wird eingelagert. Sie wandert in die Fertigung und liegt zwischendurch in Zwischenlägern. Sie wird fertig, kommt ins Warenausgangslager und geht zum Kunden. Und ein Teil von ihr geht wieder zurück: als Retoure, als Verpackung, als Abfall. Diese vier Etappen sind die Teilbereiche der Unternehmenslogistik – und jede hat ihr eigenes Lager.</p>
+  </div>
+
+  <div class="phasen" data-notiz="phasen-teilbereiche">
+    <div class="phase"><div class="p-nr">1 · hinein</div><div class="p-name">Beschaffung</div><div class="p-text">Vom Lieferanten bis ins <strong>Wareneingangslager</strong>. Aufgaben: Disposition, Bestellabwicklung, Wareneingangsprüfung, Einlagerung.</div></div>
+    <div class="phase"><div class="p-nr">2 · hindurch</div><div class="p-name">Produktion</div><div class="p-text">Vom Materiallager durch die Fertigung, mit <strong>Zwischenlägern</strong> zwischen den Arbeitsgängen. Aufgaben: Bereitstellung, innerbetrieblicher Transport, Auftragssteuerung.</div></div>
+    <div class="phase"><div class="p-nr">3 · hinaus</div><div class="p-name">Absatz</div><div class="p-text">Vom <strong>Warenausgangslager</strong> zum Kunden. Aufgaben: Kommissionierung, Verpackung, Versand, Tourenplanung.</div></div>
+    <div class="phase"><div class="p-nr">4 · zurück</div><div class="p-name">Entsorgung</div><div class="p-text">Der Rückweg: <strong>Retouren, Recycling, Verwertung</strong>. Aufgaben: Rücknahme, Sortierung, Wiedereinsteuerung oder Entsorgung.</div></div>
+  </div>
+
+  <div class="block def" data-notiz="def-unternehmenslogistik">
+    <div class="b-label">Definition</div>
+    <div class="b-term">Unternehmenslogistik</div>
+    <p>Die Zusammenfassung der vier Teilbereiche Beschaffung, Produktion, Absatz und Entsorgung zu <strong>einer durchgehenden Kette innerhalb eines Unternehmens</strong>. Der Begriff betont, dass die vier Bereiche nicht nebeneinander stehen, sondern nacheinander an derselben Ware arbeiten – jeder Fehler wird an den nächsten weitergereicht.</p>
+  </div>
+
+  <div class="block beispiel" data-notiz="bsp-teilbereiche-kette">
+    <div class="b-label">Beispiel: ein Fehler wandert durch alle vier Bereiche</div>
+    <p>Der Einkauf eines Möbelherstellers bestellt Beschläge in der günstigeren Ausführung B statt der spezifizierten A – ein Beschaffungsfehler. In der <strong>Produktion</strong> passen die Bohrbilder nicht, es wird nachgearbeitet, die Zwischenläger füllen sich. Im <strong>Absatz</strong> verschiebt sich die Auslieferung um vier Tage, ein Kunde storniert. In der <strong>Entsorgung</strong> landen 300 falsch verbaute Beschläge und zwölf beschädigte Korpusse.</p>
+    <p>Ein einziger Beschaffungsvorgang hat alle vier Teilbereiche belastet. Genau deshalb ist die Unternehmenslogistik als Kette und nicht als vier Abteilungen zu denken.</p>
+  </div>
+
+  <h3>Die drei Managementansätze</h3>
+  <p>Wenn man diese Kette steuern will, braucht man eine Perspektive, aus der man sie betrachtet. Das Skript nennt drei – sie schließen sich nicht aus, sondern setzen unterschiedliche Schwerpunkte.</p>
+
+  <div class="raster" data-notiz="raster-managementansaetze">
+    <div class="karte amber"><div class="k-titel">Wertorientierung</div><div class="k-text">Blickwinkel: <strong>Was kostet es und was bringt es?</strong> Typische Maßnahme: Kostenreduktion, Bestandssenkung, Make-or-Buy-Entscheidungen. Gefahr, wenn man nur so schaut: Man spart an Stellen, die Qualität oder Service tragen.</div></div>
+    <div class="karte green"><div class="k-titel">Kundenorientierung</div><div class="k-text">Blickwinkel: <strong>Was erwartet der Kunde?</strong> Typische Maßnahme: Total Quality Management (TQM), Servicegrade, Reklamationsmanagement. Gefahr: Man erfüllt Wünsche, die niemand bezahlt.</div></div>
+    <div class="karte blue"><div class="k-titel">Fließorientierung</div><div class="k-text">Blickwinkel: <strong>Wo stockt der Fluss?</strong> Typische Maßnahme: Prozessoptimierung, Durchlaufzeitverkürzung, Engpassbeseitigung. Gefahr: Man optimiert einen Abschnitt und verschiebt den Engpass nur.</div></div>
+  </div>
+
+  <div class="block def" data-notiz="def-tqm">
+    <div class="b-label">Definition</div>
+    <div class="b-term">Total Quality Management (TQM)</div>
+    <p>Ein Managementansatz, bei dem Qualität nicht am Ende geprüft, sondern <strong>in jedem Prozessschritt von jedem Beteiligten</strong> erzeugt wird. Leitgedanke: Jeder Mitarbeiter hat einen Kunden – entweder den Endkunden oder den nächsten Kollegen im Prozess. Deshalb steht TQM im Skript als Beispiel für die Kundenorientierung.</p>
+  </div>
+
+  <div class="block merk" data-notiz="merk-ganzheitlich">
+    <div class="b-label">Der ganzheitliche Ansatz</div>
+    <p>Keiner der drei Ansätze funktioniert allein. Das Skript fasst sie deshalb zum <strong>ganzheitlichen Ansatz</strong> zusammen: Logistik ist eine <strong>Querschnittsfunktion aller Unternehmensbereiche</strong> – kein isolierter Bereich, sondern eine Aufgabe, die Einkauf, Fertigung, Vertrieb, IT und Controlling gleichermaßen betrifft. Wer sie als Abteilung behandelt, bekommt Bereichsoptima statt eines Gesamtoptimums.</p>
+  </div>
+
+  <div class="block achtung" data-notiz="ach-teilbereich-abteilung">
+    <div class="b-label">Typische Verwechslung</div>
+    <p>Ein <strong>Teilbereich</strong> der Unternehmenslogistik ist kein Organigramm-Kästchen. „Produktionslogistik“ ist ein Abschnitt der Wertschöpfung, keine Abteilung – dieselbe Abteilung „Werkslogistik“ kann Beschaffungs-, Produktions- und Absatzlogistik gleichzeitig bearbeiten. Ordne in der Prüfung nach dem <em>Abschnitt der Wertschöpfung</em> zu, nicht nach dem Namen der Abteilung.</p>
+  </div>
+
+  <div class="block pruefung" data-notiz="pru-teilbereiche">
+    <div class="b-label">So kommt das in der Prüfung</div>
+    <p>Zuordnungsaufgabe: „Ordnen Sie die beschriebenen Tätigkeiten den Teilbereichen der Unternehmenslogistik zu und begründen Sie.“ Die Begründung ist der Punktebringer – „Beschaffungslogistik, weil der Materialfluss vom Lieferanten ins Wareneingangslager betroffen ist“. Bei den Managementansätzen fragt Plab gern nach einem Beispiel je Ansatz; TQM als Beispiel für Kundenorientierung solltest du sicher parat haben.</p>
+  </div>
+
+  <div class="abfrage-liste">
+    <div class="abfrage-kopf">Selbstabfrage</div>
+    <details class="abfrage"><summary>Nenne die vier Teilbereiche der Unternehmenslogistik samt zugehörigem Lager.</summary>
+      <div class="antwort"><p>Beschaffung (Wareneingangslager), Produktion (Zwischenlager), Absatz (Warenausgangslager), Entsorgung (Retouren, Recycling, Verwertung).</p></div></details>
+    <details class="abfrage"><summary>Welche drei Managementansätze nennt das Skript und welches Beispiel gehört zu jedem?</summary>
+      <div class="antwort"><p>Wertorientierung (z. B. Kostenreduktion), Kundenorientierung (z. B. TQM), Fließorientierung (z. B. Prozessoptimierung).</p></div></details>
+    <details class="abfrage"><summary>Was bedeutet „Logistik ist eine Querschnittsfunktion“?</summary>
+      <div class="antwort"><p>Sie ist keine abgegrenzte Abteilung, sondern durchzieht alle Unternehmensbereiche – Einkauf, Produktion, Vertrieb, IT, Controlling – und muss diese aufeinander abstimmen. Deshalb der ganzheitliche Ansatz.</p></div></details>
+    <details class="abfrage"><summary>Wo liegt die Gefahr, wenn man nur wertorientiert steuert?</summary>
+      <div class="antwort"><p>Man senkt Kosten an Stellen, die Qualität oder Lieferservice tragen. Die Einsparung erscheint sofort in der Kostenstelle, der Schaden erst später beim Kunden – ein klassisches Bereichsoptimum.</p></div></details>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════ -->
+<section class="abschnitt" id="wertschoepfung" data-gruppe="Wertschöpfung">
+  <div class="ab-kopf"><h2><span class="ab-nr">1.1.6</span>Wertschöpfung berechnen</h2></div>
+
+  <div class="block einstieg" data-notiz="ein-wertschoepfung">
+    <div class="b-label">Worum es geht</div>
+    <p>Ein Logistikdienstleister macht 4,8 Mio. € Umsatz. Klingt nach viel. Davon gehen aber 2,95 Mio. € sofort wieder raus – an Frachtführer, Tankstellen, Vermieter, Energieversorger, Werkstätten. Dieses Geld hat das Unternehmen nur durchgereicht. Was es selbst geschaffen hat, ist der Rest. Genau diesen Rest nennt man <strong>Wertschöpfung</strong>: den Wert, den ein Betrieb dem hinzufügt, was er eingekauft hat.</p>
+  </div>
+
+  <p>Der Gedanke ist deshalb wichtig, weil Umsatz eine irreführende Größe ist. Ein Handelsbetrieb mit 50 Mio. € Umsatz kann weniger Wert schaffen als ein Ingenieurbüro mit 5 Mio. €, wenn er im Wesentlichen fremde Ware durchreicht. Für die Bewertung eines Logistikbereichs – Plabs Prüfungsteil – ist die Wertschöpfung deshalb die ehrlichere Kennzahl.</p>
+
+  <div class="formel" data-notiz="formel-wertschoepfung-grund">
+    <div class="formel-kopf"><span class="f-tag">Formel</span><span class="f-name">Grundformel der Wertschöpfung</span></div>
+    <div class="formel-koerper">
+      <div class="eq">Erlöse − Vorleistungen = Wertschöpfung</div>
+      <div class="f-erklaerung"><strong>Erlöse</strong> = alles, was für die eigene Leistung eingenommen wurde. <strong>Vorleistungen</strong> = alles, was von außen zugekauft und dabei verbraucht wurde: Material, Fremdleistungen, Energie, Mieten, Reparaturen. Nicht dazu gehören Löhne, Abschreibungen und Gewinn – die sind ja gerade das, was aus der Wertschöpfung bezahlt wird.</div>
+    </div>
+  </div>
+
+  <div class="block def" data-notiz="def-vorleistung">
+    <div class="b-label">Definition</div>
+    <div class="b-term">Vorleistung</div>
+    <p>Alle Güter und Dienstleistungen, die ein Unternehmen von <strong>anderen</strong> bezieht und im Rahmen der eigenen Leistungserstellung <strong>verbraucht</strong>. Beispiele in einem Logistikbetrieb: Fremdfrachten, Kraftstoff, Hallenmiete, Strom, Reinigung, Instandhaltung durch Dritte, Verpackungsmaterial.</p>
+    <p class="hinweis-klein">Löhne sind <em>keine</em> Vorleistung: Die eigene Arbeit ist das, was den Wert schöpft, nicht das, was zugekauft wird.</p>
+  </div>
+
+  <h3>Brutto- und Nettowertschöpfung zu Herstellerpreisen</h3>
+  <p>Die Grundformel wird in der amtlichen Rechnung genauer gefasst. Statt „Erlöse“ steht dort der <strong>Produktionswert</strong> – das ist der Wert aller im Zeitraum erstellten Leistungen, also Umsatz plus Bestandsveränderungen an fertigen und unfertigen Erzeugnissen. Und die Wertschöpfung wird zweimal ausgewiesen: einmal <em>vor</em> und einmal <em>nach</em> Abschreibungen.</p>
+
+  <div class="formel" data-notiz="formel-brutto-netto">
+    <div class="formel-kopf"><span class="f-tag">Formel</span><span class="f-name">Brutto- und Nettowertschöpfung (zu Herstellerpreisen)</span></div>
+    <div class="formel-koerper">
+      <div class="eq">Produktionswert − Vorleistungen = Bruttowertschöpfung</div>
+      <div class="eq">Bruttowertschöpfung − Abschreibungen = Nettowertschöpfung</div>
+      <div class="f-erklaerung">Die <strong>Abschreibung</strong> ist der Werteverzehr des Anlagevermögens: Lkw, Regale, Stapler und IT verlieren durch die Nutzung an Wert. Dieser Verlust ist real, auch wenn kein Geld fließt. Zieht man ihn ab, bleibt der Wert, der tatsächlich neu geschaffen wurde.</div>
+    </div>
+  </div>
+
+  <div class="block beispiel" data-notiz="bsp-nordwind-zahlen">
+    <div class="b-label">Der Fall: Nordwind Logistik GmbH</div>
+    <p>Produktionswert 4.800.000 € · Vorleistungen 2.950.000 € (Fremdfrachten, Kraftstoff, Miete, Energie, Instandhaltung) · Abschreibungen auf Fuhrpark und Lagertechnik 420.000 € · Gütersteuern 160.000 € · Gütersubventionen 45.000 €.</p>
+  </div>
+
+  <div class="schritte" data-notiz="rechnung-brutto-netto">
+    <div class="schritt"><div class="s-nr">1</div><div class="s-txt">Bruttowertschöpfung: 4.800.000 € − 2.950.000 € = <strong>1.850.000 €</strong></div></div>
+    <div class="s-warum">Erst alles abziehen, was von außen zugekauft und verbraucht wurde. Was übrig bleibt, hat der Betrieb mit eigener Arbeit und eigenen Anlagen erzeugt – deshalb heißt es „brutto“: die Anlagen sind noch nicht berücksichtigt.</div>
+    <div class="schritt"><div class="s-nr">2</div><div class="s-txt">Nettowertschöpfung zu Herstellerpreisen: 1.850.000 € − 420.000 € = <strong>1.430.000 €</strong></div></div>
+    <div class="s-warum">Jetzt kommt der Werteverzehr der eigenen Anlagen dazu. Die 420.000 € sind der Anteil von Lkw, Staplern und Regalen, der in diesem Jahr „verbraucht“ wurde. Erst nach diesem Abzug steht der Wert, den das Unternehmen wirklich neu geschaffen hat.</div>
+    <div class="schritt fertig"><div class="s-nr">✓</div><div class="s-txt">Aus 4,8 Mio. € Produktionswert werden 1,43 Mio. € Nettowertschöpfung – rund 30 %.</div></div>
+    <div class="s-warum">Aus dieser Nettowertschöpfung müssen Löhne, Zinsen, Steuern und der Gewinn bezahlt werden. Sie ist der Kuchen, den sich alle Beteiligten teilen.</div>
+  </div>
+
+  <h3>Nettowertschöpfung zu Marktpreisen</h3>
+  <p>Bis hierher wurde zu <strong>Herstellerpreisen</strong> gerechnet: also so, wie der Betrieb selbst kalkuliert. Der Preis, den der Markt sieht, ist ein anderer – er enthält Gütersteuern (etwa Energie- oder Verbrauchsteuern) und ist um Gütersubventionen gemindert. Wer die Wertschöpfung <strong>zu Marktpreisen</strong> ausweisen will, muss diese beiden Posten zusätzlich verrechnen.</p>
+
+  <div class="formel" data-notiz="formel-netto-marktpreise">
+    <div class="formel-kopf"><span class="f-tag">Formel</span><span class="f-name">Nettowertschöpfung zu Marktpreisen</span></div>
+    <div class="formel-koerper">
+      <div class="eq">Produktionswert<br>− Vorleistungen<br>+ Gütersteuern<br>− Gütersubventionen<br>− Abschreibungen<br>= Nettowertschöpfung (zu Marktpreisen)</div>
+      <div class="f-erklaerung">Die Reihenfolge ist genau die des Skripts. Merke dir die Vorzeichen über die Logik: Steuern erhöhen den Marktpreis gegenüber dem Herstellerpreis (<strong>plus</strong>), Subventionen senken ihn (<strong>minus</strong>).</div>
+    </div>
+  </div>
+
+  <div class="schritte" data-notiz="rechnung-marktpreise">
+    <div class="schritt"><div class="s-nr">1</div><div class="s-txt">4.800.000 € − 2.950.000 € = 1.850.000 €</div></div>
+    <div class="s-warum">Der Anfang ist identisch: Produktionswert minus Vorleistungen ergibt die Bruttowertschöpfung zu Herstellerpreisen.</div>
+    <div class="schritt"><div class="s-nr">2</div><div class="s-txt">+ 160.000 € Gütersteuern → 2.010.000 €</div></div>
+    <div class="s-warum">Gütersteuern sind im Marktpreis enthalten, im Herstellerpreis aber nicht. Wer zu Marktpreisen bewertet, muss sie deshalb hinzurechnen.</div>
+    <div class="schritt"><div class="s-nr">3</div><div class="s-txt">− 45.000 € Gütersubventionen → 1.965.000 €</div></div>
+    <div class="s-warum">Subventionen wirken umgekehrt: Sie senken den Preis, den der Markt zahlt, gegenüber dem, was die Leistung tatsächlich gekostet hat. Also abziehen.</div>
+    <div class="schritt fertig"><div class="s-nr">✓</div><div class="s-txt">− 420.000 € Abschreibungen → <strong>1.545.000 € Nettowertschöpfung zu Marktpreisen</strong></div></div>
+    <div class="s-warum">Die Abschreibung steht in dieser Aufstellung ganz am Ende. Ergebnis: 1.545.000 € statt 1.430.000 € zu Herstellerpreisen – die Differenz von 115.000 € ist genau der Saldo aus Gütersteuern und -subventionen.</div>
+  </div>
+
+  <div class="block achtung" data-notiz="ach-brutto-netto">
+    <div class="b-label">Typische Verwechslung</div>
+    <p><strong>Brutto und netto haben hier nichts mit der Umsatzsteuer zu tun.</strong> Der Unterschied ist einzig die <strong>Abschreibung</strong>: brutto = vor Abschreibung, netto = nach Abschreibung. Zweite Stolperstelle: <em>Herstellerpreise</em> und <em>Marktpreise</em> sind eine davon unabhängige Frage – sie betrifft nur, ob Gütersteuern und -subventionen mitgerechnet werden. In der Prüfung steht immer dabei, welche der beiden Bewertungen gemeint ist. Lies das zuerst.</p>
+  </div>
+
+  <div class="aufgabe" data-notiz="aufg-wertschoepfung">
+    <div class="aufgabe-kopf"><span class="tag">Aufgabe</span>Wertschöpfung eines Kontraktlogistikers<span class="punkte">8 Pkt.</span></div>
+    <div class="aufgabe-text">
+      <p>Die Südwerk Kontraktlogistik GmbH weist aus: Produktionswert 12.400.000 €, Vorleistungen 7.850.000 €, Abschreibungen 980.000 €, Gütersteuern 310.000 €, Gütersubventionen 120.000 €.</p>
+      <p>a) Berechnen Sie die Bruttowertschöpfung. b) Berechnen Sie die Nettowertschöpfung zu Herstellerpreisen. c) Berechnen Sie die Nettowertschöpfung zu Marktpreisen.</p>
+    </div>
+    <button class="loesung-btn"></button>
+    <div class="loesung">
+      <p><strong>a)</strong> 12.400.000 € − 7.850.000 € = <strong>4.550.000 €</strong> Bruttowertschöpfung.</p>
+      <p><strong>b)</strong> 4.550.000 € − 980.000 € = <strong>3.570.000 €</strong> Nettowertschöpfung zu Herstellerpreisen.</p>
+      <p><strong>c)</strong> 12.400.000 − 7.850.000 + 310.000 − 120.000 − 980.000 = <strong>3.760.000 €</strong> Nettowertschöpfung zu Marktpreisen.</p>
+      <p>Kontrolle: Die Differenz zwischen b) und c) beträgt 190.000 € – genau der Saldo aus 310.000 € Gütersteuern minus 120.000 € Gütersubventionen. Wenn diese Kontrolle nicht aufgeht, hast du ein Vorzeichen gedreht.</p>
+    </div>
+  </div>
+
+  <div class="block pruefung" data-notiz="pru-wertschoepfung">
+    <div class="b-label">So kommt das in der Prüfung</div>
+    <p>Als reine Rechenaufgabe mit vorgegebenen Zahlen – dort zählt die saubere Aufstellung: Schreibe die Positionen untereinander mit Vorzeichen, nicht in eine Zeile. Teilpunkte gibt es auch für den richtigen Rechenweg bei falschem Endergebnis. Zweite Variante: eine Interpretationsfrage („Was sagt die Nettowertschöpfung über das Unternehmen aus?“) – Antwort: den Wert, den der Betrieb selbst geschaffen hat und aus dem Löhne, Zinsen, Steuern und Gewinn bezahlt werden.</p>
+  </div>
+
+  <div class="abfrage-liste">
+    <div class="abfrage-kopf">Selbstabfrage</div>
+    <details class="abfrage"><summary>Wie lautet die Grundformel der Wertschöpfung?</summary>
+      <div class="antwort"><p>Erlöse − Vorleistungen = Wertschöpfung.</p></div></details>
+    <details class="abfrage"><summary>Was unterscheidet Brutto- von Nettowertschöpfung?</summary>
+      <div class="antwort"><p>Nur die Abschreibungen. Bruttowertschöpfung = Produktionswert − Vorleistungen. Nettowertschöpfung = Bruttowertschöpfung − Abschreibungen.</p></div></details>
+    <details class="abfrage"><summary>Nenne die vollständige Aufstellung der Nettowertschöpfung zu Marktpreisen.</summary>
+      <div class="antwort"><p>Produktionswert − Vorleistungen + Gütersteuern − Gütersubventionen − Abschreibungen = Nettowertschöpfung zu Marktpreisen.</p></div></details>
+    <details class="abfrage"><summary>Sind Löhne eine Vorleistung?</summary>
+      <div class="antwort"><p>Nein. Vorleistungen sind zugekaufte und verbrauchte Güter und Dienstleistungen. Löhne werden aus der Wertschöpfung bezahlt – zusammen mit Zinsen, Steuern und Gewinn.</p></div></details>
+    <details class="abfrage"><summary>Warum ist Umsatz eine schlechtere Bewertungsgröße als Wertschöpfung?</summary>
+      <div class="antwort"><p>Weil im Umsatz auch das Geld steckt, das nur durchgereicht wird. Ein Betrieb mit hohem Umsatz und hohen Vorleistungen schafft unter Umständen weniger Wert als ein kleinerer Betrieb mit hoher Eigenleistung.</p></div></details>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════ -->
+<section class="abschnitt" id="wertschoepfungskette" data-gruppe="Wertschöpfung">
+  <div class="ab-kopf"><h2><span class="ab-nr">1.1.7</span>Die Wertschöpfungskette und das Modell von Porter</h2></div>
+
+  <div class="block einstieg" data-notiz="ein-wsk">
+    <div class="b-label">Worum es geht</div>
+    <p>Die Wertschöpfung aus dem letzten Abschnitt entsteht nie an einer einzigen Stelle. Ein T-Shirt durchläuft Baumwollfeld, Spinnerei, Weberei, Färberei, Näherei, Importeur, Zentrallager, Filiale. An jeder Station kommt ein Stück Wert dazu – und an jeder Station entstehen Kosten. Wenn man diese Stationen in eine Reihe legt, hat man die <strong>Wertschöpfungskette</strong>. Sie ist die Landkarte, auf der Logistik arbeitet.</p>
+  </div>
+
+  <h3>Upstream und downstream</h3>
+  <p>Das Skript ordnet die Kette aus Sicht des eigenen Unternehmens. Alles, was <em>vor</em> dir liegt, heißt <strong>upstream</strong> – flussaufwärts, Richtung Rohstoff. Alles, was <em>nach</em> dir kommt, heißt <strong>downstream</strong> – flussabwärts, Richtung Endkunde. Das Bild stammt vom Fluss: Der Rohstoff ist die Quelle, der Endkunde die Mündung.</p>
+
+  <div class="phasen" data-notiz="phasen-upstream-downstream">
+    <div class="phase"><div class="p-nr">upstream</div><div class="p-name">Vorprodukte</div><div class="p-text">Rohstoffe, Zulieferteile, Vorlieferanten – alles, was vor dem eigenen Betrieb liegt.</div></div>
+    <div class="phase"><div class="p-nr">eigene Stufe</div><div class="p-name">Beschaffung · Fertigung · Marketing</div><div class="p-text">Die eigene Wertschöpfung: einkaufen, herstellen, vermarkten.</div></div>
+    <div class="phase"><div class="p-nr">downstream</div><div class="p-name">Handel · Kunde</div><div class="p-text">Distribution, Handelsstufen und schließlich der Endkunde.</div></div>
+  </div>
+
+  <div class="block def" data-notiz="def-wertschoepfungskette">
+    <div class="b-label">Definition</div>
+    <div class="b-term">Wertschöpfungskette</div>
+    <p>Die Abfolge aller Stufen, die ein Produkt vom Rohstoff bis zum Endkunden durchläuft, wobei jede Stufe dem Produkt Wert hinzufügt. Aus Sicht eines Unternehmens gliedert sie sich in <strong>upstream</strong> (vorgelagerte Stufen), die <strong>eigene Wertschöpfung</strong> und <strong>downstream</strong> (nachgelagerte Stufen).</p>
+  </div>
+
+  <div class="block achtung" data-notiz="ach-wsk-vs-logkette">
+    <div class="b-label">Nicht verwechseln</div>
+    <p>Die <strong>Wertschöpfungskette</strong> beschreibt, wo Wert entsteht – sie ist eine betriebswirtschaftliche Betrachtung. Die <strong>logistische Kette</strong> beschreibt, wie Material, Information und Geld fließen – sie ist eine Ablaufbetrachtung. Beide laufen über dieselben Stationen, beantworten aber verschiedene Fragen: <em>Wo wird verdient?</em> gegen <em>Wie kommt es dahin?</em></p>
+  </div>
+
+  <h3>Die Wertschöpfungskette nach Porter</h3>
+  <p>Michael Porter hat dieselbe Idee nach innen gedreht: Statt Unternehmen aneinanderzureihen, zerlegt er <strong>ein</strong> Unternehmen in seine Aktivitäten und fragt bei jeder einzelnen, ob sie dem Kunden Wert bringt. Aktivitäten, die das nicht tun, sind Kandidaten für Abbau oder Fremdvergabe. Das Modell unterscheidet zwei Gruppen.</p>
+
+  <div class="tab" data-notiz="tab-porter">
+    <table>
+      <thead><tr><th>Gruppe</th><th>Aktivitäten</th><th>Was sie beitragen</th></tr></thead>
+      <tbody>
+        <tr><td rowspan="5"><strong>Primäre Aktivitäten</strong><br><span class="hinweis-klein">wirken direkt am Produkt</span></td><td>Eingangslogistik</td><td>Wareneingang, Lagerung, Bereitstellung der Einsatzstoffe</td></tr>
+        <tr><td>Produktion</td><td>Herstellung, Montage, Prüfung</td></tr>
+        <tr><td>Marketing &amp; Vertrieb</td><td>Absatzwege, Preisgestaltung, Auftragsgewinnung</td></tr>
+        <tr><td>Ausgangslogistik</td><td>Kommissionierung, Verpackung, Versand, Auslieferung</td></tr>
+        <tr><td>After-Sales-Service</td><td>Installation, Ersatzteile, Reparatur, Retouren</td></tr>
+        <tr><td rowspan="4"><strong>Sekundäre Aktivitäten</strong><br><span class="hinweis-klein">unterstützen die primären</span></td><td>Einkauf / Beschaffung</td><td>Lieferantenauswahl, Verträge, Konditionen</td></tr>
+        <tr><td>Technologieentwicklung</td><td>Produkt- und Verfahrensentwicklung, IT</td></tr>
+        <tr><td>Finanzen &amp; Controlling</td><td>Finanzierung, Kostenrechnung, Steuerung</td></tr>
+        <tr><td>Personalwesen</td><td>Beschaffung, Entwicklung und Einsatz der Mitarbeiter</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="block merk" data-notiz="merk-porter-logistik">
+    <div class="b-label">Warum das Modell für dich wichtig ist</div>
+    <p>Bei Porter taucht die Logistik <strong>zweimal unter den primären Aktivitäten</strong> auf: als Eingangs- und als Ausgangslogistik. Sie ist damit im Modell keine Hilfsfunktion, sondern wertschaffend – sie steht direkt neben der Produktion. Das ist die stärkste Begründung dafür, dass Logistik ein eigener Führungsbereich ist, und ein guter Satz für jede Prüfungsantwort zum Stellenwert der Logistik.</p>
+  </div>
+
+  <div class="block beispiel" data-notiz="bsp-porter-anwendung">
+    <div class="b-label">Beispiel: Porter angewandt auf einen Getränkeabfüller</div>
+    <p><strong>Primär:</strong> Anlieferung von Konzentrat, Flaschen und Kronkorken (Eingangslogistik) → Abfüllung und Etikettierung (Produktion) → Listung beim Handel und Aktionsplanung (Marketing &amp; Vertrieb) → Palettierung, Ladungssicherung, Tourenplanung zu den Handelslägern (Ausgangslogistik) → Leergutrücknahme und Reklamationsbearbeitung (After-Sales).</p>
+    <p><strong>Sekundär:</strong> Einkauf verhandelt die Rahmenverträge für Glas, die Entwicklung testet ein leichteres Flaschendesign, das Controlling rechnet die Kosten je Palette, die Personalabteilung besetzt die Schichten der Abfülllinie.</p>
+    <p>Der Erkenntniswert: Ein leichteres Flaschendesign (sekundär) senkt Fracht- und Handlingkosten in <em>beiden</em> Logistikaktivitäten (primär). So sichtbar wird der Zusammenhang nur, wenn man das Unternehmen in Aktivitäten statt in Abteilungen zerlegt.</p>
+  </div>
+
+  <div class="block pruefung" data-notiz="pru-porter">
+    <div class="b-label">So kommt das in der Prüfung</div>
+    <p>Zwei Klassiker: Erstens die Zuordnung – „Ordnen Sie die genannten Tätigkeiten den primären bzw. sekundären Aktivitäten nach Porter zu.“ Zweitens die Argumentationsfrage – „Begründen Sie anhand des Modells, welchen Stellenwert die Logistik im Unternehmen hat.“ Antwort: Sie erscheint zweimal als primäre Aktivität (Eingangs- und Ausgangslogistik), wirkt also unmittelbar am Kundennutzen mit.</p>
+  </div>
+
+  <div class="abfrage-liste">
+    <div class="abfrage-kopf">Selbstabfrage</div>
+    <details class="abfrage"><summary>Was bedeuten upstream und downstream?</summary>
+      <div class="antwort"><p>Upstream sind die vorgelagerten Stufen Richtung Rohstoff (Vorprodukte, Lieferanten), downstream die nachgelagerten Stufen Richtung Endkunde (Handel, Kunde). Dazwischen liegt die eigene Wertschöpfung aus Beschaffung, Fertigung und Marketing.</p></div></details>
+    <details class="abfrage"><summary>Nenne die fünf primären Aktivitäten nach Porter.</summary>
+      <div class="antwort"><p>Eingangslogistik, Produktion, Marketing &amp; Vertrieb, Ausgangslogistik, After-Sales-Service.</p></div></details>
+    <details class="abfrage"><summary>Nenne vier sekundäre Aktivitäten nach Porter.</summary>
+      <div class="antwort"><p>Einkauf, Technologieentwicklung, Finanzen &amp; Controlling, Personalwesen.</p></div></details>
+    <details class="abfrage"><summary>Was ist das Ziel des Porter-Modells?</summary>
+      <div class="antwort"><p>Zu erkennen, welche Aktivitäten dem Kunden einen Mehrwert bringen – und damit zum Gewinn beitragen. Aktivitäten ohne Mehrwert sind Kandidaten für Abbau oder Fremdvergabe.</p></div></details>
+    <details class="abfrage"><summary>Wie unterscheiden sich Wertschöpfungskette und logistische Kette?</summary>
+      <div class="antwort"><p>Die Wertschöpfungskette zeigt, wo Wert entsteht (betriebswirtschaftliche Sicht). Die logistische Kette zeigt, wie Material, Information und Geld fließen (Ablaufsicht). Gleiche Stationen, verschiedene Fragen.</p></div></details>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════ -->
+<section class="abschnitt" id="prozess-grundlagen" data-gruppe="Prozessmanagement">
+  <div class="ab-kopf"><h2><span class="ab-nr">1.1.8</span>Was ein Prozess ist</h2></div>
+
+  <div class="block einstieg" data-notiz="ein-prozess">
+    <div class="b-label">Worum es geht</div>
+    <p>Frag drei Mitarbeiter eines Lagers, wie eine Retoure bearbeitet wird, und du bekommst drei Antworten. Nicht weil zwei davon faul sind, sondern weil niemand je festgelegt hat, wo die Retourenbearbeitung anfängt, wo sie aufhört und was dabei herauskommen soll. Ein <strong>Prozess</strong> ist genau diese Festlegung – und ohne sie kann man nichts messen, nichts vergleichen und nichts verbessern.</p>
+  </div>
+
+  <div class="block def" data-notiz="def-prozess">
+    <div class="b-label">Definition</div>
+    <div class="b-term">Prozess</div>
+    <p>Eine <strong>Abfolge von Tätigkeiten mit definiertem Anfang und Ende</strong>, welche mit untereinander in Beziehungen stehenden Tätigkeiten Eingaben (<strong>Input</strong>) zu Ausgaben (<strong>Output</strong>) wandeln.</p>
+    <p class="hinweis-klein">Wortwörtlich aus dem Skript. Die drei tragenden Wörter: <em>definierter Anfang und Ende</em>, <em>in Beziehung stehende Tätigkeiten</em>, <em>Input zu Output</em>. Fehlt eines davon, ist es kein Prozess, sondern eine Tätigkeitensammlung.</p>
+  </div>
+
+  <h3>Die sechs Merkmale von Prozessen</h3>
+  <div class="tab" data-notiz="tab-prozessmerkmale">
+    <table>
+      <thead><tr><th>Merkmal</th><th>Was damit gemeint ist</th><th>Beispiel Retourenbearbeitung</th></tr></thead>
+      <tbody>
+        <tr><td><strong>zielgerichtet</strong></td><td>Jeder Prozess verfolgt ein definiertes Ziel, nicht nur eine Beschäftigung.</td><td>Ziel: Retoure innerhalb von 48 Stunden bewertet und gutgeschrieben.</td></tr>
+        <tr><td><strong>interne und externe Auslöser</strong></td><td>Ein Prozess startet nicht von selbst, sondern wird durch ein Ereignis ausgelöst – von innen oder von außen.</td><td>Extern: Kunde meldet Retoure an. Intern: Qualitätssicherung sperrt eine Charge.</td></tr>
+        <tr><td><strong>leistungsbezogen</strong></td><td>Am Ende steht eine messbare Leistung, kein diffuses Ergebnis.</td><td>Leistung: geprüfte, sortierte, wiedereingesteuerte oder verschrottete Ware.</td></tr>
+        <tr><td><strong>interne und externe Abnehmer</strong></td><td>Das Ergebnis geht immer an jemanden – an einen Kollegen oder an den Markt.</td><td>Intern: Buchhaltung erhält die Gutschriftsfreigabe. Extern: Kunde erhält die Gutschrift.</td></tr>
+        <tr><td><strong>Verrichtungsprinzip</strong></td><td>Die Tätigkeiten sind nach Art der Verrichtung geordnet, nicht nach Zufall oder Zuständigkeit.</td><td>Erst annehmen, dann prüfen, dann entscheiden, dann buchen – immer in dieser Reihenfolge.</td></tr>
+        <tr><td><strong>zweckgebunden und verwoben</strong></td><td>Prozesse stehen nicht allein: Der Output des einen ist der Input des nächsten.</td><td>Der Output „wiedereinsteuerbare Ware“ ist der Input des Einlagerungsprozesses.</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3>Warum man überhaupt in Prozessen denkt</h3>
+  <p>Das Skript nennt vier Vorteile, und der vierte ist der entscheidende.</p>
+
+  <div class="raster" data-notiz="raster-prozessvorteile">
+    <div class="karte blue"><div class="k-titel">strukturiert</div><div class="k-text">Die Reihenfolge liegt fest. Jeder weiß, was vor und was nach ihm passiert.</div></div>
+    <div class="karte blue"><div class="k-titel">zielorientiert</div><div class="k-text">Es ist definiert, was herauskommen soll – also lässt sich Erfolg feststellen.</div></div>
+    <div class="karte blue"><div class="k-titel">wiederholbar</div><div class="k-text">Der Ablauf funktioniert auch dann, wenn der erfahrene Kollege im Urlaub ist.</div></div>
+    <div class="karte green"><div class="k-titel">messbar</div><div class="k-text">Zeiten, Mengen, Fehlerquoten lassen sich erheben – die Voraussetzung für jede Verbesserung.</div></div>
+  </div>
+
+  <div class="block merk" data-notiz="merk-messen-steuern">
+    <div class="b-label">Der Kernsatz des Prozessmanagements</div>
+    <p><strong>„Was man nicht messen kann, kann man auch nicht steuern.“</strong> Dieser Satz steht so im Skript und begründet alles Folgende: Ohne festgelegte Ziele, Maßgrößen und konkrete Vorgaben bleibt Prozessverbesserung Meinungssache.</p>
+  </div>
+
+  <h3>Prozesskette, Aktivität und Ereignis</h3>
+  <p>Prozesse stehen nie allein. Mehrere logistische Prozesse hintereinander ergeben die <strong>Logistikkette</strong>; verbunden sind sie durch <strong>Schnittstellen</strong>. Zerlegt man einen einzelnen Prozess weiter, kommt man zu seinen kleinsten Bausteinen: den <strong>Aktivitäten</strong>.</p>
+
+  <div class="phasen" data-notiz="phasen-prozesskette">
+    <div class="phase"><div class="p-nr">Ebene 1</div><div class="p-name">Logistikkette</div><div class="p-text">Die gesamte Folge logistischer Prozesse vom Lieferanten bis zum Kunden.</div></div>
+    <div class="phase"><div class="p-nr">Ebene 2</div><div class="p-name">Logistischer Prozess</div><div class="p-text">Ein abgegrenzter Abschnitt mit definiertem Anfang und Ende, z. B. der Wareneingang.</div></div>
+    <div class="phase"><div class="p-nr">Verbindung</div><div class="p-name">Schnittstelle</div><div class="p-text">Der Übergabepunkt zwischen zwei Prozessen – die klassische Fehlerquelle.</div></div>
+    <div class="phase"><div class="p-nr">Ebene 3</div><div class="p-name">Aktivität</div><div class="p-text">Das kleinste Element eines Prozesses. In der Logistik sind das die TUL-Aktivitäten: Transportieren, Umschlagen, Lagern.</div></div>
+  </div>
+
+  <div class="block def" data-notiz="def-aktivitaet-ereignis">
+    <div class="b-label">Definition</div>
+    <div class="b-term">Aktivität und Ereignis</div>
+    <p><strong>Aktivitäten</strong> sind die kleinsten Elemente eines Prozesses – die einzelnen Verrichtungen. Sie werden durch <strong>Ereignisse</strong> ausgelöst, und auf jede Aktivität folgt wieder ein Ereignis. Ein Prozess ist damit eine Kette aus abwechselnd Ereignis – Aktivität – Ereignis – Aktivität.</p>
+  </div>
+
+  <div class="block beispiel" data-notiz="bsp-ereignis-aktivitaet">
+    <div class="b-label">Beispiel: Wareneingang als Ereignis-Aktivitäts-Kette</div>
+    <p><em>Ereignis:</em> Lkw ist am Tor eingetroffen → <em>Aktivität:</em> Anmeldung erfassen und Rampe zuweisen → <em>Ereignis:</em> Rampe zugewiesen → <em>Aktivität:</em> entladen → <em>Ereignis:</em> Ware auf der Fläche → <em>Aktivität:</em> Menge und Zustand prüfen → <em>Ereignis:</em> Prüfung abgeschlossen → <em>Aktivität:</em> Wareneingang buchen → <em>Ereignis:</em> Ware verfügbar.</p>
+    <p>Der Nutzen dieser Schreibweise: Jede Aktivität hat einen klaren Startpunkt. Fällt in der Analyse auf, dass zwischen „Ware auf der Fläche“ und „Prüfung abgeschlossen“ regelmäßig vier Stunden liegen, weißt du genau, welche Aktivität du dir ansehen musst.</p>
+  </div>
+
+  <div class="block achtung" data-notiz="ach-prozess-taetigkeit">
+    <div class="b-label">Typische Verwechslung</div>
+    <p><strong>Prozess ist nicht gleich Tätigkeit.</strong> „Kommissionieren“ ist eine Aktivität. „Auftragsabwicklung vom Auftragseingang bis zum Versandavis“ ist ein Prozess – weil Anfang, Ende und Output definiert sind. Wer in der Prüfung einen Prozess beschreiben soll und nur Tätigkeiten aufzählt, verliert die Punkte für Abgrenzung und Output.</p>
+  </div>
+
+  <div class="block pruefung" data-notiz="pru-prozess">
+    <div class="b-label">So kommt das in der Prüfung</div>
+    <p>Die Definition wird oft wortnah abgefragt – lerne sie mit den drei tragenden Elementen. Häufiger noch ist die Anwendungsfrage: „Beschreiben Sie den Prozess der Auftragsabwicklung“ oder „Nennen Sie drei Merkmale von Prozessen und belegen Sie sie am geschilderten Fall.“ Belege immer am Fall – reine Aufzählungen bringen die halbe Punktzahl.</p>
+  </div>
+
+  <div class="abfrage-liste">
+    <div class="abfrage-kopf">Selbstabfrage</div>
+    <details class="abfrage"><summary>Wie lautet die Prozessdefinition aus dem Skript?</summary>
+      <div class="antwort"><p>Abfolge von Tätigkeiten mit definiertem Anfang und Ende, welche mit untereinander in Beziehungen stehenden Tätigkeiten Eingaben (Input) zu Ausgaben (Output) wandeln.</p></div></details>
+    <details class="abfrage"><summary>Nenne vier Merkmale von Prozessen.</summary>
+      <div class="antwort"><p>Zielgerichtet, interne und externe Auslöser, leistungsbezogen, interne und externe Abnehmer, Verrichtungsprinzip, zweckgebunden und verwoben (vier davon genügen).</p></div></details>
+    <details class="abfrage"><summary>Welche vier Vorteile bringt das Denken in Prozessen?</summary>
+      <div class="antwort"><p>Strukturiert, zielorientiert, wiederholbar und – am wichtigsten – messbar.</p></div></details>
+    <details class="abfrage"><summary>Was sind Aktivitäten, und was löst sie aus?</summary>
+      <div class="antwort"><p>Aktivitäten sind die kleinsten Elemente eines Prozesses; in der Logistik sind es die TUL-Aktivitäten. Ausgelöst werden sie durch Ereignisse, und auf jede Aktivität folgt wieder ein Ereignis.</p></div></details>
+    <details class="abfrage"><summary>Was verbindet zwei logistische Prozesse innerhalb der Logistikkette?</summary>
+      <div class="antwort"><p>Eine Schnittstelle – der Übergabepunkt, an dem Verantwortung, Material und Information wechseln. Genau dort entstehen die meisten Fehler.</p></div></details>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════ -->
+<section class="abschnitt" id="prozess-umsetzung" data-gruppe="Prozessmanagement">
+  <div class="ab-kopf"><h2><span class="ab-nr">1.1.9</span>Prozesse umsetzen – das Vier-Schritte-Schema</h2></div>
+
+  <div class="block einstieg" data-notiz="ein-umsetzung">
+    <div class="b-label">Worum es geht</div>
+    <p>Ein Speditionsleiter sagt: „Wir führen jetzt einen sauberen Retourenprozess ein.“ Drei Wochen später hängt ein Ablaufplan an der Wand, den niemand liest, weil unklar ist, wo er anfängt, wer zuständig ist und woran man merkt, ob er funktioniert. Das Skript beugt genau dem vor: Es gibt eine feste Reihenfolge von vier Schritten – und jeder Schritt hat einen konkreten Inhalt.</p>
+  </div>
+
+  <div class="phasen" data-notiz="phasen-vier-schritte">
+    <div class="phase"><div class="p-nr">Schritt 1</div><div class="p-name">Prozess gestalten</div><div class="p-text">Analyse der Prozessfelder · Definition des Prozesses · Festlegung des Umfangs</div></div>
+    <div class="phase"><div class="p-nr">Schritt 2</div><div class="p-name">Prozess strukturieren</div><div class="p-text">Zerlegung in Teilprozesse · Reihenfolge · Schnittstellen · Prozessparameter · Verantwortlichkeiten</div></div>
+    <div class="phase"><div class="p-nr">Schritt 3</div><div class="p-name">Prozess realisieren</div><div class="p-text">Einführung des Prozesses · Überwachen des Prozesses</div></div>
+    <div class="phase"><div class="p-nr">Schritt 4</div><div class="p-name">Prozess optimieren</div><div class="p-text">Soll/Ist-Abgleich der Prozessparameter · Abweichungsanalyse · Standardisieren · Übernahme ins Managementsystem</div></div>
+  </div>
+
+  <h3>Was in jedem Schritt tatsächlich passiert</h3>
+  <p><strong>Schritt 1 – gestalten.</strong> Zuerst wird geklärt, <em>welchen</em> Prozess man überhaupt betrachtet. Die Analyse der Prozessfelder beantwortet: In welchem Bereich liegt er, wer ist beteiligt, welche anderen Prozesse grenzen an? Dann wird der Prozess definiert – Anfang, Ende, Zweck. Zuletzt der Umfang: Gehört die Frachtabrechnung noch dazu oder nicht? Diese Grenzziehung entscheidet später über jede Kennzahl.</p>
+
+  <p><strong>Schritt 2 – strukturieren.</strong> Jetzt wird der Prozess in Teilprozesse zerlegt und in eine Reihenfolge gebracht. An jedem Übergang wird eine <strong>Schnittstelle</strong> definiert: Was wird übergeben, in welchem Zustand, an wen? Es werden <strong>Prozessparameter</strong> festgelegt – die Größen, an denen man den Prozess später misst. Und schließlich die <strong>Verantwortlichkeiten</strong>: Zu jedem Teilprozess gehört genau eine Stelle, die ihn verantwortet.</p>
+
+  <p><strong>Schritt 3 – realisieren.</strong> Einführen heißt: schulen, umstellen, begleiten. Das zweite Wort ist ebenso wichtig – <strong>überwachen</strong>. Ein Prozess, der eingeführt, aber nicht beobachtet wird, weicht innerhalb weniger Wochen wieder auf.</p>
+
+  <p><strong>Schritt 4 – optimieren.</strong> Hier greifen die Parameter aus Schritt 2: Soll und Ist werden verglichen, Abweichungen werden analysiert (Warum weicht es ab? Einmalig oder systematisch?), und der verbesserte Ablauf wird <strong>standardisiert</strong> – also verbindlich festgeschrieben – und ins Managementsystem übernommen, damit er dort dauerhaft geführt und auditiert wird.</p>
+
+  <div class="block merk" data-notiz="merk-standardisieren">
+    <div class="b-label">Warum Schritt 4 nicht mit der Verbesserung endet</div>
+    <p>Eine Verbesserung, die nicht standardisiert wird, ist eine gute Idee von letzter Woche. Erst die <strong>Standardisierung und Übernahme ins Managementsystem</strong> macht sie zum neuen Normalzustand – und schafft die Basislinie, gegen die man beim nächsten Durchlauf misst. Das ist derselbe Gedanke wie beim PDCA-Zyklus aus Krouls Kapitel 1.</p>
+  </div>
+
+  <h3>Inhalte einer Prozessbeschreibung</h3>
+  <p>Das Ergebnis der Schritte 1 und 2 ist ein Dokument: die Prozessbeschreibung. Das Skript listet acht Pflichtinhalte auf. Wenn du in der Prüfung einen Prozess beschreiben sollst, ist diese Liste deine Gliederung.</p>
+
+  <div class="tab" data-notiz="tab-prozessbeschreibung">
+    <table>
+      <thead><tr><th>Inhalt</th><th>Beantwortet die Frage</th><th>Beispiel: Retourenprozess</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Prozessaufgabe</strong></td><td>Wozu gibt es diesen Prozess?</td><td>Retouren bewerten, verwerten und dem Kunden gutschreiben</td></tr>
+        <tr><td><strong>Anstoß, Vorgänger und Quellen</strong></td><td>Was löst ihn aus, was liegt davor?</td><td>Retourenanmeldung des Kunden im Shopsystem</td></tr>
+        <tr><td><strong>Anfangsaktivität</strong></td><td>Womit beginnt er konkret?</td><td>Retourenpaket am Wareneingang annehmen und scannen</td></tr>
+        <tr><td><strong>Endaktivität</strong></td><td>Womit endet er?</td><td>Gutschrift buchen und an den Kunden versenden</td></tr>
+        <tr><td><strong>Senke (Verortung)</strong></td><td>Wo landet das Ergebnis?</td><td>Buchhaltung und wiedereingesteuerter Lagerbestand</td></tr>
+        <tr><td><strong>Hauptaktivitäten</strong></td><td>Welche Schritte liegen dazwischen?</td><td>Annehmen · prüfen · entscheiden · aufbereiten · buchen</td></tr>
+        <tr><td><strong>Prozessziele</strong></td><td>Was soll erreicht werden?</td><td>Durchlaufzeit ≤ 48 h, Wiedereinsteuerungsquote ≥ 70 %</td></tr>
+        <tr><td><strong>Messgrößen und Prozessparameter</strong></td><td>Woran misst man das?</td><td>Stunden je Retoure, Anteil verschrotteter Ware, Reklamationen zur Gutschrift</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="block beispiel" data-notiz="bsp-umsetzung-retoure">
+    <div class="b-label">Beispiel: das Schema am Retourenprozess</div>
+    <p><strong>Gestalten:</strong> Der Bereich „After-Sales“ wird analysiert, der Prozess auf „Annahme bis Gutschrift“ definiert; die Reparatur defekter Geräte bleibt bewusst außen vor.<br>
+    <strong>Strukturieren:</strong> Vier Teilprozesse mit fester Reihenfolge, Schnittstelle zwischen Prüfung und Buchhaltung wird als „Prüfprotokoll digital“ definiert, Parameter: Stunden je Retoure. Verantwortlich ist die Teamleitung Retoure.<br>
+    <strong>Realisieren:</strong> Zwei Wochen Schulung, danach tägliche Kennzahl auf dem Aushang.<br>
+    <strong>Optimieren:</strong> Der Ist-Wert liegt bei 71 h statt 48 h. Die Abweichungsanalyse zeigt: Die Ware wartet im Schnitt zwei Tage auf die Freigabe der Buchhaltung. Lösung: Freigabe bis 200 € an die Teamleitung delegieren – standardisieren, ins Managementsystem übernehmen.</p>
+  </div>
+
+  <div class="block pruefung" data-notiz="pru-umsetzung">
+    <div class="b-label">So kommt das in der Prüfung</div>
+    <p>Sehr beliebt: „Beschreiben Sie das Vorgehen zur Einführung eines neuen Prozesses.“ Nenne die vier Schritte <strong>in der richtigen Reihenfolge</strong> und je zwei Inhalte. Zweite Variante: Aus einer Situationsbeschreibung sollst du eine Prozessbeschreibung erstellen – dann arbeite die acht Inhalte als Gliederung ab, das strukturiert die Antwort und sichert Punkte.</p>
+  </div>
+
+  <div class="abfrage-liste">
+    <div class="abfrage-kopf">Selbstabfrage</div>
+    <details class="abfrage"><summary>Nenne die vier Schritte zur Umsetzung von Prozessen.</summary>
+      <div class="antwort"><p>1. Prozess gestalten, 2. Prozess strukturieren, 3. Prozess realisieren, 4. Prozess optimieren.</p></div></details>
+    <details class="abfrage"><summary>Was gehört zum Schritt „strukturieren“?</summary>
+      <div class="antwort"><p>Zerlegung in Teilprozesse, Festlegen der Reihenfolge, Definition der Schnittstellen, Festlegung von Prozessparametern und Festlegen der Verantwortlichkeiten.</p></div></details>
+    <details class="abfrage"><summary>Womit endet der Schritt „optimieren“?</summary>
+      <div class="antwort"><p>Mit der Standardisierung des Prozesses und seiner Übernahme in das Managementsystem – nicht schon mit der Abweichungsanalyse.</p></div></details>
+    <details class="abfrage"><summary>Nenne fünf Inhalte einer Prozessbeschreibung.</summary>
+      <div class="antwort"><p>Prozessaufgabe, Anstoß/Vorgänger/Quellen, Anfangsaktivität, Endaktivität, Senke (Verortung), Hauptaktivitäten, Prozessziele, Messgrößen und Prozessparameter (fünf davon genügen).</p></div></details>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════ -->
+<section class="abschnitt" id="prozessebenen-wirksamkeit" data-gruppe="Prozessmanagement">
+  <div class="ab-kopf"><h2><span class="ab-nr">1.1.10</span>Prozessebenen, Messbarkeit, Effektivität und Effizienz</h2></div>
+
+  <div class="block einstieg" data-notiz="ein-ebenen">
+    <div class="b-label">Worum es geht</div>
+    <p>Ein Versandzentrum stellt seine Kommissionierung von Papierliste auf Pick-by-Voice um. Die Leistung steigt von 90 auf 130 Positionen je Stunde. Ein Erfolg? Nur halb. Denn die Retourenquote wegen Falschlieferungen ist gleichzeitig von 1,2 % auf 3,1 % gestiegen. Der Prozess ist <strong>schneller</strong> geworden, aber er erreicht sein Ziel <strong>schlechter</strong>. Genau diese beiden Fragen – „Erreichen wir das Ziel?“ und „Erreichen wir es sparsam?“ – trennen die Begriffe Effektivität und Effizienz.</p>
+  </div>
+
+  <h3>Zwei Arten, Prozesse zu sortieren</h3>
+  <p>Bevor man misst, muss man wissen, welchen Prozess man vor sich hat. Das Skript bietet dafür zwei Einteilungen an – sie schließen sich nicht aus, sondern schneiden dieselbe Menge anders.</p>
+
+  <div class="raster-2" data-notiz="raster-prozessebenen">
+    <div class="karte blue">
+      <div class="k-titel">Erläuterung 1: Haupt- und Teilprozesse</div>
+      <div class="k-text"><strong>Hauptprozesse</strong> laufen innerhalb eines Funktionsbereiches – z. B. der gesamte Wareneingang.<br><strong>Teilprozesse</strong> sind die Arbeitsgänge eines Hauptprozesses – Entladen, Prüfen, Buchen, Einlagern. Diese Einteilung fragt: <em>Wie fein schaue ich hin?</em></div>
+    </div>
+    <div class="karte purple">
+      <div class="k-titel">Erläuterung 2: Primär- und Sekundärprozesse</div>
+      <div class="k-text"><strong>Primärprozesse</strong> sind die Material- und Informationsflüsse zur fachlichen Abwicklung – das eigentliche Geschäft.<br><strong>Sekundärprozesse</strong> sind Unterstützungsleistungen und Führungsaufgaben – Instandhaltung, IT, Personal, Controlling. Diese Einteilung fragt: <em>Wer verdient das Geld, wer ermöglicht es?</em></div>
+    </div>
+  </div>
+
+  <div class="block achtung" data-notiz="ach-haupt-primaer">
+    <div class="b-label">Typische Verwechslung</div>
+    <p><strong>Hauptprozess ist nicht dasselbe wie Primärprozess.</strong> „Haupt“ und „Teil“ beschreiben die <em>Flughöhe</em> der Betrachtung, „primär“ und „sekundär“ die <em>Rolle</em> im Geschäft. Die Instandhaltung der Staplerflotte ist ein Hauptprozess des Bereichs Technik – und gleichzeitig ein Sekundärprozess des Unternehmens.</p>
+  </div>
+
+  <h3>Messbarkeit: die Voraussetzung für alles Weitere</h3>
+  <p>Der Kernsatz aus dem letzten Abschnitt – <em>„Was man nicht messen kann, kann man auch nicht steuern“</em> – hat für die Prozessarbeit drei konkrete Folgen, die das Skript ausdrücklich aufzählt.</p>
+
+  <div class="phasen" data-notiz="phasen-messbarkeit">
+    <div class="phase"><div class="p-nr">Folge 1</div><div class="p-name">Festlegung der Ziele</div><div class="p-text">Erst muss klar sein, was der Prozess erreichen soll – sonst ist jede Messung beliebig.</div></div>
+    <div class="phase"><div class="p-nr">Folge 2</div><div class="p-name">Festlegung der Maßgrößen</div><div class="p-text">Zu jedem Ziel gehört eine Größe, in der es gemessen wird: Stunden, Stück, Prozent, Euro.</div></div>
+    <div class="phase"><div class="p-nr">Folge 3</div><div class="p-name">Konkrete Vorgaben</div><div class="p-text">Zur Maßgröße gehört ein Zielwert. „Schneller werden“ ist keine Vorgabe – „Durchlaufzeit ≤ 48 h“ ist eine.</div></div>
+  </div>
+
+  <h3>Effektivität und Effizienz</h3>
+  <div class="raster-2" data-notiz="raster-eff-eff">
+    <div class="karte green">
+      <div class="k-titel">Effektivität</div>
+      <div class="k-text"><strong>„Die richtigen Dinge machen.“</strong> Es geht um das Erreichen der Prozessziele und Prozessergebnisse. Frage: <em>Kommt am Ende heraus, was herauskommen soll?</em> Der Aufwand spielt hier noch keine Rolle.</div>
+    </div>
+    <div class="karte blue">
+      <div class="k-titel">Effizienz</div>
+      <div class="k-text"><strong>„Die Dinge richtig machen.“</strong> Es geht um das Erreichen der Ziele mit dem <strong>geringsten Aufwand</strong>. Frage: <em>Wie viel Zeit, Geld und Material hat das Ergebnis gekostet?</em></div>
+    </div>
+  </div>
+
+  <div class="block def" data-notiz="def-effektivitaet">
+    <div class="b-label">Definition</div>
+    <div class="b-term">Effektivität eines Prozesses</div>
+    <p>Der Grad, in dem die <strong>Prozessziele und Prozessergebnisse erreicht</strong> werden – unabhängig vom eingesetzten Aufwand. Kurzformel des Skripts: „Die richtigen Dinge machen.“</p>
+  </div>
+
+  <div class="block def" data-notiz="def-effizienz">
+    <div class="b-label">Definition</div>
+    <div class="b-term">Effizienz eines Prozesses</div>
+    <p>Das Erreichen der Ziele mit dem <strong>geringsten Aufwand</strong>, also das Verhältnis von Ergebnis zu eingesetzten Mitteln. Kurzformel des Skripts: „Die Dinge richtig machen.“</p>
+  </div>
+
+  <div class="block achtung" data-notiz="ach-effektiv-effizient">
+    <div class="b-label">Die wichtigste Abgrenzung des Kapitels</div>
+    <p>Merke dir die Reihenfolge: <strong>Effektivität kommt zuerst.</strong> Ein hocheffizienter Prozess, der das falsche Ergebnis produziert, ist wertlos – man erreicht das falsche Ziel nur besonders sparsam. Umgekehrt ist ein effektiver, aber ineffizienter Prozess wenigstens brauchbar, nur zu teuer.</p>
+    <p>Eselsbrücke: <strong>Effekt<em>i</em>vität = Z<em>i</em>el.</strong> Effiz<em>ie</em>nz enthält das „ie“ wie in „W<em>ie</em> teuer?“.</p>
+  </div>
+
+  <div class="block beispiel" data-notiz="bsp-eff-eff-matrix">
+    <div class="b-label">Beispiel: vier Lager, vier Kombinationen</div>
+    <p><strong>Effektiv und effizient:</strong> Das Lager liefert 99 % termingerecht bei 2,10 € Kosten je Position. Vorbild.<br>
+    <strong>Effektiv, aber nicht effizient:</strong> 99 % Termintreue – aber mit drei Sonderfahrten pro Woche und Dauerüberstunden, 4,80 € je Position. Das Ziel stimmt, der Weg ist zu teuer.<br>
+    <strong>Effizient, aber nicht effektiv:</strong> Das Versandzentrum aus dem Einstieg. Kosten je Position gesunken, aber die Retourenquote hat sich verdreifacht – der Prozess ist billig geworden und verfehlt sein Ziel.<br>
+    <strong>Weder noch:</strong> 87 % Termintreue bei 5,40 € je Position. Hier hilft keine Feinjustierung, hier muss der Prozess neu gestaltet werden.</p>
+  </div>
+
+  <div class="block pruefung" data-notiz="pru-eff-eff">
+    <div class="b-label">So kommt das in der Prüfung</div>
+    <p>Das ist eine echte Lieblingsfrage der IHK, meist in zwei Teilen: „Erläutern Sie den Unterschied zwischen Effektivität und Effizienz“ und dann „Beurteilen Sie den geschilderten Prozess hinsichtlich Effektivität und Effizienz.“ Für den zweiten Teil brauchst du <strong>zwei getrennte Aussagen mit je einer Begründung aus dem Fall</strong> – nicht ein Gesamturteil. Nutze wörtlich die Formeln „die richtigen Dinge“ und „die Dinge richtig“, sie werden als Schlüsselbegriffe gewertet.</p>
+  </div>
+
+  <div class="abfrage-liste">
+    <div class="abfrage-kopf">Selbstabfrage</div>
+    <details class="abfrage"><summary>Was ist Effektivität, was Effizienz?</summary>
+      <div class="antwort"><p>Effektivität: Erreichen der Prozessziele und -ergebnisse – „die richtigen Dinge machen“. Effizienz: Erreichen der Ziele mit geringstem Aufwand – „die Dinge richtig machen“.</p></div></details>
+    <details class="abfrage"><summary>Warum kommt Effektivität vor Effizienz?</summary>
+      <div class="antwort"><p>Weil ein effizienter Prozess mit falschem Ergebnis wertlos ist – man erreicht das falsche Ziel nur besonders sparsam. Erst wenn das Ziel stimmt, lohnt es sich, den Aufwand zu optimieren.</p></div></details>
+    <details class="abfrage"><summary>Was unterscheidet Haupt- von Teilprozessen?</summary>
+      <div class="antwort"><p>Hauptprozesse laufen innerhalb eines Funktionsbereiches; Teilprozesse sind die einzelnen Arbeitsgänge eines Hauptprozesses.</p></div></details>
+    <details class="abfrage"><summary>Was unterscheidet Primär- von Sekundärprozessen?</summary>
+      <div class="antwort"><p>Primärprozesse sind Material- und Informationsflüsse zur fachlichen Abwicklung. Sekundärprozesse sind Unterstützungsleistungen und Führungsaufgaben.</p></div></details>
+    <details class="abfrage"><summary>Welche drei Folgen hat der Satz „Was man nicht messen kann, kann man nicht steuern“?</summary>
+      <div class="antwort"><p>Festlegung der Ziele, Festlegung der Maßgrößen und konkrete Vorgaben (Zielwerte).</p></div></details>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════ -->
+<section class="abschnitt" id="leistungsarten" data-gruppe="Prozessmanagement">
+  <div class="ab-kopf"><h2><span class="ab-nr">1.1.11</span>Leistungsarten und Prozesswirkungsgrad</h2></div>
+
+  <div class="block einstieg" data-notiz="ein-leistungsarten">
+    <div class="b-label">Worum es geht</div>
+    <p>Ein Monteur ist acht Stunden im Werk. Zweieinhalb Stunden montiert er. Anderthalb Stunden rüstet er um und holt Material. Zwei Stunden wartet er auf eine Rückfrage zur Zeichnung und stellt Teile zwischen. Eine Stunde arbeitet er Ausschuss nach, eine Stunde steht die Maschine. Bezahlt werden alle acht Stunden. Wertvoll für den Kunden waren zweieinhalb. Diesen Unterschied sichtbar zu machen, ist der Zweck der Leistungsarten.</p>
+  </div>
+
+  <h3>Ungewollte Prozesskosten finden</h3>
+  <p>Das Skript beschreibt dafür ein Verfahren: die <strong>wertschöpfungsorientierte Kostenrechnung</strong>. Sie ermittelt den <strong>Prozesswirkungsgrad</strong> in zwei Schritten – erst alle Tätigkeiten eines Prozesses ermitteln, dann jede einzelne analysieren und einordnen.</p>
+
+  <div class="phasen" data-notiz="phasen-wertkategorien">
+    <div class="phase"><div class="p-nr">wertsteigernd</div><div class="p-name">Der Kunde zahlt dafür</div><div class="p-text">Der Schritt erhöht den Wert des Produkts oder der Leistung – behalten und stärken.</div></div>
+    <div class="phase"><div class="p-nr">wertneutral</div><div class="p-name">Nötig, aber ohne Wertzuwachs</div><div class="p-text">Der Schritt ist derzeit unvermeidbar, schafft aber keinen Wert – <strong>minimieren</strong>.</div></div>
+    <div class="phase"><div class="p-nr">wertsenkend</div><div class="p-name">Zerstört Wert</div><div class="p-text">Der Schritt kostet und macht das Ergebnis schlechter – <strong>eliminieren</strong>.</div></div>
+  </div>
+
+  <div class="block merk" data-notiz="merk-minimieren-eliminieren">
+    <div class="b-label">Die Handlungsregel des Skripts</div>
+    <p><strong>Wertneutrale Prozessschritte minimieren – wertsenkende Prozessschritte eliminieren.</strong> Beachte die unterschiedlichen Verben: Wertneutrales lässt sich nur verkleinern, weil es (noch) gebraucht wird. Wertsenkendes gehört ganz weg.</p>
+  </div>
+
+  <h3>Die vier Leistungsarten</h3>
+  <p>Feiner wird es mit der Einteilung in vier Leistungsarten. Der erste Trennstrich verläuft zwischen <strong>geplant</strong> und <strong>ungeplant</strong>, der zweite zwischen <strong>wertschaffend</strong> und <strong>nicht wertschaffend</strong>.</p>
+
+  <div class="tab" data-notiz="tab-leistungsarten">
+    <table>
+      <thead><tr><th>Leistungsart</th><th>Geplant?</th><th>Wirkung</th><th>Beispiele aus dem Skript</th></tr></thead>
+      <tbody>
+        <tr><td><strong>A) Nutzleistung</strong></td><td>ja</td><td><strong>direkte</strong> Wertsteigerung für den Kunden</td><td>Konstruktion, Entwicklung, Montage, Einkauf und Verkauf</td></tr>
+        <tr><td><strong>B) Stützleistung</strong></td><td>ja</td><td><strong>indirekte</strong> Wertsteigerung für den Kunden</td><td>Rüsten, innerbetriebliche Logistik, Sicherheitspuffer</td></tr>
+        <tr><td><strong>C) Blindleistung</strong></td><td>nein</td><td>weder direkte noch indirekte Wertsteigerung; entsteht bei <strong>nicht optimaler Planung</strong></td><td>ungeplante Zwischenlagerung, Rückfragen, Sicherheitspuffer</td></tr>
+        <tr><td><strong>D) Fehlleistung</strong></td><td>war als Nutz- oder Stützleistung geplant</td><td>durch einen <strong>Fehler nicht verwertbar</strong></td><td>fehlerhaftes Produkt, Ausschuss, Stillstandzeiten</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="block achtung" data-notiz="ach-blind-fehl">
+    <div class="b-label">Typische Verwechslung: Blind- oder Fehlleistung?</div>
+    <p>Beide sind ungeplant und beide kosten Geld – der Unterschied liegt in der Ursache. <strong>Blindleistung entsteht durch schlechte Planung:</strong> Es wurde gearbeitet, aber die Arbeit war überflüssig (die Rückfrage, weil die Zeichnung unklar war). <strong>Fehlleistung entsteht durch einen Fehler in der Ausführung:</strong> Es wurde richtige Arbeit geleistet, sie ist aber unbrauchbar geworden (der Ausschuss).</p>
+    <p>Aufgepasst beim <strong>Sicherheitspuffer</strong>: Er taucht im Skript in beiden Zeilen auf. Geplant und bewusst dimensioniert ist er Stützleistung. Wo er nur aus Misstrauen gegenüber der eigenen Planung entsteht, ist er Blindleistung. Die Unterscheidung ist eine Bewertungsfrage – <em>im Unterricht nachfragen</em>, wie Plab das in Prüfungsfällen abgegrenzt haben will.</p>
+  </div>
+
+  <div class="block pruefung" data-notiz="pru-leistungsarten">
+    <div class="b-label">So kommt das in der Prüfung</div>
+    <p>Am häufigsten als Zuordnungsaufgabe: „Ordnen Sie die beschriebenen Tätigkeiten den vier Leistungsarten zu und begründen Sie Ihre Zuordnung.“ Die Begründung zählt mehr als das Etikett – schreibe immer dazu, <strong>ob die Tätigkeit geplant war</strong> und <strong>ob sie Wert schafft</strong>. Daran hängt die zweite übliche Teilfrage nach Maßnahmen, für die die Handlungsregel gilt: Blindleistung minimieren, Fehlleistung eliminieren.</p>
+  </div>
+
+  <div class="abfrage-liste">
+    <div class="abfrage-kopf">Selbstabfrage</div>
+    <details class="abfrage"><summary>Nenne die vier Leistungsarten und sage bei jeder, ob sie geplant ist.</summary>
+      <div class="antwort"><p>Nutzleistung (geplant, direkte Wertsteigerung), Stützleistung (geplant, indirekte Wertsteigerung), Blindleistung (ungeplant, keine Wertsteigerung), Fehlleistung (war als Nutz- oder Stützleistung geplant, ist durch einen Fehler nicht verwertbar).</p></div></details>
+    <details class="abfrage"><summary>Worin unterscheiden sich Blind- und Fehlleistung?</summary>
+      <div class="antwort"><p>Blindleistung entsteht aus nicht optimaler Planung – die Arbeit war überflüssig (Rückfrage, ungeplante Zwischenlagerung). Fehlleistung entsteht aus einem Fehler in der Ausführung – geplante Arbeit ist unbrauchbar geworden (Ausschuss, Stillstand).</p></div></details>
+    <details class="abfrage"><summary>Wie lautet die Handlungsregel für wertneutrale und wertsenkende Prozessschritte?</summary>
+      <div class="antwort"><p>Wertneutrale Schritte minimieren, wertsenkende Schritte eliminieren.</p></div></details>
+    <details class="abfrage"><summary>Nenne je zwei Beispiele für Nutz- und für Stützleistung.</summary>
+      <div class="antwort"><p>Nutzleistung: Konstruktion, Entwicklung, Montage, Einkauf und Verkauf. Stützleistung: Rüsten, innerbetriebliche Logistik, geplanter Sicherheitspuffer.</p></div></details>
+    <details class="abfrage"><summary>Welche drei Wertkategorien unterscheidet die wertschöpfungsorientierte Kostenrechnung?</summary>
+      <div class="antwort"><p>Wertsteigernde, wertneutrale und wertsenkende Prozessschritte – wertneutrale werden minimiert, wertsenkende eliminiert.</p></div></details>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════ -->
+<section class="abschnitt" id="prozesswirkungsgrad" data-gruppe="Prozessmanagement">
+  <div class="ab-kopf"><h2><span class="ab-nr">1.1.12</span>Den Prozesswirkungsgrad berechnen</h2></div>
+
+  <div class="block einstieg" data-notiz="ein-wirkungsgrad">
+    <div class="b-label">Worum es geht</div>
+    <p>Die vier Leistungsarten sind zunächst nur ein Etikett je Tätigkeit. Solange es dabei bleibt, diskutiert man im Kreis: Der eine findet die Wartezeit schlimm, der andere findet sie normal. Sobald du die Etiketten aber zusammenzählst und ins Verhältnis zur Gesamtleistung setzt, entsteht eine <strong>Zahl</strong> – und über Zahlen lässt sich entscheiden. Diese Zahl heißt Prozesswirkungsgrad.</p>
+  </div>
+
+  <p>Das Skript sagt zur Berechnung: Die Ermittlung erfolgt durch <strong>Zuordnung der einzelnen Leistungsarten im Verhältnis zur Gesamtleistung</strong>. Man rechnet also den Anteil der wertschaffenden Leistung an der gesamten aufgewendeten Leistung aus.</p>
+
+  <div class="formel" data-notiz="formel-prozesswirkungsgrad">
+    <div class="formel-kopf"><span class="f-tag">Formel</span><span class="f-name">Prozesswirkungsgrad</span></div>
+    <div class="formel-koerper">
+      <div class="eq">Prozesswirkungsgrad = (Nutzleistung + Stützleistung) ÷ Gesamtleistung × 100</div>
+      <div class="eq">enger Wirkungsgrad = Nutzleistung ÷ Gesamtleistung × 100</div>
+      <div class="f-erklaerung">Als „Leistung“ setzt man die Größe an, in der der Prozess erfasst wurde – meist Zeit (Minuten, Stunden), manchmal Kosten. Die <strong>weite</strong> Variante zählt Nutz- und Stützleistung zusammen, weil beide geplant und wertsteigernd sind. Die <strong>enge</strong> Variante zählt nur die direkte Wertsteigerung und fällt deshalb immer niedriger aus.</div>
+    </div>
+  </div>
+
+  <div class="block achtung" data-notiz="ach-formel-herkunft">
+    <div class="b-label">Zur Quelle dieser Formel</div>
+    <p>Das Skript nennt das <em>Vorgehen</em> (Verhältnis der Leistungsarten zur Gesamtleistung), schreibt aber keine Formel aus. Die beiden Varianten oben sind die im Fach übliche Umsetzung dieses Satzes. Wenn in der Prüfung nicht dabeisteht, welche gemeint ist, <strong>schreibe deinen Ansatz hin</strong> – „Nutz + Stütz im Verhältnis zur Gesamtleistung“ –, dann ist der Rechenweg nachvollziehbar. <em>Im Unterricht nachfragen</em>, welche Variante Plab in Klausuren erwartet.</p>
+  </div>
+
+  <div class="block beispiel" data-notiz="bsp-monteur-zahlen">
+    <div class="b-label">Der Fall: Montageauftrag bei einem Anlagenbauer</div>
+    <p>Ein Auftrag wurde über 400 Minuten aufgezeichnet: Montage und Endprüfung im Kundenauftrag <strong>150 min</strong> · Rüsten, Materialbereitstellung und innerbetrieblicher Transport <strong>110 min</strong> · ungeplante Zwischenlagerung und Rückfragen wegen unklarer Zeichnung <strong>90 min</strong> · Nacharbeit an Ausschussteilen und Maschinenstillstand <strong>50 min</strong>.</p>
+  </div>
+
+  <div class="schritte" data-notiz="rechnung-prozesswirkungsgrad">
+    <div class="schritt"><div class="s-nr">1</div><div class="s-txt">Zuordnen: Nutzleistung 150 · Stützleistung 110 · Blindleistung 90 · Fehlleistung 50</div></div>
+    <div class="s-warum">Die Montage steigert den Wert direkt (Nutz). Rüsten und innerbetriebliche Logistik stehen wörtlich als Stützleistung im Skript. Ungeplante Zwischenlagerung und Rückfragen sind die Standardbeispiele für Blindleistung, Ausschuss und Stillstand die für Fehlleistung.</div>
+    <div class="schritt"><div class="s-nr">2</div><div class="s-txt">Gesamtleistung: 150 + 110 + 90 + 50 = 400 min</div></div>
+    <div class="s-warum">Die Summe muss die vollständige erfasste Zeit ergeben. Geht sie nicht auf, fehlt eine Tätigkeit – dann ist das Ergebnis geschönt.</div>
+    <div class="schritt"><div class="s-nr">3</div><div class="s-txt">Wertschaffender Anteil: 150 + 110 = 260 min</div></div>
+    <div class="s-warum">Nutz- und Stützleistung zusammen: beide waren geplant und beide steigern den Wert – die eine direkt, die andere indirekt.</div>
+    <div class="schritt"><div class="s-nr">4</div><div class="s-txt">Prozesswirkungsgrad: 260 ÷ 400 × 100 = <strong>65 %</strong></div></div>
+    <div class="s-warum">Von 400 bezahlten Minuten waren 260 sinnvoll. 140 Minuten – gut ein Drittel – sind ungewollte Prozesskosten.</div>
+    <div class="schritt"><div class="s-nr">5</div><div class="s-txt">Enger Wirkungsgrad: 150 ÷ 400 × 100 = <strong>37,5 %</strong></div></div>
+    <div class="s-warum">Nur die direkte Wertsteigerung. Diese Zahl ist unbequem, aber sie zeigt, wie wenig der reinen Arbeitszeit tatsächlich beim Kunden ankommt.</div>
+    <div class="schritt fertig"><div class="s-nr">✓</div><div class="s-txt">Nach Maßnahmen: Fehlleistung auf 0, Blindleistung halbiert → 260 ÷ 305 × 100 ≈ <strong>85,2 %</strong></div></div>
+    <div class="s-warum">Rechenweg: neue Gesamtleistung = 400 − 50 (Fehlleistung eliminiert) − 45 (halbe Blindleistung) = 305 min. Nutz- und Stützleistung bleiben unverändert bei 260. Der Wirkungsgrad springt um mehr als 20 Punkte – <strong>ohne dass jemand schneller arbeiten musste</strong>. Genau das ist die Botschaft dieser Rechnung.</div>
+  </div>
+
+  <div class="aufgabe" data-notiz="aufg-wirkungsgrad">
+    <div class="aufgabe-kopf"><span class="tag">Aufgabe</span>Prozesswirkungsgrad im Wareneingang<span class="punkte">10 Pkt.</span></div>
+    <div class="aufgabe-text">
+      <p>Für einen Wareneingangsprozess wurden je Lkw folgende Zeiten aufgenommen: Entladen und Vereinnahmen der Ware 60 min · Prüfen und Buchen im ERP 30 min · Bereitstellen und Einlagern (innerbetrieblicher Transport) 40 min · Wartezeit, weil die Rampe belegt war 45 min · Nachzählen, weil der Lieferschein nicht mit der Ware übereinstimmte 25 min.</p>
+      <p>a) Ordnen Sie jede Position einer Leistungsart zu. b) Berechnen Sie den Prozesswirkungsgrad. c) Nennen Sie je eine Maßnahme gegen die Blind- und die Fehlleistung.</p>
+    </div>
+    <button class="loesung-btn"></button>
+    <div class="loesung">
+      <p><strong>a)</strong> Entladen und Vereinnahmen 60 min = Nutzleistung (Kernleistung des Wareneingangs). Prüfen und Buchen 30 min = Nutzleistung (ohne Buchung ist die Ware nicht verfügbar). Bereitstellen und Einlagern 40 min = Stützleistung (innerbetriebliche Logistik). Wartezeit an der Rampe 45 min = Blindleistung (Planungsfehler, keine Wertsteigerung). Nachzählen wegen falschem Lieferschein 25 min = Fehlleistung (Fehler des Lieferanten macht geplante Arbeit unbrauchbar und erzwingt Wiederholung).</p>
+      <p><strong>b)</strong> Gesamtleistung = 60 + 30 + 40 + 45 + 25 = 200 min. Nutz + Stütz = 60 + 30 + 40 = 130 min. Prozesswirkungsgrad = 130 ÷ 200 × 100 = <strong>65 %</strong>.</p>
+      <p><strong>c)</strong> Gegen die Blindleistung: Zeitfenstersteuerung für Anlieferungen, damit Rampen nicht doppelt belegt sind. Gegen die Fehlleistung: elektronische Lieferavisierung (EDI) und Lieferantenbewertung, damit Lieferschein und Ware übereinstimmen.</p>
+      <p class="hinweis-klein">Hinweis zur Bewertung: Auch andere begründete Zuordnungen können richtig sein – z. B. „Prüfen und Buchen“ als Stützleistung. Entscheidend ist die Begründung.</p>
+    </div>
+  </div>
+
+  <div class="block pruefung" data-notiz="pru-prozesswirkungsgrad">
+    <div class="b-label">So kommt das in der Prüfung</div>
+    <p>Ein Klassiker in Plabs Prüfungsteil, weil er Analyse und Bewertung in einer Aufgabe verbindet. Typischer Dreischritt: <strong>zuordnen – rechnen – Maßnahmen ableiten</strong>. Schreibe die Zuordnungstabelle immer mit hin, auch wenn nur nach dem Wirkungsgrad gefragt ist – dafür gibt es Teilpunkte, und bei einem Rechenfehler rettet sie dir den Ansatz. Für die Maßnahmen gilt die Handlungsregel: Blindleistung <strong>minimieren</strong>, Fehlleistung <strong>eliminieren</strong>.</p>
+  </div>
+
+  <div class="abfrage-liste">
+    <div class="abfrage-kopf">Selbstabfrage</div>
+    <details class="abfrage"><summary>Wie ermittelt man den Prozesswirkungsgrad?</summary>
+      <div class="antwort"><p>Durch Zuordnung der Leistungsarten im Verhältnis zur Gesamtleistung: (Nutzleistung + Stützleistung) ÷ Gesamtleistung × 100.</p></div></details>
+    <details class="abfrage"><summary>Was unterscheidet den engen vom weiten Wirkungsgrad?</summary>
+      <div class="antwort"><p>Der weite Wirkungsgrad zählt Nutz- und Stützleistung zusammen, weil beide geplant und wertsteigernd sind. Der enge zählt nur die Nutzleistung, also die direkte Wertsteigerung – er fällt deshalb immer niedriger aus.</p></div></details>
+    <details class="abfrage"><summary>Ein Prozess dauert 500 min: 200 Nutz, 150 Stütz, 100 Blind, 50 Fehl. Wie hoch ist der Prozesswirkungsgrad?</summary>
+      <div class="antwort"><p>(200 + 150) ÷ 500 × 100 = 70 %. Der enge Wirkungsgrad läge bei 200 ÷ 500 × 100 = 40 %.</p></div></details>
+    <details class="abfrage"><summary>Warum steigt der Wirkungsgrad, wenn Fehlleistung eliminiert wird, obwohl Nutz- und Stützleistung gleich bleiben?</summary>
+      <div class="antwort"><p>Weil die Gesamtleistung im Nenner kleiner wird. Derselbe wertschaffende Anteil verteilt sich auf weniger Gesamtzeit – im Beispiel steigt der Wirkungsgrad von 65 % auf rund 85 %, ohne dass jemand schneller arbeiten musste.</p></div></details>
+    <details class="abfrage"><summary>Welche Kontrolle machst du, bevor du das Ergebnis hinschreibst?</summary>
+      <div class="antwort"><p>Die Summe aus Nutz-, Stütz-, Blind- und Fehlleistung muss exakt die erfasste Gesamtleistung ergeben. Geht sie nicht auf, fehlt eine Tätigkeit und das Ergebnis ist geschönt.</p></div></details>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════ -->
+<section class="abschnitt" id="toyota-3m" data-gruppe="Prozessmanagement">
+  <div class="ab-kopf"><h2><span class="ab-nr">1.1.13</span>Das Toyota-3M-Modell: Muda, Mura, Muri</h2></div>
+
+  <div class="block einstieg" data-notiz="ein-3m">
+    <div class="b-label">Worum es geht</div>
+    <p>Die Leistungsarten sagen dir, <em>wie viel</em> in einem Prozess verloren geht. Sie sagen dir nicht, <em>warum</em>. Genau diese Lücke füllt ein Modell aus dem Toyota-Produktionssystem: Es benennt drei Ursachenfamilien für Verluste. Alle drei beginnen im Japanischen mit „Mu“ – daher der Name 3M. Und sie hängen zusammen: Überlastung erzeugt Ungleichmäßigkeit, Ungleichmäßigkeit erzeugt Verschwendung.</p>
+  </div>
+
+  <div class="block achtung" data-notiz="ach-3m-herkunft">
+    <div class="b-label">Zur Quelle</div>
+    <p>Das 3M-Modell stand in der <strong>vorherigen Fassung des Foliensatzes</strong> (dort Folie 45) und ist in der Revision 03/26 nicht mehr als eigene Folie enthalten. Es passt inhaltlich unmittelbar hinter die Leistungsarten und wird in Prüfungsfällen zur Begründung von Verbesserungsmaßnahmen gern verlangt. Lerne es mit – aber <em>im Unterricht nachfragen</em>, ob es prüfungsrelevant bleibt.</p>
+  </div>
+
+  <div class="raster" data-notiz="raster-3m">
+    <div class="karte red">
+      <div class="k-titel">Muda – Verschwendung</div>
+      <div class="k-text">Alles, was Ressourcen verbraucht, ohne Wert zu schaffen. Sieben Arten: <strong>Überproduktion · Wartezeiten · unnötiger Transport · unnötige Bewegung · zu hohe Bestände · unnötige oder falsche Prozesse · Produktionsfehler und Nacharbeit</strong>.</div>
+    </div>
+    <div class="karte amber">
+      <div class="k-titel">Mura – Ungleichmäßigkeit</div>
+      <div class="k-text">Unausgewogenheit in der Kette: Prozesse von Maschinen oder Mitarbeitern dauern unterschiedlich lang oder werden unterschiedlich stark belastet. <em>Folge: Leerzeiten an der einen, Warteschlangen an der anderen Stelle.</em></div>
+    </div>
+    <div class="karte purple">
+      <div class="k-titel">Muri – Überlastung</div>
+      <div class="k-text">Überbeanspruchung von Maschinen oder Menschen über die vernünftige Grenze hinaus. <em>Folge: Produktionsfehler, Nacharbeit, Ausfälle, Krankenstand.</em></div>
+    </div>
+  </div>
+
+  <div class="block def" data-notiz="def-muda">
+    <div class="b-label">Definition</div>
+    <div class="b-term">Muda (Verschwendung)</div>
+    <p>Jede Tätigkeit, die <strong>Ressourcen verbraucht, ohne den Wert für den Kunden zu erhöhen</strong>. In der Sprache des vorigen Abschnitts: Muda ist das, was als Blind- und Fehlleistung sichtbar wird. Die sieben Arten sind eine Checkliste – man geht mit ihnen durch den Prozess und hakt ab.</p>
+  </div>
+
+  <div class="block beispiel" data-notiz="bsp-3m-lager">
+    <div class="b-label">Beispiel: die drei M in einem Distributionslager</div>
+    <p><strong>Muri (Überlastung):</strong> Die Kommissionierer sollen an Aktionstagen 160 statt 110 Positionen pro Stunde schaffen. Die Vorgabe liegt über der Leistungsgrenze.</p>
+    <p><strong>Mura (Ungleichmäßigkeit):</strong> Weil sie hetzen, kommen die Aufträge in Schüben an der Packstation an – mal steht die Packerei still, mal stauen sich vierzig Behälter. Dieselbe Schicht hat Leerlauf <em>und</em> Warteschlange.</p>
+    <p><strong>Muda (Verschwendung):</strong> Aus beidem entsteht Verschwendung: Wartezeiten an der Packstation, Zwischenlagerung der gestauten Behälter, Fehlgriffe durch Hetze, Nacharbeit und Retouren.</p>
+    <p>Die Reihenfolge ist die Lehre: Wer nur die Verschwendung bekämpft (Muda), räumt die Symptome auf. Wer Überlastung und Ungleichmäßigkeit angeht (Muri und Mura), nimmt der Verschwendung die Ursache.</p>
+  </div>
+
+  <div class="block merk" data-notiz="merk-3m-kette">
+    <div class="b-label">Die Wirkungskette</div>
+    <p><strong>Muri → Mura → Muda.</strong> Überlastung erzeugt ungleichmäßige Abläufe, ungleichmäßige Abläufe erzeugen Verschwendung. Deshalb ist das 3M-Modell die Grundlage des <strong>Lean-Managements</strong>: Es zeigt, wo in Prozessen Verschwendung entsteht – und in welcher Reihenfolge man sie angeht.</p>
+  </div>
+
+  <div class="block achtung" data-notiz="ach-3m-verwechslung">
+    <div class="b-label">Typische Verwechslung</div>
+    <p>Die drei Begriffe klingen ähnlich und werden regelmäßig vertauscht. Merke dir je ein Stichwort: <strong>Muda = zu viel Unnützes</strong> (die sieben Arten), <strong>Mura = zu ungleich</strong> (Schwankung, Takt), <strong>Muri = zu viel für einen</strong> (Überlastung). Wenn du im Prüfungstext „schwankende Auslastung“ liest, ist es Mura; bei „Überstunden und Maschinen am Limit“ ist es Muri.</p>
+  </div>
+
+  <div class="block pruefung" data-notiz="pru-3m">
+    <div class="b-label">So kommt das in der Prüfung</div>
+    <p>Wenn es drankommt, dann als Analysefrage zu einem Fall: „Ordnen Sie die geschilderten Probleme dem 3M-Modell zu und leiten Sie Maßnahmen ab.“ Nenne bei Muda immer mindestens drei der sieben Arten – vor allem Überproduktion, Wartezeiten und zu hohe Bestände, weil sie in Logistikfällen am häufigsten vorkommen.</p>
+  </div>
+
+  <div class="abfrage-liste">
+    <div class="abfrage-kopf">Selbstabfrage</div>
+    <details class="abfrage"><summary>Wofür stehen Muda, Mura und Muri?</summary>
+      <div class="antwort"><p>Muda = Verschwendung, Mura = Ungleichmäßigkeit, Muri = Überlastung.</p></div></details>
+    <details class="abfrage"><summary>Nenne fünf der sieben Arten von Muda.</summary>
+      <div class="antwort"><p>Überproduktion, Wartezeiten, unnötiger Transport, unnötige Bewegung, zu hohe Bestände, unnötige oder falsche Prozesse, Produktionsfehler und Nacharbeit (fünf davon genügen).</p></div></details>
+    <details class="abfrage"><summary>Wie hängen die drei M zusammen?</summary>
+      <div class="antwort"><p>Muri erzeugt Mura, Mura erzeugt Muda: Überlastung führt zu ungleichmäßigen Abläufen, ungleichmäßige Abläufe führen zu Verschwendung. Deshalb setzt man an Überlastung und Ungleichmäßigkeit an, nicht nur an den Symptomen.</p></div></details>
+    <details class="abfrage"><summary>Ein Lager hat montags Leerlauf und freitags Überstunden. Welches M ist das?</summary>
+      <div class="antwort"><p>Mura – Ungleichmäßigkeit der Auslastung. Die Folge ist beides zugleich: Leerzeiten und Warteschlangen. Gegenmaßnahme wäre eine Glättung der Auftragsannahme oder der Anlieferfenster.</p></div></details>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════ -->
+<section class="abschnitt" id="scm-bewertung" data-gruppe="Supply Chain">
+  <div class="ab-kopf"><h2><span class="ab-nr">1.1.14</span>Supply Chain Management analysieren und bewerten</h2></div>
+
+  <div class="block einstieg" data-notiz="ein-scm-plab">
+    <div class="b-label">Worum es geht</div>
+    <p>Was SCM ist, kennst du schon. Hier geht es um etwas anderes: Du sollst eine bestehende Lieferkette <strong>beurteilen</strong> – Vorteile benennen, Ziele prüfen, Schwachstellen finden. Plabs Folien sind deshalb anders geschnitten als Krouls: Sie listen nicht Managementebenen und Grundtypen auf, sondern <strong>Vorteile, Ziele und die Trennung von internem und externem SCM</strong>. Das sind Bewertungsraster, keine Beschreibungen.</p>
+  </div>
+
+  <p class="hinweis-klein">Die Grundlagen – Definition nach Lackes, die drei Managementebenen, Push und Pull, die drei Grundtypen – stehen in <a class="link" href="kroul-0-einfuehrung.html#scm">Kapitel 0, Abschnitt 0.12 „Supply Chain Management“</a>. Lies sie zuerst, wenn dir der Begriff noch nicht vertraut ist. Hier wird nicht wiederholt, sondern angewendet.</p>
+
+  <div class="block def" data-notiz="def-scm-plab">
+    <div class="b-label">Definition</div>
+    <div class="b-term">Supply Chain Management (Fassung Plab)</div>
+    <p>Die <strong>Verknüpfung und Optimierung aller logistischen Prozesse vom Lieferanten bis zum Kunden</strong> – und zwar in allen drei Prozessarten: <strong>physische Prozesse</strong>, <strong>Informationsprozesse</strong> und <strong>monetäre Prozesse</strong>.</p>
+    <p>Wichtig ist der Zusatz aus der Folie: Das SCM <strong>überwacht, steuert und regelt in beide Richtungen</strong>. Der Materialfluss läuft vom Lieferanten zum Kunden, der Informationsfluss in beide Richtungen – und beides muss gesteuert werden, nicht nur die Warenrichtung.</p>
+  </div>
+
+  <h3>Vorteile: woran man erkennt, dass SCM wirkt</h3>
+  <div class="tab" data-notiz="tab-scm-vorteile">
+    <table>
+      <thead><tr><th>Vorteil laut Skript</th><th>Was er in der Praxis bedeutet</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Abbau von Redundanzen</strong></td><td>Doppelte Arbeit verschwindet: Wenn Lieferant und Kunde beide zählen, prüfen und erfassen, macht es künftig einer – und der andere übernimmt die Daten.</td></tr>
+        <tr><td><strong>Abstimmung aller Prozesse</strong></td><td>Übergaben passen zusammen: Verpackungseinheiten, Zeitfenster, Datenformate und Etiketten sind zwischen den Partnern vereinbart statt zufällig kompatibel.</td></tr>
+        <tr><td><strong>Optimierung der Durchlaufzeiten</strong></td><td>Liegezeiten an den Schnittstellen fallen weg. Der größte Zeitverlust in Ketten entsteht nicht bei der Arbeit, sondern beim Warten zwischen zwei Beteiligten.</td></tr>
+        <tr><td><strong>Verringerung des gebundenen Kapitals</strong></td><td>Weniger Sicherheitsbestände auf jeder Stufe, weil man der Information des Partners vertrauen kann statt sich abzusichern.</td></tr>
+        <tr><td><strong>Verwirklichung der logistischen Flussorientierung</strong></td><td>Die Kette wird als ein durchgehender Fluss gesteuert statt als Folge einzeln optimierter Abschnitte.</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3>Ziele: zwei Ebenen</h3>
+  <div class="raster-2" data-notiz="raster-scm-ziele">
+    <div class="karte green">
+      <div class="k-titel">Allgemeine Ziele</div>
+      <div class="k-text">Verbesserung von <strong>Effektivität und Effizienz</strong> (siehe Abschnitt 1.1.10) sowie <strong>Integration aller Unternehmensaktivitäten</strong> über drei Stufen: vorgelagerte Stufen, eigene Wertschöpfung, nachgelagerte Stufen.</div>
+    </div>
+    <div class="karte blue">
+      <div class="k-titel">Spezielle Ziele</div>
+      <div class="k-text">Orientierung am Endkunden (<strong>TQM</strong>) mit Steigerung der Kundenzufriedenheit und rascher, flexibler Anpassung an die Märkte · <strong>Verkürzung der Lieferzeiten</strong> · <strong>Optimierung der Produktionsabläufe</strong> · Vermeidung von <strong>„out of stock“</strong> und <strong>Bullwhip-Effekten</strong>.</div>
+    </div>
+  </div>
+
+  <div class="block merk" data-notiz="merk-scm-eff">
+    <div class="b-label">Der Bogen zum Prozessmanagement</div>
+    <p>Die allgemeinen SCM-Ziele sind wörtlich <strong>Effektivität und Effizienz</strong> – dieselben zwei Begriffe wie beim einzelnen Prozess, nur eine Ebene höher. SCM ist damit nichts anderes als Prozessmanagement über Unternehmensgrenzen hinweg. Wenn du diesen Satz in einer Prüfungsantwort unterbringst, zeigst du genau den Zusammenhang, auf den Plabs Kapitel hinausläuft.</p>
+  </div>
+
+  <h3>Internes und externes SCM</h3>
+  <p>Das Skript trennt die Zusammenarbeit in zwei Baustellen. Die eine liegt im eigenen Haus, die andere zwischen den Häusern – und beide müssen bearbeitet werden, sonst bleibt die Kette an einer Stelle hängen.</p>
+
+  <div class="tab" data-notiz="tab-scm-intern-extern">
+    <table>
+      <thead><tr><th>Internes SCM</th><th>Externes SCM</th></tr></thead>
+      <tbody>
+        <tr>
+          <td>Abstimmung der eigenen Bereiche entlang der Kette: <strong>Produktentwicklung · Beschaffung · Bestandsführung · Produktion · Vertrieb</strong>.</td>
+          <td>Gestaltung der Zusammenarbeit mit Kunden und Lieferanten: <strong>Regelungen über Rahmenverträge · klare Verantwortlichkeiten · kompatible Systeme · Win-win-Situationen für alle Betroffenen</strong>.</td>
+        </tr>
+        <tr>
+          <td>Leitfrage: <em>Ziehen unsere eigenen Abteilungen an einem Strang?</em></td>
+          <td>Leitfrage: <em>Ist die Zusammenarbeit so geregelt, dass sie auch dann hält, wenn es eng wird?</em></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="block beispiel" data-notiz="bsp-scm-bewertung">
+    <div class="b-label">Beispiel: eine Kette bewerten</div>
+    <p>Ein Hersteller von Gartengeräten arbeitet mit vier Zulieferern und einem Handelskunden. Die Bewertung fällt gemischt aus:</p>
+    <p><strong>Intern schwach:</strong> Der Vertrieb sagt Aktionsmengen zu, ohne die Bestandsführung zu informieren. Die Produktion erfährt von der Aktion aus dem Prospekt. Ergebnis: Sonderschichten und trotzdem Out-of-Stock.</p>
+    <p><strong>Extern teilweise gut:</strong> Mit zwei Zulieferern bestehen Rahmenverträge und ein gemeinsames Bestandsportal – dort sind Durchlaufzeiten und Bestände messbar gesunken. Die beiden anderen liefern auf Zuruf per E-Mail; dort ist die Kette nicht abgestimmt und die Sicherheitsbestände sind doppelt so hoch.</p>
+    <p><strong>Bewertung:</strong> Das externe SCM ist an zwei von vier Schnittstellen umgesetzt, das interne gar nicht. Die wirksamste Maßnahme liegt deshalb im eigenen Haus – ein abgestimmter Absatz- und Produktionsplan – und nicht bei den Lieferanten. Genau diese Priorisierung erwartet eine Bewertungsaufgabe.</p>
+  </div>
+
+  <div class="block achtung" data-notiz="ach-scm-intern-extern">
+    <div class="b-label">Typische Verwechslung</div>
+    <p>„SCM“ wird oft mit „Zusammenarbeit mit Lieferanten“ gleichgesetzt. Das ist nur die <strong>externe</strong> Hälfte. Die interne Hälfte – Abstimmung von Produktentwicklung, Beschaffung, Bestandsführung, Produktion und Vertrieb – wird in Prüfungsfällen häufig als die eigentliche Schwachstelle geschildert. Prüfe in einer Fallaufgabe immer beide Seiten.</p>
+  </div>
+
+  <div class="block pruefung" data-notiz="pru-scm-plab">
+    <div class="b-label">So kommt das in der Prüfung</div>
+    <p>In Plabs Teil selten als Definitionsfrage, meist als Bewertung: „Beurteilen Sie die Zusammenarbeit in der geschilderten Lieferkette und leiten Sie Maßnahmen ab.“ Baue die Antwort in drei Blöcken: (1) internes SCM prüfen, (2) externes SCM prüfen, (3) Maßnahmen mit Bezug auf die Vorteile – Redundanzen, Abstimmung, Durchlaufzeit, Kapitalbindung, Flussorientierung. Diese fünf Stichworte sind ein sicheres Punktegerüst.</p>
+  </div>
+
+  <div class="abfrage-liste">
+    <div class="abfrage-kopf">Selbstabfrage</div>
+    <details class="abfrage"><summary>Welche drei Prozessarten verknüpft das SCM?</summary>
+      <div class="antwort"><p>Physische Prozesse, Informationsprozesse und monetäre Prozesse – vom Lieferanten bis zum Kunden.</p></div></details>
+    <details class="abfrage"><summary>Nenne drei Vorteile des SCM.</summary>
+      <div class="antwort"><p>Abbau von Redundanzen, Abstimmung aller Prozesse, Optimierung der Durchlaufzeiten, Verringerung des gebundenen Kapitals, Verwirklichung der logistischen Flussorientierung (drei davon genügen).</p></div></details>
+    <details class="abfrage"><summary>Welche zwei allgemeinen Ziele verfolgt das SCM?</summary>
+      <div class="antwort"><p>Verbesserung von Effektivität und Effizienz sowie Integration aller Unternehmensaktivitäten – vorgelagerte Stufen, eigene Wertschöpfung, nachgelagerte Stufen.</p></div></details>
+    <details class="abfrage"><summary>Was gehört zum internen, was zum externen SCM?</summary>
+      <div class="antwort"><p>Intern: Abstimmung von Produktentwicklung, Beschaffung, Bestandsführung, Produktion und Vertrieb. Extern: Rahmenverträge, klare Verantwortlichkeiten, kompatible Systeme und Win-win-Situationen für alle Beteiligten.</p></div></details>
+    <details class="abfrage"><summary>Was bedeutet „das SCM regelt in beide Richtungen“?</summary>
+      <div class="antwort"><p>Der Materialfluss läuft vom Lieferanten zum Kunden, der Informationsfluss aber in beide Richtungen. Gesteuert und überwacht werden müssen beide Richtungen – Rückmeldungen sind ebenso Teil der Kette wie Aufträge.</p></div></details>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════ -->
+<section class="abschnitt" id="bullwhip-gegenmassnahmen" data-gruppe="Supply Chain">
+  <div class="ab-kopf"><h2><span class="ab-nr">1.1.15</span>Bullwhip-Effekt: Gründe erkennen, Gegenmaßnahmen ableiten</h2></div>
+
+  <div class="block einstieg" data-notiz="ein-bullwhip-plab">
+    <div class="b-label">Worum es geht</div>
+    <p>Ein Getränkehersteller sitzt nach einer Sommeraktion auf 40.000 Kästen, obwohl die Endkunden nur wenige Prozent mehr gekauft haben als sonst. Niemand hat einen Fehler gemacht. Jede Stufe der Kette hat vorsichtig geplant – und genau diese Vorsicht hat sich addiert. Das ist der Bullwhip-Effekt. In Plabs Prüfungsteil musst du ihn nicht nur beschreiben, sondern <strong>seine Ursachen im Fall wiedererkennen und passende Gegenmaßnahmen ableiten</strong>.</p>
+  </div>
+
+  <p class="hinweis-klein">Wie der Effekt Stufe für Stufe entsteht – mit vollständigem Zahlenablauf vom Endkunden bis zum Rohstofflieferanten – steht in <a class="link" href="kroul-0-einfuehrung.html#bullwhip">Kapitel 0, Abschnitt 0.13 „Der Bullwhip-Effekt“</a>. Wenn dir der Mechanismus noch nicht klar ist, arbeite ihn dort zuerst durch. Hier geht es um Ursachenanalyse und Maßnahmen.</p>
+
+  <div class="block def" data-notiz="def-bullwhip-plab">
+    <div class="b-label">Definition</div>
+    <div class="b-term">Bullwhip-Effekt (Fassung Plab)</div>
+    <p>Ein <strong>Peitscheneffekt entlang der Supply Chain, der zu immer höheren Beständen entlang der gesamten Lieferkette führt</strong>.</p>
+    <p class="hinweis-klein">Beachte die Betonung dieser Fassung: Sie stellt die <strong>Bestände</strong> in den Mittelpunkt, nicht die Bestellmengen. Das passt zu Plabs Blickwinkel – bewertet wird, was der Effekt kostet: gebundenes Kapital, Fläche, Abschriften.</p>
+  </div>
+
+  <h3>Die vier Gründe</h3>
+  <div class="tab" data-notiz="tab-bullwhip-gruende">
+    <table>
+      <thead><tr><th>Grund laut Skript</th><th>Woran du ihn im Fall erkennst</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Aufschaukeln unterschiedlicher Bedarfsverläufe</strong></td><td>Jede Stufe plant mit einem eigenen Bedarfsverlauf – Handel rechnet in Wochen, Hersteller in Monaten, Rohstofflieferant in Quartalen. Die Verläufe passen nicht zueinander und verstärken sich.</td></tr>
+        <tr><td><strong>Aufschaukeln von Nachfrageänderungen</strong></td><td>Eine kleine Änderung beim Endkunden wird von Stufe zu Stufe mit einem Sicherheitszuschlag weitergereicht. Im Text stehen dann Formulierungen wie „vorsorglich wurde aufgerundet“.</td></tr>
+        <tr><td><strong>Informationsverluste innerhalb der Lieferkette</strong></td><td>Daten gehen an den Übergängen verloren oder kommen verspätet an: Abverkaufszahlen bleiben beim Handel, Bestellungen werden manuell übertragen, Formate passen nicht.</td></tr>
+        <tr><td><strong>Fehlende Vernetzung innerhalb der Lieferkette</strong></td><td>Es gibt gar keine Verbindung – jede Stufe sieht nur ihren direkten Nachbarn. Im Fall erkennbar an „Bestellungen per E-Mail“, „kein gemeinsames System“, „Absatzzahlen werden nicht geteilt“.</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="block achtung" data-notiz="ach-bullwhip-ursache">
+    <div class="b-label">Typische Verwechslung</div>
+    <p>Der Bullwhip-Effekt beschreibt <strong>nicht</strong> eine schwankende Endkundennachfrage. Die Endnachfrage ist im Musterfall nahezu konstant. Beschrieben wird die <strong>Verstärkung</strong> einer kleinen Schwankung entlang der Kette. Wer als Ursache „die Kunden kaufen unregelmäßig“ nennt, hat den Kern verfehlt – die Ursachen liegen in <em>Information und Planung</em>, nicht im Kundenverhalten.</p>
+  </div>
+
+  <h3>Gegenmaßnahmen – zwei Ebenen</h3>
+  <p>Das Skript trennt sauber zwischen Maßnahmen, die die Infrastruktur betreffen, und solchen, die die Zusammenarbeit betreffen. Für eine Prüfungsantwort ist diese Trennung Gold wert, weil du damit zwei Argumentationslinien hast.</p>
+
+  <div class="raster-2" data-notiz="raster-bullwhip-massnahmen">
+    <div class="karte blue">
+      <div class="k-titel">Allgemeine Gegenmaßnahmen (Technik und Struktur)</div>
+      <div class="k-text"><strong>Vernetzung der gesamten Supply Chain</strong> · <strong>Datenübermittlung in Echtzeit</strong> · Nutzung <strong>kompatibler Software in allen Instanzen</strong> entlang der Kette · Integration <strong>einheitlicher ERP-Systeme</strong>.</div>
+    </div>
+    <div class="karte green">
+      <div class="k-titel">Praktische Gegenmaßnahmen (Zusammenarbeit)</div>
+      <div class="k-text"><strong>Direkter Kontakt des Herstellers mit dem Einzelhandel</strong> · <strong>verbesserter Informationsfluss</strong> · <strong>direkte Bestellung des Verbrauchers beim Hersteller</strong> · insgesamt: enge Zusammenarbeit mit allen in der Lieferkette Beteiligten.</div>
+    </div>
+  </div>
+
+  <div class="block merk" data-notiz="merk-bullwhip-logik">
+    <div class="b-label">Warum genau diese Maßnahmen wirken</div>
+    <p>Alle Gegenmaßnahmen greifen an einer einzigen Stelle an: <strong>Sie verkürzen den Weg der Information.</strong> Vernetzung, Echtzeitdaten, kompatible Software und ein gemeinsames ERP sorgen dafür, dass jede Stufe die <em>echte</em> Endkundennachfrage sieht statt der bereits verfälschten Bestellung ihres Nachbarn. Direkter Kontakt zum Einzelhandel und Direktbestellung des Verbrauchers tun dasselbe – sie überspringen Stufen und damit Verstärker.</p>
+  </div>
+
+  <div class="block beispiel" data-notiz="bsp-bullwhip-massnahmen">
+    <div class="b-label">Beispiel: der Getränkehersteller räumt auf</div>
+    <p><strong>Ausgangslage:</strong> Der Hersteller sieht nur die Bestellungen von drei Großhändlern. Die Aktionsplanung des Handels erfährt er aus dem Prospekt. Bestellt wird per Fax und E-Mail, jeder Großhändler nutzt ein eigenes System.</p>
+    <p><strong>Maßnahme 1 (allgemein):</strong> Anbindung der Großhändler über eine gemeinsame Schnittstelle mit täglicher Übermittlung von Bestand und Abverkauf. Wirkung: Der Hersteller plant nach echtem Abverkauf, nicht nach Bestellungen – der Verstärker fällt weg.</p>
+    <p><strong>Maßnahme 2 (praktisch):</strong> Ein Key-Account-Manager arbeitet direkt mit den Einkäufern der Handelsketten und bekommt Aktionspläne zwölf Wochen im Voraus. Wirkung: Die Nachfragespitze ist bekannt, bevor sie entsteht – sie muss nicht mehr durch Sicherheitsbestände abgefedert werden.</p>
+    <p><strong>Bewertung:</strong> Nach zwei Saisons liegt der Fertigwarenbestand um 28 % niedriger bei gleicher Lieferbereitschaft. Die Verbesserung kam nicht aus dem Lager, sondern aus dem Informationsfluss.</p>
+  </div>
+
+  <div class="block pruefung" data-notiz="pru-bullwhip-plab">
+    <div class="b-label">So kommt das in der Prüfung</div>
+    <p>Die häufigste Form: „Im geschilderten Fall treten stark schwankende Bestände auf. Benennen Sie den Effekt, erläutern Sie zwei Ursachen und schlagen Sie drei Gegenmaßnahmen vor.“ Vergiss beim Vorschlagen die Begründung nicht – jede Maßnahme braucht den Satz, <em>welche</em> Ursache sie beseitigt. Und nutze beide Ebenen: eine technische (Echtzeitdaten, gemeinsames ERP) und eine der Zusammenarbeit (direkter Kontakt zum Handel). Das zeigt Breite und bringt sicher Punkte.</p>
+  </div>
+
+  <div class="abfrage-liste">
+    <div class="abfrage-kopf">Selbstabfrage</div>
+    <details class="abfrage"><summary>Wie definiert Plabs Skript den Bullwhip-Effekt?</summary>
+      <div class="antwort"><p>Als Peitscheneffekt entlang der Supply Chain, der zu immer höheren Beständen entlang der gesamten Lieferkette führt.</p></div></details>
+    <details class="abfrage"><summary>Nenne die vier Gründe für den Bullwhip-Effekt.</summary>
+      <div class="antwort"><p>Aufschaukeln unterschiedlicher Bedarfsverläufe, Aufschaukeln von Nachfrageänderungen, Informationsverluste innerhalb der Lieferkette, fehlende Vernetzung innerhalb der Lieferkette.</p></div></details>
+    <details class="abfrage"><summary>Nenne die vier allgemeinen Gegenmaßnahmen.</summary>
+      <div class="antwort"><p>Vernetzung der gesamten Supply Chain, Datenübermittlung in Echtzeit, kompatible Software in allen Instanzen, Integration einheitlicher ERP-Systeme.</p></div></details>
+    <details class="abfrage"><summary>Nenne drei praktische Gegenmaßnahmen.</summary>
+      <div class="antwort"><p>Direkter Kontakt des Herstellers mit dem Einzelhandel, verbesserter Informationsfluss, direkte Bestellung des Verbrauchers beim Hersteller – insgesamt enge Zusammenarbeit aller Beteiligten.</p></div></details>
+    <details class="abfrage"><summary>Was haben alle Gegenmaßnahmen gemeinsam?</summary>
+      <div class="antwort"><p>Sie verkürzen den Weg der Information. Jede Stufe soll die echte Endkundennachfrage sehen statt der bereits verfälschten Bestellung ihres direkten Nachbarn.</p></div></details>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════ -->
+<section class="abschnitt" id="umfeldfaktoren" data-gruppe="Umfeld &amp; Systemfaktoren">
+  <div class="ab-kopf"><h2><span class="ab-nr">1.1.16</span>Umfeldfaktoren in der Logistik</h2></div>
+
+  <div class="block einstieg" data-notiz="ein-umfeld">
+    <div class="b-label">Worum es geht</div>
+    <p>Ein mittelständischer Logistiker verliert innerhalb eines Jahres zwei Kunden, findet keine Fahrer, muss in Telematik investieren und zahlt mehr Maut. Kein einziges dieser Probleme ist im eigenen Betrieb entstanden – alle kommen von außen. Genau das sind <strong>Umfeldfaktoren</strong>: Einflüsse auf die Logistikketten und deren Wirkung innerhalb der Supply Chain. Man kann sie nicht abstellen, aber man muss sie kennen, um auf sie zu reagieren.</p>
+  </div>
+
+  <div class="block def" data-notiz="def-umfeldfaktoren">
+    <div class="b-label">Definition</div>
+    <div class="b-term">Umfeldfaktoren</div>
+    <p>Einflüsse von <strong>außerhalb des Unternehmens</strong> auf die Logistikketten und deren Wirkung innerhalb der Supply Chain. Das Skript ordnet sie acht Märkten bzw. Umfeldern zu (A bis H). Kennzeichen: Das Unternehmen kann sie <strong>nicht gestalten, nur beantworten</strong>.</p>
+  </div>
+
+  <div class="tab" data-notiz="tab-umfeld-acht">
+    <table>
+      <thead><tr><th>Umfeld</th><th>Was von dort kommt</th></tr></thead>
+      <tbody>
+        <tr><td><strong>A) Absatzmarkt</strong></td><td>Individualisierung (und damit steigende Komplexität) · Beschleunigung des Produktlebenszyklus · steigende Serviceanforderungen · Internationalisierung · zunehmende Globalisierung · steigende Nachhaltigkeitsanforderungen · Informationstransparenz · Bestandsreduktion · Lieferkettenunterbrechungen</td></tr>
+        <tr><td><strong>B) Beschaffungsmarkt</strong></td><td>Veränderungen der Sourcing-Strategien: Single / Dual / Multiple Sourcing, Regional bzw. Local, Modular, Global · und die Spannung zwischen den Impulsen des Absatzmarktes und dem tatsächlichen Zustand des Beschaffungsmarktes</td></tr>
+        <tr><td><strong>C) Technologiemarkt</strong></td><td>Industrie 4.0 bzw. Logistik 4.0 · Big-Data-Konzepte und Cloud-Lösungen · neue Technologien: RFID, Tracking, teil- und vollautonome Systeme</td></tr>
+        <tr><td><strong>D) Arbeitsmarkt</strong></td><td>Demografischer Wandel in den Industrienationen · Work-Life-Balance nicht immer passend umsetzbar · schlechtes Image der vergangenen Jahrzehnte (Fernfahrerimage)</td></tr>
+        <tr><td><strong>E) Wettbewerbssituation</strong></td><td>Logistik als strategischer Wettbewerbsvorteil · Logistik als Teil der Unternehmensstrategie · Logistik als integratives Management</td></tr>
+        <tr><td><strong>F) Gesellschaft und Ökologie</strong></td><td>Umweltschutz greift immer tiefer in die Logistikketten ein · Nachhaltigkeit als Wettbewerbsfaktor · Redistributionslogistik als Erwartung der Kunden</td></tr>
+        <tr><td><strong>G) Kapitalmarkt</strong></td><td>Wachsende Einflüsse von Inflation und Konjunktur · schwieriges Kapitalmarktumfeld · Logistik als Unterstützungsprozess für Investoren wenig attraktiv</td></tr>
+        <tr><td><strong>H) Staatliches Umfeld</strong></td><td>Regulierungsdichte des Staates und Auflagen der EU · finanzielle Risiken schwer kalkulierbar · Abgaben und Steuern</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="block def" data-notiz="def-sourcing">
+    <div class="b-label">Begriffe</div>
+    <div class="b-term">Sourcing-Strategien</div>
+    <p><strong>Single Sourcing:</strong> bewusst nur ein Lieferant je Teil – günstig und eng abgestimmt, aber ohne Ausweichmöglichkeit.<br>
+    <strong>Dual Sourcing:</strong> zwei Lieferanten – etwas teurer, dafür ein zweites Standbein.<br>
+    <strong>Multiple Sourcing:</strong> viele Lieferanten im Wettbewerb – maximale Sicherheit, aber hoher Verwaltungsaufwand.<br>
+    <strong>Regional / Local Sourcing:</strong> Beschaffung in der Nähe – kurze Wege, schnelle Reaktion, weniger CO₂.<br>
+    <strong>Modular Sourcing:</strong> Einkauf ganzer Baugruppen statt Einzelteile – weniger Teile zu disponieren, dafür große Abhängigkeit vom Modullieferanten.<br>
+    <strong>Global Sourcing:</strong> weltweiter Einkauf – niedrigste Preise, längste und störanfälligste Wege.</p>
+  </div>
+
+  <div class="block beispiel" data-notiz="bsp-umfeld-wirkung">
+    <div class="b-label">Beispiel: wie zwei Umfelder zusammen wirken</div>
+    <p>Der <strong>Absatzmarkt</strong> verlangt vom Getränkehersteller mehr Varianten: sechs Sorten statt zwei, dazu Sondereditionen mit kurzer Laufzeit. Das erhöht die Komplexität – mehr Artikel, kleinere Lose, mehr Rüstvorgänge.</p>
+    <p>Gleichzeitig macht der <strong>Beschaffungsmarkt</strong> Probleme: Der einzige Lieferant für die Spezialflaschen (Single Sourcing) hat neun Monate Vorlauf. Der Impuls des Absatzmarktes – schnell und variantenreich – trifft auf einen Beschaffungsmarkt, der genau das nicht hergibt.</p>
+    <p><strong>Antwort des Unternehmens:</strong> Wechsel zu Dual Sourcing bei den Flaschen und Standardisierung des Etiketts, damit die Variante möglichst spät entsteht. Beides sind Reaktionen auf Umfeldfaktoren, die man selbst nicht ändern kann.</p>
+  </div>
+
+  <div class="block merk" data-notiz="merk-absatz-beschaffung">
+    <div class="b-label">Der Satz, auf den das Skript hinauswill</div>
+    <p><strong>Die Impulse des Absatzmarktes treffen auf den Zustand des Beschaffungsmarktes.</strong> Der Absatzmarkt sagt, was der Kunde will; der Beschaffungsmarkt sagt, was überhaupt zu bekommen ist. Die Logistik steht dazwischen und muss beides zusammenbringen – das ist die Kurzfassung ihrer Aufgabe im Umfeld.</p>
+  </div>
+
+  <div class="block achtung" data-notiz="ach-umfeld-system">
+    <div class="b-label">Typische Verwechslung</div>
+    <p><strong>Umfeldfaktoren kommen von außen, Systemfaktoren von innen.</strong> Der Fachkräftemangel am Arbeitsmarkt ist ein <em>Umfeldfaktor</em> – dagegen kann das Unternehmen nichts tun. Die Qualifikation und Motivation der eigenen Mitarbeiter ist ein <em>Systemfaktor</em> (nächster Abschnitt) – die kann es gestalten. In Prüfungsaufgaben werden beide gemischt geschildert, und die Trennung ist oft schon die halbe Antwort.</p>
+  </div>
+
+  <div class="block pruefung" data-notiz="pru-umfeld">
+    <div class="b-label">So kommt das in der Prüfung</div>
+    <p>Meist als Analyseauftrag zu Beginn einer Situationsbeschreibung: „Analysieren Sie die Einflüsse auf die Logistik der XY GmbH.“ Arbeite die acht Umfelder als Raster ab – auch wenn nur vier davon im Text vorkommen. Nenne jeweils <strong>Umfeld, konkreten Einfluss aus dem Text und Wirkung auf die Logistikkette</strong>. Das dritte Element wird oft vergessen und ist genau das, wofür die Punkte vergeben werden.</p>
+  </div>
+
+  <div class="abfrage-liste">
+    <div class="abfrage-kopf">Selbstabfrage</div>
+    <details class="abfrage"><summary>Was sind Umfeldfaktoren?</summary>
+      <div class="antwort"><p>Einflüsse von außerhalb des Unternehmens auf die Logistikketten und deren Wirkung innerhalb der Supply Chain. Das Unternehmen kann sie nicht gestalten, sondern nur darauf reagieren.</p></div></details>
+    <details class="abfrage"><summary>Nenne die acht Umfelder aus dem Skript.</summary>
+      <div class="antwort"><p>Absatzmarkt, Beschaffungsmarkt, Technologiemarkt, Arbeitsmarkt, Wettbewerbssituation, Gesellschaft und Ökologie, Kapitalmarkt, staatliches Umfeld.</p></div></details>
+    <details class="abfrage"><summary>Nenne vier Einflüsse aus dem Absatzmarkt.</summary>
+      <div class="antwort"><p>Individualisierung mit steigender Komplexität, Beschleunigung des Produktlebenszyklus, steigende Serviceanforderungen, Internationalisierung und Globalisierung, Nachhaltigkeitsanforderungen, Informationstransparenz, Bestandsreduktion, Lieferkettenunterbrechungen (vier davon genügen).</p></div></details>
+    <details class="abfrage"><summary>Worin unterscheiden sich Single, Dual und Multiple Sourcing?</summary>
+      <div class="antwort"><p>Single Sourcing: ein Lieferant je Teil – günstig und eng, aber ohne Ausweichmöglichkeit. Dual Sourcing: zwei Lieferanten als zweites Standbein. Multiple Sourcing: viele Lieferanten im Wettbewerb – sicher, aber verwaltungsaufwändig.</p></div></details>
+    <details class="abfrage"><summary>Warum ist die Logistik für Investoren laut Skript wenig attraktiv?</summary>
+      <div class="antwort"><p>Weil sie häufig als Unterstützungsprozess wahrgenommen wird – zusammen mit einem schwierigen Kapitalmarktumfeld sowie Inflations- und Konjunktureinflüssen erschwert das die Finanzierung von Logistikinvestitionen.</p></div></details>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════ -->
+<section class="abschnitt" id="systemfaktoren" data-gruppe="Umfeld &amp; Systemfaktoren">
+  <div class="ab-kopf"><h2><span class="ab-nr">1.1.17</span>Systemfaktoren in der Logistik</h2></div>
+
+  <div class="block einstieg" data-notiz="ein-systemfaktoren">
+    <div class="b-label">Worum es geht</div>
+    <p>Zwei Logistikbetriebe stehen im selben Umfeld – gleicher Markt, gleiche Gesetze, gleicher Fachkräftemangel. Trotzdem liefert einer zuverlässig und der andere nicht. Der Unterschied liegt in dem, was sie <strong>selbst in der Hand haben</strong>: Was für Güter sie bewegen, welche Ressourcen sie haben, wie sie organisiert sind und wie beweglich sie sind. Das sind die Systemfaktoren – die Innenseite zu den Umfeldfaktoren.</p>
+  </div>
+
+  <div class="block def" data-notiz="def-systemfaktoren">
+    <div class="b-label">Definition</div>
+    <div class="b-term">Systemfaktoren</div>
+    <p>Die <strong>gestaltbaren Größen innerhalb des Logistiksystems</strong>, die darüber entscheiden, wie leistungsfähig es ist. Das Skript gliedert sie in vier Blöcke: <strong>A) Produkteigenschaften</strong>, <strong>B) Ressourcen</strong> (B1 bis B6), <strong>C) Aufbau- und Ablauforganisation</strong> und <strong>D) Flexibilität</strong>.</p>
+  </div>
+
+  <h3>A) Produkteigenschaften – das Gut bestimmt das System</h3>
+  <p>Bevor man über Technik und Personal redet, muss man wissen, <em>womit</em> man es zu tun hat. Das Skript nennt vier Eigenschaften, die zum Problem werden können, und sie erzwingen jeweils andere Lösungen.</p>
+
+  <div class="tab" data-notiz="tab-produkteigenschaften">
+    <table>
+      <thead><tr><th>Eigenschaft</th><th>Frage</th><th>Was daraus folgt</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Eigenschaften der Güter</strong></td><td>Geometrie, Gewicht, Empfindlichkeit, Sicherheitsanforderungen?</td><td>Sperrige Güter brauchen andere Regale und Fahrzeuge; Gefahrgut braucht Zulassungen, getrennte Lagerung und geschultes Personal.</td></tr>
+        <tr><td><strong>Quantität der Güter</strong></td><td>Große Mengen weniger Artikel oder kleine Mengen vieler Artikel?</td><td>Massengut wird gefahren und gestapelt; Kleinteile in hoher Artikelzahl verlangen Kommissioniertechnik und Bestandsführung je Position.</td></tr>
+        <tr><td><strong>Kostensensibilität</strong></td><td>Wie viel Logistikkosten verträgt der Warenwert?</td><td>Bei geringwertigen Massengütern entscheiden Cent je Tonne – bei hochwertigen Teilen ist Sicherheit wichtiger als Frachtpreis.</td></tr>
+        <tr><td><strong>Terminrelevanz</strong></td><td>Wie hart ist der Termin?</td><td>Verderbliche Ware und JIT-Teile erzwingen enge Zeitfenster, Rückfallebenen und Sonderfahrten.</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="block merk" data-notiz="merk-abstimmung-produkt">
+    <div class="b-label">Was das Skript daraus folgert</div>
+    <p><strong>Abstimmung der Prozesse in der Logistik.</strong> Die Produkteigenschaften sind gegeben – ändern lässt sich nur, wie die Prozesse darauf antworten. Deshalb steht am Ende dieser Folie nicht „Produkte anpassen“, sondern „Prozesse abstimmen“.</p>
+  </div>
+
+  <h3>B) Ressourcen – die sechs Stellschrauben</h3>
+  <div class="tab" data-notiz="tab-ressourcen">
+    <table>
+      <thead><tr><th>Ressource</th><th>Inhalte laut Skript</th><th>Wo sie zum Engpass wird</th></tr></thead>
+      <tbody>
+        <tr><td><strong>B1) Personal</strong></td><td>Qualifikation · Motivation · Flexibilität · Einstellungen und Werte · Veränderungs- und Lernbereitschaft</td><td>Bei jeder Umstellung. Technik lässt sich kaufen, Lernbereitschaft nicht.</td></tr>
+        <tr><td><strong>B2) Fläche</strong></td><td>Möglichkeit zur Gestaltung der Prozesse · <strong>limitierender Faktor</strong></td><td>Fast immer zuerst: Wo keine Fläche ist, hilft auch die beste Idee nicht. Fläche ist kurzfristig kaum vermehrbar.</td></tr>
+        <tr><td><strong>B3) Technik</strong></td><td>Transport- und Fördermittel · Lagertechnik · Kommunikations- und Informationstechnik</td><td>Wenn die Technik den Durchsatz begrenzt oder nicht zum Gut passt.</td></tr>
+        <tr><td><strong>B4) Lager</strong></td><td>Funktionen und Klassifizierung – siehe unten</td><td>Wenn das Lager nur als Fläche und nicht als Funktion gedacht wird.</td></tr>
+        <tr><td><strong>B5) Transport</strong></td><td>Transport- und Fördermittel · Hilfsmittel</td><td>Bei fehlenden Ladehilfsmitteln oder unpassenden Fahrzeugen.</td></tr>
+        <tr><td><strong>B6) Informations- und Kommunikationstechnik</strong></td><td>Hard- und Software · Endgeräte im logistischen Alltag · Übermittlung per <strong>Funk, Draht oder Lichtleiter</strong></td><td>Wenn Daten nicht ankommen – die häufigste unsichtbare Störquelle.</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3>Die Funktionen des Lagers (B4)</h3>
+  <p>Das Lager bekommt im Skript zwei eigene Folien, weil es mehr ist als Abstellfläche. Es erfüllt fünf <strong>Funktionen im logistischen Prozess</strong> – und es lässt sich nach sechs Merkmalen <strong>klassifizieren</strong>.</p>
+
+  <div class="tab" data-notiz="tab-lagerfunktionen">
+    <table>
+      <thead><tr><th>Funktion</th><th>Was sie leistet</th><th>Beispiel</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Sicherungs- und Versorgungsfunktion</strong></td><td>Sichert die Versorgung gegen Störungen und Ausfälle.</td><td>Sicherheitsbestand für ein Teil mit unsicherem Lieferanten</td></tr>
+        <tr><td><strong>Ausgleichsfunktion</strong></td><td>Gleicht unterschiedliche Mengen und Rhythmen zwischen zwei Stufen aus.</td><td>Der Lieferant liefert monatlich, die Fertigung verbraucht täglich</td></tr>
+        <tr><td><strong>Aussortierungsfunktion</strong></td><td>Trennt Gutes von Schlechtem – Prüfung, Sperrbestand, Qualitätssortierung.</td><td>Wareneingangsprüfung mit Sperrlager für beanstandete Chargen</td></tr>
+        <tr><td><strong>Umformungsfunktion</strong></td><td>Verändert die Zusammensetzung: kommissionieren, umpacken, Sets bilden.</td><td>Aus Sortenpaletten werden auftragsbezogene Mischpaletten</td></tr>
+        <tr><td><strong>Spekulationsfunktion</strong></td><td>Bevorratung in Erwartung steigender Preise oder knapper Verfügbarkeit.</td><td>Einkauf einer Jahresmenge vor einer angekündigten Preiserhöhung</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="block merk" data-notiz="merk-lager-klassifizierung">
+    <div class="b-label">Klassifizierung von Lagern</div>
+    <p>Nach dem Skript unterscheidet man Lager nach: <strong>Lagerbauweise</strong> · <strong>Lagerart und Lagertyp</strong> · <strong>Besonderheiten des Lagergutes</strong> · <strong>Eigentümer</strong> · <strong>Standort</strong> · <strong>Flexibilität</strong>. Das Merkmal „Eigentümer“ ist prüfungsrelevant, weil daran Fragen zu Konsignations- und Fremdlagern hängen (Abschnitt 1.1.20).</p>
+  </div>
+
+  <div class="block beispiel" data-notiz="bsp-systemfaktoren-fall">
+    <div class="b-label">Beispiel: Systemfaktoren einer Sanitärgroßhandlung</div>
+    <p><strong>A) Produkteigenschaften:</strong> Badewannen sind sperrig und stoßempfindlich, Fittings sind klein und zahlreich – zwei völlig verschiedene Lagerwelten im selben Haus. Terminrelevanz hoch, weil Handwerker auf der Baustelle warten.</p>
+    <p><strong>B) Ressourcen:</strong> Die Fläche ist der Engpass (B2) – die Halle ist voll, sperrige Ware steht im Weg. Das Personal (B1) ist erfahren, aber skeptisch gegenüber Scannern. Die Technik (B3) besteht aus Blocklager und zwei Staplern, ein Schmalgangregal fehlt. Die IuK-Technik (B6) läuft über WLAN, das in der Halle Löcher hat.</p>
+    <p><strong>C) Organisation:</strong> Es gibt keine feste Zuständigkeit für den Sperrbestand – Ware bleibt liegen.</p>
+    <p><strong>D) Flexibilität:</strong> Ein zusätzlicher Baustellenkunde mit Tagesabruf konnte nicht bedient werden, weil kein Prozess dafür existiert.</p>
+    <p><strong>Analyse:</strong> Der wirksamste Hebel ist nicht die Fläche (teuer, langsam), sondern die Trennung der beiden Lagerwelten plus ein Regalsystem für Kleinteile – dadurch wird Blockfläche frei. Genau diese Priorisierung ist die Antwort, die eine Bewertungsaufgabe sehen will.</p>
+  </div>
+
+  <h3>D) Flexibilität</h3>
+  <div class="block def" data-notiz="def-flexibilitaet">
+    <div class="b-label">Definition</div>
+    <div class="b-term">Flexibilität als Systemfaktor</div>
+    <p>Die <strong>Wandlungsfähigkeit bei sich verändernden Bedingungen</strong>. Sie steht im Skript in Klammern, weil sie kein eigenständiger Faktor wie Fläche oder Technik ist, sondern eine Eigenschaft aller anderen. Die zugehörigen Stichworte: <strong>Change-Management</strong> und <strong>Transformationsmanagement</strong> – Krouls Kapitel 1 behandelt beide ausführlich.</p>
+  </div>
+
+  <div class="block achtung" data-notiz="ach-system-nicht-umfeld">
+    <div class="b-label">Typische Verwechslung</div>
+    <p>Die Grenze zwischen Umfeld- und Systemfaktoren verläuft entlang der Frage: <strong>Kann das Unternehmen es gestalten?</strong> Beispielpaare zum Einprägen: Fachkräftemangel (Umfeld) ↔ Qualifikation der eigenen Leute (System). Mautpflicht (Umfeld) ↔ Fuhrpark und Tourenplanung (System). Kundenwunsch nach Tagesabruf (Umfeld) ↔ Flexibilität der eigenen Prozesse (System).</p>
+  </div>
+
+  <div class="block pruefung" data-notiz="pru-systemfaktoren">
+    <div class="b-label">So kommt das in der Prüfung</div>
+    <p>Systemfaktoren sind Plabs Standardraster für Schwachstellenanalysen: „Ermitteln Sie die Ursachen der geschilderten Leistungsprobleme.“ Gehe A – B1 bis B6 – C – D der Reihe nach durch und notiere zu jedem Punkt, was im Text dazu steht. Was nicht im Text steht, lässt du weg. Am Ende priorisierst du: Welcher Faktor ist der Engpass? Die Priorisierung mit Begründung ist der Teil, der die meisten Punkte bringt.</p>
+  </div>
+
+  <div class="abfrage-liste">
+    <div class="abfrage-kopf">Selbstabfrage</div>
+    <details class="abfrage"><summary>Welche vier Blöcke von Systemfaktoren nennt das Skript?</summary>
+      <div class="antwort"><p>A) Produkteigenschaften, B) Ressourcen (Personal, Fläche, Technik, Lager, Transport, IuK-Technik), C) Aufbau- und Ablauforganisation, D) Flexibilität.</p></div></details>
+    <details class="abfrage"><summary>Welche vier Produkteigenschaften können in der Logistik zum Problem werden?</summary>
+      <div class="antwort"><p>Eigenschaften der Güter (Geometrie, Sicherheit), Quantität der Güter, Kostensensibilität und Terminrelevanz.</p></div></details>
+    <details class="abfrage"><summary>Nenne die fünf Funktionen des Lagers.</summary>
+      <div class="antwort"><p>Sicherungs- und Versorgungsfunktion, Ausgleichsfunktion, Aussortierungsfunktion, Umformungsfunktion, Spekulationsfunktion.</p></div></details>
+    <details class="abfrage"><summary>Warum nennt das Skript die Fläche einen limitierenden Faktor?</summary>
+      <div class="antwort"><p>Weil sie kurzfristig kaum vermehrbar ist. Sie eröffnet Gestaltungsmöglichkeiten für Prozesse – und begrenzt sie zugleich. Ist keine Fläche da, scheitern auch gute Konzepte.</p></div></details>
+    <details class="abfrage"><summary>Wie unterscheidest du Umfeld- von Systemfaktoren?</summary>
+      <div class="antwort"><p>An der Gestaltbarkeit: Umfeldfaktoren kommen von außen und lassen sich nur beantworten (Fachkräftemangel, Maut). Systemfaktoren liegen im Unternehmen und lassen sich gestalten (Qualifikation, Technik, Organisation).</p></div></details>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════ -->
+<section class="abschnitt" id="aufbau-ablauforganisation" data-gruppe="Organisation">
+  <div class="ab-kopf"><h2><span class="ab-nr">1.1.18</span>Aufbau- und Ablauforganisation</h2></div>
+
+  <div class="block einstieg" data-notiz="ein-organisation">
+    <div class="b-label">Worum es geht</div>
+    <p>Nimm zwei Blätter Papier. Auf das erste zeichnest du, <strong>wer</strong> im Betrieb wem unterstellt ist – Kästchen und Linien. Auf das zweite zeichnest du, <strong>wie</strong> ein Kundenauftrag durch den Betrieb läuft – Pfeile von Station zu Station. Das erste Blatt ist die Aufbauorganisation, das zweite die Ablauforganisation. Beide beschreiben dieselbe Firma, aber sie beantworten völlig verschiedene Fragen – und genau deshalb werden sie verwechselt.</p>
+  </div>
+
+  <div class="raster-2" data-notiz="raster-aufbau-ablauf">
+    <div class="karte green">
+      <div class="k-titel">Aufbauorganisation – der statische Teil</div>
+      <div class="k-text"><strong>Struktur und Hierarchie</strong> im Unternehmen · Funktionsbereiche des Unternehmens · Darstellung im <strong>Organigramm</strong>.<br>Leitfrage: <em>Wer ist wofür zuständig und wer sagt wem etwas?</em></div>
+    </div>
+    <div class="karte blue">
+      <div class="k-titel">Ablauforganisation – der dynamische Teil</div>
+      <div class="k-text"><strong>Beschreiben einzelner Prozesse</strong> im Unternehmen · dynamischer Teil der Betriebsorganisation · Darstellung in <strong>Prozesslandkarten</strong> und Stellenbeschreibungen.<br>Leitfrage: <em>In welcher Reihenfolge läuft die Arbeit?</em></div>
+    </div>
+  </div>
+
+  <div class="block achtung" data-notiz="ach-aufbau-ablauf">
+    <div class="b-label">Die Verwechslung, die am meisten Punkte kostet</div>
+    <p><strong>Aufbau = Struktur = statisch = Organigramm. Ablauf = Prozess = dynamisch = Prozesslandkarte.</strong> Eselsbrücke: Ein <em>Aufbau</em> steht still (wie ein Bauwerk), ein <em>Ablauf</em> läuft (wie Wasser). Zweiter Merkposten: Die Ablauforganisation baut auf der Aufbauorganisation auf – erst muss klar sein, welche Stellen es gibt, dann kann man die Arbeit durch sie hindurchführen.</p>
+  </div>
+
+  <h3>Gliederungsmerkmale der Ablauforganisation</h3>
+  <p>Wenn man einen Ablauf ordnen will, braucht man ein Kriterium, nach dem man ordnet. Das Skript nennt fünf, gebündelt in <strong>sachliche</strong> und <strong>formale</strong> Merkmale.</p>
+
+  <div class="tab" data-notiz="tab-gliederungsmerkmale">
+    <table>
+      <thead><tr><th>Dimension</th><th>Merkmal</th><th>Was im Vordergrund steht</th><th>Beispiel im Lager</th></tr></thead>
+      <tbody>
+        <tr><td rowspan="2"><strong>sachlich</strong></td><td>Verrichtung</td><td>Die <strong>Tätigkeiten</strong> stehen im Vordergrund</td><td>Alle Kommissionierer in einem Team, alle Packer in einem anderen</td></tr>
+        <tr><td>Objekt</td><td>Die <strong>Produkte</strong> stehen im Vordergrund</td><td>Ein Team für Sanitär, ein Team für Heizung</td></tr>
+        <tr><td rowspan="3"><strong>formal</strong></td><td>Rang</td><td>Die <strong>Entscheidungsträger</strong> stehen im Vordergrund</td><td>Bis 200 € entscheidet die Schichtleitung, darüber die Lagerleitung</td></tr>
+        <tr><td>Phase</td><td>Die <strong>zeitlichen Verläufe</strong> stehen im Vordergrund</td><td>Planen – Ausführen – Kontrollieren als getrennte Abschnitte</td></tr>
+        <tr><td>Zweckbeziehung</td><td>Die <strong>Zusammenhänge</strong> stehen im Vordergrund</td><td>Trennung in Kernaufgaben (Kommissionierung) und Hilfsaufgaben (Ladungssicherung)</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3>Aufgabenanalyse und Aufgabensynthese</h3>
+  <p>Dieselben fünf Merkmale sind das Werkzeug, mit dem man eine Organisation überhaupt erst baut. Das geschieht in zwei Schritten: erst <strong>zerlegen</strong>, dann <strong>zusammensetzen</strong>.</p>
+
+  <div class="phasen" data-notiz="phasen-analyse-synthese">
+    <div class="phase"><div class="p-nr">Schritt 1</div><div class="p-name">Aufgabenanalyse</div><div class="p-text">Die Gesamtaufgabe wird in Teilaufgaben zerlegt – befragt nach Verrichtung, Objekt, Rang, Phase und Zweckbeziehung.</div></div>
+    <div class="phase"><div class="p-nr">Schritt 2</div><div class="p-name">Aufgabensynthese</div><div class="p-text">Ähnliche Teilaufgaben werden sinnvoll zu einer <strong>Stelle</strong> zusammengefasst.</div></div>
+  </div>
+
+  <div class="tab" data-notiz="tab-aufgabenanalyse">
+    <table>
+      <thead><tr><th>Merkmal</th><th>Leitfrage der Analyse</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Verrichtung</strong></td><td>Welche Tätigkeiten fallen an?</td></tr>
+        <tr><td><strong>Objekt</strong></td><td>Wie komplex sind die Aufgaben – woran wird gearbeitet?</td></tr>
+        <tr><td><strong>Rang</strong></td><td>Wer entscheidet über die Ausführung?</td></tr>
+        <tr><td><strong>Phase</strong></td><td>Welche Phasen hat der Prozess?</td></tr>
+        <tr><td><strong>Zweckbeziehung</strong></td><td>Welche Bedeutung haben die Aufgaben – Kern oder Unterstützung?</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="block def" data-notiz="def-aufgabensynthese">
+    <div class="b-label">Definition</div>
+    <div class="b-term">Aufgabensynthese</div>
+    <p>Die <strong>sinnvolle Zusammenfassung ähnlicher Teilaufgaben</strong>, die in der Aufgabenanalyse ermittelt wurden, <strong>zu einer Stelle</strong>. Analyse und Synthese gehören zwingend zusammen: Ohne vorherige Zerlegung fasst man Zufälliges zusammen.</p>
+  </div>
+
+  <div class="block def" data-notiz="def-stelle">
+    <div class="b-label">Definition</div>
+    <div class="b-term">Stelle</div>
+    <p>Die <strong>kleinste organisatorische Einheit im Unternehmen</strong>, besetzt durch <strong>einen Menschen</strong>. Aufgabe, Verantwortung und Befugnisse sind in der <strong>Stellenbeschreibung</strong> genau definiert. Deren Aufbau: Beschreibung der Aufgaben und ein <strong>Anforderungsprofil</strong>, getrennt nach fachlichen und persönlichen Anforderungen.</p>
+  </div>
+
+  <div class="block beispiel" data-notiz="bsp-analyse-synthese">
+    <div class="b-label">Beispiel: eine neue Stelle im Wareneingang entsteht</div>
+    <p><strong>Analyse:</strong> Die Gesamtaufgabe „Wareneingang“ wird zerlegt: Lkw anmelden, entladen, Menge prüfen, Qualität prüfen, buchen, einlagern, Reklamation auslösen, Sperrbestand verwalten. Nach <em>Rang</em> zeigt sich: Reklamation und Sperrbestand sind Entscheidungen, alles andere ist Ausführung. Nach <em>Verrichtung</em>: Prüfen und Buchen sind verwandt, Entladen und Einlagern auch.</p>
+    <p><strong>Synthese:</strong> Daraus werden zwei Stellen gebildet – „Fachkraft Wareneingang Prüfung und Buchung“ (Prüfen, Buchen, Reklamation vorbereiten) und „Fachkraft Wareneingang Handling“ (Anmeldung, Entladen, Einlagern). Die Entscheidung über Reklamation und Sperrbestand bleibt bei der Teamleitung – das ist eine <em>Instanz</em>.</p>
+    <p>Das Ergebnis ist eine Stellenbeschreibung je Stelle, mit Aufgaben, Verantwortung, Befugnissen und Anforderungsprofil.</p>
+  </div>
+
+  <h3>Stellenbeschreibung: Vor- und Nachteile</h3>
+  <div class="raster-2" data-notiz="raster-stellenbeschreibung">
+    <div class="karte green">
+      <div class="k-titel">Vorteile</div>
+      <div class="k-text">Aufgaben, Kompetenzen und Verantwortung sind klar geregelt · Kompetenzkonflikte werden vermieden · leichtere Einarbeitung neuer Mitarbeiter · effiziente Personalplanung.</div>
+    </div>
+    <div class="karte red">
+      <div class="k-titel">Nachteile</div>
+      <div class="k-text">Fixierung auf die beschriebenen Tätigkeiten („steht nicht in meiner Stellenbeschreibung“) · inflexibel · Zeit- und Koordinationsaufwand · Kostenaufwand durch Einführung, Überarbeitung und Aktualisierung.</div>
+    </div>
+  </div>
+
+  <h3>Die Begriffe der Aufbauorganisation</h3>
+  <div class="tab" data-notiz="tab-orgbegriffe">
+    <table>
+      <thead><tr><th>Begriff</th><th>Definition</th><th>Beispiel</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Instanz</strong></td><td>Stelle <strong>mit</strong> Leitungsbefugnissen</td><td>Schichtleitung Lager</td></tr>
+        <tr><td><strong>Leitungsspanne</strong></td><td>Anzahl der <strong>direkt unterstellten</strong> Mitarbeiter</td><td>Eine Schichtleitung mit 14 Mitarbeitern hat eine Leitungsspanne von 14</td></tr>
+        <tr><td><strong>Stabstelle</strong></td><td>Stelle mit <strong>Beratungsfunktion, ohne Weisungsbefugnis</strong></td><td>Gefahrgutbeauftragter, Qualitätsbeauftragter</td></tr>
+        <tr><td><strong>Hierarchie</strong></td><td>Struktur der Leitungsebenen – grob: <strong>Top-, Middle- und Lower-Management</strong></td><td>Geschäftsführung / Betriebsleitung / Schichtleitung</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <p>Stellen lassen sich außerdem nach zwei Kriterien unterscheiden: nach der <strong>Verrichtung</strong> („Welche Arbeit wird geleistet?“) und nach dem <strong>Objekt</strong> („An was wird Arbeit geleistet?“). Es sind dieselben beiden sachlichen Merkmale wie bei der Ablauforganisation – sie tauchen hier nur auf der Strukturseite wieder auf.</p>
+
+  <div class="block merk" data-notiz="merk-raeumliche-stellenbildung">
+    <div class="b-label">Räumliche Zusammenfassung von Stellen</div>
+    <p>Fasst man Stellen räumlich zusammen (also alle gleichartigen Tätigkeiten an einem Ort), nennt das Skript drei <strong>Vorteile</strong>: verminderter Personalbedarf, straffe Überwachung, bessere Verwendung von Spezialisten. Und drei <strong>Nachteile</strong>: Überlastung der leitenden Stellen, hohe Transportkosten, hoher Kommunikations- und Koordinationsaufwand. Kurz: Konzentration spart Personal und kostet Wege.</p>
+  </div>
+
+  <div class="block pruefung" data-notiz="pru-organisation">
+    <div class="b-label">So kommt das in der Prüfung</div>
+    <p>Drei Formen sind üblich. Erstens die Abgrenzungsfrage Aufbau/Ablauf – dort zählt das Begriffspaar statisch/dynamisch und je ein Darstellungsmittel (Organigramm bzw. Prozesslandkarte). Zweitens Begriffsfragen zu Instanz, Stabstelle und Leitungsspanne – die musst du wörtlich können. Drittens die Bewertungsfrage zur Stellenbeschreibung: „Beurteilen Sie die Einführung von Stellenbeschreibungen“ – nenne immer <strong>zwei Vorteile und zwei Nachteile</strong> und schließe mit einer Empfehlung.</p>
+  </div>
+
+  <div class="abfrage-liste">
+    <div class="abfrage-kopf">Selbstabfrage</div>
+    <details class="abfrage"><summary>Was unterscheidet Aufbau- von Ablauforganisation?</summary>
+      <div class="antwort"><p>Die Aufbauorganisation ist der statische Teil: Struktur, Hierarchie, Funktionsbereiche, dargestellt im Organigramm. Die Ablauforganisation ist der dynamische Teil: Beschreibung der einzelnen Prozesse, dargestellt in Prozesslandkarten und Stellenbeschreibungen.</p></div></details>
+    <details class="abfrage"><summary>Nenne die fünf Gliederungsmerkmale der Ablauforganisation.</summary>
+      <div class="antwort"><p>Sachlich: Verrichtung und Objekt. Formal: Rang, Phase und Zweckbeziehung.</p></div></details>
+    <details class="abfrage"><summary>Was passiert bei der Aufgabenanalyse, was bei der Aufgabensynthese?</summary>
+      <div class="antwort"><p>Die Analyse zerlegt die Gesamtaufgabe in Teilaufgaben – nach Verrichtung, Objekt, Rang, Phase und Zweckbeziehung. Die Synthese fasst ähnliche Teilaufgaben sinnvoll zu einer Stelle zusammen.</p></div></details>
+    <details class="abfrage"><summary>Was ist eine Stelle, und was steht in der Stellenbeschreibung?</summary>
+      <div class="antwort"><p>Die kleinste organisatorische Einheit, besetzt durch einen Menschen. In der Stellenbeschreibung stehen Aufgabe, Verantwortung und Befugnisse sowie das Anforderungsprofil, getrennt nach fachlichen und persönlichen Anforderungen.</p></div></details>
+    <details class="abfrage"><summary>Was ist der Unterschied zwischen einer Instanz und einer Stabstelle?</summary>
+      <div class="antwort"><p>Eine Instanz ist eine Stelle mit Leitungsbefugnissen. Eine Stabstelle hat nur Beratungsfunktion und keine Weisungsbefugnis.</p></div></details>
+    <details class="abfrage"><summary>Nenne zwei Nachteile von Stellenbeschreibungen.</summary>
+      <div class="antwort"><p>Fixierung auf die beschriebenen Tätigkeiten und daraus folgende Inflexibilität; außerdem Zeit-, Koordinations- und Kostenaufwand für Einführung, Überarbeitung und Aktualisierung.</p></div></details>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════ -->
+<section class="abschnitt" id="organisationsformen" data-gruppe="Organisation">
+  <div class="ab-kopf"><h2><span class="ab-nr">1.1.19</span>Organisationsformen der Aufbauorganisation</h2></div>
+
+  <div class="block einstieg" data-notiz="ein-orgformen">
+    <div class="b-label">Worum es geht</div>
+    <p>Ein Staplerfahrer bekommt morgens von der Schichtleitung die Anweisung, den Wareneingang zu räumen. Eine Stunde später sagt ihm der Versandleiter, er solle sofort eine Sonderfahrt beladen. Wem folgt er? Diese Frage entscheidet sich nicht im Einzelfall, sondern in der <strong>Organisationsform</strong>. Sie legt fest, wie viele Vorgesetzte eine Stelle hat und wie die Weisungswege verlaufen. Das Skript stellt sechs Formen vor – jede mit einer eigenen Antwort auf diese Frage.</p>
+  </div>
+
+  <div class="tab" data-notiz="tab-orgformen">
+    <table>
+      <thead><tr><th>Form</th><th>Merkmale</th><th>Vorteile</th><th>Nachteile</th></tr></thead>
+      <tbody>
+        <tr>
+          <td><strong>1. Einliniensystem</strong></td>
+          <td>Jede Stelle hat <strong>nur einen Vorgesetzten</strong> · jede Stelle ist nur mit einer Leitungsebene verbunden · Top-down-Ansatz</td>
+          <td>eindeutige Dienstwege · keine Kompetenzstreitigkeiten · einfacher Aufbau</td>
+          <td>schwerfällige Dienstwege · Überlastung der Vorgesetzten in höheren Ebenen · Belastung durch Routineaufgaben</td>
+        </tr>
+        <tr>
+          <td><strong>2. Mehrliniensystem</strong></td>
+          <td>Funktionssystem mit funktionaler Spezialisierung · eine Stelle bekommt von <strong>mehreren Leitungsebenen</strong> Anweisungen · abgegrenzte Aufgabenbereiche und Kompetenzen</td>
+          <td>Verkürzung der Dienstwege · Vorgesetzte sind Spezialisten · funktionale Leistungsfähigkeit steigt</td>
+          <td>Überschneidung von Anweisungen · Abstimmungsprobleme · Kompetenzschwierigkeiten unter Vorgesetzten · Mitarbeiter zwischen den „Fronten“</td>
+        </tr>
+        <tr>
+          <td><strong>3. Stabliniensystem</strong></td>
+          <td><strong>erweitertes Einliniensystem</strong> · Unterstützung der leitenden Instanzen durch Stäbe · Stäbe haben <strong>keine Weisungsrechte</strong> und beraten die Funktionsstellen</td>
+          <td>Vorteile des Einliniensystems bleiben erhalten · Beratung der Vorgesetzten durch Spezialisten · bessere Entscheidungsqualität</td>
+          <td>Stabstellen üben oft faktisch Einfluss auf die Linie aus · Neigung zur „Spezialistenarroganz“</td>
+        </tr>
+        <tr>
+          <td><strong>4. Spartenorganisation</strong></td>
+          <td><strong>objektorientierter</strong> Aufbau der Hierarchie · Einteilung in Divisionen bzw. Sparten · Sparte als selbstständiger Unternehmensbereich · gesamtunternehmerische Stellen bleiben als zentrale Einheiten erhalten</td>
+          <td>kurze Informationswege · schnelle Reaktionsmöglichkeiten der Sparten · Spartenspezialisierung</td>
+          <td>mangelnde Unterordnung der Sparten · höhere Kosten durch Dezentralisierung · Gefahr der Verselbstständigung</td>
+        </tr>
+        <tr>
+          <td><strong>5. Matrixorganisation</strong></td>
+          <td><strong>zweidimensional</strong> · langfristige Flexibilisierung der Strukturen · hohes Problemlösungspotenzial · direkte Kommunikationswege · fördert Teamarbeit und Persönlichkeitsentwicklung</td>
+          <td>unkomplizierte Entscheidungswege · weniger Sparten- und Abteilungskonkurrenz</td>
+          <td>Geschäftsleitung wird stärker gefordert · großer Kommunikations- und Koordinationsaufwand · mehr Kompromisse und Zeitverluste</td>
+        </tr>
+        <tr>
+          <td><strong>6. Tensor-Organisation</strong></td>
+          <td>Weiterentwicklung der Matrix · Erweiterung um eine <strong>dritte Dimension: Regionen</strong> · dreidimensionales, kubisches Organigramm</td>
+          <td>bildet Produkt, Funktion und Region gleichzeitig ab · höchste Abbildungstiefe für Konzerne</td>
+          <td>sehr komplex · hoher Abstimmungsaufwand · Zuständigkeiten für den Einzelnen kaum noch überschaubar</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="block def" data-notiz="def-matrix">
+    <div class="b-label">Definition</div>
+    <div class="b-term">Matrixorganisation</div>
+    <p>Eine <strong>zweidimensionale</strong> Organisationsform: Jede Stelle ist gleichzeitig einer <em>Funktion</em> (z. B. Logistik, Einkauf, Produktion) und einem <em>Objekt</em> (z. B. Produktlinie, Projekt, Kunde) zugeordnet. Ein Mitarbeiter hat damit zwei Vorgesetzte – einen fachlichen und einen produkt- bzw. projektbezogenen.</p>
+  </div>
+
+  <div class="block beispiel" data-notiz="bsp-orgformen-vergleich">
+    <div class="b-label">Beispiel: dieselbe Sonderfahrt in drei Organisationsformen</div>
+    <p><strong>Einliniensystem:</strong> Der Staplerfahrer hat nur die Schichtleitung als Vorgesetzten. Der Versandleiter darf ihn gar nicht direkt anweisen – er muss über die Schichtleitung gehen. Klare Verhältnisse, aber die Sonderfahrt verzögert sich, weil der Dienstweg dauert. Genau das meint „schwerfällige Dienstwege“.</p>
+    <p><strong>Mehrliniensystem:</strong> Beide dürfen anweisen. Der Fahrer bekommt zwei widersprüchliche Aufträge und steht „zwischen den Fronten“ – bis jemand die Priorität klärt. Schnell, wenn es passt; blockierend, wenn nicht.</p>
+    <p><strong>Stabliniensystem:</strong> Es bleibt beim Einliniensystem, aber ein Disponent als Stabstelle hat die Priorität bereits am Morgen berechnet und der Schichtleitung empfohlen. Anweisen darf er nicht – die Entscheidung trifft die Linie, nur besser informiert.</p>
+  </div>
+
+  <div class="block achtung" data-notiz="ach-mehrlinien-matrix">
+    <div class="b-label">Typische Verwechslung</div>
+    <p><strong>Mehrliniensystem und Matrixorganisation</strong> haben beide mehrere Vorgesetzte je Stelle – trotzdem sind es verschiedene Dinge. Im <em>Mehrliniensystem</em> weisen mehrere <strong>Fachvorgesetzte</strong> für verschiedene Sachthemen an; die zweite Weisungslinie ist wieder eine Funktion. In der <em>Matrix</em> stehen zwei <strong>verschiedene Dimensionen</strong> nebeneinander: Funktion und Objekt (Produkt oder Projekt).</p>
+    <p>Zweite Stolperstelle: <strong>Stabstellen haben nie Weisungsrecht.</strong> Steht in einer Prüfungsaufgabe, dass der Qualitätsbeauftragte „die Produktion anweist“, ist genau das der zu benennende Fehler.</p>
+  </div>
+
+  <div class="block merk" data-notiz="merk-orgformen-logik">
+    <div class="b-label">Die Ordnung hinter den sechs Formen</div>
+    <p>Die Reihe ist keine Aufzählung, sondern eine Steigerung. <strong>1 → 2:</strong> von einem zu mehreren Vorgesetzten (mehr Fachlichkeit, mehr Konflikt). <strong>2 → 3:</strong> zurück zur Klarheit des Einliniensystems, aber mit Beratern. <strong>3 → 4:</strong> Gliederung nach Objekt statt nach Verrichtung. <strong>4 → 5:</strong> Funktion und Objekt gleichzeitig. <strong>5 → 6:</strong> zusätzlich die Region. Mit jedem Schritt wächst die Abbildungsgenauigkeit – und der Koordinationsaufwand.</p>
+  </div>
+
+  <div class="block pruefung" data-notiz="pru-orgformen">
+    <div class="b-label">So kommt das in der Prüfung</div>
+    <p>Zwei sichere Varianten. Erstens: „Beschreiben Sie das Stabliniensystem und nennen Sie je zwei Vor- und Nachteile.“ Zweitens – anspruchsvoller: In der Situationsbeschreibung steht ein Organisationsproblem (widersprüchliche Anweisungen, verselbstständigte Sparte, überlasteter Bereichsleiter), und du sollst die vorliegende Form erkennen, die Ursache benennen und eine Alternative vorschlagen. Nenne bei der Alternative immer auch deren Nachteil – Bewertungsaufgaben verlangen die Kehrseite.</p>
+  </div>
+
+  <div class="abfrage-liste">
+    <div class="abfrage-kopf">Selbstabfrage</div>
+    <details class="abfrage"><summary>Nenne die sechs Organisationsformen aus dem Skript.</summary>
+      <div class="antwort"><p>Einliniensystem, Mehrliniensystem, Stabliniensystem, Spartenorganisation, Matrixorganisation, Tensor-Organisation.</p></div></details>
+    <details class="abfrage"><summary>Was kennzeichnet das Einliniensystem und wo liegt sein Hauptnachteil?</summary>
+      <div class="antwort"><p>Jede Stelle hat nur einen Vorgesetzten und ist nur mit einer Leitungsebene verbunden (Top-down). Hauptnachteil: schwerfällige Dienstwege und Überlastung der oberen Ebenen, auch durch Routineaufgaben.</p></div></details>
+    <details class="abfrage"><summary>Worin unterscheidet sich das Stablinien- vom Einliniensystem?</summary>
+      <div class="antwort"><p>Es ist ein erweitertes Einliniensystem: Die leitenden Instanzen werden durch Stäbe unterstützt, die beraten, aber kein Weisungsrecht haben. Vorteil: bessere Entscheidungsqualität bei erhaltener Klarheit der Dienstwege.</p></div></details>
+    <details class="abfrage"><summary>Was ist die Gefahr der Spartenorganisation?</summary>
+      <div class="antwort"><p>Die Verselbstständigung der Sparten: mangelnde Unterordnung unter das Gesamtunternehmen und höhere Kosten durch Dezentralisierung.</p></div></details>
+    <details class="abfrage"><summary>Was unterscheidet Matrix- und Tensor-Organisation?</summary>
+      <div class="antwort"><p>Die Matrix ist zweidimensional (Funktion und Objekt). Die Tensor-Organisation ergänzt eine dritte Dimension – die Regionen – und wird als kubisches Organigramm dargestellt.</p></div></details>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════ -->
+<section class="abschnitt" id="schnittstellen-system" data-gruppe="Organisation">
+  <div class="ab-kopf"><h2><span class="ab-nr">1.1.20</span>Schnittstellen zwischen System und Faktoren</h2></div>
+
+  <div class="block einstieg" data-notiz="ein-schnittstellen">
+    <div class="b-label">Worum es geht</div>
+    <p>Ein Automobilzulieferer hat ein gutes Lager, gute Fahrzeuge und gutes Personal. Trotzdem stehen jeden Morgen sieben Lkw vor dem Tor. Der Grund: Sein Kunde plant im eigenen System, er selbst in seinem, und zwischen beiden liegt eine E-Mail. Nicht die Faktoren sind das Problem, sondern die <strong>Schnittstellen</strong> zwischen ihnen. Dieser letzte Inhaltsabschnitt des Kapitels schließt damit den Kreis: Alles, was du analysiert hast, muss irgendwo zusammenpassen.</p>
+  </div>
+
+  <div class="block def" data-notiz="def-schnittstelle">
+    <div class="b-label">Definition</div>
+    <div class="b-term">Schnittstelle</div>
+    <p>Der Übergabepunkt zwischen zwei Prozessen, Systemen oder Beteiligten. An ihr wechseln <strong>Material, Information und Verantwortung</strong> gleichzeitig – und weil dreierlei gleichzeitig wechselt, ist die Schnittstelle die typische Fehlerquelle in Logistikketten.</p>
+  </div>
+
+  <p>Das Skript nennt zwei Entwicklungslinien, mit denen man Schnittstellen beherrschbar macht: erstens die <strong>Technologie</strong> – Entwicklung und Ausbau der Schnittstellentechnologien mit dem <strong>Datenaustausch im Mittelpunkt (ERP-Konzepte)</strong>; zweitens die <strong>Konzepte</strong> – Weiterentwicklung verschiedener Logistik- und Lagerkonzepte, die die Schnittstelle organisatorisch entschärfen.</p>
+
+  <h3>Die vier Konzepte aus dem Skript</h3>
+  <div class="tab" data-notiz="tab-schnittstellenkonzepte">
+    <table>
+      <thead><tr><th>Konzept</th><th>Was es bedeutet</th><th>Welches Schnittstellenproblem es löst</th></tr></thead>
+      <tbody>
+        <tr><td><strong>VMI</strong><br><span class="hinweis-klein">Vendor Managed Inventory</span></td><td>Der <strong>Lieferant</strong> übernimmt die Bestandsführung beim Kunden: Er sieht dessen Bestände und disponiert die Nachlieferung selbst.</td><td>Der Kunde muss nicht mehr bestellen – damit entfällt eine Stufe, die den Bullwhip-Effekt verstärkt. Der Lieferant plant nach echtem Verbrauch statt nach Bestellungen.</td></tr>
+        <tr><td><strong>Konsignationslager</strong></td><td>Ein Lager beim Kunden, dessen Ware dem <strong>Lieferanten gehört</strong>. Bezahlt wird erst bei Entnahme.</td><td>Verfügbarkeit ohne Kapitalbindung beim Kunden. Der Eigentumsübergang wird von der Anlieferung auf den Verbrauch verschoben.</td></tr>
+        <tr><td><strong>JIT / JIS</strong><br><span class="hinweis-klein">Just in Time / Just in Sequence</span></td><td>Bedarfssynchrone Anlieferung ohne Lager. <strong>JIS</strong> geht weiter: Die Teile kommen zusätzlich in der <strong>Reihenfolge</strong> der Montage.</td><td>Die Schnittstelle „Lager“ entfällt ganz – Ware geht direkt an die Verbrauchsstelle. Setzt hohe Termintreue und enge Datenkopplung voraus.</td></tr>
+        <tr><td><strong>KANBAN</strong></td><td>Visuelles Steuerungssystem nach dem <strong>Pull-Prinzip</strong>: Der Verbrauch löst über eine Karte oder einen leeren Behälter den Nachschub aus.</td><td>Es braucht keine zentrale Planung an der Schnittstelle – das Signal entsteht direkt am Verbrauchsort und ist für alle sichtbar.</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="block merk" data-notiz="merk-schnittstellen-ohne-erp">
+    <div class="b-label">Der Satz, der das Kapitel schließt</div>
+    <p><strong>ERP-Systeme ermöglichen die Digitalisierung und Automatisierung logistischer Prozesse – ohne ERP kein modernes SCM.</strong> Alle vier Konzepte setzen voraus, dass Bestands- und Verbrauchsdaten zwischen zwei Unternehmen fließen. Ohne kompatiblen Datenaustausch bleibt VMI ein Telefonat und JIT ein Versprechen.</p>
+  </div>
+
+  <div class="block beispiel" data-notiz="bsp-vmi-praxis">
+    <div class="b-label">Beispiel: VMI beim Automobilzulieferer</div>
+    <p><strong>Vorher:</strong> Der Kunde meldet seinen Bedarf freitags per Excel-Liste. Der Zulieferer plant daraus die Woche, rundet auf ganze Paletten auf und legt einen Sicherheitszuschlag drauf. Ergebnis: schwankende Bestände auf beiden Seiten, Lkw-Stau am Montagmorgen.</p>
+    <p><strong>Nachher (VMI):</strong> Der Zulieferer bekommt täglich die Bestandsdaten aus dem ERP des Kunden und disponiert selbst. Er liefert kleinere Mengen häufiger, verteilt über die Woche. Der Kunde bestellt gar nicht mehr.</p>
+    <p><strong>Wirkung:</strong> Bestand beim Kunden minus 35 %, keine Rampenspitze mehr, Lieferbereitschaft unverändert. Bezahlt wurde das mit einer Systemanbindung und mit Vertrauen – der Kunde legt seine Bestände offen. Genau das ist die Beziehungsebene, an der solche Projekte scheitern, wenn sie scheitern.</p>
+  </div>
+
+  <div class="block achtung" data-notiz="ach-vmi-konsignation">
+    <div class="b-label">Typische Verwechslung</div>
+    <p><strong>VMI und Konsignationslager werden häufig gleichgesetzt – zu Unrecht.</strong> VMI regelt, <em>wer disponiert</em> (der Lieferant statt des Kunden). Das Konsignationslager regelt, <em>wem die Ware gehört</em> (dem Lieferanten bis zur Entnahme). Beides kann getrennt vorkommen: VMI ohne Konsignation ist möglich, Konsignation ohne VMI ebenfalls. In der Praxis werden sie oft kombiniert – in der Prüfung musst du sie trennen können.</p>
+  </div>
+
+  <div class="block pruefung" data-notiz="pru-schnittstellen">
+    <div class="b-label">So kommt das in der Prüfung</div>
+    <p>Typisch als Lösungsvorschlag am Ende einer Situationsbeschreibung: „Schlagen Sie ein Konzept zur Verbesserung der Zusammenarbeit mit dem Lieferanten vor und begründen Sie.“ Nenne das Konzept beim Namen, erkläre es in einem Satz und schreibe dazu, <strong>welches konkrete Problem des Falls</strong> es löst – Kapitalbindung, Bestellaufwand, Bestandsspitze oder Bullwhip. Nenne außerdem eine Voraussetzung (Datenanbindung, Rahmenvertrag, Termintreue); dafür gibt es fast immer einen eigenen Punkt.</p>
+  </div>
+
+  <div class="abfrage-liste">
+    <div class="abfrage-kopf">Selbstabfrage</div>
+    <details class="abfrage"><summary>Was steht bei den Schnittstellentechnologien im Mittelpunkt?</summary>
+      <div class="antwort"><p>Der Datenaustausch – konkret die ERP-Konzepte. Ohne kompatiblen Datenaustausch funktioniert keines der Logistik- und Lagerkonzepte.</p></div></details>
+    <details class="abfrage"><summary>Was ist Vendor Managed Inventory?</summary>
+      <div class="antwort"><p>Der Lieferant übernimmt die Bestandsführung beim Kunden: Er sieht dessen Bestände, disponiert selbst und liefert nach – der Kunde bestellt nicht mehr.</p></div></details>
+    <details class="abfrage"><summary>Was unterscheidet ein Konsignationslager von einem normalen Lager?</summary>
+      <div class="antwort"><p>Die Ware liegt beim Kunden, gehört aber dem Lieferanten. Bezahlt wird erst bei Entnahme – der Kunde hat Verfügbarkeit ohne Kapitalbindung.</p></div></details>
+    <details class="abfrage"><summary>Was ist der Unterschied zwischen JIT und JIS?</summary>
+      <div class="antwort"><p>JIT liefert bedarfssynchron ohne Lager. JIS liefert zusätzlich in der Reihenfolge, in der die Teile verbaut werden.</p></div></details>
+    <details class="abfrage"><summary>Nach welchem Prinzip funktioniert Kanban?</summary>
+      <div class="antwort"><p>Nach dem Pull-Prinzip: Der Verbrauch löst über eine Karte oder einen leeren Behälter den Nachschub aus. Es braucht keine zentrale Planung, das Signal entsteht am Verbrauchsort.</p></div></details>
+  </div>
+</section>
+
+<hr class="trenner">
+
+<!-- ═══════════════════════════════════════════════════════════ -->
+<section class="abschnitt" id="selbsttest" data-gruppe="Selbsttest">
+  <div class="ab-kopf"><h2><span class="ab-nr">Test</span>Selbsttest – 12 Fragen zu Kapitel 1.1</h2></div>
+
+  <p>Quer durch alle Abschnitte. Erst beantworten, dann bei Fehlern in den passenden Abschnitt zurückspringen – die Erklärung nennt dir jeweils den Kern.</p>
+
+  <div class="quiz">
+    <div class="q-block">
+      <div class="q-nr"></div>
+      <div class="q-frage">Welche drei Flüsse umfasst der Logistikbegriff nach Plabs Skript?</div>
+      <div class="q-optionen">
+        <button class="q-opt" data-richtig="false">A) Material-, Personal- und Kostenfluss</button>
+        <button class="q-opt" data-richtig="true">B) Material-, Wert- und Informationsfluss</button>
+        <button class="q-opt" data-richtig="false">C) Transport-, Umschlag- und Lagerfluss</button>
+        <button class="q-opt" data-richtig="false">D) Beschaffungs-, Produktions- und Absatzfluss</button>
+      </div>
+      <div class="q-fb" data-erklaerung="Der Begriff umfasst den Transport von Waren und Gütern sowie die Vernetzung aller Maßnahmen und Prozesse hinsichtlich Material-, Wert- und Informationsfluss. TUL sind Aktivitäten, keine Flüsse."></div>
+    </div>
+
+    <div class="q-block">
+      <div class="q-nr"></div>
+      <div class="q-frage">„Die Termintreue soll von 92 % auf 97 % steigen.“ Was für ein Ziel ist das?</div>
+      <div class="q-optionen">
+        <button class="q-opt" data-richtig="true">A) Ein Formalziel</button>
+        <button class="q-opt" data-richtig="false">B) Ein strategisches Sachziel</button>
+        <button class="q-opt" data-richtig="false">C) Ein operatives Sachziel</button>
+        <button class="q-opt" data-richtig="false">D) Ein indifferentes Ziel</button>
+      </div>
+      <div class="q-fb" data-erklaerung="Formalziele betreffen die Leistungserfüllung – das angestrebte Ergebnis. Sachziele beschreiben die Maßnahme, mit der man dorthin kommt (z. B. „Zeitfenstersteuerung einführen“)."></div>
+    </div>
+
+    <div class="q-block">
+      <div class="q-nr"></div>
+      <div class="q-frage">Welche Beziehung besteht zwischen „hohe Lieferbereitschaft“ und „niedrige Bestandskosten“?</div>
+      <div class="q-optionen">
+        <button class="q-opt" data-richtig="false">A) komplementär</button>
+        <button class="q-opt" data-richtig="true">B) konkurrierend</button>
+        <button class="q-opt" data-richtig="false">C) indifferent</button>
+        <button class="q-opt" data-richtig="false">D) identisch</button>
+      </div>
+      <div class="q-fb" data-erklaerung="Lieferbereitschaft entsteht durch Sicherheitsbestand – und genau dieser Bestand treibt die Kosten, die gesenkt werden sollen. Ein Fortschritt beim einen Ziel kostet Boden beim anderen."></div>
+    </div>
+
+    <div class="q-block">
+      <div class="q-nr"></div>
+      <div class="q-frage">Wie berechnet man die Bruttowertschöpfung?</div>
+      <div class="q-optionen">
+        <button class="q-opt" data-richtig="false">A) Umsatz − Abschreibungen</button>
+        <button class="q-opt" data-richtig="true">B) Produktionswert − Vorleistungen</button>
+        <button class="q-opt" data-richtig="false">C) Produktionswert − Vorleistungen − Abschreibungen</button>
+        <button class="q-opt" data-richtig="false">D) Erlöse − Löhne − Vorleistungen</button>
+      </div>
+      <div class="q-fb" data-erklaerung="Produktionswert − Vorleistungen = Bruttowertschöpfung. Erst der weitere Abzug der Abschreibungen ergibt die Nettowertschöpfung. Löhne sind keine Vorleistung – sie werden aus der Wertschöpfung bezahlt."></div>
+    </div>
+
+    <div class="q-block">
+      <div class="q-nr"></div>
+      <div class="q-frage">Wie werden Gütersteuern und Gütersubventionen bei der Nettowertschöpfung zu Marktpreisen verrechnet?</div>
+      <div class="q-optionen">
+        <button class="q-opt" data-richtig="false">A) Gütersteuern minus, Gütersubventionen plus</button>
+        <button class="q-opt" data-richtig="true">B) Gütersteuern plus, Gütersubventionen minus</button>
+        <button class="q-opt" data-richtig="false">C) Beide werden addiert</button>
+        <button class="q-opt" data-richtig="false">D) Beide bleiben unberücksichtigt</button>
+      </div>
+      <div class="q-fb" data-erklaerung="Produktionswert − Vorleistungen + Gütersteuern − Gütersubventionen − Abschreibungen. Merke über die Logik: Steuern erhöhen den Marktpreis gegenüber dem Herstellerpreis, Subventionen senken ihn."></div>
+    </div>
+
+    <div class="q-block">
+      <div class="q-nr"></div>
+      <div class="q-frage">Welche Aktivität gehört bei Porter <strong>nicht</strong> zu den primären Aktivitäten?</div>
+      <div class="q-optionen">
+        <button class="q-opt" data-richtig="false">A) Eingangslogistik</button>
+        <button class="q-opt" data-richtig="false">B) Ausgangslogistik</button>
+        <button class="q-opt" data-richtig="true">C) Personalwesen</button>
+        <button class="q-opt" data-richtig="false">D) After-Sales-Service</button>
+      </div>
+      <div class="q-fb" data-erklaerung="Personalwesen zählt zu den sekundären (unterstützenden) Aktivitäten – zusammen mit Einkauf, Technologieentwicklung sowie Finanzen und Controlling. Die Logistik erscheint zweimal primär: Eingangs- und Ausgangslogistik."></div>
+    </div>
+
+    <div class="q-block">
+      <div class="q-nr"></div>
+      <div class="q-frage">Ein Kommissionierprozess erreicht seine Zielvorgaben, verbraucht dafür aber doppelt so viele Stunden wie geplant. Wie beurteilst du ihn?</div>
+      <div class="q-optionen">
+        <button class="q-opt" data-richtig="false">A) effizient, aber nicht effektiv</button>
+        <button class="q-opt" data-richtig="true">B) effektiv, aber nicht effizient</button>
+        <button class="q-opt" data-richtig="false">C) weder effektiv noch effizient</button>
+        <button class="q-opt" data-richtig="false">D) effektiv und effizient</button>
+      </div>
+      <div class="q-fb" data-erklaerung="Effektivität = die richtigen Dinge machen, also die Prozessziele erreichen – das gelingt hier. Effizienz = die Dinge richtig machen, also mit geringstem Aufwand – daran scheitert er."></div>
+    </div>
+
+    <div class="q-block">
+      <div class="q-nr"></div>
+      <div class="q-frage">Eine Palette wird ungeplant zwischengelagert, weil die Zielfläche belegt war. Welche Leistungsart ist das?</div>
+      <div class="q-optionen">
+        <button class="q-opt" data-richtig="false">A) Stützleistung</button>
+        <button class="q-opt" data-richtig="true">B) Blindleistung</button>
+        <button class="q-opt" data-richtig="false">C) Fehlleistung</button>
+        <button class="q-opt" data-richtig="false">D) Nutzleistung</button>
+      </div>
+      <div class="q-fb" data-erklaerung="Ungeplante Zwischenlagerung ist das Standardbeispiel für Blindleistung: ungeplant, keine direkte oder indirekte Wertsteigerung, entstanden durch nicht optimale Planung. Fehlleistung wäre es erst, wenn ein Ausführungsfehler geplante Arbeit unbrauchbar macht."></div>
+    </div>
+
+    <div class="q-block">
+      <div class="q-nr"></div>
+      <div class="q-frage">Ein Prozess dauert 400 min: 150 Nutz-, 110 Stütz-, 90 Blind- und 50 Fehlleistung. Wie hoch ist der Prozesswirkungsgrad?</div>
+      <div class="q-optionen">
+        <button class="q-opt" data-richtig="false">A) 37,5 %</button>
+        <button class="q-opt" data-richtig="true">B) 65 %</button>
+        <button class="q-opt" data-richtig="false">C) 72,5 %</button>
+        <button class="q-opt" data-richtig="false">D) 85 %</button>
+      </div>
+      <div class="q-fb" data-erklaerung="(150 + 110) ÷ 400 × 100 = 65 %. Die 37,5 % wären der enge Wirkungsgrad, der nur die Nutzleistung zählt (150 ÷ 400)."></div>
+    </div>
+
+    <div class="q-block">
+      <div class="q-nr"></div>
+      <div class="q-frage">Welcher Grund für den Bullwhip-Effekt steht <strong>nicht</strong> im Skript?</div>
+      <div class="q-optionen">
+        <button class="q-opt" data-richtig="false">A) Informationsverluste innerhalb der Lieferkette</button>
+        <button class="q-opt" data-richtig="false">B) Fehlende Vernetzung innerhalb der Lieferkette</button>
+        <button class="q-opt" data-richtig="true">C) Unregelmäßiges Kaufverhalten der Endkunden</button>
+        <button class="q-opt" data-richtig="false">D) Aufschaukeln unterschiedlicher Bedarfsverläufe</button>
+      </div>
+      <div class="q-fb" data-erklaerung="Die vier Gründe sind: Aufschaukeln unterschiedlicher Bedarfsverläufe, Aufschaukeln von Nachfrageänderungen, Informationsverluste und fehlende Vernetzung. Der Effekt beschreibt gerade die Verstärkung kleiner Schwankungen – nicht schwankende Endnachfrage."></div>
+    </div>
+
+    <div class="q-block">
+      <div class="q-nr"></div>
+      <div class="q-frage">Der Fachkräftemangel auf dem Arbeitsmarkt ist für ein Logistikunternehmen …</div>
+      <div class="q-optionen">
+        <button class="q-opt" data-richtig="true">A) ein Umfeldfaktor</button>
+        <button class="q-opt" data-richtig="false">B) ein Systemfaktor der Gruppe Ressourcen</button>
+        <button class="q-opt" data-richtig="false">C) ein Systemfaktor der Gruppe Flexibilität</button>
+        <button class="q-opt" data-richtig="false">D) eine Produkteigenschaft</button>
+      </div>
+      <div class="q-fb" data-erklaerung="Umfeldfaktoren kommen von außen und lassen sich nicht gestalten, nur beantworten – der Arbeitsmarkt ist Umfeld D. Die Qualifikation und Motivation der eigenen Mitarbeiter wäre dagegen der Systemfaktor B1 Personal."></div>
+    </div>
+
+    <div class="q-block">
+      <div class="q-nr"></div>
+      <div class="q-frage">Welche Aussage über Stabstellen ist richtig?</div>
+      <div class="q-optionen">
+        <button class="q-opt" data-richtig="false">A) Sie haben Weisungsbefugnis gegenüber der Linie.</button>
+        <button class="q-opt" data-richtig="true">B) Sie beraten die leitenden Instanzen, ohne Weisungsrecht zu haben.</button>
+        <button class="q-opt" data-richtig="false">C) Sie ersetzen im Mehrliniensystem die Instanzen.</button>
+        <button class="q-opt" data-richtig="false">D) Sie sind die kleinste organisatorische Einheit mit Leitungsbefugnis.</button>
+      </div>
+      <div class="q-fb" data-erklaerung="Eine Stabstelle hat Beratungsfunktion und ausdrücklich keine Weisungsbefugnis. Eine Stelle mit Leitungsbefugnis heißt Instanz. Das Stabliniensystem ist ein erweitertes Einliniensystem."></div>
+    </div>
+
+    <div class="q-score"><div class="z"></div><div class="t"></div></div>
+  </div>
+
+  <div class="block lernziel" data-notiz="ziel-abschluss">
+    <div class="b-label">Wenn du fertig bist</div>
+    <p>Drücke <strong>K</strong>, um aus allen Selbstabfragen dieses Kapitels Karteikarten zu ziehen. Vertiefe danach vor allem zwei Stellen: die <strong>Wertschöpfungsrechnung</strong> (Abschnitt 1.1.6) und den <strong>Prozesswirkungsgrad</strong> (Abschnitt 1.1.12) – das sind die beiden Rechenwege, die in Plabs Prüfungsteil sichere Punkte bringen.</p>
+  </div>
+</section>
+
+</main>
+
+<script>window.KAPITEL = {id:'plab-1', fach:'plab', nummer:'1.1', titel:'Logistikstruktur & Grundlagen'};</script>
+<script src="assets/portal.js" defer></script>
+</body>
+</html>

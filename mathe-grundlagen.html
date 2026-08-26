@@ -1,0 +1,2123 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Werkzeuge · Mathematische Grundlagen für den Fachwirt</title>
+<link rel="stylesheet" href="assets/portal.css">
+</head>
+<body class="mit-sidebar">
+
+<aside class="sidebar"></aside>
+
+<main class="inhalt">
+
+<div class="kopf-label">Werkzeuge · Mathematische Grundlagen für den Fachwirt</div>
+<h1>Mathe-Grundlagen</h1>
+<p class="kopf-sub">Von null an. Hier steht nicht, wie Logistik funktioniert, sondern wie du rechnest. Jeder Punkt, den man in einer Rechenaufgabe verliert, geht fast nie auf fehlendes Logistikwissen zurück – sondern auf Brüche, Prozent, Einheiten und das Umstellen von Formeln. Dieses Kapitel ist die Versicherung dagegen.</p>
+
+<div class="block lernziel" data-notiz="ziel-kapitel">
+  <div class="b-label">Wenn du hier durch bist, kannst du</div>
+  <ul>
+    <li>jeden Rechenausdruck in der richtigen Reihenfolge auflösen – Klammer, Punkt, Strich</li>
+    <li>mit negativen Zahlen, Brüchen und Dezimalzahlen sicher umgehen</li>
+    <li>Prozentwert, Grundwert und Prozentsatz auseinanderhalten und in jede Richtung rechnen</li>
+    <li>Dreisatzaufgaben lösen und dabei erkennen, ob sie proportional oder antiproportional sind</li>
+    <li>Einheiten umrechnen, ohne dich beim Komma oder bei der Zehnerpotenz zu vertun</li>
+    <li>jede Formel nach jeder beliebigen Größe umstellen – auch mit Bruch und Wurzel</li>
+    <li>dein Ergebnis mit einem Überschlag und einer Probe selbst kontrollieren</li>
+  </ul>
+</div>
+
+<div class="block einstieg" data-notiz="ein-kapitel-nutzung">
+  <div class="b-label">Wie du dieses Kapitel benutzt</div>
+  <p>Lies es nicht in einem Rutsch durch. Nimm dir einen Abschnitt vor, rechne die Beispiele auf Papier mit – nicht nur mit den Augen –, und beantworte am Ende die Selbstabfragen laut. Erst wenn du einen Abschnitt jemandem erklären könntest, gehst du weiter. Abschnitt 6.1 ist der Übungsteil: dort mischt sich alles. Wenn du dort hängst, weißt du genau, zu welchem Abschnitt du zurückmusst.</p>
+  <p>Ein Hinweis vorweg: Es ist völlig normal, dass Schulmathematik nach zehn oder zwanzig Jahren weg ist. Das ist kein Talentproblem. Rechnen ist ein Handwerk, und Handwerk lernt man durch Wiederholung.</p>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════════ -->
+<section class="abschnitt" id="zahlen-und-rechenreihenfolge" data-gruppe="Rechnen von Grund auf">
+  <div class="ab-kopf"><h2><span class="ab-nr">1.1</span>Zahlen lesen und in der richtigen Reihenfolge rechnen</h2></div>
+
+  <div class="block einstieg" data-notiz="ein-reihenfolge">
+    <div class="b-label">Worum es geht</div>
+    <p>Du sollst den Wareneingang eines Tages zusammenzählen. Es kamen 4 Paletten mit je 12 Kartons an, dazu 5 lose Kartons. Du schreibst auf: <strong>4 × 12 + 5</strong>. Zwei Leute tippen das in den Taschenrechner, es kommen zwei verschiedene Zahlen heraus – 53 und 68. Einer von beiden hat der Reihe nach getippt und dabei zwischendurch die Gleichtaste gedrückt. Wer mit welcher Zahl weiterarbeitet, entscheidet über die ganze Aufgabe.</p>
+    <p>Es gibt für solche Ausdrücke genau <em>eine</em> richtige Lesart. Sie ist weltweit gleich, und sie ist die Grundlage für jede Formel, die du im Fachwirt siehst.</p>
+  </div>
+
+  <h3>Zuerst: wie eine Zahl in Deutschland geschrieben wird</h3>
+  <p>Bevor du rechnest, musst du die Zahl richtig lesen können. Im deutschen Schreibgebrauch gilt:</p>
+
+  <div class="tab" data-notiz="tab-zahlschreibweise">
+    <table>
+      <thead><tr><th>Zeichen</th><th>Bedeutung</th><th>Beispiel</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Komma</strong> ( , )</td><td>trennt die ganzen Zahlen von den Nachkommastellen</td><td>4,75 € = vier Euro fünfundsiebzig</td></tr>
+        <tr><td><strong>Punkt</strong> ( . )</td><td>trennt Tausender, nur als Lesehilfe – er hat keinen Rechenwert</td><td>1.250 Stück = eintausendzweihundertfünfzig</td></tr>
+        <tr><td>beides zusammen</td><td>Punkt links, Komma rechts</td><td>28.400,50 € = achtundzwanzigtausendvierhundert Euro fünfzig</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="block achtung" data-notiz="ach-komma-punkt">
+    <div class="b-label">Der erste Fehler, den fast jeder einmal macht</div>
+    <p>Dein Taschenrechner kennt <strong>keinen Tausenderpunkt</strong>. Er kennt nur eine Kommataste, und auf vielen Geräten ist das ein Punkt. Wenn du <em>1.250</em> eintippst, versteht er in aller Regel <strong>1,25</strong>. Der Tausenderpunkt wird <strong>nie</strong> mit eingegeben. Schreib die Zahl auf dem Papier gern mit Punkt – tippe sie ohne.</p>
+    <p>In englischsprachigen Unterlagen ist es genau umgekehrt: dort heißt <em>1,250.75</em> das, was bei uns <em>1.250,75</em> heißt. Wenn dir in einer Aufgabe eine englische Tabelle begegnet, prüfe zuerst, welche Schreibweise gilt.</p>
+  </div>
+
+  <h3>Die Reihenfolge: Klammer, Punkt, Strich</h3>
+  <p>„Punkt“ meint Mal und Geteilt (× und ÷), weil beide Zeichen einen Punkt enthalten. „Strich“ meint Plus und Minus (+ und −), weil beide aus Strichen bestehen. Die Regel lautet:</p>
+
+  <div class="formel" data-notiz="formel-kps">
+    <div class="formel-kopf"><span class="f-tag">Regel</span><span class="f-name">Rechenreihenfolge (K – P – S)</span></div>
+    <div class="formel-koerper">
+      <div class="eq">1. Klammern   →   2. Punkt (× ÷)   →   3. Strich (+ −)</div>
+      <div class="f-erklaerung">Innerhalb derselben Stufe wird von links nach rechts gerechnet. Steht in einer Klammer wieder eine Klammer, gilt die Regel dort noch einmal – von innen nach außen.</div>
+    </div>
+  </div>
+
+  <div class="block merk" data-notiz="merk-kps">
+    <div class="b-label">Merksatz</div>
+    <p><strong>Klammer vor Punkt vor Strich.</strong> Und: Gleichrangiges immer von links nach rechts. Das zweite vergessen die meisten – es ist der Grund, warum 100 − 30 − 20 nicht 90 ergibt.</p>
+  </div>
+
+  <h3>Beispiel 1 – der Wareneingang von oben</h3>
+  <div class="schritte" data-notiz="rechnung-wareneingang">
+    <div class="schritt"><div class="s-nr">1</div><div class="s-txt">4 × 12 + 5</div></div>
+    <div class="s-warum">Der Ausdruck enthält keine Klammer. Also suchst du zuerst die Punktrechnung.</div>
+    <div class="schritt"><div class="s-nr">2</div><div class="s-txt">4 × 12 = 48</div></div>
+    <div class="s-warum">Mal vor Plus. Die 48 ist die Kartonzahl auf den Paletten.</div>
+    <div class="schritt fertig"><div class="s-nr">✓</div><div class="s-txt">48 + 5 = 53 Kartons</div></div>
+    <div class="s-warum">Erst jetzt kommen die 5 losen Kartons dazu. Die 68 entsteht, wenn man 4 × 12 + 5 falsch als 4 × (12 + 5) liest – 4 × 17 = 68.</div>
+  </div>
+
+  <h3>Beispiel 2 – Klammer verändert alles</h3>
+  <div class="schritte" data-notiz="rechnung-klammerwirkung">
+    <div class="schritt"><div class="s-nr">1</div><div class="s-txt">3 + 4 × 2 = 3 + 8 = 11</div></div>
+    <div class="s-warum">Ohne Klammer: erst 4 × 2, dann plus 3.</div>
+    <div class="schritt fertig"><div class="s-nr">✓</div><div class="s-txt">( 3 + 4 ) × 2 = 7 × 2 = 14</div></div>
+    <div class="s-warum">Mit Klammer: erst die Summe, dann mal 2. Dieselben drei Zahlen, dieselben zwei Zeichen – ein anderes Ergebnis. Deshalb setzt man in Formeln lieber eine Klammer zu viel als eine zu wenig.</div>
+  </div>
+
+  <h3>Beispiel 3 – gleichrangig heißt von links nach rechts</h3>
+  <div class="schritte" data-notiz="rechnung-linksnachrechts">
+    <div class="schritt"><div class="s-nr">1</div><div class="s-txt">100 − 30 − 20 = 70 − 20 = 50</div></div>
+    <div class="s-warum">Zwei Minuszeichen, beide Strichrechnung. Also streng von links: erst 100 − 30, dann − 20. Wer hinten anfängt, rechnet 30 − 20 = 10 und kommt auf 90. Falsch.</div>
+    <div class="schritt fertig"><div class="s-nr">✓</div><div class="s-txt">100 ÷ 5 × 2 = 20 × 2 = 40</div></div>
+    <div class="s-warum">Geteilt und Mal sind gleichrangig. Von links: erst 100 ÷ 5 = 20, dann × 2 = 40. Wer erst 5 × 2 = 10 rechnet, landet bei 10 – das ist der klassische Zwischenschritt-Fehler bei Kennzahlenformeln.</div>
+  </div>
+
+  <h3>Beispiel 4 – der Bruchstrich ist eine unsichtbare Klammer</h3>
+  <p>Wenn im Skript etwas übereinander steht, gilt: alles über dem Strich zusammen, alles unter dem Strich zusammen, danach wird geteilt. Schreibst du es in eine Zeile, musst du diese Klammern selbst setzen.</p>
+
+  <div class="formel" data-notiz="formel-bruchstrich">
+    <div class="formel-kopf"><span class="f-tag">Regel</span><span class="f-name">Bruchstrich in eine Zeile schreiben</span></div>
+    <div class="formel-koerper">
+      <div class="eq">(240 + 160) ÷ 8 = 400 ÷ 8 = 50</div>
+      <div class="eq warn">240 + 160 ÷ 8 = 240 + 20 = 260   ← ohne Klammer falsch</div>
+      <div class="f-erklaerung">Der Unterschied beträgt 210. In einer Kennzahlenaufgabe wäre das die ganze Aufgabe.</div>
+    </div>
+  </div>
+
+  <div class="block beispiel" data-notiz="bsp-andler-reihenfolge">
+    <div class="b-label">Wo dir das im Fachwirt begegnet</div>
+    <p>Die bekannteste Formel des Fachwirts, die <strong>Andlersche Formel</strong> für die optimale Bestellmenge, ist genau so gebaut: unter der Wurzel steht ein Bruch, und Zähler und Nenner müssen jeder für sich fertig gerechnet sein, bevor du dividierst.</p>
+    <p>Zahlenbeispiel: Zähler <strong>2 × 80.000 × 180 = 28.800.000</strong>. Nenner <strong>12 × 0,15 = 1,8</strong>. Erst danach <strong>28.800.000 ÷ 1,8 = 16.000.000</strong>. Und ganz zum Schluss die Wurzel: <strong>4.000 Stück</strong>.</p>
+    <p>Tippt jemand ohne Klammer <em>28.800.000 ÷ 12 × 0,15</em>, rechnet der Taschenrechner von links: 2.400.000 × 0,15 = <strong>360.000</strong>. Die Wurzel daraus wären 600 Stück statt 4.000. Ein einziges fehlendes Klammernpaar, und die Bestellmenge liegt um den Faktor 6,7 daneben.</p>
+  </div>
+
+  <div class="block achtung" data-notiz="ach-gleichtaste">
+    <div class="b-label">Typischer Fehler</div>
+    <p>Zwischendurch die Gleichtaste drücken. Wer <em>3 + 4 =</em> tippt und dann <em>× 2 =</em>, hat die Klammer selbst gesetzt, ohne es zu merken – der Rechner arbeitet mit 7 weiter. Tippe den ganzen Ausdruck am Stück ein und drücke Gleich nur einmal am Ende. Wenn du zwischendurch ein Zwischenergebnis brauchst, schreib es auf und notiere daneben, wofür es steht.</p>
+  </div>
+
+  <div class="abfrage-liste">
+    <div class="abfrage-kopf">Selbstabfrage</div>
+    <details class="abfrage"><summary>In welcher Reihenfolge wird gerechnet?</summary>
+      <div class="antwort"><p>Erst Klammern, dann Punktrechnung (× ÷), dann Strichrechnung (+ −). Innerhalb einer Stufe von links nach rechts.</p></div></details>
+    <details class="abfrage"><summary>Wie viel ist 100 ÷ 5 × 2 – und warum nicht 10?</summary>
+      <div class="antwort"><p>40. Geteilt und Mal sind gleichrangig, deshalb wird von links gerechnet: 100 ÷ 5 = 20, dann × 2 = 40. Wer erst 5 × 2 rechnet, verletzt die Links-nach-rechts-Regel.</p></div></details>
+    <details class="abfrage"><summary>Was bedeutet der Bruchstrich für die Reihenfolge?</summary>
+      <div class="antwort"><p>Er wirkt wie eine Klammer um den Zähler und eine um den Nenner. Beide werden vollständig ausgerechnet, erst danach wird dividiert. In einer Zeile muss man diese Klammern selbst setzen.</p></div></details>
+    <details class="abfrage"><summary>Warum darfst du den Tausenderpunkt nicht in den Taschenrechner tippen?</summary>
+      <div class="antwort"><p>Weil der Rechner den Punkt als Dezimaltrennzeichen liest. Aus 1.250 würde 1,25 – ein Faktor 1000 daneben.</p></div></details>
+    <details class="abfrage"><summary>Warum ist die Gleichtaste mitten in einer Rechnung gefährlich?</summary>
+      <div class="antwort"><p>Sie schließt die bisherige Rechnung ab und setzt damit unbeabsichtigt eine Klammer. 3 + 4 = ergibt 7; wenn danach × 2 folgt, rechnet der Rechner (3 + 4) × 2 = 14 statt 3 + 4 × 2 = 11.</p></div></details>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════ -->
+<section class="abschnitt" id="negative-zahlen" data-gruppe="Rechnen von Grund auf">
+  <div class="ab-kopf"><h2><span class="ab-nr">1.2</span>Negative Zahlen und die Vorzeichenregeln</h2></div>
+
+  <div class="block einstieg" data-notiz="ein-negative">
+    <div class="b-label">Worum es geht</div>
+    <p>Im Lager stehen 120 Kartons. Es wird ein Auftrag über 200 Kartons ausgelöst. Rechnerisch: 120 − 200 = <strong>−80</strong>. Diese Minus-80 ist keine Zahlenspielerei, sie hat eine Bedeutung: <em>Fehlmenge 80 Kartons.</em> Genauso ist es beim Soll-Ist-Vergleich, bei Kontoständen, bei Abweichungen und bei jeder Formel, in der eine Größe kleiner werden kann.</p>
+    <p>Negative Zahlen sind nichts anderes als Werte unterhalb von null – auf einer Linie links von der Null. Du kennst sie aus dem Wetterbericht. Der Umgang mit ihnen folgt vier Regeln, mehr nicht.</p>
+  </div>
+
+  <h3>Der Zahlenstrahl als Bild</h3>
+  <p>Stell dir eine Linie vor: in der Mitte die 0, rechts davon 1, 2, 3 …, links davon −1, −2, −3 … <strong>Plus rechnen heißt nach rechts gehen. Minus rechnen heißt nach links gehen.</strong> Damit lässt sich jede Aufgabe zu Fuß prüfen.</p>
+  <p>Beispiel: −3 − 4. Du startest bei −3 und gehst vier Schritte nach links. Du landest bei −7. Und: −3 + 10. Du startest bei −3 und gehst zehn nach rechts. Du landest bei 7.</p>
+
+  <div class="tab" data-notiz="tab-vorzeichenregeln">
+    <table>
+      <thead><tr><th>Was steht da</th><th>Was daraus wird</th><th>Beispiel</th><th class="num">Ergebnis</th></tr></thead>
+      <tbody>
+        <tr><td>+ ( + )</td><td>plus</td><td>8 + (+3)</td><td class="num">11</td></tr>
+        <tr><td>+ ( − )</td><td>minus</td><td>8 + (−3)</td><td class="num">5</td></tr>
+        <tr><td>− ( + )</td><td>minus</td><td>8 − (+3)</td><td class="num">5</td></tr>
+        <tr><td>− ( − )</td><td><strong>plus</strong></td><td>8 − (−3)</td><td class="num">11</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="block merk" data-notiz="merk-vorzeichen-strich">
+    <div class="b-label">Merksatz für Plus und Minus</div>
+    <p><strong>Zwei gleiche Zeichen ergeben Plus, zwei verschiedene ergeben Minus.</strong> „Minus minus ist plus“ ist die Kurzfassung. Alltagsbild: Wenn dir eine Schuld <em>weggenommen</em> wird (minus einer negativen Größe), stehst du besser da.</p>
+  </div>
+
+  <h3>Mal und Geteilt mit Vorzeichen</h3>
+  <p>Bei Punktrechnung gilt dieselbe Logik, nur noch einfacher: Du zählst die Minuszeichen.</p>
+
+  <div class="formel" data-notiz="formel-vorzeichen-punkt">
+    <div class="formel-kopf"><span class="f-tag">Regel</span><span class="f-name">Vorzeichen bei Mal und Geteilt</span></div>
+    <div class="formel-koerper">
+      <div class="eq">( + ) × ( + ) = +        ( − ) × ( − ) = +</div>
+      <div class="eq">( + ) × ( − ) = −        ( − ) × ( + ) = −</div>
+      <div class="f-erklaerung">Gleiche Vorzeichen ergeben ein Plus, verschiedene ein Minus. Für Geteilt gilt exakt dasselbe. Eine gerade Anzahl Minuszeichen ergibt Plus, eine ungerade ergibt Minus.</div>
+    </div>
+  </div>
+
+  <h3>Beispiel 1 – Fehlmenge</h3>
+  <div class="schritte" data-notiz="rechnung-fehlmenge">
+    <div class="schritt"><div class="s-nr">1</div><div class="s-txt">Bestand 120 − Bedarf 200</div></div>
+    <div class="s-warum">Du gehst von 120 aus 200 Schritte nach links. Die 120 sind nach 120 Schritten aufgebraucht, es bleiben 80 Schritte übrig.</div>
+    <div class="schritt fertig"><div class="s-nr">✓</div><div class="s-txt">= −80 Kartons, also Fehlmenge 80</div></div>
+    <div class="s-warum">Das Minuszeichen ist die Information. Wer es beim Abschreiben verliert, meldet einen Bestand statt eines Fehlbestands.</div>
+  </div>
+
+  <h3>Beispiel 2 – Abweichung in Prozent</h3>
+  <div class="schritte" data-notiz="rechnung-abweichung">
+    <div class="schritt"><div class="s-nr">1</div><div class="s-txt">Ist 480 Sendungen, Soll 500 Sendungen</div></div>
+    <div class="s-warum">Abweichung heißt immer: Ist minus Soll. Die Reihenfolge ist wichtig, sonst dreht sich das Vorzeichen.</div>
+    <div class="schritt"><div class="s-nr">2</div><div class="s-txt">480 − 500 = −20 Sendungen</div></div>
+    <div class="s-warum">Negativ heißt: unter Plan.</div>
+    <div class="schritt fertig"><div class="s-nr">✓</div><div class="s-txt">−20 ÷ 500 × 100 = −4 %</div></div>
+    <div class="s-warum">Die Abweichung wird immer auf den Sollwert bezogen, also durch 500 geteilt. Das Vorzeichen wandert mit: −4 % bedeutet 4 % unter Plan.</div>
+  </div>
+
+  <h3>Beispiel 3 – zwei Minus bei der Division</h3>
+  <div class="schritte" data-notiz="rechnung-minus-durch-minus">
+    <div class="schritt"><div class="s-nr">1</div><div class="s-txt">−10,5 ÷ (−15)</div></div>
+    <div class="s-warum">Zwei Minuszeichen, also eine gerade Anzahl. Das Ergebnis wird positiv.</div>
+    <div class="schritt"><div class="s-nr">2</div><div class="s-txt">Vorzeichen weglassen: 10,5 ÷ 15</div></div>
+    <div class="s-warum">Erst das Vorzeichen klären, dann die reinen Zahlen rechnen. So verhaspelt man sich nicht.</div>
+    <div class="schritt fertig"><div class="s-nr">✓</div><div class="s-txt">= 0,7</div></div>
+    <div class="s-warum">Genau diese Rechnung brauchst du gleich beim Umstellen der exponentiellen Glättung nach dem Glättungsfaktor α.</div>
+  </div>
+
+  <div class="block beispiel" data-notiz="bsp-negative-logistik">
+    <div class="b-label">Wo dir das im Fachwirt begegnet</div>
+    <p><strong>Soll-Ist-Vergleiche und Kennzahlenberichte:</strong> Abweichungen sind fast immer vorzeichenbehaftet. Ein Bestand von −80 Stück im Dispositionssystem heißt Fehlbestand, kein Rechenfehler.</p>
+    <p><strong>Exponentielle Glättung:</strong> Beim Umstellen nach α landest du regelmäßig bei einem negativen Zähler und einem negativen Nenner. Wer dort ein Vorzeichen verliert, bekommt ein negatives α – und ein negatives α gibt es nicht, denn α liegt immer zwischen 0 und 1. Das ist gleichzeitig deine Kontrolle.</p>
+    <p><strong>Wertschöpfung und Deckungsbeitrag:</strong> Wenn die Kosten größer sind als der Erlös, ist das Ergebnis negativ. Das ist ein zulässiges und aussagekräftiges Resultat, kein Fehler.</p>
+  </div>
+
+  <div class="block achtung" data-notiz="ach-vorzeichentaste">
+    <div class="b-label">Typischer Fehler am Taschenrechner</div>
+    <p>Die meisten Rechner haben zwei verschiedene Tasten: die <strong>Minustaste</strong> für „abziehen“ und die <strong>Vorzeichentaste</strong> (meist beschriftet mit <em>(−)</em> oder <em>+/−</em>) für „diese Zahl ist negativ“. Wer eine negative Zahl mit der Minustaste eingibt, erzeugt oft eine Fehlermeldung oder – schlimmer – ein stillschweigend falsches Ergebnis. Faustregel: <em>Erst das Vorzeichen im Kopf klären, dann nur mit positiven Zahlen tippen.</em></p>
+  </div>
+
+  <div class="abfrage-liste">
+    <div class="abfrage-kopf">Selbstabfrage</div>
+    <details class="abfrage"><summary>Wie viel ist 8 − (−3) und warum?</summary>
+      <div class="antwort"><p>11. Minus und Minus ergeben Plus, also 8 + 3. Anschaulich: eine Schuld wird weggenommen, du stehst besser da.</p></div></details>
+    <details class="abfrage"><summary>Welches Vorzeichen hat (−12) × (−4) ÷ (−2)?</summary>
+      <div class="antwort"><p>Negativ. Drei Minuszeichen sind eine ungerade Anzahl. Betrag: 12 × 4 ÷ 2 = 24, also −24.</p></div></details>
+    <details class="abfrage"><summary>Was bedeutet eine Abweichung von −4 % beim Sendungsvolumen?</summary>
+      <div class="antwort"><p>Das Ist liegt 4 % unter dem Soll. Berechnet als (Ist − Soll) ÷ Soll × 100.</p></div></details>
+    <details class="abfrage"><summary>Woran erkennst du beim Glättungsfaktor α sofort einen Vorzeichenfehler?</summary>
+      <div class="antwort"><p>α muss zwischen 0 und 1 liegen. Kommt ein negativer Wert oder ein Wert über 1 heraus, ist irgendwo ein Vorzeichen verloren gegangen.</p></div></details>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════ -->
+<section class="abschnitt" id="brueche" data-gruppe="Rechnen von Grund auf">
+  <div class="ab-kopf"><h2><span class="ab-nr">1.3</span>Brüche verstehen und mit ihnen rechnen</h2></div>
+
+  <div class="block einstieg" data-notiz="ein-brueche">
+    <div class="b-label">Worum es geht</div>
+    <p>Eine Lieferung besteht aus 4.800 Paletten. Drei Achtel davon gehen an das Zentrallager Süd. Wie viele sind das? Genau dafür gibt es Brüche. Ein Bruch ist keine geheimnisvolle Schreibweise, sondern <strong>eine Divisionsaufgabe, die noch nicht ausgerechnet ist</strong>. Wenn du das einmal wirklich verinnerlicht hast, verlieren Brüche ihren Schrecken.</p>
+  </div>
+
+  <h3>Was oben und was unten steht</h3>
+  <div class="block def" data-notiz="def-bruch">
+    <div class="b-label">Definition</div>
+    <div class="b-term">Bruch, Zähler, Nenner</div>
+    <p>Ein Bruch besteht aus zwei Zahlen. Die untere heißt <strong>Nenner</strong> – sie <em>benennt</em>, in wie viele gleiche Teile das Ganze zerlegt wurde. Die obere heißt <strong>Zähler</strong> – sie <em>zählt</em>, wie viele dieser Teile gemeint sind.</p>
+    <p>Bei <strong>3/8</strong> ist das Ganze in 8 gleiche Teile zerlegt, und 3 davon sind gemeint. Der Bruchstrich bedeutet dabei nichts anderes als „geteilt durch“: 3/8 = 3 ÷ 8 = 0,375.</p>
+  </div>
+
+  <div class="block merk" data-notiz="merk-bruch-division">
+    <div class="b-label">Der eine Satz, der alles vereinfacht</div>
+    <p><strong>Jeder Bruch ist eine Division.</strong> Wenn du nicht weiterweißt, teile Zähler durch Nenner und rechne mit der Dezimalzahl weiter. Das ist in der Prüfung fast immer der schnellere Weg, weil du ohnehin einen Taschenrechner hast.</p>
+  </div>
+
+  <h3>Kürzen und Erweitern – der Wert bleibt gleich</h3>
+  <p>Wenn du Zähler <em>und</em> Nenner mit derselben Zahl multiplizierst oder durch dieselbe Zahl teilst, ändert sich der Wert des Bruchs nicht. Das ist so, als würdest du eine Pizza in 12 statt in 6 Stücke schneiden: Die halbe Pizza bleibt die halbe Pizza.</p>
+
+  <div class="schritte" data-notiz="rechnung-kuerzen">
+    <div class="schritt"><div class="s-nr">1</div><div class="s-txt">12/18 – gibt es eine Zahl, die in 12 und in 18 passt?</div></div>
+    <div class="s-warum">Ja, die 6. 12 ÷ 6 = 2 und 18 ÷ 6 = 3.</div>
+    <div class="schritt"><div class="s-nr">2</div><div class="s-txt">12 ÷ 6 = 2  ·  18 ÷ 6 = 3</div></div>
+    <div class="s-warum">Beide Zahlen durch dieselbe Zahl teilen – das nennt man kürzen.</div>
+    <div class="schritt fertig"><div class="s-nr">✓</div><div class="s-txt">12/18 = 2/3 = 0,6667</div></div>
+    <div class="s-warum">Kontrolle mit dem Rechner: 12 ÷ 18 = 0,6667 und 2 ÷ 3 = 0,6667. Gleicher Wert, kürzere Schreibweise.</div>
+  </div>
+
+  <h3>Addieren und Subtrahieren – nur mit gleichem Nenner</h3>
+  <p>Ein Viertel plus ein Sechstel ergibt <em>nicht</em> zwei Zehntel. Man kann Teile nur zusammenzählen, wenn sie gleich groß sind. Also bringt man beide Brüche zuerst auf denselben Nenner.</p>
+
+  <div class="schritte" data-notiz="rechnung-brueche-addieren">
+    <div class="schritt"><div class="s-nr">1</div><div class="s-txt">1/4 + 1/6 – gesucht: eine Zahl, in der 4 und 6 aufgehen</div></div>
+    <div class="s-warum">12 passt: 12 ÷ 4 = 3 und 12 ÷ 6 = 2. Man nennt das den gemeinsamen Nenner. Im Zweifel funktioniert immer 4 × 6 = 24, nur wird die Rechnung dann größer.</div>
+    <div class="schritt"><div class="s-nr">2</div><div class="s-txt">1/4 = 3/12   und   1/6 = 2/12</div></div>
+    <div class="s-warum">Erweitern heißt: Zähler und Nenner mit derselben Zahl malnehmen. Bei 1/4 mit 3, bei 1/6 mit 2.</div>
+    <div class="schritt fertig"><div class="s-nr">✓</div><div class="s-txt">3/12 + 2/12 = 5/12 = 0,4167</div></div>
+    <div class="s-warum">Bei gleichem Nenner werden nur die Zähler addiert. Der Nenner bleibt stehen – er sagt ja nur, wie groß ein Teil ist.</div>
+  </div>
+
+  <h3>Multiplizieren – gerade heraus</h3>
+  <div class="formel" data-notiz="formel-bruch-mal">
+    <div class="formel-kopf"><span class="f-tag">Regel</span><span class="f-name">Brüche multiplizieren</span></div>
+    <div class="formel-koerper">
+      <div class="eq">a/b × c/d = (a × c) / (b × d)</div>
+      <div class="eq ergebnis">3/4 × 2/5 = 6/20 = 3/10 = 0,3</div>
+      <div class="f-erklaerung">Zähler mal Zähler, Nenner mal Nenner. Hier braucht man <strong>keinen</strong> gemeinsamen Nenner – das ist der häufigste Irrtum.</div>
+    </div>
+  </div>
+
+  <h3>Dividieren – mit dem Kehrwert malnehmen</h3>
+  <div class="formel" data-notiz="formel-bruch-geteilt">
+    <div class="formel-kopf"><span class="f-tag">Regel</span><span class="f-name">Durch einen Bruch teilen</span></div>
+    <div class="formel-koerper">
+      <div class="eq">a/b ÷ c/d = a/b × d/c</div>
+      <div class="eq ergebnis">3/4 ÷ 1/2 = 3/4 × 2/1 = 6/4 = 1,5</div>
+      <div class="f-erklaerung">„Kehrwert“ heißt: den zweiten Bruch umdrehen, Zähler und Nenner tauschen. Plausibilitätsprobe: Wie oft passt ein halbes in dreiviertel? Anderthalb Mal. Stimmt.</div>
+    </div>
+  </div>
+
+  <h3>Anteil eines Bruchs von einer Menge</h3>
+  <div class="schritte" data-notiz="rechnung-anteil-paletten">
+    <div class="schritt"><div class="s-nr">1</div><div class="s-txt">3/8 von 4.800 Paletten</div></div>
+    <div class="s-warum">„Von“ heißt bei Brüchen immer „mal“. Also 4.800 × 3/8.</div>
+    <div class="schritt"><div class="s-nr">2</div><div class="s-txt">4.800 ÷ 8 = 600  (das ist ein Achtel)</div></div>
+    <div class="s-warum">Der sicherste Weg: erst durch den Nenner teilen, dann mit dem Zähler malnehmen. So bleiben die Zahlen klein.</div>
+    <div class="schritt fertig"><div class="s-nr">✓</div><div class="s-txt">600 × 3 = 1.800 Paletten</div></div>
+    <div class="s-warum">Probe: Die restlichen fünf Achtel sind 600 × 5 = 3.000. Und 1.800 + 3.000 = 4.800. Passt.</div>
+  </div>
+
+  <div class="block beispiel" data-notiz="bsp-brueche-logistik">
+    <div class="b-label">Wo dir das im Fachwirt begegnet</div>
+    <p><strong>Lagerkennzahlen sind Brüche.</strong> Die Umschlagshäufigkeit ist Jahresverbrauch geteilt durch durchschnittlichen Lagerbestand: 96 t ÷ 20 t = <strong>4,8</strong>. Die durchschnittliche Lagerdauer ist 360 Tage geteilt durch diese Umschlagshäufigkeit: 360 ÷ 4,8 = <strong>75 Tage</strong>.</p>
+    <p>Hier steckt ein <em>Doppelbruch</em>: Die Lagerdauer ist ein Bruch, in dessen Nenner schon wieder ein Bruch steht. Genau deshalb ist Zwischenrunden hier so gefährlich – dazu gleich mehr im nächsten Abschnitt.</p>
+    <p><strong>ABC-Analyse:</strong> Wenn 8 von 40 Artikeln der A-Klasse angehören, ist das 8/40 = 1/5 = 20 % der Artikel. Anteile sind Brüche in anderer Kleidung.</p>
+  </div>
+
+  <div class="block achtung" data-notiz="ach-brueche-nenner">
+    <div class="b-label">Die zwei typischen Fehler</div>
+    <p><strong>1. Beim Multiplizieren einen gemeinsamen Nenner suchen.</strong> Braucht man nicht – der ist nur beim Addieren und Subtrahieren nötig.</p>
+    <p><strong>2. Beim Addieren die Nenner addieren.</strong> 1/4 + 1/6 ist nicht 2/10. Der Nenner sagt nur, wie groß ein Teil ist; addiert werden ausschließlich die Zähler, und das nur bei gleichem Nenner.</p>
+  </div>
+
+  <div class="abfrage-liste">
+    <div class="abfrage-kopf">Selbstabfrage</div>
+    <details class="abfrage"><summary>Was bedeutet der Bruchstrich rechnerisch?</summary>
+      <div class="antwort"><p>„Geteilt durch“. 3/8 ist dasselbe wie 3 ÷ 8 = 0,375.</p></div></details>
+    <details class="abfrage"><summary>Wann brauchst du einen gemeinsamen Nenner und wann nicht?</summary>
+      <div class="antwort"><p>Beim Addieren und Subtrahieren brauchst du ihn. Beim Multiplizieren und Dividieren nicht.</p></div></details>
+    <details class="abfrage"><summary>Wie teilt man durch einen Bruch?</summary>
+      <div class="antwort"><p>Man multipliziert mit dem Kehrwert – der zweite Bruch wird umgedreht. 3/4 ÷ 1/2 = 3/4 × 2/1 = 1,5.</p></div></details>
+    <details class="abfrage"><summary>Wie rechnest du 5/8 von 4.800 Paletten?</summary>
+      <div class="antwort"><p>Erst durch den Nenner: 4.800 ÷ 8 = 600. Dann mal Zähler: 600 × 5 = 3.000 Paletten.</p></div></details>
+    <details class="abfrage"><summary>Warum ändert Kürzen den Wert eines Bruchs nicht?</summary>
+      <div class="antwort"><p>Weil Zähler und Nenner durch dieselbe Zahl geteilt werden. Das Verhältnis der beiden bleibt unverändert – nur die Schreibweise wird kürzer.</p></div></details>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════ -->
+<section class="abschnitt" id="dezimalzahlen-runden" data-gruppe="Rechnen von Grund auf">
+  <div class="ab-kopf"><h2><span class="ab-nr">1.4</span>Dezimalzahlen und richtiges Runden</h2></div>
+
+  <div class="block einstieg" data-notiz="ein-runden">
+    <div class="b-label">Worum es geht</div>
+    <p>Zwei Kollegen rechnen dieselbe Aufgabe. Der eine bekommt 75 Tage Lagerdauer heraus, der andere 72. Beide haben richtig gerechnet – aber einer hat zwischendurch gerundet. Runden ist keine Nebensache. <strong>Wann</strong> du rundest, entscheidet mit darüber, ob dein Ergebnis stimmt; <strong>wie</strong> du rundest, entscheidet darüber, ob es der kaufmännischen Konvention entspricht.</p>
+  </div>
+
+  <h3>Was die Stellen nach dem Komma bedeuten</h3>
+  <p>Jede Stelle rechts vom Komma ist ein Zehntel der Stelle davor. Bei 4,753 sind die 7 sieben Zehntel, die 5 fünf Hundertstel und die 3 drei Tausendstel. Beim Geld haben die ersten beiden Nachkommastellen einen Namen: Cent.</p>
+
+  <div class="tab" data-notiz="tab-stellenwerte">
+    <table>
+      <thead><tr><th>Stelle</th><th>Name</th><th>Wert bei 4,753</th><th>Beim Geld</th></tr></thead>
+      <tbody>
+        <tr><td>vor dem Komma</td><td>Ganze</td><td>4</td><td>Euro</td></tr>
+        <tr><td>1. nach dem Komma</td><td>Zehntel</td><td>0,7</td><td>10 Cent</td></tr>
+        <tr><td>2. nach dem Komma</td><td>Hundertstel</td><td>0,05</td><td>1 Cent</td></tr>
+        <tr><td>3. nach dem Komma</td><td>Tausendstel</td><td>0,003</td><td>gibt es als Münze nicht</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3>Kaufmännisches Runden</h3>
+  <div class="formel" data-notiz="formel-kaufm-runden">
+    <div class="formel-kopf"><span class="f-tag">Regel</span><span class="f-name">Kaufmännisches Runden</span></div>
+    <div class="formel-koerper">
+      <div class="eq">Ziffer 0 bis 4  →  abrunden (die Stelle bleibt stehen)</div>
+      <div class="eq">Ziffer 5 bis 9  →  aufrunden (die Stelle wird um 1 erhöht)</div>
+      <div class="f-erklaerung">Entscheidend ist ausschließlich die <strong>erste weggelassene Ziffer</strong>. Alles, was dahinter kommt, spielt keine Rolle.</div>
+    </div>
+  </div>
+
+  <div class="schritte" data-notiz="rechnung-runden-beispiele">
+    <div class="schritt"><div class="s-nr">1</div><div class="s-txt">4,7823 auf zwei Nachkommastellen</div></div>
+    <div class="s-warum">Zwei Stellen behalten: 4,78. Die erste weggelassene Ziffer ist die 2 → abrunden. Ergebnis 4,78. Die 3 dahinter ist völlig egal.</div>
+    <div class="schritt"><div class="s-nr">2</div><div class="s-txt">12,345 auf zwei Nachkommastellen</div></div>
+    <div class="s-warum">Erste weggelassene Ziffer ist die 5 → aufrunden. Aus 12,34 wird 12,35.</div>
+    <div class="schritt"><div class="s-nr">3</div><div class="s-txt">0,6666… auf zwei Nachkommastellen</div></div>
+    <div class="s-warum">Erste weggelassene Ziffer ist eine 6 → aufrunden. Ergebnis 0,67.</div>
+    <div class="schritt fertig"><div class="s-nr">✓</div><div class="s-txt">4,78  ·  12,35  ·  0,67</div></div>
+    <div class="s-warum">Immer nur die erste weggelassene Ziffer ansehen. Wer sich von langen Nachkommaketten verwirren lässt, rundet doppelt.</div>
+  </div>
+
+  <h3>Runden auf ganze Einheiten – Sachlogik schlägt Rechenregel</h3>
+  <p>Wenn das Ergebnis eine Anzahl von Dingen ist, die es nur ganz gibt, entscheidet nicht die Rundungsregel, sondern die Sache selbst.</p>
+
+  <div class="tab" data-notiz="tab-sachlogik-runden">
+    <table>
+      <thead><tr><th>Ergebnis</th><th>Worum es geht</th><th>Richtige Rundung</th><th>Warum</th></tr></thead>
+      <tbody>
+        <tr><td>3,2 Lkw</td><td>benötigte Fahrzeuge</td><td><strong>4 Lkw</strong></td><td>0,2 Lkw gibt es nicht – die Restmenge braucht ein ganzes Fahrzeug</td></tr>
+        <tr><td>4,5 Fahrten</td><td>Anzahl Touren</td><td><strong>5 Fahrten</strong></td><td>eine halbe Fahrt transportiert nichts</td></tr>
+        <tr><td>7,3 Mitarbeiter</td><td>Personalbedarf</td><td><strong>8 Mitarbeiter</strong></td><td>bei 7 bleibt Arbeit liegen; alternativ 7 plus Teilzeitkraft, dann aber begründen</td></tr>
+        <tr><td>1.897,4 Stück</td><td>optimale Bestellmenge</td><td><strong>1.897 Stück</strong></td><td>hier ist die Menge frei wählbar – normal kaufmännisch runden</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="block merk" data-notiz="merk-aufrunden-kapazitaet">
+    <div class="b-label">Merksatz</div>
+    <p>Bei <strong>Kapazitäten</strong> – Fahrzeuge, Fahrten, Behälter, Personen, Regalplätze – wird immer <strong>aufgerundet</strong>, egal was hinter dem Komma steht. Bei <strong>Werten</strong> – Geld, Mengen, Kennzahlen – wird kaufmännisch gerundet. Schreib in der Prüfung einen Halbsatz dazu, warum du so gerundet hast. Das ist oft ein eigener Punkt.</p>
+  </div>
+
+  <h3>Der teuerste Fehler: Zwischenrunden</h3>
+  <p>Runde <strong>nur das Endergebnis</strong>. Jedes Zwischenergebnis, das du rundest, schleppt seinen Fehler in alle folgenden Schritte weiter – und wenn danach noch multipliziert oder dividiert wird, wächst er mit.</p>
+
+  <div class="schritte" data-notiz="rechnung-zwischenrunden">
+    <div class="schritt"><div class="s-nr">1</div><div class="s-txt">Umschlagshäufigkeit: 96 t ÷ 20 t = 4,8</div></div>
+    <div class="s-warum">Der exakte Wert ist 4,8. Bis hierhin sind sich beide Kollegen einig.</div>
+    <div class="schritt"><div class="s-nr">2</div><div class="s-txt">Richtig: 360 ÷ 4,8 = 75 Tage</div></div>
+    <div class="s-warum">Der ungerundete Wert 4,8 geht in die nächste Formel ein.</div>
+    <div class="schritt"><div class="s-nr">3</div><div class="s-txt">Falsch: 4,8 gerundet auf 5  →  360 ÷ 5 = 72 Tage</div></div>
+    <div class="s-warum">Eine harmlos aussehende Rundung um 0,2 verschiebt das Endergebnis um 3 Tage – das sind 4 %.</div>
+    <div class="schritt fertig"><div class="s-nr">✓</div><div class="s-txt">Merke: Zwischenwerte im Rechner lassen, nicht abschreiben</div></div>
+    <div class="s-warum">Nutze die Speichertaste oder rechne in einem Zug durch. Wenn du einen Zwischenwert doch aufschreiben musst, notiere mindestens vier Nachkommastellen.</div>
+  </div>
+
+  <div class="block beispiel" data-notiz="bsp-zwischenrunden-geld">
+    <div class="b-label">Wenn Zwischenrunden Geld kostet</div>
+    <p>Ein Drittel eines Jahresbudgets von 300.000 € soll auf einen Standort entfallen. Wer 1/3 auf 0,33 rundet, rechnet 0,33 × 300.000 = <strong>99.000 €</strong>. Richtig sind 300.000 ÷ 3 = <strong>100.000 €</strong>. Differenz: 1.000 € – aus einer Rundung in der zweiten Nachkommastelle.</p>
+    <p>Dasselbe passiert bei Prozentsätzen. 17 von 60 Sendungen sind 17 ÷ 60 = 0,283333… = <strong>28,33 %</strong>. Wer bei 0,28 abbricht und weiterrechnet, verliert bei größeren Grundwerten schnell dreistellige Beträge.</p>
+  </div>
+
+  <div class="block achtung" data-notiz="ach-runden-doppelt">
+    <div class="b-label">Typischer Fehler</div>
+    <p><strong>Zweimal runden.</strong> 4,4499 wird nicht erst zu 4,45 und dann zu 4,5. Es wird auf einen Schlag auf die Zielgenauigkeit gerundet: auf eine Nachkommastelle also 4,4, weil die erste weggelassene Ziffer eine 4 ist.</p>
+    <p><strong>Und:</strong> Runden ist kein Weglassen. 4.826 auf Tausender gerundet sind <strong>5.000</strong>, nicht 4.000 und schon gar nicht 5. Die Größenordnung bleibt erhalten.</p>
+  </div>
+
+  <div class="abfrage-liste">
+    <div class="abfrage-kopf">Selbstabfrage</div>
+    <details class="abfrage"><summary>Welche Ziffer entscheidet beim kaufmännischen Runden?</summary>
+      <div class="antwort"><p>Ausschließlich die erste weggelassene Ziffer. 0 bis 4 abrunden, 5 bis 9 aufrunden. Was dahinter steht, ist ohne Bedeutung.</p></div></details>
+    <details class="abfrage"><summary>Du brauchst rechnerisch 3,1 Lkw. Wie viele bestellst du und warum?</summary>
+      <div class="antwort"><p>4. Bei Kapazitäten wird immer aufgerundet, weil auch eine kleine Restmenge ein ganzes Fahrzeug benötigt. Kaufmännisch würde man 3 schreiben – das wäre hier sachlich falsch.</p></div></details>
+    <details class="abfrage"><summary>Warum darf man Zwischenergebnisse nicht runden?</summary>
+      <div class="antwort"><p>Weil der Rundungsfehler in jeden weiteren Rechenschritt eingeht und sich beim Multiplizieren und Dividieren vergrößert. Beispiel: 4,8 auf 5 gerundet verändert die Lagerdauer von 75 auf 72 Tage.</p></div></details>
+    <details class="abfrage"><summary>Wie viel sind 4.826 auf Hunderter gerundet?</summary>
+      <div class="antwort"><p>4.800. Die erste weggelassene Ziffer ist die 2, also abrunden. Die Größenordnung bleibt erhalten.</p></div></details>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════ -->
+<section class="abschnitt" id="prozent-grundlagen" data-gruppe="Prozent, Dreisatz, Anteile">
+  <div class="ab-kopf"><h2><span class="ab-nr">2.1</span>Prozentrechnung: die drei Größen</h2></div>
+
+  <div class="block einstieg" data-notiz="ein-prozent">
+    <div class="b-label">Worum es geht</div>
+    <p>Von 1.500 Sendungen eines Monats waren 45 fehlerhaft. Ist das viel? Die absolute Zahl 45 sagt dir wenig – sie könnte bei 100 Sendungen katastrophal und bei 100.000 Sendungen hervorragend sein. Prozent macht Größen <strong>vergleichbar</strong>, indem alles auf hundert bezogen wird. Genau das steckt im Wort: <em>pro centum</em> heißt „von hundert“.</p>
+  </div>
+
+  <div class="block def" data-notiz="def-prozent-groessen">
+    <div class="b-label">Definition</div>
+    <div class="b-term">Grundwert, Prozentwert, Prozentsatz</div>
+    <p><strong>Grundwert (G)</strong> – das Ganze, worauf sich alles bezieht. Er entspricht immer 100 %. In unserem Beispiel: 1.500 Sendungen.</p>
+    <p><strong>Prozentwert (W)</strong> – der Teil davon, in derselben Einheit wie der Grundwert. Hier: 45 Sendungen.</p>
+    <p><strong>Prozentsatz (p)</strong> – wie groß dieser Teil ist, ausgedrückt in Hundertsteln. Hier: 3 %.</p>
+  </div>
+
+  <div class="block merk" data-notiz="merk-grundwert-finden">
+    <div class="b-label">Die wichtigste Frage bei jeder Prozentaufgabe</div>
+    <p><strong>Was ist hier das Ganze?</strong> Wer den Grundwert richtig bestimmt, hat die Aufgabe schon zur Hälfte gelöst. Sprachliche Hilfe: Nach dem Wörtchen <em>„von“</em> steht fast immer der Grundwert. „45 <em>von</em> 1.500 Sendungen“ – also ist 1.500 der Grundwert.</p>
+  </div>
+
+  <h3>Die drei Formeln – eigentlich nur eine</h3>
+  <div class="formel" data-notiz="formel-prozent">
+    <div class="formel-kopf"><span class="f-tag">Formel</span><span class="f-name">Prozentrechnung in drei Richtungen</span></div>
+    <div class="formel-koerper">
+      <div class="eq">Prozentwert:    W = G × p ÷ 100</div>
+      <div class="eq">Prozentsatz:    p = W ÷ G × 100</div>
+      <div class="eq">Grundwert:      G = W ÷ p × 100</div>
+      <div class="f-erklaerung">Alle drei sind Umstellungen ein und derselben Gleichung W = G × p ÷ 100. Wenn du Abschnitt 4.1 durchgearbeitet hast, brauchst du dir nur noch eine davon zu merken – die anderen beiden stellst du dir selbst her.</div>
+    </div>
+  </div>
+
+  <div class="block merk" data-notiz="merk-prozent-dezimal">
+    <div class="b-label">Der Trick, der alles kürzer macht</div>
+    <p>Ein Prozentsatz ist nichts als eine Dezimalzahl: <strong>p % = p ÷ 100</strong>. Also 15 % = 0,15 · 3 % = 0,03 · 120 % = 1,2 · 0,5 % = 0,005. Wenn du mit dieser Dezimalzahl rechnest, entfällt das ganze „mal 100, geteilt durch 100“: W = G × 0,03. Das ist weniger Tipperei und weniger Fehlerquelle.</p>
+  </div>
+
+  <h3>Beispiel 1 – Prozentwert gesucht</h3>
+  <div class="schritte" data-notiz="rechnung-prozentwert">
+    <div class="schritt"><div class="s-nr">1</div><div class="s-txt">Umsatz 250.000 €, Retourenquote 4 %. Wie hoch ist der Retourenwert?</div></div>
+    <div class="s-warum">Gesucht ist ein Teil des Ganzen, also der Prozentwert. Grundwert = 250.000 € (nach dem „von“: 4 % <em>von</em> 250.000).</div>
+    <div class="schritt"><div class="s-nr">2</div><div class="s-txt">4 % = 4 ÷ 100 = 0,04</div></div>
+    <div class="s-warum">Prozentsatz in eine Dezimalzahl verwandeln.</div>
+    <div class="schritt fertig"><div class="s-nr">✓</div><div class="s-txt">250.000 × 0,04 = 10.000 €</div></div>
+    <div class="s-warum">Überschlag zur Kontrolle: 1 % wären 2.500 €, also sind 4 % rund 10.000 €. Passt.</div>
+  </div>
+
+  <h3>Beispiel 2 – Prozentsatz gesucht</h3>
+  <div class="schritte" data-notiz="rechnung-prozentsatz">
+    <div class="schritt"><div class="s-nr">1</div><div class="s-txt">45 fehlerhafte von 1.500 Sendungen – wie viel Prozent?</div></div>
+    <div class="s-warum">Teil und Ganzes sind bekannt, gesucht ist der Prozentsatz. Grundwert = 1.500.</div>
+    <div class="schritt"><div class="s-nr">2</div><div class="s-txt">45 ÷ 1.500 = 0,03</div></div>
+    <div class="s-warum">Teil geteilt durch Ganzes ergibt immer den Anteil als Dezimalzahl.</div>
+    <div class="schritt fertig"><div class="s-nr">✓</div><div class="s-txt">0,03 × 100 = 3 %</div></div>
+    <div class="s-warum">Dezimalzahl mal 100 ergibt den Prozentsatz. Kontrolle: 3 % von 1.500 sind 45. Stimmt.</div>
+  </div>
+
+  <h3>Beispiel 3 – Grundwert gesucht (die schwierigste Richtung)</h3>
+  <div class="schritte" data-notiz="rechnung-grundwert">
+    <div class="schritt"><div class="s-nr">1</div><div class="s-txt">Die Lagerkosten betragen 18.000 € und machen 12 % der Gesamtkosten aus. Wie hoch sind die Gesamtkosten?</div></div>
+    <div class="s-warum">Gesucht ist das Ganze. Die 18.000 € sind der Prozentwert, 12 % der Prozentsatz.</div>
+    <div class="schritt"><div class="s-nr">2</div><div class="s-txt">12 % = 0,12</div></div>
+    <div class="s-warum">Wieder in eine Dezimalzahl umwandeln.</div>
+    <div class="schritt"><div class="s-nr">3</div><div class="s-txt">18.000 ÷ 0,12</div></div>
+    <div class="s-warum">Beim Grundwert wird <strong>geteilt</strong>, nicht multipliziert. Das ist die Stelle, an der die meisten Punkte verloren gehen.</div>
+    <div class="schritt fertig"><div class="s-nr">✓</div><div class="s-txt">= 150.000 € Gesamtkosten</div></div>
+    <div class="s-warum">Probe: 150.000 × 0,12 = 18.000. Stimmt. Plausibilität: Wenn ein kleiner Prozentsatz gegeben ist, muss das Ganze deutlich größer sein als der Teil.</div>
+  </div>
+
+  <div class="block beispiel" data-notiz="bsp-prozent-logistik">
+    <div class="b-label">Wo dir das im Fachwirt begegnet</div>
+    <p><strong>Lagerhaltungskostensatz:</strong> In der Andler-Formel steht er als Dezimalzahl. 15 % müssen als 0,15 eingesetzt werden – wer 15 einsetzt, bekommt eine hundertmal zu kleine Bestellmenge.</p>
+    <p><strong>Servicegrad und Lieferbereitschaft:</strong> 1.193 pünktliche von 1.240 Sendungen sind 1.193 ÷ 1.240 = 0,9621, also 96,21 %.</p>
+    <p><strong>ABC-Analyse:</strong> Die gesamte Methode besteht aus Prozentanteilen – Mengenanteil der Artikel und Wertanteil am Gesamtverbrauchswert, beide kumuliert.</p>
+    <p><strong>Wertschöpfungsquote:</strong> Bei einer Gesamtleistung von 480.000 € und Vorleistungen von 310.000 € beträgt die Wertschöpfung 170.000 €, also 170.000 ÷ 480.000 = <strong>35,42 %</strong>.</p>
+  </div>
+
+  <div class="block achtung" data-notiz="ach-grundwert-verwechseln">
+    <div class="b-label">Typischer Fehler</div>
+    <p><strong>Den falschen Grundwert nehmen.</strong> „Die Fehlerquote ist von 3 % auf 4 % gestiegen“ – hier ist der Grundwert der Sendungen gemeint, nicht die 3. Und: „Der Anteil der A-Artikel am Wert beträgt 72 %“ – Grundwert ist der Gesamtwert, nicht die Artikelanzahl. Schreib dir bei jeder Prozentaufgabe an den Rand: <em>G = …</em>, bevor du rechnest.</p>
+  </div>
+
+  <div class="abfrage-liste">
+    <div class="abfrage-kopf">Selbstabfrage</div>
+    <details class="abfrage"><summary>Was sind Grundwert, Prozentwert und Prozentsatz?</summary>
+      <div class="antwort"><p>Grundwert = das Ganze (100 %). Prozentwert = der Teil davon, in derselben Einheit. Prozentsatz = die Größe des Teils in Hundertsteln.</p></div></details>
+    <details class="abfrage"><summary>Wie kommst du vom Prozentsatz zur Dezimalzahl?</summary>
+      <div class="antwort"><p>Durch 100 teilen. 15 % = 0,15 · 3 % = 0,03 · 120 % = 1,2 · 0,5 % = 0,005.</p></div></details>
+    <details class="abfrage"><summary>18.000 € entsprechen 12 %. Wie groß ist das Ganze und wie rechnest du?</summary>
+      <div class="antwort"><p>150.000 €. Beim Grundwert wird geteilt: 18.000 ÷ 0,12. Probe: 150.000 × 0,12 = 18.000.</p></div></details>
+    <details class="abfrage"><summary>Welche sprachliche Hilfe zeigt dir den Grundwert?</summary>
+      <div class="antwort"><p>Das Wörtchen „von“. Was danach steht, ist in aller Regel der Grundwert – „4 % von 250.000 €“.</p></div></details>
+    <details class="abfrage"><summary>Warum ist es gefährlich, 15 % in der Andler-Formel als 15 einzusetzen?</summary>
+      <div class="antwort"><p>Weil der Lagerhaltungskostensatz dort als Dezimalzahl steht. Mit 15 statt 0,15 wird der Nenner hundertmal zu groß, das Ergebnis unter der Wurzel hundertmal zu klein und die Bestellmenge zehnmal zu klein.</p></div></details>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════ -->
+<section class="abschnitt" id="prozent-zuschlag-abschlag" data-gruppe="Prozent, Dreisatz, Anteile">
+  <div class="ab-kopf"><h2><span class="ab-nr">2.2</span>Zuschläge, Abschläge und Prozentpunkte</h2></div>
+
+  <div class="block einstieg" data-notiz="ein-zuschlag">
+    <div class="b-label">Worum es geht</div>
+    <p>Ein Lieferant erhöht seinen Preis um 10 %. Einen Monat später senkt er ihn wieder um 10 %. Bist du damit beim Ausgangspreis? Die meisten sagen ja. Die Antwort ist nein: Aus 100 € werden 110 €, und 10 % von 110 € sind 11 € – zurück bleiben <strong>99 €</strong>. Der Grund ist immer derselbe: Der Grundwert hat sich zwischendurch geändert.</p>
+    <p>Zuschläge und Abschläge sind der Teil der Prozentrechnung, an dem die meisten Punkte hängen – Umsatzsteuer, Rabatt, Skonto, Preissteigerung, Bestandsveränderung. Und es gibt einen Weg, der sie alle gleich einfach macht.</p>
+  </div>
+
+  <h3>Vermehrter und verminderter Grundwert</h3>
+  <div class="block def" data-notiz="def-vermehrter-grundwert">
+    <div class="b-label">Definition</div>
+    <div class="b-term">Vermehrter und verminderter Grundwert</div>
+    <p>Wird auf einen Wert etwas <strong>aufgeschlagen</strong>, entspricht das Ergebnis nicht mehr 100 %, sondern <strong>100 % + p</strong>. Der Nettopreis ist 100 %, der Bruttopreis bei 19 % Umsatzsteuer 119 %.</p>
+    <p>Wird etwas <strong>abgezogen</strong>, entspricht das Ergebnis <strong>100 % − p</strong>. Der Listenpreis ist 100 %, der Preis nach 3 % Skonto beträgt 97 %.</p>
+  </div>
+
+  <div class="formel" data-notiz="formel-faktor">
+    <div class="formel-kopf"><span class="f-tag">Regel</span><span class="f-name">Die Faktormethode</span></div>
+    <div class="formel-koerper">
+      <div class="eq">Zuschlag von p %:   neuer Wert = alter Wert × (1 + p ÷ 100)</div>
+      <div class="eq">Abschlag von p %:   neuer Wert = alter Wert × (1 − p ÷ 100)</div>
+      <div class="eq ergebnis">+19 % → × 1,19   ·   +15 % → × 1,15   ·   −20 % → × 0,80   ·   −3 % → × 0,97</div>
+      <div class="f-erklaerung">Ein einziger Rechenschritt statt zwei. Und der Rückweg ist genauso einfach: durch denselben Faktor <strong>teilen</strong>.</div>
+    </div>
+  </div>
+
+  <h3>Beispiel 1 – netto zu brutto und zurück</h3>
+  <div class="schritte" data-notiz="rechnung-brutto-netto">
+    <div class="schritt"><div class="s-nr">1</div><div class="s-txt">Nettopreis 840 €, Umsatzsteuer 19 %. Bruttopreis?</div></div>
+    <div class="s-warum">Der Nettopreis ist der Grundwert, also 100 %. Die Steuer kommt oben drauf.</div>
+    <div class="schritt"><div class="s-nr">2</div><div class="s-txt">840 × 1,19 = 999,60 €</div></div>
+    <div class="s-warum">Faktor 1,19 heißt: die vollen 100 % plus 19 % Steuer in einem Schritt.</div>
+    <div class="schritt"><div class="s-nr">3</div><div class="s-txt">Rückweg: 999,60 ÷ 1,19 = 840 €</div></div>
+    <div class="s-warum">Aus brutto wird netto, indem man <strong>durch</strong> den Faktor teilt. Wer stattdessen 19 % vom Bruttopreis abzieht, rechnet 999,60 × 0,81 = 809,68 € – und liegt um über 30 € daneben.</div>
+    <div class="schritt fertig"><div class="s-nr">✓</div><div class="s-txt">Umsatzsteueranteil = 999,60 − 840 = 159,60 €</div></div>
+    <div class="s-warum">Der Steueranteil ist immer die Differenz, nie „19 % vom Bruttopreis“.</div>
+  </div>
+
+  <div class="block achtung" data-notiz="ach-brutto-rueckwaerts">
+    <div class="b-label">Der klassische Prüfungsfehler</div>
+    <p><strong>Vom Bruttowert den Prozentsatz abziehen.</strong> 19 % von brutto sind nicht die Umsatzsteuer, weil sich die 19 % auf den <em>Netto</em>betrag beziehen. Immer fragen: <em>Wovon waren die Prozent?</em> Diese Größe ist der Grundwert, und nur sie entspricht 100 %.</p>
+  </div>
+
+  <h3>Beispiel 2 – Rabatt und Skonto hintereinander</h3>
+  <p>Wenn mehrere Abschläge nacheinander kommen, darf man die Prozentsätze <strong>nicht</strong> addieren. Jeder Abschlag bezieht sich auf den bereits verminderten Wert.</p>
+
+  <div class="schritte" data-notiz="rechnung-rabattkette">
+    <div class="schritt"><div class="s-nr">1</div><div class="s-txt">Listenpreis 1.000 €, 20 % Rabatt, danach 10 % Sonderabschlag</div></div>
+    <div class="s-warum">Zwei Abschläge nacheinander. Die Versuchung: 30 % abziehen und bei 700 € landen.</div>
+    <div class="schritt"><div class="s-nr">2</div><div class="s-txt">1.000 × 0,80 = 800 €</div></div>
+    <div class="s-warum">Erster Abschlag auf den Listenpreis.</div>
+    <div class="schritt"><div class="s-nr">3</div><div class="s-txt">800 × 0,90 = 720 €</div></div>
+    <div class="s-warum">Der zweite Abschlag bezieht sich auf 800 €, nicht mehr auf 1.000 €. Deshalb sind es 80 € und nicht 100 €.</div>
+    <div class="schritt fertig"><div class="s-nr">✓</div><div class="s-txt">720 € – nicht 700 €. Gesamtabschlag also 28 %, nicht 30 %</div></div>
+    <div class="s-warum">Kurzweg für die ganze Kette: 1.000 × 0,80 × 0,90 = 720. Faktoren werden multipliziert, Prozentsätze nicht addiert.</div>
+  </div>
+
+  <div class="block beispiel" data-notiz="bsp-skonto-praxis">
+    <div class="b-label">Aus der Beschaffungspraxis</div>
+    <p>Ein Listenpreis von 8.400 € wird um 15 % Wiederverkäuferrabatt reduziert: 8.400 × 0,85 = <strong>7.140 €</strong>. Bei Zahlung innerhalb von 10 Tagen kommen 2 % Skonto dazu: 7.140 × 0,98 = <strong>6.997,20 €</strong>. Genau in dieser Reihenfolge – Skonto wird immer vom bereits rabattierten Betrag berechnet, nie vom Listenpreis.</p>
+    <p>Dieser Endbetrag ist der <strong>Einstandspreis</strong>, mit dem du später in die Andler-Formel gehst. Ein Fehler hier zieht sich durch die gesamte Aufgabe.</p>
+  </div>
+
+  <h3>Prozent oder Prozentpunkte? Zwei völlig verschiedene Dinge</h3>
+  <div class="block def" data-notiz="def-prozentpunkte">
+    <div class="b-label">Definition</div>
+    <div class="b-term">Prozentpunkt</div>
+    <p>Ein <strong>Prozentpunkt</strong> ist die Differenz zweier Prozentsätze – schlicht abgezogen. Eine <strong>prozentuale Veränderung</strong> setzt diese Differenz ins Verhältnis zum Ausgangswert.</p>
+    <p>Beispiel: Der Servicegrad steigt von 92 % auf 95 %. Das ist ein Anstieg um <strong>3 Prozentpunkte</strong>. Als prozentuale Steigerung sind es 3 ÷ 92 = 0,0326, also <strong>3,26 %</strong>. Beide Aussagen sind richtig, beschreiben aber nicht dasselbe.</p>
+  </div>
+
+  <div class="tab" data-notiz="tab-prozentpunkte">
+    <table>
+      <thead><tr><th>Situation</th><th>Formulierung</th><th class="num">Wert</th></tr></thead>
+      <tbody>
+        <tr><td>Servicegrad 92 % → 95 %</td><td>Anstieg <strong>um 3 Prozentpunkte</strong></td><td class="num">95 − 92</td></tr>
+        <tr><td>Servicegrad 92 % → 95 %</td><td>Steigerung <strong>um 3,26 %</strong></td><td class="num">3 ÷ 92</td></tr>
+        <tr><td>Fehlerquote 4 % → 2 %</td><td>Rückgang <strong>um 2 Prozentpunkte</strong></td><td class="num">4 − 2</td></tr>
+        <tr><td>Fehlerquote 4 % → 2 %</td><td>Rückgang <strong>um 50 %</strong> (halbiert)</td><td class="num">2 ÷ 4</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="block merk" data-notiz="merk-prozentpunkte">
+    <div class="b-label">Merksatz</div>
+    <p><strong>Prozentpunkte zieht man ab. Prozent teilt man.</strong> Wenn in einer Aufgabe zwei Prozentsätze verglichen werden, schreib immer dazu, welche der beiden Größen du meinst. Das ist in der Prüfung oft der Unterschied zwischen voller und halber Punktzahl – und in Berichten der Unterschied zwischen einer korrekten und einer irreführenden Aussage.</p>
+  </div>
+
+  <div class="abfrage-liste">
+    <div class="abfrage-kopf">Selbstabfrage</div>
+    <details class="abfrage"><summary>Mit welchem Faktor rechnest du einen Zuschlag von 19 %?</summary>
+      <div class="antwort"><p>Mal 1,19. Der Rückweg von brutto auf netto ist geteilt durch 1,19.</p></div></details>
+    <details class="abfrage"><summary>Warum ergeben 20 % Rabatt plus 10 % Skonto nicht 30 % Abschlag?</summary>
+      <div class="antwort"><p>Weil sich der zweite Abschlag auf den bereits verminderten Betrag bezieht. 1.000 × 0,80 × 0,90 = 720 €, also 28 % Gesamtabschlag statt 30 %.</p></div></details>
+    <details class="abfrage"><summary>Ein Preis steigt um 10 % und fällt danach um 10 %. Wo bist du?</summary>
+      <div class="antwort"><p>Bei 99 % des Ausgangswerts, also darunter. 100 × 1,1 × 0,9 = 99. Der Grundwert hat sich zwischendurch geändert.</p></div></details>
+    <details class="abfrage"><summary>Was ist der Unterschied zwischen 3 Prozentpunkten und 3 Prozent?</summary>
+      <div class="antwort"><p>Prozentpunkte sind die reine Differenz zweier Prozentsätze (95 − 92 = 3). Prozent setzt diese Differenz ins Verhältnis zum Ausgangswert (3 ÷ 92 = 3,26 %).</p></div></details>
+    <details class="abfrage"><summary>Eine Rechnung lautet 3.570 € brutto bei 19 % USt. Wie hoch ist der Nettobetrag?</summary>
+      <div class="antwort"><p>3.570 ÷ 1,19 = 3.000 €. Die Umsatzsteuer beträgt 570 €.</p></div></details>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════ -->
+<section class="abschnitt" id="dreisatz" data-gruppe="Prozent, Dreisatz, Anteile">
+  <div class="ab-kopf"><h2><span class="ab-nr">2.3</span>Der Dreisatz – proportional und antiproportional</h2></div>
+
+  <div class="block einstieg" data-notiz="ein-dreisatz">
+    <div class="b-label">Worum es geht</div>
+    <p>7 Paletten kosten 210 € Fracht. Was kosten 12 Paletten? Und: 4 Stapler brauchen 9 Stunden für die Entladung. Wie lange brauchen 6 Stapler? Beide Aufgaben sehen gleich aus, aber sie funktionieren <strong>genau entgegengesetzt</strong>. Bei der ersten wird die Antwort größer, bei der zweiten kleiner.</p>
+    <p>Der Dreisatz ist das meistgenutzte Rechenwerkzeug im ganzen Fachwirt. Er heißt so, weil er in drei Sätzen abläuft: Was ist gegeben – was ist eine Einheit wert – was ist die gesuchte Menge wert.</p>
+  </div>
+
+  <h3>Zuerst entscheiden: welche Art von Zusammenhang?</h3>
+  <div class="tab" data-notiz="tab-dreisatz-arten">
+    <table>
+      <thead><tr><th>Art</th><th>Zusammenhang</th><th>Beispiel</th><th>Rechenweg</th></tr></thead>
+      <tbody>
+        <tr><td><strong>proportional</strong> (gerader Dreisatz)</td><td>mehr → mehr, weniger → weniger</td><td>mehr Paletten, mehr Frachtkosten</td><td>durch die gegebene Menge teilen, mit der gesuchten malnehmen</td></tr>
+        <tr><td><strong>antiproportional</strong> (ungerader Dreisatz)</td><td>mehr → weniger, weniger → mehr</td><td>mehr Stapler, weniger Zeit</td><td>mit der gegebenen Menge malnehmen, durch die gesuchte teilen</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="block merk" data-notiz="merk-dreisatz-kontrollfrage">
+    <div class="b-label">Die Kontrollfrage, die dich nie im Stich lässt</div>
+    <p>Bevor du rechnest, frag dich: <strong>„Wenn ich mehr davon habe – wird das Ergebnis größer oder kleiner?“</strong> Und wenn du fertig bist, prüfe, ob dein Ergebnis in die vorhergesagte Richtung gegangen ist. Wer 6 Stapler einsetzt und mehr Zeit herausbekommt als mit 4, hat den Dreisatz verkehrt herum gerechnet.</p>
+  </div>
+
+  <h3>Beispiel 1 – proportional</h3>
+  <div class="schritte" data-notiz="rechnung-dreisatz-proportional">
+    <div class="schritt"><div class="s-nr">1</div><div class="s-txt">7 Paletten → 210 € Fracht.  12 Paletten → ?</div></div>
+    <div class="s-warum">Kontrollfrage: mehr Paletten, mehr Kosten. Also proportional – das Ergebnis muss über 210 € liegen.</div>
+    <div class="schritt"><div class="s-nr">2</div><div class="s-txt">1 Palette: 210 ÷ 7 = 30 €</div></div>
+    <div class="s-warum">Der Schritt auf die Einheit ist das Herz des Dreisatzes. Er heißt deshalb „Schluss auf die Einheit“.</div>
+    <div class="schritt fertig"><div class="s-nr">✓</div><div class="s-txt">12 Paletten: 30 × 12 = 360 €</div></div>
+    <div class="s-warum">360 € liegt über 210 € – Richtung stimmt. Zweitkontrolle: 12 ist etwa das 1,7-Fache von 7, und 360 ist etwa das 1,7-Fache von 210.</div>
+  </div>
+
+  <h3>Beispiel 2 – antiproportional</h3>
+  <div class="schritte" data-notiz="rechnung-dreisatz-antiproportional">
+    <div class="schritt"><div class="s-nr">1</div><div class="s-txt">4 Stapler → 9 Stunden.  6 Stapler → ?</div></div>
+    <div class="s-warum">Kontrollfrage: mehr Stapler, weniger Zeit. Also antiproportional – das Ergebnis muss unter 9 Stunden liegen.</div>
+    <div class="schritt"><div class="s-nr">2</div><div class="s-txt">Gesamtarbeit: 4 × 9 = 36 Staplerstunden</div></div>
+    <div class="s-warum">Beim antiproportionalen Dreisatz wird zuerst <strong>multipliziert</strong>. Das Produkt ist die eigentlich zu leistende Arbeitsmenge – und die bleibt gleich, egal wie viele Stapler mitmachen.</div>
+    <div class="schritt fertig"><div class="s-nr">✓</div><div class="s-txt">36 ÷ 6 = 6 Stunden</div></div>
+    <div class="s-warum">6 Stunden liegen unter 9 – Richtung stimmt. Probe: 6 Stapler × 6 Stunden = 36 Staplerstunden, genau wie vorher.</div>
+  </div>
+
+  <div class="block achtung" data-notiz="ach-dreisatz-richtung">
+    <div class="b-label">Typischer Fehler</div>
+    <p><strong>Automatisch proportional rechnen.</strong> Der proportionale Dreisatz ist so vertraut, dass viele ihn auch dort anwenden, wo er nicht hingehört. Antiproportional sind typischerweise: <em>Anzahl Arbeitskräfte und benötigte Zeit</em> · <em>Ladekapazität eines Fahrzeugs und Anzahl der Fahrten</em> · <em>Geschwindigkeit und Fahrzeit</em> · <em>Bestellmenge und Bestellhäufigkeit</em>. Merkmal: Ein <strong>Produkt</strong> bleibt konstant, keine Summe.</p>
+  </div>
+
+  <h3>Beispiel 3 – Fahrten und Fahrzeuggröße</h3>
+  <div class="schritte" data-notiz="rechnung-fahrten">
+    <div class="schritt"><div class="s-nr">1</div><div class="s-txt">72 t sollen transportiert werden. Mit 24-t-Fahrzeugen: 3 Fahrten. Mit 16-t-Fahrzeugen?</div></div>
+    <div class="s-warum">Kleinere Fahrzeuge, mehr Fahrten – antiproportional. Die Gesamtmenge 72 t bleibt konstant.</div>
+    <div class="schritt"><div class="s-nr">2</div><div class="s-txt">72 ÷ 16 = 4,5 Fahrten</div></div>
+    <div class="s-warum">Rechnerisch korrekt, praktisch unmöglich.</div>
+    <div class="schritt fertig"><div class="s-nr">✓</div><div class="s-txt">5 Fahrten (aufgerundet)</div></div>
+    <div class="s-warum">Kapazitätsergebnisse werden immer aufgerundet – siehe Abschnitt 1.4. Die letzte Fahrt ist nur halb voll, sie muss aber gefahren werden.</div>
+  </div>
+
+  <h3>Der zusammengesetzte Dreisatz – zwei Größen ändern sich</h3>
+  <p>Wenn sich gleichzeitig zwei Dinge ändern, zerlegst du die Aufgabe. Der einfachste Weg führt über die <strong>Leistung je Einheit</strong>.</p>
+
+  <div class="schritte" data-notiz="rechnung-dreisatz-zusammengesetzt">
+    <div class="schritt"><div class="s-nr">1</div><div class="s-txt">3 Mitarbeiter packen in 4 Stunden 480 Pakete. Wie viele schaffen 5 Mitarbeiter in 6 Stunden?</div></div>
+    <div class="s-warum">Zwei Größen ändern sich: die Zahl der Mitarbeiter und die Zeit. Beide wirken proportional – mehr Leute und mehr Zeit ergeben mehr Pakete.</div>
+    <div class="schritt"><div class="s-nr">2</div><div class="s-txt">Bisher geleistet: 3 × 4 = 12 Mitarbeiterstunden</div></div>
+    <div class="s-warum">Man fasst beide Größen zu einer einzigen zusammen. Die Einheit heißt Mitarbeiterstunde – eine Person, eine Stunde.</div>
+    <div class="schritt"><div class="s-nr">3</div><div class="s-txt">480 ÷ 12 = 40 Pakete je Mitarbeiterstunde</div></div>
+    <div class="s-warum">Das ist die Leistung pro Einheit – der Kern der Aufgabe.</div>
+    <div class="schritt"><div class="s-nr">4</div><div class="s-txt">Neu verfügbar: 5 × 6 = 30 Mitarbeiterstunden</div></div>
+    <div class="s-warum">Dieselbe Zusammenfassung für die neue Situation.</div>
+    <div class="schritt fertig"><div class="s-nr">✓</div><div class="s-txt">30 × 40 = 1.200 Pakete</div></div>
+    <div class="s-warum">Kontrolle: Die Mitarbeiterstunden haben sich von 12 auf 30 mehr als verdoppelt, also müssen auch die Pakete mehr als das Doppelte von 480 sein. 1.200 passt.</div>
+  </div>
+
+  <div class="block beispiel" data-notiz="bsp-dreisatz-logistik">
+    <div class="b-label">Wo dir das im Fachwirt begegnet</div>
+    <p><strong>Personalbedarfsrechnung:</strong> Wenn ein Kommissionierer 180 Positionen je Schicht schafft und 900 Positionen zu bearbeiten sind, brauchst du 900 ÷ 180 = 5 Mitarbeiter. Reiner proportionaler Dreisatz.</p>
+    <p><strong>Tourenplanung und Fahrzeugbedarf:</strong> Ladekapazität gegen Anzahl der Fahrten – antiproportional, Ergebnis aufrunden.</p>
+    <p><strong>Bestellhäufigkeit:</strong> Jahresbedarf 12.000 Stück bei einer optimalen Bestellmenge von 1.500 Stück ergibt 12.000 ÷ 1.500 = 8 Bestellungen im Jahr. Verdoppelst du die Bestellmenge, halbiert sich die Häufigkeit – antiproportional.</p>
+    <p><strong>Umrechnung von Leistungsangaben:</strong> Positionen je Stunde, Kosten je Tonne, Kosten je Palettenplatz. Alles Dreisatz mit dem Schluss auf die Einheit.</p>
+  </div>
+
+  <div class="abfrage-liste">
+    <div class="abfrage-kopf">Selbstabfrage</div>
+    <details class="abfrage"><summary>Wie erkennst du, ob eine Aufgabe proportional oder antiproportional ist?</summary>
+      <div class="antwort"><p>Mit der Kontrollfrage: „Wenn ich mehr davon habe – wird das Ergebnis größer oder kleiner?“ Größer heißt proportional, kleiner heißt antiproportional.</p></div></details>
+    <details class="abfrage"><summary>Wie rechnest du den antiproportionalen Dreisatz?</summary>
+      <div class="antwort"><p>Zuerst die beiden gegebenen Größen multiplizieren (das Produkt bleibt konstant), dann durch die neue Größe teilen. 4 Stapler × 9 h = 36; 36 ÷ 6 Stapler = 6 h.</p></div></details>
+    <details class="abfrage"><summary>Nenne drei typische antiproportionale Zusammenhänge aus der Logistik.</summary>
+      <div class="antwort"><p>Anzahl Arbeitskräfte und benötigte Zeit · Fahrzeugkapazität und Anzahl der Fahrten · Bestellmenge und Bestellhäufigkeit. Auch Geschwindigkeit und Fahrzeit.</p></div></details>
+    <details class="abfrage"><summary>6 Mitarbeiter bearbeiten in 5 Tagen 1.800 Sendungen. Wie viele schaffen 9 Mitarbeiter in 4 Tagen?</summary>
+      <div class="antwort"><p>1.800 ÷ (6 × 5) = 60 Sendungen je Mitarbeitertag. Neu: 9 × 4 = 36 Mitarbeitertage. 36 × 60 = 2.160 Sendungen.</p></div></details>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════ -->
+<section class="abschnitt" id="verhaeltnisse-anteile" data-gruppe="Prozent, Dreisatz, Anteile">
+  <div class="ab-kopf"><h2><span class="ab-nr">2.4</span>Verhältnisse, Anteile und Verteilungsrechnung</h2></div>
+
+  <div class="block einstieg" data-notiz="ein-verhaeltnisse">
+    <div class="b-label">Worum es geht</div>
+    <p>4.500 € Frachtkosten sollen auf drei Kostenstellen verteilt werden, und zwar im Verhältnis 5 : 3 : 2. Solche Sätze stehen ständig in Prüfungsaufgaben – bei Kostenumlagen, bei der Aufteilung von Lagerflächen, bei Mischungsverhältnissen, bei Personalverteilungen. Wer den Trick einmal gesehen hat, rechnet das in zwei Zeilen.</p>
+  </div>
+
+  <div class="block def" data-notiz="def-verhaeltnis">
+    <div class="b-label">Definition</div>
+    <div class="b-term">Verhältnis</div>
+    <p>Ein Verhältnis wie <strong>5 : 3 : 2</strong> sagt nichts über absolute Mengen aus, sondern nur darüber, <em>wie sich die Teile zueinander verhalten</em>. Der erste Teil ist so groß wie fünf gleiche Portionen, der zweite wie drei, der dritte wie zwei. Zusammen sind das 5 + 3 + 2 = <strong>10 Portionen</strong>, und diese zehn Portionen sind das Ganze.</p>
+  </div>
+
+  <div class="formel" data-notiz="formel-verteilung">
+    <div class="formel-kopf"><span class="f-tag">Regel</span><span class="f-name">Verteilung nach einem Verhältnis</span></div>
+    <div class="formel-koerper">
+      <div class="eq">1. Verhältniszahlen addieren  →  Anzahl der Teile</div>
+      <div class="eq">2. Gesamtbetrag ÷ Anzahl der Teile  →  Wert eines Teils</div>
+      <div class="eq">3. Wert eines Teils × jeweilige Verhältniszahl  →  Anteil</div>
+      <div class="f-erklaerung">Probe: Alle Anteile zusammenzählen. Es muss exakt der Gesamtbetrag herauskommen.</div>
+    </div>
+  </div>
+
+  <h3>Beispiel 1 – Frachtkosten auf drei Kostenstellen</h3>
+  <div class="schritte" data-notiz="rechnung-verteilung-fracht">
+    <div class="schritt"><div class="s-nr">1</div><div class="s-txt">4.500 € im Verhältnis 5 : 3 : 2</div></div>
+    <div class="s-warum">Zuerst die Frage: Aus wie vielen gleichen Portionen besteht das Ganze?</div>
+    <div class="schritt"><div class="s-nr">2</div><div class="s-txt">5 + 3 + 2 = 10 Teile</div></div>
+    <div class="s-warum">Das Ganze besteht aus zehn Portionen – nicht aus fünf, drei oder zwei.</div>
+    <div class="schritt"><div class="s-nr">3</div><div class="s-txt">4.500 ÷ 10 = 450 € je Teil</div></div>
+    <div class="s-warum">Der Schluss auf die Einheit, genau wie beim Dreisatz.</div>
+    <div class="schritt fertig"><div class="s-nr">✓</div><div class="s-txt">5 × 450 = 2.250 €  ·  3 × 450 = 1.350 €  ·  2 × 450 = 900 €</div></div>
+    <div class="s-warum">Probe: 2.250 + 1.350 + 900 = 4.500 €. Stimmt. In Prozent ausgedrückt: 50 %, 30 %, 20 % – die Verhältniszahlen mal 10, weil zufällig zehn Teile herauskamen.</div>
+  </div>
+
+  <div class="block achtung" data-notiz="ach-verhaeltnis-anteil">
+    <div class="b-label">Die häufigste Verwechslung</div>
+    <p>Ein Verhältnis von <strong>1 : 4</strong> bedeutet <strong>nicht</strong>, dass der erste Teil ein Viertel ausmacht. Es sind 1 + 4 = 5 Teile, also macht der erste Teil <strong>ein Fünftel (20 %)</strong> aus und der zweite vier Fünftel (80 %). Die Verhältniszahl ist der Zähler, die <em>Summe</em> aller Verhältniszahlen ist der Nenner.</p>
+  </div>
+
+  <h3>Beispiel 2 – Umlage von Lagerkosten nach Palettenplätzen</h3>
+  <p>Oft steht das Verhältnis nicht direkt da, sondern muss aus Mengen gebildet werden. Das Vorgehen ist identisch.</p>
+
+  <div class="schritte" data-notiz="rechnung-umlage-lagerkosten">
+    <div class="schritt"><div class="s-nr">1</div><div class="s-txt">96.000 € Lagerkosten · Bereich A 120 Plätze, B 200 Plätze, C 80 Plätze</div></div>
+    <div class="s-warum">Der Umlageschlüssel ist der belegte Palettenplatz. Die Platzzahlen sind das Verhältnis.</div>
+    <div class="schritt"><div class="s-nr">2</div><div class="s-txt">120 + 200 + 80 = 400 Plätze</div></div>
+    <div class="s-warum">Das ist die Gesamtzahl der Teile – hier eben Plätze statt abstrakter Portionen.</div>
+    <div class="schritt"><div class="s-nr">3</div><div class="s-txt">96.000 ÷ 400 = 240 € je Platz</div></div>
+    <div class="s-warum">Der Kostensatz je Einheit. Diese Zahl ist auch für sich genommen eine nützliche Kennzahl.</div>
+    <div class="schritt fertig"><div class="s-nr">✓</div><div class="s-txt">A 28.800 €  ·  B 48.000 €  ·  C 19.200 €</div></div>
+    <div class="s-warum">240 × 120 = 28.800 · 240 × 200 = 48.000 · 240 × 80 = 19.200. Probe: zusammen 96.000 €. Stimmt.</div>
+  </div>
+
+  <h3>Anteile in Prozent umrechnen</h3>
+  <p>Ein Anteil ist ein Bruch, und ein Bruch ist eine Division. Also: <strong>Teil ÷ Ganzes × 100 = Prozentanteil</strong>. Für Bereich B: 200 ÷ 400 = 0,5 = 50 %.</p>
+
+  <div class="block beispiel" data-notiz="bsp-anteile-abc">
+    <div class="b-label">Wo dir das im Fachwirt begegnet</div>
+    <p><strong>ABC-Analyse:</strong> Sie besteht vollständig aus Anteilen. Wenn 8 von 40 Artikeln als A-Artikel eingestuft werden, sind das 8 ÷ 40 = 20 % der Artikel. Wenn diese 8 Artikel 216.000 € von 300.000 € Gesamtverbrauchswert ausmachen, sind das 72 % des Wertes. Die typische Aussage „20 % der Artikel binden 72 % des Wertes“ ist nichts anderes als zwei Anteilsrechnungen nebeneinander.</p>
+    <p><strong>Kostenumlagen und Gemeinkostenverteilung:</strong> Flächen, Palettenplätze, Sendungszahlen oder Personalstunden dienen als Schlüssel – das Rechenverfahren ist immer die Verteilungsrechnung von oben.</p>
+    <p><strong>Wertschöpfungsanteile:</strong> Wie viel Prozent der Gesamtleistung entfallen auf eigene Wertschöpfung, wie viel auf Vorleistungen? Auch das sind Anteile am selben Ganzen.</p>
+  </div>
+
+  <div class="block merk" data-notiz="merk-probe-verteilung">
+    <div class="b-label">Merksatz</div>
+    <p>Bei jeder Verteilungsaufgabe gilt: <strong>Die Summe der Anteile muss den Gesamtbetrag ergeben, und die Summe der Prozentanteile muss 100 % ergeben.</strong> Diese Probe kostet zehn Sekunden und findet praktisch jeden Rechenfehler.</p>
+  </div>
+
+  <div class="abfrage-liste">
+    <div class="abfrage-kopf">Selbstabfrage</div>
+    <details class="abfrage"><summary>In wie viele Teile zerlegt das Verhältnis 5 : 3 : 2 das Ganze?</summary>
+      <div class="antwort"><p>In 10 Teile – die Verhältniszahlen werden addiert. Ein Teil ist ein Zehntel des Gesamtbetrags.</p></div></details>
+    <details class="abfrage"><summary>Welchen Anteil hat der erste Posten bei einem Verhältnis von 1 : 4?</summary>
+      <div class="antwort"><p>Ein Fünftel, also 20 % – nicht ein Viertel. Die Summe der Verhältniszahlen (1 + 4 = 5) ist der Nenner.</p></div></details>
+    <details class="abfrage"><summary>Wie verteilst du 21.600 € im Verhältnis 4 : 3 : 2?</summary>
+      <div class="antwort"><p>4 + 3 + 2 = 9 Teile. 21.600 ÷ 9 = 2.400 € je Teil. Ergibt 9.600 €, 7.200 € und 4.800 €. Probe: zusammen 21.600 €.</p></div></details>
+    <details class="abfrage"><summary>Welche Probe machst du bei jeder Verteilungsaufgabe?</summary>
+      <div class="antwort"><p>Die Anteile addieren – die Summe muss exakt der Gesamtbetrag sein. Bei Prozentanteilen müssen 100 % herauskommen.</p></div></details>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════ -->
+<section class="abschnitt" id="potenzen-wurzeln" data-gruppe="Größen und Einheiten">
+  <div class="ab-kopf"><h2><span class="ab-nr">3.1</span>Potenzen und Wurzeln</h2></div>
+
+  <div class="block einstieg" data-notiz="ein-potenzen">
+    <div class="b-label">Worum es geht</div>
+    <p>Eine Europalette ist 1,20 m lang, 0,80 m breit und wird 1,05 m hoch beladen. Wie viel Rauminhalt beansprucht sie? Du multiplizierst drei Längen und bekommst <strong>Kubikmeter</strong> – geschrieben als m mit einer kleinen 3. Diese kleine Zahl ist eine Potenz, und sie sagt nur, wie oft etwas mit sich selbst multipliziert wird. Die Wurzel ist der Weg zurück. Mehr steckt nicht dahinter, und du brauchst genau diese zwei Dinge für die Andler-Formel.</p>
+  </div>
+
+  <h3>Was eine Potenz ist</h3>
+  <div class="block def" data-notiz="def-potenz">
+    <div class="b-label">Definition</div>
+    <div class="b-term">Potenz, Basis, Exponent</div>
+    <p>Eine Potenz ist eine abgekürzte Multiplikation derselben Zahl. Bei <strong>10³</strong> ist 10 die <strong>Basis</strong> und 3 der <strong>Exponent</strong>. Gelesen: „zehn hoch drei“. Gerechnet: 10 × 10 × 10 = 1.000.</p>
+    <p>Wichtig für die Praxis: <strong>4² = 4 × 4 = 16</strong>. Nicht 4 × 2 = 8. Der Exponent ist keine Multiplikation, sondern eine Zählangabe.</p>
+  </div>
+
+  <div class="tab" data-notiz="tab-zehnerpotenzen">
+    <table>
+      <thead><tr><th>Potenz</th><th>Ausgeschrieben</th><th class="num">Wert</th><th>Wo du das siehst</th></tr></thead>
+      <tbody>
+        <tr><td>10¹</td><td>10</td><td class="num">10</td><td>Zehnerstelle</td></tr>
+        <tr><td>10²</td><td>10 × 10</td><td class="num">100</td><td>Prozent, m² aus 100 × 100 cm</td></tr>
+        <tr><td>10³</td><td>10 × 10 × 10</td><td class="num">1.000</td><td>Tonne aus Kilogramm, Liter aus Milliliter</td></tr>
+        <tr><td>10⁶</td><td>1.000 × 1.000</td><td class="num">1.000.000</td><td>Million, Gramm in einer Tonne</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="block merk" data-notiz="merk-flaeche-volumen">
+    <div class="b-label">Warum m² und m³ Potenzen sind</div>
+    <p><strong>Fläche = Länge × Breite.</strong> Zwei Meterangaben multipliziert ergeben Quadratmeter – daher die 2. <strong>Volumen = Länge × Breite × Höhe.</strong> Drei Meterangaben ergeben Kubikmeter – daher die 3. Die kleine Zahl zählt, wie viele Längen miteinander multipliziert wurden. Wer das versteht, vertut sich beim Umrechnen von Flächen und Volumen nicht mehr.</p>
+  </div>
+
+  <h3>Beispiel – Palettenvolumen</h3>
+  <div class="schritte" data-notiz="rechnung-palettenvolumen">
+    <div class="schritt"><div class="s-nr">1</div><div class="s-txt">Grundfläche: 1,20 m × 0,80 m = 0,96 m²</div></div>
+    <div class="s-warum">Zwei Längen multipliziert ergeben eine Fläche. Die Einheit wird automatisch zu Quadratmetern.</div>
+    <div class="schritt fertig"><div class="s-nr">✓</div><div class="s-txt">Volumen: 0,96 m² × 1,05 m = 1,008 m³</div></div>
+    <div class="s-warum">Die dritte Länge macht daraus ein Volumen. Rund ein Kubikmeter je beladener Europalette – eine gute Faustzahl für Laderaumberechnungen.</div>
+  </div>
+
+  <h3>Die Wurzel: der Weg zurück</h3>
+  <div class="formel" data-notiz="formel-wurzel">
+    <div class="formel-kopf"><span class="f-tag">Regel</span><span class="f-name">Quadratwurzel als Gegenoperation</span></div>
+    <div class="formel-koerper">
+      <div class="eq">√x  fragt:  Welche Zahl mit sich selbst multipliziert ergibt x?</div>
+      <div class="eq ergebnis">√16 = 4, weil 4 × 4 = 16     ·     √144 = 12, weil 12 × 12 = 144</div>
+      <div class="f-erklaerung">Quadrieren und Wurzelziehen heben sich gegenseitig auf – genauso wie Plus und Minus oder Mal und Geteilt. Genau deshalb kannst du eine Wurzel in einer Formel loswerden, indem du beide Seiten quadrierst (Abschnitt 4.4).</div>
+    </div>
+  </div>
+
+  <div class="tab" data-notiz="tab-quadratzahlen">
+    <table>
+      <thead><tr><th class="num">n</th><th class="num">1</th><th class="num">2</th><th class="num">3</th><th class="num">4</th><th class="num">5</th><th class="num">6</th><th class="num">7</th><th class="num">8</th><th class="num">9</th><th class="num">10</th><th class="num">11</th><th class="num">12</th><th class="num">15</th><th class="num">20</th></tr></thead>
+      <tbody>
+        <tr><td class="num"><strong>n²</strong></td><td class="num">1</td><td class="num">4</td><td class="num">9</td><td class="num">16</td><td class="num">25</td><td class="num">36</td><td class="num">49</td><td class="num">64</td><td class="num">81</td><td class="num">100</td><td class="num">121</td><td class="num">144</td><td class="num">225</td><td class="num">400</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3>Große Wurzeln ohne Rechner abschätzen</h3>
+  <p>Eine Wurzel darf man in Faktoren zerlegen: <strong>√(a × b) = √a × √b</strong>. Das hilft bei den großen Zahlen, die in der Andler-Formel entstehen, und es hilft zur Kontrolle, falls der Taschenrechner etwas Unerwartetes anzeigt.</p>
+
+  <div class="schritte" data-notiz="rechnung-grosse-wurzel">
+    <div class="schritt"><div class="s-nr">1</div><div class="s-txt">√16.000.000</div></div>
+    <div class="s-warum">Sechzehn Millionen – auf den ersten Blick unhandlich. Zerlege die Zahl in eine kleine Quadratzahl und eine Zehnerpotenz.</div>
+    <div class="schritt"><div class="s-nr">2</div><div class="s-txt">16.000.000 = 16 × 1.000.000</div></div>
+    <div class="s-warum">Die Million ist selbst eine Quadratzahl: 1.000 × 1.000.</div>
+    <div class="schritt fertig"><div class="s-nr">✓</div><div class="s-txt">√16 × √1.000.000 = 4 × 1.000 = 4.000</div></div>
+    <div class="s-warum">Kontrolle: 4.000 × 4.000 = 16.000.000. Stimmt. Faustregel für die Größenordnung: Bei jeweils zwei Nullen unter der Wurzel kommt eine Null heraus.</div>
+  </div>
+
+  <div class="block achtung" data-notiz="ach-wurzel-summe">
+    <div class="b-label">Typischer Fehler</div>
+    <p><strong>Die Wurzel auf eine Summe verteilen.</strong> √(9 + 16) ist <strong>nicht</strong> √9 + √16. Links steht √25 = 5, rechts stünde 3 + 4 = 7. Das Wurzelzeichen wirkt wie eine <strong>Klammer</strong> um alles, was darunter steht: erst alles darunter fertig ausrechnen, dann die Wurzel ziehen. Bei Produkten und Brüchen darf man dagegen zerlegen.</p>
+    <p>Zweiter Fehler: die Wurzel zu früh ziehen. In der Andler-Formel steht ein kompletter Bruch unter der Wurzel. Zähler und Nenner müssen erst berechnet und geteilt sein.</p>
+  </div>
+
+  <div class="block beispiel" data-notiz="bsp-wurzel-andler">
+    <div class="b-label">Wo dir das im Fachwirt begegnet</div>
+    <p><strong>Andlersche Formel:</strong> Sie ist die einzige prüfungsrelevante Formel mit Wurzel – und sie kommt fast sicher dran. Beispiel: Zähler 2 × 4.500 × 90 = 810.000. Nenner 25 × 0,18 = 4,5. Bruch: 810.000 ÷ 4,5 = 180.000. Wurzel: <strong>√180.000 = 424,26</strong>, gerundet <strong>424 Stück</strong>.</p>
+    <p>Hier siehst du auch: Nicht jede Andler-Aufgabe geht glatt auf. Ein krummes Ergebnis ist kein Indiz für einen Fehler.</p>
+    <p><strong>Laderaum- und Flächenberechnungen:</strong> Kubikmeter im Lkw, Quadratmeter Lagerfläche, Regalvolumen – überall Potenzen.</p>
+  </div>
+
+  <div class="abfrage-liste">
+    <div class="abfrage-kopf">Selbstabfrage</div>
+    <details class="abfrage"><summary>Was bedeutet der Exponent bei 10³?</summary>
+      <div class="antwort"><p>Er sagt, wie oft die Basis mit sich selbst multipliziert wird: 10 × 10 × 10 = 1.000. Er ist keine Multiplikation mit 3.</p></div></details>
+    <details class="abfrage"><summary>Warum heißt die Einheit für Volumen Kubikmeter, also m hoch 3?</summary>
+      <div class="antwort"><p>Weil drei Längenangaben miteinander multipliziert werden: Länge × Breite × Höhe. Bei zwei Längen entsteht der Quadratmeter.</p></div></details>
+    <details class="abfrage"><summary>Warum ist √(9 + 16) nicht 3 + 4?</summary>
+      <div class="antwort"><p>Weil das Wurzelzeichen wie eine Klammer wirkt. Erst 9 + 16 = 25 rechnen, dann √25 = 5. Die Wurzel darf nur bei Produkten und Brüchen zerlegt werden, nicht bei Summen.</p></div></details>
+    <details class="abfrage"><summary>Wie ziehst du √16.000.000 im Kopf?</summary>
+      <div class="antwort"><p>Zerlegen: 16 × 1.000.000. Dann √16 = 4 und √1.000.000 = 1.000, also 4 × 1.000 = 4.000.</p></div></details>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════ -->
+<section class="abschnitt" id="einheiten-umrechnen" data-gruppe="Größen und Einheiten">
+  <div class="ab-kopf"><h2><span class="ab-nr">3.2</span>Einheiten und Umrechnungen</h2></div>
+
+  <div class="block einstieg" data-notiz="ein-einheiten">
+    <div class="b-label">Worum es geht</div>
+    <p>Eine Schicht dauert von 7:30 Uhr bis 16:00 Uhr, davon 45 Minuten Pause. Wie viele Stunden sind das? Wer 8,30 minus 0,45 rechnet, bekommt 7,85 und liegt falsch. Die Zeit ist die einzige Größe im Berufsalltag, die nicht im Zehnersystem läuft – und genau daran scheitern erstaunlich viele Rechenaufgaben.</p>
+    <p>Einheiten sind kein Beiwerk. Sie sind eine kostenlose Fehlerkontrolle: Wenn du Tonnen mit Kilogramm addierst, siehst du das sofort an der Einheit, lange bevor du das Ergebnis anzweifelst.</p>
+  </div>
+
+  <h3>Zeit – die Falle mit dem Komma</h3>
+  <div class="block merk" data-notiz="merk-zeit-dezimal">
+    <div class="b-label">Der wichtigste Satz zur Zeitrechnung</div>
+    <p><strong>2,5 Stunden sind 2 Stunden 30 Minuten, nicht 2 Stunden 50 Minuten.</strong> Eine Stunde hat 60 Minuten, nicht 100. Deshalb heißt eine halbe Stunde als Dezimalzahl 0,5 und als Uhrzeitangabe 30 Minuten.</p>
+  </div>
+
+  <div class="tab" data-notiz="tab-zeitumrechnung">
+    <table>
+      <thead><tr><th>Minuten</th><th class="num">15</th><th class="num">20</th><th class="num">30</th><th class="num">40</th><th class="num">45</th><th class="num">50</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Dezimalstunden</strong></td><td class="num">0,25</td><td class="num">0,3333</td><td class="num">0,50</td><td class="num">0,6667</td><td class="num">0,75</td><td class="num">0,8333</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="formel" data-notiz="formel-zeit">
+    <div class="formel-kopf"><span class="f-tag">Regel</span><span class="f-name">Zeit umrechnen</span></div>
+    <div class="formel-koerper">
+      <div class="eq">Minuten → Dezimalstunden:   Minuten ÷ 60</div>
+      <div class="eq">Dezimalstunden → Minuten:   Nachkommateil × 60</div>
+      <div class="f-erklaerung">1 h = 60 min = 3.600 s · 1 Tag = 24 h · 1 Arbeitswoche (5 Tage) = 40 h bei 8-Stunden-Tag. Rechne in Aufgaben grundsätzlich in Dezimalstunden – nur so kannst du multiplizieren und dividieren.</div>
+    </div>
+  </div>
+
+  <div class="schritte" data-notiz="rechnung-schichtdauer">
+    <div class="schritt"><div class="s-nr">1</div><div class="s-txt">Schicht 7:30 Uhr bis 16:00 Uhr</div></div>
+    <div class="s-warum">Zuerst die Anwesenheit: von 7:30 bis 16:00 sind es 8 Stunden 30 Minuten.</div>
+    <div class="schritt"><div class="s-nr">2</div><div class="s-txt">8 h 30 min = 8 + 30 ÷ 60 = 8,5 h</div></div>
+    <div class="s-warum">In Dezimalstunden umwandeln, bevor gerechnet wird. Erst jetzt darf man abziehen.</div>
+    <div class="schritt"><div class="s-nr">3</div><div class="s-txt">Pause 45 min = 45 ÷ 60 = 0,75 h</div></div>
+    <div class="s-warum">Auch die Pause muss in dieselbe Einheit. Man subtrahiert nie Minuten von Dezimalstunden.</div>
+    <div class="schritt fertig"><div class="s-nr">✓</div><div class="s-txt">8,5 − 0,75 = 7,75 h Arbeitszeit (= 7 h 45 min)</div></div>
+    <div class="s-warum">Rückumwandlung zur Kontrolle: 0,75 × 60 = 45 Minuten. Und 7,85 h aus der falschen Rechnung wären 7 h 51 min gewesen – sechs Minuten je Schicht, bei 220 Schichten über 22 Stunden im Jahr.</div>
+  </div>
+
+  <h3>Masse, Volumen, Fläche, Geld</h3>
+  <div class="tab" data-notiz="tab-einheiten-uebersicht">
+    <table>
+      <thead><tr><th>Größe</th><th>Umrechnung</th><th>Faktor</th><th>Merkhilfe</th></tr></thead>
+      <tbody>
+        <tr><td rowspan="2"><strong>Masse</strong></td><td>1 t = 1.000 kg</td><td class="num">× 1.000</td><td>„kilo“ heißt tausend</td></tr>
+        <tr><td>1 kg = 1.000 g</td><td class="num">× 1.000</td><td>1 t = 1.000.000 g</td></tr>
+        <tr><td rowspan="2"><strong>Volumen</strong></td><td>1 m³ = 1.000 dm³ = 1.000 l</td><td class="num">× 1.000</td><td>1 Kubikmeter Wasser = 1.000 Liter = 1 t</td></tr>
+        <tr><td>1 l = 1.000 ml</td><td class="num">× 1.000</td><td>1 l = 1 dm³</td></tr>
+        <tr><td><strong>Fläche</strong></td><td>1 m² = 10.000 cm²</td><td class="num">× 10.000</td><td>100 × 100, weil zwei Längen</td></tr>
+        <tr><td><strong>Länge</strong></td><td>1 m = 100 cm = 1.000 mm</td><td class="num">× 100 / × 1.000</td><td>1 km = 1.000 m</td></tr>
+        <tr><td rowspan="2"><strong>Geld</strong></td><td>1 € = 100 ct</td><td class="num">× 100</td><td>zwei Nachkommastellen</td></tr>
+        <tr><td>1 T€ = 1.000 € · 1 Mio. € = 1.000 T€</td><td class="num">× 1.000</td><td>T€ steht in Bilanzen und Berichten</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="block achtung" data-notiz="ach-flaeche-umrechnen">
+    <div class="b-label">Der Fehler bei Flächen und Volumen</div>
+    <p>1 m sind 100 cm – aber 1 m² sind <strong>nicht</strong> 100 cm², sondern <strong>10.000 cm²</strong>. Und 1 m³ sind 1.000.000 cm³. Grund: Der Umrechnungsfaktor wird so oft angewendet, wie der Exponent angibt. Bei Flächen zweimal (100 × 100), bei Volumen dreimal (100 × 100 × 100). Wer das vergisst, liegt um den Faktor 100 oder 10.000 daneben.</p>
+  </div>
+
+  <h3>Zusammengesetzte Einheiten – Leistung und Preis</h3>
+  <p>Die meisten Kennzahlen in der Logistik sind zusammengesetzte Einheiten: Positionen <em>je</em> Stunde, Euro <em>je</em> Tonne, Paletten <em>je</em> Quadratmeter. Das kleine Wort „je“ bedeutet immer <strong>geteilt durch</strong>.</p>
+
+  <div class="schritte" data-notiz="rechnung-leistung-umrechnen">
+    <div class="schritt"><div class="s-nr">1</div><div class="s-txt">Ein Kommissionierer bearbeitet 240 Positionen in 8 Stunden</div></div>
+    <div class="s-warum">Zwei Zahlen mit zwei Einheiten. Gesucht ist die Leistung je Stunde.</div>
+    <div class="schritt"><div class="s-nr">2</div><div class="s-txt">240 Pos ÷ 8 h = 30 Positionen je Stunde</div></div>
+    <div class="s-warum">„Je Stunde“ heißt: durch die Stundenzahl teilen. Die Einheit der Antwort entsteht dabei automatisch – Positionen geteilt durch Stunden ergibt Positionen je Stunde.</div>
+    <div class="schritt"><div class="s-nr">3</div><div class="s-txt">30 Pos/h ÷ 60 = 0,5 Positionen je Minute</div></div>
+    <div class="s-warum">Feiner werdende Zeiteinheit heißt: durch 60 teilen.</div>
+    <div class="schritt fertig"><div class="s-nr">✓</div><div class="s-txt">Umgekehrt: 60 min ÷ 30 Pos = 2 Minuten je Position</div></div>
+    <div class="s-warum">Positionen je Minute und Minuten je Position sind <strong>Kehrwerte</strong>. Beide beschreiben dieselbe Leistung, nur andersherum. Vertauscht man sie, entsteht Unsinn – 0,5 Minuten je Position wäre viermal so schnell.</div>
+  </div>
+
+  <div class="block beispiel" data-notiz="bsp-einheiten-logistik">
+    <div class="b-label">Wo dir das im Fachwirt begegnet</div>
+    <p><strong>Frachtkosten je Tonne:</strong> 3.600 € Frachtkosten für 24 t sind 3.600 ÷ 24 = <strong>150 €/t</strong> oder 0,15 €/kg. Solche Kostensätze braucht man für Angebotsvergleiche und für die Verrechnung an Kostenstellen.</p>
+    <p><strong>Personalbedarf:</strong> Kommissionierleistung in Positionen je Stunde mal verfügbare Stunden ergibt die Kapazität. Wer hier Stunden und Minuten mischt, bekommt einen Personalbedarf, der um den Faktor 60 danebenliegt.</p>
+    <p><strong>Andlersche Formel:</strong> Der Jahresbedarf steht in Stück je Jahr, die Bestellkosten in Euro je Bestellung, der Einstandspreis in Euro je Stück. Nur wenn alle Größen auf dieselbe Periode und dieselbe Mengeneinheit bezogen sind, stimmt das Ergebnis. Ein Monatsbedarf in einer Jahresformel ist ein Faktor-12-Fehler.</p>
+    <p><strong>Lagerkennzahlen:</strong> Die Lagerdauer wird in Tagen angegeben und mit 360 Tagen je Jahr gerechnet – nicht mit 365, wenn die Aufgabe das kaufmännische Jahr vorgibt. Lies die Aufgabenstellung genau.</p>
+  </div>
+
+  <div class="block merk" data-notiz="merk-einheiten-mitschreiben">
+    <div class="b-label">Merksatz</div>
+    <p><strong>Schreib die Einheit bei jedem Zwischenschritt mit.</strong> Sie rechnet mit und verrät dir Fehler: Wenn am Ende „Stück je Euro“ herauskommt, obwohl du einen Preis gesucht hast, hast du irgendwo Zähler und Nenner vertauscht. Diese Kontrolle kostet nichts und findet mehr Fehler als jedes Nachrechnen.</p>
+  </div>
+
+  <div class="abfrage-liste">
+    <div class="abfrage-kopf">Selbstabfrage</div>
+    <details class="abfrage"><summary>Wie viele Minuten sind 2,5 Stunden – und warum nicht 250?</summary>
+      <div class="antwort"><p>150 Minuten. Eine Stunde hat 60 Minuten, nicht 100. Der Nachkommateil wird mit 60 multipliziert: 0,5 × 60 = 30 min.</p></div></details>
+    <details class="abfrage"><summary>Wie rechnest du 1 h 45 min in Dezimalstunden?</summary>
+      <div class="antwort"><p>45 ÷ 60 = 0,75, also 1,75 Stunden.</p></div></details>
+    <details class="abfrage"><summary>Wie viele Quadratzentimeter hat ein Quadratmeter?</summary>
+      <div class="antwort"><p>10.000. Der Faktor 100 wird zweimal angewendet, weil zwei Längen multipliziert werden. Bei Kubikmetern sind es 1.000.000 cm³.</p></div></details>
+    <details class="abfrage"><summary>Was bedeutet das Wort „je“ in einer Kennzahl?</summary>
+      <div class="antwort"><p>„Geteilt durch“. Positionen je Stunde heißt Positionen ÷ Stunden. Die Einheit der Antwort ergibt sich dabei von selbst.</p></div></details>
+    <details class="abfrage"><summary>30 Positionen je Stunde – wie viele Minuten je Position sind das?</summary>
+      <div class="antwort"><p>60 ÷ 30 = 2 Minuten je Position. Die beiden Angaben sind Kehrwerte voneinander.</p></div></details>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════ -->
+<section class="abschnitt" id="waage-prinzip" data-gruppe="Gleichungen und Formeln">
+  <div class="ab-kopf"><h2><span class="ab-nr">4.1</span>Das Waage-Prinzip und die vier Gegenoperationen</h2></div>
+
+  <div class="block einstieg" data-notiz="ein-waage">
+    <div class="b-label">Worum es geht</div>
+    <p>Stell dir eine altmodische Balkenwaage vor. Links liegt ein Sack, rechts liegen Gewichte, und der Balken steht waagerecht – beide Seiten sind gleich schwer. Wenn du jetzt links ein Kilo dazulegst, kippt sie. Es sei denn, du legst rechts ebenfalls ein Kilo dazu.</p>
+    <p>Genau das ist eine Gleichung. Das Gleichheitszeichen ist der Balken, und es sagt: <strong>links steht dasselbe wie rechts.</strong> Alles, was du auf einer Seite tust, musst du auf der anderen auch tun – sonst stimmt die Gleichung nicht mehr. Das ist die ganze Begründung dafür, warum man „auf beiden Seiten dasselbe macht“. Es ist keine willkürliche Schulregel, sondern die einzige Möglichkeit, das Gleichgewicht zu erhalten.</p>
+  </div>
+
+  <div class="block def" data-notiz="def-gleichung">
+    <div class="b-label">Definition</div>
+    <div class="b-term">Gleichung und Variable</div>
+    <p>Eine <strong>Gleichung</strong> ist eine Aussage, dass zwei Ausdrücke denselben Wert haben. Eine <strong>Variable</strong> – meist ein Buchstabe wie x, oder in Formeln ein sprechendes Kürzel wie α oder U – ist ein Platzhalter für eine Zahl, die du noch nicht kennst.</p>
+    <p><strong>Eine Gleichung lösen</strong> heißt: die Variable so lange umzustellen, bis sie allein auf einer Seite steht und auf der anderen Seite nur noch bekannte Zahlen. Dann kann man ablesen, welchen Wert sie haben muss.</p>
+  </div>
+
+  <h3>Die vier Gegenoperationen</h3>
+  <p>Jede Rechenart hat eine, die sie rückgängig macht. Mehr als diese vier Fälle gibt es beim Umstellen nicht.</p>
+
+  <div class="tab" data-notiz="tab-gegenoperationen">
+    <table>
+      <thead><tr><th>Was bei der Variablen steht</th><th>Gegenoperation auf beiden Seiten</th><th>Beispiel</th><th>Lösung</th></tr></thead>
+      <tbody>
+        <tr><td><strong>+ 5</strong> (addiert)</td><td>− 5</td><td>x + 5 = 12</td><td>x = 12 − 5 = <strong>7</strong></td></tr>
+        <tr><td><strong>− 3</strong> (subtrahiert)</td><td>+ 3</td><td>x − 3 = 9</td><td>x = 9 + 3 = <strong>12</strong></td></tr>
+        <tr><td><strong>× 4</strong> (multipliziert)</td><td>÷ 4</td><td>4x = 20</td><td>x = 20 ÷ 4 = <strong>5</strong></td></tr>
+        <tr><td><strong>÷ 2</strong> (dividiert)</td><td>× 2</td><td>x ÷ 2 = 6</td><td>x = 6 × 2 = <strong>12</strong></td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="block merk" data-notiz="merk-gegenoperation">
+    <div class="b-label">Merksatz</div>
+    <p><strong>Was auf der einen Seite stört, wird mit der Gegenoperation auf beiden Seiten entfernt.</strong> Beim Notieren schreibt man den Schritt hinter einen senkrechten Strich: <em>4x = 20 | ÷ 4</em>. So sieht der Prüfer, was du getan hast – und du selbst findest deinen Fehler schneller wieder.</p>
+  </div>
+
+  <h3>In welcher Reihenfolge man abbaut</h3>
+  <p>Beim Ausrechnen gilt Klammer, Punkt, Strich. Beim <em>Auflösen</em> gehst du genau andersherum vor: <strong>erst die Strichrechnung wegräumen, dann die Punktrechnung.</strong> Bildlich: Beim Anziehen kommen erst die Socken, dann die Schuhe – beim Ausziehen erst die Schuhe.</p>
+
+  <div class="schritte" data-notiz="rechnung-gleichung-zweistufig">
+    <div class="schritt"><div class="s-nr">1</div><div class="s-txt">3x + 12 = 45</div></div>
+    <div class="s-warum">Bei x steht zweierlei: es ist mit 3 multipliziert, und danach wurden 12 addiert. Zuerst muss das Plus weg.</div>
+    <div class="schritt"><div class="s-nr">2</div><div class="s-txt">3x + 12 − 12 = 45 − 12    →    3x = 33</div></div>
+    <div class="s-warum">Gegenoperation zu „+ 12“ ist „− 12“, und zwar auf <strong>beiden</strong> Seiten. Links heben sich +12 und −12 auf, rechts bleibt 33.</div>
+    <div class="schritt"><div class="s-nr">3</div><div class="s-txt">3x ÷ 3 = 33 ÷ 3</div></div>
+    <div class="s-warum">Jetzt stört nur noch die 3, mit der x multipliziert ist. Gegenoperation: durch 3 teilen, wieder auf beiden Seiten.</div>
+    <div class="schritt fertig"><div class="s-nr">✓</div><div class="s-txt">x = 11</div></div>
+    <div class="s-warum">Probe durch Einsetzen: 3 × 11 + 12 = 33 + 12 = 45. Die Ausgangsgleichung stimmt, also ist die Lösung richtig.</div>
+  </div>
+
+  <div class="block merk" data-notiz="merk-probe">
+    <div class="b-label">Die Probe – zwanzig Sekunden, die Punkte retten</div>
+    <p>Setze deine Lösung in die <strong>ursprüngliche</strong> Gleichung ein, nicht in eine deiner Zwischenzeilen. Kommt links dasselbe heraus wie rechts, ist alles richtig. Kommt etwas anderes heraus, steckt der Fehler in einem deiner Umformungsschritte – und den findest du, indem du sie einzeln nachrechnest. Mach die Probe grundsätzlich; sie ist die einzige Kontrolle, die dir Sicherheit gibt.</p>
+  </div>
+
+  <h3>Ein zweites Beispiel mit Praxisbezug</h3>
+  <div class="schritte" data-notiz="rechnung-personalbedarf-gleichung">
+    <div class="schritt"><div class="s-nr">1</div><div class="s-txt">4 Kommissionierer sollen zusammen 1.400 Positionen je Schicht schaffen. Wie viele muss jeder leisten?</div></div>
+    <div class="s-warum">Als Gleichung formuliert: 4 × x = 1.400, wobei x die Leistung je Person ist. Der erste Schritt jeder Textaufgabe ist, sie in eine Gleichung zu übersetzen.</div>
+    <div class="schritt"><div class="s-nr">2</div><div class="s-txt">4x = 1.400  | ÷ 4</div></div>
+    <div class="s-warum">x ist mit 4 multipliziert, also durch 4 teilen – auf beiden Seiten.</div>
+    <div class="schritt fertig"><div class="s-nr">✓</div><div class="s-txt">x = 350 Positionen je Kommissionierer</div></div>
+    <div class="s-warum">Probe: 4 × 350 = 1.400. Plausibilität: 350 Positionen in acht Stunden sind rund 44 je Stunde – ein realistischer Wert, also kein Zehnerfehler.</div>
+  </div>
+
+  <div class="block achtung" data-notiz="ach-nur-teilweise-geteilt">
+    <div class="b-label">Der Fehler, der am meisten Punkte kostet</div>
+    <p><strong>Nur einen Teil einer Seite umformen.</strong> Wenn du 3x + 12 = 45 durch 3 teilst, musst du <em>alles</em> teilen: x + 4 = 15. Wer nur die 3x durch 3 teilt und die 12 stehen lässt, hat die Waage einseitig verändert – das Ergebnis ist falsch.</p>
+    <p>Deshalb der sichere Weg: <strong>erst alle Summanden wegräumen, dann teilen.</strong> Dann steht auf der Seite mit der Variablen nur noch ein einziges Produkt, und man kann nichts vergessen.</p>
+    <p><strong>Und:</strong> niemals durch null teilen. Das ist nicht definiert. Praktisch heißt das: Wenn ein Nenner in einer Aufgabe null werden könnte, prüfe zuerst, ob die Aufgabe überhaupt lösbar ist.</p>
+  </div>
+
+  <div class="block beispiel" data-notiz="bsp-waage-logistik">
+    <div class="b-label">Wo dir das im Fachwirt begegnet</div>
+    <p>Überall dort, wo eine Formel gegeben ist, aber nicht die Größe gesucht wird, die vorne steht. Beispiele: Die Umschlagshäufigkeit ist bekannt, gesucht ist der durchschnittliche Lagerbestand. Der Deckungsbeitrag ist vorgegeben, gesucht ist der nötige Verkaufspreis. Der Personalbedarf steht fest, gesucht ist die erforderliche Leistung je Kopf.</p>
+    <p>Jede dieser Aufgaben ist im Kern dieselbe: eine Gleichung, vier mögliche Gegenoperationen, eine Probe. Der nächste Abschnitt zeigt das systematisch an Formeln mit Buchstaben.</p>
+  </div>
+
+  <div class="abfrage-liste">
+    <div class="abfrage-kopf">Selbstabfrage</div>
+    <details class="abfrage"><summary>Warum muss man in einer Gleichung auf beiden Seiten dasselbe tun?</summary>
+      <div class="antwort"><p>Weil das Gleichheitszeichen bedeutet, dass beide Seiten denselben Wert haben – wie eine Waage im Gleichgewicht. Ändert man nur eine Seite, stimmt die Aussage nicht mehr.</p></div></details>
+    <details class="abfrage"><summary>Nenne die vier Gegenoperationen.</summary>
+      <div class="antwort"><p>Zu Plus gehört Minus, zu Minus gehört Plus, zu Mal gehört Geteilt, zu Geteilt gehört Mal.</p></div></details>
+    <details class="abfrage"><summary>In welcher Reihenfolge baust du eine Gleichung ab?</summary>
+      <div class="antwort"><p>Umgekehrt zur Rechenreihenfolge: erst die Strichrechnung (Plus und Minus) beseitigen, dann die Punktrechnung (Mal und Geteilt), zuletzt Klammern und Wurzeln.</p></div></details>
+    <details class="abfrage"><summary>Löse 2x − 40 = 120 und mache die Probe.</summary>
+      <div class="antwort"><p>2x = 160, also x = 80. Probe: 2 × 80 − 40 = 160 − 40 = 120. Stimmt.</p></div></details>
+    <details class="abfrage"><summary>Warum darf man 3x + 12 = 45 nicht einfach durch 3 teilen und die 12 stehen lassen?</summary>
+      <div class="antwort"><p>Weil dann nur ein Teil der Seite verändert würde. Man müsste alles teilen: x + 4 = 15. Sicherer ist, zuerst die 12 abzuziehen und dann zu teilen.</p></div></details>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════ -->
+<section class="abschnitt" id="formeln-umstellen" data-gruppe="Gleichungen und Formeln">
+  <div class="ab-kopf"><h2><span class="ab-nr">4.2</span>Formeln nach jeder beliebigen Größe umstellen</h2></div>
+
+  <div class="block einstieg" data-notiz="ein-formeln-umstellen">
+    <div class="b-label">Worum es geht</div>
+    <p>In der Formelsammlung steht: <em>Umschlagshäufigkeit = Jahresverbrauch ÷ durchschnittlicher Lagerbestand.</em> In der Prüfungsaufgabe sind aber die Umschlagshäufigkeit und der Jahresverbrauch gegeben, und gesucht ist der Lagerbestand. Die Formel steht falsch herum da.</p>
+    <p>Das ist der Normalfall, nicht die Ausnahme. Deshalb ist Umstellen die wichtigste Einzelfertigkeit für alle Rechenaufgaben. Und es ist dieselbe Technik wie im vorigen Abschnitt – nur stehen jetzt Buchstaben statt Zahlen da. Ein Buchstabe verhält sich beim Umformen exakt wie eine Zahl.</p>
+  </div>
+
+  <div class="block merk" data-notiz="merk-umstell-ablauf">
+    <div class="b-label">Der Ablauf – fünf Schritte, immer gleich</div>
+    <p><strong>1.</strong> Aufschreiben, welche Größe gesucht ist. Ringle sie in der Formel ein.<br>
+    <strong>2.</strong> Prüfen, wo sie steht: allein, in einem Produkt, im Zähler, im Nenner, unter einer Wurzel.<br>
+    <strong>3.</strong> Von außen nach innen abbauen – alles wegnehmen, was <em>zuletzt</em> mit ihr gemacht wurde.<br>
+    <strong>4.</strong> Jeden Schritt auf beiden Seiten ausführen und hinter dem Strich notieren.<br>
+    <strong>5.</strong> Erst wenn die Größe allein steht, Zahlen einsetzen – und danach die Probe machen.</p>
+  </div>
+
+  <div class="block achtung" data-notiz="ach-erst-umstellen">
+    <div class="b-label">Reihenfolge beachten</div>
+    <p><strong>Erst umstellen, dann Zahlen einsetzen.</strong> Wer zuerst einsetzt, rechnet mit langen Dezimalzahlen weiter und kann bei einem Fehler nicht mehr nachvollziehen, wo er passiert ist. Mit Buchstaben bleibt jeder Schritt lesbar, und die umgestellte Formel kannst du für weitere Teilaufgaben wiederverwenden.</p>
+  </div>
+
+  <h3>Fall 1 – die gesuchte Größe steht im Nenner</h3>
+  <p>Das ist der häufigste und der unangenehmste Fall. Die Lösung: Nimm zuerst beide Seiten mit dem Nenner mal. Dann ist der Bruch weg, und du bist im vertrauten Gebiet.</p>
+
+  <div class="formel" data-notiz="formel-umschlagshaeufigkeit">
+    <div class="formel-kopf"><span class="f-tag">Formel</span><span class="f-name">Lagerumschlagshäufigkeit</span></div>
+    <div class="formel-koerper">
+      <div class="eq">U = Jahresverbrauch ÷ Ø Lagerbestand</div>
+      <div class="f-erklaerung">U sagt, wie oft der Lagerbestand im Jahr rechnerisch komplett umgeschlagen wird. Ein hoher Wert bedeutet wenig gebundenes Kapital.</div>
+    </div>
+  </div>
+
+  <div class="schritte" data-notiz="rechnung-umstellen-nenner">
+    <div class="schritt"><div class="s-nr">1</div><div class="s-txt">U = JV ÷ ØLB      gesucht: ØLB</div></div>
+    <div class="s-warum">ØLB steht im Nenner. Solange es dort steht, kommt man nicht heran – ein Nenner lässt sich nicht einzeln „abziehen“.</div>
+    <div class="schritt"><div class="s-nr">2</div><div class="s-txt">U × ØLB = JV     | × ØLB</div></div>
+    <div class="s-warum">Beide Seiten mit ØLB multiplizieren. Rechts kürzt sich ØLB gegen den Nenner weg, links bleibt es als Faktor stehen. Der Bruch ist verschwunden.</div>
+    <div class="schritt"><div class="s-nr">3</div><div class="s-txt">ØLB = JV ÷ U     | ÷ U</div></div>
+    <div class="s-warum">Jetzt stört nur noch das U als Faktor. Gegenoperation: durch U teilen, auf beiden Seiten.</div>
+    <div class="schritt fertig"><div class="s-nr">✓</div><div class="s-txt">Zahlen: 96 t ÷ 4,8 = 20 t durchschnittlicher Lagerbestand</div></div>
+    <div class="s-warum">Probe mit der Ausgangsformel: 96 ÷ 20 = 4,8. Stimmt. Und die dritte Variante ist gratis dabei: JV = U × ØLB = 4,8 × 20 = 96 t.</div>
+  </div>
+
+  <div class="block merk" data-notiz="merk-nenner-tausch">
+    <div class="b-label">Die Kurzform für Dreier-Formeln</div>
+    <p>Bei jeder Formel der Bauart <strong>a = b ÷ c</strong> gilt immer auch <strong>c = b ÷ a</strong> und <strong>b = a × c</strong>. Anschaulich: Zähler und die beiden anderen Größen tauschen einfach die Plätze. Wenn du dieses Muster erkennst, sparst du bei Kennzahlenaufgaben viel Zeit – bei komplizierteren Formeln bleibt aber der Weg über die Gegenoperationen der sichere.</p>
+  </div>
+
+  <h3>Fall 2 – Lagerdauer aus der Umschlagshäufigkeit</h3>
+  <div class="schritte" data-notiz="rechnung-umstellen-lagerdauer">
+    <div class="schritt"><div class="s-nr">1</div><div class="s-txt">D = 360 ÷ U      gesucht: U</div></div>
+    <div class="s-warum">Dieselbe Bauart wie eben. D ist die durchschnittliche Lagerdauer in Tagen, U die Umschlagshäufigkeit.</div>
+    <div class="schritt"><div class="s-nr">2</div><div class="s-txt">D × U = 360     | × U</div></div>
+    <div class="s-warum">Nenner beseitigen, indem beide Seiten mit U multipliziert werden.</div>
+    <div class="schritt fertig"><div class="s-nr">✓</div><div class="s-txt">U = 360 ÷ D → bei 75 Tagen: 360 ÷ 75 = 4,8</div></div>
+    <div class="s-warum">Bemerkenswert: Die umgestellte Formel sieht aus wie die ursprüngliche, nur mit vertauschten Rollen von D und U. Probe: 360 ÷ 4,8 = 75 Tage. Stimmt.</div>
+  </div>
+
+  <h3>Fall 3 – die Größe steckt in einer Summe und in einem Bruch</h3>
+  <div class="formel" data-notiz="formel-durchschnittsbestand">
+    <div class="formel-kopf"><span class="f-tag">Formel</span><span class="f-name">Ø Lagerbestand mit Sicherheitsbestand</span></div>
+    <div class="formel-koerper">
+      <div class="eq">Ø LB = ( Bestellmenge ÷ 2 ) + Sicherheitsbestand</div>
+      <div class="f-erklaerung">Der Bestand pendelt zwischen der vollen Bestellmenge und null, im Mittel liegt also die halbe Bestellmenge im Lager – plus der Sicherheitsbestand, der immer vorhanden ist.</div>
+    </div>
+  </div>
+
+  <div class="schritte" data-notiz="rechnung-umstellen-bestellmenge">
+    <div class="schritt"><div class="s-nr">1</div><div class="s-txt">ØLB = (x ÷ 2) + SB      gesucht: x (Bestellmenge)</div></div>
+    <div class="s-warum">Bei x wurde zweierlei getan: erst durch 2 geteilt, dann SB addiert. Zuletzt kam das Plus – also muss es zuerst weg.</div>
+    <div class="schritt"><div class="s-nr">2</div><div class="s-txt">ØLB − SB = x ÷ 2     | − SB</div></div>
+    <div class="s-warum">Strichrechnung zuerst abbauen. Links steht jetzt eine Differenz, rechts nur noch der Bruch mit x.</div>
+    <div class="schritt"><div class="s-nr">3</div><div class="s-txt">( ØLB − SB ) × 2 = x     | × 2</div></div>
+    <div class="s-warum">Gegenoperation zu „÷ 2“ ist „× 2“ – aber auf die <strong>ganze</strong> linke Seite, deshalb die Klammer. Ohne Klammer würde nur das ØLB verdoppelt, und das wäre falsch.</div>
+    <div class="schritt fertig"><div class="s-nr">✓</div><div class="s-txt">Zahlen: (2.500 − 500) × 2 = 4.000 Stück</div></div>
+    <div class="s-warum">Probe: (4.000 ÷ 2) + 500 = 2.000 + 500 = 2.500. Stimmt.</div>
+  </div>
+
+  <div class="block beispiel" data-notiz="bsp-umstellen-logistik">
+    <div class="b-label">Wo dir das im Fachwirt begegnet</div>
+    <p><strong>Lagerkennzahlen in alle Richtungen:</strong> Umschlagshäufigkeit, durchschnittlicher Lagerbestand, Lagerdauer, Lagerzinssatz – die Prüfung gibt zwei Größen vor und fragt nach der dritten. Welche das ist, wechselt.</p>
+    <p><strong>Personalbedarf und Kapazität:</strong> Benötigte Stunden, Leistung je Kopf, Anzahl Mitarbeiter – ein Dreieck aus drei Größen, das in jede Richtung aufgelöst werden kann.</p>
+    <p><strong>Deckungsbeitrag und Wertschöpfung:</strong> Aus DB = Preis − variable Stückkosten wird bei Bedarf Preis = DB + variable Stückkosten.</p>
+  </div>
+
+  <div class="abfrage-liste">
+    <div class="abfrage-kopf">Selbstabfrage</div>
+    <details class="abfrage"><summary>Was machst du als Erstes, wenn die gesuchte Größe im Nenner steht?</summary>
+      <div class="antwort"><p>Beide Seiten mit dem Nenner multiplizieren. Dadurch verschwindet der Bruch, und die Größe steht als normaler Faktor da.</p></div></details>
+    <details class="abfrage"><summary>Warum stellst du erst um und setzt danach die Zahlen ein?</summary>
+      <div class="antwort"><p>Weil die Schritte mit Buchstaben nachvollziehbar bleiben, man keine Rundungsfehler mitschleppt und die umgestellte Formel für weitere Teilaufgaben wiederverwendbar ist.</p></div></details>
+    <details class="abfrage"><summary>Stelle Ø LB = (Bestellmenge ÷ 2) + Sicherheitsbestand nach der Bestellmenge um.</summary>
+      <div class="antwort"><p>Bestellmenge = (Ø LB − Sicherheitsbestand) × 2. Erst den Sicherheitsbestand abziehen, dann die ganze Seite verdoppeln – die Klammer ist Pflicht.</p></div></details>
+    <details class="abfrage"><summary>Welche drei Umstellungen ergeben sich aus jeder Formel der Bauart a = b ÷ c?</summary>
+      <div class="antwort"><p>a = b ÷ c · c = b ÷ a · b = a × c. Beispiel: U = JV ÷ ØLB, also ØLB = JV ÷ U und JV = U × ØLB.</p></div></details>
+    <details class="abfrage"><summary>Warum ist die Klammer bei „(Ø LB − SB) × 2“ zwingend?</summary>
+      <div class="antwort"><p>Weil die Gegenoperation auf die ganze Seite wirkt. Ohne Klammer würde nur der Ø LB verdoppelt und der Sicherheitsbestand unverändert bleiben – das Ergebnis wäre falsch.</p></div></details>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════ -->
+<section class="abschnitt" id="variable-mehrfach" data-gruppe="Gleichungen und Formeln">
+  <div class="ab-kopf"><h2><span class="ab-nr">4.3</span>Wenn die gesuchte Größe zweimal vorkommt</h2></div>
+
+  <div class="block einstieg" data-notiz="ein-variable-mehrfach">
+    <div class="b-label">Worum es geht</div>
+    <p>Bis hierhin stand die gesuchte Größe immer an genau einer Stelle. Jetzt kommt der Fall, in dem sie an zwei Stellen auftaucht – und zwar einmal frei und einmal in einer Klammer. Solange das so ist, kannst du sie nicht isolieren: Egal was du tust, sie steht auf beiden Seiten weiter im Weg.</p>
+    <p>Das ist kein Sonderfall aus dem Lehrbuch, sondern genau die Aufgabe, die dir bei der <strong>exponentiellen Glättung</strong> gestellt wird, wenn nach dem Glättungsfaktor α gefragt ist. Der Weg dorthin ist etwas länger, aber er besteht wieder nur aus den vier Gegenoperationen aus Abschnitt 4.1 plus einem einzigen neuen Handgriff: dem Auflösen der Klammer.</p>
+  </div>
+
+  <div class="block merk" data-notiz="merk-klammer-aufloesen">
+    <div class="b-label">Klammer auflösen – der neue Handgriff</div>
+    <p>Steht vor oder hinter einer Klammer ein Faktor, wird <strong>jeder einzelne Summand in der Klammer</strong> mit diesem Faktor multipliziert. Aus (1 − α) × 515 wird also 1 × 515 − α × 515, kurz 515 − 515α.</p>
+    <p>Anschaulich: Wenn drei Kisten mit je (10 − 2) Teilen kommen, sind das 3 × 10 minus 3 × 2 Teile. Man verteilt den Faktor auf beide Bestandteile – auch auf den, der abgezogen wird, samt seinem Minuszeichen.</p>
+  </div>
+
+  <h3>Das Rezept in vier Handgriffen</h3>
+  <p><strong>1.</strong> Klammern auflösen. <strong>2.</strong> Alle Terme mit der gesuchten Größe auf die eine Seite, alle übrigen auf die andere. <strong>3.</strong> Die gleichartigen Terme zusammenfassen. <strong>4.</strong> Durch den verbliebenen Vorfaktor teilen.</p>
+
+  <div class="formel" data-notiz="formel-glaettung">
+    <div class="formel-kopf"><span class="f-tag">Formel</span><span class="f-name">Exponentielle Glättung 1. Ordnung</span></div>
+    <div class="formel-koerper">
+      <div class="eq">neue Prognose = α × Ist-Wert + ( 1 − α ) × alte Prognose</div>
+      <div class="f-erklaerung">α ist der Glättungsfaktor zwischen 0 und 1. Er gewichtet, wie stark der jüngste Ist-Wert die neue Prognose beeinflusst. Ein hohes α reagiert schnell, ein niedriges α glättet stärker.</div>
+    </div>
+  </div>
+
+  <div class="schritte" data-notiz="rechnung-glaettung-alpha">
+    <div class="schritt"><div class="s-nr">1</div><div class="s-txt">504,5 = α × 500 + ( 1 − α ) × 515      gesucht: α</div></div>
+    <div class="s-warum">α steht zweimal da – einmal allein, einmal in der Klammer. Solange das so ist, kann man es nicht isolieren.</div>
+    <div class="schritt"><div class="s-nr">2</div><div class="s-txt">504,5 = 500α + 515 − 515α</div></div>
+    <div class="s-warum">Klammer auflösen: (1 − α) × 515 heißt 1 × 515 − α × 515 = 515 − 515α. Jeder Summand in der Klammer wird einzeln multipliziert.</div>
+    <div class="schritt"><div class="s-nr">3</div><div class="s-txt">504,5 − 515 = 500α − 515α     | − 515</div></div>
+    <div class="s-warum">Alles ohne α nach links, alles mit α nach rechts. Die 515 wandert per Gegenoperation auf die linke Seite.</div>
+    <div class="schritt"><div class="s-nr">4</div><div class="s-txt">−10,5 = −15α</div></div>
+    <div class="s-warum">Links: 504,5 − 515 = −10,5. Rechts: 500α − 515α = −15α. Man zählt die α-Terme zusammen wie gleichartige Gegenstände – 500 Stück minus 515 Stück sind minus 15 Stück.</div>
+    <div class="schritt fertig"><div class="s-nr">✓</div><div class="s-txt">α = −10,5 ÷ (−15) = 0,7</div></div>
+    <div class="s-warum">Minus geteilt durch Minus ergibt Plus. Probe: 0,7 × 500 + 0,3 × 515 = 350 + 154,5 = 504,5. Stimmt. Und α liegt zwischen 0 und 1 – die Plausibilitätskontrolle greift.</div>
+  </div>
+
+  <div class="block merk" data-notiz="merk-alpha-kurzformel">
+    <div class="b-label">Die fertige Umstellung für α</div>
+    <p>Wer den Weg einmal gegangen ist, darf die Kurzformel benutzen:</p>
+    <p><strong>α = (neue Prognose − alte Prognose) ÷ (Ist-Wert − alte Prognose)</strong></p>
+    <p>Eingesetzt: (504,5 − 515) ÷ (500 − 515) = −10,5 ÷ −15 = 0,7. In beiden Klammern steht die alte Prognose hinten – wer sie einmal vorn schreibt, dreht das Vorzeichen und bekommt trotzdem 0,7, weil sich beide Vorzeichen aufheben. Wer sie nur in einer Klammer dreht, bekommt −0,7 und muss stutzig werden.</p>
+  </div>
+
+  <div class="block beispiel" data-notiz="bsp-glaettung-logistik">
+    <div class="b-label">Wo dir das im Fachwirt begegnet</div>
+    <p><strong>Exponentielle Glättung erster Ordnung</strong> ist das wichtigste stochastische Prognoseverfahren des Fachwirts. Die Formel gewichtet den jüngsten Ist-Wert mit α und die bisherige Prognose mit (1 − α). Ein hohes α macht die Prognose schnell, aber nervös; ein niedriges α macht sie träge, aber ruhig. In der Praxis liegt α meist zwischen 0,1 und 0,3.</p>
+    <p>Gefragt wird in der Prüfung in drei Varianten: <strong>(a)</strong> die neue Prognose berechnen – dann einfach einsetzen. <strong>(b)</strong> α bestimmen – der Weg von oben. <strong>(c)</strong> den Ist-Wert bestimmen. Für den dritten Fall lautet die umgestellte Formel: <strong>Ist-Wert = (neue Prognose − (1 − α) × alte Prognose) ÷ α</strong>. Hier kommt α nur einmal vor, deshalb genügt der gewohnte Weg.</p>
+    <p><strong>Auch außerhalb der Prognose:</strong> Überall dort, wo eine Größe sowohl direkt als auch über einen Restanteil wirkt, entsteht dieses Muster – etwa bei Mischungsrechnungen, bei der Aufteilung einer Menge auf zwei Wege oder beim gewichteten Mittel aus zwei Quellen.</p>
+  </div>
+
+  <div class="block achtung" data-notiz="ach-klammer-vorzeichen">
+    <div class="b-label">Die zwei Fehler an dieser Stelle</div>
+    <p><strong>1. Das Vorzeichen beim Auflösen der Klammer vergessen.</strong> (1 − α) × 515 ergibt 515 − 515α, nicht 515 + 515α. Das Minuszeichen gehört zum α und wandert mit.</p>
+    <p><strong>2. Die α-Terme falsch zusammenfassen.</strong> 500α − 515α ist −15α, nicht +15α und auch nicht −1.015α. Behandle die α-Terme wie gleichartige Gegenstände: 500 Stück minus 515 Stück ergibt minus 15 Stück.</p>
+    <p><strong>Deine Kontrolle:</strong> α muss zwischen 0 und 1 liegen. Kommt etwas anderes heraus, ist ein Vorzeichen verloren gegangen – dann noch einmal von Schritt 2 an nachrechnen.</p>
+  </div>
+
+  <div class="abfrage-liste">
+    <div class="abfrage-kopf">Selbstabfrage</div>
+    <details class="abfrage"><summary>Wie gehst du vor, wenn die gesuchte Größe zweimal in der Gleichung steht?</summary>
+      <div class="antwort"><p>Klammern auflösen, alle Terme mit der Größe auf eine Seite und alle übrigen auf die andere bringen, die gleichartigen Terme zusammenfassen und dann durch den verbliebenen Vorfaktor teilen.</p></div></details>
+    <details class="abfrage"><summary>Was ergibt (1 − α) × 515 ausmultipliziert?</summary>
+      <div class="antwort"><p>515 − 515α. Jeder Summand der Klammer wird mit dem Faktor multipliziert, das Minuszeichen bleibt beim α.</p></div></details>
+    <details class="abfrage"><summary>Wie lautet die Kurzformel für den Glättungsfaktor α?</summary>
+      <div class="antwort"><p>α = (neue Prognose − alte Prognose) ÷ (Ist-Wert − alte Prognose). Beispiel: (504,5 − 515) ÷ (500 − 515) = 0,7.</p></div></details>
+    <details class="abfrage"><summary>Wie lautet die Glättungsformel nach dem Ist-Wert umgestellt?</summary>
+      <div class="antwort"><p>Ist-Wert = (neue Prognose − (1 − α) × alte Prognose) ÷ α. Hier kommt α nur einmal vor, deshalb genügen die gewohnten Gegenoperationen.</p></div></details>
+    <details class="abfrage"><summary>Welche Plausibilitätskontrolle hast du bei α immer?</summary>
+      <div class="antwort"><p>α muss zwischen 0 und 1 liegen, in der Praxis meist zwischen 0,1 und 0,3. Ein negativer Wert oder ein Wert über 1 zeigt einen Vorzeichen- oder Umstellungsfehler an.</p></div></details>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════ -->
+<section class="abschnitt" id="umstellen-bruch-wurzel" data-gruppe="Gleichungen und Formeln">
+  <div class="ab-kopf"><h2><span class="ab-nr">4.4</span>Umstellen bei Brüchen und unter der Wurzel</h2></div>
+
+  <div class="block einstieg" data-notiz="ein-andler-umstellen">
+    <div class="b-label">Worum es geht</div>
+    <p>Die Andlersche Formel ist die anspruchsvollste Formel des Fachwirts: Sie enthält eine Wurzel, und unter dieser Wurzel steht ein Bruch mit vier Größen. In der Prüfung wird nicht immer die optimale Bestellmenge gesucht. Es kann auch heißen: „Bei welchem Lagerhaltungskostensatz wäre eine Bestellmenge von 4.000 Stück optimal?“ Dann musst du die Formel nach dieser einen Größe umstellen – und zwar durch Wurzel und Bruch hindurch.</p>
+    <p>Das klingt nach viel. Es sind aber nur zwei zusätzliche Handgriffe: <strong>quadrieren, um die Wurzel loszuwerden</strong>, und <strong>mit dem Nenner malnehmen, um den Bruch loszuwerden</strong>. Danach ist es die gewohnte Gleichung aus Abschnitt 4.1.</p>
+  </div>
+
+  <div class="formel" data-notiz="formel-andler">
+    <div class="formel-kopf"><span class="f-tag">Formel</span><span class="f-name">Andlersche Formel (optimale Bestellmenge)</span></div>
+    <div class="formel-koerper">
+      <div class="eq">x = √( 2 × M × K<sub>b</sub> ÷ ( p × q ) )</div>
+      <div class="f-erklaerung"><strong>x</strong> = optimale Bestellmenge in Stück · <strong>M</strong> = Jahresbedarf in Stück · <strong>K<sub>b</sub></strong> = Bestellkosten je Bestellung in € · <strong>p</strong> = Einstandspreis je Stück in € · <strong>q</strong> = Lagerhaltungskostensatz als <strong>Dezimalzahl</strong> (15 % = 0,15).</div>
+    </div>
+  </div>
+
+  <div class="block achtung" data-notiz="ach-andler-varianten">
+    <div class="b-label">Zwei Schreibweisen – nicht verwechseln</div>
+    <p>In manchen Formelsammlungen steht statt der 2 eine <strong>200</strong> im Zähler. Der Grund: Dort wird der Lagerhaltungskostensatz <em>in Prozent</em> eingesetzt (also 15 statt 0,15), und die zusätzliche 100 im Zähler gleicht das aus. Beide Fassungen liefern dasselbe Ergebnis – aber nur, wenn du die passende Einsetzweise verwendest.</p>
+    <p><strong>Prüfe deshalb immer zuerst: Steht in meiner Formel 2 oder 200?</strong> Bei 2 gehört der Kostensatz als Dezimalzahl hinein, bei 200 als Prozentzahl. Diese Verwechslung ist ein Faktor-10-Fehler beim Endergebnis und einer der häufigsten überhaupt.</p>
+  </div>
+
+  <h3>Zuerst der Normalfall: die Bestellmenge berechnen</h3>
+  <div class="schritte" data-notiz="rechnung-andler-vorwaerts">
+    <div class="schritt"><div class="s-nr">1</div><div class="s-txt">M = 80.000 Stück · K<sub>b</sub> = 180 € · p = 12 € · q = 15 % = 0,15</div></div>
+    <div class="s-warum">Erst alle Größen sortieren und den Prozentsatz in eine Dezimalzahl verwandeln. Diese Zeile allein bringt in der Prüfung schon Punkte.</div>
+    <div class="schritt"><div class="s-nr">2</div><div class="s-txt">Zähler: 2 × 80.000 × 180 = 28.800.000</div></div>
+    <div class="s-warum">Alles über dem Bruchstrich vollständig ausrechnen, bevor irgendetwas geteilt wird.</div>
+    <div class="schritt"><div class="s-nr">3</div><div class="s-txt">Nenner: 12 × 0,15 = 1,8</div></div>
+    <div class="s-warum">Alles unter dem Bruchstrich vollständig ausrechnen. Wer hier 15 statt 0,15 nimmt, erhält 180 – und am Ende 400 statt 4.000 Stück.</div>
+    <div class="schritt"><div class="s-nr">4</div><div class="s-txt">Bruch: 28.800.000 ÷ 1,8 = 16.000.000</div></div>
+    <div class="s-warum">Erst jetzt wird geteilt. Achtung am Taschenrechner: entweder Klammern setzen oder den Nenner vorher separat ausrechnen und notieren.</div>
+    <div class="schritt fertig"><div class="s-nr">✓</div><div class="s-txt">x = √16.000.000 = 4.000 Stück</div></div>
+    <div class="s-warum">Ganz zum Schluss die Wurzel – über den kompletten Bruch. Kontrolle: 4.000 × 4.000 = 16.000.000. Stimmt.</div>
+  </div>
+
+  <h3>Umstellen Schritt 1: die Wurzel verschwindet durch Quadrieren</h3>
+  <p>Quadrieren ist die Gegenoperation zum Wurzelziehen. Wie immer wird sie auf <strong>beiden</strong> Seiten ausgeführt – links wird aus x also x², rechts hebt sich die Wurzel auf.</p>
+
+  <div class="schritte" data-notiz="rechnung-andler-quadrieren">
+    <div class="schritt"><div class="s-nr">1</div><div class="s-txt">x = √( 2 × M × K<sub>b</sub> ÷ ( p × q ) )     | beide Seiten quadrieren</div></div>
+    <div class="s-warum">Solange die Wurzel dasteht, kommt man an keine der vier Größen heran. Sie wirkt wie eine Klammer über allem.</div>
+    <div class="schritt fertig"><div class="s-nr">✓</div><div class="s-txt">x² = 2 × M × K<sub>b</sub> ÷ ( p × q )</div></div>
+    <div class="s-warum">Rechts ist die Wurzel weg, links steht x². Ab hier ist es eine gewöhnliche Bruchgleichung – die Wurzel spielt keine Rolle mehr.</div>
+  </div>
+
+  <h3>Umstellen Schritt 2: der Bruch verschwindet durch Multiplizieren</h3>
+  <div class="schritte" data-notiz="rechnung-andler-nenner">
+    <div class="schritt"><div class="s-nr">1</div><div class="s-txt">x² = 2 × M × K<sub>b</sub> ÷ ( p × q )     | × ( p × q )</div></div>
+    <div class="s-warum">Beide Seiten mit dem gesamten Nenner multiplizieren. Rechts kürzt sich (p × q) weg.</div>
+    <div class="schritt fertig"><div class="s-nr">✓</div><div class="s-txt">x² × p × q = 2 × M × K<sub>b</sub></div></div>
+    <div class="s-warum">Diese Zeile ist der Angelpunkt. Aus ihr lässt sich jede der fünf Größen mit einem einzigen weiteren Schritt herausholen – es steht nur noch ein Produkt auf jeder Seite.</div>
+  </div>
+
+  <h3>Und jetzt jede Größe einzeln</h3>
+  <div class="tab" data-notiz="tab-andler-umstellungen">
+    <table>
+      <thead><tr><th>Gesucht</th><th>Umgestellte Formel</th><th>Kontrollrechnung mit den Zahlen von oben</th></tr></thead>
+      <tbody>
+        <tr><td><strong>x</strong> Bestellmenge</td><td>x = √( 2 M K<sub>b</sub> ÷ (p q) )</td><td>√(28.800.000 ÷ 1,8) = 4.000 Stück</td></tr>
+        <tr><td><strong>K<sub>b</sub></strong> Bestellkosten</td><td>K<sub>b</sub> = x² × p × q ÷ ( 2 × M )</td><td>16.000.000 × 1,8 ÷ 160.000 = 180 €</td></tr>
+        <tr><td><strong>M</strong> Jahresbedarf</td><td>M = x² × p × q ÷ ( 2 × K<sub>b</sub> )</td><td>28.800.000 ÷ 360 = 80.000 Stück</td></tr>
+        <tr><td><strong>q</strong> Lagerkostensatz</td><td>q = 2 × M × K<sub>b</sub> ÷ ( x² × p )</td><td>28.800.000 ÷ 192.000.000 = 0,15 = 15 %</td></tr>
+        <tr><td><strong>p</strong> Einstandspreis</td><td>p = 2 × M × K<sub>b</sub> ÷ ( x² × q )</td><td>28.800.000 ÷ 2.400.000 = 12 €</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="schritte" data-notiz="rechnung-andler-nach-kb">
+    <div class="schritt"><div class="s-nr">1</div><div class="s-txt">x² × p × q = 2 × M × K<sub>b</sub>      gesucht: K<sub>b</sub></div></div>
+    <div class="s-warum">K<sub>b</sub> steht rechts in einem Produkt mit 2 und M. Alles andere muss weg.</div>
+    <div class="schritt"><div class="s-nr">2</div><div class="s-txt">x² × p × q ÷ ( 2 × M ) = K<sub>b</sub>     | ÷ ( 2 × M )</div></div>
+    <div class="s-warum">Durch den gesamten übrigen Faktor teilen. Die Klammer ist wichtig: geteilt wird durch 2 <em>mal</em> M, nicht nur durch 2.</div>
+    <div class="schritt"><div class="s-nr">3</div><div class="s-txt">4.000² = 16.000.000  ·  12 × 0,15 = 1,8  ·  2 × 80.000 = 160.000</div></div>
+    <div class="s-warum">Jetzt erst Zahlen einsetzen und jeden Teil einzeln ausrechnen.</div>
+    <div class="schritt fertig"><div class="s-nr">✓</div><div class="s-txt">16.000.000 × 1,8 ÷ 160.000 = 28.800.000 ÷ 160.000 = 180 €</div></div>
+    <div class="s-warum">Probe: Mit K<sub>b</sub> = 180 € liefert die Ausgangsformel wieder 4.000 Stück. Der Kreis schließt sich – genau so kontrolliert man eine Umstellung.</div>
+  </div>
+
+  <div class="block merk" data-notiz="merk-wurzel-klammer">
+    <div class="b-label">Merksatz</div>
+    <p><strong>Die Wurzel wirkt wie eine Klammer über allem, was unter ihr steht.</strong> Solange sie da ist, kommst du an nichts darunter heran. Erster Schritt beim Umstellen ist deshalb immer: beide Seiten quadrieren. Danach mit dem Nenner multiplizieren, danach ganz normal weiter.</p>
+  </div>
+
+  <div class="block achtung" data-notiz="ach-quadrieren-teilweise">
+    <div class="b-label">Typische Fehler beim Quadrieren</div>
+    <p><strong>1. Nur eine Seite quadrieren.</strong> Aus x = √A wird x² = A, nicht x = A. Auch das Quadrieren ist eine Operation auf beiden Seiten.</p>
+    <p><strong>2. Innerhalb der Wurzel einzeln quadrieren.</strong> Quadriert wird der komplette Ausdruck, nicht Zähler und Nenner nacheinander mit unterschiedlicher Behandlung.</p>
+    <p><strong>3. Das Quadrat später vergessen.</strong> Wenn du nach K<sub>b</sub> oder M umstellst, steht dort x² – also 4.000 × 4.000 = 16.000.000, nicht 4.000. Wer die 4.000 einsetzt, bekommt ein um den Faktor 4.000 zu kleines Ergebnis.</p>
+  </div>
+
+  <div class="block beispiel" data-notiz="bsp-andler-pruefung">
+    <div class="b-label">So wird das in der Prüfung gefragt</div>
+    <p>Selten schlicht als „Berechnen Sie die optimale Bestellmenge“. Häufiger in einer dieser Formen:</p>
+    <p><strong>a)</strong> „Der Lieferant bietet eine Mindestbestellmenge von 5.000 Stück an. Ab welchem Lagerhaltungskostensatz wäre diese Menge optimal?“ → nach q umstellen.</p>
+    <p><strong>b)</strong> „Wie hoch dürften die Bestellkosten höchstens sein, damit sich eine Bestellmenge von 4.000 Stück rechnet?“ → nach K<sub>b</sub> umstellen.</p>
+    <p><strong>c)</strong> „Der Jahresbedarf verdoppelt sich. Wie verändert sich die optimale Bestellmenge?“ → keine Zahlen nötig: Weil M unter der Wurzel steht, wächst x nur um den Faktor √2 ≈ 1,41, also um rund 41 % – nicht um 100 %. Diese Art Frage prüft, ob du die Formel wirklich verstanden hast.</p>
+    <p>Und immer gilt: <strong>Nenne die Einheit</strong> (Stück, €, %) und schreib einen Satz zur Deutung des Ergebnisses dazu.</p>
+  </div>
+
+  <div class="abfrage-liste">
+    <div class="abfrage-kopf">Selbstabfrage</div>
+    <details class="abfrage"><summary>Was ist der erste Schritt, wenn du eine Formel mit Wurzel umstellen sollst?</summary>
+      <div class="antwort"><p>Beide Seiten quadrieren. Damit verschwindet die Wurzel, und der Ausdruck darunter wird zugänglich.</p></div></details>
+    <details class="abfrage"><summary>Wie lautet die Andler-Formel nach den Bestellkosten umgestellt?</summary>
+      <div class="antwort"><p>K<sub>b</sub> = x² × p × q ÷ (2 × M). Weg: quadrieren, mit (p × q) multiplizieren, durch (2 × M) teilen.</p></div></details>
+    <details class="abfrage"><summary>Woran erkennst du, ob der Lagerhaltungskostensatz als 15 oder als 0,15 einzusetzen ist?</summary>
+      <div class="antwort"><p>An der Zahl im Zähler. Steht dort 2, wird die Dezimalzahl 0,15 eingesetzt. Steht dort 200, wird die Prozentzahl 15 eingesetzt.</p></div></details>
+    <details class="abfrage"><summary>Der Jahresbedarf verdoppelt sich – was passiert mit der optimalen Bestellmenge?</summary>
+      <div class="antwort"><p>Sie steigt um den Faktor √2 ≈ 1,41, also um rund 41 % – nicht um 100 %, weil M unter der Wurzel steht.</p></div></details>
+    <details class="abfrage"><summary>Warum ist es falsch, in die nach K<sub>b</sub> umgestellte Formel 4.000 statt 16.000.000 einzusetzen?</summary>
+      <div class="antwort"><p>Weil dort x² steht, also 4.000 × 4.000 = 16.000.000. Das Quadrat wird beim Umstellen häufig übersehen.</p></div></details>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════ -->
+<section class="abschnitt" id="mittelwerte" data-gruppe="Auswerten und Kontrollieren">
+  <div class="ab-kopf"><h2><span class="ab-nr">5.1</span>Mittelwerte und gewichtete Mittelwerte</h2></div>
+
+  <div class="block einstieg" data-notiz="ein-mittelwerte">
+    <div class="b-label">Worum es geht</div>
+    <p>Du hast im Jahr dreimal denselben Artikel eingekauft: 200 Stück zu 12,50 €, 500 Stück zu 11,80 € und 300 Stück zu 13,20 €. Was hat ein Stück im Durchschnitt gekostet? Die naheliegende Rechnung – die drei Preise addieren und durch 3 teilen – ergibt 12,50 €. Sie ist falsch. Der richtige Wert liegt bei 12,36 €, weil die günstige Lieferung die größte war und deshalb stärker zählt.</p>
+    <p>Der Unterschied zwischen einfachem und gewichtetem Mittelwert ist einer der häufigsten Punktverluste in Prüfungen – und einer der leichtesten zu vermeiden.</p>
+  </div>
+
+  <h3>Das arithmetische Mittel</h3>
+  <div class="formel" data-notiz="formel-arithm-mittel">
+    <div class="formel-kopf"><span class="f-tag">Formel</span><span class="f-name">Arithmetisches Mittel</span></div>
+    <div class="formel-koerper">
+      <div class="eq">Mittelwert = Summe aller Werte ÷ Anzahl der Werte</div>
+      <div class="f-erklaerung">Nur zulässig, wenn alle Werte gleich viel „Gewicht“ haben – also wenn sie sich auf gleich lange Zeiträume oder gleich große Mengen beziehen.</div>
+    </div>
+  </div>
+
+  <div class="schritte" data-notiz="rechnung-mittel-verbrauch">
+    <div class="schritt"><div class="s-nr">1</div><div class="s-txt">Monatsverbrauch: 480 · 520 · 495 · 510 · 530 · 465 Stück</div></div>
+    <div class="s-warum">Sechs Monate, jeder gleich lang. Deshalb ist das einfache arithmetische Mittel hier korrekt.</div>
+    <div class="schritt"><div class="s-nr">2</div><div class="s-txt">480 + 520 + 495 + 510 + 530 + 465 = 3.000</div></div>
+    <div class="s-warum">Erst die Summe. Überschlag zur Kontrolle: sechs Werte um die 500 ergeben rund 3.000. Passt.</div>
+    <div class="schritt fertig"><div class="s-nr">✓</div><div class="s-txt">3.000 ÷ 6 = 500 Stück je Monat</div></div>
+    <div class="s-warum">Plausibilität: Der Mittelwert muss immer zwischen dem kleinsten (465) und dem größten Wert (530) liegen. 500 liegt dazwischen – gute Kontrolle für jede Mittelwertrechnung.</div>
+  </div>
+
+  <h3>Der gleitende Mittelwert – Basis der Bedarfsprognose</h3>
+  <p>Für die Vorhersage des nächsten Monats nimmt man oft nicht alle Werte, sondern nur die letzten drei oder vier. So schlagen alte Werte nicht mehr durch, aber Zufallsschwankungen werden trotzdem geglättet.</p>
+
+  <div class="schritte" data-notiz="rechnung-gleitender-mittelwert">
+    <div class="schritt"><div class="s-nr">1</div><div class="s-txt">Gleitender Dreimonatsdurchschnitt – die letzten drei Werte: 510 · 530 · 465</div></div>
+    <div class="s-warum">„Gleitend“ heißt: Kommt ein neuer Monat dazu, fällt der älteste heraus. Das Fenster wandert mit.</div>
+    <div class="schritt"><div class="s-nr">2</div><div class="s-txt">510 + 530 + 465 = 1.505</div></div>
+    <div class="s-warum">Nur die drei Werte im Fenster werden addiert.</div>
+    <div class="schritt fertig"><div class="s-nr">✓</div><div class="s-txt">1.505 ÷ 3 = 501,67 Stück als Prognose</div></div>
+    <div class="s-warum">Zum Vergleich das Fenster einen Monat früher (495 + 510 + 530) ÷ 3 = 511,67. Man sieht, wie der Wert dem Verlauf folgt – langsamer als der Ist-Wert, aber in dieselbe Richtung.</div>
+  </div>
+
+  <h3>Der gewichtete Mittelwert</h3>
+  <div class="block def" data-notiz="def-gewogenes-mittel">
+    <div class="b-label">Definition</div>
+    <div class="b-term">Gewogenes (gewichtetes) arithmetisches Mittel</div>
+    <p>Ein Mittelwert, bei dem jeder Einzelwert mit seiner <strong>Menge</strong> multipliziert wird, bevor summiert wird. Geteilt wird anschließend nicht durch die Anzahl der Werte, sondern durch die <strong>Summe der Mengen</strong>.</p>
+  </div>
+
+  <div class="formel" data-notiz="formel-gewogenes-mittel">
+    <div class="formel-kopf"><span class="f-tag">Formel</span><span class="f-name">Gewogenes arithmetisches Mittel</span></div>
+    <div class="formel-koerper">
+      <div class="eq">Mittelwert = Σ ( Wert × Menge ) ÷ Σ Menge</div>
+      <div class="f-erklaerung">Das Zeichen Σ (Sigma) heißt schlicht „Summe von“. Der Zähler ist der Gesamtwert in Euro, der Nenner die Gesamtmenge in Stück – also insgesamt: Gesamtwert geteilt durch Gesamtmenge.</div>
+    </div>
+  </div>
+
+  <div class="schritte" data-notiz="rechnung-gewogener-einkaufspreis">
+    <div class="schritt"><div class="s-nr">1</div><div class="s-txt">200 St. zu 12,50 €  ·  500 St. zu 11,80 €  ·  300 St. zu 13,20 €</div></div>
+    <div class="s-warum">Drei Preise, aber drei sehr unterschiedliche Mengen. Deshalb darf nicht einfach durch 3 geteilt werden.</div>
+    <div class="schritt"><div class="s-nr">2</div><div class="s-txt">200 × 12,50 = 2.500 €  ·  500 × 11,80 = 5.900 €  ·  300 × 13,20 = 3.960 €</div></div>
+    <div class="s-warum">Jede Lieferung wird zuerst in ihren Gesamtwert umgerechnet. Das ist der Kern der Gewichtung.</div>
+    <div class="schritt"><div class="s-nr">3</div><div class="s-txt">Gesamtwert 12.360 €  ·  Gesamtmenge 1.000 Stück</div></div>
+    <div class="s-warum">2.500 + 5.900 + 3.960 = 12.360 und 200 + 500 + 300 = 1.000.</div>
+    <div class="schritt fertig"><div class="s-nr">✓</div><div class="s-txt">12.360 ÷ 1.000 = 12,36 € je Stück</div></div>
+    <div class="s-warum">Das einfache Mittel wäre (12,50 + 11,80 + 13,20) ÷ 3 = 12,50 € gewesen – 14 Cent zu hoch. Bei 1.000 Stück sind das 140 €, bei einem Jahresbedarf von 80.000 Stück über 11.000 €.</div>
+  </div>
+
+  <div class="block merk" data-notiz="merk-gewichtung-erkennen">
+    <div class="b-label">Woran du erkennst, dass gewichtet werden muss</div>
+    <p><strong>Sobald in der Aufgabe neben den Werten auch Mengen, Zeiträume oder Häufigkeiten stehen, muss gewichtet werden.</strong> Stehen nur die Werte da – sechs Monatsverbräuche, fünf Messwerte –, genügt das einfache Mittel. Faustregel: <em>Ungleiche Mengen bedeuten ungleiches Gewicht.</em></p>
+  </div>
+
+  <div class="block beispiel" data-notiz="bsp-mittelwerte-logistik">
+    <div class="b-label">Wo dir das im Fachwirt begegnet</div>
+    <p><strong>Bedarfsermittlung:</strong> Der einfache und der gleitende Mittelwert sind die beiden einfachsten stochastischen Prognoseverfahren. Die exponentielle Glättung ist im Grunde ein gewichteter Mittelwert, bei dem die Gewichte für ältere Werte immer kleiner werden.</p>
+    <p><strong>Durchschnittlicher Einstandspreis:</strong> Genau die Rechnung von oben. Der gewogene Einstandspreis geht anschließend als p in die Andler-Formel ein.</p>
+    <p><strong>Gewichteter Servicegrad:</strong> Standort A liefert 3.000 Sendungen mit 96 % Termintreue, Standort B 1.000 Sendungen mit 88 %. Der Gesamtservicegrad ist nicht (96 + 88) ÷ 2 = 92 %, sondern (3.000 × 0,96 + 1.000 × 0,88) ÷ 4.000 = 3.760 ÷ 4.000 = <strong>94 %</strong>.</p>
+    <p><strong>Durchschnittlicher Lagerbestand:</strong> Wenn Monatsendbestände gegeben sind, wird über zwölf Werte gemittelt. Werden dagegen Anfangs- und Endbestand plus zwölf Monatswerte genannt, achte genau auf die vorgegebene Formel der Aufgabe.</p>
+  </div>
+
+  <div class="block achtung" data-notiz="ach-mittelwert-ungewichtet">
+    <div class="b-label">Typischer Fehler</div>
+    <p><strong>Prozentsätze ungewichtet mitteln.</strong> Zwei Servicegrade, zwei Quoten, zwei Auslastungen: Man darf sie nur dann einfach addieren und halbieren, wenn die zugrunde liegenden Mengen gleich groß sind. Sonst muss über die absoluten Zahlen gerechnet werden – wie im Beispiel oben, wo aus 92 % in Wahrheit 94 % werden.</p>
+  </div>
+
+  <div class="abfrage-liste">
+    <div class="abfrage-kopf">Selbstabfrage</div>
+    <details class="abfrage"><summary>Wann darfst du das einfache arithmetische Mittel benutzen?</summary>
+      <div class="antwort"><p>Wenn alle Werte gleiches Gewicht haben, also sich auf gleich lange Zeiträume oder gleich große Mengen beziehen.</p></div></details>
+    <details class="abfrage"><summary>Wie berechnest du den gewogenen Einstandspreis?</summary>
+      <div class="antwort"><p>Jede Menge mit ihrem Preis multiplizieren, die Werte addieren und durch die Gesamtmenge teilen. Kurz: Gesamtwert ÷ Gesamtmenge.</p></div></details>
+    <details class="abfrage"><summary>Was bedeutet „gleitender Mittelwert“?</summary>
+      <div class="antwort"><p>Es wird immer nur über die letzten n Perioden gemittelt. Kommt eine neue Periode hinzu, fällt die älteste heraus – das Zeitfenster wandert mit.</p></div></details>
+    <details class="abfrage"><summary>Welche Plausibilitätskontrolle gilt für jeden Mittelwert?</summary>
+      <div class="antwort"><p>Er muss zwischen dem kleinsten und dem größten Einzelwert liegen. Liegt er außerhalb, ist ein Rechenfehler passiert.</p></div></details>
+    <details class="abfrage"><summary>Warum ist der Gesamtservicegrad aus 96 % (3.000 Sendungen) und 88 % (1.000 Sendungen) nicht 92 %?</summary>
+      <div class="antwort"><p>Weil die Mengen ungleich sind. Richtig: (3.000 × 0,96 + 1.000 × 0,88) ÷ 4.000 = 94 %. Der größere Standort zieht den Wert nach oben.</p></div></details>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════ -->
+<section class="abschnitt" id="veraenderung-index" data-gruppe="Auswerten und Kontrollieren">
+  <div class="ab-kopf"><h2><span class="ab-nr">5.2</span>Prozentuale Veränderung und Indexrechnung</h2></div>
+
+  <div class="block einstieg" data-notiz="ein-veraenderung">
+    <div class="b-label">Worum es geht</div>
+    <p>„Der Umsatz stieg von 2,4 auf 2,664 Mio. €.“ Diese Aussage ist korrekt, aber sperrig. „Der Umsatz stieg um 11 %.“ Diese Aussage kann jeder sofort einordnen und mit anderen Zahlen vergleichen. Genau dafür gibt es die prozentuale Veränderung – und für längere Zeitreihen die Indexrechnung, mit der man Entwicklungen unterschiedlicher Größen nebeneinanderlegen kann.</p>
+  </div>
+
+  <h3>Absolute und relative Veränderung</h3>
+  <div class="formel" data-notiz="formel-veraenderung">
+    <div class="formel-kopf"><span class="f-tag">Formel</span><span class="f-name">Prozentuale Veränderung</span></div>
+    <div class="formel-koerper">
+      <div class="eq">absolute Veränderung = neuer Wert − alter Wert</div>
+      <div class="eq">prozentuale Veränderung = ( neuer Wert − alter Wert ) ÷ alter Wert × 100</div>
+      <div class="f-erklaerung">Der <strong>alte Wert steht immer im Nenner</strong> – er ist der Grundwert, auf den sich die Veränderung bezieht. Ein positives Ergebnis bedeutet Zunahme, ein negatives Abnahme.</div>
+    </div>
+  </div>
+
+  <div class="schritte" data-notiz="rechnung-umsatzsteigerung">
+    <div class="schritt"><div class="s-nr">1</div><div class="s-txt">Umsatz Vorjahr 2.400.000 €, laufendes Jahr 2.664.000 €</div></div>
+    <div class="s-warum">Der ältere Wert ist der Bezugspunkt, also der Grundwert.</div>
+    <div class="schritt"><div class="s-nr">2</div><div class="s-txt">2.664.000 − 2.400.000 = 264.000 €</div></div>
+    <div class="s-warum">Die absolute Veränderung. Sie allein sagt noch nichts darüber, ob das viel ist.</div>
+    <div class="schritt fertig"><div class="s-nr">✓</div><div class="s-txt">264.000 ÷ 2.400.000 × 100 = 11 % Steigerung</div></div>
+    <div class="s-warum">Probe mit der Faktormethode aus Abschnitt 2.2: 2.400.000 × 1,11 = 2.664.000. Stimmt.</div>
+  </div>
+
+  <div class="schritte" data-notiz="rechnung-retourenrueckgang">
+    <div class="schritt"><div class="s-nr">1</div><div class="s-txt">Retouren sinken von 45 auf 36 Stück je Monat</div></div>
+    <div class="s-warum">Ein Rückgang. Die Formel bleibt dieselbe – das Vorzeichen erledigt den Rest.</div>
+    <div class="schritt"><div class="s-nr">2</div><div class="s-txt">( 36 − 45 ) ÷ 45 = −9 ÷ 45 = −0,2</div></div>
+    <div class="s-warum">Neu minus alt ergibt hier eine negative Zahl. Immer in dieser Reihenfolge rechnen, sonst dreht sich die Aussage um.</div>
+    <div class="schritt fertig"><div class="s-nr">✓</div><div class="s-txt">−0,2 × 100 = −20 %, also ein Rückgang um 20 %</div></div>
+    <div class="s-warum">Sprachlich sagt man „Rückgang um 20 %“ und lässt das Minuszeichen weg – in der Tabelle bleibt es aber stehen.</div>
+  </div>
+
+  <h3>Die Indexrechnung</h3>
+  <div class="block def" data-notiz="def-index">
+    <div class="b-label">Definition</div>
+    <div class="b-term">Index und Basisjahr</div>
+    <p>Ein <strong>Index</strong> setzt einen beliebigen Zeitpunkt als Bezugspunkt fest und gibt ihm den Wert <strong>100</strong>. Dieser Zeitpunkt heißt <strong>Basisjahr</strong>. Alle anderen Werte werden ins Verhältnis dazu gesetzt.</p>
+    <p>Der Vorteil: Man kann Entwicklungen völlig unterschiedlicher Größen – Dieselpreis, Personalkosten, Sendungsvolumen – in einer Grafik nebeneinanderlegen und sofort sehen, was stärker gestiegen ist.</p>
+  </div>
+
+  <div class="formel" data-notiz="formel-index">
+    <div class="formel-kopf"><span class="f-tag">Formel</span><span class="f-name">Indexberechnung</span></div>
+    <div class="formel-koerper">
+      <div class="eq">Index = Wert im Berichtsjahr ÷ Wert im Basisjahr × 100</div>
+      <div class="eq ergebnis">Index 140 heißt: 40 % über dem Basisjahr · Index 92 heißt: 8 % darunter</div>
+      <div class="f-erklaerung">Ein Index ist eine Verhältniszahl ohne Einheit. Er wird in <strong>Punkten</strong> angegeben, nicht in Prozent.</div>
+    </div>
+  </div>
+
+  <div class="schritte" data-notiz="rechnung-index-diesel">
+    <div class="schritt"><div class="s-nr">1</div><div class="s-txt">Dieselpreis Basisjahr 1,20 €/l, Berichtsjahr 1,68 €/l</div></div>
+    <div class="s-warum">Das Basisjahr bekommt den Index 100. Das ist eine reine Festlegung, keine Rechnung.</div>
+    <div class="schritt"><div class="s-nr">2</div><div class="s-txt">1,68 ÷ 1,20 = 1,4</div></div>
+    <div class="s-warum">Das Verhältnis der beiden Werte. Der Berichtswert ist das 1,4-Fache des Basiswerts.</div>
+    <div class="schritt fertig"><div class="s-nr">✓</div><div class="s-txt">1,4 × 100 = Index 140 → 40 % teurer als im Basisjahr</div></div>
+    <div class="s-warum">Kontrolle: 1,20 × 1,40 = 1,68. Stimmt. Die Aussage „Index 140“ und „40 % Steigerung gegenüber der Basis“ sind dasselbe.</div>
+  </div>
+
+  <div class="block achtung" data-notiz="ach-indexpunkte">
+    <div class="b-label">Der Fehler, der fast immer gemacht wird</div>
+    <p>Die Transportkosten haben 2023 den Index 108 und 2024 den Index 117. Wie stark sind sie von 2023 auf 2024 gestiegen? <strong>Nicht um 9 %.</strong> Neun ist die Differenz in <em>Indexpunkten</em>. Die prozentuale Steigerung berechnet sich mit dem Wert von 2023 als Grundwert: (117 − 108) ÷ 108 = 0,0833 = <strong>8,33 %</strong>.</p>
+    <p>Es ist derselbe Denkfehler wie bei den Prozentpunkten in Abschnitt 2.2: Eine Differenz ist noch keine prozentuale Veränderung. Nur wenn du vom <em>Basisjahr</em> ausgehst (Index 100), stimmt die Punktdifferenz zufällig mit dem Prozentsatz überein – weil dort durch 100 geteilt wird.</p>
+  </div>
+
+  <div class="block beispiel" data-notiz="bsp-index-logistik">
+    <div class="b-label">Wo dir das im Fachwirt begegnet</div>
+    <p><strong>Preisgleitklauseln in Transportverträgen:</strong> Frachtpreise werden häufig an einen Dieselpreisindex gekoppelt. Steigt der Index von 100 auf 112, darf der Frachtführer den Dieselanteil des Preises um 12 % anheben.</p>
+    <p><strong>Kennzahlenentwicklung im Berichtswesen:</strong> Lagerkosten, Sendungsvolumen und Personalstunden werden auf ein Basisjahr indexiert, damit man sieht, ob die Kosten schneller wachsen als die Leistung. Genau das ist die Frage hinter jeder Produktivitätsbetrachtung.</p>
+    <p><strong>Benchmarking und Zielvereinbarungen:</strong> „Fehlerquote gegenüber Vorjahr um 20 % senken“ ist eine prozentuale Veränderung; „Servicegrad um 3 Punkte anheben“ eine Punktveränderung. Wer die beiden verwechselt, vereinbart ein völlig anderes Ziel.</p>
+    <p><strong>Wertschöpfungsrechnung im Zeitvergleich:</strong> Nur indexiert lässt sich erkennen, ob die eigene Wertschöpfung stärker gewachsen ist als die Vorleistungen.</p>
+  </div>
+
+  <div class="abfrage-liste">
+    <div class="abfrage-kopf">Selbstabfrage</div>
+    <details class="abfrage"><summary>Welcher Wert steht bei der prozentualen Veränderung im Nenner?</summary>
+      <div class="antwort"><p>Immer der alte Wert – er ist der Grundwert. Formel: (neu − alt) ÷ alt × 100.</p></div></details>
+    <details class="abfrage"><summary>Was bedeutet der Index 140?</summary>
+      <div class="antwort"><p>Der Wert liegt 40 % über dem Basisjahr, das definitionsgemäß den Index 100 hat.</p></div></details>
+    <details class="abfrage"><summary>Der Index steigt von 108 auf 117. Um wie viel Prozent ist der Wert gestiegen?</summary>
+      <div class="antwort"><p>Um 8,33 %, nicht um 9 %. Rechnung: (117 − 108) ÷ 108 × 100. Die 9 ist nur die Differenz in Indexpunkten.</p></div></details>
+    <details class="abfrage"><summary>Wozu dient die Indexrechnung überhaupt?</summary>
+      <div class="antwort"><p>Sie macht Entwicklungen unterschiedlicher Größen vergleichbar, weil alle auf denselben Basiswert 100 bezogen werden – etwa Dieselpreis, Personalkosten und Sendungsvolumen in einer Darstellung.</p></div></details>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════ -->
+<section class="abschnitt" id="taschenrechner-und-ueberschlag" data-gruppe="Auswerten und Kontrollieren">
+  <div class="ab-kopf"><h2><span class="ab-nr">5.3</span>Taschenrechner-Fallen und die Überschlagsrechnung</h2></div>
+
+  <div class="block einstieg" data-notiz="ein-taschenrechner">
+    <div class="b-label">Worum es geht</div>
+    <p>Der Taschenrechner rechnet nie falsch. Er rechnet nur genau das, was du eintippst – und das ist etwas anderes. In der Prüfung hast du keine Zeit, jede Rechnung dreimal zu machen. Was du brauchst, ist ein <strong>Überschlag</strong>: eine grobe Kopfrechnung, die dir sagt, in welcher Größenordnung das Ergebnis liegen muss. Wenn der Rechner etwas völlig anderes anzeigt, hast du dich vertippt – und weißt es sofort.</p>
+  </div>
+
+  <h3>Die sechs häufigsten Tippfehler</h3>
+  <div class="tab" data-notiz="tab-taschenrechnerfehler">
+    <table>
+      <thead><tr><th>Falle</th><th>Was passiert</th><th>Gegenmittel</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Tausenderpunkt mitgetippt</strong></td><td>1.250 wird als 1,25 gelesen – Faktor 1.000 daneben</td><td>Zahlen ohne Trennzeichen eingeben</td></tr>
+        <tr><td><strong>Klammern beim Nenner vergessen</strong></td><td>28.800.000 ÷ 12 × 0,15 = 360.000 statt ÷ 1,8 = 16.000.000</td><td>Nenner separat ausrechnen und notieren, oder Klammern setzen</td></tr>
+        <tr><td><strong>Prozenttaste benutzt</strong></td><td>die %-Taste ist je nach Modell anders belegt und liefert oft Unerwartetes</td><td>%-Taste meiden, stattdessen durch 100 teilen (15 % = 0,15)</td></tr>
+        <tr><td><strong>Minustaste statt Vorzeichentaste</strong></td><td>Fehlermeldung oder falsches Vorzeichen</td><td>Vorzeichen im Kopf klären, nur positive Zahlen tippen</td></tr>
+        <tr><td><strong>Gleichtaste mittendrin</strong></td><td>setzt eine unbeabsichtigte Klammer</td><td>ganzen Ausdruck am Stück eingeben</td></tr>
+        <tr><td><strong>Wurzeltaste zu früh</strong></td><td>zieht die Wurzel aus dem Zähler statt aus dem ganzen Bruch</td><td>erst Bruch fertig rechnen, Ergebnis notieren, dann Wurzel</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="block achtung" data-notiz="ach-prozenttaste">
+    <div class="b-label">Finger weg von der Prozenttaste</div>
+    <p>Auf manchen Geräten bedeutet <em>200 + 19 %</em> das Ergebnis 238, auf anderen 200,19, auf wieder anderen kommt eine Fehlermeldung. Du weißt in der Prüfung nicht sicher, wie dein Gerät sie auslegt – und du hast keine Zeit, es auszuprobieren. Der sichere Weg ist immer die Faktormethode: <strong>200 × 1,19</strong>. Sie funktioniert auf jedem Rechner gleich.</p>
+  </div>
+
+  <h3>Die Überschlagsrechnung</h3>
+  <div class="block merk" data-notiz="merk-ueberschlag">
+    <div class="b-label">So geht ein Überschlag</div>
+    <p><strong>1.</strong> Runde jede Zahl auf eine glatte Zahl mit einer einzigen bedeutsamen Ziffer – 4.870 wird zu 5.000, 19,80 wird zu 20.<br>
+    <strong>2.</strong> Rechne im Kopf.<br>
+    <strong>3.</strong> Vergleiche die Größenordnung mit dem Ergebnis des Rechners.<br>
+    Der Überschlag muss nicht genau sein. Er muss nur die <strong>Anzahl der Stellen</strong> bestätigen.</p>
+  </div>
+
+  <div class="schritte" data-notiz="rechnung-ueberschlag-multiplikation">
+    <div class="schritt"><div class="s-nr">1</div><div class="s-txt">Aufgabe: 4.870 Sendungen × 19,80 € Transportkosten</div></div>
+    <div class="s-warum">Vor dem Tippen kurz überschlagen – das dauert fünf Sekunden.</div>
+    <div class="schritt"><div class="s-nr">2</div><div class="s-txt">Überschlag: 5.000 × 20 = 100.000 €</div></div>
+    <div class="s-warum">Beide Zahlen leicht aufgerundet, deshalb muss das echte Ergebnis etwas darunter liegen.</div>
+    <div class="schritt fertig"><div class="s-nr">✓</div><div class="s-txt">Exakt: 96.426 €  –  Größenordnung bestätigt</div></div>
+    <div class="s-warum">Zeigt der Rechner 9.642,60 oder 964.260, weißt du sofort: irgendwo ist ein Komma verrutscht. Ohne Überschlag hättest du keinen Anhaltspunkt.</div>
+  </div>
+
+  <div class="schritte" data-notiz="rechnung-ueberschlag-division">
+    <div class="schritt"><div class="s-nr">1</div><div class="s-txt">Aufgabe: 187.400 € ÷ 48 Wochen</div></div>
+    <div class="s-warum">Bei der Division rundet man am besten so, dass die Zahlen gut zueinander passen.</div>
+    <div class="schritt"><div class="s-nr">2</div><div class="s-txt">Überschlag: 200.000 ÷ 50 = 4.000 €</div></div>
+    <div class="s-warum">200.000 geteilt durch 50 ist im Kopf machbar: 200 ÷ 50 = 4, dann die drei Nullen wieder dran.</div>
+    <div class="schritt fertig"><div class="s-nr">✓</div><div class="s-txt">Exakt: 3.904,17 €  –  passt zum Überschlag</div></div>
+    <div class="s-warum">Der Überschlag lag 2,5 % daneben, das reicht völlig. Er hätte jeden Zehnerfehler zuverlässig gefunden.</div>
+  </div>
+
+  <h3>Die drei Kontrollen, die du immer machst</h3>
+  <div class="raster">
+    <div class="karte blue"><div class="k-titel">Größenordnung</div><div class="k-text">Hat das Ergebnis so viele Stellen, wie der Überschlag vorhersagt? Fast alle Tippfehler sind Zehnerfehler – und die findet der Überschlag sofort.</div></div>
+    <div class="karte green"><div class="k-titel">Einheit</div><div class="k-text">Steht am Ergebnis die Einheit, die gefragt war? Stück, €, Tage, %, €/t. Eine falsche Einheit bedeutet fast immer einen vertauschten Zähler und Nenner.</div></div>
+    <div class="karte amber"><div class="k-titel">Plausibilität</div><div class="k-text">Kann das in der Praxis stimmen? Eine Lagerdauer von 3.000 Tagen, ein Servicegrad von 340 % oder ein α von 4,2 sind unmöglich – unabhängig davon, was der Rechner sagt.</div></div>
+  </div>
+
+  <div class="block beispiel" data-notiz="bsp-plausibilitaet-logistik">
+    <div class="b-label">Plausibilitätsgrenzen, die du kennen solltest</div>
+    <p><strong>Glättungsfaktor α:</strong> immer zwischen 0 und 1. In der Praxis meist zwischen 0,1 und 0,3.</p>
+    <p><strong>Servicegrad, Lieferbereitschaft, Auslastung:</strong> zwischen 0 % und 100 %. Über 100 % ist nur bei Kapazitätsauslastung möglich, und dann erklärungsbedürftig.</p>
+    <p><strong>Lagerumschlagshäufigkeit:</strong> selten unter 1 und selten über 50. Werte um 4 bis 12 sind typisch.</p>
+    <p><strong>Durchschnittliche Lagerdauer:</strong> zwischen wenigen Tagen und wenigen Monaten. 360 Tage bedeuten Umschlag 1, also einmal im Jahr – schon ungewöhnlich langsam.</p>
+    <p><strong>Optimale Bestellmenge:</strong> muss deutlich kleiner sein als der Jahresbedarf. Kommt eine Bestellmenge größer als der Jahresbedarf heraus, ist meist der Kostensatz falsch eingesetzt.</p>
+  </div>
+
+  <div class="block merk" data-notiz="merk-rechenweg-aufschreiben">
+    <div class="b-label">Und noch etwas, das Punkte bringt</div>
+    <p><strong>Schreib den Rechenweg auf, nicht nur das Ergebnis.</strong> In der IHK-Prüfung gibt es Punkte für den Ansatz, für die richtige Formel und für die eingesetzten Werte – auch dann, wenn sich am Ende ein Rechenfehler eingeschlichen hat. Wer nur eine Zahl hinschreibt und die ist falsch, bekommt null. Wer den Weg zeigt, bekommt fast immer Teilpunkte.</p>
+  </div>
+
+  <div class="abfrage-liste">
+    <div class="abfrage-kopf">Selbstabfrage</div>
+    <details class="abfrage"><summary>Wie machst du einen Überschlag?</summary>
+      <div class="antwort"><p>Jede Zahl auf eine glatte Zahl runden, im Kopf rechnen und die Größenordnung mit dem Rechnerergebnis vergleichen. Genauigkeit ist nicht das Ziel – die Anzahl der Stellen ist es.</p></div></details>
+    <details class="abfrage"><summary>Warum solltest du die Prozenttaste meiden?</summary>
+      <div class="antwort"><p>Weil sie je nach Gerät unterschiedlich belegt ist. Sicher ist die Faktormethode: 200 × 1,19 statt „200 + 19 %“.</p></div></details>
+    <details class="abfrage"><summary>Welche drei Kontrollen machst du nach jeder Rechnung?</summary>
+      <div class="antwort"><p>Größenordnung (passt sie zum Überschlag?), Einheit (ist es die gefragte?) und Plausibilität (kann das in der Praxis stimmen?).</p></div></details>
+    <details class="abfrage"><summary>Nenne zwei Werte, die von vornherein unmöglich sind.</summary>
+      <div class="antwort"><p>Ein Glättungsfaktor α über 1 oder unter 0, und ein Servicegrad über 100 %. Auch eine optimale Bestellmenge, die größer ist als der Jahresbedarf.</p></div></details>
+    <details class="abfrage"><summary>Warum schreibst du den Rechenweg auf, auch wenn du das Ergebnis kennst?</summary>
+      <div class="antwort"><p>Weil es in der Prüfung Teilpunkte für Ansatz, Formel und eingesetzte Werte gibt. Ein falsches Ergebnis ohne Weg bringt null Punkte, mit Weg fast immer Teilpunkte.</p></div></details>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════ -->
+<section class="abschnitt" id="uebungsaufgaben" data-gruppe="Üben">
+  <div class="ab-kopf"><h2><span class="ab-nr">6.1</span>Übungsaufgaben quer durch alle Themen</h2></div>
+
+  <div class="block einstieg" data-notiz="ein-uebungen">
+    <div class="b-label">So arbeitest du damit</div>
+    <p>Vierzehn Aufgaben, aufsteigend im Schwierigkeitsgrad. Rechne jede zuerst selbst auf Papier – vollständig, mit Rechenweg und Einheit. Erst danach klappst du die Lösung auf. Wer die Lösung vorher liest, lernt nichts; das Gefühl „das hätte ich gekonnt“ täuscht zuverlässig.</p>
+    <p>Wenn du bei einer Aufgabe hängst, steht in der Lösung dabei, zu welchem Abschnitt du zurückgehen solltest. Notiere dir, welche Aufgabentypen dir schwerfallen, und rechne genau diese in ein paar Tagen noch einmal.</p>
+  </div>
+
+  <div class="aufgabe" data-notiz="aufg-rechenreihenfolge">
+    <div class="aufgabe-kopf"><span class="tag">Aufgabe 1</span>Rechenreihenfolge<span class="punkte">3 Pkt.</span></div>
+    <div class="aufgabe-text"><p>Berechnen Sie: <strong>250 − 4 × 30 + 15 ÷ 3</strong>. Nennen Sie zu jedem Schritt die angewandte Regel.</p></div>
+    <button class="loesung-btn"></button>
+    <div class="loesung">
+      <p><strong>Schritt 1 – Punktrechnung zuerst:</strong> 4 × 30 = 120 und 15 ÷ 3 = 5. Beide sind Punktrechnungen und werden vor jeder Strichrechnung ausgeführt.</p>
+      <p><strong>Schritt 2 – jetzt die Strichrechnung, von links nach rechts:</strong> 250 − 120 = 130, danach 130 + 5 = <strong>135</strong>.</p>
+      <p><strong>Häufiger Fehler:</strong> von links nach rechts durchrechnen und bei (250 − 4) × 30 landen. Ohne Klammer gilt immer Punkt vor Strich. → Abschnitt 1.1</p>
+    </div>
+  </div>
+
+  <div class="aufgabe" data-notiz="aufg-bruchanteil">
+    <div class="aufgabe-kopf"><span class="tag">Aufgabe 2</span>Anteil einer Menge<span class="punkte">4 Pkt.</span></div>
+    <div class="aufgabe-text"><p>Von 4.800 Paletten gehen drei Achtel an das Zentrallager Süd, der Rest an Nord. Wie viele Paletten erhält jeder Standort, und wie hoch ist der Anteil von Nord in Prozent?</p></div>
+    <button class="loesung-btn"></button>
+    <div class="loesung">
+      <p><strong>Süd:</strong> Erst durch den Nenner teilen: 4.800 ÷ 8 = 600 Paletten je Achtel. Dann mal Zähler: 600 × 3 = <strong>1.800 Paletten</strong>.</p>
+      <p><strong>Nord:</strong> 4.800 − 1.800 = <strong>3.000 Paletten</strong>. Kontrolle über den Bruch: 5/8 von 4.800 = 600 × 5 = 3.000. Stimmt.</p>
+      <p><strong>Anteil Nord in Prozent:</strong> 3.000 ÷ 4.800 = 0,625 = <strong>62,5 %</strong>. Probe: 37,5 % + 62,5 % = 100 %. → Abschnitte 1.3 und 2.1</p>
+    </div>
+  </div>
+
+  <div class="aufgabe" data-notiz="aufg-fehlerquote">
+    <div class="aufgabe-kopf"><span class="tag">Aufgabe 3</span>Fehlerquote und Servicegrad<span class="punkte">5 Pkt.</span></div>
+    <div class="aufgabe-text"><p>Von 1.240 Sendungen eines Monats kamen 47 verspätet an. Berechnen Sie die Verspätungsquote und den Servicegrad, jeweils auf zwei Nachkommastellen.</p></div>
+    <button class="loesung-btn"></button>
+    <div class="loesung">
+      <p><strong>Grundwert bestimmen:</strong> Alle Sendungen, also 1.240 – das ist das Ganze (100 %).</p>
+      <p><strong>Verspätungsquote:</strong> 47 ÷ 1.240 = 0,037903… × 100 = <strong>3,79 %</strong>.</p>
+      <p><strong>Servicegrad:</strong> Entweder 100 % − 3,79 % = 96,21 %, oder direkt (1.240 − 47) ÷ 1.240 = 1.193 ÷ 1.240 = 0,962097 = <strong>96,21 %</strong>.</p>
+      <p><strong>Wichtig:</strong> Erst am Ende runden. Wer die Quote auf 3,8 % rundet und dann abzieht, bekommt 96,2 % statt 96,21 %. → Abschnitte 1.4 und 2.1</p>
+    </div>
+  </div>
+
+  <div class="aufgabe" data-notiz="aufg-grundwert-sicherheitsbestand">
+    <div class="aufgabe-kopf"><span class="tag">Aufgabe 4</span>Grundwert gesucht<span class="punkte">4 Pkt.</span></div>
+    <div class="aufgabe-text"><p>Der Sicherheitsbestand eines Artikels beträgt 500 Stück. Er entspricht 12,5 % des durchschnittlichen Lagerbestands. Wie hoch ist der durchschnittliche Lagerbestand?</p></div>
+    <button class="loesung-btn"></button>
+    <div class="loesung">
+      <p><strong>Größen zuordnen:</strong> Prozentwert W = 500 Stück, Prozentsatz p = 12,5 %, gesucht ist der Grundwert G.</p>
+      <p><strong>Prozentsatz in Dezimalzahl:</strong> 12,5 % = 0,125.</p>
+      <p><strong>Rechnung:</strong> Beim Grundwert wird geteilt: 500 ÷ 0,125 = <strong>4.000 Stück</strong>.</p>
+      <p><strong>Probe:</strong> 4.000 × 0,125 = 500. Stimmt. Plausibilität: Ein kleiner Prozentsatz muss zu einem deutlich größeren Ganzen führen. → Abschnitt 2.1</p>
+    </div>
+  </div>
+
+  <div class="aufgabe" data-notiz="aufg-brutto-netto">
+    <div class="aufgabe-kopf"><span class="tag">Aufgabe 5</span>Vom Bruttobetrag zum Nettobetrag<span class="punkte">4 Pkt.</span></div>
+    <div class="aufgabe-text"><p>Eine Frachtrechnung lautet über 3.570,00 € brutto bei 19 % Umsatzsteuer. Berechnen Sie den Nettobetrag und den Umsatzsteuerbetrag.</p></div>
+    <button class="loesung-btn"></button>
+    <div class="loesung">
+      <p><strong>Überlegung:</strong> Der Nettobetrag ist der Grundwert (100 %). Der Bruttobetrag entspricht 119 %, also dem Faktor 1,19.</p>
+      <p><strong>Netto:</strong> 3.570 ÷ 1,19 = <strong>3.000,00 €</strong>.</p>
+      <p><strong>Umsatzsteuer:</strong> 3.570 − 3.000 = <strong>570,00 €</strong>. Kontrolle: 3.000 × 0,19 = 570. Stimmt.</p>
+      <p><strong>Falsch wäre:</strong> 3.570 × 0,19 = 678,30 €. Die 19 % beziehen sich auf netto, nicht auf brutto. → Abschnitt 2.2</p>
+    </div>
+  </div>
+
+  <div class="aufgabe" data-notiz="aufg-rabatt-skonto">
+    <div class="aufgabe-kopf"><span class="tag">Aufgabe 6</span>Rabatt und Skonto nacheinander<span class="punkte">5 Pkt.</span></div>
+    <div class="aufgabe-text"><p>Ein Lieferant nennt einen Listenpreis von 8.400,00 € netto. Er gewährt 15 % Wiederverkäuferrabatt und bei Zahlung binnen 10 Tagen zusätzlich 2 % Skonto. Wie hoch ist der Zahlbetrag, und wie hoch ist der Gesamtnachlass in Prozent?</p></div>
+    <button class="loesung-btn"></button>
+    <div class="loesung">
+      <p><strong>Schritt 1 – Rabatt:</strong> 8.400 × 0,85 = <strong>7.140,00 €</strong> (Zieleinkaufspreis).</p>
+      <p><strong>Schritt 2 – Skonto vom bereits rabattierten Betrag:</strong> 7.140 × 0,98 = <strong>6.997,20 €</strong> Zahlbetrag.</p>
+      <p><strong>Gesamtnachlass:</strong> 8.400 − 6.997,20 = 1.402,80 €. In Prozent: 1.402,80 ÷ 8.400 = 0,167 = <strong>16,70 %</strong> – also <em>nicht</em> 17 %.</p>
+      <p><strong>Kurzweg:</strong> 8.400 × 0,85 × 0,98 = 6.997,20 €. Faktoren multiplizieren, Prozentsätze niemals addieren. → Abschnitt 2.2</p>
+    </div>
+  </div>
+
+  <div class="aufgabe" data-notiz="aufg-dreisatz-anti">
+    <div class="aufgabe-kopf"><span class="tag">Aufgabe 7</span>Antiproportionaler Dreisatz<span class="punkte">4 Pkt.</span></div>
+    <div class="aufgabe-text"><p>5 Kommissionierer benötigen für einen Auftrag 6 Stunden. Wie lange brauchen 4 Kommissionierer für denselben Auftrag? Begründen Sie, welche Art von Dreisatz vorliegt.</p></div>
+    <button class="loesung-btn"></button>
+    <div class="loesung">
+      <p><strong>Art bestimmen:</strong> Weniger Leute bedeuten mehr Zeit – der Zusammenhang ist <strong>antiproportional</strong> (ungerader Dreisatz). Konstant bleibt das Produkt aus Personen und Zeit.</p>
+      <p><strong>Schritt 1 – Gesamtarbeit:</strong> 5 × 6 = 30 Personenstunden.</p>
+      <p><strong>Schritt 2 – auf 4 Personen verteilen:</strong> 30 ÷ 4 = <strong>7,5 Stunden</strong> (= 7 h 30 min).</p>
+      <p><strong>Kontrolle:</strong> 7,5 Stunden liegen über 6 Stunden – die Richtung stimmt. Probe: 4 × 7,5 = 30 Personenstunden. → Abschnitt 2.3</p>
+    </div>
+  </div>
+
+  <div class="aufgabe" data-notiz="aufg-dreisatz-zusammengesetzt">
+    <div class="aufgabe-kopf"><span class="tag">Aufgabe 8</span>Zusammengesetzter Dreisatz<span class="punkte">6 Pkt.</span></div>
+    <div class="aufgabe-text"><p>6 Mitarbeiter bearbeiten in 5 Arbeitstagen 1.800 Sendungen. Wie viele Sendungen bearbeiten 9 Mitarbeiter in 4 Arbeitstagen bei gleicher Leistung je Kopf?</p></div>
+    <button class="loesung-btn"></button>
+    <div class="loesung">
+      <p><strong>Schritt 1 – bisherige Kapazität:</strong> 6 Mitarbeiter × 5 Tage = 30 Mitarbeitertage.</p>
+      <p><strong>Schritt 2 – Leistung je Einheit:</strong> 1.800 ÷ 30 = 60 Sendungen je Mitarbeitertag.</p>
+      <p><strong>Schritt 3 – neue Kapazität:</strong> 9 × 4 = 36 Mitarbeitertage.</p>
+      <p><strong>Schritt 4 – Ergebnis:</strong> 36 × 60 = <strong>2.160 Sendungen</strong>.</p>
+      <p><strong>Kontrolle:</strong> Die Kapazität ist von 30 auf 36 Mitarbeitertage gestiegen, also um 20 %. Auch die Sendungen steigen um 20 %: 1.800 × 1,2 = 2.160. → Abschnitt 2.3</p>
+    </div>
+  </div>
+
+  <div class="aufgabe" data-notiz="aufg-verteilung">
+    <div class="aufgabe-kopf"><span class="tag">Aufgabe 9</span>Kostenverteilung nach Verhältnis<span class="punkte">5 Pkt.</span></div>
+    <div class="aufgabe-text"><p>Lagerkosten von 21.600,00 € sollen auf die Bereiche Wareneingang, Kommissionierung und Versand im Verhältnis 4 : 3 : 2 umgelegt werden. Berechnen Sie die Beträge und die prozentualen Anteile.</p></div>
+    <button class="loesung-btn"></button>
+    <div class="loesung">
+      <p><strong>Schritt 1 – Teile zählen:</strong> 4 + 3 + 2 = 9 Teile.</p>
+      <p><strong>Schritt 2 – Wert eines Teils:</strong> 21.600 ÷ 9 = 2.400,00 €.</p>
+      <p><strong>Schritt 3 – Anteile:</strong> Wareneingang 4 × 2.400 = <strong>9.600 €</strong> · Kommissionierung 3 × 2.400 = <strong>7.200 €</strong> · Versand 2 × 2.400 = <strong>4.800 €</strong>.</p>
+      <p><strong>Prozentanteile:</strong> 4/9 = 44,44 % · 3/9 = 33,33 % · 2/9 = 22,22 %.</p>
+      <p><strong>Probe:</strong> 9.600 + 7.200 + 4.800 = 21.600 € und 44,44 + 33,33 + 22,22 = 99,99 ≈ 100 % (Rundung). → Abschnitt 2.4</p>
+    </div>
+  </div>
+
+  <div class="aufgabe" data-notiz="aufg-leistung-einheiten">
+    <div class="aufgabe-kopf"><span class="tag">Aufgabe 10</span>Leistung und Einheiten<span class="punkte">6 Pkt.</span></div>
+    <div class="aufgabe-text"><p>Ein Kommissionierer bearbeitet 96 Positionen in 2 Stunden 40 Minuten. Berechnen Sie die Leistung in Positionen je Stunde sowie die durchschnittliche Zeit je Position in Minuten und Sekunden.</p></div>
+    <button class="loesung-btn"></button>
+    <div class="loesung">
+      <p><strong>Schritt 1 – Zeit in Dezimalstunden:</strong> 40 ÷ 60 = 0,6667, also 2,6667 Stunden. Niemals 2,40 rechnen.</p>
+      <p><strong>Schritt 2 – Leistung:</strong> 96 ÷ 2,6667 = <strong>36 Positionen je Stunde</strong>.</p>
+      <p><strong>Schritt 3 – Zeit je Position:</strong> Die Gesamtzeit in Minuten beträgt 2 × 60 + 40 = 160 Minuten. 160 ÷ 96 = 1,6667 Minuten je Position.</p>
+      <p><strong>Schritt 4 – in Sekunden:</strong> 0,6667 × 60 = 40 Sekunden, also <strong>1 Minute 40 Sekunden</strong> je Position. Kontrolle: 96 × 100 Sekunden = 9.600 Sekunden = 160 Minuten. Stimmt.</p>
+      <p><strong>Alternative Kontrolle:</strong> 60 ÷ 36 = 1,6667 Minuten – dieselbe Zahl über den Kehrwert. → Abschnitt 3.2</p>
+    </div>
+  </div>
+
+  <div class="aufgabe" data-notiz="aufg-lagerkennzahlen">
+    <div class="aufgabe-kopf"><span class="tag">Aufgabe 11</span>Lagerkennzahlen<span class="punkte">6 Pkt.</span></div>
+    <div class="aufgabe-text"><p>Der Jahresverbrauch eines Artikels beträgt 144.000,00 €, der durchschnittliche Lagerbestand 18.000,00 €. Berechnen Sie die Lagerumschlagshäufigkeit und die durchschnittliche Lagerdauer (kaufmännisches Jahr mit 360 Tagen). Wie hoch dürfte der durchschnittliche Lagerbestand höchstens sein, wenn eine Lagerdauer von 30 Tagen erreicht werden soll?</p></div>
+    <button class="loesung-btn"></button>
+    <div class="loesung">
+      <p><strong>Umschlagshäufigkeit:</strong> 144.000 ÷ 18.000 = <strong>8</strong>. Der Bestand wird also achtmal im Jahr komplett umgeschlagen.</p>
+      <p><strong>Lagerdauer:</strong> 360 ÷ 8 = <strong>45 Tage</strong>.</p>
+      <p><strong>Dritter Teil – rückwärts rechnen:</strong> Aus D = 360 ÷ U folgt umgestellt U = 360 ÷ D = 360 ÷ 30 = 12. Und aus U = JV ÷ ØLB folgt ØLB = JV ÷ U = 144.000 ÷ 12 = <strong>12.000,00 €</strong>.</p>
+      <p><strong>Deutung:</strong> Der Bestand müsste um 6.000 € oder ein Drittel gesenkt werden. Probe: 144.000 ÷ 12.000 = 12 und 360 ÷ 12 = 30 Tage. → Abschnitte 4.2 und 1.3</p>
+    </div>
+  </div>
+
+  <div class="aufgabe" data-notiz="aufg-formel-umstellen-bestellmenge">
+    <div class="aufgabe-kopf"><span class="tag">Aufgabe 12</span>Formel umstellen<span class="punkte">5 Pkt.</span></div>
+    <div class="aufgabe-text"><p>Für einen Artikel gilt: Ø Lagerbestand = (Bestellmenge ÷ 2) + Sicherheitsbestand. Der durchschnittliche Lagerbestand beträgt 2.900 Stück, der Sicherheitsbestand 400 Stück. Stellen Sie die Formel nach der Bestellmenge um und berechnen Sie diese.</p></div>
+    <button class="loesung-btn"></button>
+    <div class="loesung">
+      <p><strong>Schritt 1 – Sicherheitsbestand wegnehmen:</strong> ØLB − SB = Bestellmenge ÷ 2. Gegenoperation zu „+ SB“ ist „− SB“, auf beiden Seiten.</p>
+      <p><strong>Schritt 2 – mit 2 multiplizieren:</strong> Bestellmenge = (ØLB − SB) × 2. Die Klammer ist zwingend, sonst wird nur ØLB verdoppelt.</p>
+      <p><strong>Schritt 3 – einsetzen:</strong> (2.900 − 400) × 2 = 2.500 × 2 = <strong>5.000 Stück</strong>.</p>
+      <p><strong>Probe:</strong> (5.000 ÷ 2) + 400 = 2.500 + 400 = 2.900. Stimmt. → Abschnitt 4.2</p>
+    </div>
+  </div>
+
+  <div class="aufgabe" data-notiz="aufg-andler-komplett">
+    <div class="aufgabe-kopf"><span class="tag">Aufgabe 13</span>Andlersche Formel<span class="punkte">10 Pkt.</span></div>
+    <div class="aufgabe-text"><p>Für einen Artikel gelten: Jahresbedarf 12.000 Stück, Bestellkosten 150,00 € je Bestellung, Einstandspreis 10,00 € je Stück, Lagerhaltungskostensatz 16 %. Der Sicherheitsbestand beträgt 300 Stück.</p><p>a) Berechnen Sie die optimale Bestellmenge. b) Wie oft wird im Jahr bestellt? c) Wie hoch ist der durchschnittliche Lagerbestand? d) Wie hoch müssten die Bestellkosten sein, damit eine Bestellmenge von 3.000 Stück optimal wäre?</p></div>
+    <button class="loesung-btn"></button>
+    <div class="loesung">
+      <p><strong>a) Optimale Bestellmenge.</strong> Zuerst 16 % = 0,16 setzen. Zähler: 2 × 12.000 × 150 = 3.600.000. Nenner: 10 × 0,16 = 1,6. Bruch: 3.600.000 ÷ 1,6 = 2.250.000. Wurzel: √2.250.000 = <strong>1.500 Stück</strong>.</p>
+      <p><strong>b) Bestellhäufigkeit.</strong> 12.000 ÷ 1.500 = <strong>8 Bestellungen im Jahr</strong>, also rechnerisch alle 45 Tage (360 ÷ 8).</p>
+      <p><strong>c) Ø Lagerbestand.</strong> (1.500 ÷ 2) + 300 = 750 + 300 = <strong>1.050 Stück</strong>.</p>
+      <p><strong>d) Nach den Bestellkosten umstellen.</strong> Quadrieren und mit dem Nenner multiplizieren ergibt: K<sub>b</sub> = x² × p × q ÷ (2 × M). Einsetzen: 3.000² = 9.000.000 · p × q = 1,6 · 2 × M = 24.000. Also 9.000.000 × 1,6 ÷ 24.000 = 14.400.000 ÷ 24.000 = <strong>600,00 €</strong>.</p>
+      <p><strong>Deutung:</strong> Die Bestellkosten müssten sich vervierfachen, damit sich die doppelte Bestellmenge lohnt – weil die Bestellkosten unter der Wurzel stehen und Verdopplung der Menge das Vierfache im Zähler verlangt. → Abschnitte 4.4 und 3.1</p>
+    </div>
+  </div>
+
+  <div class="aufgabe" data-notiz="aufg-glaettung-alpha">
+    <div class="aufgabe-kopf"><span class="tag">Aufgabe 14</span>Glättungsfaktor und gewogenes Mittel<span class="punkte">8 Pkt.</span></div>
+    <div class="aufgabe-text"><p>a) Die alte Prognose lautete 600 Stück, der tatsächliche Verbrauch betrug 640 Stück, die neue Prognose 612 Stück. Berechnen Sie den verwendeten Glättungsfaktor α.</p><p>b) Ein Artikel wurde zweimal beschafft: 400 Stück zu 9,50 € und 600 Stück zu 8,00 €. Berechnen Sie den durchschnittlichen Einstandspreis und erläutern Sie, warum das einfache Mittel hier falsch wäre.</p></div>
+    <button class="loesung-btn"></button>
+    <div class="loesung">
+      <p><strong>a) Glättungsfaktor.</strong> Ansatz: 612 = α × 640 + (1 − α) × 600. Klammer auflösen: 612 = 640α + 600 − 600α. Zusammenfassen: 612 − 600 = 40α, also 12 = 40α und damit <strong>α = 0,3</strong>.</p>
+      <p>Kurzformel: α = (neue Prognose − alte Prognose) ÷ (Ist-Wert − alte Prognose) = (612 − 600) ÷ (640 − 600) = 12 ÷ 40 = 0,3.</p>
+      <p><strong>Probe:</strong> 0,3 × 640 + 0,7 × 600 = 192 + 420 = 612. Stimmt. Plausibilität: α liegt zwischen 0 und 1.</p>
+      <p><strong>b) Gewogener Einstandspreis.</strong> Werte: 400 × 9,50 = 3.800 € und 600 × 8,00 = 4.800 €. Gesamtwert 8.600 €, Gesamtmenge 1.000 Stück. Durchschnitt: 8.600 ÷ 1.000 = <strong>8,60 € je Stück</strong>.</p>
+      <p><strong>Warum das einfache Mittel falsch wäre:</strong> (9,50 + 8,00) ÷ 2 = 8,75 €. Das behandelt beide Lieferungen als gleich groß. Tatsächlich war die günstigere Lieferung mit 600 Stück die größere, deshalb liegt der wahre Durchschnitt darunter. Der Unterschied von 0,15 € je Stück ergibt bei 1.000 Stück 150 €. → Abschnitte 4.3 und 5.1</p>
+    </div>
+  </div>
+
+  <div class="abfrage-liste">
+    <div class="abfrage-kopf">Selbstabfrage nach dem Üben</div>
+    <details class="abfrage"><summary>Bei welchen Aufgaben hast du den Rechenweg gefunden, dich aber verrechnet?</summary>
+      <div class="antwort"><p>Das sind Flüchtigkeitsfehler – dagegen hilft der Überschlag aus Abschnitt 5.3 und die Probe. Rechne diese Aufgaben in zwei Tagen noch einmal, ohne die Lösung anzusehen.</p></div></details>
+    <details class="abfrage"><summary>Bei welchen Aufgaben wusstest du nicht, wo du anfangen sollst?</summary>
+      <div class="antwort"><p>Das ist ein Verständnisproblem, kein Rechenproblem. Geh zu dem Abschnitt zurück, der am Ende der Lösung genannt ist, und arbeite ihn noch einmal durch – dort steht auch, welche Frage du dir zuerst stellen musst.</p></div></details>
+    <details class="abfrage"><summary>Welche drei Fragen stellst du dir vor jeder Rechenaufgabe?</summary>
+      <div class="antwort"><p>Erstens: Was ist gesucht und in welcher Einheit? Zweitens: Was ist gegeben und was ist der Grundwert? Drittens: Welche Formel verbindet beides – und muss ich sie umstellen?</p></div></details>
+    <details class="abfrage"><summary>Was machst du, wenn dir in der Prüfung der Rechenweg nicht einfällt?</summary>
+      <div class="antwort"><p>Trotzdem schreiben: die passende Formel aus der Formelsammlung notieren, die gegebenen Werte zuordnen und den Ansatz hinschreiben. Für Ansatz und Formel gibt es Teilpunkte, auch ohne fertiges Ergebnis.</p></div></details>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════ -->
+<section class="abschnitt" id="selbsttest" data-gruppe="Üben">
+  <div class="ab-kopf"><h2><span class="ab-nr">6.2</span>Selbsttest</h2></div>
+
+  <div class="block einstieg" data-notiz="ein-selbsttest">
+    <div class="b-label">Worum es geht</div>
+    <p>Vierzehn kurze Fragen quer durch das Kapitel. Sie prüfen nicht das Rechnen selbst, sondern die Regeln dahinter – genau das, was in der Prüfung unter Zeitdruck sitzen muss. Rechne nichts auf, entscheide dich zügig. Wo du zögerst, gehörst du noch einmal in den zugehörigen Abschnitt.</p>
+  </div>
+
+  <div class="quiz">
+    <div class="q-block">
+      <div class="q-nr"></div>
+      <div class="q-frage">Wie viel ergibt 3 + 4 × 2?</div>
+      <div class="q-optionen">
+        <button class="q-opt" data-richtig="false">A) 14</button>
+        <button class="q-opt" data-richtig="true">B) 11</button>
+        <button class="q-opt" data-richtig="false">C) 24</button>
+        <button class="q-opt" data-richtig="false">D) 9</button>
+      </div>
+      <div class="q-fb" data-erklaerung="Punkt vor Strich: zuerst 4 × 2 = 8, dann 3 + 8 = 11. Die 14 entsteht nur mit Klammer: (3 + 4) × 2."></div>
+    </div>
+
+    <div class="q-block">
+      <div class="q-nr"></div>
+      <div class="q-frage">Wie viel ergibt 100 ÷ 5 × 2?</div>
+      <div class="q-optionen">
+        <button class="q-opt" data-richtig="false">A) 10</button>
+        <button class="q-opt" data-richtig="true">B) 40</button>
+        <button class="q-opt" data-richtig="false">C) 1.000</button>
+        <button class="q-opt" data-richtig="false">D) 25</button>
+      </div>
+      <div class="q-fb" data-erklaerung="Mal und Geteilt sind gleichrangig, deshalb wird von links nach rechts gerechnet: 100 ÷ 5 = 20, dann × 2 = 40. Wer erst 5 × 2 rechnet, kommt fälschlich auf 10."></div>
+    </div>
+
+    <div class="q-block">
+      <div class="q-nr"></div>
+      <div class="q-frage">Was ist die Gegenoperation zu „× 6“ beim Umstellen einer Gleichung?</div>
+      <div class="q-optionen">
+        <button class="q-opt" data-richtig="false">A) − 6 auf beiden Seiten</button>
+        <button class="q-opt" data-richtig="true">B) ÷ 6 auf beiden Seiten</button>
+        <button class="q-opt" data-richtig="false">C) + 6 auf beiden Seiten</button>
+        <button class="q-opt" data-richtig="false">D) × 6 auf der anderen Seite</button>
+      </div>
+      <div class="q-fb" data-erklaerung="Multiplikation wird durch Division rückgängig gemacht – und zwar auf beiden Seiten, sonst gerät die Waage aus dem Gleichgewicht."></div>
+    </div>
+
+    <div class="q-block">
+      <div class="q-nr"></div>
+      <div class="q-frage">Wie viel ergibt (−15) ÷ (−3)?</div>
+      <div class="q-optionen">
+        <button class="q-opt" data-richtig="false">A) −5</button>
+        <button class="q-opt" data-richtig="true">B) +5</button>
+        <button class="q-opt" data-richtig="false">C) −45</button>
+        <button class="q-opt" data-richtig="false">D) +45</button>
+      </div>
+      <div class="q-fb" data-erklaerung="Eine gerade Anzahl von Minuszeichen ergibt ein positives Ergebnis. Erst das Vorzeichen klären, dann 15 ÷ 3 = 5 rechnen."></div>
+    </div>
+
+    <div class="q-block">
+      <div class="q-nr"></div>
+      <div class="q-frage">Wie viel ist 1/4 + 1/6?</div>
+      <div class="q-optionen">
+        <button class="q-opt" data-richtig="false">A) 2/10</button>
+        <button class="q-opt" data-richtig="true">B) 5/12</button>
+        <button class="q-opt" data-richtig="false">C) 1/24</button>
+        <button class="q-opt" data-richtig="false">D) 2/24</button>
+      </div>
+      <div class="q-fb" data-erklaerung="Beim Addieren braucht man einen gemeinsamen Nenner: 1/4 = 3/12 und 1/6 = 2/12, zusammen 5/12. Nenner werden niemals addiert."></div>
+    </div>
+
+    <div class="q-block">
+      <div class="q-nr"></div>
+      <div class="q-frage">Ein Ergebnis lautet 3,2 benötigte Lkw. Wie viele Fahrzeuge setzt du an?</div>
+      <div class="q-optionen">
+        <button class="q-opt" data-richtig="false">A) 3, weil kaufmännisch abgerundet wird</button>
+        <button class="q-opt" data-richtig="true">B) 4, weil die Restmenge ein ganzes Fahrzeug braucht</button>
+        <button class="q-opt" data-richtig="false">C) 3,2 – man rundet gar nicht</button>
+        <button class="q-opt" data-richtig="false">D) 3,5 als Kompromiss</button>
+      </div>
+      <div class="q-fb" data-erklaerung="Bei Kapazitäten – Fahrzeuge, Fahrten, Behälter, Personen – wird immer aufgerundet, unabhängig von der Nachkommastelle. Schreib die Begründung in der Prüfung dazu."></div>
+    </div>
+
+    <div class="q-block">
+      <div class="q-nr"></div>
+      <div class="q-frage">18.000 € entsprechen 12 % der Gesamtkosten. Wie hoch sind die Gesamtkosten?</div>
+      <div class="q-optionen">
+        <button class="q-opt" data-richtig="false">A) 2.160 €</button>
+        <button class="q-opt" data-richtig="false">B) 21.600 €</button>
+        <button class="q-opt" data-richtig="true">C) 150.000 €</button>
+        <button class="q-opt" data-richtig="false">D) 216.000 €</button>
+      </div>
+      <div class="q-fb" data-erklaerung="Gesucht ist der Grundwert, also wird geteilt: 18.000 ÷ 0,12 = 150.000 €. Probe: 150.000 × 0,12 = 18.000."></div>
+    </div>
+
+    <div class="q-block">
+      <div class="q-nr"></div>
+      <div class="q-frage">Ein Listenpreis von 1.000 € wird um 20 % und danach um 10 % reduziert. Wie hoch ist der Endpreis?</div>
+      <div class="q-optionen">
+        <button class="q-opt" data-richtig="false">A) 700 €</button>
+        <button class="q-opt" data-richtig="true">B) 720 €</button>
+        <button class="q-opt" data-richtig="false">C) 730 €</button>
+        <button class="q-opt" data-richtig="false">D) 680 €</button>
+      </div>
+      <div class="q-fb" data-erklaerung="1.000 × 0,80 × 0,90 = 720 €. Der zweite Abschlag bezieht sich auf die bereits reduzierten 800 €. Prozentsätze werden nie addiert, Faktoren dagegen multipliziert."></div>
+    </div>
+
+    <div class="q-block">
+      <div class="q-nr"></div>
+      <div class="q-frage">Der Servicegrad steigt von 92 % auf 95 %. Welche Aussage ist korrekt?</div>
+      <div class="q-optionen">
+        <button class="q-opt" data-richtig="false">A) Er ist um 3 % gestiegen.</button>
+        <button class="q-opt" data-richtig="true">B) Er ist um 3 Prozentpunkte gestiegen.</button>
+        <button class="q-opt" data-richtig="false">C) Er ist um 95 % gestiegen.</button>
+        <button class="q-opt" data-richtig="false">D) Er hat sich um 3 Prozent verringert.</button>
+      </div>
+      <div class="q-fb" data-erklaerung="Die Differenz zweier Prozentsätze heißt Prozentpunkte. Die prozentuale Steigerung wäre 3 ÷ 92 = 3,26 %. Prozentpunkte zieht man ab, Prozent teilt man."></div>
+    </div>
+
+    <div class="q-block">
+      <div class="q-nr"></div>
+      <div class="q-frage">4 Stapler benötigen 9 Stunden. Wie lange brauchen 6 Stapler?</div>
+      <div class="q-optionen">
+        <button class="q-opt" data-richtig="false">A) 13,5 Stunden</button>
+        <button class="q-opt" data-richtig="true">B) 6 Stunden</button>
+        <button class="q-opt" data-richtig="false">C) 4,5 Stunden</button>
+        <button class="q-opt" data-richtig="false">D) 1,5 Stunden</button>
+      </div>
+      <div class="q-fb" data-erklaerung="Antiproportionaler Dreisatz: mehr Stapler, weniger Zeit. Erst multiplizieren (4 × 9 = 36 Staplerstunden), dann teilen (36 ÷ 6 = 6 Stunden)."></div>
+    </div>
+
+    <div class="q-block">
+      <div class="q-nr"></div>
+      <div class="q-frage">Ein Betrag wird im Verhältnis 1 : 4 aufgeteilt. Welchen Anteil hat der erste Posten?</div>
+      <div class="q-optionen">
+        <button class="q-opt" data-richtig="false">A) 25 %</button>
+        <button class="q-opt" data-richtig="true">B) 20 %</button>
+        <button class="q-opt" data-richtig="false">C) 40 %</button>
+        <button class="q-opt" data-richtig="false">D) 80 %</button>
+      </div>
+      <div class="q-fb" data-erklaerung="1 + 4 = 5 Teile. Der erste Posten ist ein Fünftel, also 20 % – nicht ein Viertel. Die Summe aller Verhältniszahlen ist der Nenner."></div>
+    </div>
+
+    <div class="q-block">
+      <div class="q-nr"></div>
+      <div class="q-frage">Wie viele Minuten sind 2,5 Stunden?</div>
+      <div class="q-optionen">
+        <button class="q-opt" data-richtig="false">A) 250 Minuten</button>
+        <button class="q-opt" data-richtig="true">B) 150 Minuten</button>
+        <button class="q-opt" data-richtig="false">C) 205 Minuten</button>
+        <button class="q-opt" data-richtig="false">D) 125 Minuten</button>
+      </div>
+      <div class="q-fb" data-erklaerung="Eine Stunde hat 60 Minuten, nicht 100. 2 × 60 + 0,5 × 60 = 120 + 30 = 150 Minuten."></div>
+    </div>
+
+    <div class="q-block">
+      <div class="q-nr"></div>
+      <div class="q-frage">Wie viel ist √(9 + 16)?</div>
+      <div class="q-optionen">
+        <button class="q-opt" data-richtig="false">A) 7</button>
+        <button class="q-opt" data-richtig="true">B) 5</button>
+        <button class="q-opt" data-richtig="false">C) 25</button>
+        <button class="q-opt" data-richtig="false">D) 12,5</button>
+      </div>
+      <div class="q-fb" data-erklaerung="Das Wurzelzeichen wirkt wie eine Klammer: erst 9 + 16 = 25, dann √25 = 5. Die Wurzel darf nur bei Produkten und Brüchen zerlegt werden, niemals bei Summen."></div>
+    </div>
+
+    <div class="q-block">
+      <div class="q-nr"></div>
+      <div class="q-frage">Die Lagerumschlagshäufigkeit beträgt 8. Wie hoch ist die durchschnittliche Lagerdauer bei 360 Tagen im Jahr?</div>
+      <div class="q-optionen">
+        <button class="q-opt" data-richtig="false">A) 2.880 Tage</button>
+        <button class="q-opt" data-richtig="true">B) 45 Tage</button>
+        <button class="q-opt" data-richtig="false">C) 30 Tage</button>
+        <button class="q-opt" data-richtig="false">D) 8 Tage</button>
+      </div>
+      <div class="q-fb" data-erklaerung="Lagerdauer = 360 ÷ Umschlagshäufigkeit = 360 ÷ 8 = 45 Tage. Plausibilität: Achtmaliger Umschlag bedeutet rund anderthalb Monate Liegezeit."></div>
+    </div>
+
+    <div class="q-score"><div class="z"></div><div class="t"></div></div>
+  </div>
+
+  <div class="block merk" data-notiz="merk-abschluss">
+    <div class="b-label">Was du ab jetzt bei jeder Rechenaufgabe tust</div>
+    <p><strong>1.</strong> Aufschreiben, was gesucht ist – mit Einheit.<br>
+    <strong>2.</strong> Aufschreiben, was gegeben ist – und was der Grundwert ist.<br>
+    <strong>3.</strong> Formel notieren und, falls nötig, <em>zuerst</em> umstellen.<br>
+    <strong>4.</strong> Überschlagen, in welcher Größenordnung das Ergebnis liegen muss.<br>
+    <strong>5.</strong> Rechnen, ohne zwischendurch zu runden.<br>
+    <strong>6.</strong> Probe machen, Einheit anhängen, Ergebnis in einem Satz deuten.</p>
+  </div>
+
+  <div class="block lernziel" data-notiz="ziel-abschluss">
+    <div class="b-label">Wenn du fertig bist</div>
+    <p>Drücke <strong>K</strong>, um aus allen Selbstabfragen dieses Kapitels Karteikarten zu ziehen. Alles, was du dabei als „nochmal üben“ markierst, kommt beim nächsten Durchlauf zuerst. Für die eigentlichen Rechenaufgaben gilt: Wiederholung schlägt Verstehen-Wollen. Nimm dir zweimal die Woche zwanzig Minuten und rechne drei Aufgaben aus Abschnitt 6.1 – lieber regelmäßig kurz als einmal lang.</p>
+  </div>
+
+  <div class="abfrage-liste">
+    <div class="abfrage-kopf">Selbstabfrage</div>
+    <details class="abfrage"><summary>Welche sechs Schritte gehst du bei jeder Rechenaufgabe durch?</summary>
+      <div class="antwort"><p>Gesuchtes mit Einheit notieren · Gegebenes und Grundwert notieren · Formel aufschreiben und umstellen · überschlagen · rechnen ohne Zwischenrunden · Probe, Einheit und Deutung.</p></div></details>
+    <details class="abfrage"><summary>Welche drei Regeln aus diesem Kapitel bringen die meisten Punkte?</summary>
+      <div class="antwort"><p>Klammer vor Punkt vor Strich (mit Bruchstrich als Klammer) · beim Grundwert wird geteilt, nicht multipliziert · erst umstellen, dann einsetzen, und nur am Ende runden.</p></div></details>
+    <details class="abfrage"><summary>Welche Kontrolle machst du, bevor du ein Ergebnis hinschreibst?</summary>
+      <div class="antwort"><p>Größenordnung gegen den Überschlag prüfen, die Einheit anhängen und fragen, ob der Wert in der Praxis überhaupt möglich ist.</p></div></details>
+  </div>
+</section>
+
+</main>
+
+<script>window.KAPITEL = {id:'mathe', fach:'werkzeug', nummer:'Basis', titel:'Mathe-Grundlagen'};</script>
+<script src="assets/portal.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lernportal · Fachwirt für Logistiksysteme</title>
+<link rel="stylesheet" href="assets/portal.css">
+</head>
+<body>
+
+<div class="portal-kopf">
+  <div class="eyebrow">Persönliches Lernportal</div>
+  <h1>Fachwirt für <span>Logistiksysteme</span></h1>
+  <p>Alle Kapitel als richtiges Lehrbuch aufbereitet – mit Notizfeldern an jedem Block, Lernstand pro Abschnitt und Selbstabfragen.</p>
+</div>
+
+<div class="portal-body">
+
+  <div class="hier-banner" id="hier-banner" style="display:none"></div>
+
+  <div class="stat-reihe" id="portal-stats"></div>
+
+  <div class="gruppe-label">Kapitel nach Fach</div>
+  <div id="portal-inhalt"></div>
+
+  <div class="gruppe-label">Dein Lernplan</div>
+  <div class="block lernziel" id="lernplan"></div>
+
+  <div class="gruppe-label">Prüfung</div>
+  <div class="tab">
+    <table>
+      <thead>
+        <tr><th>Prüfungsteil</th><th>Dozent</th><th class="num">Punkte</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Logistische Anforderungen ermitteln, analysieren und bewerten <span class="hinweis-klein">(§ 4 Abs. 1)</span></td><td>Benedikt Plab</td><td class="num">30 / 20</td></tr>
+        <tr><td>Logistische Lösungen entwickeln und planen <span class="hinweis-klein">(§ 4 Abs. 2)</span></td><td>Christian Gruber</td><td class="num">35 / 35</td></tr>
+        <tr><td>Logistische Lösungen umsetzen, bewerten und weiterentwickeln <span class="hinweis-klein">(§ 4 Abs. 3)</span></td><td>Raphael Kroul</td><td class="num">20 / 30</td></tr>
+        <tr><td>Kommunikation, Führung und Zusammenarbeit <span class="hinweis-klein">(§ 4 Abs. 4)</span></td><td>Kerstin Gruchala</td><td class="num">15 / 15</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="block merk" style="margin-top:1rem">
+    <div class="b-label">Zugelassene Hilfsmittel</div>
+    <p>Dokumentenechtes Schreibmaterial · Lineal · netzunabhängiger, nicht kommunikationsfähiger Taschenrechner · unkommentierte Gesetzestexte (BGB, HGB, Arbeitsgesetze) · Formelsammlung für kaufmännische Abschlüsse nach BBiG (wird von der IHK gestellt).</p>
+    <p class="hinweis-klein" style="margin-top:.4rem">Rechtsstand: Frühjahrsprüfung 31.12. des Vorjahres · Herbstprüfung 1.1. des laufenden Jahres. Klebezettel, Unterstreichungen und Normenverweise sind erlaubt, Kommentare nicht.</p>
+  </div>
+
+  <div class="gruppe-label">Werkzeuge</div>
+  <div class="kapitel-grid">
+    <a class="kapitel-karte teal" href="notizen.html">
+      <span class="kk-nr">Zentrale</span>
+      <span class="kk-titel">Meine Notizen</span>
+      <span class="kk-desc">Alle Notizen aus allen Kapiteln an einem Ort – durchsuchbar, exportierbar, als Sicherung wiederherstellbar.</span>
+    </a>
+    <a class="kapitel-karte teal" href="aufgaben.html">
+      <span class="kk-nr">Übung</span>
+      <span class="kk-titel">Aufgaben &amp; Lösungen</span>
+      <span class="kk-desc">Prüfungstypische Aufgaben mit vollständigem Rechenweg – fachübergreifend gemischt.</span>
+    </a>
+    <a class="kapitel-karte teal" href="formelsammlung.html">
+      <span class="kk-nr">Referenz</span>
+      <span class="kk-titel">Formelsammlung</span>
+      <span class="kk-desc">Jede Formel mit Bedeutung, Einheiten, typischem Stolperstein und Rechenbeispiel.</span>
+    </a>
+  </div>
+
+  <div class="block lernziel" style="margin-top:1.6rem">
+    <div class="b-label">So arbeitest du im Unterricht damit</div>
+    <ul>
+      <li><strong>Vor der Stunde:</strong> auf der Startseite siehst du im gelben Banner, wo ihr zuletzt wart.</li>
+      <li><strong>Während der Stunde:</strong> im Kapitel auf <strong>📍 wir sind hier</strong> tippen – der Abschnitt wird markiert und die Startseite merkt sich die Stelle. Notizen schreibst du direkt beim jeweiligen Block; sie speichern sich automatisch.</li>
+      <li><strong>Nach der Stunde:</strong> Abschnitte auf <strong>verstanden</strong> oder <strong>nochmal ansehen</strong> setzen. Daraus baut sich dein Lernplan von selbst.</li>
+      <li><strong>Zum Lernen:</strong> Taste <strong>K</strong> im Kapitel startet die Karteikarten aus allen Selbstabfragen.</li>
+    </ul>
+  </div>
+
+</div>
+
+<footer class="portal-foot">
+  Persönliches Lernportal · Fachwirt für Logistiksysteme · Notizen und Lernstände liegen ausschließlich lokal in diesem Browser –
+  <a class="link" href="notizen.html">regelmäßig sichern</a>.
+</footer>
+
+<script src="assets/portal.js" defer></script>
+</body>
+</html>

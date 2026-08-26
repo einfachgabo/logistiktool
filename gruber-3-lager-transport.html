@@ -1,0 +1,1794 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kapitel 1.24–1.36 · Produktion, Lager &amp; Distribution</title>
+<link rel="stylesheet" href="assets/portal.css">
+</head>
+<body class="mit-sidebar">
+
+<aside class="sidebar"></aside>
+
+<main class="inhalt">
+
+<div class="kopf-label">Christian Gruber · Kapitel 1.24–1.36 · Produktion, Lager, Transport und Distribution</div>
+<h1>Produktion, Lager &amp; Distribution</h1>
+<p class="kopf-sub">Der Weg der Ware durch das Unternehmen und wieder hinaus: was in der Produktion gesteuert wird, wie ein Lager aufgebaut ist, wie man es mit Kennzahlen misst, wie kommissioniert, verpackt und entsorgt wird – und wie du am Ende mit einer Nutzwertanalyse begründet entscheidest.</p>
+
+<div class="block lernziel" data-notiz="ziel-kapitel">
+  <div class="b-label">Wenn du hier durch bist, kannst du</div>
+  <ul>
+    <li>Produktions-, Distributions- und Transportlogistik voneinander abgrenzen und ihre Aufgaben nennen</li>
+    <li>die vier Verkehrsträger mit je drei Vor- und Nachteilen vergleichen</li>
+    <li>Lagerarten nach Materialflusskette, Standort und Bauart einordnen und Fördermittel unterscheiden</li>
+    <li>Festplatz-, Freiplatz- und chaotische Lagerhaltung erklären und begründet auswählen</li>
+    <li>FIFO, LIFO, HIFO und LOFO unterscheiden – als Lagerstrategie <em>und</em> als Bewertungsverfahren</li>
+    <li>durchschnittlichen Lagerbestand, Umschlagshäufigkeit, Lagerdauer, Lagerzinssatz, Lagerzinsen, Reichweite und Servicegrad selbst berechnen und die Ergebnisse deuten</li>
+    <li>die Bestandteile der Kommissionierzeit nennen und sagen, an welcher Stellschraube sich Zeit sparen lässt</li>
+    <li>eine Nutzwertanalyse mit gewichteten Kriterien vollständig durchrechnen und die Entscheidung begründen</li>
+  </ul>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════════ -->
+<section class="abschnitt" id="produktionslogistik" data-gruppe="Durch das Unternehmen">
+  <div class="ab-kopf"><h2><span class="ab-nr">1.24</span>Produktionslogistik</h2></div>
+
+  <div class="block einstieg" data-notiz="ein-produktionslogistik">
+    <div class="b-label">Worum es geht</div>
+    <p>Stell dir eine Halle vor, in der Fahrradrahmen gebaut werden. Ganz links kommen Rohre an, ganz rechts fährt ein Lkw mit fertigen Rahmen weg. Dazwischen liegen Sägen, Schweißroboter, eine Lackierkabine und ein Prüfplatz. Die Frage, um die sich die Produktionslogistik dreht, ist einfach zu stellen und schwer zu beantworten: <strong>Wie kommt das richtige Teil zur richtigen Maschine, im richtigen Moment, ohne dass irgendwo ein Haufen entsteht und ohne dass irgendwo jemand wartet?</strong></p>
+    <p>Alles, was zwischen Wareneingang und Fertigwarenlager passiert, gehört hierher. Beschaffung ist der Weg hinein, Distribution der Weg hinaus – Produktionslogistik ist der Weg <em>hindurch</em>.</p>
+  </div>
+
+  <div class="block def" data-notiz="def-produktionslogistik">
+    <div class="b-label">Definition</div>
+    <div class="b-term">Produktionslogistik</div>
+    <p>Alle Maßnahmen zur Sicherstellung eines <strong>optimalen Informations- und Materialflusses im Transformationsprozess der Produktion</strong>. „Transformationsprozess“ ist dabei der Fachausdruck dafür, dass aus Einsatzstoffen ein anderes, wertvolleres Gut wird – aus Rohr, Blech und Farbe wird ein Rahmen.</p>
+  </div>
+
+  <h3>Die Strategie des Fließens</h3>
+  <p>Hinter allen Aufgaben der Produktionslogistik steht ein einziger Leitgedanke: <strong>Material und Information sollen fließen, nicht stehen.</strong> Jedes Zwischenlager in der Fertigung ist Material, das Geld kostet und keinen Nutzen stiftet. Jeder Stapel vor einer Maschine ist ein Hinweis darauf, dass die Takte davor und danach nicht zusammenpassen.</p>
+  <p>Aus diesem Leitgedanken leiten sich die fünf Aufgaben ab, die Gruber im Skript nennt. Lies sie nicht als Liste, sondern als fünf Antworten auf die Frage „Was stört das Fließen?“.</p>
+
+  <div class="tab" data-notiz="tab-aufgaben-produktionslogistik">
+    <table>
+      <thead><tr><th>Aufgabe</th><th>Was dahintersteckt</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Kundennahe Fertigung</strong></td><td>Möglichst spät im Prozess festlegen, was das Produkt für einen konkreten Kunden wird. Wer erst am Ende individualisiert, braucht weniger Varianten auf Lager und kann trotzdem schnell liefern.</td></tr>
+        <tr><td><strong>Steigerung der Flexibilität der Fertigung</strong></td><td>Kurze Rüstzeiten, mehrfach qualifizierte Mitarbeitende, wandelbare Anlagen. Nur eine flexible Fertigung kann kleine Lose wirtschaftlich bauen – und kleine Lose sind die Voraussetzung für niedrige Bestände.</td></tr>
+        <tr><td><strong>Reduzierung der Durchlaufzeiten</strong></td><td>Die Durchlaufzeit besteht zum größten Teil aus Liege- und Wartezeit, nicht aus Bearbeitungszeit. Wer Durchlaufzeit senken will, greift zuerst die Wartezeiten an, nicht die Maschinengeschwindigkeit.</td></tr>
+        <tr><td><strong>Optimale Gestaltung der Transportabläufe</strong></td><td>Innerbetrieblicher Transport erzeugt keinen Wert, sondern nur Kosten. Ziel: möglichst wenige, möglichst kurze, möglichst automatisierte Wege.</td></tr>
+        <tr><td><strong>Verbesserung des Layouts</strong></td><td>Layout heißt: Anordnung der Betriebsmittel im Raum. Maschinen, die nacheinander gebraucht werden, sollten nebeneinander stehen. Ein schlechtes Layout kostet jeden Tag Transportzeit, die man nie mehr zurückholt.</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="block def" data-notiz="def-durchlaufzeit">
+    <div class="b-label">Definition</div>
+    <div class="b-term">Durchlaufzeit</div>
+    <p>Die Zeitspanne vom Beginn des ersten Arbeitsgangs bis zur Fertigstellung des letzten Arbeitsgangs eines Auftrags. Sie setzt sich zusammen aus <strong>Bearbeitungszeit, Rüstzeit, Transportzeit und Liegezeit</strong>. In vielen Betrieben ist die reine Bearbeitungszeit weniger als ein Zehntel der Durchlaufzeit – der Rest ist Warten.</p>
+  </div>
+
+  <div class="block beispiel" data-notiz="bsp-layout-rahmenbau">
+    <div class="b-label">Beispiel aus der Praxis</div>
+    <p>Die Nordwind Rad GmbH fertigt Fahrradrahmen. Historisch gewachsen steht die Lackierkabine am hinteren Hallenende, weil dort schon die Absauganlage war. Der Schweißplatz ist vorn. Jeder Rahmen fährt deshalb 70 Meter mit dem Stapler zur Lackierung und 70 Meter zurück zur Endmontage.</p>
+    <p>Bei 180 Rahmen am Tag und 4 Minuten je Staplerfahrt sind das <strong>24 Stunden Staplerzeit pro Tag</strong> – drei volle Schichten nur für Wege, die nichts am Produkt verbessern. Zusätzlich stapeln sich vor der Lackierkabine ständig 60 bis 80 Rahmen, weil der Stapler in Fuhren fährt und die Kabine in Chargen arbeitet. Diese Rahmen sind Kapital, das im Weg steht.</p>
+    <p>Die Produktionslogistik greift hier an zwei Punkten an: <strong>Layout</strong> – Lackierung in die Linie holen, notfalls die Absaugung verlegen. Und <strong>Transportablauf</strong> – statt Staplerfuhren eine Rollenbahn, die einzeln und kontinuierlich fördert. Ergebnis: kürzere Wege, kleinerer Puffer, kürzere Durchlaufzeit.</p>
+  </div>
+
+  <div class="block achtung" data-notiz="ach-produktion-vs-produktionslogistik">
+    <div class="b-label">Typische Verwechslung</div>
+    <p><strong>Produktion</strong> und <strong>Produktionslogistik</strong> sind nicht dasselbe. Die Produktion verändert das Produkt – sie sägt, schweißt, lackiert. Die Produktionslogistik verändert das Produkt nie; sie sorgt nur dafür, dass Material und Informationen zur richtigen Zeit am richtigen Platz sind. Wenn in einer Prüfungsaufgabe steht „Die Schweißnaht reißt“, ist das ein Produktions- bzw. Qualitätsproblem. Steht dort „Die Schweißerei wartet auf Rohre“, ist es Produktionslogistik.</p>
+  </div>
+
+  <div class="block pruefung" data-notiz="pru-produktionslogistik">
+    <div class="b-label">So kommt das in der Prüfung</div>
+    <p>Meist als Definitions- plus Aufzählungsfrage: „Erläutern Sie den Begriff Produktionslogistik und nennen Sie vier Aufgaben.“ Die Definition mit den Stichworten <em>Informations- und Materialfluss</em> und <em>Transformationsprozess der Produktion</em> bringt den ersten Punkt, jede erläuterte Aufgabe einen weiteren. Wichtig: erläutern heißt <strong>Aufgabe nennen und in einem Halbsatz begründen</strong> – reine Aufzählung gibt selten die volle Punktzahl.</p>
+  </div>
+
+  <div class="abfrage-liste">
+    <div class="abfrage-kopf">Selbstabfrage</div>
+    <details class="abfrage"><summary>Definiere Produktionslogistik in einem Satz.</summary>
+      <div class="antwort"><p>Alle Maßnahmen zur Sicherstellung eines optimalen Informations- und Materialflusses im Transformationsprozess der Produktion.</p></div></details>
+    <details class="abfrage"><summary>Nenne fünf Aufgaben der Produktionslogistik.</summary>
+      <div class="antwort"><p>Kundennahe Fertigung, Steigerung der Flexibilität der Fertigung, Reduzierung der Durchlaufzeiten, optimale Gestaltung der Transportabläufe, Verbesserung des Layouts.</p></div></details>
+    <details class="abfrage"><summary>Woraus setzt sich die Durchlaufzeit zusammen und welcher Anteil ist meist der größte?</summary>
+      <div class="antwort"><p>Aus Bearbeitungs-, Rüst-, Transport- und Liegezeit. Der größte Anteil ist in der Regel die Liege- bzw. Wartezeit – dort liegt auch das größte Einsparpotenzial.</p></div></details>
+    <details class="abfrage"><summary>Warum ist das Layout eine logistische und keine rein bauliche Frage?</summary>
+      <div class="antwort"><p>Weil die Anordnung der Betriebsmittel festlegt, wie lang die innerbetrieblichen Transportwege sind. Jeder Meter Weg erzeugt täglich Transportzeit und Kosten, ohne den Wert des Produkts zu erhöhen.</p></div></details>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════ -->
+<section class="abschnitt" id="distributionslogistik" data-gruppe="Durch das Unternehmen">
+  <div class="ab-kopf"><h2><span class="ab-nr">1.25</span>Distributionslogistik und Absatzwege</h2></div>
+
+  <div class="block einstieg" data-notiz="ein-distributionslogistik">
+    <div class="b-label">Worum es geht</div>
+    <p>Der Rahmen ist fertig, lackiert, geprüft. Ab jetzt gehört er nicht mehr der Produktion, sondern dem Vertrieb – und der Weg vom Fertigwarenlager bis in die Hand des Kunden ist die <strong>Distributionslogistik</strong>. Sie beantwortet drei Fragen: Über welchen Weg verkaufe ich? Womit transportiere ich? Und wie schnell und zuverlässig muss das sein?</p>
+    <p>Das Wort „Distribution“ kommt vom lateinischen <em>distribuere</em> – verteilen. Genau darum geht es: aus einem Punkt (dem Werk) viele Punkte (die Kunden) beliefern.</p>
+  </div>
+
+  <div class="block def" data-notiz="def-distributionslogistik">
+    <div class="b-label">Definition</div>
+    <div class="b-term">Distributionslogistik</div>
+    <p>Die Planung und Durchführung aller Maßnahmen zur optimalen Gestaltung der <strong>Übernahme verkaufsfähiger Güter aus der Produktion</strong> und deren <strong>termin- und mengentreuer Weiterleitung an den Kunden</strong>.</p>
+  </div>
+
+  <h3>Die Aufgaben im Einzelnen</h3>
+  <div class="raster">
+    <div class="karte blue"><div class="k-titel">Servicegrad erhöhen</div><div class="k-text">Wie viele Kundenaufträge werden sofort und vollständig beliefert? Der Servicegrad ist die zentrale Leistungsgröße der Distribution – und wird in Abschnitt 1.31.4 gerechnet.</div></div>
+    <div class="karte blue"><div class="k-titel">Wahl des Transportmittels</div><div class="k-text">Straße, Schiene, Wasser, Luft – oder eine Kombination. Entscheidet über Kosten, Geschwindigkeit und Zuverlässigkeit.</div></div>
+    <div class="karte blue"><div class="k-titel">Wahl des Absatzweges</div><div class="k-text">Direkt zum Kunden oder indirekt über Zwischenlager, Groß- und Einzelhandel.</div></div>
+    <div class="karte blue"><div class="k-titel">Ladungsart festlegen</div><div class="k-text">Komplettladung, Teilladung oder Stückgut – abhängig von Menge, Termin und Kosten je Sendung.</div></div>
+  </div>
+
+  <h3>Direkter und indirekter Absatzweg</h3>
+  <p>Der Absatzweg beschreibt, über wie viele Stationen die Ware vom Hersteller zum Endverbraucher läuft. Es ist zuerst eine Vertriebsentscheidung – aber sie legt die gesamte Logistik dahinter fest. Wer direkt an Endkunden liefert, verschickt Tausende Kleinsendungen. Wer über den Handel geht, verschickt wenige Paletten. Das sind zwei völlig verschiedene Logistiksysteme.</p>
+
+  <div class="tab" data-notiz="tab-absatzwege">
+    <table>
+      <thead><tr><th>Absatzweg</th><th>Prinzip</th><th>Formen und Beispiele</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Direkter Absatzweg</strong></td><td>Der Hersteller verkauft <strong>ohne Zwischenhandel</strong> an den Endverbraucher. Typisch bei Investitionsgütern und Dienstleistungen, weil dort Beratung und Anpassung nötig sind.</td><td>Verkaufsniederlassungen und Flagshipstores (Gerry Weber, Adidas, Zara) · Reisende im Außendienst · Direktbestellung · Direktvertrieb im Konsumbereich (Avon, Vorwerk, Tupper)</td></tr>
+        <tr><td><strong>Indirekter Absatzweg</strong></td><td>Der Hersteller verkauft über <strong>Handelsstufen</strong>. Ziel ist der größtmögliche Absatzraum – man erreicht Kunden, die man selbst nie ansprechen könnte.</td><td><strong>Großhandel:</strong> Sortimentsgroßhandel (Pharma), Spezialgroßhandel, Cash-und-Carry (Metro, Selgros) · <strong>Einzelhandel:</strong> Warenhaus (Galeria), Fachgeschäft, Discounter (Aldi, Lidl, Norma), Versandhandel (Amazon, Otto), Shopping Malls</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="block def" data-notiz="def-distributionsquote">
+    <div class="b-label">Definition</div>
+    <div class="b-term">Distributionsquote</div>
+    <p>Kennzahl des indirekten Absatzweges. Sie gibt an, <strong>in wie vielen der in Frage kommenden Verkaufsstellen ein Produkt tatsächlich geführt wird</strong>. Eine Distributionsquote von 60 % heißt: In sechs von zehn möglichen Geschäften steht das Produkt im Regal. Sie misst also die Marktabdeckung, nicht den Umsatz.</p>
+  </div>
+
+  <div class="block beispiel" data-notiz="bsp-absatzweg-vergleich">
+    <div class="b-label">Beispiel aus der Praxis</div>
+    <p>Die Nordwind Rad GmbH verkauft ihre Rahmen bisher <strong>indirekt</strong>: 240 Fahrradhändler bestellen paletten- oder halbpalettenweise, die Auslieferung läuft über eine Spedition als Teilladung. Kalkuliert sind 14 € Logistikkosten je Rahmen, die Händlermarge liegt bei 35 %.</p>
+    <p>Nun soll ein eigener Onlineshop dazukommen – ein <strong>direkter</strong> Absatzweg. Die Marge bleibt im Haus, das klingt zunächst gut. Die logistische Rechnung sieht anders aus: statt 240 Sammelsendungen pro Woche gehen jetzt einzelne Rahmen als Paketsendung raus. Jeder braucht eine eigene, sturzsichere Verpackung, ein eigenes Label, eine eigene Retourenabwicklung. Die Logistikkosten je Rahmen steigen auf rund 38 €.</p>
+    <p>Die Entscheidung ist deshalb keine reine Vertriebsentscheidung: Ein zusätzlicher Absatzweg verändert Verpackung, Kommissionierung, Lagerstruktur und Servicegrad gleichzeitig. Genau diese Kette musst du in einer Prüfungsaufgabe aufzeigen.</p>
+  </div>
+
+  <div class="block achtung" data-notiz="ach-absatzweg-transportweg">
+    <div class="b-label">Typische Verwechslung</div>
+    <p><strong>Absatzweg</strong> ist nicht <strong>Transportweg</strong>. Der Absatzweg beschreibt die <em>wirtschaftlichen Stationen</em> (wer kauft und verkauft an wen), der Transportweg die <em>physische Strecke</em>. Beides kann auseinanderfallen: Beim Streckengeschäft kauft der Händler die Ware (indirekter Absatzweg), der Hersteller liefert sie aber direkt an den Endkunden (direkter Transportweg).</p>
+  </div>
+
+  <div class="block pruefung" data-notiz="pru-distribution">
+    <div class="b-label">So kommt das in der Prüfung</div>
+    <p>Häufige Aufgabe: „Das Unternehmen erwägt den Aufbau eines Direktvertriebs. Beurteilen Sie die logistischen Auswirkungen.“ Erwartet werden beide Seiten – Vorteile (höhere Marge, direkter Kundenkontakt, eigene Daten) und logistische Folgen (Kleinmengen statt Paletten, höhere Verpackungs- und Versandkosten, Retourenprozess, höherer Servicegrad nötig). Vier Aufgaben der Distributionslogistik solltest du zusätzlich frei aufzählen können.</p>
+  </div>
+
+  <div class="abfrage-liste">
+    <div class="abfrage-kopf">Selbstabfrage</div>
+    <details class="abfrage"><summary>Definiere Distributionslogistik.</summary>
+      <div class="antwort"><p>Planung und Durchführung aller Maßnahmen zur optimalen Übernahme verkaufsfähiger Güter aus der Produktion und deren termin- und mengentreuer Weiterleitung an den Kunden.</p></div></details>
+    <details class="abfrage"><summary>Nenne vier Aufgaben der Distributionslogistik.</summary>
+      <div class="antwort"><p>Erhöhung des Servicegrades, Wahl der Transportmittel, Wahl des Absatzweges (direkt oder indirekt über Zwischenlager), Entscheidung über Komplett-, Teil- oder Stückgutladung.</p></div></details>
+    <details class="abfrage"><summary>Was unterscheidet direkten und indirekten Absatzweg?</summary>
+      <div class="antwort"><p>Direkt: Verkauf ohne Zwischenhandel an den Endverbraucher (Niederlassungen, Flagshipstores, Reisende, Direktbestellung). Indirekt: Verkauf über Groß- und Einzelhandel mit dem Ziel eines größtmöglichen Absatzraums.</p></div></details>
+    <details class="abfrage"><summary>Was sagt die Distributionsquote aus?</summary>
+      <div class="antwort"><p>Wie stark ein Produkt im Handel vertreten ist – also in wie vielen der möglichen Verkaufsstellen es tatsächlich geführt wird.</p></div></details>
+    <details class="abfrage"><summary>Warum steigen die Logistikkosten je Stück beim Wechsel vom indirekten zum direkten Absatz meist an?</summary>
+      <div class="antwort"><p>Weil aus wenigen Sammelsendungen (Paletten an Händler) viele Einzelsendungen an Endkunden werden. Das erhöht Verpackungs-, Kommissionier- und Versandaufwand je Stück und erfordert zusätzlich eine Retourenabwicklung.</p></div></details>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════ -->
+<section class="abschnitt" id="transportlogistik" data-gruppe="Durch das Unternehmen">
+  <div class="ab-kopf"><h2><span class="ab-nr">1.26</span>Transportlogistik und die Verkehrsträger im Vergleich</h2></div>
+
+  <div class="block einstieg" data-notiz="ein-transportlogistik">
+    <div class="b-label">Worum es geht</div>
+    <p>Eine Palette Fahrradrahmen muss von Nürnberg nach Barcelona. Du hast vier Möglichkeiten und für jede spricht etwas. Der Lkw fährt von Tür zu Tür, braucht aber drei Tage und steht im Stau. Die Bahn ist günstiger und umweltfreundlicher, aber du musst zweimal umladen und hältst dich an ihren Fahrplan. Das Schiff wäre am billigsten, dauert aber Wochen. Das Flugzeug wäre morgen da und kostet ein Vielfaches.</p>
+    <p>Genau diese Abwägung ist Transportlogistik. Es gibt kein „bestes“ Transportmittel – es gibt nur das für diese Sendung, diesen Termin und dieses Budget passende.</p>
+  </div>
+
+  <div class="block def" data-notiz="def-verkehrstraeger">
+    <div class="b-label">Definition</div>
+    <div class="b-term">Verkehrsträger, Verkehrsmittel, Transportsystem</div>
+    <p><strong>Verkehrsträger</strong> ist der Verkehrsweg mit seiner Infrastruktur – Straße, Schiene, Wasser, Luft. <strong>Verkehrsmittel</strong> ist das Fahrzeug darauf – Lkw, Güterwaggon, Containerschiff, Frachtflugzeug. Ein <strong>Transportsystem</strong> ist die Gesamtheit aus Weg, Mittel, Umschlagpunkten und Steuerung. Man unterscheidet <strong>interne Transportsysteme</strong> (innerbetrieblich, zum Beispiel Stapler und Förderbänder) und <strong>externe Transportsysteme</strong> (außerbetrieblich, zwischen Standorten).</p>
+  </div>
+
+  <h3>Die vier Verkehrsträger</h3>
+  <p>Die folgende Tabelle ist eine der am häufigsten abgefragten Stellen im gesamten Gruber-Skript. Lerne sie nicht auswendig, sondern verstehe die Logik dahinter: Je größer und starrer das Transportmittel, desto billiger pro Tonne und desto unflexibler. Je kleiner und beweglicher, desto teurer pro Tonne und desto flexibler.</p>
+
+  <div class="tab" data-notiz="tab-verkehrstraeger">
+    <table>
+      <thead><tr><th>Verkehrsträger</th><th>Vorteile</th><th>Nachteile</th></tr></thead>
+      <tbody>
+        <tr>
+          <td><strong>Straße</strong><br><span class="hinweis-klein">Lkw, Sattelzug, Transporter</span></td>
+          <td>Geringe Stillstands- und Wartezeiten · flexibler einsetzbar · flächendeckendes Güterverteilnetz · Haus-zu-Haus-Beförderung möglich</td>
+          <td>Hohe Transportkosten je Tonnenkilometer · Unfälle und Staus · Termine können dadurch nicht eingehalten werden · Mengenlimitierung bei Gefahrgut · Fahrverbote an Sonn- und Feiertagen · Umweltbeeinträchtigung</td>
+        </tr>
+        <tr>
+          <td><strong>Schiene</strong><br><span class="hinweis-klein">Güterwaggon, Ganzzug</span></td>
+          <td>Keine Staus · hohe Verkehrssicherheit · schwere und sperrige Güter transportierbar · umweltfreundlich</td>
+          <td>Wenig flexibel · Fahrplanbindung · häufige Umladungen, da meist kein Gleisanschluss beim Kunden</td>
+        </tr>
+        <tr>
+          <td><strong>Seefracht</strong><br><span class="hinweis-klein">Containerschiff, Massengutfrachter</span></td>
+          <td>Kostengünstig · sehr große Transportkapazität</td>
+          <td>Häfen müssen verfügbar sein · Havariegefahr · Witterungsabhängigkeit · seewasserfeste Verpackung erforderlich · lange Laufzeiten</td>
+        </tr>
+        <tr>
+          <td><strong>Luftfracht</strong><br><span class="hinweis-klein">Frachtflugzeug, Beiladung</span></td>
+          <td>Schnell · hohe Sicherheit · Direktanlieferung möglich, etwa per Helikopter</td>
+          <td>Hohe Kosten pro Kilometer · hohe Umweltbelastung · Anlieferung nicht immer direkt (Flughafen liegt selten am Produktionsstandort) · aufwendige Dokumentation</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="block def" data-notiz="def-kombinierter-verkehr">
+    <div class="b-label">Definition</div>
+    <div class="b-term">Kombinierter Verkehr</div>
+    <p>Die Nutzung <strong>verschiedener Transportmittel innerhalb einer Transportkette</strong>, ohne dass die Ware selbst umgeladen wird – umgeladen wird nur die Ladeeinheit, also Container, Wechselbrücke oder Sattelauflieger. Typisch ist die Kombination Lkw – Bahn – Lkw: Der Lkw übernimmt den Vor- und Nachlauf (Haus zu Terminal), die Bahn den kostengünstigen Hauptlauf.</p>
+  </div>
+
+  <div class="block merk" data-notiz="merk-vor-haupt-nachlauf">
+    <div class="b-label">Vorlauf, Hauptlauf, Nachlauf</div>
+    <p>Der <strong>Vorlauf</strong> bringt die Ware vom Versender zum Umschlagpunkt. Der <strong>Hauptlauf</strong> ist die lange, kostengünstige Strecke mit dem großen Verkehrsmittel. Der <strong>Nachlauf</strong> bringt sie vom Zielumschlagpunkt zum Empfänger. Kombinierter Verkehr versucht immer, den Hauptlauf auf das billigste Verkehrsmittel zu legen und die Flexibilität nur dort einzukaufen, wo sie wirklich gebraucht wird – am Anfang und am Ende.</p>
+  </div>
+
+  <h3>Komplettladung, Teilladung, Stückgut</h3>
+  <p>Neben dem Verkehrsträger musst du entscheiden, wie deine Sendung im Fahrzeug liegt. Das ist keine Kleinigkeit – es entscheidet über Preis, Laufzeit und Schadensrisiko.</p>
+
+  <div class="tab" data-notiz="tab-ladungsarten">
+    <table>
+      <thead><tr><th>Ladungsart</th><th>Prinzip</th><th>Wirkung</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Komplettladung</strong> (FTL)</td><td>Eine Sendung füllt das Fahrzeug allein. Direktfahrt vom Versender zum Empfänger.</td><td>Günstigster Preis je Tonne, schnellste Laufzeit, kein Umschlag und damit geringes Schadensrisiko. Setzt aber ausreichend Menge voraus.</td></tr>
+        <tr><td><strong>Teilladung</strong> (LTL)</td><td>Mehrere größere Sendungen teilen sich ein Fahrzeug, meist wenige Stopps.</td><td>Mittlerer Preis, etwas längere Laufzeit, wenige Umschläge.</td></tr>
+        <tr><td><strong>Stückgut</strong></td><td>Einzelne Packstücke oder Paletten laufen über ein Netz aus Umschlagpunkten (Hubs) mit Sammel- und Verteilverkehr.</td><td>Für kleine Mengen die einzig bezahlbare Lösung, dafür höchster Preis je Tonne, mehrere Umschläge, längere Laufzeit und höheres Schadensrisiko.</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="block beispiel" data-notiz="bsp-verkehrstraegerwahl">
+    <div class="b-label">Beispiel aus der Praxis</div>
+    <p>Nordwind Rad hat zwei Sendungen nach Barcelona. <strong>Sendung 1:</strong> 26 Paletten Rahmen für einen Großhändler, Liefertermin in zwölf Tagen. <strong>Sendung 2:</strong> ein Prototyp für eine Messe, die übermorgen beginnt.</p>
+    <p>Für Sendung 1 füllt die Menge einen Sattelzug – also Komplettladung. Wegen der langen Frist bietet sich der kombinierte Verkehr an: Lkw zum Terminal Nürnberg, Bahn bis Barcelona, Lkw zum Kunden. Teurer Vorlauf und Nachlauf, billiger Hauptlauf, keine Fahrverbotsprobleme am Wochenende, deutlich bessere CO₂-Bilanz.</p>
+    <p>Für Sendung 2 ist der Wert der Zeit größer als der Preis der Fracht. Ein einzelner Rahmen als Luftfracht kostet ein Vielfaches – aber ein verpasster Messeauftritt kostet mehr. <strong>Die Lehre daraus:</strong> Verkehrsträgerwahl ist nie eine reine Frachtkostenrechnung, sondern eine Abwägung von Frachtkosten, Kapitalbindung während der Laufzeit und den Kosten des Zuspätkommens.</p>
+  </div>
+
+  <div class="block achtung" data-notiz="ach-schiene-immer-besser">
+    <div class="b-label">Typische Verwechslung</div>
+    <p>„Die Bahn ist umweltfreundlich, also ist sie die bessere Wahl“ – das ist in der Prüfung eine halbe Antwort. Die Bahn ist <strong>fahrplangebunden</strong> und braucht in der Regel Vor- und Nachlauf per Lkw, weil kaum ein Kunde einen Gleisanschluss hat. Jede zusätzliche Umladung kostet Zeit, Geld und erhöht das Beschädigungsrisiko. Bei kurzen Strecken oder engen Terminen kann der Lkw trotz schlechterer Umweltbilanz die wirtschaftlich richtige Wahl sein.</p>
+  </div>
+
+  <div class="block pruefung" data-notiz="pru-verkehrstraeger">
+    <div class="b-label">So kommt das in der Prüfung</div>
+    <p>Gruber fragt regelmäßig: „Nennen Sie je drei Vor- und Nachteile der Seefracht“ oder „Begründen Sie die Wahl des Verkehrsträgers für die beschriebene Sendung.“ Bei der Begründungsvariante gibt es Punkte für die <strong>Bezugnahme auf den Fall</strong>: Nenne Menge, Termin, Wert und Empfindlichkeit der Ware und leite daraus ab. Eine gute Formel für die Antwort: „Weil die Sendung <em>[Menge]</em> beträgt und der Termin <em>[Frist]</em> zulässt, ist <em>[Verkehrsträger]</em> geeignet, denn <em>[Vorteil]</em>. Der Nachteil <em>[Nachteil]</em> fällt hier nicht ins Gewicht, weil …“</p>
+  </div>
+
+  <div class="abfrage-liste">
+    <div class="abfrage-kopf">Selbstabfrage</div>
+    <details class="abfrage"><summary>Nenne drei Vorteile und drei Nachteile des Straßenverkehrs.</summary>
+      <div class="antwort"><p>Vorteile: geringe Stillstands- und Wartezeiten, flexibel einsetzbar, flächendeckendes Güterverteilnetz, Haus-zu-Haus-Beförderung. Nachteile: hohe Transportkosten, Staus und Unfälle mit Terminrisiko, Gefahrgutlimits, Fahrverbote an Sonn- und Feiertagen, Umweltbelastung.</p></div></details>
+    <details class="abfrage"><summary>Warum ist die Schiene trotz ihrer Vorteile oft nicht die erste Wahl?</summary>
+      <div class="antwort"><p>Wegen der Fahrplanbindung, der geringen Flexibilität und der häufigen Umladungen – die meisten Versender und Empfänger haben keinen eigenen Gleisanschluss.</p></div></details>
+    <details class="abfrage"><summary>Was ist kombinierter Verkehr und was ist der Vor-, Haupt- und Nachlauf?</summary>
+      <div class="antwort"><p>Kombinierter Verkehr nutzt mehrere Transportmittel in einer Kette, wobei nur die Ladeeinheit umgeschlagen wird. Vorlauf: Versender bis Umschlagpunkt. Hauptlauf: lange, günstige Strecke mit dem großen Verkehrsmittel. Nachlauf: Umschlagpunkt bis Empfänger.</p></div></details>
+    <details class="abfrage"><summary>Wann wählt man Stückgut statt Komplettladung?</summary>
+      <div class="antwort"><p>Wenn die Sendungsmenge zu klein ist, um ein Fahrzeug wirtschaftlich zu füllen. Man bezahlt dafür mit höherem Preis je Tonne, mehreren Umschlägen, längerer Laufzeit und höherem Schadensrisiko.</p></div></details>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════ -->
+<section class="abschnitt" id="lagerlogistik-aufgaben" data-gruppe="Das Lager">
+  <div class="ab-kopf"><h2><span class="ab-nr">1.27</span>Lagerlogistik – Aufgaben und Funktionen</h2></div>
+
+  <div class="block einstieg" data-notiz="ein-lagerlogistik">
+    <div class="b-label">Worum es geht</div>
+    <p>Wenn du noch nie ein Lager von innen gesehen hast: Stell dir eine Halle so groß wie zwei Fußballfelder vor. An einer Längsseite reihen sich Tore, an denen Lkw rückwärts andocken. Dahinter eine Fläche voller Paletten, die gerade abgeladen wurden. Weiter hinten Regale, zehn Meter hoch, in langen Gassen. Zwischen ihnen fahren Stapler. Am anderen Ende der Halle stehen wieder Tore, davor fertig gepackte Paletten mit Adressetiketten. Und in einem Glasbüro sitzen Leute, die auf Bildschirme schauen und wissen, wo jede einzelne Palette liegt.</p>
+    <p>Das ist ein Lager. Und es ist kein Abstellraum, sondern ein <strong>Puffer, der Zeit überbrückt</strong> – zwischen dem Moment, in dem Ware verfügbar ist, und dem Moment, in dem sie gebraucht wird.</p>
+  </div>
+
+  <div class="block def" data-notiz="def-lager">
+    <div class="b-label">Definition</div>
+    <div class="b-term">Lager</div>
+    <p>Ein Lager ist eine Einrichtung zur <strong>zeitlichen Überbrückung zwischen Zugang und Abgang von Gütern</strong>. Es entkoppelt zwei Prozesse, die unterschiedlich schnell oder zu unterschiedlichen Zeitpunkten arbeiten. Ein <strong>Logistikzentrum</strong> ist ein Lager, das zusätzlich umfangreiche Umschlag-, Kommissionier- und Mehrwertleistungen erbringt.</p>
+  </div>
+
+  <h3>Die vier Kernaufgaben eines Lagers</h3>
+  <p>Egal wie groß oder klein: Jedes Lager erfüllt dieselben vier Aufgaben – der Reihe nach, wie die Ware durchläuft.</p>
+
+  <div class="phasen" data-notiz="phasen-lageraufgaben">
+    <div class="phase"><div class="p-nr">1</div><div class="p-name">Wareneingang</div><div class="p-text">Annahme, Identifikation, Mengen- und Qualitätskontrolle, Erfassung im System, Bereitstellung zur Einlagerung</div></div>
+    <div class="phase"><div class="p-nr">2</div><div class="p-name">Materiallagerung</div><div class="p-text">Sichere, ordnungsgemäße und wiederauffindbare Aufbewahrung am zugewiesenen Lagerplatz</div></div>
+    <div class="phase"><div class="p-nr">3</div><div class="p-name">Materialabgang</div><div class="p-text">Auslagerung, Kommissionierung, Bereitstellung, Verpackung und Versand</div></div>
+    <div class="phase"><div class="p-nr">4</div><div class="p-name">Lagerverwaltung</div><div class="p-text">Bestandsführung, Lagerplatzverwaltung, Inventur, Dokumentation, Kennzahlen</div></div>
+  </div>
+
+  <div class="block achtung" data-notiz="ach-lagerverwaltung-quer">
+    <div class="b-label">Nicht als reine Reihenfolge lesen</div>
+    <p>Wareneingang, Lagerung und Abgang laufen tatsächlich nacheinander. Die <strong>Lagerverwaltung</strong> ist aber keine vierte Station am Ende, sondern läuft parallel zu allen dreien mit. Sie ist der Informationsfluss zum Materialfluss. Ohne sie liegt die Ware zwar da – man findet sie nur nicht.</p>
+  </div>
+
+  <h3>Warum lagert man überhaupt? Die vier Funktionen</h3>
+  <p>Lagern kostet Geld: Fläche, Personal, Technik und vor allem gebundenes Kapital. Es muss also einen Grund geben, warum man es trotzdem tut. Gruber nennt vier Funktionen – und jede ist eine andere Antwort auf die Frage „Warum liegt diese Ware hier?“.</p>
+
+  <div class="tab" data-notiz="tab-lagerfunktionen">
+    <table>
+      <thead><tr><th>Funktion</th><th>Begründung</th><th>Beispiel</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Mengenmäßige Anpassung</strong></td><td>Das Lager gleicht Schwankungen in Beschaffung und Absatz sowie innerhalb des betrieblichen Leistungsprozesses aus.</td><td>Ein Streusalzhändler kauft ganzjährig gleichmäßig ein, verkauft aber fast alles in vier Wintermonaten.</td></tr>
+        <tr><td><strong>Zeitliche Anpassung</strong></td><td>Materialien müssen häufig schon vor ihrer Verwendung in der Fertigung bereitstehen, Erzeugnisse schon vor dem Verkauf verfügbar sein.</td><td>Rohre für die Montage am Montag liegen bereits am Freitag im Lager, weil die Anlieferung sonst nicht sicher wäre.</td></tr>
+        <tr><td><strong>Qualitative Anpassung</strong></td><td>Durch die Lagerzeit selbst tritt eine <strong>Wertverbesserung</strong> ein. Das Lager verändert die Ware zum Positiven.</td><td>Holz trocknet, Wein reift, Bananen reifen nach, Käse reift.</td></tr>
+        <tr><td><strong>Wertmäßige Anpassung</strong></td><td>Ausnutzen besonderer Situationen auf dem Beschaffungs- oder Absatzmarkt – ohne zwingende technische oder wirtschaftliche Notwendigkeit. Also <strong>Spekulation</strong>.</td><td>Ein Metallverarbeiter kauft bei einem Kupferpreistief die doppelte Jahresmenge und legt sie ein.</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="block merk" data-notiz="merk-lagerfunktionen">
+    <div class="b-label">Merksatz</div>
+    <p>Die vier Funktionen in vier Wörtern: <strong>Menge – Zeit – Qualität – Wert.</strong> Und der wichtigste Unterschied dazwischen: Bei Menge und Zeit ist das Lager ein <em>notwendiger Ausgleich</em>. Bei Qualität ist es ein <em>Teil der Wertschöpfung</em>. Bei Wert ist es eine <em>freiwillige Wette</em> auf Preisentwicklungen.</p>
+  </div>
+
+  <div class="block beispiel" data-notiz="bsp-vier-funktionen">
+    <div class="b-label">Beispiel aus der Praxis</div>
+    <p>Im Lager von Nordwind Rad liegen vier Dinge nebeneinander, aus vier völlig unterschiedlichen Gründen.</p>
+    <p><strong>Palette 1:</strong> 400 Sättel, angeliefert im Januar, verbaut über das ganze Jahr. Der Lieferant liefert nur in Mindestmengen von 400 – <em>mengenmäßige Anpassung</em>.<br>
+    <strong>Palette 2:</strong> Rahmen, die am Dienstag lackiert werden sollen, angeliefert am Freitag davor, weil die Spedition nur freitags kommt – <em>zeitliche Anpassung</em>.<br>
+    <strong>Palette 3:</strong> Frisch lackierte Rahmen, die 48 Stunden aushärten müssen, bevor sie montiert werden dürfen – <em>qualitative Anpassung</em>.<br>
+    <strong>Palette 4:</strong> Aluminiumrohre, die der Einkauf im doppelten Umfang bestellt hat, weil der Aluminiumpreis gerade auf dem Jahrestief war – <em>wertmäßige Anpassung</em>.</p>
+    <p>In der Prüfung wird genau so gefragt: Ein Sachverhalt wird geschildert, du sollst die Funktion nennen und begründen.</p>
+  </div>
+
+  <div class="block pruefung" data-notiz="pru-lagerfunktionen">
+    <div class="b-label">So kommt das in der Prüfung</div>
+    <p>„Nennen und erläutern Sie die Funktionen eines Lagers“ ist eine klassische Aufzählungsaufgabe mit vier bis acht Punkten. Achte darauf, die <strong>qualitative Anpassung</strong> nicht zu vergessen – sie wird am häufigsten übersehen, weil sie nicht ins Bild vom Lager als reinem Abstellplatz passt. Ebenso beliebt ist die Zuordnungsaufgabe: Vier Sachverhalte, vier Funktionen.</p>
+  </div>
+
+  <div class="abfrage-liste">
+    <div class="abfrage-kopf">Selbstabfrage</div>
+    <details class="abfrage"><summary>Nenne die vier Kernaufgaben eines Lagers.</summary>
+      <div class="antwort"><p>Wareneingang, Materiallagerung, Materialabgang und Lagerverwaltung.</p></div></details>
+    <details class="abfrage"><summary>Nenne die vier Funktionen eines Lagers mit je einem Beispiel.</summary>
+      <div class="antwort"><p>Mengenmäßige Anpassung (Ausgleich von Beschaffungs- und Absatzschwankungen, z. B. Saisonware). Zeitliche Anpassung (Bereitstellung vor der Verwendung). Qualitative Anpassung (Wertverbesserung während der Lagerzeit: Holz, Wein, Bananen). Wertmäßige Anpassung (Ausnutzen von Marktsituationen, Spekulation).</p></div></details>
+    <details class="abfrage"><summary>Welche Lagerfunktion ist keine Notwendigkeit, sondern eine bewusste Wette?</summary>
+      <div class="antwort"><p>Die wertmäßige Anpassung. Sie erfolgt ohne zwingende technische oder wirtschaftliche Gründe, allein um eine Preissituation auszunutzen – also spekulativ.</p></div></details>
+    <details class="abfrage"><summary>Warum ist die Lagerverwaltung keine Station wie die anderen drei?</summary>
+      <div class="antwort"><p>Weil sie nicht nacheinander, sondern parallel zu Wareneingang, Lagerung und Abgang läuft. Sie ist der Informationsfluss zum Materialfluss – Bestandsführung, Lagerplatzverwaltung, Inventur, Dokumentation.</p></div></details>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════ -->
+<section class="abschnitt" id="lagerarten" data-gruppe="Das Lager">
+  <div class="ab-kopf"><h2><span class="ab-nr">1.28</span>Lagerarten – nach Materialflusskette, Standort und Bauart</h2></div>
+
+  <div class="block einstieg" data-notiz="ein-lagerarten">
+    <div class="b-label">Worum es geht</div>
+    <p>„Lager“ ist ein Sammelbegriff für sehr unterschiedliche Dinge. Ein eingezäunter Platz voller Natursteine ist ein Lager. Ein zwölf Meter hohes, vollautomatisches Regalsystem ist auch eins. Damit man in der Prüfung nicht durcheinanderkommt, wird nach <strong>drei unabhängigen Merkmalen</strong> sortiert: Wo in der Materialflusskette steht das Lager? Wo steht es geografisch? Und wie ist es gebaut?</p>
+    <p>Wichtig: Diese drei Fragen schließen sich nicht aus. Ein und dasselbe Lager ist gleichzeitig ein Rohstofflager (Materialflusskette), ein Zentrallager (Standort) und ein Hochregallager (Bauart).</p>
+  </div>
+
+  <p>Welche Lagerorganisation ein Betrieb wählt, hängt laut Skript vor allem von drei Einflussfaktoren ab: der <strong>Materialbeschaffenheit</strong>, der <strong>Fertigungsmethode</strong> und der <strong>Materialflusskette</strong>. Das ist der rote Faden für jede Begründungsaufgabe.</p>
+
+  <h3>1. Nach der Materialflusskette (Lagerstufen)</h3>
+  <p>Diese Einteilung folgt dem Weg der Ware durch das Unternehmen. Sie sagt dir, <em>in welchem Zustand</em> das Material im Lager liegt.</p>
+
+  <div class="tab" data-notiz="tab-lagerstufen">
+    <table>
+      <thead><tr><th>Lagerart</th><th>Inhalt</th><th>Beispiel bei Nordwind Rad</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Rohstofflager</strong></td><td>Eingekaufte Rohstoffe vor der Verarbeitung – gehen unmittelbar in das Produkt ein</td><td>Aluminiumrohre, Bleche</td></tr>
+        <tr><td><strong>Hilfsstofflager</strong></td><td>Materialien, die in geringen Mengen in das Produkt eingehen oder es nicht direkt bilden</td><td>Schweißdraht, Lack, Schrauben</td></tr>
+        <tr><td><strong>Zwischenproduktelager</strong></td><td>Halbfertige Erzeugnisse zwischen zwei Fertigungsstufen</td><td>Geschweißte, noch nicht lackierte Rahmen</td></tr>
+        <tr><td><strong>Fertigproduktelager</strong></td><td>Fertige, verkaufsfähige Ware vor Versand oder Verkauf</td><td>Verpackte Rahmen auf Versandpaletten</td></tr>
+        <tr><td><strong>Abfalllager</strong></td><td>Rückstände, Ausschuss, Recyclingmaterial bis zur Abholung durch den Entsorger</td><td>Aluminiumspäne, Altlack, Kartonagen</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="block achtung" data-notiz="ach-rohstoff-hilfsstoff">
+    <div class="b-label">Typische Verwechslung</div>
+    <p><strong>Rohstoff, Hilfsstoff, Betriebsstoff</strong> werden regelmäßig vertauscht. Der Rohstoff ist der Hauptbestandteil des Produkts (das Aluminiumrohr im Rahmen). Der Hilfsstoff geht ebenfalls ins Produkt ein, aber nur in geringem Umfang und wertmäßig untergeordnet (der Schweißdraht, der Lack). Der Betriebsstoff geht <strong>gar nicht</strong> ins Produkt ein, sondern wird beim Herstellen verbraucht (Strom, Schmieröl, Schutzgas). Merke: Steckt es hinterher im Produkt drin? Rohstoff oder Hilfsstoff. Ist es dabei verbraucht worden? Betriebsstoff.</p>
+  </div>
+
+  <h3>2. Nach dem Standort: zentral oder dezentral</h3>
+  <p>Die Standorte der Läger sind so zu planen, dass die Fertigungsstellen fortlaufend versorgt werden können. Grundsätzlich unterscheidet man <strong>zentrale</strong> Lagerung (ein Lager für alles) und <strong>dezentrale</strong> Lagerung (mehrere Läger nah an den Verbrauchsstellen).</p>
+
+  <div class="tab" data-notiz="tab-zentral-dezentral">
+    <table>
+      <thead><tr><th>Zentrale Lagerung</th><th>Dezentrale Lagerung</th></tr></thead>
+      <tbody>
+        <tr>
+          <td>Keine Mehrfachlagerung desselben Artikels · geringere Kapitalbindung, weil nur ein Sicherheitsbestand nötig ist · bessere Bestandsübersicht und Kontrolle · leichter zu automatisieren · geringerer Dispositionsaufwand · bessere Auslastung der Lagertechnik</td>
+          <td>Geringere Transportkosten zu den Verbrauchsstellen · schnellere Belieferung, kürzere Reaktionszeit · kurze innerbetriebliche Wege · Lagertechnik kann genau auf das Material vor Ort abgestimmt werden · Ausfall eines Lagers legt nicht alles lahm</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="block merk" data-notiz="merk-zentral-dezentral">
+    <div class="b-label">Der Kern des Konflikts</div>
+    <p>Zentral spart <strong>Bestand</strong>, dezentral spart <strong>Weg</strong>. Wer alles an einem Ort lagert, braucht insgesamt weniger Sicherheitsbestand, muss die Ware aber weiter fahren. Wer nah am Verbrauch lagert, ist schnell da, hält dafür an jedem Ort einen eigenen Puffer vor. Es gibt keine allgemein richtige Antwort – die Antwort hängt davon ab, was teurer ist: der Transport oder das gebundene Kapital.</p>
+  </div>
+
+  <h3>3. Nach der Bauart</h3>
+
+  <div class="tab" data-notiz="tab-bauarten">
+    <table>
+      <thead><tr><th>Bauart</th><th>Merkmale</th><th>Typische Güter</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Offene Läger</strong></td><td>Meist eingezäunte Plätze <strong>ohne Schutz vor Witterungseinflüssen</strong>. Nur für Material geeignet, das dadurch keine Qualitätseinbußen erleidet.</td><td>Natursteine, Autos, Rohholz</td></tr>
+        <tr><td><strong>Halboffene Läger</strong></td><td><strong>Überdachte</strong> Lagerflächen, meist für Fertigerzeugnisse, die durch ihre Transportverpackung ohnehin geschützt sind.</td><td>Eisenteile, verpackte Maschinen, Stähle, Erze</td></tr>
+        <tr><td><strong>Geschlossene Läger</strong></td><td>Meist eingeschossige Lagerhallen oder Gebäude. Enthalten Einrichtungen zum Aufbewahren, Fördern, Messen und Wiegen.</td><td>Allgemeines Material, empfindliche Güter</td></tr>
+        <tr><td><strong>Speziallager</strong></td><td>Für Materialien mit besonderen gesetzlichen und technischen Anforderungen. <strong>Strenge Sicherheitsvorschriften, nur besonders geschultes Personal.</strong></td><td>Flüssigkeiten (Treibstoffe, Säuren, Laugen, Lösemittel: Feuer- und Umweltschutz) · Gase (drucksichere Tanks: Feuer- und Explosionsgefahr) · Giftstoffe (belüftete, abschließbare Räume)</td></tr>
+        <tr><td><strong>Mehrgeschosslager</strong></td><td>Lagerung auf mehreren Ebenen. Sinnvoll bei beengten Grundstücksverhältnissen, bei mehrgeschossiger Fertigung oder wenn Fertigungs- und Lagerebenen kurze Versorgungswege ergeben.</td><td>Innerstädtische Standorte, gewachsene Werke</td></tr>
+        <tr><td><strong>Hochregallager</strong></td><td>Wirtschaftliche Lagerung auf großer Höhe, EDV-gesteuert. Material ist leicht wiederauffindbar und in kürzester Zeit verfügbar. Sehr hohe Investitions- und Betriebskosten, aufwendige Förder- und Regaltechnik. FIFO, LIFO und andere Lagerprinzipien sind voll umsetzbar.</td><td>Automatisierte Logistikzentren, Distributionszentren</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="block beispiel" data-notiz="bsp-hochregal-rechnung">
+    <div class="b-label">Beispiel aus der Praxis</div>
+    <p>Nordwind Rad prüft ein automatisches Hochregallager. Das Angebot liegt bei 3,2 Mio. € Investition. Dagegen stehen: 6 statt bisher 14 Lagerkräfte, kein Flächenzukauf nötig, weil in die Höhe statt in die Breite gebaut wird, und eine Fehlerquote bei der Auslagerung, die von 1,2 % auf unter 0,1 % fällt.</p>
+    <p>Genau hier steht der Satz aus dem Skript: <strong>Der Nutzen muss den sehr hohen Investitions- und Betriebskosten gegenübergestellt werden.</strong> Ein Hochregallager rechnet sich nicht durch die Technik, sondern durch die Menge – nur bei hohem, gleichmäßigem Durchsatz wird die Investition je Bewegung klein genug. Bei 30 Auslagerungen am Tag ist es ein teures Denkmal, bei 3.000 ein Wettbewerbsvorteil.</p>
+  </div>
+
+  <div class="block pruefung" data-notiz="pru-lagerarten">
+    <div class="b-label">So kommt das in der Prüfung</div>
+    <p>Zwei Muster kommen immer wieder. Erstens die Systematikfrage: „Nach welchen Kriterien lassen sich Läger einteilen?“ – Antwort: nach der Materialflusskette (Lagerstufen), nach dem Standort, nach der Bauart, nach dem Lagersystem und nach der Einrichtung. Zweitens die Fallfrage: „Welche Lagerart empfehlen Sie für Streusalz / Lösemittel / Neuwagen und warum?“ Dort punktest du mit der Begründung über die <strong>Materialbeschaffenheit</strong>.</p>
+  </div>
+
+  <div class="abfrage-liste">
+    <div class="abfrage-kopf">Selbstabfrage</div>
+    <details class="abfrage"><summary>Nenne die fünf Lagerarten nach der Materialflusskette.</summary>
+      <div class="antwort"><p>Rohstofflager, Hilfsstofflager, Zwischenproduktelager, Fertigproduktelager, Abfalllager.</p></div></details>
+    <details class="abfrage"><summary>Nenne je drei Vorteile der zentralen und der dezentralen Lagerung.</summary>
+      <div class="antwort"><p>Zentral: keine Mehrfachlagerung, geringere Kapitalbindung, bessere Bestandsüberwachung, leichter automatisierbar, geringerer Dispositionsaufwand. Dezentral: geringere Transportkosten, schnellere Belieferung, kurze Wege, besser angepasste Lagertechnik.</p></div></details>
+    <details class="abfrage"><summary>Was unterscheidet ein offenes von einem halboffenen Lager?</summary>
+      <div class="antwort"><p>Das offene Lager ist ein meist eingezäunter Platz ohne Witterungsschutz (Natursteine, Autos, Rohholz). Das halboffene Lager ist überdacht und nimmt vor allem Fertigerzeugnisse auf, die durch ihre Transportverpackung geschützt sind (Eisenteile, verpackte Maschinen).</p></div></details>
+    <details class="abfrage"><summary>Welche drei Gruppen von Materialien verlangen ein Speziallager?</summary>
+      <div class="antwort"><p>Flüssige Materialien (Treibstoffe, Schmierstoffe, Säuren, Laugen, Lösemittel), gasförmige Materialien in drucksicheren Tanks und giftige Stoffe in gut belüfteten, abschließbaren Räumen. Für alle gelten strenge Sicherheitsvorschriften und geschultes Personal.</p></div></details>
+    <details class="abfrage"><summary>Warum ist ein Hochregallager nicht immer die beste Lösung?</summary>
+      <div class="antwort"><p>Weil den Vorteilen – schnelles Wiederauffinden, hohe Flächennutzung, gesicherte Lagerprinzipien – sehr hohe Investitions- und Betriebskosten sowie aufwendige Förder- und Regaltechnik gegenüberstehen. Es rechnet sich erst bei hohem, gleichmäßigem Durchsatz.</p></div></details>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════ -->
+<section class="abschnitt" id="foerdermittel-packmittel" data-gruppe="Das Lager">
+  <div class="ab-kopf"><h2><span class="ab-nr">1.28.1</span>Einrichtung, Fördermittel, Packmittel und Hubs</h2></div>
+
+  <div class="block einstieg" data-notiz="ein-foerdermittel">
+    <div class="b-label">Worum es geht</div>
+    <p>Bis hierher weißt du, <em>wo</em> und <em>wie</em> gelagert wird. Jetzt geht es um das, was in der Halle steht und fährt: die Regale, in denen die Ware liegt, die Behälter, in denen sie steckt, und die Geräte, die sie bewegen. Das klingt nach Technik – ist aber Prüfungsstoff, weil aus der Wahl des Fördermittels direkt folgt, wie schnell und wie teuer dein Materialfluss ist.</p>
+  </div>
+
+  <h3>Einrichtung: Regalarten</h3>
+  <div class="tab" data-notiz="tab-regalarten">
+    <table>
+      <thead><tr><th>Regalart</th><th>Prinzip und Einsatz</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Palettenregal</strong></td><td>Das Standardregal. Jede Palette liegt einzeln auf einem Traversenpaar und ist jederzeit direkt zugänglich. Hoher Flächenbedarf durch die Bediengassen, dafür maximale Zugriffsfreiheit.</td></tr>
+        <tr><td><strong>Durchlaufregal</strong></td><td>Die Ware wird auf der einen Seite eingelagert und rollt auf Röllchenbahnen zur Entnahmeseite. Beschickung und Entnahme sind räumlich getrennt – dadurch ist <strong>FIFO technisch erzwungen</strong>.</td></tr>
+        <tr><td><strong>Verschieberegal</strong></td><td>Regalblöcke stehen auf Schienen und werden zum Zugriff auseinandergefahren. Es gibt nur eine einzige Bediengasse für viele Regalreihen – höchste Flächenausnutzung, dafür langsamer Zugriff.</td></tr>
+        <tr><td><strong>Paternosterregal</strong></td><td>Umlaufregal: Die Fachböden fahren wie in einem Paternosteraufzug zur Bedienperson. Prinzip Ware zum Mann, ideal für Kleinteile.</td></tr>
+        <tr><td><strong>Sonderregale</strong></td><td>Für Material, das nicht auf Paletten passt – Kragarmregale für Langgut (Rohre, Profile), Reifenregale, Fassregale.</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3>Packmittel</h3>
+  <p>Packmittel dienen dazu, Materialien zu transportieren und zu lagern, und schützen sie gleichzeitig. Der entscheidende Punkt aus dem Skript: <strong>Durch genormte Behälter sinken die Kosten für Transport und Lagerung erheblich</strong> – weil genormte Einheiten stapelbar, planbar und maschinell handhabbar sind.</p>
+
+  <div class="raster">
+    <div class="karte teal"><div class="k-titel">Container</div><div class="k-text">Weltweit genormte Großbehälter (ISO). Ermöglichen den Wechsel zwischen Schiff, Bahn und Lkw ohne Umpacken der Ware.</div></div>
+    <div class="karte teal"><div class="k-titel">Collico-Behälter</div><div class="k-text">Faltbare Mehrwegbehälter aus Kunststoff. Leer zusammenlegbar, dadurch günstiger Rücktransport.</div></div>
+    <div class="karte teal"><div class="k-titel">Paletten</div><div class="k-text">Die Europalette mit 1.200 × 800 mm ist die Grundeinheit fast jeder Lagerplanung – Regalmaße, Lkw-Ladeflächen und Staplergabeln sind darauf abgestimmt.</div></div>
+  </div>
+
+  <h3>Fördermittel</h3>
+  <div class="tab" data-notiz="tab-foerdermittel">
+    <table>
+      <thead><tr><th>Gruppe</th><th>Merkmale</th><th>Beispiele</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Flurfördermittel</strong></td><td>Bewegen sich <strong>am Boden</strong>, frei verfahrbar, sehr flexibel einsetzbar. Arbeiten unstetig: Last- und Leerfahrten wechseln sich ab.</td><td>Handgabelhubwagen, Handkarren, Gabelstapler</td></tr>
+        <tr><td><strong>Flurfreie Fördermittel</strong></td><td>Bewegen sich <strong>nicht am Boden</strong>, sondern darüber. Eingesetzt in großen Höhen, bei fehlenden Verkehrswegen und im Schwerlastbereich.</td><td>Krane in Häfen, Containerbahnhöfen, Schwerlastkrane</td></tr>
+        <tr><td><strong>Stetigfördermittel</strong></td><td>Meist <strong>fest installiert</strong>, fördern <strong>kontinuierlich</strong> und in einer festen Richtung. Hohe Leistung auf gleichbleibender Strecke, dafür unflexibel.</td><td>Transportbänder, Rutschen, Rollenbahnen, Kreisförderer</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="block merk" data-notiz="merk-stetig-unstetig">
+    <div class="b-label">Stetig oder unstetig – die eigentliche Unterscheidung</div>
+    <p><strong>Unstetigförderer</strong> wie der Gabelstapler arbeiten in Spielen: hinfahren, aufnehmen, fahren, abgeben, leer zurück. Etwa die Hälfte der Fahrzeit ist Leerfahrt. Sie sind flexibel, aber leistungsbegrenzt.<br>
+    <strong>Stetigförderer</strong> wie das Rollenband fördern ununterbrochen in eine feste Richtung. Sie sind sehr leistungsfähig, aber an ihre Strecke gebunden.<br>
+    <strong>Die Regel:</strong> Gleichbleibende Strecke mit hohem Volumen → Stetigförderer. Wechselnde Ziele und schwankende Mengen → Unstetigförderer. Diese Entscheidung ist genau die, die bei Fließfertigung anders ausfällt als bei Werkstattfertigung.</p>
+  </div>
+
+  <h3>Hubs und Logistikzentren</h3>
+  <div class="block def" data-notiz="def-hub">
+    <div class="b-label">Definition</div>
+    <div class="b-term">Hub</div>
+    <p>Ein Hub ist eine <strong>Hauptumschlagsbasis</strong>, in der Warenströme zusammengeführt und umgeschlagen werden. Statt jeden Versandort mit jedem Empfangsort direkt zu verbinden, laufen alle Ströme über wenige zentrale Knoten – das reduziert die Zahl der nötigen Verbindungen drastisch und bündelt Mengen zu wirtschaftlichen Ladungen.</p>
+  </div>
+
+  <div class="block beispiel" data-notiz="bsp-hub-aufgaben">
+    <div class="b-label">Was ein Hub konkret leistet</div>
+    <p>Ein Paketdienst mit 40 Niederlassungen bräuchte im Direktverkehr 780 Verbindungen zwischen allen Standorten. Über ein einziges Hub sind es 40 – jede Niederlassung fährt nachts hin und wieder zurück. Deshalb heißt das Prinzip <strong>Hub-and-Spoke</strong>: Nabe und Speichen wie beim Fahrradrad.</p>
+    <p>Die Aufgaben eines Hubs bzw. Logistikzentrums nach dem Skript: <strong>Zollabwicklung · Palettenmanagement · Gefahrgutabwicklung · zeitgenaue Auftragsabwicklung · Inhouse-Logistik · Zusammenführen von Lieferungen und deren Verteilung.</strong></p>
+  </div>
+
+  <div class="block achtung" data-notiz="ach-lager-vs-hub">
+    <div class="b-label">Typische Verwechslung</div>
+    <p>Ein <strong>Lager</strong> überbrückt Zeit – Ware liegt dort tagelang oder monatelang. Ein <strong>Hub</strong> überbrückt keine Zeit, sondern bündelt und verteilt: Ware kommt abends an und ist am nächsten Morgen wieder unterwegs. Verweildauern von wenigen Stunden sind normal. Wer ein Hub als „Lager“ beschreibt, hat den Zweck verfehlt.</p>
+  </div>
+
+  <div class="abfrage-liste">
+    <div class="abfrage-kopf">Selbstabfrage</div>
+    <details class="abfrage"><summary>Nenne die drei Gruppen von Fördermitteln mit je einem Beispiel.</summary>
+      <div class="antwort"><p>Flurfördermittel (Handgabelhubwagen, Handkarren, Gabelstapler), flurfreie Fördermittel (Krane in Häfen und Containerbahnhöfen) und Stetigfördermittel (Transportbänder, Rutschen, Rollenbahnen, Kreisförderer).</p></div></details>
+    <details class="abfrage"><summary>Was unterscheidet Stetig- von Unstetigförderern?</summary>
+      <div class="antwort"><p>Stetigförderer sind meist fest installiert und fördern kontinuierlich in fester Richtung – hohe Leistung, geringe Flexibilität. Unstetigförderer arbeiten in Spielen mit abwechselnden Last- und Leerfahrten – flexibel, aber leistungsbegrenzt.</p></div></details>
+    <details class="abfrage"><summary>Welche Regalart erzwingt FIFO technisch und warum?</summary>
+      <div class="antwort"><p>Das Durchlaufregal. Beschickung und Entnahme liegen auf entgegengesetzten Seiten, die Ware rollt durch – die zuerst eingelagerte Palette erreicht die Entnahmeseite zuerst.</p></div></details>
+    <details class="abfrage"><summary>Was ist ein Hub und welche Aufgaben hat er?</summary>
+      <div class="antwort"><p>Eine Hauptumschlagsbasis, in der Warenströme zusammengefasst und umgeschlagen werden. Aufgaben: Zollabwicklung, Palettenmanagement, Gefahrgutabwicklung, zeitgenaue Auftragsabwicklung, Inhouse-Logistik, Zusammenführen und Verteilen von Lieferungen.</p></div></details>
+    <details class="abfrage"><summary>Warum senken genormte Behälter die Kosten?</summary>
+      <div class="antwort"><p>Weil genormte Einheiten stapelbar, planbar und maschinell handhabbar sind. Regale, Ladeflächen und Fördertechnik sind auf sie abgestimmt, und die Ware muss beim Wechsel des Verkehrsträgers nicht umgepackt werden.</p></div></details>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════ -->
+<section class="abschnitt" id="lagerordnung" data-gruppe="Das Lager">
+  <div class="ab-kopf"><h2><span class="ab-nr">1.29</span>Lagerordnungssysteme und Zonung</h2></div>
+
+  <div class="block einstieg" data-notiz="ein-lagerordnung">
+    <div class="b-label">Worum es geht</div>
+    <p>Eine Palette Schrauben kommt am Wareneingang an. Jemand muss jetzt entscheiden: <strong>Wohin damit?</strong> Es gibt genau zwei Grundantworten. Entweder: „Schrauben liegen immer in Gasse 4, Regal 12, Fach 3 – da gehören sie hin.“ Oder: „Nimm den nächsten freien Platz, das System merkt sich, wo du sie hingestellt hast.“</p>
+    <p>Das klingt banal, ist aber die vielleicht folgenreichste Entscheidung im Lagerbetrieb. Sie bestimmt, wie viel Fläche du brauchst, wie lange deine Leute laufen, wie aufwendig die Inventur wird – und ob du überhaupt ohne EDV auskommst.</p>
+  </div>
+
+  <p>Die Wahl der Lagerordnung hängt laut Skript von der Lagerart – insbesondere der Bauart –, dem Lagersystem und der Einrichtung ab. Es gibt keine allgemein beste Lösung, nur eine zur Situation passende.</p>
+
+  <div class="block def" data-notiz="def-festplatzstrategie">
+    <div class="b-label">Definition</div>
+    <div class="b-term">Festplatzstrategie (feste Platzvergabe)</div>
+    <p>Jedem Material wird ein <strong>fester, dauerhaft reservierter Lagerplatz</strong> zugewiesen. Der Platz gehört diesem Artikel, auch wenn er gerade leer steht.</p>
+    <p><strong>Vorteile:</strong> Die Ware ist übersichtlich und leicht auffindbar, auch ohne EDV. Neue Mitarbeitende finden sich schnell zurecht.<br>
+    <strong>Nachteile:</strong> Der Lagerplatz ist begrenzt und reicht bei plötzlichen Auftragsspitzen möglicherweise nicht aus – Umorganisation oder Fremdanmietung von Lagerflächen sind die Folge. Je nach Zahl der definierten Lagerplätze kann sich die Inventuraufnahme sehr umfangreich und zeitraubend gestalten.</p>
+  </div>
+
+  <div class="block def" data-notiz="def-freiplatzstrategie">
+    <div class="b-label">Definition</div>
+    <div class="b-term">Freiplatzstrategie (freie Platzvergabe)</div>
+    <p>Eingehendes Material wird auf den <strong>nächsten freien Lagerplatz</strong> verbracht. Je nach Bauart des Lagers ist dabei zwingend ein Verwaltungssystem erforderlich, das die Wiederauffindbarkeit garantiert – üblicherweise eine EDV-gestützte Lagerplatzverwaltung.</p>
+    <p><strong>Vorteile:</strong> Optimale Nutzung der Lagerfläche und einfach durchzuführende Tagesinventur, weil das System jederzeit weiß, was wo liegt.<br>
+    <strong>Nachteile:</strong> Ohne funktionierende EDV-Lagerverwaltung ist die Ware praktisch nicht mehr auffindbar. Der Ausfall des Systems legt das Lager lahm.</p>
+  </div>
+
+  <div class="block def" data-notiz="def-chaotische-lagerhaltung">
+    <div class="b-label">Definition</div>
+    <div class="b-term">Chaotische Lagerhaltung (dynamische Platzvergabe)</div>
+    <p>Die konsequente Ausbaustufe der Freiplatzstrategie: Das <strong>Lagerverwaltungssystem</strong> entscheidet bei jeder Einlagerung neu, welcher Platz für diese Palette der beste ist – nach Kriterien wie Zugriffshäufigkeit, Weglänge, Gewicht und freier Kapazität. Derselbe Artikel kann an fünf verschiedenen Stellen liegen, und beim nächsten Mal an fünf anderen.</p>
+    <p class="hinweis-klein">Der Begriff „chaotisch“ ist eine gängige Bezeichnung für diese Ausprägung der freien Platzvergabe. Gruber spricht im Skript von der Freiplatzstrategie – frage im Unterricht nach, welchen Begriff er in der Klausur erwartet.</p>
+  </div>
+
+  <div class="block achtung" data-notiz="ach-chaotisch-nicht-unordentlich">
+    <div class="b-label">Typische Verwechslung – die wichtigste in diesem Abschnitt</div>
+    <p><strong>Chaotische Lagerhaltung ist nicht unordentlich.</strong> Das Wort führt jedes Jahr Prüflinge in die Irre. Ein chaotisches Lager ist im Gegenteil das am strengsten verwaltete Lager überhaupt: Jede einzelne Bewegung muss gebucht werden, sonst ist die Ware verloren. Das „Chaos“ bezieht sich ausschließlich darauf, dass ein Mensch beim Blick ins Regal <em>kein Ordnungsmuster erkennt</em> – für das System ist jeder Platz exakt bekannt.</p>
+    <p>Falsche Prüfungsantwort: „Chaotische Lagerhaltung bedeutet, dass die Ware ohne System abgestellt wird.“ Richtige Antwort: „Die Zuordnung von Artikel zu Lagerplatz ist nicht fest, sondern wird bei jeder Einlagerung dynamisch vom Lagerverwaltungssystem vergeben und dort dokumentiert.“</p>
+  </div>
+
+  <div class="tab" data-notiz="tab-lagerordnung-vergleich">
+    <table>
+      <thead><tr><th>Merkmal</th><th>Festplatz</th><th>Freiplatz / chaotisch</th></tr></thead>
+      <tbody>
+        <tr><td>Zuordnung Artikel → Platz</td><td>fest und dauerhaft</td><td>wechselnd, bei jeder Einlagerung neu</td></tr>
+        <tr><td>Flächenausnutzung</td><td>schlecht – reservierte Plätze stehen zeitweise leer</td><td>sehr gut – jeder freie Platz wird genutzt</td></tr>
+        <tr><td>EDV erforderlich</td><td>nein</td><td>ja, zwingend</td></tr>
+        <tr><td>Auffindbarkeit ohne System</td><td>gegeben</td><td>nicht gegeben</td></tr>
+        <tr><td>Inventur</td><td>kann sehr aufwendig und zeitraubend sein</td><td>einfache Tagesinventur möglich</td></tr>
+        <tr><td>Verhalten bei Auftragsspitzen</td><td>Platz reicht nicht, Fremdanmietung nötig</td><td>flexibel, Puffer im gesamten Lager</td></tr>
+        <tr><td>Typischer Einsatz</td><td>kleine Läger, Handlager, wenige Artikel, A-Güter</td><td>große Läger, Hochregallager, breites Sortiment</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3>Zonung – die Ordnung über der Ordnung</h3>
+  <div class="block def" data-notiz="def-zonung">
+    <div class="b-label">Definition</div>
+    <div class="b-term">Zonung (Lagerzonierung)</div>
+    <p>Die Einteilung des Lagers in <strong>Bereiche mit unterschiedlichen Eigenschaften</strong>. Innerhalb einer Zone kann die Platzvergabe dann frei erfolgen, aber die Zone selbst ist festgelegt. Typische Zonungskriterien sind:</p>
+    <ul>
+      <li><strong>Zugriffshäufigkeit (ABC-Zonung):</strong> Schnelldreher nahe an Wareneingang und Kommissionierbereich, Langsamdreher weiter hinten und höher oben. Das ist die wirksamste einzelne Maßnahme gegen zu lange Wegzeiten.</li>
+      <li><strong>Gewicht und Größe:</strong> Schwere Artikel nach unten – ergonomisch und weil der Stapler schwere Lasten nur begrenzt hoch heben darf.</li>
+      <li><strong>Gefahrstoffe und Temperatur:</strong> Getrennte, gesetzlich vorgeschriebene Bereiche für Gefahrgut, Kühl- und Tiefkühlware.</li>
+      <li><strong>Zusammenlagerungsverbote:</strong> Lebensmittel nicht neben Reinigungsmitteln, unverträgliche Chemikalien getrennt.</li>
+    </ul>
+    <p class="hinweis-klein">Die Zonung ist eine übliche Praxis der Lagerorganisation; im Gruber-Skript wird sie nicht eigens ausgeführt. Sie ergänzt die dort genannten Strategien, widerspricht ihnen aber nicht.</p>
+  </div>
+
+  <div class="block beispiel" data-notiz="bsp-lagerordnung-kombination">
+    <div class="b-label">Beispiel aus der Praxis</div>
+    <p>Nordwind Rad führt 3.400 Artikel. Der Lagerleiter wählt keine reine Strategie, sondern kombiniert.</p>
+    <p><strong>Zone 1 – Schnelldreher, Festplatz.</strong> Die 120 Artikel, die 70 % aller Kommissionierpositionen ausmachen (die A-Teile aus der ABC-Analyse), liegen auf festen Plätzen in Greifhöhe direkt neben der Packstation. Die Kommissionierer kennen die Plätze auswendig und brauchen kein Suchen.</p>
+    <p><strong>Zone 2 – Reserve und Restsortiment, freie Platzvergabe.</strong> Alles andere geht dorthin, wo Platz ist. Das Lagerverwaltungssystem entscheidet, das Terminal auf dem Stapler zeigt den Weg.</p>
+    <p><strong>Zone 3 – Gefahrstoffe, Speziallager.</strong> Lack und Lösemittel liegen im brandschutztechnisch abgetrennten Bereich, unabhängig von jeder Umschlagsüberlegung – hier entscheidet das Gesetz, nicht die Wirtschaftlichkeit.</p>
+    <p>Ergebnis: kurze Wege für die häufigen Griffe, gute Flächennutzung für den Rest, Rechtssicherheit bei Gefahrstoffen. Genau diese Kombination ist die Antwort, die in Prüfungsaufgaben die volle Punktzahl bringt.</p>
+  </div>
+
+  <div class="block pruefung" data-notiz="pru-lagerordnung">
+    <div class="b-label">So kommt das in der Prüfung</div>
+    <p>Standardaufgabe: „Vergleichen Sie Festplatz- und Freiplatzstrategie und geben Sie eine begründete Empfehlung für das beschriebene Lager.“ Nenne bei beiden je zwei Vor- und zwei Nachteile und beziehe die Empfehlung auf den Fall: Wie viele Artikel? Gibt es ein Lagerverwaltungssystem? Schwanken die Mengen stark? Ist der Platz knapp? Kommt in der Aufgabe das Wort „chaotisch“ vor, ist der <strong>Missverständnis-Satz</strong> aus dem Achtung-Block oben fast immer ein Punktebringer.</p>
+  </div>
+
+  <div class="abfrage-liste">
+    <div class="abfrage-kopf">Selbstabfrage</div>
+    <details class="abfrage"><summary>Erkläre Festplatz- und Freiplatzstrategie in je einem Satz.</summary>
+      <div class="antwort"><p>Festplatzstrategie: Jedem Material ist ein fester Lagerplatz fest zugewiesen. Freiplatzstrategie: Eingehendes Material wird auf den nächsten freien Lagerplatz verbracht, ein Verwaltungssystem sichert die Wiederauffindbarkeit.</p></div></details>
+    <details class="abfrage"><summary>Nenne je zwei Vor- und Nachteile der Festplatzstrategie.</summary>
+      <div class="antwort"><p>Vorteile: übersichtlich, leicht auffindbar, keine EDV zwingend nötig. Nachteile: begrenzter Lagerplatz, bei Auftragsspitzen Umorganisation oder Fremdanmietung nötig; die Inventuraufnahme kann sehr umfangreich und zeitraubend sein.</p></div></details>
+    <details class="abfrage"><summary>Warum ist „chaotische Lagerhaltung“ ein irreführender Name?</summary>
+      <div class="antwort"><p>Weil sie das Gegenteil von unordentlich ist. Jede Einlagerung wird vom Lagerverwaltungssystem vergeben und gebucht. Ohne diese lückenlose Dokumentation wäre die Ware nicht wiederfindbar – „chaotisch“ meint nur, dass kein für den Menschen sichtbares Ordnungsmuster erkennbar ist.</p></div></details>
+    <details class="abfrage"><summary>Was ist eine Zonung und welches Kriterium spart am meisten Zeit?</summary>
+      <div class="antwort"><p>Die Einteilung des Lagers in Bereiche mit unterschiedlichen Eigenschaften. Am wirksamsten ist die Zonung nach Zugriffshäufigkeit (ABC): Schnelldreher nahe an Wareneingang und Packstation, Langsamdreher weiter entfernt – das senkt die Wegzeit in der Kommissionierung.</p></div></details>
+    <details class="abfrage"><summary>Welche Lagerordnung passt zu einem Hochregallager mit 3.000 Artikeln und warum?</summary>
+      <div class="antwort"><p>Die freie bzw. chaotische Platzvergabe. Ein Hochregallager ist ohnehin EDV-gesteuert, damit ist die zwingende Voraussetzung erfüllt; die Flächen- bzw. Fachnutzung ist bei so vielen Artikeln der entscheidende Kostenfaktor, und die Tagesinventur wird einfacher.</p></div></details>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════ -->
+<section class="abschnitt" id="verbrauchsfolgeverfahren" data-gruppe="Das Lager">
+  <div class="ab-kopf"><h2><span class="ab-nr">1.30</span>Verbrauchsfolgeverfahren – FIFO, LIFO, HIFO, LOFO</h2></div>
+
+  <div class="block einstieg" data-notiz="ein-verbrauchsfolge">
+    <div class="b-label">Worum es geht</div>
+    <p>Im Regal liegen 900 identische Aluminiumrohre. Sie sehen alle gleich aus, aber sie haben unterschiedlich viel gekostet: 300 aus einer Lieferung zu 18 €, 400 zu 21 €, 200 zu 25 €. Jetzt entnimmt die Fertigung 700 Stück. <strong>Welche 700?</strong></p>
+    <p>Physisch ist die Frage egal – ein Rohr ist ein Rohr. Buchhalterisch ist sie es überhaupt nicht: Je nachdem, welche Annahme du triffst, ist der Materialaufwand ein anderer und der Wert des Restbestands ein anderer. Genau deshalb gibt es Verbrauchsfolgeverfahren.</p>
+  </div>
+
+  <div class="block def" data-notiz="def-verbrauchsfolgeverfahren">
+    <div class="b-label">Definition</div>
+    <div class="b-term">Verbrauchsfolgeverfahren</div>
+    <p>Verfahren, die eine <strong>Annahme über die Reihenfolge des Verbrauchs</strong> treffen, um den Wert des Materialverbrauchs und des Endbestands zu ermitteln. Sie dienen dazu, dem <strong>Grundsatz der Einzelbewertung</strong> gerecht zu werden, wenn gleichartige Güter zu unterschiedlichen Preisen beschafft wurden und sich im Lager nicht mehr auseinanderhalten lassen.</p>
+  </div>
+
+  <div class="block achtung" data-notiz="ach-fifo-strategie-vs-bewertung">
+    <div class="b-label">Die entscheidende Unterscheidung – hier fallen die meisten durch</div>
+    <p>FIFO und LIFO gibt es <strong>zweimal</strong>, und die beiden Bedeutungen haben nichts miteinander zu tun:</p>
+    <p><strong>1. Als Lagerstrategie (physisch).</strong> „Wir lagern nach FIFO aus“ heißt: Die zuerst eingelagerte Palette wird tatsächlich zuerst herausgeholt. Das ist eine Frage der Lagerorganisation und der Regaltechnik – im Durchlaufregal wird FIFO baulich erzwungen, im Blocklager kommt man an die hinteren Paletten gar nicht heran, dort ergibt sich zwangsläufig LIFO.</p>
+    <p><strong>2. Als Bewertungsverfahren (buchhalterisch).</strong> „Wir bewerten nach FIFO“ heißt: Für die Bilanz wird <em>unterstellt</em>, dass die zuerst gekauften Mengen zuerst verbraucht wurden. Was physisch tatsächlich passiert ist, spielt dabei keine Rolle.</p>
+    <p><strong>Beides kann auseinanderfallen.</strong> Ein Betrieb kann sein Lager physisch streng nach FIFO führen und trotzdem nach LIFO bewerten – oder umgekehrt. In der Prüfung musst du am Fragewort erkennen, welche Bedeutung gemeint ist: Steht dort „Bewertung“, „Bilanz“, „Endbestand in Euro“ oder „§ 256 HGB“, geht es um die Bewertung. Steht dort „Auslagerung“, „Mindesthaltbarkeit“, „Regaltechnik“, geht es um die Lagerstrategie.</p>
+  </div>
+
+  <div class="tab" data-notiz="tab-verbrauchsfolgeverfahren">
+    <table>
+      <thead><tr><th>Verfahren</th><th>Annahme</th><th>Wirkung auf den Endbestand</th><th>Typischer Einsatz</th></tr></thead>
+      <tbody>
+        <tr><td><strong>FIFO</strong><br>first in – first out</td><td>Die <strong>zuerst</strong> angeschafften oder hergestellten Güter werden <strong>zuerst</strong> verbraucht oder veräußert. Nach § 256 Satz 1 HGB ausdrücklich zugelassen.</td><td>Der Endbestand stammt aus den <strong>letzten</strong> Lieferungen, ist also mit den <strong>aktuellsten</strong> Preisen bewertet. Bei steigenden Preisen ergibt das einen hohen Bestandswert und einen niedrigen Materialaufwand.</td><td>Verderbliche Ware, Artikel mit Mindesthaltbarkeitsdatum, Ware mit Modellwechseln</td></tr>
+        <tr><td><strong>LIFO</strong><br>last in – first out</td><td>Die <strong>zuletzt</strong> beschafften Güter werden <strong>zuerst</strong> verbraucht oder veräußert. Zweck: die Anschaffungskosten zu möglichst gegenwartsnahen Preisen feststellen.</td><td>Der Endbestand stammt aus den <strong>ältesten</strong> Lieferungen, ist also mit <strong>älteren</strong> Preisen bewertet. Bei steigenden Preisen ergibt das einen niedrigen Bestandswert und einen hohen Materialaufwand.</td><td>Schüttgut, Blocklager, Halden – und steuerlich bei anhaltend steigenden Preisen</td></tr>
+        <tr><td><strong>HIFO</strong><br>highest in – first out</td><td>Die <strong>teuersten</strong> Zugänge werden zuerst verbraucht.</td><td>Im Bestand bleiben die billigsten Mengen – der niedrigste mögliche Bestandswert. Streng vorsichtige Bewertung.</td><td>Stark schwankende Beschaffungspreise, etwa bei Rohstoffen und Metallen</td></tr>
+        <tr><td><strong>LOFO</strong><br>lowest in – first out</td><td>Die <strong>billigsten</strong> Zugänge werden zuerst verbraucht.</td><td>Im Bestand bleiben die teuersten Mengen – der höchste mögliche Bestandswert.</td><td>Gegenstück zu HIFO; handelsrechtlich nur eingeschränkt zulässig, weil es dem Vorsichtsprinzip zuwiderläuft</td></tr>
+      </tbody>
+    </table>
+    <p class="hinweis-klein">Gruber führt im Skript ausdrücklich FIFO und LIFO aus. HIFO und LOFO sind gängige Ergänzungen aus der Materialwirtschaft und werden in Prüfungen mit abgefragt – merke dir mindestens Namen und Grundgedanken.</p>
+  </div>
+
+  <div class="block beispiel" data-notiz="bsp-fifo-lifo-rechnung">
+    <div class="b-label">Beispiel aus der Praxis – dieselbe Entnahme, vier Ergebnisse</div>
+    <p>Zugänge Aluminiumrohr AR-32 im Jahr: <strong>300 Stück zu 18 €</strong> (Januar), <strong>400 Stück zu 21 €</strong> (Mai), <strong>200 Stück zu 25 €</strong> (Oktober). Gesamtzugang 900 Stück. Verbrauch im Jahr: <strong>700 Stück</strong>, Endbestand also <strong>200 Stück</strong>.</p>
+    <p><strong>FIFO:</strong> Verbraucht werden zuerst die 300 zu 18 €, dann die 400 zu 21 €. Verbrauchswert = 300 × 18 € + 400 × 21 € = 5.400 € + 8.400 € = <strong>13.800 €</strong>. Im Bestand bleiben die 200 zu 25 € = <strong>5.000 €</strong>.</p>
+    <p><strong>LIFO:</strong> Verbraucht werden zuerst die 200 zu 25 €, dann die 400 zu 21 €, dann 100 zu 18 €. Verbrauchswert = 5.000 € + 8.400 € + 1.800 € = <strong>15.200 €</strong>. Im Bestand bleiben 200 zu 18 € = <strong>3.600 €</strong>.</p>
+    <p><strong>Die Aussage:</strong> Dasselbe Lager, dieselben 200 Rohre im Regal – aber einmal 5.000 € und einmal 3.600 € in der Bilanz. Der Unterschied von 1.400 € geht als Materialaufwand in die Gewinn- und Verlustrechnung und verändert den ausgewiesenen Gewinn. Bei <strong>steigenden</strong> Preisen bewertet LIFO den Bestand niedriger und den Aufwand höher – das senkt den ausgewiesenen Gewinn. Genau deshalb ist LIFO bei Preissteigerungen steuerlich interessant.</p>
+  </div>
+
+  <div class="block merk" data-notiz="merk-fifo-lifo-bilder">
+    <div class="b-label">Zwei Bilder, die sitzen bleiben</div>
+    <p><strong>FIFO = Supermarktregal.</strong> Die Mitarbeiterin räumt die frische Milch nach hinten, die ältere nach vorn. Wer greift, nimmt die älteste – sonst läuft sie ab.<br>
+    <strong>LIFO = Sandhaufen oder Bücherstapel.</strong> Du schüttest oben drauf und nimmst oben weg. An das Unterste kommst du gar nicht heran.<br>
+    <strong>HIFO/LOFO = der Blick auf das Preisschild</strong>, nicht auf das Datum. Nicht „wann kam es rein“, sondern „was hat es gekostet“ entscheidet.</p>
+    <p>Und der Satz aus dem Skript, der beides verbindet: In einem <strong>Hochregallager mit EDV-Steuerung sind alle Lagerprinzipien vollständig umsetzbar</strong> – das System kann jeden gewünschten Behälter gezielt anfahren.</p>
+  </div>
+
+  <div class="block pruefung" data-notiz="pru-verbrauchsfolge">
+    <div class="b-label">So kommt das in der Prüfung</div>
+    <p>Drei Varianten sind üblich. <strong>Erstens</strong> die Rechenaufgabe: Zugänge mit Mengen und Preisen sind gegeben, Verbrauchs- und Endbestandswert nach FIFO und LIFO sind zu ermitteln – rechne das Beispiel oben so lange nach, bis es sitzt. <strong>Zweitens</strong> die Begründungsfrage: „Welches Verfahren empfehlen Sie für Lebensmittel und warum?“ – FIFO, wegen des Mindesthaltbarkeitsdatums. <strong>Drittens</strong> die Wirkungsfrage: „Wie wirkt sich LIFO bei steigenden Preisen auf den Bilanzansatz aus?“ – niedrigerer Bestandswert, höherer Materialaufwand, niedrigerer ausgewiesener Gewinn. Und merke dir die Fundstelle: <strong>FIFO ist in § 256 Satz 1 HGB ausdrücklich zugelassen.</strong></p>
+  </div>
+
+  <div class="abfrage-liste">
+    <div class="abfrage-kopf">Selbstabfrage</div>
+    <details class="abfrage"><summary>Wofür stehen FIFO und LIFO und welche Annahme trifft jedes?</summary>
+      <div class="antwort"><p>FIFO = first in, first out: Die zuerst angeschafften Güter werden zuerst verbraucht (§ 256 Satz 1 HGB). LIFO = last in, first out: Die zuletzt beschafften Güter werden zuerst verbraucht, um die Anschaffungskosten gegenwartsnah abzubilden.</p></div></details>
+    <details class="abfrage"><summary>Was ist der Unterschied zwischen FIFO als Lagerstrategie und FIFO als Bewertungsverfahren?</summary>
+      <div class="antwort"><p>Als Lagerstrategie beschreibt FIFO die tatsächliche physische Auslagerungsreihenfolge. Als Bewertungsverfahren ist es eine reine Rechenannahme für die Bewertung von Verbrauch und Endbestand – unabhängig davon, was im Lager wirklich passiert. Beides kann auseinanderfallen.</p></div></details>
+    <details class="abfrage"><summary>Wie wirkt LIFO bei steigenden Preisen auf Bestandswert und Aufwand?</summary>
+      <div class="antwort"><p>Der Endbestand wird mit älteren, niedrigeren Preisen bewertet – der Bestandswert ist niedrig. Der Verbrauch wird mit neueren, höheren Preisen bewertet – der Materialaufwand ist hoch. Der ausgewiesene Gewinn sinkt dadurch.</p></div></details>
+    <details class="abfrage"><summary>Was besagen HIFO und LOFO?</summary>
+      <div class="antwort"><p>HIFO (highest in, first out): Die teuersten Zugänge gelten als zuerst verbraucht, im Bestand bleiben die billigsten – niedrigster Bestandswert. LOFO (lowest in, first out): Die billigsten Zugänge gelten als zuerst verbraucht, im Bestand bleiben die teuersten – höchster Bestandswert.</p></div></details>
+    <details class="abfrage"><summary>Warum ist FIFO bei Lebensmitteln zwingend?</summary>
+      <div class="antwort"><p>Wegen des Mindesthaltbarkeitsdatums. Wird nicht die älteste Ware zuerst entnommen, läuft sie im Lager ab und muss vernichtet werden – hier ist FIFO als physische Lagerstrategie gemeint, nicht als Bewertungsverfahren.</p></div></details>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════ -->
+<section class="abschnitt" id="lagerbestand-grundlagen" data-gruppe="Lagerkennzahlen rechnen">
+  <div class="ab-kopf"><h2><span class="ab-nr">1.31.1</span>Durchschnittlicher Lagerbestand und Kapitalbindung</h2></div>
+
+  <div class="block einstieg" data-notiz="ein-lagerbestand">
+    <div class="b-label">Worum es geht</div>
+    <p>Dein Lagerbestand ist an keinem Tag derselbe. Nach einer Anlieferung ist er hoch, kurz vor der nächsten fast leer. Wenn du wissen willst, wie viel Ware „im Schnitt“ bei dir liegt – und damit, wie viel Geld gebunden ist –, brauchst du eine einzige Zahl, die dieses Auf und Ab zusammenfasst. Das ist der <strong>durchschnittliche Lagerbestand</strong>.</p>
+    <p>Er ist die wichtigste Zahl dieses Kapitels, weil fast jede andere Kennzahl auf ihm aufbaut: Umschlagshäufigkeit, Lagerdauer, Lagerzinsen, Lagerkostensatz. Wer ihn falsch berechnet, rechnet danach alles falsch.</p>
+  </div>
+
+  <div class="formel" data-notiz="formel-durchschnittlicher-lagerbestand">
+    <div class="formel-kopf"><span class="f-tag">Formel</span><span class="f-name">Durchschnittlicher Lagerbestand (mengenmäßig)</span></div>
+    <div class="formel-koerper">
+      <div class="eq">BL = ( Anfangsbestand + Summe der 12 Monatsendbestände ) ÷ 13</div>
+      <div class="f-erklaerung">
+        <p><strong>Größen:</strong> BL = durchschnittlicher Lagerbestand · Anfangsbestand = Bestand am 1.1. · Monatsendbestände = Bestand am Ende jedes der zwölf Monate.<br>
+        <strong>Einheit:</strong> Stück, Kilogramm, Liter – dieselbe Einheit wie die Bestände.<br>
+        <strong>Warum 13?</strong> Weil dreizehn Werte gemittelt werden: der Anfangsbestand plus zwölf Monatsendbestände. Ein häufiger Fehler ist die Division durch 12.</p>
+        <p><strong>Vereinfachte Variante</strong>, wenn nur Anfangs- und Endbestand gegeben sind: BL = (Anfangsbestand + Endbestand) ÷ 2. Diese Variante ist ungenauer, weil sie unterstellt, dass der Bestand gleichmäßig abgebaut wurde. Verwende sie nur, wenn keine Monatswerte vorliegen – und schreibe in der Prüfung dazu, welche Variante du benutzt hast.</p>
+        <p><strong>Aussage:</strong> Ein hoher Wert ist grundsätzlich <strong>schlecht</strong> – er bedeutet viel gebundenes Kapital, viel belegte Fläche, hohes Risiko durch Schwund, Veralterung und Verderb. Er ist aber nicht per se falsch: Ein hoher Bestand kauft Lieferfähigkeit. Die Kunst besteht darin, den niedrigsten Bestand zu finden, der den geforderten Servicegrad noch trägt.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="block beispiel" data-notiz="bsp-durchgehendes-zahlenbeispiel">
+    <div class="b-label">Das durchgehende Beispiel – von hier an rechnen wir immer damit</div>
+    <p>Wir bleiben bis zum Ende des Kennzahlenteils bei <strong>einem einzigen Artikel</strong>, damit du siehst, wie die Kennzahlen zusammenhängen. Merke dir diese Ausgangsdaten:</p>
+    <p><strong>Artikel:</strong> Hydraulikschlauch H-25 bei der Nordwind Rad GmbH<br>
+    <strong>Anfangsbestand am 1.1.:</strong> 1.200 Stück<br>
+    <strong>Monatsendbestände Januar bis Dezember:</strong> 1.100 · 950 · 1.250 · 800 · 1.050 · 900 · 1.150 · 700 · 1.300 · 850 · 1.000 · 750 Stück<br>
+    <strong>Einstandspreis:</strong> 24,00 € je Stück<br>
+    <strong>Jahresverbrauch:</strong> 12.000 Stück<br>
+    <strong>Kalkulatorischer Jahreszinssatz:</strong> 6 % p. a.<br>
+    <strong>Stichtagsbestand am 31.12.:</strong> 750 Stück<br>
+    <strong>Materialanforderungen im Jahr:</strong> 4.800, davon 4.656 sofort und vollständig belieferbar<br>
+    <span class="hinweis-klein">Gerechnet wird kaufmännisch mit 360 Tagen und 12 Monaten zu je 30 Tagen – so macht es auch die IHK-Formelsammlung.</span></p>
+  </div>
+
+  <div class="schritte" data-notiz="rechnung-durchschnittlicher-lagerbestand">
+    <div class="schritt"><div class="s-nr">1</div><div class="s-txt">Monatsendbestände addieren: 1.100 + 950 + 1.250 + 800 + 1.050 + 900 + 1.150 + 700 + 1.300 + 850 + 1.000 + 750 = 11.800 Stück</div></div>
+    <div class="s-warum">Erst alle zwölf Monatswerte zusammenzählen. Zwischenergebnis notieren – hier verrechnet man sich am leichtesten.</div>
+    <div class="schritt"><div class="s-nr">2</div><div class="s-txt">Anfangsbestand dazu: 1.200 + 11.800 = 13.000 Stück</div></div>
+    <div class="s-warum">Der Anfangsbestand ist der dreizehnte Wert. Er zählt gleichberechtigt mit.</div>
+    <div class="schritt"><div class="s-nr">3</div><div class="s-txt">Durch 13 teilen: 13.000 ÷ 13 = 1.000 Stück</div></div>
+    <div class="s-warum">Dreizehn Werte, also durch dreizehn. Wer hier durch 12 teilt, bekommt 1.083 Stück und schleppt den Fehler durch alle folgenden Kennzahlen mit.</div>
+    <div class="schritt fertig"><div class="s-nr">✓</div><div class="s-txt">BL = 1.000 Stück durchschnittlicher Lagerbestand</div></div>
+    <div class="s-warum">Diese Zahl brauchst du gleich für Umschlagshäufigkeit, Lagerdauer und Lagerzinsen. Schreib sie dir auf.</div>
+  </div>
+
+  <div class="formel" data-notiz="formel-kapitalbindung">
+    <div class="formel-kopf"><span class="f-tag">Formel</span><span class="f-name">Durchschnittliche Lagerkapitalbindung (wertmäßiger Lagerbestand)</span></div>
+    <div class="formel-koerper">
+      <div class="eq">BD = durchschnittlicher Lagerbestand (BL) × Einstandspreis (E)</div>
+      <div class="eq ergebnis">BD = 1.000 Stück × 24,00 €/Stück = 24.000 €</div>
+      <div class="f-erklaerung">
+        <p><strong>Größen:</strong> BD = durchschnittliche Lagerkapitalbindung · BL = durchschnittlicher Lagerbestand in Stück · E = Einstandspreis je Stück.<br>
+        <strong>Einheit:</strong> Euro.<br>
+        <strong>Aussage:</strong> So viel Geld des Unternehmens steckt im Schnitt dauerhaft in diesem einen Artikel und steht für nichts anderes zur Verfügung. Ein hoher Wert ist <strong>schlecht</strong>, weil dieses Kapital weder Zinsen bringt noch investiert werden kann. Genau dieser Betrag wird gleich verzinst – daraus entstehen die Lagerzinsen.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="block def" data-notiz="def-einstandspreis">
+    <div class="b-label">Definition</div>
+    <div class="b-term">Einstandspreis</div>
+    <p>Der Preis, zu dem die Ware tatsächlich im eigenen Lager ankommt: Listeneinkaufspreis abzüglich Rabatt und Skonto, zuzüglich Bezugskosten wie Fracht, Verpackung und Versicherung. <strong>Nicht</strong> der Listenpreis und <strong>nicht</strong> der Verkaufspreis. Für alle Lagerrechnungen gilt immer der Einstandspreis – Lagerbestände werden zu Einstandspreisen bewertet, nie zu Verkaufspreisen.</p>
+  </div>
+
+  <div class="block achtung" data-notiz="ach-lagerbestand-fehler">
+    <div class="b-label">Die drei häufigsten Rechenfehler</div>
+    <p><strong>1. Division durch 12 statt 13.</strong> Der Anfangsbestand wird vergessen mitzuzählen.<br>
+    <strong>2. Verwechslung von Bestand und Verbrauch.</strong> Der Lagerbestand ist eine Bestandsgröße zu einem Zeitpunkt, der Verbrauch eine Stromgröße über einen Zeitraum. In unserem Beispiel liegen 1.000 Stück im Schnitt im Lager, verbraucht werden aber 12.000 im Jahr – beides sind völlig verschiedene Zahlen.<br>
+    <strong>3. Bewertung zum Verkaufspreis.</strong> Der Bestand wird zum Einstandspreis bewertet. Wer mit dem Verkaufspreis rechnet, bläht die Kapitalbindung künstlich auf.</p>
+  </div>
+
+  <div class="block pruefung" data-notiz="pru-lagerbestand">
+    <div class="b-label">So kommt das in der Prüfung</div>
+    <p>Der durchschnittliche Lagerbestand ist fast nie die ganze Aufgabe, sondern immer der erste Teilschritt. Typischer Aufbau: „a) Ermitteln Sie den durchschnittlichen Lagerbestand. b) Berechnen Sie die Umschlagshäufigkeit. c) Ermitteln Sie die durchschnittliche Lagerdauer. d) Berechnen Sie die Lagerzinsen.“ Ein Fehler in a) zieht sich durch alle folgenden Teile – deshalb rechne den ersten Schritt zweimal. Übrigens: Für die Folgeteile gibt es in der Regel <strong>Folgefehlerpunkte</strong>, wenn du mit deinem eigenen falschen Zwischenergebnis korrekt weiterrechnest. Schreib deshalb immer den Rechenweg mit auf.</p>
+  </div>
+
+  <div class="abfrage-liste">
+    <div class="abfrage-kopf">Selbstabfrage</div>
+    <details class="abfrage"><summary>Wie berechnet man den durchschnittlichen Lagerbestand aus Monatswerten?</summary>
+      <div class="antwort"><p>(Anfangsbestand + Summe der 12 Monatsendbestände) ÷ 13. Es sind dreizehn Werte, deshalb wird durch 13 geteilt.</p></div></details>
+    <details class="abfrage"><summary>Wann darf man die vereinfachte Formel (AB + EB) ÷ 2 verwenden?</summary>
+      <div class="antwort"><p>Nur wenn keine Monatsendbestände vorliegen. Sie unterstellt einen gleichmäßigen Bestandsverlauf und ist deshalb ungenauer – in der Prüfung dazuschreiben, welche Variante man benutzt hat.</p></div></details>
+    <details class="abfrage"><summary>Was ist die durchschnittliche Lagerkapitalbindung und wie rechnet man sie?</summary>
+      <div class="antwort"><p>Der wertmäßige Lagerbestand: durchschnittlicher Lagerbestand × Einstandspreis. Sie zeigt, wie viel Kapital im Schnitt in diesem Artikel gebunden ist.</p></div></details>
+    <details class="abfrage"><summary>Warum ist ein hoher durchschnittlicher Lagerbestand nicht automatisch ein Fehler?</summary>
+      <div class="antwort"><p>Weil Bestand Lieferfähigkeit kauft. Ein hoher Bestand bindet Kapital und Fläche, sichert aber den Servicegrad. Ziel ist der niedrigste Bestand, der die geforderte Lieferbereitschaft noch trägt – nicht der niedrigste Bestand überhaupt.</p></div></details>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════ -->
+<section class="abschnitt" id="umschlag-lagerdauer" data-gruppe="Lagerkennzahlen rechnen">
+  <div class="ab-kopf"><h2><span class="ab-nr">1.31.2</span>Umschlagshäufigkeit und durchschnittliche Lagerdauer</h2></div>
+
+  <div class="block einstieg" data-notiz="ein-umschlag">
+    <div class="b-label">Worum es geht</div>
+    <p>Du weißt jetzt, dass im Schnitt 1.000 Hydraulikschläuche im Lager liegen. Das sagt dir aber noch nicht, ob das viel oder wenig ist. Die entscheidende Frage lautet nämlich nicht „Wie viel liegt da?“, sondern <strong>„Wie lange liegt es da?“</strong>.</p>
+    <p>1.000 Schläuche sind wenig, wenn sie in einer Woche verbraucht sind. Sie sind viel, wenn sie ein halbes Jahr liegen bleiben. Genau diese Frage beantworten die beiden Kennzahlen dieses Abschnitts – und sie sind zwei Seiten derselben Medaille.</p>
+  </div>
+
+  <div class="formel" data-notiz="formel-umschlagshaeufigkeit">
+    <div class="formel-kopf"><span class="f-tag">Formel</span><span class="f-name">Umschlagshäufigkeit (Lagerumschlagshäufigkeit, UH)</span></div>
+    <div class="formel-koerper">
+      <div class="eq">UH = Materialverbrauch in einer Zeiteinheit ÷ durchschnittlicher Lagerbestand</div>
+      <div class="f-erklaerung">
+        <p><strong>Größen:</strong> Materialverbrauch = die im Zeitraum entnommene bzw. verkaufte Menge · durchschnittlicher Lagerbestand = BL aus dem vorigen Abschnitt.<br>
+        <strong>Einheit:</strong> „mal pro Zeiteinheit“ – dimensionslos, aber immer mit Zeitbezug: 12-mal <em>pro Jahr</em>. Beide Größen müssen sich auf denselben Zeitraum beziehen.<br>
+        <strong>Aussage:</strong> Wie oft der durchschnittliche Lagerbestand im Zeitraum komplett umgeschlagen, also einmal vollständig ersetzt wurde.</p>
+        <p><strong>Hoher Wert = gut.</strong> Er heißt: Die Ware bleibt kurz liegen, das Kapital ist schnell wieder frei, das Veralterungsrisiko ist klein. Aber Vorsicht – wenn die Umschlagshäufigkeit sehr hoch wird, wird der Bestand knapp, und Fehlmengen und Eilbestellungen nehmen zu. Der beste Wert ist nicht der höchste, sondern der höchste, bei dem der Servicegrad noch stimmt.</p>
+        <p>Die Kennzahl lässt sich auch wertmäßig rechnen: Wareneinsatz in Euro ÷ durchschnittlicher Lagerbestand in Euro. Das Ergebnis ist dasselbe, solange derselbe Einstandspreis verwendet wird.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="schritte" data-notiz="rechnung-umschlagshaeufigkeit">
+    <div class="schritt"><div class="s-nr">1</div><div class="s-txt">Größen einsetzen: Jahresverbrauch 12.000 Stück, durchschnittlicher Lagerbestand 1.000 Stück</div></div>
+    <div class="s-warum">Beide Zahlen beziehen sich auf dasselbe Jahr und dieselbe Einheit – das ist Voraussetzung, sonst ist das Ergebnis wertlos.</div>
+    <div class="schritt"><div class="s-nr">2</div><div class="s-txt">UH = 12.000 Stück ÷ 1.000 Stück = 12</div></div>
+    <div class="s-warum">Die Stück kürzen sich weg. Übrig bleibt eine reine Verhältniszahl.</div>
+    <div class="schritt fertig"><div class="s-nr">✓</div><div class="s-txt">UH = 12-mal pro Jahr</div></div>
+    <div class="s-warum">Das Lager wird zwölfmal im Jahr komplett geleert und wieder gefüllt – im Schnitt einmal pro Monat. Für ein Verbrauchsmaterial ist das ein solider, aber kein herausragender Wert.</div>
+  </div>
+
+  <div class="formel" data-notiz="formel-lagerdauer">
+    <div class="formel-kopf"><span class="f-tag">Formel</span><span class="f-name">Durchschnittliche Lagerdauer</span></div>
+    <div class="formel-koerper">
+      <div class="eq">Lagerdauer = ( durchschnittlicher Lagerbestand × Zeiteinheit ) ÷ Materialverbrauch in der Zeiteinheit</div>
+      <div class="eq">gleichwertig: Lagerdauer = 360 ÷ Umschlagshäufigkeit</div>
+      <div class="f-erklaerung">
+        <p><strong>Größen:</strong> Zeiteinheit = 360 Tage im kaufmännischen Jahr (bzw. 12 Monate, wenn in Monaten gerechnet wird).<br>
+        <strong>Einheit:</strong> Tage (oder Monate).<br>
+        <strong>Aussage:</strong> Wie lange ein Stück im Durchschnitt im Lager verweilt, bevor es entnommen wird.</p>
+        <p><strong>Hoher Wert = schlecht.</strong> Lange Verweildauer heißt lange Kapitalbindung, mehr Lagerkosten, höheres Risiko für Schwund, Beschädigung und Veralterung. Bei verderblicher Ware ist eine zu hohe Lagerdauer sogar ein direktes Qualitätsrisiko.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="schritte" data-notiz="rechnung-lagerdauer">
+    <div class="schritt"><div class="s-nr">1</div><div class="s-txt">Über die Grundformel: (1.000 Stück × 360 Tage) ÷ 12.000 Stück</div></div>
+    <div class="s-warum">Der durchschnittliche Bestand wird auf die Zeiteinheit hochgerechnet und durch den Verbrauch derselben Zeiteinheit geteilt.</div>
+    <div class="schritt"><div class="s-nr">2</div><div class="s-txt">360.000 ÷ 12.000 = 30 Tage</div></div>
+    <div class="s-warum">Die Stück kürzen sich, übrig bleiben Tage. Das ist die Einheitenprobe – wenn am Ende keine Tage stehen, hast du dich verrechnet.</div>
+    <div class="schritt"><div class="s-nr">3</div><div class="s-txt">Gegenprobe über die Umschlagshäufigkeit: 360 ÷ 12 = 30 Tage</div></div>
+    <div class="s-warum">Dieselbe Zahl auf zwei Wegen. Nutze das in der Prüfung immer als Kontrolle – es kostet fünf Sekunden und rettet mehrere Punkte.</div>
+    <div class="schritt fertig"><div class="s-nr">✓</div><div class="s-txt">Durchschnittliche Lagerdauer = 30 Tage</div></div>
+    <div class="s-warum">Ein Hydraulikschlauch liegt im Schnitt einen Monat im Regal, bevor er verbaut wird.</div>
+  </div>
+
+  <div class="block merk" data-notiz="merk-umschlag-lagerdauer">
+    <div class="b-label">Der Zusammenhang, den du dir merken musst</div>
+    <p><strong>Umschlagshäufigkeit und Lagerdauer sind Kehrwerte voneinander</strong>, umgerechnet über die Zeiteinheit:</p>
+    <p>Lagerdauer = 360 ÷ UH &nbsp;&nbsp;·&nbsp;&nbsp; UH = 360 ÷ Lagerdauer</p>
+    <p>Wenn du eine der beiden hast, hast du die andere geschenkt. Und die Merkregel für die Richtung: <strong>Umschlagshäufigkeit hoch = gut. Lagerdauer hoch = schlecht.</strong> Sie zeigen dasselbe an, nur mit umgedrehtem Vorzeichen.</p>
+  </div>
+
+  <div class="block beispiel" data-notiz="bsp-umschlag-vergleich">
+    <div class="b-label">Beispiel aus der Praxis – was die Zahl im Vergleich wert ist</div>
+    <p>Eine Umschlagshäufigkeit von 12 klingt erst einmal ordentlich. Ob sie gut ist, weiß man aber erst im Vergleich – innerbetrieblich über die Zeit, zwischenbetrieblich über ein Benchmarking mit der Branche.</p>
+    <p>Nordwind Rad vergleicht drei Artikelgruppen: <strong>Hydraulikschläuche UH 12</strong> (Lagerdauer 30 Tage), <strong>Standardschrauben UH 24</strong> (15 Tage), <strong>Speziallager für Sondermodelle UH 2</strong> (180 Tage).</p>
+    <p>Die Schrauben sind billig und werden ständig gebraucht – hohe Umschlagshäufigkeit, unproblematisch. Die Sonderlager mit UH 2 sind das eigentliche Problem: Sie liegen ein halbes Jahr, binden Kapital und drohen technisch zu veralten. Genau solche Artikel findet die <strong>ABC-Analyse</strong> als teure Langsamdreher und die <strong>XYZ-Analyse</strong> als unregelmäßig verbrauchte Z-Teile. In der Prüfung ist der Verweis auf diese Analysen aus Kapitel 1.8 und 1.9 ein guter Anschlusspunkt.</p>
+  </div>
+
+  <div class="block achtung" data-notiz="ach-umschlag-verbrauch">
+    <div class="b-label">Typische Verwechslung</div>
+    <p>Im Zähler der Umschlagshäufigkeit steht der <strong>Verbrauch bzw. Wareneinsatz</strong> – nicht der <strong>Umsatz</strong>. Wer den Umsatz zu Verkaufspreisen einsetzt und ihn durch den Bestand zu Einstandspreisen teilt, mischt zwei Preisniveaus und bekommt eine viel zu hohe Umschlagshäufigkeit. <strong>Regel: Zähler und Nenner müssen auf demselben Wertniveau liegen</strong> – entweder beide mengenmäßig oder beide zu Einstandspreisen.</p>
+  </div>
+
+  <div class="block pruefung" data-notiz="pru-umschlag">
+    <div class="b-label">So kommt das in der Prüfung</div>
+    <p>Fast immer im Doppelpack mit dem durchschnittlichen Lagerbestand, oft mit der Zusatzfrage „Interpretieren Sie das Ergebnis.“ Für die Interpretation gibt es eigene Punkte – schreibe nicht nur „UH = 12“, sondern: „Der Bestand wird zwölfmal im Jahr umgeschlagen, ein Stück liegt durchschnittlich 30 Tage. Eine Erhöhung der Umschlagshäufigkeit würde Kapitalbindung und Lagerkosten senken, aber das Risiko von Fehlmengen erhöhen.“ Beliebt ist auch die Vorher-Nachher-Aufgabe: „Um wie viel steigt die Umschlagshäufigkeit, wenn der Bestand um 20 % gesenkt wird?“</p>
+  </div>
+
+  <div class="abfrage-liste">
+    <div class="abfrage-kopf">Selbstabfrage</div>
+    <details class="abfrage"><summary>Wie ist die Umschlagshäufigkeit definiert und was sagt sie aus?</summary>
+      <div class="antwort"><p>Materialverbrauch in einer Zeiteinheit ÷ durchschnittlicher Lagerbestand. Sie sagt, wie oft der durchschnittliche Bestand in dieser Zeiteinheit vollständig umgeschlagen wurde.</p></div></details>
+    <details class="abfrage"><summary>Ist eine hohe Umschlagshäufigkeit gut oder schlecht?</summary>
+      <div class="antwort"><p>Grundsätzlich gut: kurze Verweildauer, geringe Kapitalbindung, niedriges Veralterungsrisiko. Zu hoch wird sie problematisch, weil dann die Bestände zu knapp werden und Fehlmengen sowie Eilbestellungen zunehmen.</p></div></details>
+    <details class="abfrage"><summary>Wie hängen Umschlagshäufigkeit und Lagerdauer zusammen?</summary>
+      <div class="antwort"><p>Lagerdauer = 360 ÷ Umschlagshäufigkeit und umgekehrt. Sie sind über die Zeiteinheit Kehrwerte voneinander: hohe Umschlagshäufigkeit bedeutet zwingend kurze Lagerdauer.</p></div></details>
+    <details class="abfrage"><summary>Ein Artikel hat eine Umschlagshäufigkeit von 4. Wie lange liegt er im Schnitt?</summary>
+      <div class="antwort"><p>360 ÷ 4 = 90 Tage, also ein Vierteljahr.</p></div></details>
+    <details class="abfrage"><summary>Warum darf man nicht den Umsatz in den Zähler setzen?</summary>
+      <div class="antwort"><p>Weil der Umsatz zu Verkaufspreisen bewertet ist, der Lagerbestand aber zu Einstandspreisen. Zähler und Nenner müssen auf demselben Wertniveau liegen, sonst fällt die Kennzahl zu hoch aus.</p></div></details>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════ -->
+<section class="abschnitt" id="lagerzinsen" data-gruppe="Lagerkennzahlen rechnen">
+  <div class="ab-kopf"><h2><span class="ab-nr">1.31.3</span>Lagerzinssatz, Lagerzinsen und Lagerkostensatz</h2></div>
+
+  <div class="block einstieg" data-notiz="ein-lagerzinsen">
+    <div class="b-label">Worum es geht</div>
+    <p>Die 24.000 €, die in den Hydraulikschläuchen stecken, gehören dem Unternehmen – aber sie liegen im Regal statt auf dem Konto. Hätte das Unternehmen sie nicht in Schläuche gesteckt, könnte es Kredite tilgen oder das Geld anlegen. Diese entgangene Verzinsung ist kein Buchungsvorgang, aber sie ist ein echter Kostenfaktor. Man nennt sie <strong>Lagerzinsen</strong> – kalkulatorische Zinsen für das im Lager gebundene Kapital.</p>
+    <p>Der Trick dabei: Die Ware liegt nicht das ganze Jahr im Lager, sondern nur 30 Tage. Also darf man auch nicht ein Jahr lang verzinsen. Genau dafür gibt es den <strong>Lagerzinssatz</strong> – er rechnet den Jahreszinssatz auf die tatsächliche Lagerdauer herunter.</p>
+  </div>
+
+  <div class="formel" data-notiz="formel-lagerzinssatz">
+    <div class="formel-kopf"><span class="f-tag">Formel</span><span class="f-name">Lagerzinssatz</span></div>
+    <div class="formel-koerper">
+      <div class="eq">Lagerzinssatz = ( Jahreszinssatz × durchschnittliche Lagerdauer in Tagen ) ÷ 360</div>
+      <div class="f-erklaerung">
+        <p><strong>Größen:</strong> Jahreszinssatz = kalkulatorischer Zinssatz p in % p. a. · Lagerdauer in Tagen aus dem vorigen Abschnitt.<br>
+        <strong>Einheit:</strong> Prozent – aber <em>nicht</em> pro Jahr, sondern <strong>je Lagerumschlag</strong>.<br>
+        <strong>Aussage:</strong> Wie viel Prozent des Warenwertes an Zinskosten anfallen, solange die Ware tatsächlich im Lager liegt. Ein hoher Wert ist <strong>schlecht</strong> – er entsteht entweder durch hohe Zinsen (kann man kaum beeinflussen) oder durch lange Lagerdauer (kann man sehr wohl beeinflussen). Der Lagerzinssatz ist damit die Brücke zwischen Lagerdauer und Geld.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="schritte" data-notiz="rechnung-lagerzinssatz">
+    <div class="schritt"><div class="s-nr">1</div><div class="s-txt">Werte einsetzen: Jahreszinssatz 6 %, durchschnittliche Lagerdauer 30 Tage</div></div>
+    <div class="s-warum">Die Lagerdauer haben wir im vorigen Abschnitt berechnet – hier zahlt sich aus, dass wir ein durchgehendes Beispiel führen.</div>
+    <div class="schritt"><div class="s-nr">2</div><div class="s-txt">(6 % × 30 Tage) ÷ 360 Tage = 180 ÷ 360 = 0,5 %</div></div>
+    <div class="s-warum">Die Tage kürzen sich, es bleibt ein Prozentsatz. Anschaulich: 30 Tage sind ein Zwölftel des Jahres, also fällt auch nur ein Zwölftel des Jahreszinssatzes an – 6 % ÷ 12 = 0,5 %.</div>
+    <div class="schritt fertig"><div class="s-nr">✓</div><div class="s-txt">Lagerzinssatz = 0,5 %</div></div>
+    <div class="s-warum">Auf jeden Euro Warenwert, der durch das Lager läuft, entfallen 0,5 Cent Zinskosten.</div>
+  </div>
+
+  <div class="formel" data-notiz="formel-lagerzinsen">
+    <div class="formel-kopf"><span class="f-tag">Formel</span><span class="f-name">Lagerzinsen – zwei Wege, ein Ergebnis</span></div>
+    <div class="formel-koerper">
+      <div class="eq">Weg A: Lagerzinsen = Wareneinsatz × Lagerzinssatz ÷ 100</div>
+      <div class="eq">Weg B: Lagerzinsen = durchschnittliche Lagerkapitalbindung × Jahreszinssatz ÷ 100</div>
+      <div class="f-erklaerung">
+        <p><strong>Einheit:</strong> Euro pro Jahr.<br>
+        <strong>Aussage:</strong> Die kalkulatorischen Zinskosten für das im Lager gebundene Kapital. Sie sind keine Zahlung an eine Bank, sondern der Wert der entgangenen Alternative. Ein hoher Wert ist <strong>schlecht</strong> und lässt sich auf genau zwei Arten senken: weniger Bestand oder kürzere Lagerdauer – was, wie du inzwischen weißt, dasselbe ist.</p>
+        <p><strong>Warum beide Wege dasselbe ergeben:</strong> Weg A verzinst den <em>gesamten Jahresdurchsatz</em> für die <em>kurze Zeit</em>, die er wirklich liegt. Weg B verzinst den <em>kleinen Durchschnittsbestand</em> für das <em>ganze Jahr</em>. Mathematisch ist beides identisch, weil der Lagerzinssatz den Jahreszinssatz genau im Verhältnis der Umschlagshäufigkeit verkleinert.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="schritte" data-notiz="rechnung-lagerzinsen">
+    <div class="schritt"><div class="s-nr">1</div><div class="s-txt">Wareneinsatz ermitteln: 12.000 Stück × 24,00 € = 288.000 €</div></div>
+    <div class="s-warum">Der Wareneinsatz ist der Jahresverbrauch, bewertet zum Einstandspreis – das ist der gesamte Warenwert, der im Jahr durch das Lager fließt.</div>
+    <div class="schritt"><div class="s-nr">2</div><div class="s-txt">Weg A: 288.000 € × 0,5 % = 288.000 € × 0,005 = 1.440 €</div></div>
+    <div class="s-warum">Der ganze Durchsatz, aber nur für 30 Tage verzinst.</div>
+    <div class="schritt"><div class="s-nr">3</div><div class="s-txt">Weg B zur Kontrolle: 24.000 € × 6 % = 24.000 € × 0,06 = 1.440 €</div></div>
+    <div class="s-warum">Der Durchschnittsbestand, aber für das ganze Jahr verzinst. Identisches Ergebnis – wenn deine beiden Wege auseinandergehen, hast du einen Fehler in der Lagerdauer.</div>
+    <div class="schritt fertig"><div class="s-nr">✓</div><div class="s-txt">Lagerzinsen = 1.440 € pro Jahr</div></div>
+    <div class="s-warum">Das Lagern dieses einen Artikels kostet allein an kalkulatorischen Zinsen 1.440 € im Jahr – Miete, Personal, Versicherung und Schwund sind darin noch gar nicht enthalten.</div>
+  </div>
+
+  <div class="block beispiel" data-notiz="bsp-bestandssenkung">
+    <div class="b-label">Beispiel aus der Praxis – was eine Bestandssenkung wirklich bringt</div>
+    <p>Der Controller fordert, den durchschnittlichen Bestand von 1.000 auf <strong>800 Stück</strong> zu senken. Der Jahresverbrauch bleibt bei 12.000 Stück. Rechnen wir die Kette durch:</p>
+    <p><strong>Umschlagshäufigkeit:</strong> 12.000 ÷ 800 = <strong>15-mal</strong> statt 12-mal.<br>
+    <strong>Lagerdauer:</strong> 360 ÷ 15 = <strong>24 Tage</strong> statt 30.<br>
+    <strong>Kapitalbindung:</strong> 800 × 24 € = <strong>19.200 €</strong> statt 24.000 €.<br>
+    <strong>Lagerzinsen:</strong> 19.200 € × 6 % = <strong>1.152 €</strong> statt 1.440 €.<br>
+    <strong>Ersparnis: 288 € pro Jahr.</strong></p>
+    <p>Und hier kommt die ehrliche Einordnung, die in einer guten Prüfungsantwort stehen sollte: 288 € sind gemessen an 288.000 € Wareneinsatz ein Zehntel Prozent. <strong>Die Zinsersparnis allein rechtfertigt selten eine Bestandssenkung.</strong> Der eigentliche Nutzen liegt woanders – freigewordene Lagerfläche, weniger Handling, weniger Schwund und Veralterung, und vor allem das freie Kapital für andere Zwecke. Umgekehrt entsteht ein handfestes Risiko: Bei 24 statt 30 Tagen Reichweite trifft eine Lieferverzögerung dich sechs Tage früher.</p>
+  </div>
+
+  <div class="formel" data-notiz="formel-lagerkostensatz">
+    <div class="formel-kopf"><span class="f-tag">Formel</span><span class="f-name">Lagerkostensatz und Lagerhaltungskostensatz</span></div>
+    <div class="formel-koerper">
+      <div class="eq">Lagerkostensatz (LS) = ( Lagerkosten (KL) × 100 × 2 ) ÷ ( durchschnittlicher Lagerbestand (BL) × Einstandspreis (E) )</div>
+      <div class="eq">Lagerhaltungskostensatz (LKS) = Zinssatz in % (p) + Lagerkostensatz (LS)</div>
+      <div class="f-erklaerung">
+        <p><strong>Größen:</strong> KL = die tatsächlichen Lagerkosten einer Periode (Miete, Personal, Energie, Versicherung, Abschreibung auf Lagertechnik, Schwund).<br>
+        <strong>Einheit:</strong> Prozent.<br>
+        <strong>Aussage:</strong> Der Lagerkostensatz sagt, wie viel Prozent des Warenwertes die reine Lagerhaltung kostet – ohne Zinsen. Der Lagerhaltungskostensatz addiert die Zinsen dazu und ist damit die Gesamtbelastung. <strong>Genau dieser LKS ist die Größe, die du in die Andlersche Formel einsetzt</strong> (Kapitel 1.23) – hier schließt sich der Kreis zur optimalen Bestellmenge.</p>
+        <p class="hinweis-klein">Der Faktor 2 in der Skriptformel unterstellt einen durchschnittlichen Bestand in Höhe der halben Bestellmenge. Diese Fassung steht so im Gruber-Skript – im Zweifel im Unterricht nachfragen, welche Variante in der Klausur gelten soll.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="block achtung" data-notiz="ach-lagerzinssatz-jahreszinssatz">
+    <div class="b-label">Typische Verwechslung</div>
+    <p><strong>Jahreszinssatz und Lagerzinssatz sind zwei verschiedene Zahlen.</strong> Der Jahreszinssatz (hier 6 %) gilt für ein volles Jahr. Der Lagerzinssatz (hier 0,5 %) gilt für die tatsächliche Lagerdauer.</p>
+    <p>Der klassische Fehler: den Wareneinsatz von 288.000 € mit dem <em>Jahres</em>zinssatz von 6 % zu multiplizieren. Das ergibt 17.280 € – das Zwölffache des richtigen Wertes. Der Denkfehler dahinter: Man verzinst so, als läge der gesamte Jahresverbrauch das ganze Jahr über im Lager. Tatsächlich liegt jedes Stück nur 30 Tage dort.</p>
+    <p><strong>Faustregel zur Kontrolle:</strong> Der Lagerzinssatz muss <em>immer</em> kleiner sein als der Jahreszinssatz, sobald die Umschlagshäufigkeit über 1 liegt. Ist er größer, hast du dich verrechnet.</p>
+  </div>
+
+  <div class="block pruefung" data-notiz="pru-lagerzinsen">
+    <div class="b-label">So kommt das in der Prüfung</div>
+    <p>Lagerzinsen sind ein Klassiker der Gruber-Rechenaufgaben, meist als letzter Teilschritt einer Kettenaufgabe. Schreibe grundsätzlich <strong>beide Rechenwege</strong> hin, wenn du Zeit hast – der zweite dient als Kontrolle und kostet zwei Zeilen. Achte außerdem auf die Formulierung der Aufgabe: „Lagerzinssatz“ verlangt ein Prozentergebnis, „Lagerzinsen“ ein Euroergebnis. Wer die Prozentzahl hinschreibt, wo Euro gefragt sind, bekommt null Punkte, obwohl er richtig gerechnet hat.</p>
+  </div>
+
+  <div class="abfrage-liste">
+    <div class="abfrage-kopf">Selbstabfrage</div>
+    <details class="abfrage"><summary>Wie berechnet man den Lagerzinssatz und was sagt er aus?</summary>
+      <div class="antwort"><p>(Jahreszinssatz × durchschnittliche Lagerdauer in Tagen) ÷ 360. Er sagt, wie viel Prozent des Warenwertes an Zinskosten anfallen, solange die Ware tatsächlich im Lager liegt.</p></div></details>
+    <details class="abfrage"><summary>Nenne die beiden Wege zur Berechnung der Lagerzinsen.</summary>
+      <div class="antwort"><p>Weg A: Wareneinsatz × Lagerzinssatz ÷ 100. Weg B: durchschnittliche Lagerkapitalbindung × Jahreszinssatz ÷ 100. Beide führen zum selben Ergebnis und eignen sich gegenseitig als Kontrolle.</p></div></details>
+    <details class="abfrage"><summary>Warum darf man den Wareneinsatz nicht mit dem Jahreszinssatz multiplizieren?</summary>
+      <div class="antwort"><p>Weil der gesamte Jahresverbrauch nicht das ganze Jahr im Lager liegt, sondern jedes Stück nur die durchschnittliche Lagerdauer. Man würde die Zinsen um den Faktor der Umschlagshäufigkeit zu hoch ansetzen.</p></div></details>
+    <details class="abfrage"><summary>Was ist der Unterschied zwischen Lagerkostensatz und Lagerhaltungskostensatz?</summary>
+      <div class="antwort"><p>Der Lagerkostensatz enthält nur die eigentlichen Lagerkosten (Miete, Personal, Energie, Versicherung, Schwund) in Prozent des Warenwerts. Der Lagerhaltungskostensatz = Zinssatz + Lagerkostensatz und ist die Größe, die in die Andlersche Formel eingesetzt wird.</p></div></details>
+    <details class="abfrage"><summary>Warum ist die Zinsersparnis allein selten ein ausreichendes Argument für eine Bestandssenkung?</summary>
+      <div class="antwort"><p>Weil sie gemessen am Wareneinsatz sehr klein ausfällt. Der eigentliche Nutzen liegt in freier Lagerfläche, weniger Handling, weniger Schwund und Veralterung sowie frei werdendem Kapital. Dem steht das erhöhte Fehlmengenrisiko durch die kürzere Reichweite gegenüber.</p></div></details>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════ -->
+<section class="abschnitt" id="reichweite-servicegrad" data-gruppe="Lagerkennzahlen rechnen">
+  <div class="ab-kopf"><h2><span class="ab-nr">1.31.4</span>Lagerreichweite, Servicegrad und der Zielkonflikt</h2></div>
+
+  <div class="block einstieg" data-notiz="ein-reichweite">
+    <div class="b-label">Worum es geht</div>
+    <p>Es ist der 31. Dezember, im Regal liegen noch 750 Hydraulikschläuche. Der Disponent stellt genau zwei Fragen. Erstens, nach hinten gerichtet: <strong>„Wie lange komme ich damit noch aus?“</strong> Zweitens, nach vorn gerichtet: <strong>„Wie oft konnte ich in diesem Jahr überhaupt sofort liefern?“</strong></p>
+    <p>Die erste Frage beantwortet die <strong>Reichweite</strong>, die zweite der <strong>Servicegrad</strong>. Beide Kennzahlen ziehen in entgegengesetzte Richtungen – und genau daraus entsteht der zentrale Zielkonflikt der gesamten Materialwirtschaft.</p>
+  </div>
+
+  <div class="formel" data-notiz="formel-reichweite">
+    <div class="formel-kopf"><span class="f-tag">Formel</span><span class="f-name">Lagerreichweite</span></div>
+    <div class="formel-koerper">
+      <div class="eq">Reichweite = Stichtagsbestand ÷ Bedarf pro Zeiteinheit</div>
+      <div class="f-erklaerung">
+        <p><strong>Größen:</strong> Stichtagsbestand = der tatsächliche Bestand an einem bestimmten Tag (nicht der Durchschnittsbestand!) · Bedarf pro Zeiteinheit = geplanter Verbrauch je Tag, Woche oder Monat.<br>
+        <strong>Einheit:</strong> Zeiteinheiten – üblicherweise Tage, möglich sind auch Wochen und Monate. Bei nicht nachwachsenden Rohstoffen wie Erdöl oder Kalksandstein ist die Zeiteinheit Jahr sinnvoll.<br>
+        <strong>Aussage:</strong> Wie lange der vorhandene Stichtagsbestand theoretisch ausreicht, um alle geplanten Anforderungen zu beliefern. Man kann die Reichweite wertmäßig für den Gesamtbestand oder mengenmäßig für einzelne Lagerpositionen ermitteln.</p>
+        <p><strong>Bewertung:</strong> Weder hoch noch niedrig ist per se gut – entscheidend ist der <strong>Vergleich mit der Wiederbeschaffungszeit</strong>. Ist die Reichweite kürzer als die Wiederbeschaffungszeit, läufst du garantiert leer. Ist sie ein Vielfaches davon, hast du zu viel Kapital gebunden.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="schritte" data-notiz="rechnung-reichweite">
+    <div class="schritt"><div class="s-nr">1</div><div class="s-txt">Tagesbedarf ermitteln: 12.000 Stück ÷ 360 Tage = 33,33 Stück pro Tag</div></div>
+    <div class="s-warum">Die Reichweite braucht einen Bedarf pro Zeiteinheit. Gegeben ist der Jahresbedarf, also muss zuerst heruntergerechnet werden – mit 360 kaufmännischen Tagen.</div>
+    <div class="schritt"><div class="s-nr">2</div><div class="s-txt">Reichweite = 750 Stück ÷ 33,33 Stück/Tag = 22,5 Tage</div></div>
+    <div class="s-warum">Hier steht der <strong>Stichtagsbestand</strong> von 750 Stück im Zähler, nicht der Durchschnittsbestand von 1.000. Das ist der häufigste Fehler bei dieser Kennzahl.</div>
+    <div class="schritt fertig"><div class="s-nr">✓</div><div class="s-txt">Reichweite = 22,5 Tage</div></div>
+    <div class="s-warum">Der Bestand reicht noch gut drei Wochen. Bei einer Wiederbeschaffungszeit von 10 Tagen ist das komfortabel; bei einer Wiederbeschaffungszeit von 25 Tagen müsste sofort bestellt werden.</div>
+  </div>
+
+  <div class="block def" data-notiz="def-servicegrad">
+    <div class="b-label">Definition</div>
+    <div class="b-term">Servicegrad (Lieferbereitschaftsgrad)</div>
+    <p>Der Servicegrad sagt aus, <strong>wie viele der bestellten oder angeforderten Materialpositionen sofort bzw. termingerecht ausgeliefert werden konnten</strong>. Er misst also nicht die Menge, sondern die Trefferquote bei den Anforderungen.</p>
+  </div>
+
+  <div class="formel" data-notiz="formel-servicegrad">
+    <div class="formel-kopf"><span class="f-tag">Formel</span><span class="f-name">Servicegrad</span></div>
+    <div class="formel-koerper">
+      <div class="eq">Servicegrad in % = ( Anzahl der voll belieferbaren Materialanforderungen × 100 ) ÷ Gesamtzahl der Materialanforderungen</div>
+      <div class="f-erklaerung">
+        <p><strong>Einheit:</strong> Prozent.<br>
+        <strong>Aussage:</strong> Anteil der Anforderungen, die vollständig und sofort erfüllt werden konnten.<br>
+        <strong>Hoher Wert = gut – aber teuer.</strong> Und zwar überproportional teuer: Von 95 % auf 98 % zu kommen kostet ein Vielfaches dessen, was von 80 % auf 90 % gekostet hat. Der Grund liegt in der Statistik: Je seltener und unregelmäßiger ein Bedarf auftritt, desto größer muss der Sicherheitsbestand sein, der ihn noch abfängt. Deshalb steht im Skript ausdrücklich: <strong>Ein Servicegrad von 100 % erfordert eine enorme Kapitalbindung und einen sehr hohen Lagerbestand.</strong></p>
+        <p><strong>Achte auf das Wort „voll“.</strong> Eine Anforderung über 100 Stück, von der 99 geliefert werden konnten, zählt <em>nicht</em> als erfüllt. Der Servicegrad ist eine Alles-oder-nichts-Kennzahl je Position.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="schritte" data-notiz="rechnung-servicegrad">
+    <div class="schritt"><div class="s-nr">1</div><div class="s-txt">Werte einsetzen: 4.656 voll belieferbare Anforderungen von 4.800 insgesamt</div></div>
+    <div class="s-warum">Gezählt werden Anforderungen, nicht Stückzahlen. Eine Anforderung über 1 Stück wiegt genauso schwer wie eine über 500.</div>
+    <div class="schritt"><div class="s-nr">2</div><div class="s-txt">(4.656 × 100) ÷ 4.800 = 465.600 ÷ 4.800 = 97</div></div>
+    <div class="s-warum">Die Multiplikation mit 100 macht aus dem Anteil einen Prozentwert.</div>
+    <div class="schritt fertig"><div class="s-nr">✓</div><div class="s-txt">Servicegrad = 97 %</div></div>
+    <div class="s-warum">144 Anforderungen im Jahr konnten nicht sofort vollständig bedient werden. Ob 97 % gut sind, hängt vom Artikel ab: Für C-Teile ist es hoch, für ein Ersatzteil, das eine Produktionslinie stoppt, viel zu wenig.</div>
+  </div>
+
+  <div class="block merk" data-notiz="merk-zielkonflikt">
+    <div class="b-label">Der Zielkonflikt der Materialwirtschaft</div>
+    <p>Jetzt hast du alle Kennzahlen beisammen – und siehst, dass sie <strong>nicht gleichzeitig optimal werden können</strong>:</p>
+    <p><strong>Bestand senken</strong> → Umschlagshäufigkeit steigt (gut), Lagerdauer sinkt (gut), Kapitalbindung sinkt (gut), Lagerzinsen sinken (gut) → <strong>aber</strong> Reichweite sinkt und der Servicegrad gerät unter Druck (schlecht).</p>
+    <p><strong>Servicegrad erhöhen</strong> → Lieferfähigkeit steigt (gut), Kundenzufriedenheit steigt (gut), keine Produktionsstillstände (gut) → <strong>aber</strong> der Sicherheitsbestand muss steigen, damit Kapitalbindung und Lagerzinsen (schlecht).</p>
+    <p><strong>Die Aufgabe der Logistik ist nicht, eine dieser Zahlen zu optimieren, sondern das wirtschaftlich beste Verhältnis zwischen ihnen zu finden.</strong> Das ist wörtlich die „Zieloptimalität“ aus der Logistikdefinition – und in Prüfungsantworten der Satz, der die vollen Punkte bringt.</p>
+  </div>
+
+  <div class="block beispiel" data-notiz="bsp-servicegrad-differenziert">
+    <div class="b-label">Beispiel aus der Praxis – ein Servicegrad reicht nicht</div>
+    <p>Nordwind Rad hat sich einen einheitlichen Zielservicegrad von 97 % gesetzt. Das Ergebnis nach einem Jahr: Bei den Schrauben liegt er bei 99,8 % – dort ist der Bestand deutlich zu hoch, weil sie billig sind und niemand hinsieht. Bei den Sonderrahmen liegt er bei 71 % – dort blockieren Fehlmengen regelmäßig die Montage.</p>
+    <p>Die Lösung ist eine <strong>differenzierte Zielvorgabe nach ABC- und XYZ-Klassen</strong>: Für teure, unregelmäßig gebrauchte Teile (AZ) lohnt sich hoher Bestand nicht – hier arbeitet man mit Rahmenverträgen und kurzen Wiederbeschaffungszeiten statt mit Lagerbestand. Für billige, regelmäßig gebrauchte Teile (CX) kostet ein hoher Servicegrad fast nichts – hier kann man ihn sich leisten. Ein pauschaler Zielwert über alle Artikel hinweg erzeugt gleichzeitig Überbestand und Fehlmengen.</p>
+  </div>
+
+  <div class="block achtung" data-notiz="ach-reichweite-lagerdauer">
+    <div class="b-label">Typische Verwechslung</div>
+    <p><strong>Reichweite und Lagerdauer sind nicht dasselbe</strong>, obwohl beide in Tagen gemessen werden.</p>
+    <p>Die <strong>Lagerdauer</strong> blickt <em>zurück</em>: Wie lange hat ein Stück im vergangenen Zeitraum durchschnittlich gelegen? Sie rechnet mit dem <strong>durchschnittlichen</strong> Lagerbestand.<br>
+    Die <strong>Reichweite</strong> blickt <em>nach vorn</em>: Wie lange komme ich mit dem, was heute da ist, noch aus? Sie rechnet mit dem <strong>Stichtags</strong>bestand.</p>
+    <p>In unserem Beispiel: Lagerdauer 30 Tage (Vergangenheit, aus 1.000 Stück Durchschnitt), Reichweite 22,5 Tage (Zukunft, aus 750 Stück am Stichtag). Zwei verschiedene Zahlen für zwei verschiedene Fragen.</p>
+  </div>
+
+  <div class="block pruefung" data-notiz="pru-servicegrad">
+    <div class="b-label">So kommt das in der Prüfung</div>
+    <p>Der Servicegrad kommt in zwei Formen: als kleine Rechenaufgabe (drei bis vier Punkte) und als Argumentationsaufgabe – „Die Geschäftsleitung fordert einen Servicegrad von 100 %. Nehmen Sie Stellung.“ Die erwartete Antwort: technisch möglich, wirtschaftlich unsinnig, weil die dafür nötige Kapitalbindung überproportional steigt; stattdessen differenzierte Zielservicegrade nach ABC-/XYZ-Klassen. Bei der Reichweite prüft man gern, ob du <strong>Stichtagsbestand</strong> und <strong>Durchschnittsbestand</strong> auseinanderhältst – lies die Aufgabenstellung dort besonders genau.</p>
+  </div>
+
+  <div class="abfrage-liste">
+    <div class="abfrage-kopf">Selbstabfrage</div>
+    <details class="abfrage"><summary>Wie berechnet man die Reichweite und was sagt sie aus?</summary>
+      <div class="antwort"><p>Stichtagsbestand ÷ Bedarf pro Zeiteinheit. Sie sagt, wie lange der vorhandene Bestand theoretisch ausreicht, um alle geplanten Anforderungen zu beliefern. Zeiteinheit üblicherweise Tage.</p></div></details>
+    <details class="abfrage"><summary>Was unterscheidet Reichweite und durchschnittliche Lagerdauer?</summary>
+      <div class="antwort"><p>Die Lagerdauer blickt zurück und rechnet mit dem durchschnittlichen Lagerbestand. Die Reichweite blickt nach vorn und rechnet mit dem Stichtagsbestand.</p></div></details>
+    <details class="abfrage"><summary>Wie ist der Servicegrad definiert?</summary>
+      <div class="antwort"><p>Anzahl der voll belieferbaren Materialanforderungen × 100 ÷ Gesamtzahl der Materialanforderungen. Er wird auch Lieferbereitschaftsgrad genannt.</p></div></details>
+    <details class="abfrage"><summary>Warum ist ein Servicegrad von 100 % wirtschaftlich problematisch?</summary>
+      <div class="antwort"><p>Weil er eine enorme Kapitalbindung und einen sehr hohen Lagerbestand erfordert. Die Kosten steigen überproportional: Die letzten Prozentpunkte kosten ein Vielfaches der ersten.</p></div></details>
+    <details class="abfrage"><summary>Beschreibe den Zielkonflikt zwischen Bestandssenkung und Servicegrad.</summary>
+      <div class="antwort"><p>Ein niedriger Bestand verbessert Umschlagshäufigkeit, Lagerdauer, Kapitalbindung und Lagerzinsen, senkt aber Reichweite und Lieferbereitschaft. Ein hoher Servicegrad sichert die Lieferfähigkeit, erfordert aber Sicherheitsbestände und damit hohe Kapitalbindung. Ziel ist nicht das Optimum einer Kennzahl, sondern das wirtschaftlich beste Verhältnis.</p></div></details>
+    <details class="abfrage"><summary>Zählt eine zu 99 % erfüllte Anforderung in den Servicegrad ein?</summary>
+      <div class="antwort"><p>Nein. Gezählt werden nur die <em>voll</em> belieferbaren Anforderungen – der Servicegrad ist je Position eine Alles-oder-nichts-Kennzahl.</p></div></details>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════ -->
+<section class="abschnitt" id="kommissionierung" data-gruppe="Umschlag und Ausgang">
+  <div class="ab-kopf"><h2><span class="ab-nr">1.32</span>Kommissionierung</h2></div>
+
+  <div class="block einstieg" data-notiz="ein-kommissionierung">
+    <div class="b-label">Worum es geht</div>
+    <p>Ein Fahrradhändler bestellt: 3 Rahmen Größe M, 12 Sättel, 2 Kartons Bremszüge, 1 Satz Werkzeug. Im Lager liegen diese vier Artikel an vier verschiedenen Stellen, jeweils in Kartons zu 50 oder auf ganzen Paletten. Jetzt muss jemand mit einem Wagen durch das Lager gehen und aus dem <strong>Gesamtsortiment</strong> genau diese <strong>Teilmengen</strong> herausholen und auf einer Palette zusammenstellen.</p>
+    <p>Das ist Kommissionieren. Es klingt nach der simpelsten Tätigkeit im Lager – und es ist gleichzeitig die <strong>teuerste</strong>. In vielen Distributionslagern entfallen 50 bis 65 % aller Personalkosten auf diesen einen Vorgang. Deshalb ist es der Bereich, in dem am meisten gerechnet, gemessen und optimiert wird.</p>
+  </div>
+
+  <div class="block def" data-notiz="def-kommissionierung">
+    <div class="b-label">Definition</div>
+    <div class="b-term">Kommissionierung</div>
+    <p>Der Vorgang, bei dem bestimmte <strong>Teilmengen (Artikel)</strong> aus einer <strong>Gesamtmenge (Sortiment)</strong> zu einem <strong>vorgegebenen Auftrag</strong> zusammengestellt werden. Das Wort kommt von „Kommission“ im Sinne von Auftrag – kommissionieren heißt: einen Auftrag zusammenstellen.</p>
+  </div>
+
+  <h3>Die zwei Grundprinzipien: Mann zur Ware oder Ware zum Mann</h3>
+  <p>Es gibt nur zwei Möglichkeiten, Mensch und Ware zusammenzubringen. Entweder bewegt sich der Mensch, oder die Ware bewegt sich. Aus dieser einfachen Frage folgt die gesamte Technik eines Lagers.</p>
+
+  <div class="tab" data-notiz="tab-kommissionierprinzipien">
+    <table>
+      <thead><tr><th>Prinzip</th><th>Wie es funktioniert</th><th>Vorteile</th><th>Nachteile</th></tr></thead>
+      <tbody>
+        <tr>
+          <td><strong>Statische Bereitstellung</strong><br>„Mann zur Ware“</td>
+          <td>Die Ware liegt fest im Regal, der Kommissionierer geht oder fährt mit einem Wagen zu den Lagerplätzen und entnimmt.</td>
+          <td>Geringe Investition · sehr flexibel bei Sortiments- und Mengenänderungen · robuste Technik · schnell einführbar · bei Störungen weiterarbeitbar</td>
+          <td>Hoher Wegzeitanteil (oft über 50 % der Kommissionierzeit) · körperlich belastend · Leistung stark personenabhängig · schwer skalierbar bei Auftragsspitzen</td>
+        </tr>
+        <tr>
+          <td><strong>Dynamische Bereitstellung</strong><br>„Ware zum Mann“</td>
+          <td>Ein automatisches System – Regalbediengerät, Paternoster, Shuttle, Fahrerloses Transportsystem – bringt den Behälter oder die Palette zum festen Kommissionierplatz.</td>
+          <td>Keine Wegzeiten für den Menschen · ergonomisch und schnell · hohe Pickleistung je Stunde · gute Kontrolle und geringe Fehlerquote</td>
+          <td>Sehr hohe Investition · unflexibel bei Sortimentsänderungen · bei technischem Ausfall steht alles still · lohnt erst ab hohem, gleichmäßigem Durchsatz</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3>Einstufig oder mehrstufig, seriell oder parallel</h3>
+  <p>Neben der Bereitstellung gibt es zwei weitere Entscheidungen, die die Organisation der Kommissionierung bestimmen. In der Prüfung werden sie gern in einem Atemzug abgefragt.</p>
+
+  <div class="tab" data-notiz="tab-kommissionierorganisation">
+    <table>
+      <thead><tr><th>Organisationsform</th><th>Prinzip</th><th>Vorteile</th><th>Nachteile</th></tr></thead>
+      <tbody>
+        <tr>
+          <td><strong>Einstufig</strong><br>(auftragsorientiert)</td>
+          <td>Ein Auftrag wird in einem Durchgang komplett zusammengestellt. Der Kommissionierer läuft für Auftrag 4711 einmal durch das Lager und hat danach die fertige Sendung.</td>
+          <td>Kein zusätzlicher Sortiervorgang · Auftrag ist sofort versandfertig · einfach zu steuern und zu kontrollieren · kurze Auftragsdurchlaufzeit</td>
+          <td>Viele Wege bei kleinen Aufträgen – jeder Auftrag erzeugt seinen eigenen Rundgang</td>
+        </tr>
+        <tr>
+          <td><strong>Mehrstufig</strong><br>(artikelorientiert, „Batch“)</td>
+          <td>Mehrere Aufträge werden zusammengefasst. In Stufe 1 wird je Artikel die Gesamtmenge für alle Aufträge geholt, in Stufe 2 wird sie auf die einzelnen Aufträge verteilt (sortiert).</td>
+          <td>Deutlich weniger Wege, weil jeder Lagerplatz nur einmal angefahren wird · hohe Effizienz bei vielen kleinen, ähnlichen Aufträgen</td>
+          <td>Zweite Stufe (Sortierung) nötig · zusätzliche Fläche und Handling · längere Durchlaufzeit je Einzelauftrag · höheres Fehlerrisiko beim Verteilen</td>
+        </tr>
+        <tr>
+          <td><strong>Seriell</strong><br>(nacheinander)</td>
+          <td>Der Auftrag durchläuft die Lagerzonen nacheinander. Zone A pickt, gibt weiter an Zone B, diese an Zone C.</td>
+          <td>Keine Zusammenführung nötig, der Behälter wächst unterwegs · einfache Steuerung · lückenlose Nachvollziehbarkeit</td>
+          <td>Lange Durchlaufzeit – der Auftrag ist so langsam wie die Summe aller Zonen · Stau, wenn eine Zone ausfällt oder überlastet ist</td>
+        </tr>
+        <tr>
+          <td><strong>Parallel</strong><br>(gleichzeitig)</td>
+          <td>Alle betroffenen Lagerzonen bearbeiten denselben Auftrag gleichzeitig. Die Teilmengen werden am Ende an einem Sammelpunkt zusammengeführt.</td>
+          <td>Sehr kurze Auftragsdurchlaufzeit · gut bei Eilaufträgen · Zonen sind voneinander unabhängig</td>
+          <td>Zusammenführung nötig, was Fläche, Technik und Kontrolle erfordert · Gefahr unvollständiger Sendungen, wenn eine Zone hinterherhinkt</td>
+        </tr>
+      </tbody>
+    </table>
+    <p class="hinweis-klein">Gruber führt im Skript ausdrücklich statische und dynamische Bereitstellung aus. Die Einteilung einstufig/mehrstufig und seriell/parallel ist Standardstoff der Kommissioniertechnik und in IHK-Prüfungen üblich – im Unterricht nachfragen, in welcher Tiefe sie erwartet wird.</p>
+  </div>
+
+  <h3>Die Kommissionierzeit – hier liegen die Prüfungspunkte</h3>
+  <div class="block def" data-notiz="def-kommissionierzeit">
+    <div class="b-label">Definition</div>
+    <div class="b-term">Kommissionierzeit</div>
+    <p>Die gesamte Zeit für die Abarbeitung eines Kommissionierauftrags. Sie setzt sich aus <strong>fünf Bestandteilen</strong> zusammen:</p>
+    <ul>
+      <li><strong>Basiszeit</strong> – alles, was <em>einmal je Auftrag</em> anfällt, unabhängig von der Zahl der Positionen: Auftrag übernehmen, Kommissionierwagen holen, leeres Ladehilfsmittel aufnehmen, fertige Einheit abgeben, Auftrag abmelden.</li>
+      <li><strong>Wegzeit</strong> – die Zeit für die Fortbewegung zwischen den Entnahmeorten. <strong>Meist der größte Einzelblock.</strong></li>
+      <li><strong>Greifzeit</strong> – die reine Entnahme: hinlangen, greifen, ablegen. Der einzige Anteil, der wirklich Wert schafft.</li>
+      <li><strong>Totzeit</strong> – unproduktive Zeit direkt am Entnahmeort: Beleg lesen, Lagerplatz suchen, Artikel identifizieren, Menge abzählen, Entnahme quittieren.</li>
+      <li><strong>Verteilzeit</strong> – sachliche und persönliche Verteilzeiten: Rückfragen, kurze Störungen, Erholung, persönliche Bedürfnisse. Wird meist als prozentualer Zuschlag angesetzt.</li>
+    </ul>
+    <p class="hinweis-klein">Die Zerlegung der Kommissionierzeit ist Standard der Lagerarbeitsplanung (VDI-Systematik). Sie ergänzt die Ausführungen im Gruber-Skript.</p>
+  </div>
+
+  <div class="block achtung" data-notiz="ach-kommissionierzeit-bestandteile">
+    <div class="b-label">Typische Verwechslung</div>
+    <p><strong>Totzeit ist nicht Wegzeit, und Verteilzeit ist nicht Totzeit.</strong> Diese drei werden in Prüfungen regelmäßig vertauscht:</p>
+    <p><strong>Wegzeit</strong> = du bewegst dich <em>zwischen</em> zwei Lagerplätzen.<br>
+    <strong>Totzeit</strong> = du stehst <em>am</em> Lagerplatz und tust etwas, das nicht Greifen ist – lesen, suchen, zählen, quittieren.<br>
+    <strong>Verteilzeit</strong> = Zeit, die <em>gar nicht zum Auftrag gehört</em> – Erholung, persönliche Bedürfnisse, unvorhersehbare Störungen.</p>
+    <p>Und der wichtigste Punkt für Optimierungsaufgaben: <strong>Die Greifzeit ist der einzige wertschöpfende Anteil</strong> – und ausgerechnet der lässt sich kaum verkürzen. Alle sinnvollen Maßnahmen setzen deshalb bei Weg- und Totzeit an.</p>
+  </div>
+
+  <div class="block beispiel" data-notiz="bsp-kommissionierzeit-rechnung">
+    <div class="b-label">Beispiel aus der Praxis – eine Kommissionierzeit vollständig gerechnet</div>
+    <p>Ein Auftrag bei Nordwind Rad umfasst <strong>12 Positionen</strong>. Aus der Zeitaufnahme sind bekannt: Basiszeit <strong>40 s je Auftrag</strong>, Wegzeit <strong>18 s je Position</strong>, Greifzeit <strong>12 s je Position</strong>, Totzeit <strong>8 s je Position</strong>, Verteilzeit als Zuschlag von <strong>5 %</strong> auf die Summe.</p>
+    <p>Wegzeit: 12 × 18 s = <strong>216 s</strong> · Greifzeit: 12 × 12 s = <strong>144 s</strong> · Totzeit: 12 × 8 s = <strong>96 s</strong><br>
+    Zwischensumme: 40 + 216 + 144 + 96 = <strong>496 s</strong><br>
+    Verteilzeit: 496 s × 5 % = <strong>24,8 s</strong><br>
+    <strong>Kommissionierzeit gesamt: 496 + 24,8 = 520,8 s ≈ 8,68 Minuten je Auftrag</strong></p>
+    <p><strong>Die eigentliche Erkenntnis liegt in der Aufteilung:</strong> Die Wegzeit macht 216 von 520,8 Sekunden aus – <strong>rund 41 %</strong>. Die wertschöpfende Greifzeit nur 144 Sekunden, also 28 %. Wer die Kommissionierleistung verbessern will, muss also an den Weg heran: ABC-Zonung mit Schnelldrehern nahe der Packstation, wegoptimierte Pickreihenfolge im Lagerverwaltungssystem, mehrstufige Kommissionierung bei vielen kleinen Aufträgen, oder – als große Lösung – der Wechsel auf „Ware zum Mann“, bei dem die Wegzeit für den Menschen ganz entfällt.</p>
+    <p>Rechenprobe für die Prüfung: Halbiert man die Wegzeit auf 9 s je Position, sinkt die Zwischensumme auf 388 s, mit Verteilzeit auf 407,4 s. Das sind <strong>rund 22 % weniger Zeit je Auftrag</strong> – ohne dass jemand schneller greifen musste.</p>
+  </div>
+
+  <h3>Pickverfahren – wie die Daten zum Kommissionierer kommen</h3>
+  <div class="raster">
+    <div class="karte blue"><div class="k-titel">Pick-by-Voice</div><div class="k-text">Sprachgeführte Kommissionierung: Das System sagt über Headset den Lagerplatz an, der Mitarbeiter bestätigt per Sprache. Beide Hände bleiben frei, die Augen auch.</div></div>
+    <div class="karte blue"><div class="k-titel">Pick-by-Vision</div><div class="k-text">Sprach- und visuell geführte Kommissionierung: Datenbrille oder Display blendet Weg, Fach und Menge direkt ins Sichtfeld ein.</div></div>
+    <div class="karte blue"><div class="k-titel">Pick-by-Light</div><div class="k-text">LED-Anzeige direkt am Regalfach zeigt Entnahmeort und Menge. Kein Beleg, kein Suchen – sehr schnell, aber nur für feste Plätze geeignet.</div></div>
+  </div>
+  <p>Alle drei greifen an derselben Stelle an: Sie senken die <strong>Totzeit</strong> (kein Beleg lesen, kein Platz suchen, kein manuelles Quittieren) und die <strong>Fehlerquote</strong>. Genau so solltest du sie in der Prüfung begründen – nicht als „moderne Technik“, sondern als gezielte Maßnahme gegen einen konkreten Zeitanteil.</p>
+
+  <div class="block pruefung" data-notiz="pru-kommissionierung">
+    <div class="b-label">So kommt das in der Prüfung</div>
+    <p>Drei Muster. <strong>Erstens</strong> die Definitionsfrage samt der beiden Bereitstellungsprinzipien. <strong>Zweitens</strong> die Zerlegungsfrage: „Aus welchen Bestandteilen setzt sich die Kommissionierzeit zusammen?“ – alle fünf nennen und je in einem Halbsatz erklären. <strong>Drittens</strong>, und am punkteträchtigsten, die Optimierungsfrage: „Die Kommissionierleistung soll gesteigert werden. Schlagen Sie drei Maßnahmen vor und begründen Sie.“ Die starke Antwort nennt jeweils den Zeitanteil, an dem die Maßnahme ansetzt: ABC-Zonung → Wegzeit · Pick-by-Light → Totzeit · Ware-zum-Mann → Wegzeit entfällt vollständig · Batch-Kommissionierung → Wege je Auftrag sinken.</p>
+  </div>
+
+  <div class="abfrage-liste">
+    <div class="abfrage-kopf">Selbstabfrage</div>
+    <details class="abfrage"><summary>Definiere Kommissionierung.</summary>
+      <div class="antwort"><p>Der Vorgang, bei dem bestimmte Teilmengen (Artikel) aus einer Gesamtmenge (Sortiment) zu einem vorgegebenen Auftrag zusammengestellt werden.</p></div></details>
+    <details class="abfrage"><summary>Nenne die fünf Bestandteile der Kommissionierzeit.</summary>
+      <div class="antwort"><p>Basiszeit (einmal je Auftrag), Wegzeit (Fortbewegung zwischen Entnahmeorten), Greifzeit (reine Entnahme), Totzeit (Suchen, Lesen, Zählen, Quittieren am Platz) und Verteilzeit (sachliche und persönliche Zuschläge).</p></div></details>
+    <details class="abfrage"><summary>Welcher Anteil ist meist der größte und welcher der einzige wertschöpfende?</summary>
+      <div class="antwort"><p>Der größte ist in der Regel die Wegzeit – oft über 40 % der Gesamtzeit. Der einzige wertschöpfende Anteil ist die Greifzeit, und ausgerechnet die lässt sich kaum verkürzen. Optimierungen setzen deshalb an Weg- und Totzeit an.</p></div></details>
+    <details class="abfrage"><summary>Was unterscheidet statische von dynamischer Bereitstellung?</summary>
+      <div class="antwort"><p>Statische Bereitstellung: Der Kommissionierer geht zur Ware (Mann zur Ware) – günstig und flexibel, aber hohe Wegzeiten. Dynamische Bereitstellung: Die Ware kommt zum Kommissionierer (Ware zum Mann) – schnell und ergonomisch, aber hohe Investition und unflexibel.</p></div></details>
+    <details class="abfrage"><summary>Wann lohnt sich mehrstufige statt einstufiger Kommissionierung?</summary>
+      <div class="antwort"><p>Bei vielen kleinen, ähnlichen Aufträgen. Werden mehrere Aufträge zusammengefasst und artikelweise gepickt, wird jeder Lagerplatz nur einmal angefahren – das spart erheblich Weg. Preis dafür ist eine zweite Stufe zum Sortieren auf die Einzelaufträge.</p></div></details>
+    <details class="abfrage"><summary>Auf welchen Zeitanteil zielen Pick-by-Voice, -Vision und -Light?</summary>
+      <div class="antwort"><p>Vor allem auf die Totzeit: kein Beleg lesen, kein Lagerplatz suchen, kein manuelles Quittieren. Zusätzlich senken sie die Fehlerquote.</p></div></details>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════ -->
+<section class="abschnitt" id="verpackung" data-gruppe="Umschlag und Ausgang">
+  <div class="ab-kopf"><h2><span class="ab-nr">1.33</span>Verpackung</h2></div>
+
+  <div class="block einstieg" data-notiz="ein-verpackung">
+    <div class="b-label">Worum es geht</div>
+    <p>Verpackung wirkt wie eine Nebensache – bis eine Sendung beschädigt ankommt, ein Karton im Regal nicht stapelbar ist oder ein Sortieranlagen-Scanner das Etikett nicht lesen kann. Dann steht die Verpackung plötzlich im Zentrum: Sie entscheidet über Schadensquote, Flächenausnutzung, Automatisierbarkeit und – seit dem Verpackungsgesetz – über rechtliche Pflichten des Versenders.</p>
+    <p>Und noch eine Zahl zum Nachdenken: Die Verpackung bestimmt, wie viele Einheiten auf eine Palette und damit in einen Lkw passen. Zehn Prozent bessere Ausnutzung heißt zehn Prozent weniger Fahrten.</p>
+  </div>
+
+  <h3>Die fünf Funktionen der Verpackung</h3>
+  <div class="tab" data-notiz="tab-verpackungsfunktionen">
+    <table>
+      <thead><tr><th>Funktion</th><th>Was sie leisten muss</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Schutzfunktion</strong></td><td>Schutz gegen Lichtempfindlichkeit, Nässe und Luftfeuchtigkeit, Temperatur, mechanische Belastung, Diebstahl und Staub</td></tr>
+        <tr><td><strong>Lager- und Transportfunktion</strong></td><td>Stapelbar, automatengängig, formstabil – die Verpackung muss zur Fördertechnik und zum Regal passen</td></tr>
+        <tr><td><strong>Identifikations- und Informationsfunktion</strong></td><td>Identifizierbarkeit und Unterscheidbarkeit – Barcode, Inhaltsangabe, Gefahrgutkennzeichnung, Handhabungshinweise</td></tr>
+        <tr><td><strong>Werbe- und Verkaufsfunktion</strong></td><td>Kostengünstig, werbende Zusatzfunktion, raumsparend – die Verpackung als Verkaufsargument am Regal</td></tr>
+        <tr><td><strong>Verwendungsfunktion</strong></td><td>Hygienisch, dosierbar, ökologisch, wiederverwendbar, recycelbar – der Nutzen für den Anwender und nach dem Gebrauch</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="block achtung" data-notiz="ach-verpackungsfunktionen-konflikt">
+    <div class="b-label">Die Funktionen widersprechen einander</div>
+    <p>Das ist der Punkt, den eine gute Prüfungsantwort erwähnt: Die fünf Funktionen sind <strong>nicht gleichzeitig maximierbar</strong>. Maximaler Schutz bedeutet viel Material – das kollidiert mit „kostengünstig“ und „ökologisch“. Maximale Werbewirkung verlangt aufwendige Formen – die sind selten stapelbar und automatengängig. Verpackungsgestaltung ist deshalb immer ein Kompromiss, und in der Aufgabenstellung steht meist, welche Funktion Vorrang hat.</p>
+  </div>
+
+  <h3>Die Fachbegriffe – hier wird gern gefragt</h3>
+  <div class="tab" data-notiz="tab-verpackungsbegriffe">
+    <table>
+      <thead><tr><th>Begriff</th><th>Bedeutung</th><th>Beispiele</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Packgut</strong></td><td>Die zu verpackende Ware selbst</td><td>Der Hydraulikschlauch, das Buch, die Schrauben</td></tr>
+        <tr><td><strong>Packmittel</strong></td><td>Das Behältnis, das das Packgut aufnimmt</td><td>Palette, Holzkiste, Gitterbox, Karton</td></tr>
+        <tr><td><strong>Packhilfsmittel</strong></td><td>Alles, was das Packmittel ergänzt, sichert oder verschließt</td><td>Stretchfolie, Umreifungsband, Klebeband, Polstermaterial</td></tr>
+        <tr><td><strong>Packstoff</strong></td><td>Das <em>Material</em>, aus dem Packmittel bestehen</td><td>Holz, Kunststoff, Metall, Pappe</td></tr>
+        <tr><td><strong>Kennzeichnungsmittel</strong></td><td>Alles, was Information auf die Verpackung bringt</td><td>Etikett, Warnaufkleber, Gefahrgutlabel, Barcode</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="block merk" data-notiz="merk-packmittel-packstoff">
+    <div class="b-label">Packmittel oder Packstoff?</div>
+    <p>Die einzige Verwechslung, die hier wirklich zählt: <strong>Packstoff ist das Material, Packmittel ist der daraus gefertigte Gegenstand.</strong> Pappe ist ein Packstoff, der Karton daraus ein Packmittel. Holz ist ein Packstoff, die Palette daraus ein Packmittel. Merke: Stoff = Material, Mittel = Ding.</p>
+  </div>
+
+  <h3>Die drei Verpackungsarten</h3>
+  <div class="phasen" data-notiz="phasen-verpackungsarten">
+    <div class="phase"><div class="p-nr">innen</div><div class="p-name">Verkaufsverpackung</div><div class="p-text">Umschließt die Ware bis zum Endverbraucher – Dosen, Flaschen, Joghurtbecher</div></div>
+    <div class="phase"><div class="p-nr">mitte</div><div class="p-name">Umverpackung</div><div class="p-text">Fasst mehrere Verkaufsverpackungen zusammen – der Karton mit zwölf Joghurtbechern</div></div>
+    <div class="phase"><div class="p-nr">außen</div><div class="p-name">Transportverpackung</div><div class="p-text">Schützt auf dem Transportweg zwischen Betrieben – Palette, Kartonage, Stretchfolie</div></div>
+  </div>
+
+  <div class="block def" data-notiz="def-verpackungsgesetz">
+    <div class="b-label">Definition</div>
+    <div class="b-term">Verpackungsgesetz (seit 01.01.2019)</div>
+    <p><strong>Geltungsbereich:</strong> Es gilt für alle mit Ware befüllten Verpackungen, die <strong>beim Endverbraucher anfallen</strong> – einschließlich des Füllmaterials. Auch Onlinehändler sind ausdrücklich betroffen.</p>
+    <p><strong>Kernpflicht:</strong> Jeder, der gefüllte Verpackungen in Umlauf bringt, ist für deren <strong>Rücknahme und Verwertung verantwortlich</strong>. Praktisch heißt das: Registrierung, Beteiligung an einem dualen System und Mengenmeldung.</p>
+    <p><strong>Zielvorgabe:</strong> Für Getränkeverpackungen liegt sie beispielsweise bei <strong>70 %</strong>.</p>
+  </div>
+
+  <div class="block beispiel" data-notiz="bsp-verpackung-onlinehandel">
+    <div class="b-label">Beispiel aus der Praxis</div>
+    <p>Nordwind Rad startet den eigenen Onlineshop aus Abschnitt 1.25. Damit wird das Unternehmen erstmals selbst zum Inverkehrbringer von Verkaufsverpackungen beim Endverbraucher – und fällt unter das Verpackungsgesetz. Konkret bedeutet das: Registrierung im Verpackungsregister, Beteiligung an einem dualen System für die geschätzten Jahresmengen an Karton, Polster und Klebeband, und jährliche Mengenmeldung.</p>
+    <p>Gleichzeitig zeigt sich der Funktionskonflikt in Reinform. Der Versandkarton für einen Rahmen muss <strong>schützen</strong> (ein 900-€-Rahmen darf keine Kratzer bekommen), <strong>stapelbar</strong> sein (die Paketdienstsortierung), <strong>identifizierbar</strong> (Label muss maschinenlesbar sein), <strong>werbend</strong> (das Auspackerlebnis ist Marketing) und <strong>ökologisch</strong> (Kunden achten darauf, und jedes Gramm kostet Lizenzentgelt). Fünf Anforderungen, ein Karton – deshalb ist Verpackungsentwicklung ein eigener Beruf.</p>
+  </div>
+
+  <div class="block pruefung" data-notiz="pru-verpackung">
+    <div class="b-label">So kommt das in der Prüfung</div>
+    <p>Zwei sichere Kandidaten: die <strong>Aufzählung der fünf Funktionen</strong> mit je einem Beispiel und die <strong>Zuordnung der Fachbegriffe</strong> Packgut / Packmittel / Packhilfsmittel / Packstoff / Kennzeichnungsmittel. Beim Verpackungsgesetz sind drei Fakten prüfungsrelevant: seit 01.01.2019 in Kraft, gilt für alle beim Endverbraucher anfallenden befüllten Verpackungen einschließlich Onlinehandel, und wer Verpackungen in Umlauf bringt, trägt Rücknahme- und Verwertungspflicht.</p>
+  </div>
+
+  <div class="abfrage-liste">
+    <div class="abfrage-kopf">Selbstabfrage</div>
+    <details class="abfrage"><summary>Nenne die fünf Funktionen der Verpackung.</summary>
+      <div class="antwort"><p>Schutzfunktion, Lager- und Transportfunktion, Identifikations- und Informationsfunktion, Werbe- und Verkaufsfunktion, Verwendungsfunktion.</p></div></details>
+    <details class="abfrage"><summary>Was ist der Unterschied zwischen Packmittel und Packstoff?</summary>
+      <div class="antwort"><p>Der Packstoff ist das Material (Holz, Kunststoff, Metall, Pappe), das Packmittel der daraus gefertigte Gegenstand (Palette, Holzkiste, Gitterbox).</p></div></details>
+    <details class="abfrage"><summary>Nenne die drei Verpackungsarten mit je einem Beispiel.</summary>
+      <div class="antwort"><p>Verkaufsverpackung (Dose, Flasche, Joghurtbecher), Umverpackung (Karton mit mehreren Verkaufsverpackungen), Transportverpackung (Palette, Kartonage, Stretchfolie).</p></div></details>
+    <details class="abfrage"><summary>Wen betrifft das Verpackungsgesetz und welche Pflicht begründet es?</summary>
+      <div class="antwort"><p>Alle, die mit Ware befüllte und beim Endverbraucher anfallende Verpackungen einschließlich Füllmaterial in Umlauf bringen – auch Onlinehändler. Sie sind für Rücknahme und Verwertung verantwortlich.</p></div></details>
+    <details class="abfrage"><summary>Warum lassen sich die Verpackungsfunktionen nicht alle gleichzeitig maximieren?</summary>
+      <div class="antwort"><p>Weil sie einander widersprechen: Maximaler Schutz braucht viel Material und kollidiert mit Kosten und Ökologie; aufwendige Werbeformen sind selten stapelbar und automatengängig. Verpackungsgestaltung ist immer ein Kompromiss.</p></div></details>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════ -->
+<section class="abschnitt" id="entsorgung" data-gruppe="Umschlag und Ausgang">
+  <div class="ab-kopf"><h2><span class="ab-nr">1.34</span>Entsorgung und Kreislaufwirtschaftsgesetz</h2></div>
+
+  <div class="block einstieg" data-notiz="ein-entsorgung">
+    <div class="b-label">Worum es geht</div>
+    <p>Am Ende jeder Halle stehen Container. In einem liegen Aluminiumspäne, in einem Kartonagen, in einem Stretchfolie, in einem Fässer mit Altlack. Dieser Rückweg ist keine Restgröße, sondern ein eigener logistischer Prozess mit eigenen Kosten, eigenen Dokumentationspflichten und – anders als bei fast allem anderen in diesem Kapitel – einer <strong>gesetzlich vorgegebenen Reihenfolge</strong>, an die man sich halten muss.</p>
+    <p>Diese Reihenfolge ist die Abfallhierarchie des Kreislaufwirtschaftsgesetzes. Sie ist die am zuverlässigsten abgefragte Liste dieses Kapitelteils.</p>
+  </div>
+
+  <div class="block def" data-notiz="def-krwg-geltungsbereich">
+    <div class="b-label">Definition</div>
+    <div class="b-term">§ 2 Kreislaufwirtschaftsgesetz – Geltungsbereich</div>
+    <p>Das Gesetz gilt für die <strong>Vermeidung</strong> von Abfällen, die <strong>Verwertung</strong> von Abfällen, die <strong>Beseitigung</strong> von Abfällen und <strong>sonstige Maßnahmen der Abfallbewirtschaftung</strong>.</p>
+    <p><strong>Es gilt nicht für:</strong> Kernbrennstäbe, Tierkörperbeseitigung und Kampfmittel. Für diese drei gibt es eigene Spezialgesetze.</p>
+  </div>
+
+  <h3>§ 6 KrWG – die fünfstufige Abfallhierarchie</h3>
+  <p>Die Reihenfolge ist nicht als Empfehlung gemeint, sondern als Rangfolge: Eine niedrigere Stufe darf erst gewählt werden, wenn die höhere technisch nicht möglich oder wirtschaftlich unzumutbar ist. Lerne die Reihenfolge in dieser Richtung – von oben nach unten wird es schlechter.</p>
+
+  <div class="phasen" data-notiz="phasen-abfallhierarchie">
+    <div class="phase"><div class="p-nr">Stufe 1</div><div class="p-name">Vermeidung</div><div class="p-text">Abfall gar nicht erst entstehen lassen – anderes Produktdesign, weniger Verschnitt, Mehrweg statt Einweg. Immer die beste Lösung, weil kein Aufwand für Sammlung und Behandlung anfällt.</div></div>
+    <div class="phase"><div class="p-nr">Stufe 2</div><div class="p-name">Vorbereitung zur Wiederverwendung</div><div class="p-text">Trennen und Sammeln von Materialien, die <strong>für ihren ursprünglichen Zweck</strong> erneut eingesetzt werden. Beispiel: die Mehrweg-Glasflasche, die gereinigt wieder befüllt wird.</div></div>
+    <div class="phase"><div class="p-nr">Stufe 3</div><div class="p-name">Recycling</div><div class="p-text">Abfälle werden zu Wertstoffen, die in den Rohstoffkreislauf zurückkehren. <strong>Weiterverwendung:</strong> Kunststoffabfall wird zu Blumentopf oder Parkbank. <strong>Wiederverwertung:</strong> Altglas wird wieder zu Glasflasche.</div></div>
+    <div class="phase"><div class="p-nr">Stufe 4</div><div class="p-name">Sonstige Verwertung</div><div class="p-text">Vor allem energetische Verwertung: Abfallverbrennung zur Gewinnung von Energie und Wärme, Kraft-Wärme-Kopplung. Auch Verfüllung. Das Material ist danach weg – aber die Energie wurde genutzt.</div></div>
+    <div class="phase"><div class="p-nr">Stufe 5</div><div class="p-name">Beseitigung</div><div class="p-text">Deponieren, Kompostieren, Vergären. Nur als letztes Mittel, wenn keine der vier höheren Stufen möglich ist.</div></div>
+  </div>
+
+  <div class="block achtung" data-notiz="ach-wiederverwendung-verwertung">
+    <div class="b-label">Typische Verwechslung – Wiederverwendung, Weiterverwendung, Wiederverwertung</div>
+    <p>Vier ähnlich klingende Wörter, vier verschiedene Bedeutungen. Der Unterschied liegt in zwei Fragen: <em>Bleibt die Form erhalten?</em> und <em>Bleibt der Zweck derselbe?</em></p>
+    <p><strong>Wiederverwendung</strong> (Stufe 2): Form bleibt, Zweck bleibt. Die Glasflasche wird wieder eine befüllte Glasflasche – ohne sie einzuschmelzen.<br>
+    <strong>Weiterverwendung</strong> (Stufe 3): Form wird aufgelöst, neuer Zweck. Kunststoffabfälle werden zu Blumentöpfen oder Parkbänken – etwas ganz anderem.<br>
+    <strong>Wiederverwertung</strong> (Stufe 3): Form wird aufgelöst, gleicher Zweck. Altglas wird eingeschmolzen und daraus entsteht wieder eine Glasflasche.<br>
+    <strong>Beseitigung</strong> (Stufe 5): Das Material verlässt den Kreislauf endgültig.</p>
+    <p>Merkhilfe: <strong>„Wieder“ = derselbe Zweck. „Weiter“ = neuer Zweck. „-verwendung“ = Form bleibt. „-verwertung“ = Form wird zerlegt.</strong></p>
+  </div>
+
+  <h3>Welche Abfälle im Betrieb entstehen</h3>
+  <div class="tab" data-notiz="tab-abfallarten">
+    <table>
+      <thead><tr><th>Abfallklasse</th><th>Entstehungsgrund</th><th>Beispiel</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Materialabfall</strong></td><td>Verschnitt und Rückstände von Rohstoffen, nicht mehr in der Produktion einsetzbar</td><td>Metallspäne, Zuschnittreste</td></tr>
+        <tr><td><strong>Fertigungsausschuss</strong></td><td>Fehlerhafte Materialien oder Güter, nicht verkaufbar</td><td>Risse, Maßabweichungen, Lackfehler</td></tr>
+        <tr><td><strong>Lagerhüter</strong></td><td>Mindesthaltbarkeit überschritten, Produkt vom Markt genommen oder nicht mehr benötigt</td><td>Abgelaufene Lebensmittel, veraltete Ersatzteile</td></tr>
+        <tr><td><strong>Nicht absetzbare Endprodukte</strong></td><td>Überschuss- und Fehlproduktion</td><td>Zu viel produzierte Saisonware</td></tr>
+        <tr><td><strong>Pack- und Packhilfsmittel</strong></td><td>Transportschutz nach einmaliger Nutzung</td><td>Stretchfolie, Kartonagen, Umreifungsbänder</td></tr>
+        <tr><td><strong>Betriebsmittelabfälle</strong></td><td>Ausgediente Anlagen und Maschinen</td><td>Altmaschinen, Altöl, defekte Fördertechnik</td></tr>
+      </tbody>
+    </table>
+    <p class="hinweis-klein">Die Aufstellung der Abfallklassen folgt der bisherigen Portalfassung des Gruber-Skripts.</p>
+  </div>
+
+  <div class="block beispiel" data-notiz="bsp-abfallhierarchie-anwendung">
+    <div class="b-label">Beispiel aus der Praxis – die Hierarchie an einem einzigen Material</div>
+    <p>Nordwind Rad hat ein Problem mit Aluminiumverschnitt: Beim Zuschneiden der Rohre fallen je Rahmen 340 Gramm Reststücke an. Die Entsorgungsabteilung geht die Hierarchie von oben nach unten durch – genau so wird es in der Prüfung erwartet.</p>
+    <p><strong>Stufe 1 Vermeidung:</strong> Die Zuschnittoptimierung wird umprogrammiert, sodass mehrere Rahmenteile aus einer Stange verschachtelt geschnitten werden. Verschnitt sinkt von 340 g auf 190 g. Beste Wirkung, weil dieser Abfall gar nicht mehr entsteht – und gleichzeitig Rohstoffkosten gespart werden.</p>
+    <p><strong>Stufe 2 Vorbereitung zur Wiederverwendung:</strong> Reststücke über 20 cm werden aussortiert und für kurze Streben in der Kindermodellreihe verwendet – gleicher Zweck, gleiche Form.</p>
+    <p><strong>Stufe 3 Recycling:</strong> Der Rest wird sortenrein gesammelt und als Aluminiumschrott an den Schmelzbetrieb verkauft – Wiederverwertung, aus Alu wird wieder Alu. Das bringt sogar Erlös statt Kosten. Voraussetzung ist strikte Sortenreinheit; ein vermischter Container bringt nur einen Bruchteil.</p>
+    <p><strong>Stufe 4 und 5</strong> entfallen hier, weil Aluminium vollständig recycelbar ist. Für den Altlack aus der Lackierkabine sieht es anders aus: Der ist Sondermüll, wird energetisch verwertet oder beseitigt – und braucht eine lückenlose Nachweisführung.</p>
+  </div>
+
+  <div class="block merk" data-notiz="merk-entsorgungslogistik">
+    <div class="b-label">Entsorgung ist Logistik in umgekehrter Richtung</div>
+    <p>Alles, was du über die Beschaffungs- und Distributionslogistik gelernt hast, gilt hier ebenso – nur mit umgedrehtem Vorzeichen: Sammelbehälter sind Lager, Abholtouren sind Transportplanung, Sortenreinheit ist Qualitätssicherung, Entsorgungsnachweise sind der Informationsfluss. Der Fachbegriff dafür ist <strong>Entsorgungslogistik</strong> oder allgemeiner <strong>Reverse Logistics</strong> – die Rückführung von Gütern vom Verbrauchs- zum Verwertungsort.</p>
+  </div>
+
+  <div class="block pruefung" data-notiz="pru-entsorgung">
+    <div class="b-label">So kommt das in der Prüfung</div>
+    <p>Die <strong>fünfstufige Abfallhierarchie in der richtigen Reihenfolge</strong> ist ein sicherer Kandidat – die Reihenfolge ist dabei punktrelevant, nicht nur die Nennung. Häufig kommt eine Anwendungsfrage dazu: Ein Abfall wird beschrieben, du sollst die passende Stufe zuordnen und begründen, warum die höheren Stufen ausscheiden. Auch den Geltungsbereich nach § 2 solltest du nennen können, einschließlich der drei Ausnahmen: Kernbrennstäbe, Tierkörperbeseitigung, Kampfmittel.</p>
+  </div>
+
+  <div class="abfrage-liste">
+    <div class="abfrage-kopf">Selbstabfrage</div>
+    <details class="abfrage"><summary>Nenne die fünf Stufen der Abfallhierarchie nach § 6 KrWG in der richtigen Reihenfolge.</summary>
+      <div class="antwort"><p>1. Vermeidung, 2. Vorbereitung zur Wiederverwendung, 3. Recycling, 4. sonstige Verwertung (energetische Verwertung, Verfüllung), 5. Beseitigung.</p></div></details>
+    <details class="abfrage"><summary>Wofür gilt das Kreislaufwirtschaftsgesetz nach § 2 – und wofür nicht?</summary>
+      <div class="antwort"><p>Es gilt für Vermeidung, Verwertung und Beseitigung von Abfällen sowie sonstige Maßnahmen der Abfallbewirtschaftung. Es gilt nicht für Kernbrennstäbe, Tierkörperbeseitigung und Kampfmittel.</p></div></details>
+    <details class="abfrage"><summary>Erkläre den Unterschied zwischen Wiederverwendung, Weiterverwendung und Wiederverwertung.</summary>
+      <div class="antwort"><p>Wiederverwendung: gleicher Zweck, Form bleibt erhalten (Mehrweg-Glasflasche wird neu befüllt). Weiterverwendung: neuer Zweck, Form aufgelöst (Kunststoffabfall wird Blumentopf oder Parkbank). Wiederverwertung: gleicher Zweck, Form aufgelöst (Altglas wird eingeschmolzen und wieder Glasflasche).</p></div></details>
+    <details class="abfrage"><summary>Was gehört zur energetischen Verwertung und auf welcher Stufe steht sie?</summary>
+      <div class="antwort"><p>Abfallverbrennung zur Gewinnung von Energie und Wärme, etwa in Kraft-Wärme-Kopplung. Sie gehört zur Stufe 4, „sonstige Verwertung“ – also erst nach Vermeidung, Wiederverwendung und Recycling.</p></div></details>
+    <details class="abfrage"><summary>Nenne vier Abfallklassen, die im Betrieb entstehen.</summary>
+      <div class="antwort"><p>Materialabfall (Verschnitt, Späne), Fertigungsausschuss, Lagerhüter, nicht absetzbare Endprodukte, Pack- und Packhilfsmittel, Betriebsmittelabfälle.</p></div></details>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════ -->
+<section class="abschnitt" id="potentialanalyse" data-gruppe="Entscheiden">
+  <div class="ab-kopf"><h2><span class="ab-nr">1.35</span>Potentialanalyse</h2></div>
+
+  <div class="block einstieg" data-notiz="ein-potentialanalyse">
+    <div class="b-label">Worum es geht</div>
+    <p>Ein Kunde fordert von Nordwind Rad eine Lieferung binnen 24 Stunden nach Bestelleingang. Die Geschäftsführung müsste jetzt zwei Dinge wissen: <strong>Was genau will der Kunde?</strong> und <strong>Was können wir heute wirklich?</strong> Erst wenn beides auf dem Tisch liegt, sieht man die Lücke – und die Lücke ist das Potenzial.</p>
+    <p>Genau das leistet die Potentialanalyse. Sie ist kein Rechenverfahren, sondern ein strukturiertes Gegenüberstellen: Kundenanforderungen auf der einen Seite, eigene Möglichkeiten auf der anderen.</p>
+  </div>
+
+  <div class="block def" data-notiz="def-potentialanalyse">
+    <div class="b-label">Definition</div>
+    <div class="b-term">Potentialanalyse</div>
+    <p>Bei der Potentialanalyse werden die <strong>Anforderungen und Wünsche der Kunden den eigenen vorhandenen Möglichkeiten gegenübergestellt</strong>. Ähnlich der SWOT-Analyse werden Stärken und Schwächen beschrieben und daraus <strong>Potenziale zur Leistungsverbesserung</strong> herausgearbeitet.</p>
+  </div>
+
+  <h3>Die fünf Einzelanalysen</h3>
+  <p>Fünf Teilanalysen zusammen ergeben die Potentialanalyse. Jede beantwortet eine andere Frage – und in dieser Reihenfolge bauen sie logisch aufeinander auf.</p>
+
+  <div class="tab" data-notiz="tab-potentialanalyse-teile">
+    <table>
+      <thead><tr><th>Einzelanalyse</th><th>Leitfrage</th><th>Beispiel bei Nordwind Rad</th></tr></thead>
+      <tbody>
+        <tr><td><strong>1. Anforderungsanalyse</strong></td><td>Was erwarten unsere Kunden genau – gemessen und nicht geraten?</td><td>Befragung der 240 Händler: gefordert werden 48 Stunden Lieferzeit, 98 % Liefertreue, Sendungsverfolgung</td></tr>
+        <tr><td><strong>2. Leistungsanalyse</strong></td><td>Was leisten wir heute tatsächlich?</td><td>Ist-Messung: 96 Stunden Lieferzeit, 91 % Liefertreue, keine Sendungsverfolgung</td></tr>
+        <tr><td><strong>3. Prozessanalyse</strong></td><td>Wo genau im Ablauf entsteht die Lücke?</td><td>Auftrag liegt 36 Stunden bis zur Freigabe, weil nur zweimal wöchentlich kommissioniert wird</td></tr>
+        <tr><td><strong>4. Strukturanalyse</strong></td><td>Welche Strukturen – Standorte, Organisation, IT, Personal – verursachen das?</td><td>Ein einziges Zentrallager, keine Anbindung des Lagerverwaltungssystems an das Speditionsportal</td></tr>
+        <tr><td><strong>5. Benchmarking</strong></td><td>Was schaffen andere und wie machen die das?</td><td>Vergleichbare Hersteller liefern in 24 Stunden, weil sie täglich kommissionieren und eine Schnittstelle zur Spedition haben</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="block merk" data-notiz="merk-potentialanalyse-logik">
+    <div class="b-label">Die Logik in einem Satz</div>
+    <p><strong>Anforderung</strong> (was gefordert ist) minus <strong>Leistung</strong> (was wir können) ergibt die Lücke. <strong>Prozess-</strong> und <strong>Strukturanalyse</strong> erklären, warum die Lücke da ist. Das <strong>Benchmarking</strong> zeigt, ob und wie sie überhaupt schließbar ist. Wer diesen Ablauf erklären kann, hat die Potentialanalyse verstanden.</p>
+  </div>
+
+  <div class="block achtung" data-notiz="ach-potential-swot">
+    <div class="b-label">Typische Verwechslung</div>
+    <p><strong>Potentialanalyse und SWOT-Analyse sind verwandt, aber nicht dasselbe.</strong> Die SWOT-Analyse stellt interne Stärken und Schwächen den externen Chancen und Risiken des Marktes gegenüber – sie blickt auf das Unternehmen im Wettbewerbsumfeld. Die Potentialanalyse stellt konkrete <strong>Kundenanforderungen</strong> den <strong>eigenen Möglichkeiten</strong> gegenüber – sie ist enger, anwendungsnäher und mündet direkt in Verbesserungsmaßnahmen. Verwechsle sie auch nicht mit der <strong>GAP-Analyse</strong>, die die Lücke zwischen Zielentwicklung und erwarteter Entwicklung über die Zeit betrachtet. Alle drei findest du in Kapitel 1.7.</p>
+  </div>
+
+  <div class="block pruefung" data-notiz="pru-potentialanalyse">
+    <div class="b-label">So kommt das in der Prüfung</div>
+    <p>Meist als kurze Wissensfrage in einem größeren Fall: „Nennen Sie die fünf Einzelanalysen der Potentialanalyse.“ Das sind schnelle Punkte, wenn die Liste sitzt: <strong>Anforderungs-, Leistungs-, Prozess-, Strukturanalyse und Benchmarking.</strong> Die Anschlussfrage lautet oft, wie das Ergebnis weiterverwendet wird – nämlich als Grundlage für die Auswahlentscheidung, und die wird mit der Nutzwertanalyse getroffen.</p>
+  </div>
+
+  <div class="abfrage-liste">
+    <div class="abfrage-kopf">Selbstabfrage</div>
+    <details class="abfrage"><summary>Was leistet eine Potentialanalyse?</summary>
+      <div class="antwort"><p>Sie stellt die Anforderungen und Wünsche der Kunden den eigenen vorhandenen Möglichkeiten gegenüber, beschreibt ähnlich der SWOT-Analyse Stärken und Schwächen und arbeitet daraus Potenziale zur Leistungsverbesserung heraus.</p></div></details>
+    <details class="abfrage"><summary>Nenne die fünf Einzelanalysen.</summary>
+      <div class="antwort"><p>Anforderungsanalyse, Leistungsanalyse, Prozessanalyse, Strukturanalyse und Benchmarking.</p></div></details>
+    <details class="abfrage"><summary>Worin unterscheidet sich die Potentialanalyse von der SWOT-Analyse?</summary>
+      <div class="antwort"><p>Die SWOT stellt interne Stärken und Schwächen den externen Chancen und Risiken gegenüber. Die Potentialanalyse stellt konkrete Kundenanforderungen den eigenen Möglichkeiten gegenüber und ist damit enger und direkt auf Verbesserungsmaßnahmen gerichtet.</p></div></details>
+    <details class="abfrage"><summary>Welche Rolle spielt das Benchmarking in der Potentialanalyse?</summary>
+      <div class="antwort"><p>Es zeigt, was Vergleichsbetriebe leisten und wie sie das erreichen – also ob die festgestellte Lücke überhaupt schließbar ist und mit welchen Mitteln.</p></div></details>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════ -->
+<section class="abschnitt" id="nutzwertanalyse" data-gruppe="Entscheiden">
+  <div class="ab-kopf"><h2><span class="ab-nr">1.36</span>Nutzwertanalyse</h2></div>
+
+  <div class="block einstieg" data-notiz="ein-nutzwertanalyse">
+    <div class="b-label">Worum es geht</div>
+    <p>Drei Speditionen haben auf die Ausschreibung geantwortet. Angebot A ist mit Abstand das billigste, aber die IT-Anbindung ist schwach. Angebot B kostet mehr, liefert aber pünktlicher und hat eine saubere Schnittstelle. Angebot C liegt preislich dazwischen und punktet bei der CO₂-Bilanz. <strong>Welches nimmst du?</strong></p>
+    <p>„Das billigste“ ist keine Antwort, die man einem Geschäftsführer präsentieren kann – und „das mit dem besten Bauchgefühl“ erst recht nicht. Die Nutzwertanalyse macht aus dieser Entscheidung eine <strong>nachvollziehbare Rechnung</strong>: Kriterien festlegen, gewichten, bewerten, multiplizieren, addieren, Rangfolge bilden. Am Ende steht eine Zahl je Angebot – und der ganze Weg dorthin ist dokumentiert und diskutierbar.</p>
+    <p>Das ist eine der sichersten Rechenaufgaben der Gruber-Prüfung. Sie ist mechanisch einfach, gibt viele Punkte und wird trotzdem regelmäßig verpatzt – meist an derselben Stelle, siehe der Achtung-Block weiter unten.</p>
+  </div>
+
+  <div class="block def" data-notiz="def-nutzwertanalyse">
+    <div class="b-label">Definition</div>
+    <div class="b-term">Nutzwertanalyse</div>
+    <p>Ein Verfahren, das den <strong>Entscheidungsprozess für die Auswahl verschiedener Angebote und möglicher Logistikdienstleister erleichtert und transparent gestaltet</strong>. Es werden verschiedene Kriterien festgelegt und gewichtet, wobei <strong>nicht nur die Entscheider im Einkauf, sondern vor allem auch die betroffenen Bereiche und Abteilungen berücksichtigt werden müssen</strong>. Sie erlaubt es, <strong>nicht-monetäre Kriterien</strong> wie Qualität, Zuverlässigkeit oder Umweltwirkung mit dem Preis in einer einzigen Kennzahl zu verrechnen.</p>
+  </div>
+
+  <div class="block merk" data-notiz="merk-warum-gewichten">
+    <div class="b-label">Warum wird gewichtet?</div>
+    <p>Ohne Gewichtung zählt jedes Kriterium gleich viel – der Kaffeeautomat in der Fahrerkabine also so viel wie die Liefertreue. Die Gewichtung ist der Ort, an dem die <strong>Unternehmensstrategie</strong> in die Rechnung einfließt. Ein Betrieb mit Just-in-time-Produktion gewichtet Termintreue hoch, ein Discounter den Preis. Deshalb ist die Gewichtung auch der Punkt, an dem in der Praxis am meisten diskutiert wird – und genau deshalb müssen alle betroffenen Abteilungen daran beteiligt sein, nicht nur der Einkauf.</p>
+  </div>
+
+  <h3>Das Vorgehen in sieben Schritten</h3>
+  <div class="schritte" data-notiz="ablauf-nutzwertanalyse">
+    <div class="schritt"><div class="s-nr">1</div><div class="s-txt">Festlegung der Vergleichskriterien</div></div>
+    <div class="s-warum">Welche Eigenschaften sind für die Entscheidung überhaupt relevant? Vier bis sechs Kriterien sind üblich – zu viele verwässern das Ergebnis, zu wenige bilden die Entscheidung nicht ab.</div>
+    <div class="schritt"><div class="s-nr">2</div><div class="s-txt">Definition eines Gewichtungsschlüssels für die Vergleichskriterien</div></div>
+    <div class="s-warum">Wie wichtig ist jedes Kriterium im Verhältnis zu den anderen? Üblich sind Prozentwerte, die zusammen 100 % ergeben. Hier fließt die Unternehmensstrategie ein – und hier müssen alle betroffenen Abteilungen mitreden.</div>
+    <div class="schritt"><div class="s-nr">3</div><div class="s-txt">Bewertung der einzelnen Kriterien anhand der vorliegenden Angebote</div></div>
+    <div class="s-warum">Punkteskala festlegen und anwenden, zum Beispiel 0 bis 10 oder 0 % bis 100 % – wobei 0 = nicht erfüllt und 10 = voll erfüllt. Die Skala muss für alle Kriterien und alle Angebote dieselbe sein.</div>
+    <div class="schritt"><div class="s-nr">4</div><div class="s-txt">Bestimmung von K.-o.-Kriterien</div></div>
+    <div class="s-warum">Jedes Angebot, das definierte Mindestpunkte nicht erfüllt, scheidet aus dem Angebotsvergleich aus – unabhängig davon, wie gut seine Gesamtpunktzahl wäre. Damit verhindert man, dass ein billiger Anbieter mit inakzeptabler Liefertreue über den Preis gewinnt.</div>
+    <div class="schritt"><div class="s-nr">5</div><div class="s-txt">Errechnung der Teilnutzwerte je Kriterium: Gewichtung × Bewertung</div></div>
+    <div class="s-warum">Der reine Rechenschritt. Für jedes Angebot und jedes Kriterium ein Produkt – bei drei Angeboten und fünf Kriterien also fünfzehn Multiplikationen.</div>
+    <div class="schritt"><div class="s-nr">6</div><div class="s-txt">Addition der Teilnutzwerte und Ermittlung einer Rangfolge</div></div>
+    <div class="s-warum">Je Angebot alle Teilnutzwerte aufsummieren – das ist der Gesamtnutzwert. Dann sortieren: Rang 1, 2, 3.</div>
+    <div class="schritt fertig"><div class="s-nr">✓</div><div class="s-txt">Das Angebot mit der höchsten Punktzahl wird weiterverfolgt bzw. bekommt den Zuschlag</div></div>
+    <div class="s-warum">Und zwar begründet: Der Weg dorthin ist dokumentiert und für jeden nachvollziehbar. Genau das ist der Zweck des Verfahrens.</div>
+  </div>
+
+  <div class="block beispiel" data-notiz="bsp-nutzwertanalyse-vollstaendig">
+    <div class="b-label">Beispiel aus der Praxis – vollständig durchgerechnet</div>
+    <p>Nordwind Rad sucht einen Logistikdienstleister für die Händlerbelieferung in Europa. Drei Anbieter haben angeboten: <strong>A = Nordfracht</strong>, <strong>B = TransEuro</strong>, <strong>C = Regiolog</strong>. Die Projektgruppe aus Einkauf, Vertrieb, Logistik und IT hat fünf Kriterien festgelegt und gewichtet. Bewertet wird auf einer Skala von 0 bis 10 (0 = nicht erfüllt, 10 = voll erfüllt).</p>
+  </div>
+
+  <div class="tab" data-notiz="tab-nutzwertanalyse-rechnung">
+    <table>
+      <thead>
+        <tr><th>Kriterium</th><th class="num">Gewicht</th><th class="num">A Bew.</th><th class="num">A Teilnutzwert</th><th class="num">B Bew.</th><th class="num">B Teilnutzwert</th><th class="num">C Bew.</th><th class="num">C Teilnutzwert</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Frachtkosten</td><td class="num">30</td><td class="num">9</td><td class="num">270</td><td class="num">6</td><td class="num">180</td><td class="num">7</td><td class="num">210</td></tr>
+        <tr><td>Liefertreue / Termintreue</td><td class="num">25</td><td class="num">6</td><td class="num">150</td><td class="num">9</td><td class="num">225</td><td class="num">8</td><td class="num">200</td></tr>
+        <tr><td>IT-Anbindung (EDI, Tracking)</td><td class="num">20</td><td class="num">5</td><td class="num">100</td><td class="num">9</td><td class="num">180</td><td class="num">4</td><td class="num">80</td></tr>
+        <tr><td>Netzabdeckung Europa</td><td class="num">15</td><td class="num">7</td><td class="num">105</td><td class="num">8</td><td class="num">120</td><td class="num">5</td><td class="num">75</td></tr>
+        <tr><td>Nachhaltigkeit (CO₂-Bilanz)</td><td class="num">10</td><td class="num">4</td><td class="num">40</td><td class="num">7</td><td class="num">70</td><td class="num">9</td><td class="num">90</td></tr>
+        <tr><td><strong>Summe</strong></td><td class="num"><strong>100</strong></td><td class="num">–</td><td class="num"><strong>665</strong></td><td class="num">–</td><td class="num"><strong>775</strong></td><td class="num">–</td><td class="num"><strong>655</strong></td></tr>
+        <tr><td><strong>Nutzwert (÷ 100)</strong></td><td class="num">–</td><td class="num">–</td><td class="num"><strong>6,65</strong></td><td class="num">–</td><td class="num"><strong>7,75</strong></td><td class="num">–</td><td class="num"><strong>6,55</strong></td></tr>
+        <tr><td><strong>Rang</strong></td><td class="num">–</td><td class="num">–</td><td class="num"><strong>2</strong></td><td class="num">–</td><td class="num"><strong>1</strong></td><td class="num">–</td><td class="num"><strong>3</strong></td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="schritte" data-notiz="rechnung-nutzwertanalyse">
+    <div class="schritt"><div class="s-nr">1</div><div class="s-txt">Gewichtssumme prüfen: 30 + 25 + 20 + 15 + 10 = 100</div></div>
+    <div class="s-warum">Immer der erste Handgriff. Ergibt die Summe nicht 100 (bzw. 1,0), stimmt der Gewichtungsschlüssel nicht und alles Weitere ist falsch.</div>
+    <div class="schritt"><div class="s-nr">2</div><div class="s-txt">Teilnutzwerte für Angebot A: 30×9 = 270 · 25×6 = 150 · 20×5 = 100 · 15×7 = 105 · 10×4 = 40</div></div>
+    <div class="s-warum">Gewichtung mal Bewertung, Zeile für Zeile. Spaltenweise arbeiten ist fehleranfälliger als zeilenweise.</div>
+    <div class="schritt"><div class="s-nr">3</div><div class="s-txt">Gesamtnutzwert A: 270 + 150 + 100 + 105 + 40 = 665</div></div>
+    <div class="s-warum">Angebot A ist beim Preis mit 9 Punkten das mit Abstand beste – und landet trotzdem nur auf Rang 2. Der Preis wiegt eben nur 30 %.</div>
+    <div class="schritt"><div class="s-nr">4</div><div class="s-txt">Gesamtnutzwert B: 180 + 225 + 180 + 120 + 70 = 775</div></div>
+    <div class="s-warum">B ist bei keinem einzigen Kriterium das billigste, aber überall solide bis sehr gut – besonders bei den beiden schwer gewichteten Kriterien Liefertreue und IT.</div>
+    <div class="schritt"><div class="s-nr">5</div><div class="s-txt">Gesamtnutzwert C: 210 + 200 + 80 + 75 + 90 = 655</div></div>
+    <div class="s-warum">C hat den besten Nachhaltigkeitswert – aber dieses Kriterium wiegt nur 10 %. Die schwache IT-Anbindung bei 20 % Gewicht wiegt schwerer.</div>
+    <div class="schritt"><div class="s-nr">6</div><div class="s-txt">K.-o.-Kriterium prüfen: Mindestbewertung 7 bei der Liefertreue gefordert</div></div>
+    <div class="s-warum">Angebot A erreicht dort nur 6 Punkte und scheidet damit aus – unabhängig von seinen 665 Gesamtpunkten. Das K.-o.-Kriterium wird <strong>vor</strong> der Rangfolge geprüft, nicht danach.</div>
+    <div class="schritt fertig"><div class="s-nr">✓</div><div class="s-txt">Rangfolge: 1. B (775) · 2. A (665, ausgeschieden) · 3. C (655) → Zuschlag an TransEuro (B)</div></div>
+    <div class="s-warum">B gewinnt sowohl nach Punkten als auch nach K.-o.-Prüfung. Die Empfehlung lautet: Zuschlag an B, weil es bei den hoch gewichteten Kriterien Liefertreue (25 %) und IT-Anbindung (20 %) deutlich vorn liegt und der Preisnachteil gegenüber A durch diese Vorteile überkompensiert wird.</div>
+  </div>
+
+  <div class="block achtung" data-notiz="ach-nutzwertanalyse-fehler">
+    <div class="b-label">Die vier klassischen Fehler</div>
+    <p><strong>1. Gewichtung und Bewertung vertauschen.</strong> Die <em>Gewichtung</em> gehört zum Kriterium und ist für alle Angebote gleich. Die <em>Bewertung</em> gehört zum Angebot und ist je Angebot verschieden. Wer das vertauscht, bekommt für alle Anbieter dieselbe Punktzahl und merkt es meist nicht.</p>
+    <p><strong>2. Gewichtungen summieren sich nicht auf 100 %.</strong> Immer als ersten Schritt prüfen.</p>
+    <p><strong>3. Teilnutzwerte addieren statt multiplizieren – oder umgekehrt.</strong> Die Regel: <em>innerhalb</em> einer Zeile wird multipliziert (Gewicht × Bewertung), <em>über</em> die Zeilen hinweg wird addiert.</p>
+    <p><strong>4. K.-o.-Kriterien vergessen.</strong> Steht in der Aufgabe ein Mindestwert, ist er zwingend zu prüfen – und zwar bevor die Rangfolge gebildet wird. Ein ausgeschiedenes Angebot bekommt keinen Zuschlag, auch wenn es die meisten Punkte hätte.</p>
+    <p><strong>Und eine Grenze des Verfahrens, die eine gute Antwort erwähnt:</strong> Die Nutzwertanalyse ist nur so objektiv wie ihre Gewichtung und Bewertung. Beide sind subjektive Setzungen. Das Verfahren macht die Entscheidung nicht objektiv – es macht sie <strong>nachvollziehbar</strong>. Das ist ein wichtiger Unterschied.</p>
+  </div>
+
+  <div class="block pruefung" data-notiz="pru-nutzwertanalyse">
+    <div class="b-label">So kommt das in der Prüfung</div>
+    <p>Die Nutzwertanalyse ist eine der zuverlässigsten Punktequellen im Gruber-Teil. Typischer Aufbau: Eine Tabelle mit Kriterien, Gewichtungen und Bewertungen ist vorgegeben, du sollst die Teilnutzwerte ergänzen, die Gesamtnutzwerte bilden, die Rangfolge nennen und <strong>eine Empfehlung begründen</strong>.</p>
+    <p>Drei Tipps für die volle Punktzahl: <strong>Erstens</strong> alle Zwischenergebnisse in die Tabelle schreiben – für die Teilnutzwerte gibt es eigene Punkte, auch wenn die Summe später einen Rechenfehler enthält. <strong>Zweitens</strong> die Empfehlung ausformulieren, nicht nur „B gewinnt“, sondern: „Empfohlen wird Angebot B mit 775 Punkten, weil es bei den hoch gewichteten Kriterien Liefertreue und IT-Anbindung deutlich vorn liegt.“ <strong>Drittens</strong> nach K.-o.-Kriterien suchen – wenn irgendwo im Aufgabentext ein Mindestwert steht, ist er kein Zufall.</p>
+  </div>
+
+  <div class="abfrage-liste">
+    <div class="abfrage-kopf">Selbstabfrage</div>
+    <details class="abfrage"><summary>Wozu dient die Nutzwertanalyse?</summary>
+      <div class="antwort"><p>Sie erleichtert den Entscheidungsprozess bei der Auswahl verschiedener Angebote und möglicher Logistikdienstleister und macht ihn transparent. Sie erlaubt es, nicht-monetäre Kriterien zusammen mit dem Preis in einer Kennzahl zu verrechnen.</p></div></details>
+    <details class="abfrage"><summary>Nenne die sieben Schritte der Nutzwertanalyse.</summary>
+      <div class="antwort"><p>1. Vergleichskriterien festlegen. 2. Gewichtungsschlüssel definieren. 3. Kriterien je Angebot bewerten (z. B. 0–10). 4. K.-o.-Kriterien bestimmen. 5. Teilnutzwerte berechnen (Gewichtung × Bewertung). 6. Teilnutzwerte addieren und Rangfolge bilden. 7. Angebot mit der höchsten Punktzahl erhält den Zuschlag.</p></div></details>
+    <details class="abfrage"><summary>Wie berechnet man einen Teilnutzwert und wie den Gesamtnutzwert?</summary>
+      <div class="antwort"><p>Teilnutzwert = Gewichtung × Bewertung, je Kriterium und Angebot. Gesamtnutzwert = Summe aller Teilnutzwerte eines Angebots.</p></div></details>
+    <details class="abfrage"><summary>Warum kann das billigste Angebot die Nutzwertanalyse verlieren?</summary>
+      <div class="antwort"><p>Weil der Preis nur eines von mehreren gewichteten Kriterien ist. Im Beispiel wiegt er 30 % – ein Angebot, das bei Liefertreue (25 %) und IT-Anbindung (20 %) deutlich besser abschneidet, kann den Preisvorteil überkompensieren.</p></div></details>
+    <details class="abfrage"><summary>Was ist ein K.-o.-Kriterium und wann wird es geprüft?</summary>
+      <div class="antwort"><p>Ein Mindestwert, den ein Angebot bei einem bestimmten Kriterium erreichen muss. Wird er nicht erfüllt, scheidet das Angebot unabhängig von der Gesamtpunktzahl aus. Geprüft wird vor der Bildung der Rangfolge.</p></div></details>
+    <details class="abfrage"><summary>Warum ist die Nutzwertanalyse nicht objektiv?</summary>
+      <div class="antwort"><p>Weil Auswahl der Kriterien, Gewichtung und Bewertung subjektive Setzungen sind. Das Verfahren macht die Entscheidung nicht objektiv, sondern nachvollziehbar und diskutierbar – deshalb müssen alle betroffenen Abteilungen beteiligt werden, nicht nur der Einkauf.</p></div></details>
+  </div>
+</section>
+
+<hr class="trenner">
+
+<!-- ═══════════════════════════════════════════════════════════ -->
+<section class="abschnitt" id="selbsttest" data-gruppe="Selbsttest">
+  <div class="ab-kopf"><h2><span class="ab-nr">Test</span>Selbsttest – 14 Fragen</h2></div>
+
+  <p>Erst beantworten, dann bei Fehlern in den passenden Abschnitt zurückspringen. Die Rechenfragen rechnest du am besten auf Papier durch, bevor du klickst.</p>
+
+  <div class="quiz">
+    <div class="q-block">
+      <div class="q-nr"></div>
+      <div class="q-frage">Was versteht man unter Produktionslogistik?</div>
+      <div class="q-optionen">
+        <button class="q-opt" data-richtig="false">A) Die Herstellung der Produkte selbst</button>
+        <button class="q-opt" data-richtig="true">B) Maßnahmen zur Sicherstellung eines optimalen Informations- und Materialflusses im Transformationsprozess der Produktion</button>
+        <button class="q-opt" data-richtig="false">C) Die Beschaffung der Rohstoffe beim Lieferanten</button>
+        <button class="q-opt" data-richtig="false">D) Die Auslieferung fertiger Waren an den Kunden</button>
+      </div>
+      <div class="q-fb" data-erklaerung="Die Produktionslogistik verändert das Produkt nie – sie sorgt nur dafür, dass Material und Information zur richtigen Zeit am richtigen Platz sind. C ist Beschaffungs-, D ist Distributionslogistik."></div>
+    </div>
+
+    <div class="q-block">
+      <div class="q-nr"></div>
+      <div class="q-frage">Welche Aussage über den Schienenverkehr trifft zu?</div>
+      <div class="q-optionen">
+        <button class="q-opt" data-richtig="false">A) Er ist besonders flexibel und ermöglicht Haus-zu-Haus-Verkehr</button>
+        <button class="q-opt" data-richtig="true">B) Er ist umweltfreundlich und staufrei, aber fahrplangebunden und erfordert häufige Umladungen</button>
+        <button class="q-opt" data-richtig="false">C) Er ist der teuerste Verkehrsträger pro Kilometer</button>
+        <button class="q-opt" data-richtig="false">D) Er eignet sich nicht für schwere und sperrige Güter</button>
+      </div>
+      <div class="q-fb" data-erklaerung="Vorteile Schiene: keine Staus, hohe Verkehrssicherheit, schwere und sperrige Güter, umweltfreundlich. Nachteile: wenig flexibel, Fahrplanbindung, häufige Umladungen. Teuerster Verkehrsträger je Kilometer ist die Luftfracht."></div>
+    </div>
+
+    <div class="q-block">
+      <div class="q-nr"></div>
+      <div class="q-frage">Ein Lager lässt Holz trocknen, bevor es verarbeitet wird. Welche Lagerfunktion ist das?</div>
+      <div class="q-optionen">
+        <button class="q-opt" data-richtig="false">A) Mengenmäßige Anpassung</button>
+        <button class="q-opt" data-richtig="false">B) Zeitliche Anpassung</button>
+        <button class="q-opt" data-richtig="true">C) Qualitative Anpassung</button>
+        <button class="q-opt" data-richtig="false">D) Wertmäßige Anpassung</button>
+      </div>
+      <div class="q-fb" data-erklaerung="Qualitative Anpassung: Durch die Lagerzeit tritt eine Wertverbesserung ein – Holz trocknet, Wein reift, Bananen reifen nach. Die wertmäßige Anpassung wäre der spekulative Einkauf bei günstigem Preis."></div>
+    </div>
+
+    <div class="q-block">
+      <div class="q-nr"></div>
+      <div class="q-frage">Welche Aussage zur chaotischen Lagerhaltung ist richtig?</div>
+      <div class="q-optionen">
+        <button class="q-opt" data-richtig="false">A) Die Ware wird ohne System abgestellt, ein Wiederfinden ist Glückssache</button>
+        <button class="q-opt" data-richtig="true">B) Die Zuordnung von Artikel zu Lagerplatz ist nicht fest, sondern wird bei jeder Einlagerung vom System vergeben und dokumentiert</button>
+        <button class="q-opt" data-richtig="false">C) Jeder Artikel hat einen festen Platz, der auch bei Leerstand reserviert bleibt</button>
+        <button class="q-opt" data-richtig="false">D) Sie kommt ohne EDV-Unterstützung aus</button>
+      </div>
+      <div class="q-fb" data-erklaerung="Chaotisch heißt dynamisch, nicht unordentlich. Ein solches Lager ist das am strengsten verwaltete überhaupt: Ohne lückenlose Buchung jeder Bewegung wäre die Ware nicht auffindbar. C beschreibt die Festplatzstrategie."></div>
+    </div>
+
+    <div class="q-block">
+      <div class="q-nr"></div>
+      <div class="q-frage">Welcher Vorteil spricht für die Freiplatzstrategie?</div>
+      <div class="q-optionen">
+        <button class="q-opt" data-richtig="false">A) Die Ware ist auch ohne EDV leicht auffindbar</button>
+        <button class="q-opt" data-richtig="true">B) Optimale Nutzung der Lagerflächen und einfach durchzuführende Tagesinventur</button>
+        <button class="q-opt" data-richtig="false">C) Jeder Artikel bleibt dauerhaft am selben Platz</button>
+        <button class="q-opt" data-richtig="false">D) Bei Auftragsspitzen muss Lagerfläche fremdangemietet werden</button>
+      </div>
+      <div class="q-fb" data-erklaerung="Freiplatz: eingehende Ware auf den nächsten freien Platz, EDV-Lagerverwaltung zwingend. Vorteile sind optimale Flächennutzung und einfache Tagesinventur. A, C und D beschreiben die Festplatzstrategie."></div>
+    </div>
+
+    <div class="q-block">
+      <div class="q-nr"></div>
+      <div class="q-frage">Nach welchem Verfahren wird unterstellt, dass die zuletzt beschafften Güter zuerst verbraucht werden?</div>
+      <div class="q-optionen">
+        <button class="q-opt" data-richtig="false">A) FIFO</button>
+        <button class="q-opt" data-richtig="true">B) LIFO</button>
+        <button class="q-opt" data-richtig="false">C) HIFO</button>
+        <button class="q-opt" data-richtig="false">D) LOFO</button>
+      </div>
+      <div class="q-fb" data-erklaerung="LIFO = last in, first out. FIFO ist das Gegenteil und in § 256 Satz 1 HGB ausdrücklich zugelassen. HIFO und LOFO richten sich nicht nach dem Zeitpunkt, sondern nach dem Preis der Zugänge."></div>
+    </div>
+
+    <div class="q-block">
+      <div class="q-nr"></div>
+      <div class="q-frage">Der durchschnittliche Lagerbestand beträgt 1.000 Stück, der Jahresverbrauch 12.000 Stück. Wie hoch ist die Umschlagshäufigkeit?</div>
+      <div class="q-optionen">
+        <button class="q-opt" data-richtig="false">A) 0,083</button>
+        <button class="q-opt" data-richtig="true">B) 12</button>
+        <button class="q-opt" data-richtig="false">C) 30</button>
+        <button class="q-opt" data-richtig="false">D) 360</button>
+      </div>
+      <div class="q-fb" data-erklaerung="Umschlagshäufigkeit = Materialverbrauch ÷ durchschnittlicher Lagerbestand = 12.000 ÷ 1.000 = 12-mal pro Jahr. Die 30 wäre die durchschnittliche Lagerdauer in Tagen (360 ÷ 12)."></div>
+    </div>
+
+    <div class="q-block">
+      <div class="q-nr"></div>
+      <div class="q-frage">Die durchschnittliche Lagerdauer beträgt 30 Tage, der kalkulatorische Jahreszinssatz 6 %. Wie hoch ist der Lagerzinssatz?</div>
+      <div class="q-optionen">
+        <button class="q-opt" data-richtig="false">A) 6 %</button>
+        <button class="q-opt" data-richtig="true">B) 0,5 %</button>
+        <button class="q-opt" data-richtig="false">C) 1,8 %</button>
+        <button class="q-opt" data-richtig="false">D) 72 %</button>
+      </div>
+      <div class="q-fb" data-erklaerung="Lagerzinssatz = (Jahreszinssatz × Lagerdauer) ÷ 360 = (6 × 30) ÷ 360 = 0,5 %. Kontrolle: 30 Tage sind ein Zwölftel des Jahres, also 6 % ÷ 12 = 0,5 %. Der Lagerzinssatz ist immer kleiner als der Jahreszinssatz, sobald die Umschlagshäufigkeit über 1 liegt."></div>
+    </div>
+
+    <div class="q-block">
+      <div class="q-nr"></div>
+      <div class="q-frage">Welche Größe steht im Zähler der Reichweite?</div>
+      <div class="q-optionen">
+        <button class="q-opt" data-richtig="false">A) Der durchschnittliche Lagerbestand</button>
+        <button class="q-opt" data-richtig="true">B) Der Stichtagsbestand</button>
+        <button class="q-opt" data-richtig="false">C) Der Materialverbrauch der Periode</button>
+        <button class="q-opt" data-richtig="false">D) Der Sicherheitsbestand</button>
+      </div>
+      <div class="q-fb" data-erklaerung="Reichweite = Stichtagsbestand ÷ Bedarf pro Zeiteinheit. Sie blickt nach vorn und fragt, wie lange der heute vorhandene Bestand noch reicht. Mit dem Durchschnittsbestand rechnet dagegen die Lagerdauer, die zurückblickt."></div>
+    </div>
+
+    <div class="q-block">
+      <div class="q-nr"></div>
+      <div class="q-frage">Von 4.800 Materialanforderungen konnten 4.656 sofort vollständig beliefert werden. Wie hoch ist der Servicegrad?</div>
+      <div class="q-optionen">
+        <button class="q-opt" data-richtig="false">A) 3 %</button>
+        <button class="q-opt" data-richtig="false">B) 90 %</button>
+        <button class="q-opt" data-richtig="true">C) 97 %</button>
+        <button class="q-opt" data-richtig="false">D) 103 %</button>
+      </div>
+      <div class="q-fb" data-erklaerung="Servicegrad = (voll belieferbare Anforderungen × 100) ÷ Gesamtzahl = (4.656 × 100) ÷ 4.800 = 97 %. Gezählt werden Anforderungen, nicht Stückzahlen – und nur die vollständig erfüllten."></div>
+    </div>
+
+    <div class="q-block">
+      <div class="q-nr"></div>
+      <div class="q-frage">Welcher Bestandteil der Kommissionierzeit ist in der Regel der größte?</div>
+      <div class="q-optionen">
+        <button class="q-opt" data-richtig="false">A) Basiszeit</button>
+        <button class="q-opt" data-richtig="true">B) Wegzeit</button>
+        <button class="q-opt" data-richtig="false">C) Greifzeit</button>
+        <button class="q-opt" data-richtig="false">D) Verteilzeit</button>
+      </div>
+      <div class="q-fb" data-erklaerung="Die Wegzeit macht bei Mann-zur-Ware-Systemen oft über 40 % der Kommissionierzeit aus. Die Greifzeit ist der einzige wertschöpfende Anteil, lässt sich aber kaum verkürzen – deshalb setzen Optimierungen bei Weg- und Totzeit an."></div>
+    </div>
+
+    <div class="q-block">
+      <div class="q-nr"></div>
+      <div class="q-frage">Was ist ein Packstoff?</div>
+      <div class="q-optionen">
+        <button class="q-opt" data-richtig="false">A) Die Palette oder Gitterbox</button>
+        <button class="q-opt" data-richtig="false">B) Die Stretchfolie oder das Umreifungsband</button>
+        <button class="q-opt" data-richtig="true">C) Das Material, aus dem Packmittel bestehen – Holz, Kunststoff, Metall, Pappe</button>
+        <button class="q-opt" data-richtig="false">D) Das Etikett oder der Warnaufkleber</button>
+      </div>
+      <div class="q-fb" data-erklaerung="Packstoff = Material. A ist ein Packmittel, B ein Packhilfsmittel, D ein Kennzeichnungsmittel. Merkregel: Stoff = Material, Mittel = Ding."></div>
+    </div>
+
+    <div class="q-block">
+      <div class="q-nr"></div>
+      <div class="q-frage">Welche Stufe steht in der Abfallhierarchie nach § 6 KrWG an zweiter Stelle?</div>
+      <div class="q-optionen">
+        <button class="q-opt" data-richtig="false">A) Recycling</button>
+        <button class="q-opt" data-richtig="true">B) Vorbereitung zur Wiederverwendung</button>
+        <button class="q-opt" data-richtig="false">C) Energetische Verwertung</button>
+        <button class="q-opt" data-richtig="false">D) Beseitigung</button>
+      </div>
+      <div class="q-fb" data-erklaerung="Die Reihenfolge lautet: 1. Vermeidung, 2. Vorbereitung zur Wiederverwendung, 3. Recycling, 4. sonstige Verwertung einschließlich energetischer Verwertung, 5. Beseitigung. Die Reihenfolge ist punktrelevant."></div>
+    </div>
+
+    <div class="q-block">
+      <div class="q-nr"></div>
+      <div class="q-frage">Wie wird in der Nutzwertanalyse der Teilnutzwert je Kriterium ermittelt?</div>
+      <div class="q-optionen">
+        <button class="q-opt" data-richtig="false">A) Bewertung plus Gewichtung</button>
+        <button class="q-opt" data-richtig="true">B) Gewichtung mal Bewertung</button>
+        <button class="q-opt" data-richtig="false">C) Bewertung geteilt durch Gewichtung</button>
+        <button class="q-opt" data-richtig="false">D) Summe aller Bewertungen geteilt durch die Zahl der Kriterien</button>
+      </div>
+      <div class="q-fb" data-erklaerung="Teilnutzwert = Gewichtung × Bewertung. Innerhalb der Zeile wird multipliziert, über die Zeilen hinweg addiert – die Summe der Teilnutzwerte ergibt den Gesamtnutzwert."></div>
+    </div>
+
+    <div class="q-score"><div class="z"></div><div class="t"></div></div>
+  </div>
+
+  <div class="block lernziel" data-notiz="ziel-abschluss">
+    <div class="b-label">Wenn du fertig bist</div>
+    <ul>
+      <li>Rechne das durchgehende Zahlenbeispiel (1.000 Stück, 24 €, 12.000 Stück Jahresverbrauch, 6 %) einmal komplett von vorn durch, ohne nachzuschauen – vom durchschnittlichen Lagerbestand bis zu den Lagerzinsen.</li>
+      <li>Zeichne die Nutzwertanalyse-Tabelle aus dem Kopf auf und rechne sie neu.</li>
+      <li>Drücke <strong>K</strong>, um aus allen Selbstabfragen dieses Kapitels Karteikarten zu ziehen.</li>
+    </ul>
+  </div>
+</section>
+
+</main>
+
+<script>window.KAPITEL = {id:'gruber-3', fach:'gruber', nummer:'1.24–1.36', titel:'Produktion, Lager & Distribution'};</script>
+<script src="assets/portal.js" defer></script>
+</body>
+</html>

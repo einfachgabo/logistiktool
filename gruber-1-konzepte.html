@@ -1,0 +1,1757 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kapitel 1.1–1.11 · Logistikkonzepte &amp; Analysemethoden</title>
+<link rel="stylesheet" href="assets/portal.css">
+</head>
+<body class="mit-sidebar">
+
+<aside class="sidebar"></aside>
+
+<main class="inhalt">
+
+<div class="kopf-label">Christian Gruber · Kapitel 1.1–1.11 · Alternative logistische Konzepte entwickeln und bewerten</div>
+<h1>Logistikkonzepte &amp; Analysemethoden</h1>
+<p class="kopf-sub">Hier lernst du, wie ein Logistikkonzept aufgebaut wird, was Kunden davon erwarten – und mit welchen Werkzeugen du bestehende Abläufe analysierst und bewertest. Der Schwerpunkt liegt auf ABC- und XYZ-Analyse: das sind die zuverlässigsten Punktebringer dieses Prüfungsteils.</p>
+
+<div class="block lernziel" data-notiz="ziel-kapitel">
+  <div class="b-label">Wenn du hier durch bist, kannst du</div>
+  <ul>
+    <li>die neun Logistikbereiche nennen und eine Aufgabe dem richtigen Bereich zuordnen</li>
+    <li>erklären, welche Fragen ein Logistikkonzept beantworten muss</li>
+    <li>einen Kapazitätsbedarf ausrechnen und sagen, was das mit Flexibilität zu tun hat</li>
+    <li>Bruttowertschöpfung berechnen und die Wertschöpfungskette beschreiben</li>
+    <li>Direktbelieferung, Hub and Spoke und Milkrun voneinander abgrenzen</li>
+    <li>EDI, MDE, RFID, VMI und SCM erklären, ohne die Abkürzungen zu verwechseln</li>
+    <li>Benchmarking in seinen drei Ausprägungen anwenden</li>
+    <li>eine SWOT-Analyse, eine GAP-Analyse und ein Ishikawa-Diagramm aufbauen</li>
+    <li>eine ABC-Analyse von Hand vollständig durchrechnen – sortieren, kumulieren, klassifizieren</li>
+    <li>eine XYZ-Analyse über den Variationskoeffizienten begründen</li>
+    <li>aus der ABC/XYZ-Matrix die passende Beschaffungsstrategie ableiten</li>
+    <li>die drei Dimensionen der Nachhaltigkeit und ihre Zielkonflikte benennen</li>
+    <li>eine Marktanalyse nach Angebot und Nachfrage gliedern</li>
+  </ul>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════════ -->
+<section class="abschnitt" id="logistikbereiche" data-gruppe="Der Rahmen">
+  <div class="ab-kopf"><h2><span class="ab-nr">1.1</span>Die Logistikbereiche</h2></div>
+
+  <div class="block einstieg" data-notiz="ein-logistikbereiche">
+    <div class="b-label">Worum es geht</div>
+    <p>Stell dir vor, in einem Werk fällt eine Abfüllanlage aus. Wer ist jetzt zuständig? Der Einkäufer, der das Ersatzteil bestellen muss? Der Lagerist, der nachsieht, ob es im Regal liegt? Der Techniker, der es einbaut? Der Disponent, der die Kundenlieferung verschieben muss? Alle vier arbeiten in der Logistik – aber in vier verschiedenen Bereichen. Gruber teilt die Logistik in <strong>neun Hauptaufgabenbereiche</strong> auf, und diese Einteilung ist die Landkarte für das gesamte Fach.</p>
+  </div>
+
+  <p>Die Einteilung ist keine Spitzfindigkeit. Sie beantwortet in der Prüfung eine sehr praktische Frage: Wenn in einer Aufgabe ein Problem beschrieben wird, an welchem Hebel musst du ansetzen? Wer den Bereich richtig benennt, hat die halbe Antwort schon geliefert – denn jeder Bereich hat eigene Kennzahlen, eigene typische Probleme und eigene Werkzeuge.</p>
+
+  <h3>Die neun Bereiche nach Gruber</h3>
+
+  <div class="tab" data-notiz="tab-logistikbereiche">
+    <table>
+      <thead><tr><th>Bereich</th><th>Zuständig für</th><th>Typische Frage</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Beschaffungslogistik</strong></td><td>Materialfluss vom Lieferanten bis ins eigene Lager – Disposition, Bestellung, Wareneingang</td><td>Wann bestelle ich wie viel bei wem?</td></tr>
+        <tr><td><strong>Lagerlogistik</strong></td><td>Einlagerung, Bestandsverwaltung, Auslagerung</td><td>Wo liegt was, und wie viel liegt da?</td></tr>
+        <tr><td><strong>Produktionslogistik</strong></td><td>Materialfluss innerhalb der Fertigung – Bereitstellung an der Maschine, Zwischenlager, Auftragssteuerung</td><td>Wie kommt das Material rechtzeitig ans Band?</td></tr>
+        <tr><td><strong>Transportlogistik</strong></td><td>Bewegung von Gütern von A nach B, innerbetrieblich wie außerbetrieblich</td><td>Womit, auf welchem Weg, zu welchen Kosten?</td></tr>
+        <tr><td><strong>Ersatzteillogistik</strong></td><td>Versorgung mit Ersatzteilen für Anlagen und ausgelieferte Produkte</td><td>Was muss vorrätig sein, obwohl es vielleicht nie gebraucht wird?</td></tr>
+        <tr><td><strong>Instandhaltungslogistik</strong></td><td>Material und Abläufe rund um Wartung und Reparatur – Betriebsbereitschaft sichern</td><td>Wie halte ich die Anlage am Laufen?</td></tr>
+        <tr><td><strong>Distributionslogistik</strong></td><td>Auslieferung fertiger Produkte an den Kunden – Tourenplanung, Versandwege, Servicegrad</td><td>Wie kommt das Produkt zum Kunden?</td></tr>
+        <tr><td><strong>Entsorgungslogistik</strong></td><td>Rückfluss: Altprodukte, Retouren, Verpackungen, Abfall, Recycling</td><td>Was passiert mit dem, was zurückkommt?</td></tr>
+        <tr><td><strong>Informationslogistik</strong></td><td>Steuerung des Informationsflusses entlang der gesamten Kette</td><td>Wer weiß was, wann, in welcher Qualität?</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="block beispiel" data-notiz="bsp-bereiche-zuordnung">
+    <div class="b-label">Beispiel: eine Störung, fünf Bereiche</div>
+    <p>Die Abfüllanlage im Getränkewerk steht wegen eines defekten Dosierventils. Was jetzt passiert, verteilt sich sauber auf die Bereiche:</p>
+    <p><strong>Instandhaltungslogistik</strong> stellt fest, dass das Ventil getauscht werden muss, und plant den Eingriff. <strong>Ersatzteillogistik</strong> prüft, ob das Ventil im Ersatzteillager liegt – es liegt nicht da, weil es ein seltenes Teil ist. <strong>Beschaffungslogistik</strong> bestellt beim Hersteller und organisiert einen Expressversand. <strong>Produktionslogistik</strong> zieht andere Aufträge vor, damit die Halle nicht komplett stillsteht. <strong>Distributionslogistik</strong> informiert den Kunden über die verschobene Lieferung und plant die Tour neu.</p>
+    <p>Ein einziger Defekt, fünf Bereiche, fünf verschiedene Entscheidungen. Genau so sind auch die Prüfungsaufgaben gebaut.</p>
+  </div>
+
+  <div class="block achtung" data-notiz="ach-transport-querschnitt">
+    <div class="b-label">Typische Verwechslung</div>
+    <p><strong>Transportlogistik ist kein Gegenstück zu Beschaffung, Produktion und Distribution</strong>, sondern liegt quer dazu. Transportiert wird in jedem dieser Bereiche. Die Zuordnung entscheidet nicht das Fahrzeug, sondern der <em>Abschnitt der Wertschöpfung</em>: Ein Lkw, der Rohmaterial vom Lieferanten holt, gehört zur Beschaffungslogistik. Derselbe Lkw, der abends Fertigware zum Kunden bringt, gehört zur Distributionslogistik.</p>
+    <p>Genauso ist die <strong>Informationslogistik</strong> ein Querschnitt: Sie begleitet alle acht anderen Bereiche und läuft dem Material voraus.</p>
+  </div>
+
+  <div class="block merk" data-notiz="merk-effizientes-logistiksystem">
+    <div class="b-label">Was ein effizientes Logistiksystem leistet</div>
+    <p>Gruber nennt fünf Beiträge, die ein gutes Logistiksystem zum Unternehmenserfolg liefert. Merke dir die Liste – sie ist die Standardbegründung, wenn du in der Prüfung eine Investition rechtfertigen sollst:</p>
+    <ul>
+      <li><strong>schneller als der Wettbewerber</strong> mit neuen Produkten und Leistungen auf den Markt kommen</li>
+      <li><strong>Durchlaufzeiten verkürzen</strong></li>
+      <li>durch geeignete <strong>Lager- und Verteilsysteme</strong> die Zeit vom Bestelleingang bis zur Lieferung verkürzen</li>
+      <li><strong>pünktliche und zuverlässige Liefertermine</strong> einhalten</li>
+      <li>die Möglichkeit schaffen, <strong>kleinere Produktionslose</strong> zu fertigen</li>
+    </ul>
+  </div>
+
+  <div class="block def" data-notiz="def-durchlaufzeit">
+    <div class="b-label">Definition</div>
+    <div class="b-term">Durchlaufzeit</div>
+    <p>Die gesamte Zeit, die ein Auftrag oder ein Werkstück vom Start bis zur Fertigstellung braucht – einschließlich aller Wartezeiten, Transportzeiten und Liegezeiten. Sie ist fast immer ein Vielfaches der reinen Bearbeitungszeit. Genau deshalb ist sie ein so guter Ansatzpunkt: Man verkürzt sie nicht, indem man schneller arbeitet, sondern indem man das Warten zwischen den Schritten beseitigt.</p>
+  </div>
+
+  <div class="block pruefung" data-notiz="pru-logistikbereiche">
+    <div class="b-label">So kommt das in der Prüfung</div>
+    <p>Fast nie als reine Aufzählungsfrage. Typisch ist die Zuordnung: Eine Situation wird beschrieben, du sollst den betroffenen Logistikbereich benennen <strong>und begründen</strong>. Die Begründung bringt die Punkte – „Entsorgungslogistik, weil es um den Rückfluss von Transportverpackungen zum Lieferanten geht“ ist eine ganze Antwort, „Entsorgungslogistik“ allein ist eine halbe.</p>
+  </div>
+
+  <div class="abfrage-liste">
+    <div class="abfrage-kopf">Selbstabfrage</div>
+    <details class="abfrage"><summary>Nenne die neun Logistikbereiche nach Gruber.</summary>
+      <div class="antwort"><p>Beschaffungs-, Lager-, Produktions-, Transport-, Ersatzteil-, Instandhaltungs-, Distributions-, Entsorgungs- und Informationslogistik.</p></div></details>
+    <details class="abfrage"><summary>Zu welchem Bereich gehört die Rücknahme von Mehrwegpaletten vom Kunden?</summary>
+      <div class="antwort"><p>Zur Entsorgungslogistik – sie deckt den gesamten Rückfluss ab: Retouren, Leergut, Verpackungen, Altprodukte und Abfall.</p></div></details>
+    <details class="abfrage"><summary>Warum ist die Transportlogistik ein Querschnittsbereich?</summary>
+      <div class="antwort"><p>Weil in jedem der anderen Bereiche transportiert wird. Die Zuordnung eines Transports richtet sich nach dem Abschnitt der Wertschöpfung, in dem er stattfindet – nicht nach dem eingesetzten Fahrzeug.</p></div></details>
+    <details class="abfrage"><summary>Was leistet ein effizientes Logistiksystem für das Unternehmen? Nenne drei Punkte.</summary>
+      <div class="antwort"><p>Schnellerer Markteintritt mit neuen Produkten, kürzere Durchlaufzeiten, kürzere Zeit vom Bestelleingang bis zur Lieferung, pünktliche und zuverlässige Liefertermine, Möglichkeit kleinerer Produktionslose (drei davon genügen).</p></div></details>
+    <details class="abfrage"><summary>Was ist die Durchlaufzeit, und warum ist sie meist viel länger als die Bearbeitungszeit?</summary>
+      <div class="antwort"><p>Die Gesamtzeit eines Auftrags von Start bis Fertigstellung. Sie enthält neben der Bearbeitung auch Warte-, Liege- und Transportzeiten – und die machen in der Praxis den größten Teil aus.</p></div></details>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════ -->
+<section class="abschnitt" id="logistikkonzept" data-gruppe="Der Rahmen">
+  <div class="ab-kopf"><h2><span class="ab-nr">1.2</span>Das Logistikkonzept</h2></div>
+
+  <div class="block einstieg" data-notiz="ein-logistikkonzept">
+    <div class="b-label">Worum es geht</div>
+    <p>Ein Unternehmen eröffnet ein zweites Werk. Jetzt muss jemand aufschreiben, wie die Logistik künftig funktionieren soll: Welches Material geht wohin, wer beliefert wen, wo wird gelagert, welche IT hängt dazwischen, was darf das kosten. Genau dieses Papier ist das <strong>Logistikkonzept</strong>. Es ist kein Ablaufplan für morgen, sondern die Grundentscheidung, nach der dann jahrelang disponiert wird.</p>
+  </div>
+
+  <div class="block def" data-notiz="def-logistikkonzept">
+    <div class="b-label">Definition</div>
+    <div class="b-term">Logistikkonzept</div>
+    <p>Im Logistikkonzept werden die <strong>Einzelaufgaben der Logistik festgelegt</strong> und anschließend über die einzelnen Bereiche hinweg zu einer <strong>Logistikkette</strong> – auch Supply Chain genannt – verknüpft. Es beschreibt also nicht nur, was jeder Bereich tut, sondern vor allem, wie die Bereiche ineinandergreifen.</p>
+  </div>
+
+  <p>Das zweite Wort ist das wichtige: <strong>verknüpfen</strong>. Jeder Bereich für sich kann bereits gut organisiert sein und die Kette trotzdem stocken – weil das Lager auf Paletten arbeitet, die Produktion aber Kleinladungsträger braucht, oder weil der Einkauf in Monatsmengen bestellt, während die Fertigung täglich abruft. Das Logistikkonzept sorgt dafür, dass die Schnittstellen zusammenpassen.</p>
+
+  <h3>Die sechs Bestimmungsfragen</h3>
+  <p>Bevor irgendetwas verknüpft werden kann, muss laut Gruber im Vorfeld bestimmt werden, was überhaupt verfügbar sein muss. Dafür gibt es sechs Fragen. Wenn du sie im Kopf hast, kannst du jedes Logistikkonzept prüfen – und in der Prüfung jede Lücke in einer beschriebenen Situation finden.</p>
+
+  <div class="raster" data-notiz="raster-sechs-fragen">
+    <div class="karte blue"><div class="k-titel">1 · Welche Güter und Informationen?</div><div class="k-text">Was genau fließt? Rohstoff, Baugruppe, Fertigware, Verpackung – und welche Daten laufen mit.</div></div>
+    <div class="karte blue"><div class="k-titel">2 · In welchen Mengen?</div><div class="k-text">Stück, Paletten, Tonnen – pro Tag, Woche oder Auftrag. Ohne Mengengerüst lässt sich nichts dimensionieren.</div></div>
+    <div class="karte blue"><div class="k-titel">3 · An welchen Orten?</div><div class="k-text">Nicht „im Werk“, sondern konkret: Rampe 4, Puffer vor Linie 2, Regalgasse C.</div></div>
+    <div class="karte blue"><div class="k-titel">4 · Zu welchem Zeitpunkt?</div><div class="k-text">Termin und Frequenz. Täglich um 6 Uhr ist etwas anderes als „einmal pro Woche“.</div></div>
+    <div class="karte blue"><div class="k-titel">5 · In welcher Qualität?</div><div class="k-text">Zustand, Beschaffenheit, Prüfstatus, Dokumentation. Auch Verpackungsqualität gehört dazu.</div></div>
+    <div class="karte blue"><div class="k-titel">6 · Durch welche Aktionen?</div><div class="k-text">Welche Tätigkeit bringt das Gut in diesen Zustand? Kommissionieren, Umpacken, Prüfen, Etikettieren.</div></div>
+  </div>
+
+  <p>Danach ist zusätzlich festzulegen, <strong>wo die Güter und Informationen entnommen werden</strong>, <strong>wie sie transportiert werden</strong> und <strong>wohin sie nach erfolgter Be- oder Verarbeitung gelangen sollen</strong>. Diese drei Punkte beschreiben den Weg; die sechs Fragen davor beschreiben den Zustand.</p>
+
+  <div class="block merk" data-notiz="merk-sechs-fragen">
+    <div class="b-label">Merkhilfe</div>
+    <p>Was · Wie viel · Wo · Wann · Welche Qualität · Wodurch – und anschließend: <strong>woher, womit, wohin</strong>. Sechs Fragen zum Zustand, drei zum Weg.</p>
+  </div>
+
+  <h3>Welche Fragen ein Logistikkonzept beantworten soll</h3>
+  <p>Gruber listet vier Punkte, die am Ende im Konzept beantwortet sein müssen. Drei davon sind Benchmarks, also Vergleichswerte – und das ist die eigentliche Aussage: Ein Logistikkonzept ohne Zahlen, an denen man es messen kann, ist kein Konzept, sondern eine Absichtserklärung.</p>
+
+  <div class="tab" data-notiz="tab-konzeptfragen">
+    <table>
+      <thead><tr><th>Frage</th><th>Was dahintersteckt</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Struktur, Leistungsmerkmale und Grenzen des Logistiknetzwerkes</strong></td><td>Welche Standorte, Lager, Wege und Partner gehören dazu? Welche Umfänge und Mengen kann das Netz tragen – und wo ist Schluss?</td></tr>
+        <tr><td><strong>Benchmark für Transport-, Umschlag- und Lagerhaltungskosten</strong></td><td>Was kostet eine Palette Transport, ein Umschlagvorgang, ein Lagerplatzmonat – und was kostet das bei anderen?</td></tr>
+        <tr><td><strong>Benchmark für die innerbetrieblichen Logistikkosten</strong></td><td>Was kostet die Logistik <em>innerhalb</em> des Werks: Staplerfahrten, Bereitstellung, Kommissionierung.</td></tr>
+        <tr><td><strong>Benchmark für Investitionen und Betriebskosten</strong></td><td>Was muss einmalig investiert werden (Regale, Fördertechnik, IT) und was kostet der laufende Betrieb?</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="block def" data-notiz="def-benchmark-kurz">
+    <div class="b-label">Definition</div>
+    <div class="b-term">Benchmark</div>
+    <p>Ein <strong>Vergleichs- oder Richtwert</strong>, der für das beste bekannte Verfahren steht. Ein Benchmark sagt dir nicht, ob du gut bist – er sagt dir, wie weit du vom Besten entfernt bist. Wie man Benchmarks systematisch sucht, steht in Abschnitt 1.6 (Benchmarking).</p>
+  </div>
+
+  <div class="block beispiel" data-notiz="bsp-logistikkonzept-werk">
+    <div class="b-label">Beispiel: das Konzept für das zweite Werk</div>
+    <p>Ein Hersteller von Elektromotoren baut ein zweites Werk 180 km vom Stammwerk entfernt. Das Logistikkonzept legt fest: Gehäuse und Wellen kommen weiterhin zentral ins Stammwerk (Frage 1 und 3), werden dort zu Sätzen kommissioniert (Frage 6) und in Kleinladungsträgern zu je 24 Stück (Frage 2, Frage 5) täglich um 5:30 Uhr am neuen Werk angeliefert (Frage 4). Entnommen wird aus dem Kommissionierlager Halle 2, transportiert wird per Werksverkehr mit einem eigenen Lkw im Milkrun, angeliefert wird direkt an den Puffer vor Linie 1.</p>
+    <p>Dazu die Benchmarks: 4,20 € Transportkosten je Ladungsträger, 0,95 € Umschlagkosten, 18 € Lagerplatzkosten pro Monat, 640.000 € Investition in Fördertechnik. Erst mit diesen Zahlen lässt sich später prüfen, ob das Konzept hält, was es versprochen hat.</p>
+  </div>
+
+  <div class="block achtung" data-notiz="ach-konzept-vs-planung">
+    <div class="b-label">Typische Verwechslung</div>
+    <p>Das <strong>Logistikkonzept</strong> ist die grundsätzliche Gestaltungsentscheidung – Struktur, Wege, Partner, Kostenrahmen. Die <strong>Disposition</strong> ist die tägliche Anwendung davon – welche Menge heute bestellt wird. Wer in der Prüfung nach dem Konzept gefragt wird und Bestellmengen ausrechnet, hat die Ebene verfehlt.</p>
+  </div>
+
+  <div class="block pruefung" data-notiz="pru-logistikkonzept">
+    <div class="b-label">So kommt das in der Prüfung</div>
+    <p>Sehr beliebt: „Welche Fragen muss ein Logistikkonzept beantworten?“ oder „Welche Punkte sind bei der Erstellung eines Logistikkonzepts im Vorfeld zu bestimmen?“ Antworte mit den sechs Bestimmungsfragen plus den drei Wegfragen – und ergänze die vier Konzeptfragen mit den drei Benchmark-Bereichen. Wer nur „was, wo, wann“ nennt, bekommt Teilpunkte.</p>
+  </div>
+
+  <div class="abfrage-liste">
+    <div class="abfrage-kopf">Selbstabfrage</div>
+    <details class="abfrage"><summary>Welche sechs Punkte sind im Vorfeld eines Logistikkonzepts zu bestimmen?</summary>
+      <div class="antwort"><p>Welche Güter und Informationen, in welchen Mengen, an welchen Orten, zu welchem Zeitpunkt, in welcher Qualität und durch welche Aktionen sie verfügbar sein müssen.</p></div></details>
+    <details class="abfrage"><summary>Was ist zusätzlich zu den sechs Fragen festzulegen?</summary>
+      <div class="antwort"><p>Wo die Güter und Informationen entnommen werden, wie sie transportiert werden und wohin sie nach erfolgter Be- oder Verarbeitung gelangen sollen.</p></div></details>
+    <details class="abfrage"><summary>Welche vier Fragen soll ein Logistikkonzept beantworten?</summary>
+      <div class="antwort"><p>Struktur, Leistungsmerkmale und Grenzen des Logistiknetzwerkes; Benchmark für Transport-, Umschlag- und Lagerhaltungskosten; Benchmark für die innerbetrieblichen Logistikkosten; Benchmark für Investitionen und Betriebskosten.</p></div></details>
+    <details class="abfrage"><summary>Was ist die Kernaufgabe eines Logistikkonzepts in einem Wort?</summary>
+      <div class="antwort"><p>Verknüpfen. Die Einzelaufgaben der Bereiche werden festgelegt und dann über die Bereichsgrenzen hinweg zu einer Logistikkette (Supply Chain) verbunden.</p></div></details>
+    <details class="abfrage"><summary>Warum gehören Benchmarks zwingend in ein Logistikkonzept?</summary>
+      <div class="antwort"><p>Weil das Konzept sonst nicht überprüfbar ist. Erst Vergleichswerte für Transport-, Umschlag-, Lager-, Betriebs- und Investitionskosten machen messbar, ob die gewählte Lösung wirtschaftlich ist.</p></div></details>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════ -->
+<section class="abschnitt" id="kundenanforderungen" data-gruppe="Der Rahmen">
+  <div class="ab-kopf"><h2><span class="ab-nr">1.2.4</span>Anforderungen interner und externer Kunden</h2></div>
+
+  <div class="block einstieg" data-notiz="ein-kundenanforderungen">
+    <div class="b-label">Worum es geht</div>
+    <p>„Kunde“ ist in der Logistik kein reiner Außenbegriff. Der Kunde des Wareneingangs ist die Produktion. Der Kunde der Produktion ist der Versand. Der Kunde des Versands ist der Händler. Wer intern liefert, hat also genauso einen Kunden wie der, der nach draußen liefert – und beide stellen Anforderungen, die im Logistikkonzept beantwortet sein müssen.</p>
+  </div>
+
+  <div class="block def" data-notiz="def-interner-kunde">
+    <div class="b-label">Definition</div>
+    <div class="b-term">Interner und externer Kunde</div>
+    <p><strong>Externer Kunde:</strong> Der Abnehmer außerhalb des Unternehmens, der bezahlt. <strong>Interner Kunde:</strong> Die nachgelagerte Stelle im eigenen Unternehmen, die deine Leistung weiterverarbeitet. Der Gedanke dahinter: Wer die interne Schnittstelle wie einen Kunden behandelt – mit vereinbarter Menge, Qualität und Termin –, erzeugt am Ende auch beim externen Kunden Zuverlässigkeit.</p>
+  </div>
+
+  <p>Gruber nennt vier Anforderungsblöcke. Sie klingen zunächst abstrakt, bedeuten in der Praxis aber sehr konkrete Zusagen, die jemand geben und einhalten muss.</p>
+
+  <div class="phasen" data-notiz="phasen-kundenanforderungen">
+    <div class="phase"><div class="p-nr">1</div><div class="p-name">Flexibilität bei Auftragsschwankungen</div><div class="p-text">Der Kunde bestellt mal 400, mal 900 Stück. Das Unternehmen muss die Kapazität anpassen können.</div></div>
+    <div class="phase"><div class="p-nr">2</div><div class="p-name">Versorgung mehrerer Produktionsstandorte</div><div class="p-text">Nicht ein Empfänger, sondern mehrere Werke – jedes mit eigenen Terminen, Modalitäten und Verantwortlichkeiten.</div></div>
+    <div class="phase"><div class="p-nr">3</div><div class="p-name">Übernahme von Teilprozessen</div><div class="p-text">Der Kunde gibt Schritte seiner eigenen Wertschöpfungskette ab – Vormontage, Prüfung, Konfektionierung.</div></div>
+    <div class="phase"><div class="p-nr">4</div><div class="p-name">Unterstützung bei der Optimierung</div><div class="p-text">Mitarbeit an der Verbesserung der Beschaffungs- und Distributionslogistik des Kunden.</div></div>
+  </div>
+
+  <h3>Anforderung 1: Flexibilität heißt Kapazität</h3>
+  <p>„Flexibel sein“ ist kein Vorsatz, sondern eine Rechenaufgabe. Flexibel ist, wer bei steigendem Auftragseingang noch Kapazität hat – und wer bei fallendem Auftragseingang nicht auf teuren Fixkosten sitzenbleibt. Deshalb steht hinter dieser Anforderung die Kapazitätsplanung.</p>
+
+  <div class="block def" data-notiz="def-kapazitaet">
+    <div class="b-label">Definition</div>
+    <div class="b-term">Kapazität</div>
+    <p>Das <strong>Fertigungsvermögen in einer Periode</strong>, gemessen in Zeit und Menge. Kapazität ist also immer eine Aussage der Form „so viel in so langer Zeit“ – 320 Stunden im Monat, 8.000 Stück je Woche. Eine Kapazitätsangabe ohne Zeitbezug ist wertlos.</p>
+  </div>
+
+  <p>Gruber weist auf etwas hin, das leicht überlesen wird: Dass die <em>verfügbare</em> Kapazität eines Arbeitsplatzes zufällig genau der <em>benötigten</em> entspricht, ist „eher zufällig und relativ selten“. Deshalb muss man beide Größen getrennt ermitteln und dann abstimmen. Die Abstimmung ist der eigentliche Managementakt: Überstunden, Zusatzschicht, Fremdvergabe, Terminverschiebung.</p>
+
+  <h3>Schritt 1: die Normalkapazität herleiten</h3>
+  <div class="schritte" data-notiz="schritte-normalkapazitaet">
+    <div class="schritt"><div class="s-nr">1</div><div class="s-txt">Fertigungsvermögen der Periode in Menge oder Wert bestimmen</div></div>
+    <div class="s-warum">Was kann der Arbeitsplatz grundsätzlich leisten? Das ist die Obergrenze, von der alles abgezogen wird.</div>
+    <div class="schritt fertig"><div class="s-nr">✓</div><div class="s-txt">Zeitliches Leistungsvermögen je Arbeitsplatz in Stunden ermitteln</div></div>
+    <div class="s-warum">Und zwar realistisch: Schichtmodell, Wochenende, Feiertage, Betriebsurlaub und geplante Wartung sind abzuziehen. Wer mit 24 Stunden × 365 Tagen rechnet, plant eine Kapazität ein, die es nie gab.</div>
+  </div>
+
+  <h3>Schritt 2: den Kapazitätsbedarf ausrechnen</h3>
+
+  <div class="formel" data-notiz="formel-kapazitaetsbedarf">
+    <div class="formel-kopf"><span class="f-tag">Formel</span><span class="f-name">Kapazitätsbedarf</span></div>
+    <div class="formel-koerper">
+      <div class="eq">Kapazitätsbedarf = (Auftragsmenge × Bearbeitungszeit pro Stück + Rüstzeit) × Leistungsgrad</div>
+      <div class="f-erklaerung">Zuerst die reine Arbeitszeit für alle Stücke, dann einmal die Rüstzeit für das Einrichten der Maschine dazu, und erst ganz zum Schluss die Korrektur mit dem Leistungsgrad. Die Klammer ist Pflicht – die Rüstzeit fällt einmal je Auftrag an, nicht je Stück.</div>
+    </div>
+  </div>
+
+  <div class="formel" data-notiz="formel-leistungsgrad">
+    <div class="formel-kopf"><span class="f-tag">Formel</span><span class="f-name">Leistungsgrad</span></div>
+    <div class="formel-koerper">
+      <div class="eq">Leistungsgrad = (Istleistung ÷ Normalleistung) × 100</div>
+      <div class="f-erklaerung">Ergebnis in Prozent. 100 % heißt: Es wird genau so gearbeitet, wie es die Vorgabezeit unterstellt. 90 % heißt: Es wird langsamer gearbeitet als geplant. 110 % heißt: schneller als geplant.</div>
+    </div>
+  </div>
+
+  <div class="block def" data-notiz="def-ruestzeit">
+    <div class="b-label">Definition</div>
+    <div class="b-term">Rüstzeit</div>
+    <p>Die Zeit, die eine Maschine oder ein Arbeitsplatz braucht, um von einem Produkt auf ein anderes umgestellt zu werden – Werkzeug wechseln, Programm laden, einfahren, erstes Gutteil prüfen. Sie fällt <strong>je Auftrag</strong> an, nicht je Stück. Genau deshalb sind kleine Lose teuer: Die Rüstzeit verteilt sich auf weniger Teile.</p>
+  </div>
+
+  <div class="block beispiel" data-notiz="bsp-kapazitaetsbedarf">
+    <div class="b-label">Rechenbeispiel: reicht die Kapazität?</div>
+    <p>Ein Kunde ruft einen Auftrag über <strong>1.950 Gehäusedeckel</strong> ab. Die Bearbeitungszeit beträgt <strong>3 Minuten je Stück</strong>, die Rüstzeit der Presse <strong>150 Minuten</strong>. Der Arbeitsplatz arbeitet aktuell mit einer Istleistung von <strong>90 Stück je Stunde</strong> bei einer Normalleistung von <strong>100 Stück je Stunde</strong>. Verfügbar sind zwei Schichten zu 8 Stunden an 5 Tagen.</p>
+  </div>
+
+  <div class="schritte" data-notiz="rechnung-kapazitaetsbedarf">
+    <div class="schritt"><div class="s-nr">1</div><div class="s-txt">Leistungsgrad = (90 ÷ 100) × 100 = 90 %, als Faktor also 0,90</div></div>
+    <div class="s-warum">Erst den Leistungsgrad bestimmen, sonst fehlt am Ende der Multiplikator.</div>
+    <div class="schritt"><div class="s-nr">2</div><div class="s-txt">Bearbeitung gesamt: 1.950 Stück × 3 Min = 5.850 Min</div></div>
+    <div class="s-warum">Reine Stückzeit, ohne Einrichten. Das ist der mengenabhängige Teil.</div>
+    <div class="schritt"><div class="s-nr">3</div><div class="s-txt">Klammer: 5.850 Min + 150 Min Rüstzeit = 6.000 Min</div></div>
+    <div class="s-warum">Die Rüstzeit einmal dazu – der Auftrag wird einmal aufgelegt, nicht 1.950-mal.</div>
+    <div class="schritt"><div class="s-nr">4</div><div class="s-txt">6.000 Min × 0,90 = 5.400 Min</div></div>
+    <div class="s-warum">Der Leistungsgrad wird auf die gesamte Klammer angewendet, nicht nur auf die Bearbeitungszeit.</div>
+    <div class="schritt fertig"><div class="s-nr">✓</div><div class="s-txt">5.400 Min ÷ 60 = 90 Stunden Kapazitätsbedarf</div></div>
+    <div class="s-warum">Verfügbar sind 2 Schichten × 8 h × 5 Tage = 80 Stunden. Es fehlen 10 Stunden – und genau hier beginnt die Flexibilitätsfrage: Überstunden, Zusatzschicht, zweite Maschine oder Fremdvergabe.</div>
+  </div>
+
+  <div class="block achtung" data-notiz="ach-leistungsgrad-richtung">
+    <div class="b-label">Rechne die Formel genau so, wie sie im Skript steht</div>
+    <p>Sachlogisch würde man erwarten, dass ein Leistungsgrad <em>unter</em> 100 % den Zeitbedarf <strong>erhöht</strong> – wer langsamer arbeitet, braucht länger. Die Formel im Skript multipliziert aber mit dem Leistungsgrad, senkt den Bedarf also. Je nach Lehrbuch wird der Leistungsgrad auch als Divisor verwendet oder als Faktor zur Umrechnung von Ist- auf Vorgabezeit.</p>
+    <p><strong>Für die Prüfung:</strong> Verwende die Fassung aus Grubers Skript, schreibe den Rechenweg vollständig auf und benenne die Einheiten. Wenn dir der Zusammenhang unklar bleibt: <em>im Unterricht nachfragen</em>, in welcher Richtung Gruber den Leistungsgrad angewendet haben will.</p>
+  </div>
+
+  <h3>Anforderung 2: mehrere Standorte versorgen</h3>
+  <p>Sobald mehr als ein Werk beliefert wird, entstehen Fragen, die vorher niemand stellen musste. Gruber listet fünf Sachverhalte, die dann zu klären sind – und jeder davon ist im Streitfall eine Geldfrage.</p>
+
+  <div class="tab" data-notiz="tab-standortversorgung">
+    <table>
+      <thead><tr><th>Zu klären ist</th><th>Warum das wichtig ist</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Bestellabwicklung, Rechnungs- und Zahlungsmodalitäten</strong></td><td>Wer darf bestellen, wie wird bestellt, wann und an wen wird gezahlt? Sammelrechnung oder Einzelrechnung je Werk?</td></tr>
+        <tr><td><strong>Haftungs- und Gefahrenübergang (Incoterms 2025)</strong></td><td>Ab welchem Punkt trägt der Empfänger das Risiko, wenn die Ware beschädigt wird oder verlorengeht?</td></tr>
+        <tr><td><strong>Hol- oder Bringschuld, Eskalation</strong></td><td>Holt der Kunde ab oder liefert der Lieferant an? Und wen ruft man an, wenn es klemmt – auf welcher Stufe, in welcher Frist?</td></tr>
+        <tr><td><strong>Lagerverantwortung</strong></td><td>Wem gehört der Bestand, wer disponiert ihn, wer trägt Schwund und Kapitalbindung?</td></tr>
+        <tr><td><strong>Termintreue</strong></td><td>Wird gemessen – über die Kennzahlen <strong>Servicegrad</strong> und <strong>Termintreue</strong>. Ohne Messung ist eine Zusage nur eine Absicht.</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="block def" data-notiz="def-incoterms-kurz">
+    <div class="b-label">Definition</div>
+    <div class="b-term">Incoterms</div>
+    <p>International standardisierte Lieferklauseln der Internationalen Handelskammer. Sie regeln in Kurzformeln wie EXW, FCA, CPT oder DDP, <strong>wer Transport und Versicherung zahlt</strong> und <strong>an welchem Ort Kosten- und Gefahrenübergang stattfinden</strong>. Gruber verweist auf die Fassung <strong>Incoterms 2025</strong>. Die einzelnen Klauseln werden im Kapitel zu den Logistiksystemen ausführlich behandelt.</p>
+  </div>
+
+  <div class="block def" data-notiz="def-servicegrad-termintreue">
+    <div class="b-label">Definition</div>
+    <div class="b-term">Servicegrad und Termintreue</div>
+    <p><strong>Servicegrad</strong> misst, welcher Anteil der Nachfrage sofort aus dem Bestand bedient werden konnte. <strong>Termintreue</strong> misst, welcher Anteil der Lieferungen zum zugesagten Termin eingetroffen ist. Beide sind Prozentwerte – und beide brauchen eine klare Definition, ab wann eine Lieferung als „pünktlich“ gilt. Ein Tag Toleranz oder null Tage Toleranz ergibt völlig verschiedene Zahlen.</p>
+  </div>
+
+  <h3>Anforderungen 3 und 4: mehr als liefern</h3>
+  <p>Die dritte Anforderung ist die <strong>Übernahme von Teilprozessen innerhalb der Kundenwertschöpfungskette</strong>. Der Kunde lagert Arbeit aus, die er bisher selbst gemacht hat: Vormontage, Qualitätsprüfung, Etikettierung, Sequenzierung. Für den Logistikdienstleister ist das ein Umsatzsprung – und ein Risikosprung, denn er haftet nun für Schritte, die direkt in die Fertigung des Kunden gehen.</p>
+  <p>Die vierte Anforderung, die <strong>Unterstützung bei der Optimierung von Beschaffungs- und Distributionslogistik</strong>, geht noch weiter: Der Dienstleister soll nicht nur ausführen, sondern mitdenken und Verbesserungsvorschläge liefern. Genau dafür braucht man die Analysewerkzeuge aus den Abschnitten 1.6 bis 1.9.</p>
+
+  <div class="block pruefung" data-notiz="pru-kundenanforderungen">
+    <div class="b-label">So kommt das in der Prüfung</div>
+    <p>Zwei Muster. Erstens die Aufzählungsfrage: „Welche Anforderungen stellen interne und externe Kunden an das Logistikkonzept?“ – dann brauchst du die vier Blöcke und bei Block 2 die fünf zu klärenden Sachverhalte. Zweitens die Rechenaufgabe zum Kapazitätsbedarf. Dort gilt: Rechenweg vollständig aufschreiben, Einheiten mitführen (Minuten in Stunden umrechnen!) und am Ende einen Satz zur Aussage schreiben – „Der Bedarf übersteigt die verfügbare Kapazität um 10 Stunden, daher sind Überstunden oder Fremdvergabe erforderlich.“ Dieser Schlusssatz ist regelmäßig ein eigener Punkt.</p>
+  </div>
+
+  <div class="abfrage-liste">
+    <div class="abfrage-kopf">Selbstabfrage</div>
+    <details class="abfrage"><summary>Nenne die vier Anforderungsblöcke, die Gruber unter „Kundenanforderungen“ führt.</summary>
+      <div class="antwort"><p>Sicherstellung der Flexibilität bei Auftragsschwankungen; Sicherstellung der Versorgung verschiedener Produktionsstandorte; Übernahme von Teilprozessen innerhalb der Kundenwertschöpfungskette; Unterstützung bei der Optimierung von Beschaffungs- und Distributionslogistik.</p></div></details>
+    <details class="abfrage"><summary>Wie lautet die Formel für den Kapazitätsbedarf?</summary>
+      <div class="antwort"><p>Kapazitätsbedarf = (Auftragsmenge × Bearbeitungszeit pro Stück + Rüstzeit) × Leistungsgrad. Die Rüstzeit steht in der Klammer, weil sie einmal je Auftrag anfällt.</p></div></details>
+    <details class="abfrage"><summary>Wie berechnest du den Leistungsgrad?</summary>
+      <div class="antwort"><p>Leistungsgrad = (Istleistung ÷ Normalleistung) × 100, Ergebnis in Prozent.</p></div></details>
+    <details class="abfrage"><summary>Was ist bei der Ermittlung des zeitlichen Leistungsvermögens zu berücksichtigen?</summary>
+      <div class="antwort"><p>Schichtmodelle, Wochenenden, Feiertage, Betriebsurlaub und Wartung – alles, was die theoretisch verfügbare Zeit real verkürzt.</p></div></details>
+    <details class="abfrage"><summary>Welche fünf Sachverhalte sind bei der Versorgung mehrerer Produktionsstandorte zu klären?</summary>
+      <div class="antwort"><p>Bestellabwicklung sowie Rechnungs- und Zahlungsmodalitäten; Haftungs- und Gefahrenübergang (Incoterms 2025); Hol- oder Bringschuld und Eskalation; Lagerverantwortung; Termintreue mit den Kennzahlen Servicegrad und Termintreue.</p></div></details>
+    <details class="abfrage"><summary>Warum ist der interne Kunde ein Kunde?</summary>
+      <div class="antwort"><p>Weil die nachgelagerte Stelle im eigenen Unternehmen genauso auf Menge, Qualität und Termin angewiesen ist wie ein zahlender Abnehmer. Nur wenn jede interne Schnittstelle zuverlässig bedient wird, ist die Kette nach außen zuverlässig.</p></div></details>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════ -->
+<section class="abschnitt" id="wertschoepfung" data-gruppe="Der Rahmen">
+  <div class="ab-kopf"><h2><span class="ab-nr">1.3</span>Wertschöpfung und Wertschöpfungskette</h2></div>
+
+  <div class="block einstieg" data-notiz="ein-wertschoepfung">
+    <div class="b-label">Worum es geht</div>
+    <p>Ein Möbelhersteller kauft Holz für 40 € ein und verkauft daraus einen Stuhl für 120 €. Ist das ein Gewinn von 80 €? Nein – aber es ist eine <strong>Wertschöpfung</strong> von 80 €. Aus diesen 80 € müssen Löhne, Maschinen, Miete, Energie und am Ende der Gewinn bezahlt werden. Wertschöpfung ist also der Wert, den <em>dieses</em> Unternehmen selbst hinzugefügt hat – alles andere hat es eingekauft.</p>
+  </div>
+
+  <div class="formel" data-notiz="formel-bruttowertschoepfung">
+    <div class="formel-kopf"><span class="f-tag">Formel</span><span class="f-name">Bruttowertschöpfung</span></div>
+    <div class="formel-koerper">
+      <div class="eq">Erlöse − Vorleistungen (z. B. Materialeinsatz) = Bruttowertschöpfung</div>
+      <div class="f-erklaerung">Vorleistungen sind alles, was von außen zugekauft wurde und im Produkt oder in der Leistung aufgeht: Material, Fremdleistungen, Energie, zugekaufte Transporte. Was bleibt, ist der eigene Beitrag.</div>
+    </div>
+  </div>
+
+  <div class="block def" data-notiz="def-vorleistung">
+    <div class="b-label">Definition</div>
+    <div class="b-term">Vorleistung</div>
+    <p>Jede von außen bezogene Leistung, die im eigenen Erzeugnis verbraucht wird – Roh-, Hilfs- und Betriebsstoffe, Handelsware, Energie, Fremdreparaturen, eingekaufte Transporte und Dienstleistungen. <strong>Nicht</strong> zu den Vorleistungen zählen die eigenen Personalkosten und die Abschreibungen auf eigene Anlagen: Das ist ja genau der eigene Beitrag, den die Wertschöpfung messen soll.</p>
+  </div>
+
+  <div class="block beispiel" data-notiz="bsp-bruttowertschoepfung">
+    <div class="b-label">Rechenbeispiel</div>
+    <p>Ein Logistikdienstleister erzielt in einem Jahr <strong>2.500.000 €</strong> Erlöse. Er hat zugekauft: Frachten von Subunternehmern 900.000 €, Verpackungsmaterial 260.000 €, Kraftstoff und Energie 190.000 €, Fremdinstandhaltung 150.000 €.</p>
+    <p>Vorleistungen gesamt: 900.000 + 260.000 + 190.000 + 150.000 = <strong>1.500.000 €</strong></p>
+    <p>Bruttowertschöpfung: 2.500.000 € − 1.500.000 € = <strong>1.000.000 €</strong></p>
+    <p>Die Wertschöpfungsquote beträgt damit 1.000.000 ÷ 2.500.000 = <strong>40 %</strong>. Aus dieser einen Million bezahlt das Unternehmen seine Fahrer, Disponenten, Abschreibungen auf die eigenen Lkw, Zinsen, Steuern – und was dann noch übrig ist, ist Gewinn.</p>
+  </div>
+
+  <div class="block achtung" data-notiz="ach-wertschoepfung-gewinn">
+    <div class="b-label">Typische Verwechslung</div>
+    <p><strong>Wertschöpfung ist nicht Gewinn.</strong> Der Gewinn ist erst das, was nach Abzug aller eigenen Kosten übrigbleibt. Die Wertschöpfung ist der gesamte Betrag, aus dem diese eigenen Kosten überhaupt erst bezahlt werden. Ein Unternehmen kann eine hohe Wertschöpfung und trotzdem Verlust haben.</p>
+    <p>Zweite Falle: <strong>Hohe Wertschöpfungsquote ist nicht automatisch gut.</strong> Sie bedeutet nur, dass viel selbst gemacht wird. Ein Unternehmen mit hoher Fertigungstiefe hat eine hohe Quote – und zugleich hohe Fixkosten und wenig Flexibilität. Outsourcing senkt die Quote bewusst.</p>
+  </div>
+
+  <div class="block def" data-notiz="def-wertschoepfungskette">
+    <div class="b-label">Definition</div>
+    <div class="b-term">Wertschöpfungskette</div>
+    <p>Die Wertschöpfungskette ist die <strong>Abfolge von Tätigkeiten</strong>, die – beginnend bei den Rohstofflieferanten bis hin zum Kunden – ein verkaufsfähiges Produkt werden lassen. Während dieser Reihenfolge erfährt das Gut einen <strong>Mehrwert</strong>.</p>
+  </div>
+
+  <p>Die entscheidende Beobachtung dabei: Die Kette geht über Unternehmensgrenzen hinweg. Kein einzelner Betrieb macht aus Eisenerz einen Kühlschrank. Jede Stufe kauft ein, fügt etwas hinzu und verkauft weiter – und jede Stufe verdient an ihrem eigenen Mehrwert.</p>
+
+  <div class="phasen" data-notiz="phasen-wertschoepfungskette">
+    <div class="phase"><div class="p-nr">Stufe 1</div><div class="p-name">Rohstoff</div><div class="p-text">Eisenerz wird gefördert. Mehrwert: aus Bodenschatz wird handelbarer Rohstoff.</div></div>
+    <div class="phase"><div class="p-nr">Stufe 2</div><div class="p-name">Werkstoff</div><div class="p-text">Im Stahlwerk entsteht Blech. Mehrwert: definierte Güte, Maße, Oberfläche.</div></div>
+    <div class="phase"><div class="p-nr">Stufe 3</div><div class="p-name">Teil</div><div class="p-text">Der Zulieferer presst Gehäuseteile. Mehrwert: Form und Funktion.</div></div>
+    <div class="phase"><div class="p-nr">Stufe 4</div><div class="p-name">Produkt</div><div class="p-text">Der Hersteller montiert den Kühlschrank. Mehrwert: ein funktionierendes Gerät.</div></div>
+    <div class="phase"><div class="p-nr">Stufe 5</div><div class="p-name">Verfügbarkeit</div><div class="p-text">Handel und Logistik bringen das Gerät zum Kunden. Mehrwert: hier und jetzt verfügbar.</div></div>
+  </div>
+
+  <div class="block merk" data-notiz="merk-logistik-mehrwert">
+    <div class="b-label">Warum das für dich wichtig ist</div>
+    <p>Die letzte Stufe ist die logistische. <strong>Verfügbarkeit ist Mehrwert.</strong> Ein Kühlschrank im Werkslager in Ungarn und derselbe Kühlschrank morgen früh beim Kunden in der Küche sind physisch identisch – wirtschaftlich sind sie es nicht. Diesen Unterschied erzeugt die Logistik. Das ist die beste Antwort auf die Frage, warum Logistik wertschöpfend ist und nicht nur ein Kostenblock.</p>
+  </div>
+
+  <div class="block pruefung" data-notiz="pru-wertschoepfung">
+    <div class="b-label">So kommt das in der Prüfung</div>
+    <p>Die Berechnung der Bruttowertschöpfung ist eine kurze, sichere Rechenaufgabe – meist mit einer Liste von Positionen, aus der du die Vorleistungen selbst heraussuchen musst. Achte darauf: Löhne und Abschreibungen sind <strong>keine</strong> Vorleistungen und werden nicht abgezogen. Daneben wird gern die Definition der Wertschöpfungskette wörtlich abgefragt – lerne den Satz „Abfolge von Tätigkeiten vom Rohstofflieferanten bis zum Kunden, während der das Gut einen Mehrwert erfährt“.</p>
+  </div>
+
+  <div class="abfrage-liste">
+    <div class="abfrage-kopf">Selbstabfrage</div>
+    <details class="abfrage"><summary>Wie berechnet man die Bruttowertschöpfung?</summary>
+      <div class="antwort"><p>Erlöse minus Vorleistungen (z. B. Materialeinsatz) = Bruttowertschöpfung.</p></div></details>
+    <details class="abfrage"><summary>Gehören Löhne zu den Vorleistungen?</summary>
+      <div class="antwort"><p>Nein. Löhne und Abschreibungen sind der eigene Beitrag und werden aus der Wertschöpfung bezahlt. Vorleistungen sind nur von außen zugekaufte Leistungen.</p></div></details>
+    <details class="abfrage"><summary>Definiere die Wertschöpfungskette.</summary>
+      <div class="antwort"><p>Die Abfolge von Tätigkeiten, die – beginnend bei den Rohstofflieferanten bis hin zum Kunden – ein verkaufsfähiges Produkt entstehen lassen. Dabei erfährt das Gut einen Mehrwert.</p></div></details>
+    <details class="abfrage"><summary>Erlöse 800.000 €, Material 300.000 €, Fremdleistungen 100.000 €, Löhne 250.000 €. Wie hoch ist die Bruttowertschöpfung?</summary>
+      <div class="antwort"><p>Vorleistungen = 300.000 + 100.000 = 400.000 €. Bruttowertschöpfung = 800.000 − 400.000 = <strong>400.000 €</strong>. Die Löhne werden nicht abgezogen.</p></div></details>
+    <details class="abfrage"><summary>Welchen Mehrwert erzeugt die Logistik in der Wertschöpfungskette?</summary>
+      <div class="antwort"><p>Verfügbarkeit: das richtige Gut am richtigen Ort zur richtigen Zeit. Physisch verändert sie das Produkt nicht, wirtschaftlich erhöht sie seinen Wert erheblich.</p></div></details>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════ -->
+<section class="abschnitt" id="belieferungsstrategien" data-gruppe="Konzepte umsetzen">
+  <div class="ab-kopf"><h2><span class="ab-nr">1.4</span>Belieferungsstrategien</h2></div>
+
+  <div class="block einstieg" data-notiz="ein-belieferung">
+    <div class="b-label">Worum es geht</div>
+    <p>Ein Werk braucht täglich Material von zwölf verschiedenen Zulieferern, jeder liefert nur ein paar Kisten. Zwölf Lkw fahren also jeden Morgen an, jeder halb leer, jeder blockiert eine Rampe, jeder braucht Wareneingangspersonal. Das geht auch anders – und die Frage, <em>wie</em> es anders geht, ist die Frage nach der Belieferungsstrategie. Gruber stellt drei Grundmuster vor: Direktbelieferung, Hub and Spoke und Milkrun.</p>
+  </div>
+
+  <p>Alle drei lösen dasselbe Grundproblem: Transportkosten sinken mit der Auslastung des Fahrzeugs, Bestände sinken mit der Lieferhäufigkeit – und beides zieht in die entgegengesetzte Richtung. Wer selten und voll liefert, hat billige Transporte und teure Lager. Wer täglich und klein liefert, hat schlanke Lager und teure Transporte. Die drei Strategien sind unterschiedliche Auswege aus diesem Zielkonflikt.</p>
+
+  <h3>Direktbelieferung</h3>
+
+  <div class="block def" data-notiz="def-direktbelieferung">
+    <div class="b-label">Definition</div>
+    <div class="b-term">Direktbelieferung</div>
+    <p>Die Ware geht <strong>ohne Zwischenstopp</strong> vom Versender zum Empfänger. Es gibt keinen Umschlagpunkt und keine Bündelung mit fremder Ware. Gruber nennt dazu zwei Ausprägungen: die Lieferung in <strong>Teilladungen</strong>, wenn die Menge keinen vollen Lkw füllt, und <strong>kombinierte Transporte</strong> bis zum Kunden über mehrere Verkehrsträger – Straße, Bahn, Schiff, Flugzeug.</p>
+  </div>
+
+  <div class="block def" data-notiz="def-kombinierter-verkehr">
+    <div class="b-label">Definition</div>
+    <div class="b-term">Kombinierter Transport</div>
+    <p>Ein Transport, bei dem dieselbe Ladeeinheit – Container, Wechselbrücke, Sattelauflieger – nacheinander mit mehreren Verkehrsträgern befördert wird, <strong>ohne dass die Ware selbst umgeladen wird</strong>. Umgeschlagen wird nur die Einheit. Typisch: Lkw zum Terminal, Bahn über die lange Strecke, Lkw zum Empfänger.</p>
+  </div>
+
+  <p>Direktbelieferung ist die einfachste und schnellste Form – kein Umweg, keine zusätzliche Schadensquelle, kein Fremdkontakt. Sie lohnt sich, wenn die Menge groß genug ist, um das Fahrzeug auszulasten, und wenn es wenige Empfänger gibt. Bei kleinen Mengen an viele Empfänger wird sie teuer, weil jedes Fahrzeug halbleer fährt.</p>
+
+  <h3>Hub and Spoke</h3>
+
+  <div class="block def" data-notiz="def-hub-and-spoke">
+    <div class="b-label">Definition</div>
+    <div class="b-term">Hub and Spoke</div>
+    <p>Alle Sendungen laufen über ein zentrales <strong>Umschlagszentrum – den Hub</strong>. Dort werden sie neu sortiert und für den Weiterlauf gebündelt. Gruber beschreibt <strong>Spoke</strong> als die Übernahme weiterer Dienstleistungen wie Sammeln und Kommissionieren.</p>
+  </div>
+
+  <div class="block achtung" data-notiz="ach-spoke-begriff">
+    <div class="b-label">Zum Begriff „Spoke“</div>
+    <p>Wörtlich heißt <em>spoke</em> „Speiche“. In der gängigen Fachliteratur sind die Spokes deshalb die <strong>Stichverbindungen</strong>, die sternförmig vom Hub zu den Regionen und Empfängern führen – wie die Speichen eines Rades zur Nabe. Grubers Skript legt den Begriff auf die dort erbrachten Zusatzdienstleistungen (Sammeln, Kommissionieren) aus.</p>
+    <p>Beides beschreibt dasselbe System, nur mit anderem Schwerpunkt. <strong>Für die Prüfung:</strong> Beschreibe das Prinzip – zentraler Umschlagpunkt, sternförmige Zu- und Ablaufverbindungen, Bündelung und Sortierung im Hub. Wenn du sicher sein willst, welche Definition Gruber in der Klausur hören will: <em>im Unterricht nachfragen</em>.</p>
+  </div>
+
+  <div class="block beispiel" data-notiz="bsp-hub-and-spoke">
+    <div class="b-label">Beispiel: Stückgutnetz über Nacht</div>
+    <p>Ein Stückgutspediteur hat 40 Niederlassungen in Deutschland. Ohne Hub müsste jede Niederlassung mit jeder anderen direkt verbunden sein – das wären 40 × 39 ÷ 2 = <strong>780 Verbindungen</strong>, die meisten davon mit ein paar Paletten am Tag. Mit einem zentralen Hub in der Mitte des Landes braucht jede Niederlassung nur <strong>eine</strong> Verbindung zum Hub: 40 Relationen statt 780.</p>
+    <p>Abends fahren volle Lkw aus allen 40 Regionen zum Hub, nachts wird dort komplett neu sortiert, morgens fahren wieder volle Lkw zurück in alle 40 Regionen. Der Preis dafür: ein Umweg über die Mitte und ein zusätzlicher Umschlag – also mehr Kilometer und mehr Schadensrisiko je Sendung, aber deutlich bessere Auslastung.</p>
+  </div>
+
+  <h3>Milkrun</h3>
+
+  <div class="block def" data-notiz="def-milkrun">
+    <div class="b-label">Definition</div>
+    <div class="b-term">Milkrun</div>
+    <p>Ein Fahrzeug fährt auf einer <strong>festen Route in festem Takt</strong> mehrere Quellen an, nimmt bei jeder eine kleine Menge auf und bringt alles gebündelt zum Empfänger. Der Name kommt vom Milchmann: Er fuhr jeden Morgen dieselbe Runde, stellte volle Flaschen hin und nahm die leeren mit. Genau das ist das Prinzip – <strong>Anlieferung und Leergutabholung in einem Umlauf</strong>. Gruber ordnet die Idee dem <strong>Kanban</strong>-Prinzip zu.</p>
+  </div>
+
+  <div class="block def" data-notiz="def-kanban-kurz">
+    <div class="b-label">Definition</div>
+    <div class="b-term">Kanban</div>
+    <p>Japanisch für „Karte“ oder „Signal“. Ein Verbrauchssteuerungsverfahren: Nachschub wird erst ausgelöst, wenn ein Behälter tatsächlich leer wird – der leere Behälter oder eine Karte ist das Bestellsignal. Es wird also nicht geplant nachgeschoben, sondern durch Verbrauch <em>gezogen</em>. Kanban wird im Kapitel zur Beschaffung ausführlich behandelt.</p>
+  </div>
+
+  <div class="block beispiel" data-notiz="bsp-milkrun">
+    <div class="b-label">Beispiel: aus zwölf Anlieferungen wird eine</div>
+    <p>Zurück zum Werk aus dem Einstieg: zwölf Zulieferer im Umkreis von 60 km, jeder mit ein bis drei Gitterboxen täglich. Statt zwölf einzelner Anlieferungen fährt jetzt ein werkseigener Lkw jeden Morgen um 5:00 Uhr eine feste Runde über acht dieser Zulieferer, nimmt bei jedem die bereitgestellten Behälter auf, gibt dort die Leerbehälter des Vortags ab und ist um 9:30 Uhr am Werk.</p>
+    <p>Ergebnis: eine Rampenbelegung statt acht, ein Wareneingangsvorgang statt acht, kalkulierbare Ankunftszeit, geschlossener Behälterkreislauf. Preis: Die Route ist starr. Wer seine Ware um 5:20 Uhr nicht bereitgestellt hat, wartet einen Tag – der Lkw fährt nicht zweimal.</p>
+  </div>
+
+  <div class="tab" data-notiz="tab-belieferungsstrategien">
+    <table>
+      <thead><tr><th>Strategie</th><th>Wie es funktioniert</th><th>Wann sinnvoll</th><th>Preis dafür</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Direktbelieferung</strong></td><td>Vom Versender ohne Zwischenstopp zum Empfänger; als Teilladung oder als kombinierter Transport über mehrere Verkehrsträger</td><td>Große Mengen, wenige Empfänger, kurze Laufzeit gefordert</td><td>Schlechte Auslastung bei kleinen Mengen</td></tr>
+        <tr><td><strong>Hub and Spoke</strong></td><td>Alle Sendungen über ein zentrales Umschlagszentrum (Hub), dort sortieren und bündeln; Spokes verbinden Hub und Fläche und übernehmen Sammeln und Kommissionieren</td><td>Viele Empfänger, viele Versender, kleine Einzelmengen</td><td>Umweg, zusätzlicher Umschlag, Hub ist Engpass und Risiko</td></tr>
+        <tr><td><strong>Milkrun</strong></td><td>Feste Route in festem Takt über mehrere Quellen, Anlieferung und Leergutabholung im selben Umlauf (Kanban-Prinzip)</td><td>Regelmäßige Kleinmengen von mehreren Quellen im Umkreis</td><td>Starre Route und starrer Takt, wenig Spielraum bei Verzug</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="block achtung" data-notiz="ach-milkrun-hub">
+    <div class="b-label">Typische Verwechslung</div>
+    <p><strong>Milkrun und Hub and Spoke bündeln beide – aber an verschiedenen Stellen.</strong> Der Milkrun bündelt <em>im Fahrzeug auf der Straße</em>, indem eine Tour mehrere Quellen abfährt. Hub and Spoke bündelt <em>an einem festen Ort</em>, indem alles über einen Umschlagpunkt geleitet und dort neu sortiert wird. Merksatz: Milkrun = eine Tour, viele Stopps. Hub and Spoke = viele Touren, ein Knoten.</p>
+  </div>
+
+  <div class="block pruefung" data-notiz="pru-belieferung">
+    <div class="b-label">So kommt das in der Prüfung</div>
+    <p>Fast immer als Auswahlaufgabe mit Begründung: Eine Situation wird beschrieben (Anzahl Lieferanten, Mengen, Entfernungen, geforderte Frequenz), und du sollst die passende Belieferungsstrategie vorschlagen und begründen. Nenne dabei immer <strong>beides</strong> – Vorteil und Nachteil. Eine Empfehlung ohne genannten Nachteil wirkt unreflektiert und kostet Punkte.</p>
+  </div>
+
+  <div class="abfrage-liste">
+    <div class="abfrage-kopf">Selbstabfrage</div>
+    <details class="abfrage"><summary>Was ist ein Hub, was ein Spoke?</summary>
+      <div class="antwort"><p>Der Hub ist das zentrale Umschlagszentrum, in dem alle Sendungen zusammenlaufen, sortiert und neu gebündelt werden. Als Spoke bezeichnet Gruber die Übernahme weiterer Dienstleistungen wie Sammeln und Kommissionieren; in der gängigen Literatur sind die Spokes die sternförmigen Stichverbindungen zwischen Hub und Fläche.</p></div></details>
+    <details class="abfrage"><summary>Erkläre den Milkrun und woher der Name kommt.</summary>
+      <div class="antwort"><p>Ein Fahrzeug fährt in festem Takt eine feste Route über mehrere Quellen, sammelt kleine Mengen ein und nimmt Leergut mit zurück. Der Name kommt vom Milchmann, der volle Flaschen brachte und leere mitnahm. Gruber ordnet die Idee dem Kanban-Prinzip zu.</p></div></details>
+    <details class="abfrage"><summary>Welche zwei Ausprägungen der Direktbelieferung nennt Gruber?</summary>
+      <div class="antwort"><p>Teilladungen und kombinierte Transporte bis zum Kunden über Straße, Bahn, Schiff und Flugzeug.</p></div></details>
+    <details class="abfrage"><summary>Nenne je einen Nachteil von Hub and Spoke und Milkrun.</summary>
+      <div class="antwort"><p>Hub and Spoke: Umweg über den Hub, zusätzlicher Umschlag und damit zusätzliches Schadensrisiko, der Hub ist ein Engpass. Milkrun: starre Route und starrer Takt – wer nicht rechtzeitig bereitstellt, wartet bis zum nächsten Umlauf.</p></div></details>
+    <details class="abfrage"><summary>Warum reduziert ein Hub die Zahl der nötigen Verbindungen so stark?</summary>
+      <div class="antwort"><p>Weil jede Niederlassung statt zu allen anderen nur noch zum Hub eine Verbindung braucht. Bei 40 Standorten sinkt die Zahl von 780 möglichen Direktrelationen auf 40 Relationen zum Hub.</p></div></details>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════ -->
+<section class="abschnitt" id="informationsfluss" data-gruppe="Konzepte umsetzen">
+  <div class="ab-kopf"><h2><span class="ab-nr">1.5</span>Informationsfluss und IT-Systeme</h2></div>
+
+  <div class="block einstieg" data-notiz="ein-informationsfluss">
+    <div class="b-label">Worum es geht</div>
+    <p>Im Lager stehen laut System 40 Stück, tatsächlich liegen 12 im Regal. Der Vertrieb sagt einem Kunden 30 zu. Physisch ist nichts kaputt, kein Lkw steht im Stau, niemand hat etwas verloren. Trotzdem wird die Lieferung platzen. Der Fehler steckt allein im Informationsfluss – und er kostet genauso viel Geld wie ein Unfall. Deshalb hat dieser Abschnitt in Grubers Skript ein eigenes Kapitel.</p>
+  </div>
+
+  <div class="block def" data-notiz="def-warenwirtschaftssystem">
+    <div class="b-label">Definition</div>
+    <div class="b-term">Warenwirtschaftssystem</div>
+    <p>Ein <strong>zentrales IT-System, das zur Unterstützung der Logistikprozesse und -abläufe genutzt wird</strong>. Es führt die Bestände, verwaltet Artikelstammdaten, verarbeitet Bestellungen, Wareneingänge, Lagerbewegungen und Auslieferungen – und ist damit die Datenquelle, aus der alle anderen Systeme ihre Wahrheit beziehen. Ist der Bestand dort falsch, ist er überall falsch.</p>
+  </div>
+
+  <h3>Die drei Eigenschaften, auf die es ankommt</h3>
+  <p>Gruber nennt drei Merkmale der zu übertragenden Daten, die den Unternehmenserfolg <strong>in direkter Weise</strong> beeinflussen. Sie klingen ähnlich, sind aber drei verschiedene Fehlerquellen:</p>
+
+  <div class="raster" data-notiz="raster-datenmerkmale">
+    <div class="karte teal"><div class="k-titel">Qualität</div><div class="k-text">Stimmen die Daten überhaupt? Ein Bestand von 40 statt 12 ist ein Qualitätsfehler – die Zahl ist da, aber falsch.</div></div>
+    <div class="karte teal"><div class="k-titel">Geschwindigkeit</div><div class="k-text">Sind sie rechtzeitig da? Eine korrekte Avisierung, die eine Stunde nach dem Lkw eintrifft, hilft niemandem mehr.</div></div>
+    <div class="karte teal"><div class="k-titel">Genauigkeit</div><div class="k-text">Sind sie präzise genug, um danach zu handeln? „Lieferung kommt nächste Woche“ ist richtig und rechtzeitig – aber zu grob, um eine Rampe zu planen.</div></div>
+  </div>
+
+  <h3>Die fünf Lösungen aus dem Skript</h3>
+  <p>Diese fünf Abkürzungen musst du erklären können. Sie liegen auf verschiedenen Ebenen: EDI und RFID sind Techniken der Datenübertragung, MDE ist eine Technik der Datenerfassung, VMI ist eine Frage der Verantwortung, SCM ist ein Managementansatz. Wer das unterscheidet, verwechselt sie nicht mehr.</p>
+
+  <div class="tab" data-notiz="tab-it-systeme">
+    <table>
+      <thead><tr><th>Kürzel</th><th>Ausgeschrieben</th><th>Was es leistet</th><th>Ebene</th></tr></thead>
+      <tbody>
+        <tr><td><strong>EDI</strong></td><td>Electronic Data Interchange (elektronischer Datenaustausch)</td><td>Ermöglicht den Datenaustausch zwischen Unternehmen, Kunden und Lieferunternehmen <strong>ohne manuelle Eingriffe</strong>. Bestellung, Lieferavis und Rechnung laufen automatisch von System zu System.</td><td>Übertragung zwischen Unternehmen</td></tr>
+        <tr><td><strong>MDE</strong></td><td>Mobile Datenerfassung</td><td>Erfassung prozessrelevanter Daten am Ort des Geschehens – etwa im Lager per Barcodescanner –, die an das Warenwirtschaftssystem gesendet werden. Man unterscheidet <strong>Online-</strong> und <strong>Offlineverfahren</strong>.</td><td>Erfassung im Betrieb</td></tr>
+        <tr><td><strong>RFID</strong></td><td>Radio Frequency Identification</td><td>Daten werden auf einem Transponder gespeichert und <strong>zusammen mit der Sendung auf den Weg gebracht</strong>. Am Ziel werden sie <strong>kontaktlos</strong> ausgelesen und dem Warenwirtschaftssystem bereitgestellt.</td><td>Übertragung mit der Ware</td></tr>
+        <tr><td><strong>VMI</strong></td><td>Vendor Managed Inventory (bei SAP: Supplier Managed Inventory)</td><td>Die <strong>Bestands- und Verfügbarkeitsüberwachung</strong> wird an einen ausgelagerten Dienstleister bzw. den Lieferanten übergeben. Der Lieferant sieht den Bestand und entscheidet selbst, wann er nachliefert.</td><td>Verantwortung</td></tr>
+        <tr><td><strong>SCM</strong></td><td>Supply Chain Management</td><td>Prozessorientierte Verknüpfung verschiedener Bereiche der Wertschöpfungskette – vom Rohstofflieferanten über den eigenen Transformationsprozess bis zum Kunden. Ausgangspunkt ist <strong>Kundenzufriedenheit und -bindung</strong> (ECR).</td><td>Management</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="block def" data-notiz="def-ecr">
+    <div class="b-label">Definition</div>
+    <div class="b-term">ECR – Efficient Consumer Response</div>
+    <p>Wörtlich: <strong>effiziente Reaktion auf Kundenwünsche</strong>. Der Grundgedanke des SCM: Nicht die Planung des Herstellers steuert die Kette, sondern das tatsächliche Verhalten des Endkunden. Was an der Kasse gescannt wird, löst den Nachschub aus – und zwar für alle Stufen gleichzeitig, nicht nacheinander.</p>
+  </div>
+
+  <div class="block beispiel" data-notiz="bsp-edi-rfid">
+    <div class="b-label">Beispiel: dieselbe Palette, vier Systeme</div>
+    <p>Ein Lieferant erhält per <strong>EDI</strong> eine Bestellung über 20 Paletten – kein Mensch tippt etwas ab, die Bestellung erscheint direkt in seinem System. Er kommissioniert, und der Lagerist bestätigt jede Entnahme per <strong>MDE</strong>-Scanner; der Bestand im Warenwirtschaftssystem sinkt in Echtzeit. Jede Palette bekommt ein <strong>RFID</strong>-Label mit Artikel, Menge und Charge. Am Wareneingang des Kunden fährt der Stapler durch ein Lesetor – alle 20 Paletten werden erfasst, ohne dass jemand ein Etikett suchen und scannen muss. Weil der Kunde mit dem Lieferanten <strong>VMI</strong> vereinbart hat, war die Bestellung ohnehin vom Lieferanten selbst ausgelöst worden: Er sieht die Bestände des Kunden und disponiert sie.</p>
+  </div>
+
+  <div class="block achtung" data-notiz="ach-mde-rfid">
+    <div class="b-label">Typische Verwechslung: MDE gegen RFID</div>
+    <p><strong>MDE</strong> ist die <em>Erfassung</em> von Daten durch einen Menschen mit einem Gerät – jemand scannt einen Barcode. Dafür braucht es Sichtkontakt, das Etikett muss sauber und erreichbar sein, und jede Einheit wird einzeln erfasst.</p>
+    <p><strong>RFID</strong> ist eine <em>Identifikationstechnik</em> per Funk. Der Transponder braucht keinen Sichtkontakt, kann durch Verpackung hindurch gelesen werden, und mehrere Einheiten werden gleichzeitig – im Pulk – erfasst. Dafür ist er teurer als ein gedrucktes Etikett und reagiert empfindlich auf Metall und Flüssigkeiten.</p>
+    <p>Zweite häufige Verwechslung: <strong>VMI gegen SCM.</strong> VMI ist eine einzelne, konkrete Vereinbarung über <em>eine</em> Aufgabe – wer den Bestand überwacht. SCM ist der übergreifende Managementansatz für die gesamte Kette. VMI kann ein Baustein von SCM sein, ist aber nicht dasselbe.</p>
+  </div>
+
+  <div class="block achtung" data-notiz="ach-mde-ortsgebunden">
+    <div class="b-label">Zur Formulierung im Skript</div>
+    <p>Das Skript beschreibt MDE als „ortgebundene Datenerfassung (Lager)“. Das M in MDE steht aber für <strong>mobil</strong> – gemeint ist eine Erfassung, die dort stattfindet, wo der Vorgang passiert, also am Regal, an der Rampe, auf dem Stapler, statt später am Schreibtisch. Wenn dich die Formulierung verunsichert: <em>im Unterricht nachfragen</em>. Für die Prüfung sicher ist die Beschreibung der Funktion – prozessrelevante Daten werden vor Ort per Scanner erfasst und an das Warenwirtschaftssystem übertragen, online oder offline.</p>
+  </div>
+
+  <div class="block merk" data-notiz="merk-online-offline">
+    <div class="b-label">Online- und Offlineverfahren bei MDE</div>
+    <p><strong>Online:</strong> Das Gerät ist per Funk dauerhaft mit dem Warenwirtschaftssystem verbunden. Jede Buchung ist sofort wirksam, jede Bestandsabfrage ist aktuell – dafür braucht es lückenlose Funkabdeckung.<br>
+    <strong>Offline:</strong> Das Gerät sammelt die Daten und überträgt sie später gebündelt, etwa beim Einstecken in die Ladestation. Robust gegen Funklöcher, aber der Systembestand ist bis zur Übertragung veraltet.</p>
+  </div>
+
+  <div class="block pruefung" data-notiz="pru-it-systeme">
+    <div class="b-label">So kommt das in der Prüfung</div>
+    <p>Die fünf Abkürzungen gehören zum sicheren Punktebereich: ausschreiben, in einem Satz erklären, ein Anwendungsbeispiel nennen. Am häufigsten kommen die beiden Abgrenzungsfragen <strong>MDE gegen RFID</strong> und <strong>VMI gegen SCM</strong>. Zusätzlich beliebt: „Welche Eigenschaften der übertragenen Daten beeinflussen den Unternehmenserfolg?“ – Antwort: Qualität, Geschwindigkeit, Genauigkeit.</p>
+  </div>
+
+  <div class="abfrage-liste">
+    <div class="abfrage-kopf">Selbstabfrage</div>
+    <details class="abfrage"><summary>Was ist ein Warenwirtschaftssystem?</summary>
+      <div class="antwort"><p>Ein zentrales IT-System, das die Logistikprozesse und -abläufe unterstützt: Bestände, Stammdaten, Bestellungen, Wareneingänge, Lagerbewegungen und Auslieferungen.</p></div></details>
+    <details class="abfrage"><summary>Welche drei Merkmale der übertragenen Daten beeinflussen den Unternehmenserfolg direkt?</summary>
+      <div class="antwort"><p>Qualität, Geschwindigkeit und Genauigkeit.</p></div></details>
+    <details class="abfrage"><summary>Wofür stehen EDI, MDE, RFID, VMI und SCM?</summary>
+      <div class="antwort"><p>EDI = Electronic Data Interchange, MDE = mobile Datenerfassung, RFID = Radio Frequency Identification, VMI = Vendor (bzw. Supplier) Managed Inventory, SCM = Supply Chain Management.</p></div></details>
+    <details class="abfrage"><summary>Worin unterscheiden sich MDE und RFID?</summary>
+      <div class="antwort"><p>MDE erfasst Daten aktiv per Scanner, meist mit Sichtkontakt und einzeln. RFID speichert die Daten auf einem Transponder, der mit der Sendung mitreist und am Ziel kontaktlos – auch durch Verpackung und mehrere Einheiten gleichzeitig – ausgelesen wird.</p></div></details>
+    <details class="abfrage"><summary>Was passiert bei VMI, und wer profitiert davon?</summary>
+      <div class="antwort"><p>Die Bestands- und Verfügbarkeitsüberwachung geht an den Lieferanten bzw. einen ausgelagerten Dienstleister über. Der Kunde spart Dispositionsaufwand und Fehlmengen, der Lieferant sieht die echte Nachfrage und kann seine Produktion und Touren besser planen.</p></div></details>
+    <details class="abfrage"><summary>Was bedeutet ECR?</summary>
+      <div class="antwort"><p>Efficient Consumer Response – effiziente Reaktion auf Kundenwünsche. Nicht die Planung des Herstellers, sondern das tatsächliche Kaufverhalten des Endkunden steuert die Kette.</p></div></details>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════ -->
+<section class="abschnitt" id="benchmarking" data-gruppe="Analysewerkzeuge">
+  <div class="ab-kopf"><h2><span class="ab-nr">1.6</span>Benchmarking</h2></div>
+
+  <div class="block einstieg" data-notiz="ein-benchmarking">
+    <div class="b-label">Worum es geht</div>
+    <p>Ein Lagerleiter berichtet stolz: „Wir kommissionieren 95 Positionen pro Stunde und Mitarbeiter.“ Ist das gut? Die Zahl allein sagt es nicht. Sie wird erst dann zur Aussage, wenn du weißt, dass das zweite Werk 130 schafft und der beste bekannte Betrieb der Branche 160. Genau dafür gibt es Benchmarking: Es beschafft den Maßstab, an dem die eigene Zahl überhaupt erst eine Bedeutung bekommt.</p>
+  </div>
+
+  <div class="block def" data-notiz="def-benchmarking">
+    <div class="b-label">Definition</div>
+    <div class="b-term">Benchmarking (nach Gruber)</div>
+    <p>„Beim Benchmarking handelt es sich um die <strong>gezielte und umfassende Suche nach Vergleichsgrößen und Richtwerten (Benchmarks)</strong>, die repräsentativ sind für die <strong>besten Verfahren und Methoden</strong> in einem Industriezweig.“</p>
+    <p class="hinweis-klein">Diesen Wortlaut lohnt es sich zu lernen – er wird gern wörtlich abgefragt.</p>
+  </div>
+
+  <p>Drei Wörter tragen die Definition. <strong>Gezielt</strong>: Man vergleicht nicht alles mit allem, sondern sucht sich einen Prozess aus, der wehtut. <strong>Umfassend</strong>: Es genügt nicht, die Kennzahl des anderen zu kennen – man muss verstehen, <em>warum</em> sie besser ist. <strong>Beste Verfahren</strong>: Verglichen wird nicht mit dem Durchschnitt, sondern mit dem Besten. Ein Vergleich mit dem Mittelmaß erzeugt Zufriedenheit, kein Verbesserungspotenzial.</p>
+
+  <h3>Die drei Ausprägungen</h3>
+
+  <div class="tab" data-notiz="tab-benchmarking-arten">
+    <table>
+      <thead><tr><th>Ausprägung</th><th>Verglichen wird</th><th>Vorteil</th><th>Grenze</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Internes Benchmarking</strong></td><td>zwischen einzelnen Bereichen und Standorten des eigenen Unternehmens</td><td>Daten sind verfügbar und vergleichbar, keine Geheimhaltungsprobleme, schnell umsetzbar</td><td>Wenn das ganze Unternehmen schwach ist, findest du nur den besten Schwachen</td></tr>
+        <tr><td><strong>Wettbewerbs-Benchmarking</strong></td><td>innerhalb der eigenen Branche mit direkten Konkurrenten</td><td>Direkt übertragbar, misst die eigene Marktposition</td><td>Konkurrenten geben ihre Zahlen ungern heraus; oft nur über Verbände, Studien oder Geschäftsberichte</td></tr>
+        <tr><td><strong>Branchenübergreifendes Funktions- und Prozess-Benchmarking</strong></td><td>ein einzelner Prozess, verglichen mit branchenfremden Unternehmen</td><td>Größtes Sprungpotenzial – hier entstehen die echten Ideen</td><td>Aufwändig, die Übertragung auf die eigenen Bedingungen ist die eigentliche Arbeit</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="block beispiel" data-notiz="bsp-benchmarking-branchenfremd">
+    <div class="b-label">Beispiel: Warum branchenfremd am meisten bringt</div>
+    <p>Ein Werk will die Rüstzeit einer Presse senken. Interner Vergleich: Werk 2 braucht 150 Minuten statt 180 – also 30 Minuten Potenzial. Wettbewerbsvergleich: Der beste Konkurrent schafft 120 Minuten – 60 Minuten Potenzial.</p>
+    <p>Branchenübergreifender Prozessvergleich: Man schaut sich an, wie ein Formel-1-Team einen Boxenstopp organisiert. Dort wird nicht „schneller geschraubt“, sondern der gesamte Vorgang ist anders aufgebaut – alles, was vorbereitet werden kann, passiert <em>vor</em> dem Stillstand, jeder Handgriff ist einem Menschen fest zugeordnet, Werkzeuge liegen fertig bereit. Überträgt man dieses Prinzip auf die Presse, sinkt die Rüstzeit nicht auf 120, sondern auf 25 Minuten.</p>
+    <p>Das ist der Punkt: Innerhalb der Branche findet man Verbesserungen, außerhalb findet man andere Denkweisen.</p>
+  </div>
+
+  <div class="block achtung" data-notiz="ach-benchmark-vs-benchmarking">
+    <div class="b-label">Typische Verwechslung</div>
+    <p><strong>Benchmark</strong> ist der Wert – „160 Positionen pro Stunde“. <strong>Benchmarking</strong> ist der Vorgang, diesen Wert zu suchen, zu verstehen und daraus Maßnahmen abzuleiten. Wer nur Zahlen sammelt, betreibt kein Benchmarking, sondern Statistik. Der Erkenntnisgewinn liegt in der Frage „warum können die das?“, nicht in der Zahl selbst.</p>
+    <p>Zweite Falle: Benchmarking ist <strong>kein einmaliges Projekt</strong>. Der Beste von heute ist in drei Jahren Durchschnitt. Benchmarking ist ein wiederkehrender Vorgang.</p>
+  </div>
+
+  <div class="block merk" data-notiz="merk-benchmarking-konzepte">
+    <div class="b-label">Der Zusammenhang zum Logistikkonzept</div>
+    <p>Neue Logistikkonzepte sollen <strong>Wettbewerbsvorteile gegenüber den Mitbewerbern</strong> erzeugen. Durch Benchmarking – intern wie extern – lassen sich <strong>Defizite in den Logistikprozessen lokalisieren</strong>. Erst wenn du weißt, wo du schlechter bist als andere, weißt du, wo dein neues Konzept ansetzen muss. Deshalb steht Benchmarking im Skript direkt vor den Analysewerkzeugen.</p>
+  </div>
+
+  <div class="block pruefung" data-notiz="pru-benchmarking">
+    <div class="b-label">So kommt das in der Prüfung</div>
+    <p>Zwei Standardfragen: die Definition (möglichst nah am Wortlaut) und die drei Ausprägungen mit je einem Beispiel. Bei der Ausprägungsfrage reicht die Aufzählung nicht – nenne zu jeder Form, <em>mit wem</em> verglichen wird. Häufig kommt die Anschlussfrage: „Welche Ausprägung würden Sie im geschilderten Fall wählen und warum?“ Dann argumentiere über Datenverfügbarkeit und Übertragbarkeit.</p>
+  </div>
+
+  <div class="abfrage-liste">
+    <div class="abfrage-kopf">Selbstabfrage</div>
+    <details class="abfrage"><summary>Definiere Benchmarking.</summary>
+      <div class="antwort"><p>Die gezielte und umfassende Suche nach Vergleichsgrößen und Richtwerten (Benchmarks), die repräsentativ sind für die besten Verfahren und Methoden in einem Industriezweig.</p></div></details>
+    <details class="abfrage"><summary>Nenne die drei Ausprägungen des Benchmarkings.</summary>
+      <div class="antwort"><p>Internes Benchmarking zwischen eigenen Bereichen und Standorten; Wettbewerbs-Benchmarking innerhalb der Branche; branchenübergreifendes Funktions- und Prozess-Benchmarking.</p></div></details>
+    <details class="abfrage"><summary>Warum ist der Vergleich mit dem Branchendurchschnitt kein gutes Benchmarking?</summary>
+      <div class="antwort"><p>Weil Benchmarks für die <em>besten</em> Verfahren stehen sollen. Ein Vergleich mit dem Durchschnitt erzeugt Zufriedenheit, aber kein Verbesserungspotenzial.</p></div></details>
+    <details class="abfrage"><summary>Was ist der Unterschied zwischen Benchmark und Benchmarking?</summary>
+      <div class="antwort"><p>Der Benchmark ist der Vergleichs- oder Richtwert. Benchmarking ist der Vorgang, diesen Wert zu suchen, die Ursachen zu verstehen und Maßnahmen daraus abzuleiten.</p></div></details>
+    <details class="abfrage"><summary>Wozu dient Benchmarking im Zusammenhang mit neuen Logistikkonzepten?</summary>
+      <div class="antwort"><p>Neue Konzepte sollen Wettbewerbsvorteile erzeugen. Durch internes und externes Benchmarking lassen sich die Defizite in den eigenen Logistikprozessen lokalisieren – also die Stellen finden, an denen das neue Konzept ansetzen muss.</p></div></details>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════ -->
+<section class="abschnitt" id="muda-wertstrom" data-gruppe="Analysewerkzeuge">
+  <div class="ab-kopf"><h2><span class="ab-nr">1.6.1</span>Muda und Wertstromanalyse</h2></div>
+
+  <div class="block einstieg" data-notiz="ein-muda">
+    <div class="b-label">Worum es geht</div>
+    <p>Ein Bauteil braucht bei genauer Messung 14 Minuten Bearbeitung – und ist trotzdem elf Tage im Haus. In diesen elf Tagen liegt es fast durchgehend still: im Wareneingang, im Zwischenpuffer, vor der Prüfung, im Versandbereich. Die Kunden bezahlen aber nur die 14 Minuten. Alles andere ist <strong>Verschwendung</strong> – im Japanischen <strong>Muda</strong>. Die beiden Werkzeuge dieses Abschnitts machen genau diesen Unterschied sichtbar.</p>
+  </div>
+
+  <div class="block def" data-notiz="def-muda">
+    <div class="b-label">Definition</div>
+    <div class="b-term">Muda (Verschwendung)</div>
+    <p><strong>Vermeidung von nicht wertschöpfenden Prozessschritten.</strong> Wertschöpfend ist ein Schritt genau dann, wenn er das Produkt aus Sicht des Kunden verändert oder verbessert – und der Kunde bereit wäre, dafür zu zahlen. Alles andere ist entweder notwendige Nebenleistung (Prüfen, Verpacken) oder reine Verschwendung (Warten, Suchen, Doppelt-Anfassen, Nacharbeiten).</p>
+  </div>
+
+  <div class="block beispiel" data-notiz="bsp-muda-lager">
+    <div class="b-label">Beispiel: Verschwendung im Wareneingang</div>
+    <p>Eine Palette kommt an. Sie wird abgeladen und auf der Rampe abgestellt (1). Zwei Stunden später von einem Stapler in den Prüfbereich gefahren (2). Dort wartet sie bis zum nächsten Tag (3). Sie wird geprüft (4). Dann in den Einlagerpuffer gefahren (5). Am Nachmittag eingelagert (6). Drei Tage später wieder ausgelagert (7), zur Kommissionierzone gefahren (8), dort kommissioniert (9).</p>
+    <p>Wertschöpfend im Sinne des Kunden ist davon fast nichts – die Prüfung ist notwendige Nebenleistung, das Kommissionieren erzeugt den kundengerechten Auftrag. Die Schritte 1, 2, 3, 5, 7 und 8 sind Transport und Warten: <strong>Muda</strong>. Jede einzelne Bewegung kostet Zeit, Fläche, Staplerstunden und erzeugt ein Beschädigungsrisiko – ohne dass das Produkt danach mehr wert wäre.</p>
+  </div>
+
+  <details class="vertiefung">
+    <summary>Die klassischen sieben Verschwendungsarten (Ergänzung, steht nicht im Skript)</summary>
+    <p>In der Lean-Literatur werden sieben Muda-Arten unterschieden. Sie helfen beim Suchen, weil man sie wie eine Checkliste durchgehen kann: <strong>Überproduktion</strong> (mehr oder früher fertigen als gebraucht), <strong>Bestände</strong> (Material, das nur liegt), <strong>Transport</strong> (jede Bewegung von Material), <strong>Wartezeit</strong> (Mensch oder Maschine steht still), <strong>Bewegung</strong> (unnötige Wege und Griffe des Menschen), <strong>falsche oder zu aufwändige Bearbeitung</strong> und <strong>Fehler bzw. Nacharbeit</strong>. Häufig wird als achte Art das <strong>ungenutzte Wissen der Mitarbeitenden</strong> ergänzt.</p>
+    <p class="hinweis-klein">Diese Aufzählung ist eine Ergänzung des Portals. Gruber nennt im Skript nur den Oberbegriff Muda mit der Definition „Vermeidung von nicht wertschöpfenden Prozessschritten“.</p>
+  </details>
+
+  <div class="block def" data-notiz="def-wertstromanalyse">
+    <div class="b-label">Definition</div>
+    <div class="b-term">Wertstromanalyse</div>
+    <p><strong>Optimierung von Prozessen der gesamten Wertschöpfungskette – vom Lieferanten bis zum Kunden.</strong> Man zeichnet den kompletten Weg eines Produkts auf: jeden Prozessschritt, jeden Bestand dazwischen, jede Informationsverbindung. Unter die Grafik kommt eine Zeitleiste mit zwei Zahlen – der <strong>Durchlaufzeit</strong> und der darin enthaltenen <strong>wertschöpfenden Zeit</strong>.</p>
+  </div>
+
+  <div class="block merk" data-notiz="merk-wertstrom-kennzahl">
+    <div class="b-label">Die Zahl, um die es geht</div>
+    <p>Aus den beiden Zeiten entsteht der <strong>Flussgrad</strong>: wertschöpfende Zeit geteilt durch Durchlaufzeit. Im Beispiel aus dem Einstieg sind das 14 Minuten von elf Tagen. Elf Tage sind 11 × 24 × 60 = 15.840 Minuten. Der Flussgrad beträgt 14 ÷ 15.840 = <strong>0,088 %</strong>. Fast die gesamte Zeit im Haus ist Warten. Genau das macht die Wertstromanalyse sichtbar – und genau deshalb setzt gute Prozessverbesserung an den Wartezeiten an, nicht an der Arbeitsgeschwindigkeit.</p>
+  </div>
+
+  <div class="block achtung" data-notiz="ach-muda-wertstrom">
+    <div class="b-label">Nicht verwechseln</div>
+    <p><strong>Muda</strong> ist der Blick auf den einzelnen Schritt: Ist er wertschöpfend oder nicht? <strong>Wertstromanalyse</strong> ist der Blick auf die gesamte Kette: Wie hängen die Schritte zusammen, wo stauen sich Bestände, wie lange dauert das Ganze? Muda ist das Bewertungsraster, die Wertstromanalyse das Aufnahmeverfahren. Man braucht beides – ohne Wertstrom sieht man die Verschwendung nicht, ohne Muda-Begriff weiß man nicht, was man da sieht.</p>
+  </div>
+
+  <div class="block pruefung" data-notiz="pru-muda">
+    <div class="b-label">So kommt das in der Prüfung</div>
+    <p>Meist als Teil einer größeren Aufgabe: „Nennen Sie Werkzeuge zur Analyse und Optimierung logistischer Prozesse.“ Dann gehören Muda, Wertstromanalyse, SWOT-Analyse, GAP-Analyse und Ishikawa-Diagramm in die Antwort – Gruber führt sie im Skript als eine Liste. Bei einem Fallbeispiel gilt: Zähle die nicht wertschöpfenden Schritte konkret auf, statt allgemein „Verschwendung vermeiden“ zu schreiben.</p>
+  </div>
+
+  <div class="abfrage-liste">
+    <div class="abfrage-kopf">Selbstabfrage</div>
+    <details class="abfrage"><summary>Was bedeutet Muda?</summary>
+      <div class="antwort"><p>Verschwendung – gemeint ist die Vermeidung von nicht wertschöpfenden Prozessschritten.</p></div></details>
+    <details class="abfrage"><summary>Wann ist ein Prozessschritt wertschöpfend?</summary>
+      <div class="antwort"><p>Wenn er das Produkt aus Sicht des Kunden verändert oder verbessert und der Kunde bereit wäre, dafür zu zahlen. Transportieren, Warten und Lagern erfüllen das nicht.</p></div></details>
+    <details class="abfrage"><summary>Was leistet die Wertstromanalyse?</summary>
+      <div class="antwort"><p>Sie optimiert die Prozesse der gesamten Wertschöpfungskette vom Lieferanten bis zum Kunden, indem sie alle Prozessschritte, Bestände und Informationsflüsse aufnimmt und Durchlaufzeit sowie wertschöpfende Zeit gegenüberstellt.</p></div></details>
+    <details class="abfrage"><summary>Warum verkürzt man Durchlaufzeiten nicht dadurch, dass man schneller arbeitet?</summary>
+      <div class="antwort"><p>Weil der weitaus größte Teil der Durchlaufzeit aus Liege-, Warte- und Transportzeiten besteht. Selbst eine Verdopplung des Arbeitstempos verkürzt nur den kleinen wertschöpfenden Anteil.</p></div></details>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════ -->
+<section class="abschnitt" id="swot-analyse" data-gruppe="Analysewerkzeuge">
+  <div class="ab-kopf"><h2><span class="ab-nr">1.7</span>Die SWOT-Analyse</h2></div>
+
+  <div class="block einstieg" data-notiz="ein-swot">
+    <div class="b-label">Worum es geht</div>
+    <p>Ein Speditionsunternehmen überlegt, ob es in ein automatisiertes Kleinteilelager investieren soll. Die Geschäftsführung diskutiert seit Wochen im Kreis, weil jeder etwas anderes betont: der eine die guten Fahrer, der andere den Fachkräftemangel, der dritte die neue Ausschreibung eines Großkunden, der vierte den Dieselpreis. Die SWOT-Analyse sortiert genau dieses Durcheinander – nach zwei Fragen: <strong>innen oder außen?</strong> und <strong>hilfreich oder schädlich?</strong></p>
+  </div>
+
+  <div class="block def" data-notiz="def-swot">
+    <div class="b-label">Definition</div>
+    <div class="b-term">SWOT-Analyse (auch Potenzialanalyse)</div>
+    <p>Ein Analyseverfahren, das die <strong>eigenen Stärken und Schwächen</strong> den <strong>Chancen und Risiken des Marktes</strong> gegenüberstellt. Die vier Buchstaben stehen für Strengths, Weaknesses, Opportunities und Threats.</p>
+  </div>
+
+  <div class="tab" data-notiz="tab-swot">
+    <table>
+      <thead><tr><th>Buchstabe</th><th>Englisch</th><th>Deutsch</th><th>Was zu tun ist (nach Gruber)</th></tr></thead>
+      <tbody>
+        <tr><td><strong>S</strong></td><td>Strengths</td><td>Stärken</td><td>Identifikation der eigenen Stärken</td></tr>
+        <tr><td><strong>W</strong></td><td>Weaknesses</td><td>Schwächen</td><td>Aufdecken und Beseitigen der eigenen, im Unternehmen auftretenden Schwächen</td></tr>
+        <tr><td><strong>O</strong></td><td>Opportunities</td><td>Chancen</td><td>Die eigenen Stärken im Markt nutzen und ausspielen, um Vorteile zu erzielen</td></tr>
+        <tr><td><strong>T</strong></td><td>Threats</td><td>Risiken / Bedrohungen</td><td>Drohende Risiken erkennen; durch kluges Risikomanagement die eigenen Stärken zur Abwehr nutzen und die Schwächen durch wirkungsvolle Abwehrmaßnahmen reduzieren</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="block merk" data-notiz="merk-swot-innen-aussen">
+    <div class="b-label">Die eine Regel, an der alles hängt</div>
+    <p><strong>Stärken und Schwächen sind INNEN. Chancen und Risiken sind AUSSEN.</strong><br>
+    Innen heißt: Es liegt im Unternehmen und du kannst es selbst ändern – Personal, Ausstattung, Standort, Kostenstruktur, Know-how.<br>
+    Außen heißt: Es kommt aus dem Markt oder Umfeld und du kannst es nur nutzen oder abwehren – Gesetze, Konjunktur, Konkurrenten, Kundenverhalten, Technologiesprünge.</p>
+  </div>
+
+  <div class="block achtung" data-notiz="ach-swot-zuordnung">
+    <div class="b-label">Der Fehler, der die meisten Punkte kostet</div>
+    <p>Fast alle Zuordnungsfehler in der Prüfung entstehen so: Etwas Positives wird automatisch zur Stärke und etwas Negatives automatisch zum Risiko erklärt – ohne die Innen-Außen-Frage zu stellen.</p>
+    <p><strong>„Fachkräftemangel in der Region“</strong> ist kein Schwäche, sondern ein <strong>Risiko</strong>: Der Mangel liegt im Arbeitsmarkt, nicht im Unternehmen. <strong>„Wir finden keine Disponenten, weil wir schlecht bezahlen“</strong> ist dagegen eine <strong>Schwäche</strong> – das liegt an dir.<br>
+    <strong>„Wachsender Online-Handel“</strong> ist eine <strong>Chance</strong> (Markt). <strong>„Wir haben eine moderne Flotte“</strong> ist eine <strong>Stärke</strong> (Unternehmen).</p>
+    <p>Prüfe bei jedem Punkt: Könnte ich das durch eine eigene Entscheidung ändern? Ja → innen (S/W). Nein → außen (O/T).</p>
+  </div>
+
+  <div class="block beispiel" data-notiz="bsp-swot-spedition">
+    <div class="b-label">Beispiel: SWOT einer mittelständischen Spedition</div>
+    <p><strong>Stärken (innen, hilfreich):</strong> eigene Werkstatt, dadurch kurze Ausfallzeiten · sehr niedrige Fahrerfluktuation · langjährige Kundenbeziehungen im Lebensmittelbereich · zentrale Lage an der A9.</p>
+    <p><strong>Schwächen (innen, schädlich):</strong> Lagerverwaltung noch in Excel, keine Schnittstelle zu Kundensystemen · Durchschnittsalter der Flotte 8 Jahre · keine Nachtschicht möglich, dadurch keine Übernacht-Zusagen · geringe Eigenkapitalquote.</p>
+    <p><strong>Chancen (außen, hilfreich):</strong> ein Großkunde schreibt Kühllogistik in der Region neu aus · Förderprogramme für emissionsarme Fahrzeuge · steigende Nachfrage nach regionaler Beschaffung.</p>
+    <p><strong>Risiken (außen, schädlich):</strong> Fachkräftemangel bei Berufskraftfahrern · steigende Maut- und Energiekosten · Markteintritt eines großen Netzwerkanbieters · verschärfte Emissionsvorgaben in Innenstädten.</p>
+    <p>Und jetzt der eigentliche Nutzen: Die Ausschreibung für Kühllogistik (Chance) trifft auf die langjährigen Lebensmittelkunden und die eigene Werkstatt (Stärken) – dort lohnt der Vorstoß. Aber sie trifft auch auf die fehlende IT-Schnittstelle (Schwäche); ohne EDI-Anbindung wird die Bewerbung scheitern. Die Investitionsentscheidung ist damit klar geworden: erst die IT, dann die Ausschreibung.</p>
+  </div>
+
+  <details class="vertiefung">
+    <summary>Die vier Normstrategien der SWOT-Matrix (Ergänzung, steht nicht im Skript)</summary>
+    <p>In der Literatur wird die SWOT häufig als Vier-Felder-Matrix gekreuzt, aus der sich vier Handlungsrichtungen ergeben:</p>
+    <p><strong>SO – Ausbauen:</strong> Stärken nutzen, um Chancen zu ergreifen. <strong>ST – Absichern:</strong> Stärken einsetzen, um Risiken abzuwehren. <strong>WO – Aufholen:</strong> Schwächen abbauen, um Chancen überhaupt nutzen zu können. <strong>WT – Vermeiden:</strong> Schwächen und Risiken treffen zusammen – hier wird eher zurückgezogen als investiert.</p>
+    <p>Grubers Formulierungen decken sich inhaltlich damit: „Die eigenen Stärken im Markt nutzen“ ist SO, „durch kluges Risikomanagement die eigenen Stärken zur Abwehr nutzen“ ist ST, „die Schwächen durch wirkungsvolle Abwehrmaßnahmen reduzieren“ ist WT.</p>
+    <p class="hinweis-klein">Die Kürzel SO/ST/WO/WT sind eine Ergänzung des Portals; im Skript stehen die Handlungsempfehlungen als Fließtext.</p>
+  </details>
+
+  <div class="block pruefung" data-notiz="pru-swot">
+    <div class="b-label">So kommt das in der Prüfung</div>
+    <p>Das häufigste Muster: Eine Situationsbeschreibung enthält acht bis zwölf Aussagen über ein Unternehmen, und du sollst sie den vier Feldern zuordnen – meist mit der Vorgabe „je zwei Punkte“. Punkte gibt es pro richtiger Zuordnung, deshalb ist die Innen-Außen-Prüfung bei jedem einzelnen Punkt wichtiger als eine schöne Formulierung. Zweites Muster: „Leiten Sie aus der SWOT eine Handlungsempfehlung ab.“ Dann musst du zwei Felder <strong>kombinieren</strong> – etwa Stärke plus Chance – und daraus einen konkreten Vorschlag machen.</p>
+  </div>
+
+  <div class="abfrage-liste">
+    <div class="abfrage-kopf">Selbstabfrage</div>
+    <details class="abfrage"><summary>Wofür stehen die vier Buchstaben SWOT?</summary>
+      <div class="antwort"><p>Strengths (Stärken), Weaknesses (Schwächen), Opportunities (Chancen), Threats (Risiken/Bedrohungen).</p></div></details>
+    <details class="abfrage"><summary>Welche zwei Felder betreffen das Unternehmen selbst, welche das Umfeld?</summary>
+      <div class="antwort"><p>Stärken und Schwächen sind intern (Unternehmen), Chancen und Risiken sind extern (Markt und Umfeld).</p></div></details>
+    <details class="abfrage"><summary>Ist „Fachkräftemangel in der Region“ eine Schwäche oder ein Risiko?</summary>
+      <div class="antwort"><p>Ein Risiko – der Mangel liegt im Arbeitsmarkt und damit außerhalb des Unternehmens. Eine Schwäche wäre es, wenn das Unternehmen aus eigenen Gründen keine Fachkräfte hält, etwa wegen schlechter Bezahlung.</p></div></details>
+    <details class="abfrage"><summary>Was soll laut Gruber mit den Stärken geschehen?</summary>
+      <div class="antwort"><p>Sie sollen identifiziert und im Markt genutzt und ausgespielt werden, um Vorteile zu erzielen – und sie sollen im Risikomanagement zur Abwehr drohender Risiken eingesetzt werden.</p></div></details>
+    <details class="abfrage"><summary>Warum genügt es nicht, die vier Felder nur zu füllen?</summary>
+      <div class="antwort"><p>Weil der Nutzen erst aus der Kombination entsteht: Welche Stärke passt zu welcher Chance, welche Schwäche verhindert die Nutzung einer Chance, welche Stärke wehrt welches Risiko ab. Erst daraus werden Maßnahmen.</p></div></details>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════ -->
+<section class="abschnitt" id="gap-ishikawa" data-gruppe="Analysewerkzeuge">
+  <div class="ab-kopf"><h2><span class="ab-nr">1.7.1</span>GAP-Analyse und Ishikawa-Diagramm</h2></div>
+
+  <div class="block einstieg" data-notiz="ein-gap-ishikawa">
+    <div class="b-label">Worum es geht</div>
+    <p>Zwei Werkzeuge, zwei sehr verschiedene Fragen. Die <strong>GAP-Analyse</strong> fragt: „Wie weit bin ich von meinem Ziel entfernt?“ – sie misst eine Lücke. Das <strong>Ishikawa-Diagramm</strong> fragt: „Woran liegt es?“ – es sucht Ursachen. In der Praxis benutzt man sie nacheinander: erst die Lücke bestimmen, dann die Ursachen dafür finden.</p>
+  </div>
+
+  <h3>Die GAP-Analyse (Lückenanalyse)</h3>
+
+  <div class="block def" data-notiz="def-gap">
+    <div class="b-label">Definition</div>
+    <div class="b-term">GAP-Analyse (Lückenanalyse)</div>
+    <p>Diese Analyse vergleicht die <strong>Sollvorgabe (langfristiges Ziel)</strong> mit dem <strong>derzeitigen Istzustand (Zielerreichungsgrad)</strong>. Die Differenz aus beiden Werten heißt <strong>strategische Lücke (GAP)</strong>. Aus dem Ergebnis wird eine <strong>geänderte Sollvorgabe</strong> abgeleitet – ein Ziel, das aus heutiger Sicht noch möglich ist – zusammen mit geeigneten Maßnahmen, um dieses noch zu erreichen.</p>
+  </div>
+
+  <div class="formel" data-notiz="formel-gap">
+    <div class="formel-kopf"><span class="f-tag">Formel</span><span class="f-name">Strategische Lücke</span></div>
+    <div class="formel-koerper">
+      <div class="eq">Sollvorgabe (langfristiges Ziel) − derzeitiger Istzustand = strategische Lücke (GAP)</div>
+      <div class="f-erklaerung">Beides muss in derselben Größe gemessen werden – Stück, Euro, Prozent, Sendungen. Ein Vergleich von „Ziel: Marktführer“ mit „Ist: 12 % Marktanteil“ ergibt keine Lücke, sondern nur ein Gefühl.</div>
+    </div>
+  </div>
+
+  <div class="block beispiel" data-notiz="bsp-gap">
+    <div class="b-label">Rechenbeispiel: die Lücke bis 2030</div>
+    <p>Ein Logistikdienstleister hat sich als langfristiges Ziel gesetzt, im Jahr 2030 <strong>60.000 Sendungen</strong> pro Jahr abzuwickeln. Mit den heutigen Strukturen, Kunden und Kapazitäten wären es hochgerechnet <strong>42.000 Sendungen</strong>.</p>
+    <p>Strategische Lücke: 60.000 − 42.000 = <strong>18.000 Sendungen</strong><br>
+    Zielerreichungsgrad: 42.000 ÷ 60.000 = <strong>70 %</strong></p>
+    <p>Jetzt beginnt die eigentliche Arbeit. Eine Nachkalkulation ergibt: Mit einer zweiten Umschlaghalle, zwei zusätzlichen Nahverkehrstouren und einer EDI-Anbindung an drei Großkunden sind realistisch 51.000 Sendungen erreichbar. Die geänderte Sollvorgabe lautet daher <strong>51.000 Sendungen</strong> – der verbleibende Rest von 9.000 Sendungen ist mit heutigen Mitteln nicht zu schließen und müsste über einen Zukauf oder eine Kooperation kommen. Genau diese ehrliche Aussage ist das Ergebnis einer GAP-Analyse: Sie sagt dir nicht nur, wie groß die Lücke ist, sondern auch, welcher Teil davon mit eigenen Maßnahmen erreichbar ist.</p>
+  </div>
+
+  <div class="block achtung" data-notiz="ach-gap-grenzen">
+    <div class="b-label">Was die GAP-Analyse nicht kann</div>
+    <p>Sie <strong>misst</strong> eine Lücke, sie <strong>erklärt</strong> sie nicht. Aus „uns fehlen 18.000 Sendungen“ folgt keine einzige Maßnahme. Die Ursachensuche ist ein eigener Schritt – dafür nimmt man das Ishikawa-Diagramm oder eine Wertstromanalyse.</p>
+    <p>Zweite Grenze: Sie ist nur so gut wie die Prognose des Istzustands. Wer die eigene Entwicklung zu optimistisch fortschreibt, misst eine zu kleine Lücke und ergreift zu wenige Maßnahmen.</p>
+  </div>
+
+  <h3>Das Ishikawa-Diagramm</h3>
+
+  <div class="block def" data-notiz="def-ishikawa">
+    <div class="b-label">Definition</div>
+    <div class="b-term">Ursachen-Wirkungs-Diagramm nach Ishikawa</div>
+    <p>Diese Methode ermöglicht die <strong>Visualisierung eines Prozessproblems</strong>. Rechts steht die Wirkung – das Problem. Von einer waagerechten Linie zweigen wie Gräten schräge Äste ab; auf jedem Ast wird nach Ursachen aus einer bestimmten Kategorie gesucht. Wegen der Form heißt es auch <strong>Fischgräten-Diagramm</strong>. Die Suche nach den Ursachen kann in <strong>sechs Punkte</strong> unterteilt werden.</p>
+  </div>
+
+  <div class="raster" data-notiz="raster-sechs-m">
+    <div class="karte purple"><div class="k-titel">Material</div><div class="k-text">Rohstoffe, Teile, Verpackung, Hilfsstoffe. Falsche Charge, schwankende Qualität, fehlende Kennzeichnung.</div></div>
+    <div class="karte purple"><div class="k-titel">Maschine</div><div class="k-text">Anlagen, Werkzeuge, Fördertechnik, Fahrzeuge. Verschleiß, falsche Einstellung, fehlende Wartung.</div></div>
+    <div class="karte purple"><div class="k-titel">Methode</div><div class="k-text">Verfahren, Arbeitsanweisungen, Abläufe, Software. Unklare Vorgaben, umständliche Prozesse, fehlende Prüfschritte.</div></div>
+    <div class="karte purple"><div class="k-titel">Mensch</div><div class="k-text">Qualifikation, Einweisung, Motivation, Belastung. Fehlende Schulung, Zeitdruck, unklare Zuständigkeit.</div></div>
+    <div class="karte purple"><div class="k-titel">Milieu (Umfeld)</div><div class="k-text">Arbeitsumgebung: Licht, Lärm, Temperatur, Platz, Ordnung, Wetter, Verkehrslage.</div></div>
+    <div class="karte purple"><div class="k-titel">Management</div><div class="k-text">Führung, Zielvorgaben, Ressourcen, Entscheidungen. Widersprüchliche Ziele, fehlendes Budget, verzögerte Entscheidungen.</div></div>
+  </div>
+
+  <div class="block merk" data-notiz="merk-sechs-m">
+    <div class="b-label">Die 6 M – so bleiben sie hängen</div>
+    <p><strong>M</strong>aterial · <strong>M</strong>aschine · <strong>M</strong>ethode · <strong>M</strong>ensch · <strong>M</strong>ilieu · <strong>M</strong>anagement.<br>
+    Der Sinn der sechs Kategorien ist nicht die Ordnung, sondern die <strong>Vollständigkeit</strong>: Sie zwingen dich, auch dort zu suchen, wo du nicht vermutest. Ohne dieses Raster landen fast alle Ursachensuchen beim Menschen – weil das die naheliegendste und zugleich unfruchtbarste Erklärung ist.</p>
+  </div>
+
+  <div class="block beispiel" data-notiz="bsp-ishikawa">
+    <div class="b-label">Beispiel: „Zu viele Fehlkommissionierungen“</div>
+    <p>Problem (Wirkung): In der Kommissionierung liegt die Fehlerquote bei 1,8 % statt der geforderten 0,3 %.</p>
+    <p><strong>Material:</strong> Zwei Artikel sind optisch fast identisch und unterscheiden sich nur in der letzten Ziffer der Sachnummer · Etiketten auf Kartons vom Lieferanten schlecht lesbar.<br>
+    <strong>Maschine:</strong> Zwei von zwölf Handscannern erkennen beschädigte Barcodes nicht zuverlässig · das Fördertechnik-Display an Station 3 ist defekt.<br>
+    <strong>Methode:</strong> Kommissionierbelege sind nach Artikelnummer sortiert, nicht nach Laufweg · keine Kontrollwägung am Packplatz.<br>
+    <strong>Mensch:</strong> Saisonkräfte werden nur 30 Minuten eingewiesen · Akkordvorgabe belohnt Tempo, nicht Genauigkeit.<br>
+    <strong>Milieu:</strong> Beleuchtung in Gasse 7 ist deutlich schwächer · Lärm durch die benachbarte Kartonagenpresse.<br>
+    <strong>Management:</strong> Fehlerquote wird zwar erfasst, aber nicht rückgemeldet · Investitionsantrag für Pick-by-Light liegt seit acht Monaten unbearbeitet.</p>
+    <p>Erst dieses Bild macht deutlich, dass „mehr aufpassen“ keine Lösung ist. Die wirksamsten Hebel liegen bei Methode (Laufwegsortierung, Kontrollwägung) und Material (eindeutige Kennzeichnung).</p>
+  </div>
+
+  <div class="block achtung" data-notiz="ach-ishikawa-loesung">
+    <div class="b-label">Typische Verwechslung</div>
+    <p>Das Ishikawa-Diagramm sammelt <strong>vermutete Ursachen</strong>, es beweist keine. Es ist ein Strukturierungswerkzeug für eine Diskussion, kein Messverfahren. Nach dem Sammeln muss geprüft werden, welche Vermutung tatsächlich zutrifft – etwa durch Auswertung der Fehlerdaten. Wer direkt vom Ast zur Maßnahme springt, investiert schnell an der falschen Stelle.</p>
+  </div>
+
+  <div class="block pruefung" data-notiz="pru-gap-ishikawa">
+    <div class="b-label">So kommt das in der Prüfung</div>
+    <p><strong>GAP:</strong> Kurze Rechnung (Soll minus Ist) plus die Erklärung, was daraus folgt – geänderte Sollvorgabe und Maßnahmen. Schreibe immer beide Schritte auf.<br>
+    <strong>Ishikawa:</strong> Fast immer als Anwendungsaufgabe: Ein Problem wird beschrieben, du sollst je Kategorie mindestens eine mögliche Ursache nennen. Die 6 M müssen deshalb sitzen – und du musst zu jedem M spontan eine logistiknahe Ursache formulieren können. Übe das mit einem beliebigen Problem aus deinem Betrieb.</p>
+  </div>
+
+  <div class="abfrage-liste">
+    <div class="abfrage-kopf">Selbstabfrage</div>
+    <details class="abfrage"><summary>Was vergleicht die GAP-Analyse, und wie heißt die Differenz?</summary>
+      <div class="antwort"><p>Sie vergleicht die Sollvorgabe (langfristiges Ziel) mit dem derzeitigen Istzustand (Zielerreichungsgrad). Die Differenz heißt strategische Lücke oder GAP.</p></div></details>
+    <details class="abfrage"><summary>Was folgt aus einer festgestellten Lücke?</summary>
+      <div class="antwort"><p>Eine geänderte Sollvorgabe, die aus heutiger Sicht noch erreichbar ist, sowie geeignete Maßnahmen, um dieses Ziel zu erreichen.</p></div></details>
+    <details class="abfrage"><summary>Nenne die 6 M des Ishikawa-Diagramms.</summary>
+      <div class="antwort"><p>Material, Maschine, Methode, Mensch, Milieu (Umfeld), Management.</p></div></details>
+    <details class="abfrage"><summary>Wozu dient das Ishikawa-Diagramm?</summary>
+      <div class="antwort"><p>Zur Visualisierung eines Prozessproblems und zur strukturierten Suche nach seinen Ursachen entlang der sechs Kategorien.</p></div></details>
+    <details class="abfrage"><summary>Warum ist die Kategorisierung in 6 M wichtiger als die Zeichnung selbst?</summary>
+      <div class="antwort"><p>Weil sie Vollständigkeit erzwingt. Ohne Raster landen Ursachensuchen fast immer beim Menschen; die sechs Kategorien zwingen dazu, auch Material, Maschine, Methode, Umfeld und Führung zu prüfen.</p></div></details>
+    <details class="abfrage"><summary>Ein Ziel lautet 24.000 Tonnen Umschlag, erreicht werden voraussichtlich 18.000. Wie groß ist die Lücke und der Zielerreichungsgrad?</summary>
+      <div class="antwort"><p>Lücke = 24.000 − 18.000 = <strong>6.000 Tonnen</strong>. Zielerreichungsgrad = 18.000 ÷ 24.000 = <strong>75 %</strong>.</p></div></details>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════ -->
+<section class="abschnitt" id="abc-analyse" data-gruppe="ABC und XYZ">
+  <div class="ab-kopf"><h2><span class="ab-nr">1.8</span>Die ABC-Analyse</h2></div>
+
+  <div class="block einstieg" data-notiz="ein-abc">
+    <div class="b-label">Worum es geht</div>
+    <p>Ein Einkäufer betreut 4.000 Artikel. Er kann sich unmöglich um jeden gleich intensiv kümmern – für Preisverhandlungen, Lieferantenauswahl und Terminverfolgung reicht die Zeit nicht. Also muss er entscheiden, wo sich der Aufwand lohnt. Die ABC-Analyse beantwortet genau diese Frage, und zwar mit einer erstaunlich stabilen Beobachtung: <strong>Ein kleiner Teil der Artikel macht den größten Teil des Werts aus.</strong> Wer die richtigen zwanzig Prozent findet, kann sich um die restlichen achtzig getrost weniger kümmern.</p>
+  </div>
+
+  <div class="block def" data-notiz="def-abc">
+    <div class="b-label">Definition</div>
+    <div class="b-term">ABC-Analyse</div>
+    <p>Die ABC-Analyse ist ein Instrument, mit dem <strong>Objekte im Unternehmen nach der Verteilung ihrer Werthäufigkeit klassifiziert</strong> werden. In der Materialwirtschaft wird sie vor allem im Beschaffungs- und Lagerbereich eingesetzt. Sie ist ein geeignetes Instrumentarium, um <strong>das Wesentliche vom Unwesentlichen zu trennen</strong>, und zeigt im Zuge der Materialanalyse <strong>Rationalisierungspotenziale</strong> auf.</p>
+  </div>
+
+  <div class="block merk" data-notiz="merk-abc-ziele">
+    <div class="b-label">Die vier Ziele der ABC-Analyse</div>
+    <ul>
+      <li>das Wesentliche vom Unwesentlichen trennen</li>
+      <li>die Schwerpunkte der Rationalisierungsarbeit gezielt festlegen</li>
+      <li>wirtschaftlich nicht wirkungsvolle Anstrengungen vermeiden</li>
+      <li>die Wirtschaftlichkeit steigern</li>
+    </ul>
+  </div>
+
+  <div class="block def" data-notiz="def-jahresverbrauchswert">
+    <div class="b-label">Definition</div>
+    <div class="b-term">Jahresverbrauchswert</div>
+    <p>Die entscheidende Größe der ABC-Analyse: <strong>Jahresverbrauchsmenge × Preis je Einheit</strong>. Nicht der Stückpreis entscheidet über die Klasse und nicht die Menge, sondern das Produkt aus beidem. Ein Artikel für 2 Cent, von dem zwei Millionen Stück verbraucht werden, kann wertvoller sein als ein Artikel für 800 €, von dem drei Stück im Jahr gebraucht werden.</p>
+  </div>
+
+  <h3>Der Ablauf in drei Schritten</h3>
+  <p>Gruber nennt drei Arbeitsschritte: Zahlenmaterial <strong>erfassen</strong>, <strong>sortieren</strong> und <strong>auswerten</strong>. In der Prüfung wird daraus eine Tabelle, die du Zeile für Zeile ausfüllst. Halte dich stur an diese Reihenfolge – die häufigste Fehlerquelle ist, dass jemand mit dem Klassifizieren beginnt, bevor sortiert ist.</p>
+
+  <div class="schritte" data-notiz="schritte-abc">
+    <div class="schritt"><div class="s-nr">1</div><div class="s-txt">Zahlenmaterial erfassen: für jeden Artikel die Jahresverbrauchsmenge und den Preis je Einheit, daraus den Jahresverbrauchswert (Menge × Preis)</div></div>
+    <div class="s-warum">Ohne den Wert je Artikel gibt es keine Rangfolge. Achte auf einheitliche Einheiten – Menge in Stück, Preis in Euro je Stück. Wenn im Aufgabentext Preise „je 100 Stück“ stehen, muss zuerst umgerechnet werden.</div>
+    <div class="schritt"><div class="s-nr">2</div><div class="s-txt">Sortieren: alle Artikel nach dem Jahresverbrauchswert absteigend ordnen, größter Wert zuerst</div></div>
+    <div class="s-warum">Erst die Sortierung macht die Konzentration sichtbar. Ohne sie ist die Kumulation sinnlos, weil sich der Wertzuwachs beliebig über die Liste verteilt.</div>
+    <div class="schritt"><div class="s-nr">3</div><div class="s-txt">Gesamtwert bilden und den prozentualen Wertanteil je Artikel berechnen: Einzelwert ÷ Gesamtwert × 100</div></div>
+    <div class="s-warum">Prozentwerte machen Betriebe und Artikelgruppen vergleichbar. Der Gesamtwert ist die Summe <em>aller</em> Artikel, auch der ganz kleinen.</div>
+    <div class="schritt"><div class="s-nr">4</div><div class="s-txt">Anteile von oben nach unten aufaddieren – der kumulierte Wertanteil</div></div>
+    <div class="s-warum">Der kumulierte Anteil beantwortet die eigentliche Frage: „Wie viel Prozent des Werts habe ich beisammen, wenn ich mich um die ersten n Artikel kümmere?“ Die letzte Zeile muss 100 % ergeben – das ist deine Kontrolle.</div>
+    <div class="schritt fertig"><div class="s-nr">✓</div><div class="s-txt">Auswerten: Klassen A, B und C anhand der festgelegten Grenzen zuordnen und Konsequenzen ableiten</div></div>
+    <div class="s-warum">Die Klassifizierung ist nicht das Ergebnis, sondern der Anfang. Das Ergebnis ist die Entscheidung, wie A-, B- und C-Güter künftig unterschiedlich behandelt werden.</div>
+  </div>
+
+  <h3>Schritt 1: die erfassten Daten</h3>
+  <p>So kommen die Daten aus dem Warenwirtschaftssystem – nach Artikelnummer sortiert, also in einer Reihenfolge, die noch gar nichts aussagt.</p>
+
+  <div class="tab" data-notiz="tab-abc-rohdaten">
+    <table>
+      <thead><tr><th>Art.-Nr.</th><th>Artikel</th><th class="num">Jahresverbrauch (Stück)</th><th class="num">Preis je Stück</th><th class="num">Jahresverbrauchswert</th></tr></thead>
+      <tbody>
+        <tr><td>4102</td><td>Sechskantschraube</td><td class="num">120.000</td><td class="num">0,060 €</td><td class="num">7.200,00 €</td></tr>
+        <tr><td>4118</td><td>Antriebsmotor</td><td class="num">3.500</td><td class="num">148,000 €</td><td class="num">518.000,00 €</td></tr>
+        <tr><td>4230</td><td>Dichtring</td><td class="num">40.000</td><td class="num">0,650 €</td><td class="num">26.000,00 €</td></tr>
+        <tr><td>4275</td><td>Gehäuseblech</td><td class="num">15.000</td><td class="num">3,600 €</td><td class="num">54.000,00 €</td></tr>
+        <tr><td>4310</td><td>Kabelbinder</td><td class="num">90.000</td><td class="num">0,035 €</td><td class="num">3.150,00 €</td></tr>
+        <tr><td>4402</td><td>Steuerplatine</td><td class="num">12.000</td><td class="num">23,500 €</td><td class="num">282.000,00 €</td></tr>
+        <tr><td>4455</td><td>Unterlegscheibe</td><td class="num">150.000</td><td class="num">0,012 €</td><td class="num">1.800,00 €</td></tr>
+        <tr><td>4501</td><td>Hydraulikschlauch</td><td class="num">8.000</td><td class="num">8,400 €</td><td class="num">67.200,00 €</td></tr>
+        <tr><td>4530</td><td>Schmierfett (kg)</td><td class="num">2.500</td><td class="num">4,200 €</td><td class="num">10.500,00 €</td></tr>
+        <tr><td>4566</td><td>Lagerbock</td><td class="num">6.000</td><td class="num">4,900 €</td><td class="num">29.400,00 €</td></tr>
+        <tr><td colspan="4"><strong>Gesamtwert aller Artikel</strong></td><td class="num"><strong>999.250,00 €</strong></td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="block merk" data-notiz="merk-abc-rechenprobe">
+    <div class="b-label">Zwei Rechnungen zum Mitrechnen</div>
+    <p>Art.-Nr. 4118: 3.500 Stück × 148,00 € = <strong>518.000,00 €</strong> – wenige Stück, sehr hoher Preis.<br>
+    Art.-Nr. 4455: 150.000 Stück × 0,012 € = <strong>1.800,00 €</strong> – riesige Menge, fast kein Wert.<br>
+    Genau dieser Gegensatz ist der Grund, warum man den Jahresverbrauchswert braucht und nicht einfach nach Menge oder Preis sortieren kann.</p>
+  </div>
+
+  <h3>Schritte 2 bis 5: sortiert, kumuliert, klassifiziert</h3>
+  <p>Jetzt dieselben zehn Artikel, nach Jahresverbrauchswert absteigend sortiert. Die Prozentwerte sind auf zwei Nachkommastellen gerundet.</p>
+
+  <div class="tab" data-notiz="tab-abc-auswertung">
+    <table>
+      <thead><tr><th class="num">Rang</th><th>Art.-Nr.</th><th>Artikel</th><th class="num">Jahresverbrauchswert</th><th class="num">Wertanteil</th><th class="num">kumuliert</th><th>Klasse</th></tr></thead>
+      <tbody>
+        <tr><td class="num">1</td><td>4118</td><td>Antriebsmotor</td><td class="num">518.000,00 €</td><td class="num">51,84 %</td><td class="num">51,84 %</td><td><strong>A</strong></td></tr>
+        <tr><td class="num">2</td><td>4402</td><td>Steuerplatine</td><td class="num">282.000,00 €</td><td class="num">28,22 %</td><td class="num">80,06 %</td><td><strong>A</strong></td></tr>
+        <tr><td class="num">3</td><td>4501</td><td>Hydraulikschlauch</td><td class="num">67.200,00 €</td><td class="num">6,73 %</td><td class="num">86,79 %</td><td><strong>B</strong></td></tr>
+        <tr><td class="num">4</td><td>4275</td><td>Gehäuseblech</td><td class="num">54.000,00 €</td><td class="num">5,40 %</td><td class="num">92,19 %</td><td><strong>B</strong></td></tr>
+        <tr><td class="num">5</td><td>4566</td><td>Lagerbock</td><td class="num">29.400,00 €</td><td class="num">2,94 %</td><td class="num">95,13 %</td><td><strong>B</strong></td></tr>
+        <tr><td class="num">6</td><td>4230</td><td>Dichtring</td><td class="num">26.000,00 €</td><td class="num">2,60 %</td><td class="num">97,73 %</td><td><strong>C</strong></td></tr>
+        <tr><td class="num">7</td><td>4530</td><td>Schmierfett (kg)</td><td class="num">10.500,00 €</td><td class="num">1,05 %</td><td class="num">98,78 %</td><td><strong>C</strong></td></tr>
+        <tr><td class="num">8</td><td>4102</td><td>Sechskantschraube</td><td class="num">7.200,00 €</td><td class="num">0,72 %</td><td class="num">99,50 %</td><td><strong>C</strong></td></tr>
+        <tr><td class="num">9</td><td>4310</td><td>Kabelbinder</td><td class="num">3.150,00 €</td><td class="num">0,32 %</td><td class="num">99,82 %</td><td><strong>C</strong></td></tr>
+        <tr><td class="num">10</td><td>4455</td><td>Unterlegscheibe</td><td class="num">1.800,00 €</td><td class="num">0,18 %</td><td class="num">100,00 %</td><td><strong>C</strong></td></tr>
+        <tr><td colspan="3"><strong>Summe</strong></td><td class="num"><strong>999.250,00 €</strong></td><td class="num"><strong>100,00 %</strong></td><td class="num">—</td><td>—</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="schritte" data-notiz="rechnung-abc-zeile">
+    <div class="schritt"><div class="s-nr">1</div><div class="s-txt">Wertanteil Rang 1: 518.000,00 ÷ 999.250,00 × 100 = 51,84 %</div></div>
+    <div class="s-warum">Immer durch den Gesamtwert teilen, nie durch den Wert der eigenen Klasse.</div>
+    <div class="schritt"><div class="s-nr">2</div><div class="s-txt">Wertanteil Rang 2: 282.000,00 ÷ 999.250,00 × 100 = 28,22 %</div></div>
+    <div class="s-warum">Der zweite Artikel allein ist mehr wert als die restlichen acht zusammen.</div>
+    <div class="schritt"><div class="s-nr">3</div><div class="s-txt">Kumuliert nach Rang 2: 51,84 % + 28,22 % = 80,06 %</div></div>
+    <div class="s-warum">Zwei von zehn Artikeln – also 20 % der Artikelpositionen – tragen rund 80 % des gesamten Verbrauchswerts. Das ist das klassische ABC-Bild.</div>
+    <div class="schritt"><div class="s-nr">4</div><div class="s-txt">Kumuliert nach Rang 5: 80,06 % + 6,73 % + 5,40 % + 2,94 % = 95,13 %</div></div>
+    <div class="s-warum">Die drei B-Artikel bringen zusammen 15,07 Prozentpunkte. Sie sind der Mittelbau: zu wertvoll zum Ignorieren, zu klein für Sonderbehandlung.</div>
+    <div class="schritt fertig"><div class="s-nr">✓</div><div class="s-txt">Rest bis 100 %: die fünf C-Artikel tragen zusammen nur 4,87 %</div></div>
+    <div class="s-warum">50 % der Artikelpositionen für weniger als 5 % des Werts. Jede Stunde, die hier in Preisverhandlungen fließt, ist an der falschen Stelle investiert.</div>
+  </div>
+
+  <h3>Die üblichen Klassengrenzen</h3>
+
+  <div class="tab" data-notiz="tab-abc-klassen">
+    <table>
+      <thead><tr><th>Klasse</th><th class="num">Wertanteil</th><th class="num">Anteil der Artikelpositionen</th><th>Bedeutung</th></tr></thead>
+      <tbody>
+        <tr><td><strong>A-Güter</strong></td><td class="num">ca. 80 %</td><td class="num">ca. 20 %</td><td>wenige Artikel, sehr hoher Wert – hier lohnt jeder Aufwand</td></tr>
+        <tr><td><strong>B-Güter</strong></td><td class="num">ca. 15 %</td><td class="num">ca. 30 %</td><td>Zwischenstellung – mehr Aufmerksamkeit als C, weniger Aufwand als A</td></tr>
+        <tr><td><strong>C-Güter</strong></td><td class="num">ca. 5 %</td><td class="num">ca. 50 %</td><td>viele Artikel, geringer Wert – hier zählt nur, dass die Abwicklung billig ist</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="block achtung" data-notiz="ach-abc-grenzen-individuell">
+    <div class="b-label">Die Grenzen sind nicht in Stein gemeißelt</div>
+    <p>80/15/5 und 20/30/50 sind <strong>Richtwerte, keine Vorschrift</strong>. Jedes Unternehmen legt seine Klassengrenzen selbst fest – <strong>betriebsindividuell</strong>, je nach Sortiment, Branche und Zweck der Analyse. Ein Handelsbetrieb mit 60.000 Artikeln zieht andere Grenzen als ein Anlagenbauer mit 400 Positionen. Manche Betriebe arbeiten mit 70/20/10, andere setzen die A-Grenze bei 75 %, wieder andere ergänzen eine D-Klasse für Artikel ohne Verbrauch.</p>
+    <p><strong>In der Prüfung gilt:</strong> Wenn Klassengrenzen in der Aufgabe vorgegeben sind, benutze exakt diese. Wenn nicht, nimm 80 / 95 / 100 % kumuliert, <strong>schreibe die verwendete Grenze aber ausdrücklich hin</strong> („A bis 80 % kumuliert, B bis 95 %, C darüber“). Dann ist deine Zuordnung nachvollziehbar und wird auch dann als richtig gewertet, wenn der Korrektor andere Grenzen erwartet hätte.</p>
+  </div>
+
+  <div class="block achtung" data-notiz="ach-abc-grenzartikel">
+    <div class="b-label">Wohin gehört der Artikel, der die Grenze überschreitet?</div>
+    <p>Im Beispiel liegt Rang 2 bei 80,06 % kumuliert – also knapp <em>über</em> der 80-Prozent-Grenze. Die übliche Regel: <strong>Der Artikel, mit dem die Grenze überschritten wird, gehört noch zur Klasse.</strong> Sonst wäre nach Rang 1 erst 51,84 % erreicht, und die A-Klasse bestünde aus einem einzigen Artikel, obwohl die 80 % noch gar nicht erklärt sind.</p>
+    <p>Dasselbe bei Rang 5 mit 95,13 %: Der Lagerbock ist der Artikel, der die B-Grenze überschreitet, und zählt deshalb noch zu B. Schreibe deine Regel in der Prüfung dazu – dann ist die Zuordnung begründet und nicht geraten.</p>
+  </div>
+
+  <div class="block achtung" data-notiz="ach-abc-mengenanteil">
+    <div class="b-label">„Mengenanteil“ hat zwei Bedeutungen</div>
+    <p>Wenn in der Literatur steht, A-Güter hätten „20 % Mengenanteil“, ist damit fast immer der <strong>Anteil an den Artikelpositionen</strong> gemeint – 2 von 10 Artikeln, wie in unserem Beispiel.</p>
+    <p>Der <strong>Anteil an der verbrauchten Stückzahl</strong> ist etwas völlig anderes und liegt meist viel niedriger. In unserem Beispiel: A-Artikel 15.500 Stück von insgesamt 447.000 Stück, also nur <strong>3,47 %</strong> der Stückzahl. Die C-Artikel machen dagegen 402.500 Stück aus – <strong>90,04 %</strong> aller bewegten Stücke bei knapp 5 % des Werts.</p>
+    <p>Merke: Bei den A-Gütern liegt der <em>Wert</em>, bei den C-Gütern liegt die <em>Arbeit</em>. Genau deshalb muss die Abwicklung der C-Güter billig sein.</p>
+  </div>
+
+  <h3>Was aus der Klassifizierung folgt</h3>
+  <p>Die Klassen sind kein Selbstzweck. Sie führen zu unterschiedlicher Behandlung – und das ist der Teil, den die Prüfung am liebsten abfragt.</p>
+
+  <div class="block merk" data-notiz="merk-abc-a-behandlung">
+    <div class="b-label">A-Güter: besondere Behandlung</div>
+    <p>Gruber nennt zwölf Maßnahmen. Sie lassen sich in vier Gedanken gliedern – so bleiben sie besser hängen:</p>
+    <p><strong>Markt und Lieferant:</strong> intensive Marktanalyse und Marktbeobachtung · Wahl zuverlässiger und leistungsfähiger Lieferanten · Abschluss von Rahmenlieferverträgen bei Hauptlieferanten.<br>
+    <strong>Preis und Konditionen:</strong> genaue Festlegung der Mengen und Qualitäten · sorgfältige Prüfung der Preise und Konditionen · rascher Rechnungslauf zwecks Skontoausnutzung.<br>
+    <strong>Zeit:</strong> Minimierung der Beschaffungszeiten · genaue Terminverfolgung · Minimierung der Lagerzeiten · Beschleunigung der Lagerdurchlaufzeiten.<br>
+    <strong>Bestandsführung:</strong> verfeinerte Disposition der Bestände · sofortige Buchung der Zu- und Abgänge.</p>
+  </div>
+
+  <div class="block merk" data-notiz="merk-abc-c-behandlung">
+    <div class="b-label">C-Güter: vereinfachte Behandlung</div>
+    <p>Hier geht es nicht darum, den Einkaufspreis zu drücken – bei 0,012 € je Unterlegscheibe ist da nichts zu holen. Es geht darum, die <strong>Prozesskosten</strong> zu senken. Gruber nennt:</p>
+    <p>monatliche <strong>Sammelrechnungen</strong> vereinbaren · <strong>Sicherheitsbestände großzügig</strong> bemessen, damit die Bestellzyklen länger werden · gegebenenfalls <strong>telefonische Bestellungen</strong> vornehmen.</p>
+    <p>Der Gedanke dahinter: Ein Bestellvorgang kostet unabhängig vom Warenwert schnell 30 bis 100 € an Personal- und Systemaufwand. Bei einem Artikel mit 1.800 € Jahreswert darf man ihn deshalb höchstens ein paar Mal im Jahr auslösen – lieber mehr Bestand als mehr Bestellungen.</p>
+  </div>
+
+  <div class="block merk" data-notiz="merk-abc-b-behandlung">
+    <div class="b-label">B-Güter: die Zwischenstellung – und ihre eigene Falle</div>
+    <p>B-Güter verdienen mehr Aufmerksamkeit als C-Güter, rechtfertigen aber nicht den Aufwand, der bei A-Gütern getrieben wird. Grubers wichtigster Hinweis zu dieser Klasse: <strong>Die Problematik der B-Güter liegt darin, dass häufiger überprüft werden sollte, ob es Veränderungen in der Eingruppierung gegeben hat.</strong> Ein B-Gut kann durch Preissteigerung oder Mengenwachstum zum A-Gut werden – und dann muss entsprechend reagiert werden.</p>
+  </div>
+
+  <div class="block beispiel" data-notiz="bsp-abc-konsequenz">
+    <div class="b-label">Beispiel: was die Analyse konkret verändert</div>
+    <p>Vor der Analyse behandelt der Einkäufer alle zehn Artikel gleich: jeder wird einzeln bestellt, jede Rechnung einzeln geprüft, bei jedem wird einmal jährlich der Preis verhandelt.</p>
+    <p>Nach der Analyse: Für den <strong>Antriebsmotor</strong> (A) wird ein Rahmenvertrag über 12 Monate mit einem zweiten Lieferanten als Rückfallebene geschlossen, die Bestände werden wöchentlich überprüft, die Termine einzeln verfolgt. Zwei Prozent Preisnachlass bringen hier 10.360 € im Jahr – dafür lohnt ein ganzer Verhandlungstag.</p>
+    <p>Für <strong>Unterlegscheiben, Kabelbinder und Sechskantschrauben</strong> (C) wird ein C-Teile-Lieferant beauftragt, der einmal im Monat eine Sammelrechnung schickt und die Behälter im Lager selbst auffüllt. Zwei Prozent Preisnachlass wären bei diesen drei Artikeln zusammen 243 € im Jahr gewesen (12.150 € × 0,02) – der Verhandlungstermin hätte mehr gekostet, als er einbringt.</p>
+  </div>
+
+  <div class="block achtung" data-notiz="ach-abc-c-teile-wichtig">
+    <div class="b-label">Der gefährlichste Denkfehler</div>
+    <p><strong>C-Güter sind nicht unwichtig – sie sind nur nicht wertvoll.</strong> Die 0,012-€-Unterlegscheibe legt die Montage genauso still wie der 148-€-Motor, wenn sie fehlt. Die ABC-Analyse sagt nur, wo sich <em>kaufmännischer Aufwand</em> lohnt. Sie sagt nichts über die technische Bedeutung eines Teils.</p>
+    <p>Genau deshalb lautet die Empfehlung bei C-Gütern „Sicherheitsbestände großzügig bemessen“: Weil Bestand hier fast nichts kostet, eine Fehlmenge aber genauso teuer ist wie bei A-Gütern. Wer C-Teile mit derselben Bestandsdisziplin führt wie A-Teile, spart ein paar Euro Kapitalbindung und riskiert einen Produktionsstillstand.</p>
+  </div>
+
+  <div class="block pruefung" data-notiz="pru-abc">
+    <div class="b-label">So kommt das in der Prüfung</div>
+    <p>Die ABC-Analyse ist eine der verlässlichsten Rechenaufgaben dieses Prüfungsteils. Typischer Aufbau: Eine Tabelle mit 8 bis 12 Artikeln, Menge und Preis sind gegeben. Verlangt wird: Jahresverbrauchswert berechnen, absteigend sortieren, prozentualen und kumulierten Wertanteil ermitteln, Klassen zuordnen, Ergebnis in ein bis zwei Sätzen interpretieren.</p>
+    <p><strong>Punkteverluste entstehen fast immer an denselben vier Stellen:</strong></p>
+    <ul>
+      <li>Nicht sortiert, sondern in der gegebenen Reihenfolge kumuliert – dann ist alles danach falsch.</li>
+      <li>Durch die falsche Bezugsgröße geteilt (Klassensumme statt Gesamtsumme).</li>
+      <li>Klassengrenzen nicht genannt, sodass die Zuordnung nicht nachvollziehbar ist.</li>
+      <li>Keine Auswertung geschrieben. Der Satz „20 % der Artikel verursachen 80 % des Werts, daher werden die A-Güter intensiv, die C-Güter vereinfacht behandelt“ ist regelmäßig ein eigener Punkt.</li>
+    </ul>
+    <p>Rechne mit Zwischenergebnissen auf zwei Nachkommastellen und schreibe jeden Schritt auf – auf den Rechenweg gibt es auch dann Punkte, wenn sich am Ende ein Zahlendreher eingeschlichen hat.</p>
+  </div>
+
+  <div class="aufgabe" data-notiz="aufg-abc-mini">
+    <div class="aufgabe-kopf"><span class="tag">Aufgabe</span>ABC-Analyse mit fünf Artikeln<span class="punkte">8 Pkt.</span></div>
+    <div class="aufgabe-text">
+      <p>Ordnen Sie die folgenden fünf Artikel den Klassen A, B und C zu. Verwenden Sie die Grenzen: A bis 80 % kumuliert, B bis 95 %, C darüber. Der Artikel, mit dem eine Grenze überschritten wird, zählt noch zur jeweiligen Klasse.</p>
+      <p>Artikel 1: 2.000 Stück × 45,00 € · Artikel 2: 500 Stück × 12,00 € · Artikel 3: 30.000 Stück × 0,20 € · Artikel 4: 1.000 Stück × 15,00 € · Artikel 5: 60.000 Stück × 0,05 €</p>
+    </div>
+    <button class="loesung-btn"></button>
+    <div class="loesung">
+      <p><strong>Schritt 1 – Jahresverbrauchswerte (Menge × Preis):</strong><br>
+      Artikel 1 = 2.000 × 45,00 = 90.000 € · Artikel 2 = 500 × 12,00 = 6.000 € · Artikel 3 = 30.000 × 0,20 = 6.000 € · Artikel 4 = 1.000 × 15,00 = 15.000 € · Artikel 5 = 60.000 × 0,05 = 3.000 €<br>
+      <strong>Gesamtwert = 120.000 €</strong></p>
+      <p><strong>Schritt 2 – absteigend sortieren, Anteile berechnen, kumulieren:</strong></p>
+      <p>Rang 1: Artikel 1, 90.000 € → 90.000 ÷ 120.000 × 100 = <strong>75,00 %</strong> → kumuliert <strong>75,00 %</strong> → Klasse <strong>A</strong><br>
+      Rang 2: Artikel 4, 15.000 € → <strong>12,50 %</strong> → kumuliert <strong>87,50 %</strong> → Klasse <strong>A</strong> (mit diesem Artikel wird die 80-%-Grenze überschritten, er zählt daher noch zu A)<br>
+      Rang 3: Artikel 2, 6.000 € → <strong>5,00 %</strong> → kumuliert <strong>92,50 %</strong> → Klasse <strong>B</strong><br>
+      Rang 4: Artikel 3, 6.000 € → <strong>5,00 %</strong> → kumuliert <strong>97,50 %</strong> → Klasse <strong>B</strong> (überschreitet die 95-%-Grenze, zählt daher noch zu B)<br>
+      Rang 5: Artikel 5, 3.000 € → <strong>2,50 %</strong> → kumuliert <strong>100,00 %</strong> → Klasse <strong>C</strong></p>
+      <p><strong>Schritt 3 – Auswertung:</strong> Zwei von fünf Artikeln tragen 87,50 % des gesamten Jahresverbrauchswerts und werden intensiv betreut – Rahmenverträge, genaue Terminverfolgung, verfeinerte Disposition. Artikel 5 verursacht mit 60.000 Stück die meiste Lagerbewegung, aber nur 2,50 % des Werts; hier ist eine vereinfachte Abwicklung mit Sammelrechnung und großzügigem Sicherheitsbestand richtig.</p>
+      <p class="hinweis-klein">Zur Rangfolge: Artikel 2 und Artikel 3 haben denselben Wert von 6.000 €. Bei Wertgleichheit ist die Reihenfolge frei wählbar; beide liegen hier ohnehin in derselben Klasse. Nennen Sie in solchen Fällen kurz Ihre Entscheidung, dann ist die Lösung nachvollziehbar.</p>
+    </div>
+  </div>
+
+  <div class="abfrage-liste">
+    <div class="abfrage-kopf">Selbstabfrage</div>
+    <details class="abfrage"><summary>Was klassifiziert die ABC-Analyse und wonach?</summary>
+      <div class="antwort"><p>Objekte im Unternehmen – meist Materialien – nach der Verteilung ihrer Werthäufigkeit, also nach ihrem Jahresverbrauchswert. Ziel ist, das Wesentliche vom Unwesentlichen zu trennen.</p></div></details>
+    <details class="abfrage"><summary>Nenne die drei Arbeitsschritte der ABC-Analyse nach Gruber.</summary>
+      <div class="antwort"><p>Erfassen des Zahlenmaterials, Sortierung des Zahlenmaterials, Auswerten des Zahlenmaterials.</p></div></details>
+    <details class="abfrage"><summary>Wie berechnest du den Jahresverbrauchswert und den kumulierten Wertanteil?</summary>
+      <div class="antwort"><p>Jahresverbrauchswert = Jahresverbrauchsmenge × Preis je Einheit. Wertanteil = Einzelwert ÷ Gesamtwert × 100. Kumulierter Anteil = alle Wertanteile von Rang 1 bis zum betrachteten Rang aufaddiert.</p></div></details>
+    <details class="abfrage"><summary>Welche Wert- und Mengenanteile gelten als Richtwerte für A, B und C?</summary>
+      <div class="antwort"><p>A: rund 80 % des Werts bei rund 20 % der Artikelpositionen. B: rund 15 % bei rund 30 %. C: rund 5 % bei rund 50 %. Die Grenzen werden betriebsindividuell festgelegt.</p></div></details>
+    <details class="abfrage"><summary>Nenne vier Maßnahmen für A-Güter.</summary>
+      <div class="antwort"><p>Intensive Marktanalyse und Marktbeobachtung, genaue Festlegung von Mengen und Qualitäten, sorgfältige Prüfung von Preisen und Konditionen, Wahl zuverlässiger Lieferanten, Rahmenlieferverträge, Minimierung der Beschaffungs- und Lagerzeiten, genaue Terminverfolgung, rascher Rechnungslauf für Skonto, verfeinerte Disposition, sofortige Buchung der Zu- und Abgänge (vier davon genügen).</p></div></details>
+    <details class="abfrage"><summary>Wie werden C-Güter behandelt und warum?</summary>
+      <div class="antwort"><p>Vereinfacht: monatliche Sammelrechnungen, großzügig bemessene Sicherheitsbestände für längere Bestellzyklen, gegebenenfalls telefonische Bestellungen. Grund: Der Warenwert ist so gering, dass nur die Prozesskosten der Abwicklung ins Gewicht fallen.</p></div></details>
+    <details class="abfrage"><summary>Worin liegt die besondere Problematik der B-Güter?</summary>
+      <div class="antwort"><p>Ihre Eingruppierung ändert sich leicht. Deshalb muss häufiger überprüft werden, ob ein B-Gut inzwischen zum A- oder C-Gut geworden ist, und entsprechend reagiert werden.</p></div></details>
+    <details class="abfrage"><summary>Warum darf man C-Güter nicht als unwichtig behandeln?</summary>
+      <div class="antwort"><p>Weil ein fehlendes C-Teil die Produktion genauso stillsetzt wie ein fehlendes A-Teil. Die ABC-Analyse bewertet nur den kaufmännischen Aufwand, nicht die technische Bedeutung. Deshalb werden bei C-Gütern gerade großzügige Sicherheitsbestände empfohlen.</p></div></details>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════ -->
+<section class="abschnitt" id="xyz-analyse" data-gruppe="ABC und XYZ">
+  <div class="ab-kopf"><h2><span class="ab-nr">1.9</span>Die XYZ-Analyse</h2></div>
+
+  <div class="block einstieg" data-notiz="ein-xyz">
+    <div class="b-label">Worum es geht</div>
+    <p>Zwei Artikel, beide mit einem Jahresverbrauch von exakt 6.000 Stück. Vom ersten gehen jeden Monat rund 1.000 Stück raus – Monat für Monat, seit Jahren. Vom zweiten geht monatelang gar nichts, dann plötzlich 3.000 Stück auf einmal. Für die ABC-Analyse sind beide identisch. Für die Disposition sind sie es überhaupt nicht: Den ersten kann man planen, den zweiten nicht. Genau diesen Unterschied misst die XYZ-Analyse.</p>
+  </div>
+
+  <div class="block def" data-notiz="def-xyz">
+    <div class="b-label">Definition</div>
+    <div class="b-term">XYZ-Analyse</div>
+    <p>Bei der XYZ-Analyse werden die <strong>Schwankungen bei den Verbräuchen</strong> und die damit verbundene <strong>Vorhersagegenauigkeit</strong> beleuchtet. Sie klassifiziert Materialien also nicht nach Wert, sondern nach der <strong>Planbarkeit ihres Bedarfs</strong>.</p>
+  </div>
+
+  <div class="tab" data-notiz="tab-xyz-klassen">
+    <table>
+      <thead><tr><th>Klasse</th><th class="num">Anteil der Materialien</th><th>Verbrauchsverhalten</th><th>Vorhersagegenauigkeit</th></tr></thead>
+      <tbody>
+        <tr><td><strong>X</strong></td><td class="num">ca. 20 %</td><td>stetiger Verbrauch, nur geringe Schwankungen</td><td><strong>hoch</strong> – gut planbar</td></tr>
+        <tr><td><strong>Y</strong></td><td class="num">ca. 30 %</td><td>leicht schwankender Verbrauch, häufig saisonal oder trendbehaftet</td><td><strong>mittel</strong></td></tr>
+        <tr><td><strong>Z</strong></td><td class="num">ca. 50 %</td><td>sporadischer, unregelmäßiger Verbrauch</td><td><strong>niedrig</strong> – kaum planbar</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="block merk" data-notiz="merk-xyz-parallele">
+    <div class="b-label">Die Parallele zur ABC-Analyse</div>
+    <p>Die Verteilung ist verblüffend ähnlich: 20 / 30 / 50 Prozent, genau wie die Mengenanteile bei ABC. Das ist aber reine Ähnlichkeit der Zahlen und <strong>kein Zusammenhang</strong>. Ein X-Artikel kann A, B oder C sein – die beiden Analysen messen völlig verschiedene Dinge. Genau deshalb ist ihre Kombination so nützlich (siehe Abschnitt 1.9.1).</p>
+  </div>
+
+  <h3>Wie man die Schwankung misst: der Variationskoeffizient</h3>
+  <p>„Schwankt stark“ ist kein Kriterium, mit dem man 4.000 Artikel einordnen kann. Man braucht eine Zahl. Diese Zahl ist der <strong>Variationskoeffizient</strong> – er sagt, wie groß die typische Abweichung im Verhältnis zum Durchschnitt ist.</p>
+
+  <div class="block def" data-notiz="def-variationskoeffizient">
+    <div class="b-label">Definition</div>
+    <div class="b-term">Variationskoeffizient (VK)</div>
+    <p>Das Verhältnis von <strong>Standardabweichung</strong> zu <strong>Mittelwert</strong>, ausgedrückt in Prozent. Die Standardabweichung allein genügt nicht: Eine Abweichung von 150 Stück ist bei einem Durchschnitt von 100.000 Stück nichts und bei einem Durchschnitt von 300 Stück alles. Erst der Bezug auf den Mittelwert macht Artikel untereinander vergleichbar – unabhängig davon, ob sie in Stück, Kilogramm oder Litern gemessen werden.</p>
+  </div>
+
+  <div class="formel" data-notiz="formel-variationskoeffizient">
+    <div class="formel-kopf"><span class="f-tag">Formel</span><span class="f-name">Variationskoeffizient</span></div>
+    <div class="formel-koerper">
+      <div class="eq">Mittelwert = Summe aller Periodenverbräuche ÷ Anzahl der Perioden</div>
+      <div class="eq">Standardabweichung s = √( Summe der quadrierten Abweichungen ÷ Anzahl der Perioden )</div>
+      <div class="eq ergebnis">VK = ( Standardabweichung ÷ Mittelwert ) × 100</div>
+      <div class="f-erklaerung">Die Abweichung jeder Periode wird quadriert, damit sich Plus und Minus nicht gegenseitig aufheben – die Summe der einfachen Abweichungen ist immer null. Die Wurzel am Ende bringt das Ergebnis zurück in die ursprüngliche Einheit.</div>
+    </div>
+  </div>
+
+  <div class="block beispiel" data-notiz="bsp-vk-rechnung">
+    <div class="b-label">Rechenbeispiel: die Steuerplatine</div>
+    <p>Monatsverbräuche der letzten sechs Monate in Stück: <strong>1.020 · 980 · 1.000 · 1.010 · 990 · 1.000</strong></p>
+    <p class="hinweis-klein">Es sind dieselben Artikel wie in der ABC-Analyse in Abschnitt 1.8. Dort standen Jahresmengen, hier stehen die Monatswerte des letzten halben Jahres – 6 × 1.000 Stück entsprechen den 12.000 Stück Jahresverbrauch der Steuerplatine.</p>
+  </div>
+
+  <div class="schritte" data-notiz="rechnung-vk-x">
+    <div class="schritt"><div class="s-nr">1</div><div class="s-txt">Mittelwert: (1.020 + 980 + 1.000 + 1.010 + 990 + 1.000) ÷ 6 = 6.000 ÷ 6 = 1.000 Stück</div></div>
+    <div class="s-warum">Der Mittelwert ist die Bezugsgröße für alles Weitere. Rechne ihn zuerst und schreibe ihn auf – er wird zweimal gebraucht.</div>
+    <div class="schritt"><div class="s-nr">2</div><div class="s-txt">Abweichungen vom Mittelwert: +20 · −20 · 0 · +10 · −10 · 0</div></div>
+    <div class="s-warum">Kontrolle: Die Summe der Abweichungen muss null ergeben (20 − 20 + 0 + 10 − 10 + 0 = 0). Wenn nicht, ist der Mittelwert falsch.</div>
+    <div class="schritt"><div class="s-nr">3</div><div class="s-txt">Abweichungen quadrieren und addieren: 400 + 400 + 0 + 100 + 100 + 0 = 1.000</div></div>
+    <div class="s-warum">Quadrieren macht alle Werte positiv und gewichtet große Ausreißer stärker als kleine – genau das will man, denn ein einzelner großer Ausreißer stört die Planung mehr als viele kleine.</div>
+    <div class="schritt"><div class="s-nr">4</div><div class="s-txt">Durch die Anzahl der Perioden teilen: 1.000 ÷ 6 = 166,67</div></div>
+    <div class="s-warum">Das ist die Varianz. Sie ist ein Zwischenergebnis in „Stück zum Quadrat“ und für sich genommen nicht anschaulich.</div>
+    <div class="schritt"><div class="s-nr">5</div><div class="s-txt">Wurzel ziehen: s = √166,67 = 12,91 Stück</div></div>
+    <div class="s-warum">Jetzt steht die Standardabweichung wieder in Stück: Der Verbrauch weicht typischerweise um rund 13 Stück vom Durchschnitt ab.</div>
+    <div class="schritt fertig"><div class="s-nr">✓</div><div class="s-txt">VK = (12,91 ÷ 1.000) × 100 = 1,29 % → Klasse X</div></div>
+    <div class="s-warum">Gut 1 % Schwankung – dieser Artikel läuft praktisch wie ein Uhrwerk und ist hervorragend planbar.</div>
+  </div>
+
+  <div class="block beispiel" data-notiz="bsp-vk-vergleich">
+    <div class="b-label">Dieselbe Rechnung für zwei weitere Artikel</div>
+    <p><strong>Gehäuseblech</strong> (Monatsverbräuche 1.450 · 1.050 · 1.350 · 1.150 · 1.400 · 1.100):<br>
+    Mittelwert = 7.500 ÷ 6 = 1.250 · Abweichungen +200, −200, +100, −100, +150, −150 · Quadratsumme = 40.000 + 40.000 + 10.000 + 10.000 + 22.500 + 22.500 = 145.000 · Varianz = 145.000 ÷ 6 = 24.166,67 · s = √24.166,67 = 155,46 · <strong>VK = 12,44 % → Klasse Y</strong></p>
+    <p><strong>Sensorkopf</strong> (Monatsverbräuche 0 · 300 · 0 · 50 · 250 · 0):<br>
+    Mittelwert = 600 ÷ 6 = 100 · Abweichungen −100, +200, −100, −50, +150, −100 · Quadratsumme = 10.000 + 40.000 + 10.000 + 2.500 + 22.500 + 10.000 = 95.000 · Varianz = 95.000 ÷ 6 = 15.833,33 · s = √15.833,33 = 125,83 · <strong>VK = 125,83 % → Klasse Z</strong></p>
+    <p>Die typische Abweichung ist beim Sensorkopf größer als der Durchschnittsverbrauch selbst – ein VK über 100 % ist das sichere Zeichen für sporadischen Bedarf. Bevorratung nach Durchschnittswerten führt hier zwangsläufig zu Fehlmengen oder Ladenhütern.</p>
+  </div>
+
+  <div class="tab" data-notiz="tab-vk-grenzen">
+    <table>
+      <thead><tr><th>Klasse</th><th class="num">Variationskoeffizient</th><th>Beispiel aus der Rechnung</th><th>Was das für die Planung heißt</th></tr></thead>
+      <tbody>
+        <tr><td><strong>X</strong></td><td class="num">bis ca. 10 %</td><td>Steuerplatine, 1,29 %</td><td>Bedarf ist aus der Vergangenheit gut ableitbar – deterministische bzw. verbrauchsorientierte Planung funktioniert</td></tr>
+        <tr><td><strong>Y</strong></td><td class="num">ca. 10 bis 25 %</td><td>Gehäuseblech, 12,44 %</td><td>Trend und Saison müssen mitgerechnet werden – gleitender Mittelwert, exponentielle Glättung, Saisonfaktoren</td></tr>
+        <tr><td><strong>Z</strong></td><td class="num">über ca. 25 %</td><td>Sensorkopf, 125,83 %</td><td>Prognose kaum sinnvoll – auftragsbezogen beschaffen oder bewusst mit hohem Sicherheitsbestand arbeiten</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="block achtung" data-notiz="ach-vk-grenzen-quelle">
+    <div class="b-label">Zu den Grenzwerten</div>
+    <p>Grubers Skript beschreibt die XYZ-Klassen über das Verbrauchsverhalten (stetig – leicht schwankend – sporadisch) und die Vorhersagegenauigkeit (hoch – mittel – niedrig), nennt aber <strong>keine</strong> Zahlenwerte für den Variationskoeffizienten. Die Grenzen 10 % und 25 % sind die in der Literatur gebräuchlichsten Richtwerte und eine Ergänzung dieses Portals – sie werden ebenso wie die ABC-Grenzen <strong>betriebsindividuell festgelegt</strong>.</p>
+    <p>Wenn in einer Prüfungsaufgabe Grenzen vorgegeben sind, nimm diese. Wenn nicht: Nenne deine Grenzen ausdrücklich, dann ist deine Zuordnung begründet. Ob Gruber in der Klausur konkrete VK-Grenzen sehen will: <em>im Unterricht nachfragen</em>.</p>
+  </div>
+
+  <div class="block achtung" data-notiz="ach-xyz-abc">
+    <div class="b-label">Typische Verwechslung</div>
+    <p><strong>ABC misst Wert. XYZ misst Planbarkeit.</strong> Die beiden haben nichts miteinander zu tun, auch wenn die Prozentzahlen ähnlich aussehen. Ein teurer Artikel kann völlig gleichmäßig laufen (AX) und ein billiger völlig sporadisch (CZ) – und umgekehrt.</p>
+    <p>Zweite Falle: Ein hoher Variationskoeffizient bedeutet <strong>nicht</strong> „hoher Verbrauch“ und auch nicht „unwichtig“. Er bedeutet ausschließlich: schlecht vorhersehbar. Ersatzteile für Anlagen sind das Standardbeispiel – hochkritisch und trotzdem Z.</p>
+  </div>
+
+  <div class="block pruefung" data-notiz="pru-xyz">
+    <div class="b-label">So kommt das in der Prüfung</div>
+    <p>Drei Varianten. Erstens die Wissensfrage: „Was untersucht die XYZ-Analyse?“ – Antwort: Verbrauchsschwankungen und die damit verbundene Vorhersagegenauigkeit, mit den drei Klassen und ihren Anteilen 20 / 30 / 50 %. Zweitens die Zuordnungsaufgabe: Es werden Verbrauchsverläufe gezeigt oder beschrieben, du sollst klassifizieren und begründen. Drittens die Rechenaufgabe mit dem Variationskoeffizienten – dort unbedingt jeden Schritt aufschreiben: Mittelwert, Abweichungen, Quadrate, Varianz, Wurzel, Division durch den Mittelwert.</p>
+    <p>Merke dir die Kontrollrechnung: Die Summe der einfachen Abweichungen muss null sein. Das kostet fünf Sekunden und rettet die ganze Aufgabe.</p>
+  </div>
+
+  <div class="abfrage-liste">
+    <div class="abfrage-kopf">Selbstabfrage</div>
+    <details class="abfrage"><summary>Was untersucht die XYZ-Analyse?</summary>
+      <div class="antwort"><p>Die Schwankungen bei den Verbräuchen und die damit verbundene Vorhersagegenauigkeit – also die Planbarkeit des Bedarfs.</p></div></details>
+    <details class="abfrage"><summary>Welche Anteile und Eigenschaften haben X-, Y- und Z-Materialien?</summary>
+      <div class="antwort"><p>X: ca. 20 %, stetiger Verbrauch, hohe Vorhersagegenauigkeit. Y: ca. 30 %, leicht schwankender Verbrauch, mittlere Vorhersagegenauigkeit. Z: ca. 50 %, sporadischer Verbrauch, niedrige Vorhersagegenauigkeit.</p></div></details>
+    <details class="abfrage"><summary>Warum reicht die Standardabweichung allein nicht zur Klassifizierung?</summary>
+      <div class="antwort"><p>Weil sie in der Einheit des Artikels gemessen wird. 150 Stück Abweichung sind bei einem Mittelwert von 100.000 belanglos und bei einem Mittelwert von 300 gewaltig. Erst der Bezug auf den Mittelwert – der Variationskoeffizient – macht Artikel vergleichbar.</p></div></details>
+    <details class="abfrage"><summary>Wie berechnest du den Variationskoeffizienten?</summary>
+      <div class="antwort"><p>Mittelwert bilden, Abweichungen je Periode berechnen, quadrieren, addieren, durch die Anzahl der Perioden teilen (Varianz), Wurzel ziehen (Standardabweichung) und diese durch den Mittelwert teilen, mal 100.</p></div></details>
+    <details class="abfrage"><summary>Ein Artikel hat den Mittelwert 400 und die Standardabweichung 24. Welche Klasse?</summary>
+      <div class="antwort"><p>VK = 24 ÷ 400 × 100 = <strong>6 %</strong> – bei den üblichen Grenzen (bis 10 %) also Klasse <strong>X</strong>.</p></div></details>
+    <details class="abfrage"><summary>Warum ist ein Ersatzteil oft ein Z-Artikel, obwohl es sehr wichtig ist?</summary>
+      <div class="antwort"><p>Weil sein Bedarf sporadisch auftritt und deshalb kaum vorhersehbar ist. Die XYZ-Klasse sagt nur etwas über die Planbarkeit aus, nichts über die Bedeutung oder die Folgen einer Fehlmenge.</p></div></details>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════ -->
+<section class="abschnitt" id="abc-xyz-matrix" data-gruppe="ABC und XYZ">
+  <div class="ab-kopf"><h2><span class="ab-nr">1.9.1</span>Die kombinierte ABC/XYZ-Matrix</h2></div>
+
+  <div class="block einstieg" data-notiz="ein-matrix">
+    <div class="b-label">Worum es geht</div>
+    <p>Getrennt betrachtet sagen beide Analysen nur die halbe Wahrheit. „A-Gut“ heißt: Da steckt viel Geld drin, kümmere dich. „X-Gut“ heißt: Das kannst du planen. Erst zusammen ergeben sie eine Handlungsanweisung – denn ein wertvoller, gut planbarer Artikel wird völlig anders beschafft als ein wertvoller, unplanbarer. Gruber schreibt es selbst: Gelingt es, ABC- und XYZ-Analyse gemeinsam und sinnvoll anzusetzen und auszuwerten, ist dies ein <strong>ausgezeichnetes Instrument bei vielerlei Entscheidungen</strong> – etwa bei der Wahl des <strong>Belieferungskonzepts</strong> (JIT, Kanban) oder der <strong>Bedarfsermittlungsmethode</strong> (deterministisch oder stochastisch).</p>
+  </div>
+
+  <div class="block def" data-notiz="def-jit">
+    <div class="b-label">Definition</div>
+    <div class="b-term">Just in time (JIT)</div>
+    <p>Fertigungssynchrone Beschaffung: Das Material wird erst dann angeliefert, wenn es tatsächlich gebraucht wird – ohne Zwischenlagerung, direkt an den Verbrauchsort. Vorteil: nahezu kein Bestand, keine Kapitalbindung, kein Lagerplatz. Preis: Jede Verzögerung schlägt sofort auf die Produktion durch. JIT setzt deshalb voraus, dass der Bedarf <strong>planbar</strong> und der Lieferant <strong>hochzuverlässig</strong> ist.</p>
+  </div>
+
+  <div class="block def" data-notiz="def-vorratsbeschaffung">
+    <div class="b-label">Definition</div>
+    <div class="b-term">Vorratsbeschaffung</div>
+    <p>Das Gegenteil: Es wird eine größere Menge auf Vorrat beschafft und eingelagert; Beschaffungsmenge und Verbrauchsmenge stimmen zu einem bestimmten Zeitpunkt bewusst nicht überein. Vorteil: hohe Versorgungssicherheit, wenige Bestellvorgänge, Mengenrabatte. Preis: Kapitalbindung, Lagerkosten, Überalterungsrisiko.</p>
+  </div>
+
+  <div class="block def" data-notiz="def-deterministisch-stochastisch">
+    <div class="b-label">Definition</div>
+    <div class="b-term">Deterministische und stochastische Bedarfsermittlung</div>
+    <p><strong>Deterministisch:</strong> Der Bedarf wird aus konkreten Aufträgen und Stücklisten <em>abgeleitet</em> – 200 Fahrräder brauchen 400 Räder. Exakt, aber nur möglich, wenn Aufträge und Stücklisten bekannt sind.<br>
+    <strong>Stochastisch:</strong> Der Bedarf wird aus <em>Vergangenheitswerten hochgerechnet</em> – Mittelwerte, Glättung, Trend. Nötig, wenn keine konkreten Aufträge vorliegen; die Güte hängt direkt davon ab, wie regelmäßig der Verbrauch war. Bei Z-Artikeln versagt sie deshalb.</p>
+  </div>
+
+  <h3>Die neun Felder</h3>
+  <p>Man kreuzt die drei Wertklassen mit den drei Planbarkeitsklassen. Lies die Matrix so: Die <strong>ABC-Klasse</strong> entscheidet, <em>wie viel Aufwand</em> gerechtfertigt ist. Die <strong>XYZ-Klasse</strong> entscheidet, <em>welches Verfahren</em> überhaupt funktioniert.</p>
+
+  <div class="tab" data-notiz="tab-abc-xyz-matrix">
+    <table>
+      <thead><tr><th>Feld</th><th>Bedeutung</th><th>Beschaffungsstrategie</th><th>Bedarfsermittlung</th><th>Bestand</th></tr></thead>
+      <tbody>
+        <tr><td><strong>AX</strong></td><td>hoher Wert, sehr gleichmäßiger Verbrauch</td><td><strong>Just in time</strong> bzw. fertigungssynchrone Anlieferung, Rahmenvertrag mit Lieferabrufen, enge Lieferantenanbindung per EDI</td><td>deterministisch</td><td>sehr niedrig</td></tr>
+        <tr><td><strong>AY</strong></td><td>hoher Wert, schwankender Verbrauch</td><td><strong>JIT mit Sicherheitspuffer</strong> oder Kanban; Lieferabrufe mit Flexibilitätskorridor, Bedarfsprognose mit Trend und Saison</td><td>deterministisch, ergänzt um Prognose</td><td>niedrig bis mittel</td></tr>
+        <tr><td><strong>AZ</strong></td><td>hoher Wert, sporadischer Verbrauch</td><td><strong>Einzelbeschaffung im Bedarfsfall</strong>, streng auftragsbezogen; enge Abstimmung mit Lieferant und Konstruktion, gegebenenfalls Konsignationslager</td><td>deterministisch (auftragsbezogen)</td><td>möglichst kein Lagerbestand</td></tr>
+        <tr><td><strong>BX</strong></td><td>mittlerer Wert, gleichmäßiger Verbrauch</td><td><strong>Kanban</strong> oder automatisierte Bestellpunktdisposition; Bestellrhythmusverfahren mit festem Takt</td><td>deterministisch oder stochastisch</td><td>niedrig</td></tr>
+        <tr><td><strong>BY</strong></td><td>mittlerer Wert, schwankender Verbrauch</td><td><strong>Vorratsbeschaffung mit mittlerem Sicherheitsbestand</strong>; regelmäßige Überprüfung der Dispositionsparameter</td><td>stochastisch mit Glättung</td><td>mittel</td></tr>
+        <tr><td><strong>BZ</strong></td><td>mittlerer Wert, sporadischer Verbrauch</td><td><strong>Einzelbeschaffung im Bedarfsfall</strong> oder Vorrat mit bewusst gesetztem Puffer – je nachdem, was eine Fehlmenge kostet</td><td>heuristisch, Bedarf abschätzen</td><td>gering, aber abgesichert</td></tr>
+        <tr><td><strong>CX</strong></td><td>geringer Wert, gleichmäßiger Verbrauch</td><td><strong>Vorratsbeschaffung</strong> in großen Losen, Sammelbestellung, fester Bestellrhythmus; ideal für Konsignation oder C-Teile-Management</td><td>stochastisch, einfache Verfahren</td><td>hoch – Bestand ist billiger als der Bestellvorgang</td></tr>
+        <tr><td><strong>CY</strong></td><td>geringer Wert, schwankender Verbrauch</td><td><strong>Vorratsbeschaffung mit großzügigem Sicherheitsbestand</strong>, Sammelrechnungen, lange Bestellzyklen</td><td>stochastisch, grob</td><td>hoch</td></tr>
+        <tr><td><strong>CZ</strong></td><td>geringer Wert, sporadischer Verbrauch</td><td><strong>Vorratsbeschaffung</strong> mit sehr großzügigem Sicherheitsbestand; C-Teile-Management, Behälterservice durch den Lieferanten, monatliche Sammelrechnung – Hauptziel ist die Senkung der Prozesskosten</td><td>heuristisch bzw. Verbrauchsschätzung</td><td>hoch, bewusst überdimensioniert</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="block merk" data-notiz="merk-matrix-logik">
+    <div class="b-label">Die Matrix in zwei Sätzen</div>
+    <p><strong>Von links nach rechts (X → Z) sinkt die Planbarkeit</strong> – also weg von der geplanten Anlieferung, hin zur auftragsbezogenen Beschaffung oder zum Sicherheitsbestand.<br>
+    <strong>Von oben nach unten (A → C) sinkt der Wert</strong> – also weg vom schlanken Bestand, hin zum großzügigen Bestand, weil Bestand hier billiger ist als jeder zusätzliche Bestellvorgang.<br>
+    Die beiden Extreme: <strong>AX = Just in time</strong> (teuer und planbar, also kein Bestand). <strong>CZ = Vorratsbeschaffung mit dickem Puffer</strong> (billig und unplanbar, also einfach genug hinlegen).</p>
+  </div>
+
+  <div class="block beispiel" data-notiz="bsp-matrix-anwendung">
+    <div class="b-label">Beispiel: die Artikel aus den letzten beiden Abschnitten</div>
+    <p><strong>Steuerplatine</strong> – ABC-Klasse A (282.000 € Jahreswert), XYZ-Klasse X (VK 1,29 %) → <strong>AX</strong>. Empfehlung: Rahmenvertrag über die Jahresmenge mit wöchentlichen Lieferabrufen per EDI, fertigungssynchrone Anlieferung, Bestand für zwei Tage. Bei 282.000 € Jahreswert senkt jede eingesparte Bestandswoche die Kapitalbindung spürbar.</p>
+    <p><strong>Gehäuseblech</strong> – ABC-Klasse B (54.000 €), XYZ-Klasse Y (VK 12,44 %) → <strong>BY</strong>. Empfehlung: Vorratsbeschaffung mit mittlerem Sicherheitsbestand, Bedarfsprognose per exponentieller Glättung, Dispositionsparameter halbjährlich überprüfen.</p>
+    <p><strong>Unterlegscheibe</strong> – ABC-Klasse C (1.800 €), Verbrauch gleichmäßig → <strong>CX</strong>. Empfehlung: Behälterservice durch den C-Teile-Lieferanten, der monatlich auffüllt und eine Sammelrechnung schickt. Kein einziger Dispositionsvorgang im eigenen Haus.</p>
+    <p><strong>Sensorkopf</strong> als Ersatzteil – hoher Stückpreis, aber sehr geringer Jahresverbrauchswert, Verbrauch sporadisch (VK 125,83 %) → <strong>CZ</strong>. Empfehlung: bewusst großzügiger Sicherheitsbestand, denn der Bestand kostet wenig, ein Anlagenstillstand aber viel.</p>
+  </div>
+
+  <div class="block achtung" data-notiz="ach-matrix-az">
+    <div class="b-label">Das Feld, bei dem am häufigsten falsch geantwortet wird: AZ</div>
+    <p>Bei <strong>AZ</strong> laufen zwei gegenläufige Anforderungen zusammen. Der hohe Wert verbietet einen großen Sicherheitsbestand – das Kapital wäre gebunden, ohne dass man weiß, wann es gebraucht wird. Die schlechte Planbarkeit verbietet Just in time – der Lieferabruf ließe sich gar nicht vorhersagen.</p>
+    <p>Die Auflösung ist deshalb weder das eine noch das andere, sondern die <strong>auftragsbezogene Einzelbeschaffung</strong>: Erst wenn der Kundenauftrag da ist, wird bestellt. Der Kunde muss die entsprechende Lieferzeit akzeptieren. Alternativ verlagert man den Bestand zum Lieferanten – etwa über ein Konsignationslager, bei dem die Ware zwar beim Kunden liegt, aber bis zur Entnahme dem Lieferanten gehört.</p>
+    <p>Merke: <strong>AZ ist der Fall, bei dem man Bestand durch Lieferzeit ersetzt.</strong></p>
+  </div>
+
+  <div class="block achtung" data-notiz="ach-matrix-cz-falle">
+    <div class="b-label">Und die zweite Falle: CZ</div>
+    <p>Die intuitive Antwort auf CZ lautet oft „geringer Wert und selten gebraucht, also gar nicht bevorraten“. Das ist falsch herum gedacht. Weil der Wert gering ist, kostet Bestand fast nichts. Weil der Bedarf unvorhersehbar ist, ist eine Fehlmenge fast sicher, wenn man nichts vorhält. Die richtige Antwort ist deshalb <strong>Vorratsbeschaffung mit großzügigem Sicherheitsbestand</strong> und eine möglichst billige Abwicklung – genau das, was Gruber auch bei den C-Gütern der ABC-Analyse empfiehlt.</p>
+  </div>
+
+  <div class="block pruefung" data-notiz="pru-matrix">
+    <div class="b-label">So kommt das in der Prüfung</div>
+    <p>Das ist eine klassische Prüfungsaufgabe: „Ordnen Sie die folgenden Artikel in die ABC/XYZ-Matrix ein und empfehlen Sie jeweils eine geeignete Beschaffungsstrategie.“ Oder umgekehrt: „Für welche Artikel eignet sich Just-in-time-Belieferung und warum?“</p>
+    <p><strong>So antwortest du sicher:</strong> Erst die beiden Klassen benennen und je in einem Halbsatz begründen („A, weil hoher Jahresverbrauchswert; X, weil gleichmäßiger Verbrauch“), dann die Strategie nennen, dann in einem Satz begründen, warum sie zu genau dieser Kombination passt. Die Begründung ist der Punktebringer – „AX → JIT“ allein ist eine Vokabel, keine Antwort.</p>
+    <p>Am häufigsten abgefragt werden die beiden Ecken <strong>AX</strong> und <strong>CZ</strong> sowie das Sonderfeld <strong>AZ</strong>. Diese drei müssen sitzen.</p>
+  </div>
+
+  <div class="aufgabe" data-notiz="aufg-matrix">
+    <div class="aufgabe-kopf"><span class="tag">Aufgabe</span>Strategie aus der Matrix ableiten<span class="punkte">9 Pkt.</span></div>
+    <div class="aufgabe-text">
+      <p>Ein Hersteller von Verpackungsmaschinen hat drei Artikel analysiert:</p>
+      <p><strong>Artikel 1 – Servomotor:</strong> Jahresverbrauchswert 640.000 € (Rang 1 von 900 Artikeln), Verbrauch monatlich zwischen 48 und 52 Stück.<br>
+      <strong>Artikel 2 – Kabelkanal:</strong> Jahresverbrauchswert 2.100 €, Verbrauch monatlich gleichmäßig rund 900 Meter.<br>
+      <strong>Artikel 3 – Sonderfarbe für Kundenlackierung:</strong> Jahresverbrauchswert 95.000 €, Verbrauch in fünf von zwölf Monaten null, in den übrigen stark schwankend.</p>
+      <p>Ordnen Sie jeden Artikel der ABC- und der XYZ-Klasse zu und empfehlen Sie eine Beschaffungsstrategie – jeweils mit Begründung.</p>
+    </div>
+    <button class="loesung-btn"></button>
+    <div class="loesung">
+      <p><strong>Artikel 1 – Servomotor: AX.</strong> A, weil er den höchsten Jahresverbrauchswert aller 900 Artikel hat. X, weil der Verbrauch nur zwischen 48 und 52 Stück schwankt – bei einem Mittelwert von rund 50 sind das etwa 4 % Abweichung, also deutlich unter 10 %. <strong>Strategie: Just in time bzw. fertigungssynchrone Anlieferung</strong> über einen Rahmenvertrag mit Lieferabrufen und EDI-Anbindung. Begründung: Der Bedarf ist zuverlässig planbar, und der hohe Wert macht jede vermiedene Lagerwoche unmittelbar zu weniger Kapitalbindung.</p>
+      <p><strong>Artikel 2 – Kabelkanal: CX.</strong> C, weil 2.100 € Jahreswert gemessen an 640.000 € beim Spitzenartikel verschwindend gering sind. X, weil der Verbrauch gleichmäßig ist. <strong>Strategie: Vorratsbeschaffung in großen Losen</strong>, Sammelbestellung, langer Bestellrhythmus, idealerweise Behälterservice oder C-Teile-Management durch den Lieferanten mit monatlicher Sammelrechnung. Begründung: Der Warenwert ist so gering, dass allein die Prozesskosten der Bestellung zählen – jeder zusätzliche Bestellvorgang kostet mehr, als das Material im Regal an Kapital bindet.</p>
+      <p><strong>Artikel 3 – Sonderfarbe: AZ</strong> (bei 95.000 € je nach Klassengrenzen auch B – dann BZ; nennen Sie Ihre Annahme). Z, weil in fünf von zwölf Monaten überhaupt kein Verbrauch anfällt und der Rest stark schwankt: Der Variationskoeffizient liegt weit über 25 %. <strong>Strategie: auftragsbezogene Einzelbeschaffung im Bedarfsfall.</strong> Begründung: Der Wert verbietet einen hohen Sicherheitsbestand, die fehlende Planbarkeit verbietet Just in time. Da die Farbe ohnehin kundenspezifisch ist, liegt ein konkreter Auftrag vor, sobald sie gebraucht wird – der Bedarf kann also deterministisch aus dem Auftrag abgeleitet werden. Zusätzlich zu beachten: begrenzte Haltbarkeit von Lacken, was einen Vorrat zusätzlich unattraktiv macht.</p>
+    </div>
+  </div>
+
+  <div class="abfrage-liste">
+    <div class="abfrage-kopf">Selbstabfrage</div>
+    <details class="abfrage"><summary>Wofür ist die kombinierte ABC/XYZ-Analyse laut Gruber ein ausgezeichnetes Instrument?</summary>
+      <div class="antwort"><p>Für vielerlei Entscheidungen, etwa die Wahl des Belieferungskonzepts (JIT, Kanban) und die Wahl der Bedarfsermittlungsmethode (deterministisch oder stochastisch).</p></div></details>
+    <details class="abfrage"><summary>Welche Strategie passt zu AX und warum?</summary>
+      <div class="antwort"><p>Just in time bzw. fertigungssynchrone Anlieferung mit Rahmenvertrag und Lieferabrufen. Der hohe Wert macht Bestand teuer, die hohe Vorhersagegenauigkeit macht die enge Taktung überhaupt erst möglich.</p></div></details>
+    <details class="abfrage"><summary>Welche Strategie passt zu CZ und warum?</summary>
+      <div class="antwort"><p>Vorratsbeschaffung mit großzügigem Sicherheitsbestand und möglichst billiger Abwicklung (Sammelrechnung, C-Teile-Management). Bestand kostet bei geringem Wert kaum etwas, eine Fehlmenge wäre bei unvorhersehbarem Bedarf dagegen wahrscheinlich und teuer.</p></div></details>
+    <details class="abfrage"><summary>Warum ist AZ das schwierigste Feld?</summary>
+      <div class="antwort"><p>Weil der hohe Wert gegen einen großen Sicherheitsbestand spricht und die fehlende Planbarkeit gegen Just in time. Die Lösung ist die auftragsbezogene Einzelbeschaffung – man ersetzt Bestand durch Lieferzeit – oder die Verlagerung des Bestands zum Lieferanten, etwa über ein Konsignationslager.</p></div></details>
+    <details class="abfrage"><summary>Was unterscheidet deterministische von stochastischer Bedarfsermittlung?</summary>
+      <div class="antwort"><p>Deterministisch wird der Bedarf aus konkreten Aufträgen und Stücklisten abgeleitet. Stochastisch wird er aus Vergangenheitswerten hochgerechnet. Bei Z-Artikeln versagt die stochastische Methode, weil es kein verwertbares Muster gibt.</p></div></details>
+    <details class="abfrage"><summary>Ein Artikel ist teuer, wird aber nur alle paar Monate unregelmäßig gebraucht. Welche Klasse, welche Strategie?</summary>
+      <div class="antwort"><p>AZ. Auftragsbezogene Einzelbeschaffung statt Bevorratung, enge Abstimmung mit dem Lieferanten, gegebenenfalls Konsignationslager. Der Kunde muss die entsprechende Lieferzeit akzeptieren.</p></div></details>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════ -->
+<section class="abschnitt" id="nachhaltigkeit" data-gruppe="Rahmenbedingungen">
+  <div class="ab-kopf"><h2><span class="ab-nr">1.10</span>Nachhaltigkeit</h2></div>
+
+  <div class="block einstieg" data-notiz="ein-nachhaltigkeit">
+    <div class="b-label">Worum es geht</div>
+    <p>Ein Disponent kann dieselbe Sendung von Hamburg nach München auf drei Arten fahren lassen: mit dem Lkw in einem Tag, per Bahn in zwei Tagen mit zwei Umschlägen, oder im Sammelverkehr in drei Tagen. Die Bahn spart deutlich CO₂ – kostet aber Umschlaggebühren und einen Tag Zeit. Genau an dieser Stelle ist Nachhaltigkeit keine Weltanschauung mehr, sondern eine Entscheidung mit Preisschild. Und Grubers Skript sagt sehr deutlich, dass diese Entscheidung fast immer ein <strong>Zielkonflikt</strong> ist.</p>
+  </div>
+
+  <div class="block def" data-notiz="def-nachhaltigkeit">
+    <div class="b-label">Definition</div>
+    <div class="b-term">Nachhaltigkeit (Sustainability)</div>
+    <p>Wirtschaftliches Handeln so auszurichten, dass es dauerhaft tragfähig ist – ökologisch, ökonomisch und sozial zugleich. Nachhaltigkeit hat damit <strong>drei Dimensionen</strong>, und keine davon darf gegen die anderen beiden ausgespielt werden. Ein Betrieb, der emissionsfrei arbeitet und dabei pleitegeht, ist genauso wenig nachhaltig wie einer, der Rekordgewinne erzielt und die Umwelt ruiniert.</p>
+  </div>
+
+  <div class="raster" data-notiz="raster-drei-dimensionen">
+    <div class="karte green">
+      <div class="k-titel">Ökologische Nachhaltigkeit</div>
+      <div class="k-text">Alle wirtschaftlichen Handlungen sind so auszurichten, dass auch für die <strong>nachfolgenden Generationen</strong> die Umwelt so erhalten bleibt, dass alle Bewohner des Planeten ein lebenswertes Umfeld haben. Kontrollfrage aus dem Skript: Wie viele Planeten Erde wären nötig, um allen Bewohnern die gleichen Lebensbedingungen wie bei uns zu ermöglichen?</div>
+    </div>
+    <div class="karte blue">
+      <div class="k-titel">Ökonomische Nachhaltigkeit</div>
+      <div class="k-text">Alle wirtschaftlichen Handlungen sind so auszurichten, dass nicht das <strong>kurzfristige Ergebnis</strong> die Marschrichtung vorgibt, sondern der <strong>dauerhafte Erfolg</strong>. Nicht Quartalsabschlüsse sind maßgeblich für Inhaber, Gesellschafter oder Aktionäre, sondern zukunftsorientierte Projekte, Entwicklungen und Investitionen.</div>
+    </div>
+    <div class="karte amber">
+      <div class="k-titel">Soziale Nachhaltigkeit</div>
+      <div class="k-text">Alle wirtschaftlichen Handlungen sind so auszurichten, dass <strong>alle Gesellschaftsschichten daran teilhaben</strong> können – Randgruppen und Menschen mit Behinderung ausdrücklich eingeschlossen.</div>
+    </div>
+  </div>
+
+  <div class="block achtung" data-notiz="ach-oekonomisch-nachhaltig">
+    <div class="b-label">Der am häufigsten falsch verstandene Punkt</div>
+    <p>Ökonomische Nachhaltigkeit heißt <strong>nicht</strong> „Geld sparen“ und auch nicht „Gewinn machen“. Sie heißt: <strong>langfristig</strong> statt kurzfristig denken. Wer die Instandhaltung streicht, um das Quartalsergebnis zu retten, handelt <em>un</em>nachhaltig im ökonomischen Sinn – auch wenn die Zahl in diesem Quartal besser aussieht. Genau darauf zielt Grubers Formulierung mit den Quartalsabschlüssen ab.</p>
+  </div>
+
+  <h3>Die Zielkonflikte</h3>
+  <p>Grubers Skript stellt sechs Paare gegenüber. Sie zeigen dasselbe Muster: Die ökologisch bessere Entscheidung ist fast immer die ökonomisch teurere – zumindest kurzfristig.</p>
+
+  <div class="tab" data-notiz="tab-zielkonflikte">
+    <table>
+      <thead><tr><th>Ökologischer Aspekt</th><th>Ökonomischer Gegeneffekt</th><th>Was dahintersteckt</th></tr></thead>
+      <tbody>
+        <tr><td>Geringer Materialverbrauch</td><td>hohe Einkaufspreise (Mengen)</td><td>Wer weniger verbraucht, bestellt kleinere Mengen – und verliert Mengenrabatte.</td></tr>
+        <tr><td>Einsatz von Sekundärrohstoffen</td><td>hohe Recyclingkosten</td><td>Aufbereitetes Material ist ökologisch sinnvoll, die Aufbereitung selbst aber aufwändig und teuer.</td></tr>
+        <tr><td>Regionale Beschaffung</td><td>möglicherweise nicht kostengünstig</td><td>Kurze Wege sparen Emissionen, aber der regionale Lieferant hat oft nicht den Weltmarktpreis.</td></tr>
+        <tr><td>Nutzung nachwachsender Rohstoffe</td><td>Rodung von Anbauflächen</td><td>Der Anbau braucht Fläche – die anderswo als Wald oder Lebensmittelfläche fehlt.</td></tr>
+        <tr><td>Bahntransport</td><td>umständlich, Umschlagskosten</td><td>Deutlich weniger Emissionen je Tonnenkilometer, dafür zwei zusätzliche Umschläge und weniger Flexibilität.</td></tr>
+        <tr><td>Niedrige Emissionen</td><td>höhere Investitionen</td><td>Emissionsarme Fahrzeuge und Anlagen kosten in der Anschaffung deutlich mehr.</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="block achtung" data-notiz="ach-nachwachsende-rohstoffe">
+    <div class="b-label">Ein Paar fällt aus dem Muster</div>
+    <p>Bei „nachwachsende Rohstoffe gegen Rodung von Anbauflächen“ steht auf beiden Seiten ein <strong>ökologisches</strong> Argument – die Rodung ist kein Kostenproblem, sondern ein Umweltproblem. Das ist kein Fehler im Skript, sondern der Hinweis darauf, dass Zielkonflikte auch <em>innerhalb</em> einer Dimension auftreten. Wenn du das in einer Antwort erwähnst, zeigst du Verständnis statt Auswendiglernen.</p>
+  </div>
+
+  <div class="block beispiel" data-notiz="bsp-zielkonflikt-bahn">
+    <div class="b-label">Beispiel: der Zielkonflikt durchgerechnet</div>
+    <p>Ein Versender prüft die Verlagerung von 800 Sendungen im Jahr von der Straße auf die Schiene. Die Bahnvariante spart je Sendung rund 60 % der CO₂-Emissionen. Dagegen stehen: zwei zusätzliche Umschläge à 38 € je Sendung, ein Tag längere Laufzeit und die Notwendigkeit, den Sicherheitsbestand beim Empfänger um einen Tagesbedarf zu erhöhen.</p>
+    <p>Rechnung: 800 × 2 × 38 € = <strong>60.800 €</strong> zusätzliche Umschlagkosten im Jahr, dazu die Kapitalbindung des höheren Bestands. Ökologisch ist die Entscheidung eindeutig, ökonomisch kostet sie Geld. Beantwortet wird die Frage erst durch die dritte Ebene: Wenn Großkunden CO₂-Nachweise verlangen und die Ausschreibung ohne sie verloren geht, wird aus dem Kostenblock eine Marktzugangsvoraussetzung. Genau so argumentierst du in der Prüfung – nicht „gut für die Umwelt“, sondern welche wirtschaftliche Wirkung die ökologische Entscheidung hat.</p>
+  </div>
+
+  <div class="block pruefung" data-notiz="pru-nachhaltigkeit">
+    <div class="b-label">So kommt das in der Prüfung</div>
+    <p>Die drei Dimensionen mit je einem Satz Erklärung sind eine sichere Standardfrage. Häufiger noch kommt die Zielkonfliktfrage: „Nennen Sie zwei Zielkonflikte zwischen ökologischen und ökonomischen Anforderungen in der Logistik und erläutern Sie sie.“ Nutze dafür die Paare aus der Tabelle und schreibe zu jedem einen erklärenden Halbsatz – die reine Nennung reicht nicht.</p>
+    <p>Häufig ist Nachhaltigkeit auch der Rahmen einer größeren Aufgabe: Ein Unternehmen will CO₂ senken, und du sollst Maßnahmen vorschlagen <strong>und ihre wirtschaftlichen Folgen benennen</strong>. Der zweite Teil ist der bewertete.</p>
+  </div>
+
+  <div class="abfrage-liste">
+    <div class="abfrage-kopf">Selbstabfrage</div>
+    <details class="abfrage"><summary>Nenne die drei Dimensionen der Nachhaltigkeit.</summary>
+      <div class="antwort"><p>Ökologische, ökonomische und soziale Nachhaltigkeit.</p></div></details>
+    <details class="abfrage"><summary>Was bedeutet ökonomische Nachhaltigkeit nach Gruber?</summary>
+      <div class="antwort"><p>Wirtschaftliches Handeln nicht am kurzfristigen Ergebnis auszurichten, sondern am dauerhaften Erfolg – nicht Quartalsabschlüsse sind maßgeblich, sondern zukunftsorientierte Projekte, Entwicklungen und Investitionen.</p></div></details>
+    <details class="abfrage"><summary>Was verlangt soziale Nachhaltigkeit?</summary>
+      <div class="antwort"><p>Dass alle Gesellschaftsschichten am wirtschaftlichen Handeln teilhaben können – ausdrücklich auch Randgruppen und Menschen mit Behinderung.</p></div></details>
+    <details class="abfrage"><summary>Nenne drei Zielkonflikte zwischen Ökologie und Ökonomie.</summary>
+      <div class="antwort"><p>Geringer Materialverbrauch gegen hohe Einkaufspreise durch kleinere Mengen; Sekundärrohstoffe gegen hohe Recyclingkosten; regionale Beschaffung gegen möglicherweise höhere Preise; Bahntransport gegen Umständlichkeit und Umschlagskosten; niedrige Emissionen gegen höhere Investitionen (drei davon genügen).</p></div></details>
+    <details class="abfrage"><summary>Warum ist der Verzicht auf Instandhaltung zur Rettung des Quartalsergebnisses ökonomisch nicht nachhaltig?</summary>
+      <div class="antwort"><p>Weil ökonomische Nachhaltigkeit den dauerhaften Erfolg meint. Gestrichene Instandhaltung verbessert das kurzfristige Ergebnis und erzeugt später höhere Ausfall- und Reparaturkosten.</p></div></details>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════ -->
+<section class="abschnitt" id="marktanalyse" data-gruppe="Rahmenbedingungen">
+  <div class="ab-kopf"><h2><span class="ab-nr">1.11</span>Marktanalyse</h2></div>
+
+  <div class="block einstieg" data-notiz="ein-marktanalyse">
+    <div class="b-label">Worum es geht</div>
+    <p>Erinnerst du dich an die erste Maßnahme für A-Güter aus der ABC-Analyse? „Intensive Marktanalyse und Marktbeobachtung.“ Genau darum geht es hier. Bevor ein Einkäufer in eine Verhandlung geht, muss er wissen, wie stark seine Position eigentlich ist – wie viel von dem Material überhaupt am Markt ist, wer es anbietet, und wer es außer ihm noch haben will. Wer das nicht weiß, verhandelt im Blindflug.</p>
+  </div>
+
+  <div class="block def" data-notiz="def-markt">
+    <div class="b-label">Definition</div>
+    <div class="b-term">Markt</div>
+    <p>Der Markt ist die <strong>wirtschaftlich bedeutsame Umwelt eines Unternehmens</strong>, mit der es durch bestimmte Beziehungen verbunden ist oder Beziehungen anstrebt.</p>
+  </div>
+
+  <div class="block def" data-notiz="def-marktanalyse">
+    <div class="b-label">Definition</div>
+    <div class="b-term">Marktanalyse</div>
+    <p>Mit Hilfe der Marktanalyse wird die <strong>Marktstruktur nach Angebot und Nachfrage</strong> untersucht. Sie hat damit genau zwei Blickrichtungen: die Seite, von der man kauft, und die Seite, mit der man um dieselbe Ware konkurriert.</p>
+  </div>
+
+  <h3>Die Angebotsseite</h3>
+  <p>Bei der Untersuchung des Angebots sind drei Dinge zu erfassen: die <strong>Quantität</strong>, die <strong>Qualität</strong> und die <strong>Anbieter</strong>.</p>
+
+  <div class="tab" data-notiz="tab-angebotsseite">
+    <table>
+      <thead><tr><th>Untersuchungsgegenstand</th><th>Was zu erfassen ist</th><th>Wofür der Einkäufer das braucht</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Quantität des Angebots</strong></td><td>Die Mengen eines Materials, die insgesamt am Markt angeboten werden; außerdem, in welchem Umfang das Material nachgefragt wird und wie viel Lagerbestand am Markt vorhanden ist.</td><td>Verhandlungsposition: Ist das Material knapp, sitzt der Verkäufer am längeren Hebel. Liegen die Lager voll, sitzt der Käufer dort.</td></tr>
+        <tr><td><strong>Qualität des Angebots</strong></td><td>Welche Beschaffenheiten und Güten angeboten werden.</td><td>Erst dadurch wird ein echter <strong>Preis-Leistungs-Vergleich</strong> möglich. Und: Eine Änderung oder Angleichung der Qualität an die eigenen Erfordernisse kann eine <strong>Kostenreduzierung</strong> bewirken.</td></tr>
+        <tr><td><strong>Anbieter</strong></td><td>Marktstärke, Marktanteile und Verkaufsprogramme der einzelnen Anbieter.</td><td>Zeigt, wie abhängig man von einem Einzelnen ist und welche Alternativen realistisch bestehen.</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="block beispiel" data-notiz="bsp-qualitaet-kosten">
+    <div class="b-label">Beispiel: Qualität senkt Kosten</div>
+    <p>Ein Betrieb kauft seit Jahren Edelstahlblech in einer Oberflächengüte, die für Sichtteile gedacht ist. Die Marktanalyse zeigt: Dieselbe Legierung gibt es in einer einfacheren Oberflächengüte 22 % günstiger. Eine Prüfung im eigenen Haus ergibt, dass 70 % der Teile aus diesem Blech später ohnehin lackiert werden – die teure Oberfläche verschwindet unter der Farbe.</p>
+    <p>Ergebnis: Für die lackierten Teile wird auf die einfachere Güte umgestellt. Kein Lieferantenwechsel, keine Verhandlung, keine Qualitätseinbuße für den Kunden – nur die Erkenntnis, dass die eingekaufte Qualität nicht zur tatsächlichen Anforderung passte. Genau das meint Gruber mit „Angleichung der Qualität an die eigenen Erfordernisse“.</p>
+  </div>
+
+  <h3>Die Nachfrageseite</h3>
+  <p>Bei der Untersuchung der Nachfrage ist die <strong>Position des eigenen Unternehmens als Nachfrager</strong> festzustellen. Drei Fragen sind zu beantworten: <strong>Wie viele Nachfrager gibt es? Wer sind sie</strong> – Unternehmen der gleichen Branche, direkte Mitbewerber? <strong>Welche Marktmacht besitzen sie?</strong></p>
+  <p>Der Grund für diese Fragen ist unmittelbar praktisch: Wenn ein Konzern mit dem zwanzigfachen Abnahmevolumen dasselbe Material braucht, bekommt er andere Preise – und in einer Knappheitssituation bekommt er die Ware zuerst. Diese Erkenntnis ändert die eigene Beschaffungsstrategie: langfristige Verträge statt Spotkäufe, alternative Werkstoffe prüfen, mehrere Lieferanten aufbauen.</p>
+
+  <h3>Die Marktformen</h3>
+  <p>Aus der Zahl der Anbieter und Nachfrager ergibt sich die Marktform – und daraus direkt die Verhandlungsposition.</p>
+
+  <div class="tab" data-notiz="tab-marktformen">
+    <table>
+      <thead><tr><th>Marktform</th><th>Auf der Angebotsseite</th><th>Auf der Nachfrageseite</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Monopol</strong></td><td>Nur ein Anbieter – starke Verhandlungsposition des Verkäufers, der Einkäufer hat kaum Spielraum</td><td>Nur ein Käufer (Nachfragemonopol) – starke Position des Einkäufers</td></tr>
+        <tr><td><strong>Oligopol</strong></td><td>Wenige Anbieter – Preise bewegen sich oft parallel, Ausweichmöglichkeiten sind begrenzt</td><td>Wenige Nachfrager – jeder Einzelne hat spürbares Gewicht</td></tr>
+        <tr><td><strong>Polypol</strong></td><td>Viele Anbieter, geringe Einzelmacht – gute Verhandlungsposition für den Einkäufer</td><td>Viele Nachfrager, geringe Einzelmacht – der einzelne Käufer fällt kaum ins Gewicht</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="block merk" data-notiz="merk-sole-single">
+    <div class="b-label">Merksatz zum Anschluss ans nächste Kapitel</div>
+    <p><strong>Sole Sourcing</strong> bedeutet: Der Lieferant hat eine Monopolstellung – du <em>kannst</em> gar nicht woanders kaufen. <strong>Single Sourcing</strong> bedeutet: Du wählst bewusst einen einzigen Lieferanten, obwohl es mehrere gäbe. Der Unterschied liegt also nicht in der Anzahl der Lieferanten, sondern darin, ob du die Wahl hast. Genau hier setzt das Kapitel zur Beschaffung an.</p>
+  </div>
+
+  <div class="block achtung" data-notiz="ach-marktanalyse-forschung">
+    <div class="b-label">Zur Begriffsabgrenzung</div>
+    <p>In der Literatur unterscheidet man häufig die <strong>Marktanalyse</strong> als Untersuchung des Marktes zu einem <em>Zeitpunkt</em> von der <strong>Marktbeobachtung</strong> als fortlaufende Verfolgung über einen <em>Zeitraum</em>; beide zusammen ergeben die Marktforschung. Grubers Skript definiert nur die Marktanalyse ausdrücklich, nennt aber bei den A-Gütern „intensive Marktanalyse <em>und Marktbeobachtung</em>“ – die Unterscheidung wird dort also vorausgesetzt. Wenn du sicher sein willst, welche Abgrenzung in der Klausur erwartet wird: <em>im Unterricht nachfragen</em>.</p>
+  </div>
+
+  <div class="block pruefung" data-notiz="pru-marktanalyse">
+    <div class="b-label">So kommt das in der Prüfung</div>
+    <p>Meist eine kurze Frage mit klarer Struktur: „Was wird bei der Marktanalyse untersucht?“ Antworte gegliedert – <strong>Angebotsseite</strong> (Quantität, Qualität, Anbieter mit Marktstärke, Marktanteilen und Verkaufsprogrammen) und <strong>Nachfrageseite</strong> (Anzahl, Art und Marktmacht der Nachfrager, eigene Position). Diese Gliederung allein bringt schon Punkte, weil sie zeigt, dass du die Systematik kennst.</p>
+    <p>Häufig eingebettet: Die Marktanalyse taucht als erste Maßnahme im Katalog für A-Güter auf. Wenn eine Aufgabe nach der Behandlung von A-Gütern fragt, ist sie also Teil der Antwort.</p>
+  </div>
+
+  <div class="abfrage-liste">
+    <div class="abfrage-kopf">Selbstabfrage</div>
+    <details class="abfrage"><summary>Was ist der Markt nach Grubers Definition?</summary>
+      <div class="antwort"><p>Die wirtschaftlich bedeutsame Umwelt eines Unternehmens, mit der es durch bestimmte Beziehungen verbunden ist oder Beziehungen anstrebt.</p></div></details>
+    <details class="abfrage"><summary>Was untersucht die Marktanalyse?</summary>
+      <div class="antwort"><p>Die Marktstruktur nach Angebot und Nachfrage.</p></div></details>
+    <details class="abfrage"><summary>Was ist auf der Angebotsseite zu erfassen?</summary>
+      <div class="antwort"><p>Quantität des Angebots (angebotene Mengen, Umfang der Nachfrage, Lagerbestände am Markt), Qualität des Angebots (für den Preis-Leistungs-Vergleich) und die Anbieter hinsichtlich Marktstärke, Marktanteilen und Verkaufsprogrammen.</p></div></details>
+    <details class="abfrage"><summary>Warum ist die Qualität des angebotenen Materials für den Einkäufer wichtig?</summary>
+      <div class="antwort"><p>Weil erst dadurch ein echter Preis-Leistungs-Vergleich möglich wird. Zudem kann eine Änderung oder Angleichung der Qualität an die eigenen Erfordernisse eine Kostenreduzierung bewirken.</p></div></details>
+    <details class="abfrage"><summary>Welche drei Fragen stellt man auf der Nachfrageseite?</summary>
+      <div class="antwort"><p>Wie viele Nachfrager sind vorhanden? Wer sind sie – gleiche Branche, Mitbewerber? Welche Marktmacht besitzen sie? Daraus ergibt sich die eigene Position als Nachfrager.</p></div></details>
+    <details class="abfrage"><summary>Was unterscheidet Sole Sourcing von Single Sourcing?</summary>
+      <div class="antwort"><p>Bei Sole Sourcing hat der Lieferant eine Monopolstellung – es gibt keine Alternative. Bei Single Sourcing entscheidet man sich bewusst für einen Lieferanten, obwohl mehrere verfügbar wären.</p></div></details>
+  </div>
+</section>
+
+<hr class="trenner">
+
+<!-- ═══════════════════════════════════════════════════════════ -->
+<section class="abschnitt" id="selbsttest" data-gruppe="Selbsttest">
+  <div class="ab-kopf"><h2><span class="ab-nr">Test</span>Selbsttest – 12 Fragen</h2></div>
+
+  <p>Quer durch das ganze Kapitel. Erst beantworten, dann bei Fehlern in den passenden Abschnitt zurückspringen – die Erklärung nach jeder Frage sagt dir, worum es ging.</p>
+
+  <div class="quiz">
+    <div class="q-block">
+      <div class="q-nr"></div>
+      <div class="q-frage">Welcher Logistikbereich ist für den Rückfluss von Altprodukten, Retouren und Verpackungen zuständig?</div>
+      <div class="q-optionen">
+        <button class="q-opt" data-richtig="false">A) Distributionslogistik</button>
+        <button class="q-opt" data-richtig="false">B) Beschaffungslogistik</button>
+        <button class="q-opt" data-richtig="true">C) Entsorgungslogistik</button>
+        <button class="q-opt" data-richtig="false">D) Instandhaltungslogistik</button>
+      </div>
+      <div class="q-fb" data-erklaerung="Die Entsorgungslogistik deckt den gesamten Rückweg ab: Altprodukte, Retouren, Verpackungen, Abfall und Recycling. Die Distributionslogistik führt dagegen vom Unternehmen zum Kunden."></div>
+    </div>
+
+    <div class="q-block">
+      <div class="q-nr"></div>
+      <div class="q-frage">Welche Frage gehört <strong>nicht</strong> zu den sechs Punkten, die im Vorfeld eines Logistikkonzepts zu bestimmen sind?</div>
+      <div class="q-optionen">
+        <button class="q-opt" data-richtig="false">A) In welchen Mengen?</button>
+        <button class="q-opt" data-richtig="false">B) In welcher Qualität?</button>
+        <button class="q-opt" data-richtig="true">C) Zu welchem Verkaufspreis?</button>
+        <button class="q-opt" data-richtig="false">D) Durch welche Aktionen?</button>
+      </div>
+      <div class="q-fb" data-erklaerung="Die sechs Punkte lauten: welche Güter und Informationen, in welchen Mengen, an welchen Orten, zu welchem Zeitpunkt, in welcher Qualität und durch welche Aktionen sie verfügbar sein müssen. Der Verkaufspreis gehört nicht dazu."></div>
+    </div>
+
+    <div class="q-block">
+      <div class="q-nr"></div>
+      <div class="q-frage">Ein Auftrag über 500 Stück hat eine Bearbeitungszeit von 4 Minuten je Stück und eine Rüstzeit von 100 Minuten. Wie hoch ist der Kapazitätsbedarf bei einem Leistungsgrad von 100 %?</div>
+      <div class="q-optionen">
+        <button class="q-opt" data-richtig="false">A) 2.000 Minuten</button>
+        <button class="q-opt" data-richtig="true">B) 2.100 Minuten</button>
+        <button class="q-opt" data-richtig="false">C) 52.100 Minuten</button>
+        <button class="q-opt" data-richtig="false">D) 210.000 Minuten</button>
+      </div>
+      <div class="q-fb" data-erklaerung="(500 × 4 + 100) × 1,00 = (2.000 + 100) × 1,00 = 2.100 Minuten. Die Rüstzeit fällt einmal je Auftrag an und steht deshalb in der Klammer – sie wird nicht mit der Stückzahl multipliziert."></div>
+    </div>
+
+    <div class="q-block">
+      <div class="q-nr"></div>
+      <div class="q-frage">Erlöse 1.200.000 €, Materialeinsatz 400.000 €, Fremdleistungen 200.000 €, Löhne 300.000 €. Wie hoch ist die Bruttowertschöpfung?</div>
+      <div class="q-optionen">
+        <button class="q-opt" data-richtig="false">A) 300.000 €</button>
+        <button class="q-opt" data-richtig="true">B) 600.000 €</button>
+        <button class="q-opt" data-richtig="false">C) 800.000 €</button>
+        <button class="q-opt" data-richtig="false">D) 900.000 €</button>
+      </div>
+      <div class="q-fb" data-erklaerung="Vorleistungen sind nur die zugekauften Leistungen: 400.000 + 200.000 = 600.000 €. Bruttowertschöpfung = 1.200.000 − 600.000 = 600.000 €. Löhne sind keine Vorleistung, sondern werden aus der Wertschöpfung bezahlt."></div>
+    </div>
+
+    <div class="q-block">
+      <div class="q-nr"></div>
+      <div class="q-frage">Ein Fahrzeug fährt in festem Takt eine feste Route über mehrere Lieferanten, sammelt kleine Mengen ein und nimmt Leergut mit zurück. Wie heißt diese Belieferungsstrategie?</div>
+      <div class="q-optionen">
+        <button class="q-opt" data-richtig="false">A) Hub and Spoke</button>
+        <button class="q-opt" data-richtig="true">B) Milkrun</button>
+        <button class="q-opt" data-richtig="false">C) Direktbelieferung</button>
+        <button class="q-opt" data-richtig="false">D) Kombinierter Transport</button>
+      </div>
+      <div class="q-fb" data-erklaerung="Der Milkrun ist nach dem Milchmann benannt: volle Flaschen bringen, leere mitnehmen. Gruber ordnet die Idee dem Kanban-Prinzip zu. Hub and Spoke bündelt dagegen an einem zentralen Umschlagpunkt."></div>
+    </div>
+
+    <div class="q-block">
+      <div class="q-nr"></div>
+      <div class="q-frage">Welche Aussage über RFID ist richtig?</div>
+      <div class="q-optionen">
+        <button class="q-opt" data-richtig="false">A) Die Daten werden per Barcodescanner mit Sichtkontakt erfasst.</button>
+        <button class="q-opt" data-richtig="true">B) Die Daten reisen mit der Sendung und werden am Ziel kontaktlos ausgelesen.</button>
+        <button class="q-opt" data-richtig="false">C) Es bezeichnet die Übergabe der Bestandsverantwortung an den Lieferanten.</button>
+        <button class="q-opt" data-richtig="false">D) Es ist ein Verfahren zum Datenaustausch zwischen Unternehmen ohne manuelle Eingriffe.</button>
+      </div>
+      <div class="q-fb" data-erklaerung="Antwort A beschreibt MDE, C beschreibt VMI, D beschreibt EDI. Bei RFID werden die Daten auf einem Transponder gespeichert, mit der Sendung transportiert und am Ziel kontaktlos ausgelesen – auch durch Verpackung hindurch."></div>
+    </div>
+
+    <div class="q-block">
+      <div class="q-nr"></div>
+      <div class="q-frage">Was ist branchenübergreifendes Funktions- und Prozess-Benchmarking?</div>
+      <div class="q-optionen">
+        <button class="q-opt" data-richtig="false">A) Der Vergleich zwischen zwei Standorten des eigenen Unternehmens</button>
+        <button class="q-opt" data-richtig="false">B) Der Vergleich mit dem Durchschnitt der eigenen Branche</button>
+        <button class="q-opt" data-richtig="true">C) Der Vergleich eines einzelnen Prozesses mit branchenfremden Unternehmen</button>
+        <button class="q-opt" data-richtig="false">D) Der Vergleich der eigenen Zahlen mit den Vorjahreswerten</button>
+      </div>
+      <div class="q-fb" data-erklaerung="Die drei Ausprägungen sind internes Benchmarking (eigene Bereiche und Standorte), Wettbewerbs-Benchmarking (innerhalb der Branche) und branchenübergreifendes Funktions- und Prozess-Benchmarking. Letzteres hat das größte Potenzial, weil es andere Denkweisen sichtbar macht."></div>
+    </div>
+
+    <div class="q-block">
+      <div class="q-nr"></div>
+      <div class="q-frage">„In der Region herrscht Fachkräftemangel bei Berufskraftfahrern.“ In welches SWOT-Feld gehört diese Aussage?</div>
+      <div class="q-optionen">
+        <button class="q-opt" data-richtig="false">A) Stärke</button>
+        <button class="q-opt" data-richtig="false">B) Schwäche</button>
+        <button class="q-opt" data-richtig="false">C) Chance</button>
+        <button class="q-opt" data-richtig="true">D) Risiko</button>
+      </div>
+      <div class="q-fb" data-erklaerung="Der Mangel liegt im regionalen Arbeitsmarkt, also außerhalb des Unternehmens – damit ist es ein Risiko. Eine Schwäche wäre es erst, wenn das Unternehmen aus eigenen Gründen keine Fahrer hält, etwa wegen schlechter Bezahlung. Prüffrage: Könnte ich das durch eine eigene Entscheidung ändern?"></div>
+    </div>
+
+    <div class="q-block">
+      <div class="q-nr"></div>
+      <div class="q-frage">Welche Kategorie gehört <strong>nicht</strong> zu den 6 M des Ishikawa-Diagramms?</div>
+      <div class="q-optionen">
+        <button class="q-opt" data-richtig="false">A) Milieu</button>
+        <button class="q-opt" data-richtig="false">B) Methode</button>
+        <button class="q-opt" data-richtig="true">C) Marketing</button>
+        <button class="q-opt" data-richtig="false">D) Management</button>
+      </div>
+      <div class="q-fb" data-erklaerung="Die 6 M lauten Material, Maschine, Methode, Mensch, Milieu (Umfeld) und Management. Sie erzwingen eine vollständige Ursachensuche – ohne dieses Raster landen fast alle Analysen beim Menschen."></div>
+    </div>
+
+    <div class="q-block">
+      <div class="q-nr"></div>
+      <div class="q-frage">Ein Artikel hat einen Jahresverbrauch von 20.000 Stück zu 0,15 € je Stück. Der Gesamtverbrauchswert aller Artikel beträgt 300.000 €. Wie hoch ist sein Wertanteil?</div>
+      <div class="q-optionen">
+        <button class="q-opt" data-richtig="false">A) 0,15 %</button>
+        <button class="q-opt" data-richtig="true">B) 1,00 %</button>
+        <button class="q-opt" data-richtig="false">C) 6,67 %</button>
+        <button class="q-opt" data-richtig="false">D) 10,00 %</button>
+      </div>
+      <div class="q-fb" data-erklaerung="Jahresverbrauchswert = 20.000 × 0,15 = 3.000 €. Wertanteil = 3.000 ÷ 300.000 × 100 = 1,00 %. Immer durch den Gesamtwert aller Artikel teilen, nie durch die Summe der eigenen Klasse."></div>
+    </div>
+
+    <div class="q-block">
+      <div class="q-nr"></div>
+      <div class="q-frage">Was misst die XYZ-Analyse?</div>
+      <div class="q-optionen">
+        <button class="q-opt" data-richtig="false">A) Den Wertanteil eines Artikels am Gesamtverbrauch</button>
+        <button class="q-opt" data-richtig="true">B) Die Verbrauchsschwankungen und damit die Vorhersagegenauigkeit</button>
+        <button class="q-opt" data-richtig="false">C) Die Lagerumschlagshäufigkeit</button>
+        <button class="q-opt" data-richtig="false">D) Die Anzahl der verfügbaren Lieferanten</button>
+      </div>
+      <div class="q-fb" data-erklaerung="Antwort A beschreibt die ABC-Analyse. Die XYZ-Analyse beleuchtet die Schwankungen bei den Verbräuchen und die damit verbundene Vorhersagegenauigkeit: X ca. 20 % stetig, Y ca. 30 % leicht schwankend, Z ca. 50 % sporadisch."></div>
+    </div>
+
+    <div class="q-block">
+      <div class="q-nr"></div>
+      <div class="q-frage">Welche Beschaffungsstrategie passt zu einem CZ-Artikel?</div>
+      <div class="q-optionen">
+        <button class="q-opt" data-richtig="false">A) Just-in-time-Anlieferung mit Rahmenvertrag und Lieferabrufen</button>
+        <button class="q-opt" data-richtig="false">B) Auftragsbezogene Einzelbeschaffung ohne Lagerbestand</button>
+        <button class="q-opt" data-richtig="true">C) Vorratsbeschaffung mit großzügigem Sicherheitsbestand und vereinfachter Abwicklung</button>
+        <button class="q-opt" data-richtig="false">D) Tägliche Bestellung kleiner Mengen zur Bestandsminimierung</button>
+      </div>
+      <div class="q-fb" data-erklaerung="C bedeutet geringer Wert, Z bedeutet unvorhersehbarer Bedarf. Bestand kostet hier fast nichts, eine Fehlmenge wäre dagegen wahrscheinlich und teuer. Also großzügig bevorraten und die Abwicklung so billig wie möglich halten – Sammelrechnung, C-Teile-Management. Antwort A gehört zu AX, Antwort B zu AZ."></div>
+    </div>
+
+    <div class="q-score"><div class="z"></div><div class="t"></div></div>
+  </div>
+
+  <div class="block lernziel" data-notiz="ziel-abschluss">
+    <div class="b-label">Wenn du fertig bist</div>
+    <p>Drücke <strong>K</strong>, um aus allen Selbstabfragen dieses Kapitels Karteikarten zu ziehen. Alles, was du dabei als „nochmal üben“ markierst, kommt beim nächsten Durchlauf zuerst.</p>
+    <p>Für dieses Kapitel gilt besonders: Rechne die ABC-Analyse mindestens dreimal komplett von Hand durch, mit unterschiedlichen Zahlen. Sortieren, kumulieren, klassifizieren – das muss ohne Nachdenken laufen, denn in der Prüfung sind es sichere Punkte.</p>
+  </div>
+</section>
+
+</main>
+
+<script>window.KAPITEL = {id:'gruber-1', fach:'gruber', nummer:'1.1–1.11', titel:'Logistikkonzepte & Analysemethoden'};</script>
+<script src="assets/portal.js" defer></script>
+</body>
+</html>

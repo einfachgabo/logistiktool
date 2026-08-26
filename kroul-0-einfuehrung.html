@@ -1,0 +1,887 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kapitel 0 · Einführung in die Logistik</title>
+<link rel="stylesheet" href="assets/portal.css">
+</head>
+<body class="mit-sidebar">
+
+<aside class="sidebar"></aside>
+
+<main class="inhalt">
+
+<div class="kopf-label">Raphael Kroul · Kapitel 0 · Stand 03.03.2026</div>
+<h1>Einführung in die Logistik</h1>
+<p class="kopf-sub">Das Fundament. Nach diesem Kapitel weißt du, was Logistik ist, warum es sie gibt, wie sie im Unternehmen organisiert ist und mit welchen Begriffen die anderen drei Fächer arbeiten.</p>
+
+<div class="block lernziel" data-notiz="ziel-kapitel">
+  <div class="b-label">Wenn du hier durch bist, kannst du</div>
+  <ul>
+    <li>erklären, was Logistik ist – ohne das Wort „Transport“ zu benutzen</li>
+    <li>die 7 R aufzählen und an einem Beispiel zeigen</li>
+    <li>die Fachbereiche der Logistik voneinander abgrenzen</li>
+    <li>1PL bis 5PL unterscheiden und je ein Praxisbeispiel nennen</li>
+    <li>erklären, was der Order Penetration Point mit deiner Lieferzeit zu tun hat</li>
+    <li>den Bullwhip-Effekt beschreiben und sagen, was Supply Chain Management dagegen tut</li>
+  </ul>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════════ -->
+<section class="abschnitt" id="pruefungsstruktur" data-gruppe="Orientierung">
+  <div class="ab-kopf"><h2><span class="ab-nr">0.1</span>Wie deine Prüfung aufgebaut ist</h2></div>
+
+  <div class="block einstieg" data-notiz="ein-pruefung">
+    <div class="b-label">Worum es geht</div>
+    <p>Bevor du inhaltlich anfängst, solltest du wissen, worauf das Ganze hinausläuft. Die IHK prüft dich nicht in vier getrennten Klausuren, sondern in <strong>zwei betrieblichen Situationsbeschreibungen mit je 100 Punkten</strong>. In jeder dieser beiden Prüfungen sind alle vier Fächer enthalten – nur in unterschiedlicher Gewichtung.</p>
+  </div>
+
+  <p>Das hat eine wichtige Folge für dein Lernen: Es gibt keine „Kroul-Klausur“ und keine „Gruber-Klausur“. Du bekommst eine Situation aus einem Logistikbetrieb beschrieben und musst darin erkennen, welches Werkzeug gefragt ist. Eine Aufgabe kann mit Changemanagement beginnen und mit einer Bestellmengenrechnung enden.</p>
+
+  <div class="tab" data-notiz="tab-pruefungsgewichtung">
+    <table>
+      <thead><tr><th>Prüfungsteil</th><th>Dozent</th><th class="num">Situation 1 / 2</th></tr></thead>
+      <tbody>
+        <tr><td>Logistische Anforderungen ermitteln, analysieren und bewerten <span class="hinweis-klein">§ 4 Abs. 1</span></td><td>Benedikt Plab</td><td class="num">30 / 20</td></tr>
+        <tr><td>Logistische Lösungen entwickeln und planen <span class="hinweis-klein">§ 4 Abs. 2</span></td><td>Christian Gruber</td><td class="num">35 / 35</td></tr>
+        <tr><td>Logistische Lösungen umsetzen, bewerten und weiterentwickeln <span class="hinweis-klein">§ 4 Abs. 3</span></td><td>Raphael Kroul</td><td class="num">20 / 30</td></tr>
+        <tr><td>Kommunikation, Führung und Zusammenarbeit <span class="hinweis-klein">§ 4 Abs. 4</span></td><td>Kerstin Gruchala</td><td class="num">15 / 15</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="block merk" data-notiz="merk-gewichtung">
+    <div class="b-label">Was die Gewichtung dir sagt</div>
+    <p>Gruber hat mit 70 von 200 Punkten das größte Gewicht – dort liegen die Rechenaufgaben (Bedarfsermittlung, Andler, Kennzahlen). Rechnen ist der Teil, den man am zuverlässigsten trainieren kann. Punkte, die du dort liegen lässt, holst du im Theorieteil nur schwer wieder rein.</p>
+  </div>
+
+  <div class="block pruefung" data-notiz="pru-hilfsmittel">
+    <div class="b-label">Zugelassene Hilfsmittel</div>
+    <p>Dokumentenechtes Schreibmaterial · Lineal · netzunabhängiger, nicht kommunikationsfähiger Taschenrechner · Gesetzestexte (BGB, HGB, Arbeitsgesetze) · <strong>Formelsammlung für kaufmännische Abschlüsse nach BBiG</strong>, die von der IHK gestellt wird.</p>
+    <p>Für die Gesetzestexte gilt: Frühjahrsprüfung = Rechtsstand 31.12. des Vorjahres, Herbstprüfung = 1.1. des laufenden Jahres. Nur <strong>unkommentierte</strong> Fassungen. Klebezettel, Unterstreichungen und Verweise auf andere Normen sind erlaubt – eigene Erklärungen am Rand nicht.</p>
+  </div>
+
+  <div class="block achtung" data-notiz="ach-formelsammlung">
+    <div class="b-label">Häufiger Fehler</div>
+    <p>Weil die Formelsammlung gestellt wird, denken viele, sie müssten Formeln nicht lernen. Falsch: In der Sammlung steht die Formel, aber nicht, <em>wann</em> du sie brauchst und was die Größen im konkreten Fall bedeuten. Genau das wird geprüft. Arbeite deshalb früh mit der Formelsammlung, damit du in der Prüfung nicht suchst, sondern blätterst.</p>
+  </div>
+
+  <div class="abfrage-liste">
+    <div class="abfrage-kopf">Selbstabfrage</div>
+    <details class="abfrage"><summary>Wie viele Prüfungen schreibst du und wie sind sie aufgebaut?</summary>
+      <div class="antwort"><p>Zwei betriebliche Situationsbeschreibungen mit je 100 Punkten. In beiden sind alle vier Fächer enthalten, nur unterschiedlich gewichtet.</p></div></details>
+    <details class="abfrage"><summary>Welcher Prüfungsteil bringt über beide Situationen die meisten Punkte?</summary>
+      <div class="antwort"><p>„Logistische Lösungen entwickeln und planen“ (Gruber) mit 35 + 35 = 70 von 200 Punkten.</p></div></details>
+    <details class="abfrage"><summary>Darfst du deine eigene Formelsammlung mitbringen?</summary>
+      <div class="antwort"><p>Nein. Die Formelsammlung für kaufmännische Abschlüsse nach BBiG wird von der IHK gestellt. Gesetzestexte darfst du mitbringen, aber nur unkommentiert.</p></div></details>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════ -->
+<section class="abschnitt" id="bedeutung" data-gruppe="Grundlagen">
+  <div class="ab-kopf"><h2><span class="ab-nr">0.2</span>Warum es diesen Beruf überhaupt gibt</h2></div>
+
+  <div class="block einstieg" data-notiz="ein-bedeutung">
+    <div class="b-label">Worum es geht</div>
+    <p>Stell dir vor, du bestellst abends um 22 Uhr ein Ersatzteil und hast es am nächsten Vormittag in der Hand. Damit das funktioniert, mussten Dutzende Entscheidungen längst getroffen sein: Wo liegt das Teil? Warum genau dort? Wer bringt es wohin, mit welchem Fahrzeug, in welcher Verpackung, und wer weiß wann Bescheid? Diese Entscheidungen sind Logistik. Der Transport ist nur der sichtbare Rest davon.</p>
+  </div>
+
+  <h3>Der drittgrößte Wirtschaftsbereich in Deutschland</h3>
+  <p>Nach Automobilwirtschaft und Handel ist die Logistik der drittgrößte Wirtschaftsbereich des Landes. Über <strong>3,3 Millionen Menschen</strong> arbeiten direkt in der Branche – gut 7 % aller Beschäftigten – und der Umsatz liegt bei über <strong>310 Milliarden Euro</strong> pro Jahr.</p>
+  <p class="hinweis-klein">Zahlen nach dem Dozentenskript, Stand 2023. In der Prüfung reicht die Größenordnung: drittgrößter Bereich, gut drei Millionen Beschäftigte, dreistelliger Milliardenumsatz.</p>
+
+  <h3>Warum die Bedeutung so gewachsen ist</h3>
+  <p>Logistik war lange eine Hilfsfunktion: Ware wegbringen, Ware einlagern. Dass daraus ein eigenständiges Berufsbild mit Fachwirt-Abschluss wurde, hat konkrete Ursachen. Jede davon erzeugt Komplexität, die jemand steuern muss.</p>
+
+  <div class="raster">
+    <div class="karte blue"><div class="k-titel">Globalisierung</div><div class="k-text">Beschafft wird dort, wo es günstig ist, verkauft dort, wo Nachfrage ist. Zwischen beidem liegen Ozeane und Zollgrenzen.</div></div>
+    <div class="karte blue"><div class="k-titel">Standortvorteile nutzen</div><div class="k-text">Produktion wandert dorthin, wo Kosten oder Know-how stimmen – die Wege werden dadurch länger, nicht kürzer.</div></div>
+    <div class="karte blue"><div class="k-titel">Wegfall von Grenzen</div><div class="k-text">Der EU-Binnenmarkt macht Transporte einfacher und damit Lieferketten länger und verzweigter.</div></div>
+    <div class="karte blue"><div class="k-titel">Outsourcing</div><div class="k-text">Unternehmen behalten ihr Kerngeschäft und geben den Rest ab. Was früher intern lief, braucht jetzt Schnittstellen und Verträge.</div></div>
+    <div class="karte blue"><div class="k-titel">Just-in-time</div><div class="k-text">Wer kein Lager mehr hat, braucht perfekte Termintreue. Der Puffer, der Fehler verzieh, ist weg.</div></div>
+    <div class="karte blue"><div class="k-titel">Informationstechnologie</div><div class="k-text">Erst als Daten in Echtzeit fließen konnten, wurde feine Steuerung überhaupt möglich.</div></div>
+    <div class="karte blue"><div class="k-titel">Standardisierung</div><div class="k-text">Container und Europalette machen Ware zwischen Schiff, Bahn und Lkw austauschbar – die Basis für alles Weitere.</div></div>
+  </div>
+
+  <div class="block merk" data-notiz="merk-treiber">
+    <div class="b-label">Der rote Faden</div>
+    <p>Alle sieben Treiber laufen auf dasselbe hinaus: <strong>Die Wege werden länger, die Puffer kleiner und die Zahl der Beteiligten größer.</strong> Genau dieses Dreieck ist der Grund, warum Logistik heute eine Managementaufgabe ist und keine Transportabteilung.</p>
+  </div>
+
+  <h3>Womit die Branche aktuell kämpft</h3>
+  <div class="raster">
+    <div class="karte red"><div class="k-titel">Cybersicherheit</div><div class="k-text">Größte genannte Herausforderung. Eine vernetzte Lieferkette ist so angreifbar wie ihr schwächstes IT-System – ein Angriff legt nicht eine Firma lahm, sondern eine Kette.</div></div>
+    <div class="karte red"><div class="k-titel">Digitalisierung der Prozesse</div><div class="k-text">Papierlose Abwicklung, ERP-Systeme, Automatisierung. Der Nutzen ist unstrittig, die Umsetzung teuer und langwierig.</div></div>
+    <div class="karte red"><div class="k-titel">Fachkräftemangel</div><div class="k-text">Am stärksten bei IT-Fachkräften (48 %), Ingenieuren (40 %) und Lagermitarbeitenden (36 %).</div></div>
+    <div class="karte red"><div class="k-titel">Nachhaltigkeit</div><div class="k-text">Stark gestiegener Druck: CO₂-Bilanz der Transporte, Lieferkettengesetz, Rückverfolgbarkeit.</div></div>
+  </div>
+  <p class="hinweis-klein">Reihung nach der BVL-Trendbefragung im Dozentenskript (2023).</p>
+
+  <div class="block pruefung" data-notiz="pru-bedeutung">
+    <div class="b-label">So kommt das in der Prüfung</div>
+    <p>Selten als Wissensfrage, oft als Einleitung: „Die XY GmbH steht durch zunehmende Globalisierung und Fachkräftemangel unter Druck …“ Deine Aufgabe ist dann, die genannten Treiber aufzugreifen und deine Lösung darauf zu beziehen. Wer die Treiber kennt, argumentiert an der richtigen Stelle.</p>
+  </div>
+
+  <div class="abfrage-liste">
+    <div class="abfrage-kopf">Selbstabfrage</div>
+    <details class="abfrage"><summary>Nenne vier Gründe für die gewachsene Bedeutung der Logistik.</summary>
+      <div class="antwort"><p>Globalisierung, Nutzung von Standortvorteilen, Wegfall von Grenzen, Outsourcing, Just-in-time, Entwicklung der Informationstechnologie, Standardisierung der Transportmittel (vier davon genügen).</p></div></details>
+    <details class="abfrage"><summary>Warum macht Just-in-time die Logistik anspruchsvoller?</summary>
+      <div class="antwort"><p>Weil der Lagerbestand als Puffer wegfällt. Ohne Puffer schlägt jede Verspätung direkt auf die Produktion durch – die Termintreue muss deshalb nahezu perfekt sein.</p></div></details>
+    <details class="abfrage"><summary>Welchen Rang hat die Logistik unter den deutschen Wirtschaftsbereichen?</summary>
+      <div class="antwort"><p>Den dritten – nach Automobilwirtschaft und Handel. Über 3,3 Mio. Beschäftigte, über 310 Mrd. € Umsatz.</p></div></details>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════ -->
+<section class="abschnitt" id="entwicklung" data-gruppe="Grundlagen">
+  <div class="ab-kopf"><h2><span class="ab-nr">0.3</span>Wie sich die Logistik entwickelt hat</h2></div>
+
+  <div class="block einstieg" data-notiz="ein-entwicklung">
+    <div class="b-label">Worum es geht</div>
+    <p>Die Logistik hat vier Ausbaustufen durchlaufen, und jede Stufe hat den Betrachtungsrahmen erweitert: erst die einzelne Abteilung, dann das ganze Unternehmen, dann die Kette mehrerer Unternehmen, schließlich das weltweite Netzwerk. Wer diese Reihenfolge kennt, versteht auch, warum manche Firmen heute noch auf Stufe eins arbeiten – und was ihnen dadurch entgeht.</p>
+  </div>
+
+  <div class="tab" data-notiz="tab-entwicklungsstufen">
+    <table>
+      <thead><tr><th>Zeitraum</th><th>Stufe</th><th>Ziel</th></tr></thead>
+      <tbody>
+        <tr><td><strong>1970er</strong></td><td>Klassische Logistik: Beschaffung, Transport, Produktion, Lager und Absatz stehen als getrennte Funktionen nebeneinander</td><td>jede Einzelfunktion für sich optimieren</td></tr>
+        <tr><td><strong>1980er</strong></td><td>Logistik als Querschnittsfunktion: sie verbindet alle Bereiche, den Kunden eingeschlossen</td><td>funktionsübergreifende Abläufe optimieren</td></tr>
+        <tr><td><strong>1990er</strong></td><td>Funktionale Integration: durchgehende Prozesskette vom Kunden über Entwicklung bis zur Entsorgung</td><td>Prozessketten aufbauen und optimieren</td></tr>
+        <tr><td><strong>späte 1990er</strong></td><td>Unternehmensübergreifende Integration: Dienstleister verbinden Lieferant, Produzent, Handel und Kunde</td><td>Wertschöpfungsketten aufbauen</td></tr>
+        <tr><td><strong>2000er bis heute</strong></td><td>Weltweite Integration der Wertschöpfungsketten zu globalen Netzwerken, sozio-ökonomische Faktoren eingeschlossen</td><td>globale Netzwerke aufbauen und optimieren</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="block beispiel" data-notiz="bsp-entwicklung">
+    <div class="b-label">Was der Unterschied konkret bedeutet</div>
+    <p><strong>Stufe 1 (1970er):</strong> Der Einkauf wird an möglichst niedrigen Einkaufspreisen gemessen. Er bestellt deshalb große Mengen mit Mengenrabatt. Das Lager platzt, das Kapital ist gebunden – aber die Einkaufskennzahl sieht gut aus.</p>
+    <p><strong>Stufe 2 (1980er):</strong> Jemand rechnet erstmals Einkaufsvorteil <em>und</em> Lagerkosten zusammen. Ergebnis: Der Rabatt war teurer als er aussah. Genau das ist der Sprung zur Querschnittsfunktion – die Optimierung eines Bereichs kann das Gesamtergebnis verschlechtern.</p>
+  </div>
+
+  <div class="block merk" data-notiz="merk-suboptimierung">
+    <div class="b-label">Merksatz</div>
+    <p>Die Summe optimierter Einzelbereiche ist <strong>nicht</strong> das optimale Gesamtergebnis. Dieser Satz ist der gedankliche Kern der gesamten Logistik – und er begegnet dir später beim Supply Chain Management noch einmal, dann über Unternehmensgrenzen hinweg.</p>
+  </div>
+
+  <div class="abfrage-liste">
+    <div class="abfrage-kopf">Selbstabfrage</div>
+    <details class="abfrage"><summary>Was ist der Unterschied zwischen der Logistik der 1970er und der 1980er Jahre?</summary>
+      <div class="antwort"><p>1970er: getrennte Einzelfunktionen, jede für sich optimiert. 1980er: Logistik wird zur Querschnittsfunktion, die alle Bereiche einschließlich Kunde verbindet, und optimiert funktionsübergreifende Abläufe.</p></div></details>
+    <details class="abfrage"><summary>Warum kann die Optimierung eines einzelnen Bereichs dem Unternehmen schaden?</summary>
+      <div class="antwort"><p>Weil Kosten oft nur verschoben werden. Der Einkauf senkt den Einkaufspreis durch Großmengen, erzeugt aber höhere Lager- und Kapitalbindungskosten. Erst die Gesamtbetrachtung zeigt das echte Ergebnis.</p></div></details>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════ -->
+<section class="abschnitt" id="definition" data-gruppe="Grundbegriffe">
+  <div class="ab-kopf"><h2><span class="ab-nr">0.4</span>Was Logistik ist</h2></div>
+
+  <div class="block einstieg" data-notiz="ein-definition">
+    <div class="b-label">Worum es geht</div>
+    <p>„Logistik ist, wenn der Lkw fährt“ – das ist die Alltagsvorstellung und sie ist zu eng. Fachlich beschreibt Logistik, wie <strong>drei Ströme</strong> gesteuert werden: der Materialfluss (die Ware), der Informationsfluss (wer weiß was, wann) und der Wertfluss (wer zahlt wann was). Der Lkw ist nur ein Werkzeug im ersten dieser drei Ströme.</p>
+  </div>
+
+  <div class="block def" data-notiz="def-logistik">
+    <div class="b-label">Definition</div>
+    <div class="b-term">Logistik (nach Kluck, 1997)</div>
+    <p>Die Logistik umfasst alle planerischen, ausführenden, steuernden und regelnden Maßnahmen und Instrumente, um einen <strong>zieloptimalen Material-, Wert- und Informationsfluss</strong> im Rahmen der betrieblichen Leistungserstellung zu ermöglichen. Dieser Transformationsprozess reicht von der Beschaffung über die Produktion bis zur Distribution.</p>
+    <p class="hinweis-klein">Diese Definition verwendet Kroul bevorzugt – sie eignet sich gut als Prüfungsantwort.</p>
+  </div>
+
+  <h3>Die Definition in Einzelteilen</h3>
+  <div class="tab" data-notiz="tab-definition-zerlegt">
+    <table>
+      <thead><tr><th>Baustein</th><th>Was damit gemeint ist</th></tr></thead>
+      <tbody>
+        <tr><td><strong>planerisch, ausführend, steuernd, regelnd</strong></td><td>Der gesamte Managementkreis: vorher planen, dann tun, dabei steuern, bei Abweichung nachregeln. Logistik ist damit ausdrücklich eine <em>Management</em>funktion.</td></tr>
+        <tr><td><strong>Materialfluss</strong></td><td>Die physische Bewegung der Güter – Rohstoff, Halbfertigteil, Fertigprodukt, Rückware, Abfall.</td></tr>
+        <tr><td><strong>Wertfluss</strong></td><td>Die Geldseite: Zahlungen, Kapitalbindung im Bestand, Kosten je Prozessschritt.</td></tr>
+        <tr><td><strong>Informationsfluss</strong></td><td>Aufträge, Bestände, Termine, Störmeldungen. Läuft dem Material <em>voraus</em> und <em>begleitet</em> es.</td></tr>
+        <tr><td><strong>zieloptimal</strong></td><td>Nicht „maximal schnell“ oder „minimal teuer“, sondern das beste Verhältnis mit Blick auf die Unternehmensziele.</td></tr>
+        <tr><td><strong>Beschaffung → Produktion → Distribution</strong></td><td>Der Weg durch das Unternehmen. In der modernen Sicht kommt die Entsorgung als Rückweg dazu.</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3>Zwei Sichtweisen auf dasselbe Fach</h3>
+  <div class="raster-2">
+    <div class="karte teal">
+      <div class="k-titel">Ingenieurwissenschaftlich</div>
+      <div class="k-text">Logistik als <strong>Transportlehre</strong>: inner- und außerbetriebliche Transporteinrichtungen, Fördertechnik und ihre Vernetzung. Frage: Wie bewege ich Material technisch optimal?</div>
+    </div>
+    <div class="karte teal">
+      <div class="k-titel">Wirtschaftswissenschaftlich</div>
+      <div class="k-text">Logistik als <strong>Organisation und Steuerung des gesamten Wertschöpfungsprozesses</strong>: Güter-, Leistungs-, Geld-, Personal- und Informationsströme „von der Quelle bis zur Senke“. Frage: Wie steuere ich das Gesamtsystem wirtschaftlich?</div>
+    </div>
+  </div>
+
+  <div class="block def" data-notiz="def-querschnittsfunktion">
+    <div class="b-label">Definition</div>
+    <div class="b-term">Querschnittsfunktion</div>
+    <p>Eine Funktion, die <strong>nicht</strong> in einer einzelnen Abteilung endet, sondern quer durch alle Bereiche läuft. Die Logistik berührt Einkauf, Produktion, Vertrieb, IT, Controlling und Personal gleichermaßen. Genau deshalb ist Abstimmung ihre eigentliche Kernaufgabe – und deshalb hat Changemanagement (Kapitel 1) in diesem Fach so viel Raum.</p>
+  </div>
+
+  <div class="block merk" data-notiz="merk-quelle-senke">
+    <div class="b-label">Von der Quelle bis zur Senke</div>
+    <p><strong>Quelle</strong> = wo die Ware entsteht oder bereitliegt. <strong>Senke</strong> = wo sie gebraucht wird oder verbraucht wird. Logistik überbrückt den Abstand dazwischen – räumlich, zeitlich, mengenmäßig und informatorisch.</p>
+  </div>
+
+  <div class="block achtung" data-notiz="ach-logistik-transport">
+    <div class="b-label">Typische Verwechslung</div>
+    <p>„Logistik = Transport“ ist die häufigste Falschantwort. Transport ist eine von drei Grundfunktionen (siehe nächster Abschnitt) und deckt nur die räumliche Überbrückung ab. Wer in der Prüfung Logistik als Transport definiert, verschenkt Punkte – auch wenn die Beispiele danach stimmen.</p>
+  </div>
+
+  <div class="block pruefung" data-notiz="pru-definition">
+    <div class="b-label">So kommt das in der Prüfung</div>
+    <p>Klassische Definitionsfrage: „Erläutern Sie den Begriff Logistik aus betriebswirtschaftlicher Sicht.“ Gute Antwort in drei Bausteinen: (1) Planung, Steuerung und Kontrolle von Material-, Informations- und Wertflüssen, (2) von der Quelle bis zur Senke bzw. Beschaffung–Produktion–Distribution, (3) als Querschnittsfunktion über alle Unternehmensbereiche.</p>
+  </div>
+
+  <div class="abfrage-liste">
+    <div class="abfrage-kopf">Selbstabfrage</div>
+    <details class="abfrage"><summary>Welche drei Flüsse steuert die Logistik?</summary>
+      <div class="antwort"><p>Materialfluss, Informationsfluss und Wertfluss (Geldfluss).</p></div></details>
+    <details class="abfrage"><summary>Was bedeutet „Logistik ist eine Querschnittsfunktion“?</summary>
+      <div class="antwort"><p>Sie ist keine abgegrenzte Abteilung, sondern durchzieht alle Unternehmensbereiche – Einkauf, Produktion, Vertrieb, IT, Controlling – und muss diese aufeinander abstimmen.</p></div></details>
+    <details class="abfrage"><summary>Was ist der Unterschied zwischen der ingenieurwissenschaftlichen und der betriebswirtschaftlichen Sicht?</summary>
+      <div class="antwort"><p>Ingenieurwissenschaftlich: Logistik als Transportlehre, also Technik und Vernetzung der Transporteinrichtungen. Betriebswirtschaftlich: Organisation und Steuerung des gesamten Wertschöpfungsprozesses von der Quelle bis zur Senke.</p></div></details>
+    <details class="abfrage"><summary>Erkläre „von der Quelle bis zur Senke“.</summary>
+      <div class="antwort"><p>Quelle ist der Entstehungs- oder Bereitstellungsort der Ware, Senke der Bedarfs- oder Verbrauchsort. Die Logistik überbrückt den Abstand dazwischen in Raum, Zeit, Menge und Information.</p></div></details>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════ -->
+<section class="abschnitt" id="sieben-r" data-gruppe="Grundbegriffe">
+  <div class="ab-kopf"><h2><span class="ab-nr">0.5</span>Die 7 R der Logistik</h2></div>
+
+  <div class="block einstieg" data-notiz="ein-sieben-r">
+    <div class="b-label">Worum es geht</div>
+    <p>Die 7 R sind die kompakteste Antwort auf die Frage „Was soll Logistik eigentlich leisten?“. Sie beschreiben sieben Bedingungen, die <strong>gleichzeitig</strong> erfüllt sein müssen. Das ist der eigentliche Punkt: Sechs von sieben genügen nicht. Die richtige Ware am richtigen Ort zum falschen Zeitpunkt ist ein Fehler, kein Teilerfolg.</p>
+  </div>
+
+  <div class="raster">
+    <div class="karte blue"><div class="k-titel">1 · Richtiges Gut</div><div class="k-text">Genau das bestellte Produkt – nicht die ähnliche Variante, nicht die Nachfolgeversion.</div></div>
+    <div class="karte blue"><div class="k-titel">2 · Richtige Menge</div><div class="k-text">Weder zu wenig (Produktionsstillstand) noch zu viel (gebundenes Kapital, Lagerkosten).</div></div>
+    <div class="karte blue"><div class="k-titel">3 · Richtiger Ort</div><div class="k-text">Am konkreten Bedarfsort – nicht „im Werk“, sondern am Montageband, Reihe 3.</div></div>
+    <div class="karte blue"><div class="k-titel">4 · Richtiger Zeitpunkt</div><div class="k-text">Pünktlich heißt: nicht zu spät und nicht zu früh. Zu früh erzeugt Lagerbedarf, den niemand eingeplant hat.</div></div>
+    <div class="karte blue"><div class="k-titel">5 · Richtige Kosten</div><div class="k-text">Wirtschaftlich vertretbar. Ein Sonderkurier löst jedes Terminproblem – aber nicht zu jedem Preis.</div></div>
+    <div class="karte blue"><div class="k-titel">6 · Richtige Qualität</div><div class="k-text">In der vereinbarten Beschaffenheit – unbeschädigt, in der zugesagten Güte, mit den Papieren.</div></div>
+    <div class="karte purple"><div class="k-titel">7 · Richtige Information</div><div class="k-text">Die Erweiterung: Jeder Materialfluss braucht den passenden Informationsfluss – sonst weiß niemand, dass die Ware unterwegs ist.</div></div>
+  </div>
+
+  <div class="block beispiel" data-notiz="bsp-sieben-r">
+    <div class="b-label">Beispiel: eine Lieferung, sechs Treffer, ein Fehlschlag</div>
+    <p>Ein Zulieferer liefert 500 Bremsscheiben (richtiges Gut, richtige Menge, richtige Qualität) an das richtige Werk, pünktlich, zu vereinbarten Konditionen. Nur: Der Lieferschein wird nicht elektronisch avisiert. Der Wareneingang weiß nichts von der Sendung, der Lkw steht zwei Stunden am Tor, die Ware wird manuell erfasst, der Einbau verschiebt sich um einen halben Tag.</p>
+    <p>Sechs R erfüllt, das siebte nicht – und das Ergebnis ist trotzdem eine Störung. Genau dafür wurde das siebte R ergänzt.</p>
+  </div>
+
+  <div class="block achtung" data-notiz="ach-sechs-sieben-r">
+    <div class="b-label">6 R oder 7 R?</div>
+    <p>Beide Zahlen sind gebräuchlich. In der deutschen Literatur nennt man häufig sechs R und ergänzt die „richtige Information“ als siebtes; in der englischsprachigen Fassung (Plowman, „seven rights“) sind es von vornherein sieben. <strong>Für die Prüfung:</strong> Nenne die sechs klassischen und ergänze die Information als siebtes – dann bist du in jeder Fassung richtig.</p>
+  </div>
+
+  <div class="block pruefung" data-notiz="pru-sieben-r">
+    <div class="b-label">So kommt das in der Prüfung</div>
+    <p>Kroul fragt gern: „Was versteht man unter den 6 bzw. 7 R der Logistik?“ Erwartet wird: alle aufzählen <strong>und</strong> jedes in einem Halbsatz erklären. Eine reine Aufzählung bekommt meist nur die halbe Punktzahl. Rechne auch mit der Umkehrfrage – „Welches R ist hier verletzt?“ zu einem Fallbeispiel.</p>
+  </div>
+
+  <div class="abfrage-liste">
+    <div class="abfrage-kopf">Selbstabfrage</div>
+    <details class="abfrage"><summary>Zähle die 7 R auf.</summary>
+      <div class="antwort"><p>Richtiges Gut, richtige Menge, richtiger Ort, richtiger Zeitpunkt, richtige Kosten, richtige Qualität, richtige Information.</p></div></details>
+    <details class="abfrage"><summary>Warum ist eine zu frühe Lieferung ein Verstoß gegen die 7 R?</summary>
+      <div class="antwort"><p>Weil „richtiger Zeitpunkt“ beidseitig gemeint ist. Zu früh gelieferte Ware muss zwischengelagert werden, bindet Fläche und Kapital und war so nicht eingeplant.</p></div></details>
+    <details class="abfrage"><summary>Welches R kam später dazu und warum?</summary>
+      <div class="antwort"><p>Die richtige Information. Ohne begleitenden Informationsfluss ist selbst eine physisch perfekte Lieferung nicht steuerbar – niemand weiß, was wann wo ankommt.</p></div></details>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════ -->
+<section class="abschnitt" id="tul" data-gruppe="Grundbegriffe">
+  <div class="ab-kopf"><h2><span class="ab-nr">0.6</span>TUL und die logistische Kette</h2></div>
+
+  <div class="block einstieg" data-notiz="ein-tul">
+    <div class="b-label">Worum es geht</div>
+    <p>So viele Logistikprozesse es gibt – im Kern tun sie immer nur eines von drei Dingen: Sie überbrücken Raum, sie überbrücken Zeit, oder sie verändern die Zusammensetzung der Ware. Diese drei Grundfunktionen kürzt man <strong>TUL</strong> ab. Wenn du in einer Prüfungsaufgabe einen unbekannten Prozess siehst, ordne ihn zuerst hier ein – dann weißt du, worauf es ankommt.</p>
+  </div>
+
+  <div class="block merk" data-notiz="merk-tul">
+    <div class="b-label">Die drei Grundfunktionen (TUL)</div>
+    <p><strong>Transport</strong> = Raumüberbrückung. Die Ware ist am falschen Ort und muss woandershin.<br>
+    <strong>Umschlag</strong> = Vereinzelung oder Bündelung von Warenströmen. Aus einem Container werden zwanzig Paletten – oder umgekehrt.<br>
+    <strong>Lager</strong> = Zeitüberbrückung. Die Ware ist schon da, wird aber erst später gebraucht.</p>
+  </div>
+
+  <div class="block beispiel" data-notiz="bsp-tul">
+    <div class="b-label">TUL an einer einzigen Sendung</div>
+    <p>Ein Seecontainer kommt in Hamburg an. Er wird auf einen Zug gehoben (<strong>Umschlag</strong>), fährt nach Nürnberg (<strong>Transport</strong>), wird dort auf Lkw verteilt (<strong>Umschlag</strong>), fährt ins Verteilzentrum (<strong>Transport</strong>), steht dort elf Tage bis zum Abruf (<strong>Lager</strong>), wird kommissioniert und auf Tour gegeben (<strong>Umschlag</strong> + <strong>Transport</strong>). Ein einziger Warenstrom, sechs TUL-Schritte – und jeder verursacht Kosten und Zeit.</p>
+  </div>
+
+  <div class="block def" data-notiz="def-logistische-kette">
+    <div class="b-label">Definition</div>
+    <div class="b-term">Logistische Kette</div>
+    <p>Die Verknüpfung aller logistischen Prozesse vom Lieferanten bis zum Kunden. Sie besteht aus drei Arten von Prozessen: <strong>physischen Prozessen</strong> (Transport, Umschlag, Lagerung), <strong>Informationsprozessen</strong> (vorauseilend und begleitend) und <strong>monetären Geldflüssen</strong>.</p>
+  </div>
+
+  <div class="block achtung" data-notiz="ach-kette-scm">
+    <div class="b-label">Nicht verwechseln</div>
+    <p>Die <strong>logistische Kette</strong> beschreibt die Abfolge der Prozesse. Das <strong>Supply Chain Management</strong> (Abschnitt 0.11) ist die Managementaufgabe, diese Kette über Unternehmensgrenzen hinweg gemeinsam zu steuern. Kette = das Objekt, SCM = das Vorgehen.</p>
+  </div>
+
+  <h3>Was Logistik kostet – und was sie wert ist</h3>
+  <div class="block beispiel" data-notiz="bsp-schokolade">
+    <div class="b-label">Die Tafel Schokolade (Kroul-Folie)</div>
+    <p>Zutaten 18 ct → Produktion 6 ct → Verpackung 4 ct → <strong>Logistik 2 ct</strong> → Werbung 8 ct → Gewinn des Produzenten 3 ct → Personal 8 ct → Lagerung 4 ct → Fläche und Energie 5 ct → Mehrwertsteuer 5 ct → Gewinn des Handels 1 ct → <strong>Endpreis 69 ct</strong>.</p>
+    <p>Der reine Transportanteil ist mit 2 ct winzig – kleiner als die Werbung. Zählt man die Lagerung im Handel hinzu, sind es 6 ct. Die Aussage der Folie: Logistik ist selten der große Kostenblock, aber ohne sie liegt keine Tafel im Regal. Wer nur auf den Logistikpreis drückt, spart am falschen Ende.</p>
+  </div>
+
+  <div class="abfrage-liste">
+    <div class="abfrage-kopf">Selbstabfrage</div>
+    <details class="abfrage"><summary>Wofür steht TUL und was leistet jede der drei Funktionen?</summary>
+      <div class="antwort"><p>Transport = Raumüberbrückung, Umschlag = Vereinzelung oder Bündelung von Warenströmen, Lager = Zeitüberbrückung.</p></div></details>
+    <details class="abfrage"><summary>Aus welchen drei Prozessarten besteht die logistische Kette?</summary>
+      <div class="antwort"><p>Physische Prozesse (Transport, Umschlag, Lagerung), Informationsprozesse (vorauseilend und begleitend) und monetäre Geldflüsse.</p></div></details>
+    <details class="abfrage"><summary>Ist Kommissionieren Transport, Umschlag oder Lager?</summary>
+      <div class="antwort"><p>Umschlag – aus einem gebündelten Bestand werden auftragsbezogene Einzelmengen gebildet, also vereinzelt. Räumliche und zeitliche Überbrückung ist dabei Nebeneffekt.</p></div></details>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════ -->
+<section class="abschnitt" id="fachdisziplinen" data-gruppe="Logistikbereiche">
+  <div class="ab-kopf"><h2><span class="ab-nr">0.7</span>Die Fachdisziplinen der Logistik</h2></div>
+
+  <div class="block einstieg" data-notiz="ein-fachdisziplinen">
+    <div class="b-label">Worum es geht</div>
+    <p>Die Logistik wird nach dem <strong>Abschnitt der Wertschöpfung</strong> unterteilt, in dem sie stattfindet. Die drei Hauptbereiche folgen dem Weg der Ware durch das Unternehmen: hinein (Beschaffung), hindurch (Produktion), hinaus (Distribution). Der vierte, die Entsorgung, ist der Rückweg. Die übrigen sind Querschnitte, die überall auftauchen.</p>
+  </div>
+
+  <div class="phasen" data-notiz="phasen-hauptbereiche">
+    <div class="phase"><div class="p-nr">hinein</div><div class="p-name">Beschaffungslogistik</div><div class="p-text">vom Lieferanten bis ins eigene Lager</div></div>
+    <div class="phase"><div class="p-nr">hindurch</div><div class="p-name">Produktionslogistik</div><div class="p-text">vom Lager durch die Fertigung</div></div>
+    <div class="phase"><div class="p-nr">hinaus</div><div class="p-name">Distributionslogistik</div><div class="p-text">vom Fertiglager bis zum Kunden</div></div>
+    <div class="phase"><div class="p-nr">zurück</div><div class="p-name">Entsorgungslogistik</div><div class="p-text">Rückführung, Recycling, Abfall</div></div>
+  </div>
+
+  <div class="tab" data-notiz="tab-fachdisziplinen">
+    <table>
+      <thead><tr><th>Bereich</th><th>Kernaufgaben</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Beschaffungslogistik</strong></td><td>Disposition; Planung, Steuerung und Kontrolle des Materialflusses vom Lieferanten ins Unternehmen</td></tr>
+        <tr><td><strong>Produktionslogistik</strong></td><td>Produktionsorganisation, Auftragsplanung und -steuerung, Kapazitätsplanung, Mengengerüste, Änderungsmanagement</td></tr>
+        <tr><td><strong>Distributionslogistik</strong></td><td>Auftragsabwicklung, JIT/JIS-Abwicklung, Transportplanung zum Kunden, Tourenplanung, Wahl der Distributionskanäle, Festlegung des Servicegrades</td></tr>
+        <tr><td><strong>Entsorgungslogistik</strong></td><td>Entsorgung von Abfallprodukten, Recycling, Mengen- und Kostenplanung, Weiter-, Wieder- und Weiterverwendung</td></tr>
+        <tr><td><strong>Transportlogistik</strong></td><td>interne und externe Transportsysteme, Raumüberbrückung</td></tr>
+        <tr><td><strong>Instandhaltungslogistik</strong></td><td>optimale Betriebsbereitschaft der Anlagen sicherstellen</td></tr>
+        <tr><td><strong>Ersatzteillogistik</strong></td><td>optimale Beschaffung und Bereithaltung von Ersatzteilen</td></tr>
+        <tr><td><strong>Verpackungslogistik</strong></td><td>optimale Verpackungsprozesse und Anlieferung</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="block achtung" data-notiz="ach-transport-vs-beschaffung">
+    <div class="b-label">Typische Verwechslung</div>
+    <p><strong>Transportlogistik</strong> ist keine vierte Stufe neben Beschaffung, Produktion und Distribution, sondern ein Querschnitt: Transporte gibt es in jedem dieser Bereiche. Die Zuordnung entscheidet der <em>Abschnitt der Wertschöpfung</em>, nicht das eingesetzte Mittel. Ein Lkw, der Rohstoffe holt, gehört zur Beschaffungslogistik.</p>
+  </div>
+
+  <div class="block pruefung" data-notiz="pru-fachdisziplinen">
+    <div class="b-label">So kommt das in der Prüfung</div>
+    <p>Meist als Zuordnungsaufgabe: eine Tätigkeit wird beschrieben, du sollst den Bereich nennen und begründen. Die Begründung ist der Punktebringer – „Beschaffungslogistik, weil der Materialfluss vom Lieferanten ins Unternehmen betroffen ist“.</p>
+  </div>
+
+  <div class="abfrage-liste">
+    <div class="abfrage-kopf">Selbstabfrage</div>
+    <details class="abfrage"><summary>Welche vier Bereiche folgen dem Weg der Ware durch das Unternehmen?</summary>
+      <div class="antwort"><p>Beschaffungs-, Produktions-, Distributions- und Entsorgungslogistik.</p></div></details>
+    <details class="abfrage"><summary>Zu welchem Bereich gehört die Tourenplanung für Kundenlieferungen?</summary>
+      <div class="antwort"><p>Zur Distributionslogistik – sie betrifft den Weg vom Unternehmen zum Kunden.</p></div></details>
+    <details class="abfrage"><summary>Was macht die Ersatzteillogistik so anspruchsvoll?</summary>
+      <div class="antwort"><p>Der Bedarf ist kaum vorhersehbar, die Folgekosten eines Fehlbestands sind aber hoch (Anlagenstillstand). Man muss Teile bevorraten, die vielleicht nie gebraucht werden – ein Zielkonflikt zwischen Verfügbarkeit und Kapitalbindung.</p></div></details>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════ -->
+<section class="abschnitt" id="informationslogistik" data-gruppe="Logistikbereiche">
+  <div class="ab-kopf"><h2><span class="ab-nr">0.8</span>Informationslogistik</h2></div>
+
+  <div class="block einstieg" data-notiz="ein-infologistik">
+    <div class="b-label">Worum es geht</div>
+    <p>Das siebte R hat eine eigene Disziplin bekommen. Die Informationslogistik sorgt dafür, dass die richtigen Daten rechtzeitig bei den richtigen Stellen sind. Ihre Besonderheit: Information läuft dem Material <strong>voraus</strong>. Der Wareneingang muss von der Lieferung wissen, <em>bevor</em> der Lkw am Tor steht – sonst nützt die pünktliche Lieferung wenig.</p>
+  </div>
+
+  <div class="tab" data-notiz="tab-infologistik">
+    <table>
+      <thead><tr><th>Was übermittelt wird</th><th>An wen</th></tr></thead>
+      <tbody>
+        <tr><td>Aufträge, Produktionsstände, Lagerbestände, Qualitätsdaten, Termintreue, Sachnummern, kritische Situationen</td><td>Kunden, Lieferanten, interne und externe Ansprechpartner</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <p>Drei Eigenschaften der Daten entscheiden über den Nutzen: <strong>Qualität</strong> (stimmen sie?), <strong>Geschwindigkeit</strong> (sind sie rechtzeitig da?) und <strong>Genauigkeit</strong> (sind sie präzise genug, um danach zu handeln?). Fällt eine dieser drei aus, ist die Information wertlos oder sogar schädlich – ein falscher Bestand im System führt zu falschen Bestellungen.</p>
+
+  <div class="block beispiel" data-notiz="bsp-infologistik">
+    <div class="b-label">Beispiel</div>
+    <p>Ein Lagerverwaltungssystem zeigt 40 Stück Bestand, tatsächlich liegen 12 im Regal. Der Vertrieb sagt einem Kunden 30 Stück zu, die Produktion disponiert nicht nach – am Liefertag fehlen 18 Stück. Physisch war nie etwas falsch. Der Fehler lag ausschließlich im Informationsfluss und kostet trotzdem einen Kunden.</p>
+  </div>
+
+  <div class="block merk" data-notiz="merk-digitale-technologien">
+    <div class="b-label">Digitale Technologien in der Logistik</div>
+    <p>Im Einsatz laut Bitkom-Studie: Big Data Analytics (20 %), vorausschauende Wartung (10 %), 3D-Druck (10 %). Geplant: Big Data Analytics (21 %), vorausschauende Wartung (15 %), künstliche Intelligenz (8 %).</p>
+  </div>
+
+  <div class="abfrage-liste">
+    <div class="abfrage-kopf">Selbstabfrage</div>
+    <details class="abfrage"><summary>Was ist die Aufgabe der Informationslogistik?</summary>
+      <div class="antwort"><p>Sie begleitet den Materialfluss und stellt allen Beteiligten die relevanten Informationen bereit – rechtzeitig, richtig und genau genug, um danach zu handeln.</p></div></details>
+    <details class="abfrage"><summary>Warum muss die Information dem Material vorauslaufen?</summary>
+      <div class="antwort"><p>Damit die empfangende Stelle sich vorbereiten kann – Rampe, Personal, Lagerplatz, Weiterverarbeitung. Kommt die Information erst mit der Ware, entstehen Wartezeiten und Improvisation.</p></div></details>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════ -->
+<section class="abschnitt" id="kontraktlogistik" data-gruppe="Dienstleister">
+  <div class="ab-kopf"><h2><span class="ab-nr">0.9</span>Kontraktlogistik und die xPL-Stufen</h2></div>
+
+  <div class="block einstieg" data-notiz="ein-kontraktlogistik">
+    <div class="b-label">Worum es geht</div>
+    <p>Kaum ein Unternehmen macht seine Logistik komplett selbst. Die Frage ist nur: <strong>Wie viel</strong> gibt man ab? Die xPL-Stufen beschreiben genau das – von „der fährt nur“ bis „der plant unsere gesamte Lieferkette“. Je höher die Stufe, desto mehr Verantwortung liegt beim Dienstleister und desto enger und langfristiger die Bindung.</p>
+  </div>
+
+  <div class="block def" data-notiz="def-kontraktlogistik">
+    <div class="b-label">Definition</div>
+    <div class="b-term">Kontraktlogistik</div>
+    <p>Integrierte Leistungsbündel, kundenspezifisch gestaltet, auf <strong>längerer Vertragsbasis</strong>. Die Basisleistungen (Transport, Umschlag, Lagerung) werden um <strong>Value Added Services</strong> ergänzt – Mehrwertleistungen wie Montage, Konfektionierung, Etikettierung, Retourenbearbeitung oder Qualitätsprüfung.</p>
+  </div>
+
+  <p>Das entscheidende Wort ist <strong>kundenspezifisch</strong>. Ein Spediteur, der heute für dich und morgen für einen anderen fährt, betreibt keine Kontraktlogistik. Sobald er aber eine Lagerfläche nur für dich einrichtet, dein IT-System anbindet und Personal auf deine Prozesse schult, ist er gebunden – und beide Seiten brauchen einen längeren Vertrag, damit sich die Investition rechnet.</p>
+
+  <div class="tab" data-notiz="tab-xpl">
+    <table>
+      <thead><tr><th>Stufe</th><th>Bezeichnung</th><th>Aufgaben des Dienstleisters</th><th>Beispiel</th></tr></thead>
+      <tbody>
+        <tr><td><strong>1PL</strong></td><td>First Party Logistics</td><td>Übernahme der Transporttätigkeiten</td><td>Lkw-Unternehmen</td></tr>
+        <tr><td><strong>2PL</strong></td><td>Second Party Logistics</td><td>Transport, Umschlag und Lagerung</td><td>Spediteur mit eigenem Lager</td></tr>
+        <tr><td><strong>3PL</strong></td><td>Third Party Logistics</td><td>gesamte Logistik einschließlich Zusatzdiensten (Montage, Konfektionierung)</td><td>DHL Supply Chain, DB Schenker</td></tr>
+        <tr><td><strong>4PL</strong></td><td>Fourth Party Logistics</td><td>enge Partnerschaft; entwickelt und optimiert die gesamten Geschäftsprozesse, oft ohne eigene Fahrzeuge und Lager</td><td>Accenture Supply Chain</td></tr>
+        <tr><td><strong>5PL</strong></td><td>Fifth Party Logistics</td><td>Beratung zur Optimierung unternehmensübergreifender Lieferketten und Netzwerke</td><td>Strategieberatung mit SCM-Schwerpunkt</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="block merk" data-notiz="merk-3pl-4pl">
+    <div class="b-label">Die Grenze, auf die es ankommt</div>
+    <p><strong>3PL führt aus, 4PL denkt.</strong> Ein 3PL besitzt Lkw, Lager und Personal und erbringt die Leistung selbst. Ein 4PL besitzt typischerweise nichts davon – er koordiniert andere Dienstleister und optimiert die Prozesse. Man nennt ihn deshalb auch „Lead Logistics Provider“.</p>
+  </div>
+
+  <div class="block achtung" data-notiz="ach-xpl-eigenleistung">
+    <div class="b-label">Zur Zählweise</div>
+    <p>Manche Quellen bezeichnen als 1PL das <em>verladende Unternehmen selbst</em>, das seine Logistik in Eigenregie macht, und beginnen die Fremdvergabe erst bei 2PL. Das Skript von Kroul zählt 1PL als reinen Transportdienstleister. <strong>Nimm in der Prüfung die Fassung deines Skripts</strong> und beschreibe die Leistung – dann ist die Antwort unabhängig von der Zählweise richtig.</p>
+  </div>
+
+  <div class="block pruefung" data-notiz="pru-xpl">
+    <div class="b-label">So kommt das in der Prüfung</div>
+    <p>Kroul bringt die xPL-Stufen gern als Zuordnungsaufgabe: „Nennen Sie für jede Ausprägung ein Beispiel aus der Praxis.“ Lerne die Tabelle so, dass du zu jeder Stufe Leistung <em>und</em> Beispiel sagen kannst. Besonders geprüft wird der Unterschied 3PL (operativ) zu 4PL (strategisch-optimierend).</p>
+  </div>
+
+  <div class="abfrage-liste">
+    <div class="abfrage-kopf">Selbstabfrage</div>
+    <details class="abfrage"><summary>Was kennzeichnet Kontraktlogistik?</summary>
+      <div class="antwort"><p>Kundenspezifisch gestaltete, integrierte Leistungsbündel auf längerer Vertragsbasis; Basisleistungen (Transport, Umschlag, Lagerung) ergänzt um Value Added Services.</p></div></details>
+    <details class="abfrage"><summary>Worin unterscheiden sich 3PL und 4PL?</summary>
+      <div class="antwort"><p>Der 3PL erbringt die Logistikleistung selbst mit eigenen Ressourcen. Der 4PL besitzt meist keine eigenen Fahrzeuge und Lager, sondern koordiniert Dienstleister und optimiert die Geschäftsprozesse des Kunden.</p></div></details>
+    <details class="abfrage"><summary>Was sind Value Added Services? Nenne drei.</summary>
+      <div class="antwort"><p>Mehrwertleistungen über TUL hinaus: Montage, Konfektionierung, Etikettierung, Qualitätsprüfung, Retourenbearbeitung, Verpackung.</p></div></details>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════ -->
+<section class="abschnitt" id="opp" data-gruppe="Supply Chain">
+  <div class="ab-kopf"><h2><span class="ab-nr">0.10</span>Der Order Penetration Point</h2></div>
+
+  <div class="block einstieg" data-notiz="ein-opp">
+    <div class="b-label">Worum es geht</div>
+    <p>Jedes Produkt entsteht in einer Kette von Schritten: Rohstoff → Teil → Baugruppe → Endprodukt → Handelslager → Kunde. Irgendwo in dieser Kette liegt eine unsichtbare Grenze. <strong>Vor</strong> ihr wird auf Verdacht produziert, also nach Prognose. <strong>Ab</strong> ihr passiert nur noch etwas, wenn ein echter Kundenauftrag vorliegt. Diese Grenze ist der Order Penetration Point – und ihre Lage entscheidet über Lieferzeit, Lagerbestand und Individualisierbarkeit.</p>
+  </div>
+
+  <div class="block def" data-notiz="def-opp">
+    <div class="b-label">Definition</div>
+    <div class="b-term">Order Penetration Point (OPP), auch Auftragsentkopplungspunkt</div>
+    <p>Der Punkt in der Wertschöpfungskette, an dem die <strong>prognosegetriebene</strong> in die <strong>kundenauftragsbezogene</strong> Lieferkette übergeht. Bis dorthin wird auf Vorrat gefertigt, ab dort ausschließlich auf konkreten Auftrag.</p>
+  </div>
+
+  <div class="tab" data-notiz="tab-opp">
+    <table>
+      <thead><tr><th class="num">Fall</th><th>Strategie</th><th>Lage des OPP</th><th>Beispiel</th></tr></thead>
+      <tbody>
+        <tr><td class="num">1</td><td>Make to Stock (Endprodukt)</td><td>direkt beim Händler</td><td>Lebensmittel im Supermarktregal</td></tr>
+        <tr><td class="num">2</td><td>Make to Stock (Standardprodukt)</td><td>beim fertigen Endprodukt im Werkslager</td><td>Standardsortiment, z. B. Wurst</td></tr>
+        <tr><td class="num">3</td><td>Assemble to Order</td><td>bei der Baugruppe</td><td>Automobilzulieferer, JIS-Fertigung</td></tr>
+        <tr><td class="num">4</td><td>Make to Order</td><td>fast beim Lieferanten</td><td>Fenster für einen Hausbau</td></tr>
+        <tr><td class="num">5</td><td>Purchase and Make to Order</td><td>ganz vorn beim Rohstoff</td><td>Sonderkonstruktion, z. B. Förderanlage im Flughafen</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="block merk" data-notiz="merk-opp">
+    <div class="b-label">Die Regel, die dahintersteckt</div>
+    <p>Je weiter der OPP <strong>nach links</strong> rückt (Richtung Rohstoff), desto länger die Lieferzeit, desto geringer aber die Lagerbestände und desto individueller das Produkt.<br>
+    Je weiter er <strong>nach rechts</strong> rückt (Richtung Kunde), desto schneller die Lieferung, desto höher aber Lagerbestand, Kapitalbindung und Prognoserisiko.</p>
+  </div>
+
+  <div class="block beispiel" data-notiz="bsp-opp">
+    <div class="b-label">Derselbe Gegenstand, zwei Punkte</div>
+    <p>Ein Standard-Bürostuhl im Möbelmarkt: fertig montiert im Regal, Mitnahme sofort. Der OPP liegt ganz rechts – der Händler hat auf Prognose eingekauft und trägt das Risiko, dass die Farbe niemandem gefällt.</p>
+    <p>Derselbe Stuhl beim Bürofachhändler, konfiguriert in Firmenfarbe mit gewünschter Polsterung: Der Hersteller hält Gestelle und Bezugsstoffe vor, montiert aber erst auf Auftrag. Der OPP liegt bei der Baugruppe – vier Wochen Lieferzeit, dafür kein Fehlfarben-Risiko.</p>
+  </div>
+
+  <div class="block achtung" data-notiz="ach-opp-lager">
+    <div class="b-label">Typische Verwechslung</div>
+    <p>Der OPP ist <strong>kein Lagerort</strong>, sondern ein Punkt im Prozess. Er kann zufällig an einem Lager liegen, aber die Aussage ist eine andere: Ab hier steuert der Kundenauftrag, vorher steuert die Prognose.</p>
+  </div>
+
+  <div class="abfrage-liste">
+    <div class="abfrage-kopf">Selbstabfrage</div>
+    <details class="abfrage"><summary>Was trennt der Order Penetration Point?</summary>
+      <div class="antwort"><p>Den prognosegetriebenen Teil der Lieferkette vom kundenauftragsbezogenen Teil.</p></div></details>
+    <details class="abfrage"><summary>Ein Unternehmen will die Lieferzeit halbieren. Wohin muss der OPP?</summary>
+      <div class="antwort"><p>Nach rechts, Richtung Kunde – es muss also mehr vorgefertigt oder fertig bevorratet werden. Preis dafür: höhere Bestände, mehr Kapitalbindung und größeres Prognoserisiko.</p></div></details>
+    <details class="abfrage"><summary>Welche OPP-Strategie passt zu einer Sonderanfertigung?</summary>
+      <div class="antwort"><p>Purchase and Make to Order – selbst die Rohstoffe werden erst nach Auftragseingang beschafft. Lange Lieferzeit, praktisch kein Lagerrisiko.</p></div></details>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════ -->
+<section class="abschnitt" id="postponement" data-gruppe="Supply Chain">
+  <div class="ab-kopf"><h2><span class="ab-nr">0.11</span>Postponement und Speculation</h2></div>
+
+  <div class="block einstieg" data-notiz="ein-postponement">
+    <div class="b-label">Worum es geht</div>
+    <p>Wenn der OPP die Frage „wo trennt sich Prognose von Auftrag?“ beantwortet, dann beantworten Postponement und Speculation die Frage „in welche Richtung soll ich diesen Punkt bewusst verschieben?“. Es sind die beiden gegensätzlichen Grundhaltungen im Umgang mit Unsicherheit – abwarten oder vorlegen.</p>
+  </div>
+
+  <div class="raster-2">
+    <div class="karte blue" data-notiz="def-postponement">
+      <div class="k-titel">Postponement (Verschieben)</div>
+      <div class="k-text">Kundenbezogene Wertschöpfung wird <strong>so spät wie möglich</strong> ausgeführt, also möglichst nah am Kundenauftrag. Ziel: Risiken aus falschen Prognosen vermeiden. Bestände werden <strong>zentral</strong> gehalten.</div>
+    </div>
+    <div class="karte amber" data-notiz="def-speculation">
+      <div class="k-titel">Speculation (Spekulation)</div>
+      <div class="k-text">Wertschöpfung erfolgt <strong>früh auf Basis von Prognosen</strong>, Ware wird <strong>dezentral</strong> in kundennahen Lagern bevorratet. Vorteil: schnelle Lieferung. Risiko: falsche Prognose, also zu viel oder zu wenig Bestand.</div>
+    </div>
+  </div>
+
+  <div class="block beispiel" data-notiz="bsp-postponement">
+    <div class="b-label">Das Standardbeispiel: Farbe zum Schluss</div>
+    <p>Ein Hersteller von Wandfarbe könnte 40 Farbtöne fertig abfüllen und in alle Baumärkte verteilen (Speculation). Er müsste dann für jeden Ton in jedem Markt Bestand halten – und jeder Fehlgriff bleibt liegen.</p>
+    <p>Stattdessen liefert er nur weiße Basisfarbe aus und stellt die Mischmaschine in den Markt. Der Farbton entsteht erst, wenn der Kunde davorsteht (Postponement). Ein Produkt statt vierzig, kein Fehlfarbenrisiko – und die Auswahl ist sogar größer geworden.</p>
+  </div>
+
+  <div class="block merk" data-notiz="merk-verteilung">
+    <div class="b-label">Die drei Verteilungsformen</div>
+    <p><strong>Zentral</strong> (passt zu Postponement): alle Bestände an einem Lagerort für das gesamte Absatzgebiet. Geringster Gesamtbestand, längster Weg zum Kunden.<br>
+    <strong>Selektiv</strong> (Zwischenform): Schnelldreher dezentral nah am Kunden, Langsamdreher zentral.<br>
+    <strong>Dezentral</strong> (passt zu Speculation): Bestände in mehreren kundennahen Lagern. Kürzeste Wege, höchster Gesamtbestand.</p>
+  </div>
+
+  <details class="vertiefung">
+    <summary>Warum senkt Zentralisierung den Gesamtbestand?</summary>
+    <p>Weil sich Schwankungen ausgleichen. Zehn Regionallager brauchen jeweils einen eigenen Sicherheitsbestand für ihren eigenen schlechten Tag – und die schlechten Tage fallen selten auf denselben Termin. Ein Zentrallager bedient alle zehn Regionen aus einem Puffer; die hohe Nachfrage der einen Region wird von der niedrigen der anderen ausgeglichen. Man nennt das Risikoausgleichseffekt oder <em>risk pooling</em>. Der Preis dafür sind längere Transportwege und -zeiten.</p>
+  </details>
+
+  <div class="abfrage-liste">
+    <div class="abfrage-kopf">Selbstabfrage</div>
+    <details class="abfrage"><summary>Was bedeutet Postponement und welches Ziel verfolgt es?</summary>
+      <div class="antwort"><p>Kundenbezogene Wertschöpfungsschritte so spät wie möglich ausführen, um Prognoserisiken zu vermeiden. Bestände werden zentral gehalten.</p></div></details>
+    <details class="abfrage"><summary>Welche Verteilungsform gehört zu Speculation und warum?</summary>
+      <div class="antwort"><p>Die dezentrale Verteilung: Ware wird auf Prognose in kundennahen Lagern vorgehalten, um schnell liefern zu können.</p></div></details>
+    <details class="abfrage"><summary>Nenne einen Nachteil des Postponement.</summary>
+      <div class="antwort"><p>Die Lieferzeit steigt, weil der letzte Wertschöpfungsschritt erst nach Auftragseingang erfolgt; zudem braucht es flexible Kapazitäten für diesen späten Schritt.</p></div></details>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════ -->
+<section class="abschnitt" id="scm" data-gruppe="Supply Chain">
+  <div class="ab-kopf"><h2><span class="ab-nr">0.12</span>Supply Chain Management</h2></div>
+
+  <div class="block einstieg" data-notiz="ein-scm">
+    <div class="b-label">Worum es geht</div>
+    <p>Erinnerst du dich an den Merksatz aus Abschnitt 0.3 – die Summe optimierter Einzelbereiche ist nicht das Optimum? Supply Chain Management wendet genau diesen Gedanken eine Ebene höher an: nicht mehr über Abteilungsgrenzen, sondern über <strong>Unternehmensgrenzen</strong> hinweg. Lieferant, Hersteller, Händler und Dienstleister planen gemeinsam statt jeder für sich.</p>
+  </div>
+
+  <div class="block def" data-notiz="def-scm">
+    <div class="b-label">Definition</div>
+    <div class="b-term">Supply Chain Management (nach Lackes)</div>
+    <p>SCM bezeichnet den Aufbau und die Verwaltung <strong>integrierter Logistikketten</strong> – Material- und Informationsflüsse über den gesamten Wertschöpfungsprozess, von der Rohstoffgewinnung über alle Veredelungsstufen bis zum Endverbraucher.</p>
+    <p><em>„Von der Baumwollpflanze bis zum Jeanskunden. Von der Kupfermine bis zum Automobilkunden.“</em></p>
+  </div>
+
+  <h3>Die drei Managementebenen</h3>
+  <div class="tab" data-notiz="tab-scm-ebenen">
+    <table>
+      <thead><tr><th>Ebene</th><th>Ausrichtung</th><th>Ziel</th><th>Inhalte</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Organisationsmanagement</strong></td><td>strukturell</td><td>unternehmensbezogene Strukturen in unternehmensübergreifende Prozesse überführen</td><td>gemeinsame Ziele, einheitliches Prozessverständnis, Planen–Beschaffen–Herstellen–Liefern</td></tr>
+        <tr><td><strong>Technologiemanagement</strong></td><td>informatorisch</td><td>reibungslose Abläufe durch IT-Integration aller Partner</td><td>E-Commerce, Internet/Extranet/Intranet, Advanced Planning Systems</td></tr>
+        <tr><td><strong>Beziehungsmanagement</strong></td><td>human</td><td>vertrauensvolle Zusammenarbeit zur Nutzung von Synergien</td><td>Kompromissbereitschaft, offene Kommunikation, Austausch sensibler Informationen</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="block merk" data-notiz="merk-scm-beziehung">
+    <div class="b-label">Warum die dritte Ebene die schwierigste ist</div>
+    <p>Struktur und IT kann man kaufen und einführen. Die Bereitschaft, einem anderen Unternehmen echte Absatzzahlen, Kapazitätsengpässe und Kalkulationen offenzulegen, kann man nicht kaufen. Genau daran scheitern SCM-Projekte am häufigsten – nicht an der Technik.</p>
+  </div>
+
+  <h3>Die drei Grundtypen</h3>
+  <div class="tab" data-notiz="tab-scm-grundtypen">
+    <table>
+      <thead><tr><th class="num">Typ</th><th>Strategie</th><th>Beispiel</th><th>Vorteile</th><th>Nachteile</th></tr></thead>
+      <tbody>
+        <tr><td class="num">1</td><td>Push-Push: Synchronisierung des Materialflusses</td><td>Zara (Fast Fashion)</td><td>einfache Planung, stabile Abläufe</td><td>hohe Lagerbestände, Risiko bei Fehlprognose</td></tr>
+        <tr><td class="num">2</td><td>Push-Pull: Mass Customizing durch Kombination von Standardbausteinen</td><td>Dell (PC-Konfiguration)</td><td>individuelle Produkte, geringere Fertigwarenlager</td><td>aufwändigere Steuerung, längere Lieferzeit</td></tr>
+        <tr><td class="num">3</td><td>Make to Order bei flexibler Supply Chain</td><td>Automobilindustrie</td><td>höchste Flexibilität, kundenindividuell</td><td>lange Lieferzeiten, komplexe Koordination</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="block def" data-notiz="def-push-pull">
+    <div class="b-label">Begriffe</div>
+    <div class="b-term">Push und Pull</div>
+    <p><strong>Push</strong> („drücken“): Die Produktion läuft nach Prognose und schiebt die Ware in die Kette – die Nachfrage muss noch kommen.<br>
+    <strong>Pull</strong> („ziehen“): Der Kundenauftrag zieht die Ware durch die Kette – nichts bewegt sich ohne Abruf.<br>
+    Der Umschaltpunkt zwischen beidem ist genau der Order Penetration Point aus Abschnitt 0.10.</p>
+  </div>
+
+  <div class="block merk" data-notiz="merk-scm-ziele">
+    <div class="b-label">Ziele des SCM</div>
+    <p>Orientierung am Endkunden · Steigerung der Kundenzufriedenheit · rasche Anpassung an Marktveränderungen · Reduzierung des Bullwhip-Effekts · Vermeidung von Out-of-Stock-Situationen · Senkung der Lagerbestände entlang der gesamten Kette · Kostenvorteile durch Gesamtoptimierung · Verkürzung der Lieferzeiten.</p>
+  </div>
+
+  <div class="block pruefung" data-notiz="pru-scm">
+    <div class="b-label">So kommt das in der Prüfung</div>
+    <p>Häufig als Abgrenzungsfrage „Logistik vs. SCM“. Kurzantwort: Logistik steuert die Flüsse – klassisch innerhalb eines Unternehmens. SCM steuert dieselben Flüsse <strong>unternehmensübergreifend</strong> über alle Stufen bis zum Endkunden und schließt Zusammenarbeit, IT-Integration und gemeinsame Planung ausdrücklich ein.</p>
+  </div>
+
+  <div class="abfrage-liste">
+    <div class="abfrage-kopf">Selbstabfrage</div>
+    <details class="abfrage"><summary>Was ist der Unterschied zwischen Logistik und Supply Chain Management?</summary>
+      <div class="antwort"><p>Logistik steuert Material-, Informations- und Wertflüsse klassischerweise innerhalb eines Unternehmens. SCM erweitert das auf die gesamte Kette über Unternehmensgrenzen hinweg – mit gemeinsamer Planung, IT-Integration und Vertrauensbasis.</p></div></details>
+    <details class="abfrage"><summary>Nenne die drei Managementebenen des SCM.</summary>
+      <div class="antwort"><p>Organisationsmanagement (strukturell), Technologiemanagement (informatorisch), Beziehungsmanagement (human).</p></div></details>
+    <details class="abfrage"><summary>Was bedeutet Push, was Pull?</summary>
+      <div class="antwort"><p>Push: Produktion nach Prognose, Ware wird in die Kette gedrückt. Pull: Der Kundenauftrag zieht die Ware durch die Kette. Der Umschaltpunkt ist der Order Penetration Point.</p></div></details>
+    <details class="abfrage"><summary>Warum scheitern SCM-Projekte oft am Beziehungsmanagement?</summary>
+      <div class="antwort"><p>Weil es den Austausch sensibler Daten zwischen rechtlich selbstständigen Unternehmen verlangt. Strukturen und IT lassen sich einführen, Vertrauen nicht anordnen.</p></div></details>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════ -->
+<section class="abschnitt" id="bullwhip" data-gruppe="Supply Chain">
+  <div class="ab-kopf"><h2><span class="ab-nr">0.13</span>Der Bullwhip-Effekt</h2></div>
+
+  <div class="block einstieg" data-notiz="ein-bullwhip">
+    <div class="b-label">Worum es geht</div>
+    <p>Der Bullwhip-Effekt ist das Paradebeispiel dafür, was passiert, wenn jede Stufe einer Lieferkette für sich vernünftig handelt – und das Gesamtsystem trotzdem entgleist. Er ist zugleich die beste Begründung, warum es Supply Chain Management überhaupt gibt. Wenn du in der Prüfung eine Aufgabe zu SCM bekommst, ist er sehr oft die Antwort auf die Frage „welches Problem soll gelöst werden?“.</p>
+  </div>
+
+  <div class="block def" data-notiz="def-bullwhip">
+    <div class="b-label">Definition</div>
+    <div class="b-term">Bullwhip-Effekt (Peitschenschlageffekt)</div>
+    <p>Bereits kleine Veränderungen der Endkundennachfrage führen zu <strong>sich aufschaukelnden Schwankungen</strong> der Bestellmengen entlang der Lieferkette. Je weiter eine Stufe vom Endkunden entfernt ist, desto stärker schwankt ihre Bestellmenge – wie das Ende einer Peitsche, das eine kleine Handbewegung zum Knall verstärkt.</p>
+  </div>
+
+  <h3>Wie es entsteht – Schritt für Schritt</h3>
+  <div class="schritte" data-notiz="ablauf-bullwhip">
+    <div class="schritt"><div class="s-nr">1</div><div class="s-txt">Endkunden kaufen in einer Woche 100 statt 90 Stück (+11 %)</div></div>
+    <div class="s-warum">Eine ganz normale, zufällige Schwankung. Niemand weiß, ob sie Zufall ist oder ein Trend.</div>
+    <div class="schritt"><div class="s-nr">2</div><div class="s-txt">Einzelhändler bestellt 120 – Nachfrage decken + Sicherheitspuffer aufbauen</div></div>
+    <div class="s-warum">Er will nicht leer laufen, falls es doch ein Trend ist. Für sich betrachtet vernünftig.</div>
+    <div class="schritt"><div class="s-nr">3</div><div class="s-txt">Großhändler sieht +33 % und bestellt 160 beim Hersteller</div></div>
+    <div class="s-warum">Er sieht nur die Bestellung des Händlers, nicht die echten 100 Endkunden. Auch er puffert.</div>
+    <div class="schritt"><div class="s-nr">4</div><div class="s-txt">Hersteller sieht +60 %, fährt Sonderschicht und ordert Rohstoff für 220</div></div>
+    <div class="s-warum">Kapazitätsaufbau braucht Vorlauf, also lieber großzügig planen.</div>
+    <div class="schritt fertig"><div class="s-nr">✓</div><div class="s-txt">Aus +11 % beim Kunden wurden +144 % beim Rohstofflieferanten</div></div>
+    <div class="s-warum">In der Folgewoche kaufen die Kunden wieder 90 – alle Stufen sitzen auf Beständen und bestellen wochenlang nichts. Die Kette schwingt in die Gegenrichtung.</div>
+  </div>
+
+  <div class="block merk" data-notiz="merk-bullwhip-ursachen">
+    <div class="b-label">Die Ursachen in einem Satz</div>
+    <p>Jede Stufe kennt nur die Bestellungen ihres direkten Abnehmers statt der echten Endkundennachfrage, plant daraus ihre eigene Prognose, legt einen Sicherheitszuschlag darauf und bestellt in Losgrößen. Vier Verstärker hintereinander – deshalb der Peitschenschlag.</p>
+  </div>
+
+  <div class="block beispiel" data-notiz="bsp-bullwhip-folgen">
+    <div class="b-label">Was das kostet</div>
+    <p>Abwechselnd Überbestände und Fehlmengen, Sonderschichten neben Kurzarbeit, teure Eilfrachten, verderbliche oder veraltete Ware, unzufriedene Kunden bei Out-of-Stock. Das Bittere daran: Es gibt keinen Schuldigen. Jede Stufe hat sich rational verhalten.</p>
+  </div>
+
+  <div class="block tipp def" data-notiz="def-gegenmassnahmen">
+    <div class="b-label">Was dagegen hilft</div>
+    <p><strong>Informationstransparenz:</strong> Alle Stufen sehen die echten Abverkaufsdaten des Endkunden (Point-of-Sale-Daten) statt nur die Bestellung des Nachbarn.<br>
+    <strong>Koordinierte Planung:</strong> gemeinsam statt jeder für sich – etwa über Vendor Managed Inventory, bei dem der Lieferant den Bestand des Kunden selbst disponiert.<br>
+    <strong>Kleinere Lose, kürzere Wiederbeschaffungszeiten:</strong> Wer häufiger kleine Mengen bestellen kann, braucht weniger Puffer.<br>
+    <strong>Stabile Preise:</strong> Rabattaktionen erzeugen künstliche Nachfragespitzen und verstärken den Effekt zusätzlich.</p>
+  </div>
+
+  <div class="block achtung" data-notiz="ach-bullwhip">
+    <div class="b-label">Typische Verwechslung</div>
+    <p>Der Bullwhip-Effekt beschreibt <strong>nicht</strong> schwankende Endkundennachfrage. Die Endnachfrage ist im Beispiel nahezu konstant. Beschrieben wird die <strong>Verstärkung</strong> dieser kleinen Schwankung entlang der Kette. Wer in der Prüfung „schwankende Nachfrage“ antwortet, hat den Kern verfehlt.</p>
+  </div>
+
+  <div class="abfrage-liste">
+    <div class="abfrage-kopf">Selbstabfrage</div>
+    <details class="abfrage"><summary>Beschreibe den Bullwhip-Effekt in zwei Sätzen.</summary>
+      <div class="antwort"><p>Kleine Schwankungen der Endkundennachfrage verstärken sich entlang der Lieferkette zu immer größeren Bestellschwankungen. Je weiter eine Stufe vom Endkunden entfernt ist, desto stärker schwankt ihre Bestellmenge.</p></div></details>
+    <details class="abfrage"><summary>Nenne zwei Ursachen.</summary>
+      <div class="antwort"><p>Fehlende Information über die echte Endkundennachfrage; Sicherheitszuschläge auf jeder Stufe; Bestellung in Losgrößen; Preisaktionen.</p></div></details>
+    <details class="abfrage"><summary>Wie wirkt SCM dagegen?</summary>
+      <div class="antwort"><p>Durch Informationstransparenz (alle sehen die echten Abverkaufsdaten) und koordinierte Planung statt isolierter Einzelplanung – ergänzt durch kleinere Lose und stabile Preise.</p></div></details>
+  </div>
+</section>
+
+<hr class="trenner">
+
+<!-- ═══════════════════════════════════════════════════════════ -->
+<section class="abschnitt" id="selbsttest" data-gruppe="Selbsttest">
+  <div class="ab-kopf"><h2><span class="ab-nr">Test</span>Selbsttest – 10 Fragen</h2></div>
+
+  <p>Dieselben Fragen wie in Krouls Check-Up. Erst beantworten, dann bei Fehlern in den passenden Abschnitt zurückspringen.</p>
+
+  <div class="quiz">
+    <div class="q-block">
+      <div class="q-nr"></div>
+      <div class="q-frage">Wie wird Logistik aus betriebswirtschaftlicher Sicht verstanden?</div>
+      <div class="q-optionen">
+        <button class="q-opt" data-richtig="false">A) Als reine Transportlehre</button>
+        <button class="q-opt" data-richtig="true">B) Als Organisation und Steuerung des gesamten Wertschöpfungsprozesses</button>
+        <button class="q-opt" data-richtig="false">C) Ausschließlich als Lagerhaltung</button>
+        <button class="q-opt" data-richtig="false">D) Nur als internationale Warenbewegung</button>
+      </div>
+      <div class="q-fb" data-erklaerung="Die Transportlehre ist die ingenieurwissenschaftliche Sicht. Betriebswirtschaftlich umfasst Logistik die Steuerung aller Güter-, Leistungs-, Geld- und Informationsströme von der Quelle bis zur Senke."></div>
+    </div>
+
+    <div class="q-block">
+      <div class="q-nr"></div>
+      <div class="q-frage">Welche Aussage beschreibt die Logistik als Querschnittsfunktion richtig?</div>
+      <div class="q-optionen">
+        <button class="q-opt" data-richtig="false">A) Sie betrifft nur die Versandabteilung.</button>
+        <button class="q-opt" data-richtig="false">B) Sie verbindet ausschließlich Lieferanten mit Kunden.</button>
+        <button class="q-opt" data-richtig="true">C) Sie durchzieht funktionsübergreifend den gesamten Betrieb.</button>
+        <button class="q-opt" data-richtig="false">D) Sie ist nur für physische Transporte zuständig.</button>
+      </div>
+      <div class="q-fb" data-erklaerung="Querschnittsfunktion heißt: keine abgegrenzte Abteilung, sondern quer durch Einkauf, Produktion, Vertrieb, IT und Controlling."></div>
+    </div>
+
+    <div class="q-block">
+      <div class="q-nr"></div>
+      <div class="q-frage">Welche Antwort gehört <strong>nicht</strong> zu den R der Logistik?</div>
+      <div class="q-optionen">
+        <button class="q-opt" data-richtig="false">A) Richtige Menge</button>
+        <button class="q-opt" data-richtig="false">B) Richtiger Ort</button>
+        <button class="q-opt" data-richtig="true">C) Richtige Werbung</button>
+        <button class="q-opt" data-richtig="false">D) Richtige Qualität</button>
+      </div>
+      <div class="q-fb" data-erklaerung="Die sechs klassischen R: richtiges Gut, richtige Menge, richtiger Ort, richtiger Zeitpunkt, richtige Kosten, richtige Qualität. Als siebtes kommt die richtige Information dazu."></div>
+    </div>
+
+    <div class="q-block">
+      <div class="q-nr"></div>
+      <div class="q-frage">Welche Erweiterung wird häufig als siebtes R ergänzt?</div>
+      <div class="q-optionen">
+        <button class="q-opt" data-richtig="false">A) Richtige Verpackung</button>
+        <button class="q-opt" data-richtig="true">B) Richtige Information</button>
+        <button class="q-opt" data-richtig="false">C) Richtige Personalstärke</button>
+        <button class="q-opt" data-richtig="false">D) Richtige Produktionsanlage</button>
+      </div>
+      <div class="q-fb" data-erklaerung="Jeder Materialfluss braucht den passenden Informationsfluss – sonst ist die Lieferung nicht steuerbar."></div>
+    </div>
+
+    <div class="q-block">
+      <div class="q-nr"></div>
+      <div class="q-frage">Was beschreibt eine logistische Kette?</div>
+      <div class="q-optionen">
+        <button class="q-opt" data-richtig="false">A) Die Lagerung von Waren in einem Zentrallager</button>
+        <button class="q-opt" data-richtig="true">B) Die Verknüpfung aller logistischen Prozesse vom Lieferanten bis zum Kunden</button>
+        <button class="q-opt" data-richtig="false">C) Nur die monetären Zahlungsströme</button>
+        <button class="q-opt" data-richtig="false">D) Eine IT-Software zur Transportplanung</button>
+      </div>
+      <div class="q-fb" data-erklaerung="Sie umfasst physische Prozesse, Informationsprozesse und Geldflüsse über die gesamte Strecke."></div>
+    </div>
+
+    <div class="q-block">
+      <div class="q-nr"></div>
+      <div class="q-frage">Was kennzeichnet den Order Penetration Point?</div>
+      <div class="q-optionen">
+        <button class="q-opt" data-richtig="false">A) Er beschreibt den Zeitpunkt der Rechnungsstellung.</button>
+        <button class="q-opt" data-richtig="true">B) Er trennt prognosegetriebene von kundenauftragsbezogenen Prozessen.</button>
+        <button class="q-opt" data-richtig="false">C) Er ist der Ort der Qualitätsprüfung.</button>
+        <button class="q-opt" data-richtig="false">D) Er definiert die Höhe des Lagerbestands.</button>
+      </div>
+      <div class="q-fb" data-erklaerung="Der OPP ist der Auftragsentkopplungspunkt. Seine Lage bestimmt Lieferzeit, Bestandshöhe und Individualisierbarkeit."></div>
+    </div>
+
+    <div class="q-block">
+      <div class="q-nr"></div>
+      <div class="q-frage">Was versteht man unter dem Bullwhip-Effekt?</div>
+      <div class="q-optionen">
+        <button class="q-opt" data-richtig="false">A) Eine gleichmäßige Bedarfsentwicklung entlang der Lieferkette</button>
+        <button class="q-opt" data-richtig="false">B) Die Reduzierung von Lagerbeständen durch Just-in-time</button>
+        <button class="q-opt" data-richtig="true">C) Das Aufschaukeln von Nachfrageschwankungen entlang der Supply Chain</button>
+        <button class="q-opt" data-richtig="false">D) Die Verkürzung von Lieferzeiten durch Digitalisierung</button>
+      </div>
+      <div class="q-fb" data-erklaerung="Kleine Schwankungen beim Endkunden werden von Stufe zu Stufe verstärkt, weil jede Stufe puffert und nur die Bestellung ihres Nachbarn sieht."></div>
+    </div>
+
+    <div class="q-block">
+      <div class="q-nr"></div>
+      <div class="q-frage">Welches Ziel verfolgt Supply Chain Management?</div>
+      <div class="q-optionen">
+        <button class="q-opt" data-richtig="false">A) Maximierung einzelner Abteilungsgewinne</button>
+        <button class="q-opt" data-richtig="true">B) Optimierung des Gesamtprozesses über mehrere Stufen hinweg</button>
+        <button class="q-opt" data-richtig="false">C) Erhöhung der Sicherheitsbestände</button>
+        <button class="q-opt" data-richtig="false">D) Reduzierung der Informationsflüsse</button>
+      </div>
+      <div class="q-fb" data-erklaerung="SCM zielt auf die Gesamtoptimierung – Einzeloptimierung ist genau das Problem, das es lösen soll."></div>
+    </div>
+
+    <div class="q-block">
+      <div class="q-nr"></div>
+      <div class="q-frage">Welche Aufgabe übernimmt die Informationslogistik?</div>
+      <div class="q-optionen">
+        <button class="q-opt" data-richtig="false">A) Die Durchführung von Transporten</button>
+        <button class="q-opt" data-richtig="false">B) Das Recycling von Abfallstoffen</button>
+        <button class="q-opt" data-richtig="true">C) Bereitstellung und Steuerung relevanter Informationen entlang des Materialflusses</button>
+        <button class="q-opt" data-richtig="false">D) Ausschließlich die Finanzbuchhaltung</button>
+      </div>
+      <div class="q-fb" data-erklaerung="Sie begleitet den Materialfluss und läuft ihm voraus – Qualität, Geschwindigkeit und Genauigkeit der Daten entscheiden über den Nutzen."></div>
+    </div>
+
+    <div class="q-block">
+      <div class="q-nr"></div>
+      <div class="q-frage">Was ist Kontraktlogistik?</div>
+      <div class="q-optionen">
+        <button class="q-opt" data-richtig="false">A) Nur der reine Transport von Waren</button>
+        <button class="q-opt" data-richtig="false">B) Eine einmalige Beförderung ohne Vertrag</button>
+        <button class="q-opt" data-richtig="true">C) Kundenspezifische, integrierte Logistikleistungen auf längerer Vertragsbasis</button>
+        <button class="q-opt" data-richtig="false">D) Ausschließlich internationale Transportdienstleistungen</button>
+      </div>
+      <div class="q-fb" data-erklaerung="Basisleistungen (Transport, Umschlag, Lagerung) plus Value Added Services, kundenspezifisch und auf Dauer angelegt."></div>
+    </div>
+
+    <div class="q-score"><div class="z"></div><div class="t"></div></div>
+  </div>
+
+  <div class="block lernziel" data-notiz="ziel-abschluss">
+    <div class="b-label">Wenn du fertig bist</div>
+    <p>Drücke <strong>K</strong>, um aus allen Selbstabfragen dieses Kapitels Karteikarten zu ziehen. Alles, was du dabei als „nochmal üben“ markierst, kommt beim nächsten Durchlauf zuerst.</p>
+  </div>
+</section>
+
+</main>
+
+<script>window.KAPITEL = {id:'kroul-0', fach:'kroul', nummer:'Kapitel 0', titel:'Einführung in die Logistik'};</script>
+<script src="assets/portal.js" defer></script>
+</body>
+</html>
