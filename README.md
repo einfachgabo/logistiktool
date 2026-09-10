@@ -9,7 +9,7 @@ direkt über GitHub Pages.
 |---|---|
 | `index.html` | Startseite: Fortschritt je Fach, aktueller Unterrichtsstand, Lernplan, Prüfungsinfos |
 | `plab-1` … `plab-3` | Benedikt Plab – Logistikstruktur, Logistiksysteme, Logistische Abläufe |
-| `gruber-1` … `gruber-4` | Christian Gruber – Konzepte, Beschaffung, Lager/Distribution, Strategie & Projekte |
+| `gruber-1` … `gruber-5` | Christian Gruber – Konzepte, Beschaffung, Lager/Distribution, Strategie & Projekte, Vergabe & Verträge |
 | `kroul-0`, `kroul-1` | Raphael Kroul – Einführung, Veränderungsprozesse |
 | `gruchala-1` … `gruchala-5` | Kerstin Gruchala – Kommunikation, Personal, Arbeitsrecht, Führung, Ausbildung & Arbeitsschutz |
 | `mathe-grundlagen.html` | Rechnen von Grund auf |
