@@ -8,7 +8,7 @@ direkt über GitHub Pages.
 | Datei | Inhalt |
 |---|---|
 | `index.html` | Startseite: Fortschritt je Fach, aktueller Unterrichtsstand, Lernplan, Prüfungsinfos |
-| `plab-1` … `plab-3` | Benedikt Plab – Logistikstruktur, Logistiksysteme, Logistische Abläufe |
+| `plab-1` … `plab-4` | Benedikt Plab – Logistikstruktur, Logistiksysteme, Logistische Abläufe, Leistungsfähigkeit & Strategie |
 | `gruber-1` … `gruber-5` | Christian Gruber – Konzepte, Beschaffung, Lager/Distribution, Strategie & Projekte, Vergabe & Verträge |
 | `kroul-0`, `kroul-1` | Raphael Kroul – Einführung, Veränderungsprozesse |
 | `gruchala-1` … `gruchala-5` | Kerstin Gruchala – Kommunikation, Personal, Arbeitsrecht, Führung, Ausbildung & Arbeitsschutz |
