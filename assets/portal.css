@@ -118,6 +118,38 @@ main.inhalt { flex: 1; max-width: var(--content-w); padding: 2.6rem 3rem 6rem; o
 h1 { font-size: 31px; font-weight: 700; line-height: 1.18; letter-spacing: -.015em; margin-bottom: .45rem; }
 .kopf-sub { color: var(--text-2); font-size: 15px; margin-bottom: 1.5rem; max-width: 62ch; }
 
+.lernleiste { display: flex; align-items: center; gap: .75rem; flex-wrap: wrap; margin: 0 0 1.2rem; }
+.lernleiste-knopf { font: 600 13px var(--sans); color: var(--blue); background: var(--blue-bg); border: 1px solid var(--blue-line); border-radius: 7px; padding: .5rem .8rem; cursor: pointer; }
+.lernleiste-knopf:hover { filter: brightness(.96); }
+.lernleiste-hinweis { color: var(--text-3); font-size: 12.5px; line-height: 1.45; flex: 1 1 260px; }
+body.unterrichtsmodus section.abschnitt > :not(.ab-kopf):not(.ab-status):not(.notiz-hook) { display: none; }
+body.unterrichtsmodus section.abschnitt { margin-top: .95rem; }
+body.unterrichtsmodus section.abschnitt > .notiz-hook .notiz-btn { opacity: 1; }
+
+.lernheft-box { display: flex; align-items: center; gap: .6rem 1rem; flex-wrap: wrap; background: var(--blue-bg); border: 1px solid var(--blue-line); border-radius: var(--radius); padding: .8rem 1rem; margin: 0 0 1rem; }
+.lernheft-box strong { font-size: 14px; }
+.lernheft-box span { color: var(--text-2); font-size: 12.5px; flex: 1 1 240px; }
+.lernheft-box a { color: var(--blue); font-size: 12.5px; font-weight: 700; white-space: nowrap; }
+
+.podcast-box { background: var(--teal-bg); border: 1px solid var(--teal-line); border-radius: var(--radius); padding: 1rem 1.15rem; margin: 0 0 1.8rem; }
+.podcast-kicker { color: var(--teal); font-size: 10px; font-weight: 800; letter-spacing: .12em; }
+.podcast-titel { font-size: 17px; line-height: 1.3; margin: .28rem 0 .2rem; }
+.podcast-hinweis { color: var(--text-2); font-size: 12.5px; margin-bottom: .6rem; }
+.podcast-player { display: block; width: 100%; height: 42px; }
+.podcast-download { display: inline-block; margin-top: .45rem; color: var(--teal); font-size: 12px; font-weight: 700; }
+
+.flussbild { border: 1px solid var(--border); border-radius: var(--radius); background: var(--surface); padding: .9rem; margin: 1rem 0 1.3rem; }
+.flussbild-orte { display: grid; grid-template-columns: repeat(3, 1fr); text-align: center; color: var(--text-2); font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: .06em; margin: 0 0 .55rem; }
+.flussbild-spur { display: grid; grid-template-columns: 110px minmax(0, 1fr) 185px; gap: .6rem; align-items: center; padding: .55rem .7rem; border-radius: 6px; margin-top: .35rem; font-size: 13px; }
+.flussbild-spur strong { font-size: 12px; }
+.flussbild-spur span { text-align: center; font-weight: 600; }
+.flussbild-spur b { font-size: 20px; padding: 0 .2rem; vertical-align: -1px; }
+.flussbild-spur small { font-size: 11px; line-height: 1.4; color: var(--text-2); }
+.flussbild-spur.material { background: var(--blue-bg); color: var(--blue); }
+.flussbild-spur.information { background: var(--teal-bg); color: var(--teal); }
+.flussbild-spur.wert { background: var(--amber-bg); color: var(--amber); }
+.flussbild figcaption { color: var(--text-2); font-size: 12px; margin: .65rem .15rem 0; }
+
 /* Abschnitt = die Einheit, die Status + Notiz + Fortschritt trägt */
 section.abschnitt { scroll-margin-top: 1.2rem; padding-top: .4rem; }
 section.abschnitt + section.abschnitt { margin-top: 3rem; }
@@ -333,6 +365,7 @@ details.abfrage .antwort p { margin-bottom: .4rem; }
 .kk-aktionen button.gut { background: var(--green-bg); border-color: var(--green-line); color: var(--green); }
 .kk-aktionen button.schlecht { background: var(--red-bg); border-color: var(--red-line); color: var(--red); }
 .kk-aktionen .zu { margin-left: auto; color: var(--text-3); }
+.kk-hinweis { font-size: 13px; color: var(--text-2); }
 
 /* ─────────────── Index / Startseite ─────────────── */
 .portal-kopf { background: var(--sidebar-bg); color: #e6e3db; padding: 2.6rem 2rem 2.9rem; text-align: center; }
@@ -369,6 +402,7 @@ a.kapitel-karte.teal::before   { background: var(--teal); }
 .kk-nr { font-size: 10.5px; font-family: var(--mono); color: var(--text-3); }
 .kk-titel { font-size: 15.5px; font-weight: 700; line-height: 1.3; }
 .kk-desc { font-size: 13px; color: var(--text-2); flex: 1; line-height: 1.55; }
+.kk-audio { color: var(--teal); background: var(--teal-bg); border: 1px solid var(--teal-line); border-radius: 20px; padding: 2px 9px; font-size: 11px; font-weight: 700; align-self: flex-start; }
 .kk-fort { margin-top: .5rem; }
 .kk-track { height: 5px; background: var(--border); border-radius: 3px; overflow: hidden; display: flex; }
 .kk-track .done { background: var(--blue); }
@@ -387,6 +421,10 @@ a.kapitel-karte.teal::before   { background: var(--teal); }
 .stat { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: .85rem 1rem; }
 .stat .s-zahl { font-size: 25px; font-weight: 800; line-height: 1.1; }
 .stat .s-label { font-size: 11.5px; color: var(--text-3); margin-top: .1rem; }
+.heute-lernen { background: var(--blue-bg); border: 1px solid var(--blue-line); border-radius: var(--radius); padding: 1rem 1.1rem; display: flex; align-items: center; justify-content: space-between; gap: 1rem; flex-wrap: wrap; }
+.heute-lernen strong { display: block; font-size: 15px; }
+.heute-lernen p { margin: .2rem 0 0; font-size: 13px; color: var(--text-2); }
+.heute-lernen a { color: #fff; background: var(--blue); border-radius: 7px; padding: .55rem .8rem; text-decoration: none; font-size: 13px; font-weight: 700; white-space: nowrap; }
 
 /* ─────────────── Diverses ─────────────── */
 .hinweis-klein { font-size: 12.5px; color: var(--text-3); }
@@ -402,13 +440,16 @@ footer.portal-foot { text-align: center; padding: 2rem 1rem 3rem; font-size: 12p
   aside.sidebar .sb-gruppe { display: none; }
   main.inhalt { padding: 1.5rem 1.15rem 5rem; max-width: none; }
   .raster-2 { grid-template-columns: 1fr; }
+  .flussbild-spur { grid-template-columns: 1fr; gap: .1rem; }
+  .flussbild-spur span { text-align: left; }
   h1 { font-size: 26px; }
   .ab-kopf h2 { font-size: 20px; }
 }
 
 /* ─────────────── Druck ─────────────── */
 @media print {
-  aside.sidebar, .werkzeuge, .scroll-bar, .notiz-btn, .ab-status, .loesung-btn { display: none !important; }
+  aside.sidebar, .werkzeuge, .scroll-bar, .notiz-btn, .ab-status, .loesung-btn, .lernleiste, .lernheft-box, .podcast-box { display: none !important; }
+  body.unterrichtsmodus section.abschnitt > * { display: revert !important; }
   body { background: #fff; font-size: 11pt; }
   main.inhalt { max-width: none; padding: 0; }
   .loesung { display: block !important; }

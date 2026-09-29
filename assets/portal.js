@@ -47,7 +47,7 @@
   /* Alle Kapitel des Portals. Neue Kapitel hier ergänzen – die Startseite
      und die Kapitel-Navigation lesen ausschließlich diese Liste. */
   var KAPITEL_LISTE = [
-    { id: 'plab-1',      datei: 'plab-1-logistikstruktur.html',    fach: 'plab',     nummer: '1.1',   titel: 'Logistikstruktur & Grundlagen',        desc: 'Begriff, Ziele, Wertschöpfung, Prozessmanagement, SCM, Bullwhip, Umfeld- und Systemfaktoren, Organisation.' },
+    { id: 'plab-1',      datei: 'plab-1-logistikstruktur.html',    fach: 'plab',     nummer: '1.1',   titel: 'Logistikstruktur & Grundlagen',        desc: 'Begriff, Ziele, Wertschöpfung, Prozessmanagement, SCM, Bullwhip, Umfeld- und Systemfaktoren, Organisation.', audio: 'assets/audio/plab-1-logistikstruktur.mp3', audioDauer: '10:13', heft: 'assets/hefte/grundlagen-und-kapitel-1-1.pdf' },
     { id: 'plab-2',      datei: 'plab-2-logistiksysteme.html',     fach: 'plab',     nummer: '1.2',   titel: 'Logistiksysteme',                      desc: 'I&K-Systeme, Transport & Umschlag, Fördermittel, Verkehrsträger, Lager & Kommissionierung, Incoterms.' },
     { id: 'plab-3',      datei: 'plab-3-logistische-ablaeufe.html', fach: 'plab',    nummer: '1.3',   titel: 'Logistische Abläufe',                  desc: 'Zielbildung (SMART), Kennzahlen, Leistungsfähigkeit, Bewertungssysteme, Entwicklung.' },
     { id: 'plab-4',      datei: 'plab-4-strategie.html',           fach: 'plab',     nummer: '2.1',   titel: 'Leistungsfähigkeit & Strategie',       desc: 'Strategiebildung, Stakeholderanalyse, SWOT-Matrix, Ethik & Leitbild, Corporate Identity, Porter, Entwicklungsstufen, VARIO, Logistikportfolio, Lebenszyklus, Distribution.' },
@@ -79,6 +79,20 @@
   function esc(s) { return String(s).replace(/[&<>"]/g, function (c) { return ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' })[c]; }); }
   function heute() { var d = new Date(); return d.toLocaleDateString('de-DE', { day: '2-digit', month: '2-digit', year: 'numeric' }); }
   function kapById(id) { for (var i = 0; i < KAPITEL_LISTE.length; i++) if (KAPITEL_LISTE[i].id === id) return KAPITEL_LISTE[i]; return null; }
+  function tagesDatum(d) {
+    var x = d || new Date();
+    return x.getFullYear() + '-' + String(x.getMonth() + 1).padStart(2, '0') + '-' + String(x.getDate()).padStart(2, '0');
+  }
+  function inTagen(tage) { var d = new Date(); d.setHours(12, 0, 0, 0); d.setDate(d.getDate() + tage); return tagesDatum(d); }
+  function faelligeKarten() {
+    var n = 0, heuteKey = tagesDatum();
+    S.keys().forEach(function (key) {
+      if (key.indexOf('lp.review.') !== 0) return;
+      var stand = S.json(key, null);
+      if (stand && stand.faellig <= heuteKey) n++;
+    });
+    return n;
+  }
 
   /* ───────────────────────── Theme ───────────────────────── */
   function themeAnwenden() {
@@ -167,6 +181,60 @@
     host.appendChild(wrap);
   }
 
+  /* ═══════════════ Hören und Unterrichtsansicht ═══════════════ */
+  function kapitelWerkzeuge(K) {
+    var intro = document.querySelector('main.inhalt .kopf-sub');
+    if (!intro) return;
+    var eintrag = kapById(K.id);
+    var leiste = el('div', 'lernleiste');
+    var modus = el('button', 'lernleiste-knopf');
+    modus.type = 'button';
+    function modusText() {
+      var an = document.body.classList.contains('unterrichtsmodus');
+      modus.textContent = an ? 'Volltext anzeigen' : 'Unterrichtsansicht: nur Abschnitte und Notizen';
+      modus.setAttribute('aria-pressed', an ? 'true' : 'false');
+    }
+    if (S.get('lp.unterrichtsmodus') === 'an') document.body.classList.add('unterrichtsmodus');
+    modusText();
+    modus.addEventListener('click', function () {
+      var an = document.body.classList.toggle('unterrichtsmodus');
+      S.set('lp.unterrichtsmodus', an ? 'an' : 'aus');
+      modusText();
+    });
+    leiste.appendChild(modus);
+    leiste.appendChild(el('span', 'lernleiste-hinweis', 'Im Unterricht mitschreiben. Danach den Volltext lesen und Fragen ohne Vorlage beantworten.'));
+    intro.insertAdjacentElement('afterend', leiste);
+
+    if (!eintrag) return;
+    if (eintrag.heft) {
+      var heft = el('div', 'lernheft-box');
+      heft.appendChild(el('strong', '', 'Ausfüllbares Lernheft · Grundlagen und Kapitel ' + K.nummer));
+      heft.appendChild(el('span', '', 'Kurze Erklärungen, 28 Notizfelder und freie Seiten für den Unterricht. Zum Bearbeiten die PDF herunterladen und in einer PDF-App öffnen.'));
+      var heftLink = el('a', '', 'PDF herunterladen');
+      heftLink.href = eintrag.heft;
+      heftLink.download = '';
+      heft.appendChild(heftLink);
+      leiste.insertAdjacentElement('afterend', heft);
+    }
+    if (!eintrag.audio) return;
+    var box = el('section', 'podcast-box');
+    box.setAttribute('aria-label', 'Podcast zu diesem Kapitel');
+    box.appendChild(el('div', 'podcast-kicker', 'PODCAST ZU DIESEM KAPITEL'));
+    box.appendChild(el('h2', 'podcast-titel', K.titel));
+    box.appendChild(el('p', 'podcast-hinweis', 'Kurze Wiederholung für unterwegs · ' + eintrag.audioDauer + ' Min. · KI-generierte Stimme Microsoft Katja Neural'));
+    var player = el('audio', 'podcast-player');
+    player.controls = true;
+    player.preload = 'none';
+    player.src = eintrag.audio;
+    player.setAttribute('aria-label', 'Podcast ' + K.titel + ' abspielen');
+    box.appendChild(player);
+    var download = el('a', 'podcast-download', 'MP3 herunterladen');
+    download.href = eintrag.audio;
+    download.download = '';
+    box.appendChild(download);
+    (document.querySelector('.lernheft-box') || leiste).insertAdjacentElement('afterend', box);
+  }
+
   /* ═══════════════ Kapitelseite aufbauen ═══════════════ */
   function kapitelSeite() {
     var K = window.KAPITEL;
@@ -175,6 +243,7 @@
 
     var fach = FAECHER[K.fach] || FAECHER.werkzeug;
     var indexEintrag = { titel: K.titel, datei: location.pathname.split('/').pop() || (kapById(K.id) || {}).datei, fach: K.fach, nummer: K.nummer, sections: [] };
+    kapitelWerkzeuge(K);
 
     /* ---- 1. Abschnitte: Status + Notiz + Index ---- */
     abschnitte.forEach(function (sec, i) {
@@ -252,6 +321,7 @@
     quizAktivieren();
     aufgabenAktivieren();
     abfragenAktivieren(K);
+    if (new URLSearchParams(location.search).has('karten')) karteikartenStarten(K);
 
     function hierMarkieren() {
       var aktiv = S.get('lp.hier.' + K.id);
@@ -459,7 +529,8 @@
       var s = d.querySelector('summary'), a = d.querySelector('.antwort');
       if (!s || !a) return;
       var sec = d.closest('section.abschnitt');
-      karten.push({ frage: s.textContent.trim(), antwort: a.innerHTML, sect: sec ? sec.id : '', slug: d.dataset.kk || s.textContent.trim().slice(0, 60) });
+      var slug = d.dataset.kk || s.textContent.trim().slice(0, 60);
+      karten.push({ frage: s.textContent.trim(), antwort: a.innerHTML, sect: sec ? sec.id : '', slug: slug, reviewSlug: (sec ? sec.id : 'allgemein') + '.' + slug });
     });
     return karten;
   }
@@ -467,24 +538,49 @@
   function karteikartenStarten(K) {
     var alle = karteikartenSammeln();
     if (!alle.length) { alert('In diesem Kapitel sind noch keine Selbstabfragen hinterlegt.'); return; }
-    // Schwer markierte Karten zuerst, Rest gemischt
-    var schwer = [], rest = [];
+    var heuteKey = tagesDatum();
+    var aktuell = S.get('lp.hier.' + K.id);
+    var faellig = [], neu = [], spaeter = [];
     alle.forEach(function (k) {
-      (S.get('lp.kk.' + K.id + '.' + k.slug) === 'schwer' ? schwer : rest).push(k);
+      var stand = S.json('lp.review.' + K.id + '.' + k.reviewSlug, null);
+      k.stand = stand;
+      if (!stand) neu.push(k);
+      else if (stand.faellig <= heuteKey) faellig.push(k);
+      else spaeter.push(k);
     });
-    for (var i = rest.length - 1; i > 0; i--) { var j = Math.floor(Math.random() * (i + 1)); var t = rest[i]; rest[i] = rest[j]; rest[j] = t; }
-    var stapel = schwer.concat(rest), pos = 0, gewusst = 0;
+    function prioritaet(a, b) {
+      var aSchwer = S.get('lp.kk.' + K.id + '.' + a.slug) === 'schwer' ? 1 : 0;
+      var bSchwer = S.get('lp.kk.' + K.id + '.' + b.slug) === 'schwer' ? 1 : 0;
+      if (aSchwer !== bSchwer) return bSchwer - aSchwer;
+      var aAktuell = a.sect === aktuell ? 1 : 0;
+      var bAktuell = b.sect === aktuell ? 1 : 0;
+      if (aAktuell !== bAktuell) return bAktuell - aAktuell;
+      return 0;
+    }
+    faellig.sort(prioritaet);
+    neu.sort(prioritaet);
+    var stapel = faellig.concat(neu).slice(0, 5), pos = 0, gewusst = 0;
 
     var ov = document.querySelector('.kk-overlay');
     if (!ov) { ov = el('div', 'kk-overlay'); ov.innerHTML = '<div class="kk-box"></div>'; document.body.appendChild(ov); }
     var box = ov.querySelector('.kk-box');
     ov.classList.add('auf');
+    function schliessen() { ov.classList.remove('auf'); document.removeEventListener('keydown', esc2); }
 
     function zeige() {
+      if (!stapel.length) {
+        spaeter.sort(function (a, b) { return a.stand.faellig.localeCompare(b.stand.faellig); });
+        var naechster = spaeter.length ? 'Nächste Karte am ' + spaeter[0].stand.faellig.split('-').reverse().join('.') + '.' : 'Alle Karten dieses Kapitels sind bearbeitet.';
+        box.innerHTML = '<div class="kk-zaehler"><span>Heute erledigt</span></div>' +
+          '<div class="kk-frage">' + esc(naechster) + '</div>' +
+          '<div class="kk-aktionen"><button class="zu" data-akt="zu">Schließen</button></div>';
+        return;
+      }
       if (pos >= stapel.length) {
-        box.innerHTML = '<div class="kk-zaehler"><span>Durchlauf beendet</span></div>' +
+        box.innerHTML = '<div class="kk-zaehler"><span>Fünf Fragen bearbeitet</span></div>' +
           '<div class="kk-frage">' + gewusst + ' von ' + stapel.length + ' gewusst</div>' +
-          '<div class="kk-aktionen"><button class="primaer" data-akt="neu">Nochmal</button><button class="zu" data-akt="zu">Schließen</button></div>';
+          '<p class="kk-hinweis">Die nächsten Fragen warten morgen oder an deinem Wiederholungstag.</p>' +
+          '<div class="kk-aktionen"><button class="primaer" data-akt="weitere">Weitere 5 Fragen</button><button class="zu" data-akt="zu">Schließen</button></div>';
         return;
       }
       var k = stapel[pos];
@@ -499,8 +595,8 @@
     box.onclick = function (e) {
       var b = e.target.closest('button'); if (!b) return;
       var akt = b.dataset.akt, k = stapel[pos];
-      if (akt === 'zu') { ov.classList.remove('auf'); return; }
-      if (akt === 'neu') { pos = 0; gewusst = 0; zeige(); return; }
+      if (akt === 'zu') { schliessen(); return; }
+      if (akt === 'weitere') { schliessen(); karteikartenStarten(K); return; }
       if (akt === 'zeigen') {
         box.querySelector('.kk-antwort').classList.add('auf');
         box.querySelector('.kk-aktionen').innerHTML =
@@ -509,13 +605,20 @@
           '<button class="zu" data-akt="zu">Schließen</button>';
         return;
       }
-      if (akt === 'gut') { S.del('lp.kk.' + K.id + '.' + k.slug); gewusst++; pos++; zeige(); return; }
-      if (akt === 'schwer') { S.set('lp.kk.' + K.id + '.' + k.slug, 'schwer'); pos++; zeige(); return; }
+      if (akt === 'gut' || akt === 'schwer') {
+        var bisher = k.stand && k.stand.erfolge || 0;
+        var erfolge = akt === 'gut' ? bisher + 1 : 0;
+        var abstaende = [1, 3, 7, 14, 30, 60];
+        var tage = akt === 'gut' ? abstaende[Math.min(erfolge - 1, abstaende.length - 1)] : 1;
+        S.setJson('lp.review.' + K.id + '.' + k.reviewSlug, { erfolge: erfolge, zuletzt: heuteKey, faellig: inTagen(tage) });
+        if (akt === 'gut') { S.del('lp.kk.' + K.id + '.' + k.slug); gewusst++; }
+        else S.set('lp.kk.' + K.id + '.' + k.slug, 'schwer');
+        pos++; zeige(); return;
+      }
     };
-    ov.onclick = function (e) { if (e.target === ov) ov.classList.remove('auf'); };
-    document.addEventListener('keydown', function esc2(e) {
-      if (e.key === 'Escape') { ov.classList.remove('auf'); document.removeEventListener('keydown', esc2); }
-    });
+    ov.onclick = function (e) { if (e.target === ov) schliessen(); };
+    function esc2(e) { if (e.key === 'Escape') schliessen(); }
+    document.addEventListener('keydown', esc2);
     zeige();
   }
 
@@ -594,9 +697,18 @@
         stat(gesamtAb ? Math.round(gesamtVer / gesamtAb * 100) + '%' : '–', 'verstanden') +
         stat(gesamtAb ? Math.round(gesamtBeh / gesamtAb * 100) + '%' : '–', 'im Unterricht behandelt') +
         stat(gesamtNoch || '0', 'zum Wiederholen markiert') +
+        stat(faelligeKarten(), 'Karten heute fällig') +
         stat(notizenZaehlen(''), 'eigene Notizen');
     }
     function stat(z, l) { return '<div class="stat"><div class="s-zahl">' + z + '</div><div class="s-label">' + l + '</div></div>'; }
+
+    var heuteBox = document.getElementById('heute-lernen');
+    if (heuteBox) {
+      var startKap = hier && kapById(hier.kapId) || KAPITEL_LISTE[0];
+      heuteBox.innerHTML = '<div><strong>Heute: fünf Fragen statt langem Wiederlesen</strong>' +
+        '<p>Antworte erst aus dem Kopf, zeige dann die Lösung. Schwierige Karten kommen früher wieder.</p></div>' +
+        '<a href="' + esc(startKap.datei) + '?karten=1">5 Fragen aus ' + esc(startKap.nummer) + ' üben</a>';
+    }
 
     /* Kapitel nach Fach */
     var html = '';
@@ -617,6 +729,7 @@
           '<span class="kk-nr">' + esc(k.nummer) + '</span>' +
           '<span class="kk-titel">' + esc(k.titel) + '</span>' +
           '<span class="kk-desc">' + esc(k.desc) + '</span>' +
+          (k.audio ? '<span class="kk-audio">▶ Podcast · ' + esc(k.audioDauer) + ' Min.</span>' : '') +
           '<span class="kk-fort"><span class="kk-track">' +
             '<span class="done" style="width:' + (fo ? fo.pctBehandelt - fo.pctVerstanden : 0) + '%"></span>' +
             '<span class="got" style="width:' + (fo ? fo.pctVerstanden : 0) + '%"></span>' +
