@@ -53,69 +53,69 @@
       { titel: 'Lieferkette, Umfeld und Organisation', datei: 'assets/audio/plab-1-c-lieferkette.mp3', dauer: '4:04' },
       { titel: 'Bisherige Gesamtfolge', datei: 'assets/audio/plab-1-logistikstruktur.mp3', dauer: '10:13', gesamt: true }
     ] },
-    { id: 'plab-2',      datei: 'plab-2-logistiksysteme.html',     fach: 'plab',     nummer: '1.2',   titel: 'Logistiksysteme',                      desc: 'I&K-Systeme, Transport & Umschlag, Fördermittel, Verkehrsträger, Lager & Kommissionierung, Incoterms.', audios: [
+    { id: 'plab-2',      datei: 'plab-2-logistiksysteme.html',     fach: 'plab',     nummer: '1.2',   titel: 'Logistiksysteme',                      desc: 'I&K-Systeme, Transport & Umschlag, Fördermittel, Verkehrsträger, Lager & Kommissionierung, Incoterms.', heft: 'assets/hefte/plab-2-logistiksysteme.pdf', audios: [
       { titel: 'Logistiksysteme und Informationsfluss', datei: 'assets/audio/plab-2-a-informationssysteme.mp3', dauer: '4:28' },
       { titel: 'Transport und Umschlag', datei: 'assets/audio/plab-2-b-transport.mp3', dauer: '4:13' },
       { titel: 'Lager und Materialfluss', datei: 'assets/audio/plab-2-c-lager.mp3', dauer: '4:01' }
     ] },
-    { id: 'plab-3',      datei: 'plab-3-logistische-ablaeufe.html', fach: 'plab',    nummer: '1.3',   titel: 'Logistische Abläufe',                  desc: 'Zielbildung (SMART), Kennzahlen, Leistungsfähigkeit, Bewertungssysteme, Entwicklung.', audios: [
+    { id: 'plab-3',      datei: 'plab-3-logistische-ablaeufe.html', fach: 'plab',    nummer: '1.3',   titel: 'Logistische Abläufe',                  desc: 'Zielbildung (SMART), Kennzahlen, Leistungsfähigkeit, Bewertungssysteme, Entwicklung.', heft: 'assets/hefte/plab-3-logistische-ablaeufe.pdf', audios: [
       { titel: 'Ziele und Kennzahlen', datei: 'assets/audio/plab-3-a-ziele-kennzahlen.mp3', dauer: '3:51' },
       { titel: 'Analysieren und bewerten', datei: 'assets/audio/plab-3-b-bewerten.mp3', dauer: '4:14' }
     ] },
-    { id: 'plab-4',      datei: 'plab-4-strategie.html',           fach: 'plab',     nummer: '2.1',   titel: 'Leistungsfähigkeit & Strategie',       desc: 'Strategiebildung, Stakeholderanalyse, SWOT-Matrix, Ethik & Leitbild, Corporate Identity, Porter, Entwicklungsstufen, VARIO, Logistikportfolio, Lebenszyklus, Distribution.', audios: [
+    { id: 'plab-4',      datei: 'plab-4-strategie.html',           fach: 'plab',     nummer: '2.1',   titel: 'Leistungsfähigkeit & Strategie',       desc: 'Strategiebildung, Stakeholderanalyse, SWOT-Matrix, Ethik & Leitbild, Corporate Identity, Porter, Entwicklungsstufen, VARIO, Logistikportfolio, Lebenszyklus, Distribution.', heft: 'assets/hefte/plab-4-strategie.pdf', audios: [
       { titel: 'Von der Lage zur Strategie', datei: 'assets/audio/plab-4-a-strategieprozess.mp3', dauer: '4:01' },
       { titel: 'Strategie im Alltag umsetzen', datei: 'assets/audio/plab-4-b-umsetzung.mp3', dauer: '3:52' }
     ] },
-    { id: 'gruber-1',    datei: 'gruber-1-konzepte.html',          fach: 'gruber',   nummer: '1.1–1.11', titel: 'Logistikkonzepte & Analysemethoden', desc: 'Logistikbereiche, Konzept, Wertschöpfung, Belieferung, Benchmarking, SWOT/GAP, Ishikawa, ABC, XYZ, Nachhaltigkeit.', audios: [
+    { id: 'gruber-1',    datei: 'gruber-1-konzepte.html',          fach: 'gruber',   nummer: '1.1–1.11', titel: 'Logistikkonzepte & Analysemethoden', desc: 'Logistikbereiche, Konzept, Wertschöpfung, Belieferung, Benchmarking, SWOT/GAP, Ishikawa, ABC, XYZ, Nachhaltigkeit.', heft: 'assets/hefte/gruber-1-konzepte.pdf', audios: [
       { titel: 'Ein Logistikkonzept bauen', datei: 'assets/audio/gruber-1-a-konzept.mp3', dauer: '3:40' },
       { titel: 'Analysemethoden passend wählen', datei: 'assets/audio/gruber-1-b-analyse.mp3', dauer: '3:44' }
     ] },
-    { id: 'gruber-2',    datei: 'gruber-2-beschaffung.html',       fach: 'gruber',   nummer: '1.12–1.23', titel: 'Beschaffung & Bedarfsermittlung',  desc: 'Beschaffungsarten, Kanban, Bedarfsarten, deterministisch/stochastisch, Mittelwerte, Glättung, Bestellverfahren, Andler.', audios: [
+    { id: 'gruber-2',    datei: 'gruber-2-beschaffung.html',       fach: 'gruber',   nummer: '1.12–1.23', titel: 'Beschaffung & Bedarfsermittlung',  desc: 'Beschaffungsarten, Kanban, Bedarfsarten, deterministisch/stochastisch, Mittelwerte, Glättung, Bestellverfahren, Andler.', heft: 'assets/hefte/gruber-2-beschaffung.pdf', audios: [
       { titel: 'Bedarf und Beschaffungsart', datei: 'assets/audio/gruber-2-a-beschaffung.mp3', dauer: '3:42' },
       { titel: 'Prognosen und Bestellentscheidungen', datei: 'assets/audio/gruber-2-b-prognose.mp3', dauer: '3:43' }
     ] },
-    { id: 'gruber-3',    datei: 'gruber-3-lager-transport.html',   fach: 'gruber',   nummer: '1.24–1.36', titel: 'Produktion, Lager & Distribution', desc: 'Produktions-, Distributions- und Transportlogistik, Lagerarten, FIFO/LIFO, Kennzahlen, Kommissionierung, Verpackung, Entsorgung.', audios: [
+    { id: 'gruber-3',    datei: 'gruber-3-lager-transport.html',   fach: 'gruber',   nummer: '1.24–1.36', titel: 'Produktion, Lager & Distribution', desc: 'Produktions-, Distributions- und Transportlogistik, Lagerarten, FIFO/LIFO, Kennzahlen, Kommissionierung, Verpackung, Entsorgung.', heft: 'assets/hefte/gruber-3-lager-transport.pdf', audios: [
       { titel: 'Der Weg der Ware', datei: 'assets/audio/gruber-3-a-logistikkette.mp3', dauer: '3:30' },
       { titel: 'Lagerkennzahlen und Kundenauftrag', datei: 'assets/audio/gruber-3-b-lagerkennzahlen.mp3', dauer: '3:39' }
     ] },
-    { id: 'gruber-4',    datei: 'gruber-4-strategie.html',         fach: 'gruber',   nummer: '2.1–2.3', titel: 'Strategie, IT & Projekte',           desc: 'Visionen & Ziele, FMEA, QFD, Audits, Ausschreibung, ERP/APS, Organisationsformen, Kultur, Projektmanagement.', audios: [
+    { id: 'gruber-4',    datei: 'gruber-4-strategie.html',         fach: 'gruber',   nummer: '2.1–2.3', titel: 'Strategie, IT & Projekte',           desc: 'Visionen & Ziele, FMEA, QFD, Audits, Ausschreibung, ERP/APS, Organisationsformen, Kultur, Projektmanagement.', heft: 'assets/hefte/gruber-4-strategie.pdf', audios: [
       { titel: 'Anforderungen, Risiken und IT', datei: 'assets/audio/gruber-4-a-planung-it.mp3', dauer: '3:34' },
       { titel: 'Ein Logistikprojekt planen', datei: 'assets/audio/gruber-4-b-projekt.mp3', dauer: '3:34' }
     ] },
-    { id: 'gruber-5',    datei: 'gruber-5-vergabe.html',           fach: 'gruber',   nummer: '3–3.1.4', titel: 'Vergabe von Dienstleistungen & Verträge', desc: 'Outsourcing & Make or Buy, Outsourcing-Phasen, Standardisierung, Internetauktion, Ausschreibung, öffentliches Vergaberecht, Vertragsarten, Liefervertrag, Mustervertrag.', audios: [
+    { id: 'gruber-5',    datei: 'gruber-5-vergabe.html',           fach: 'gruber',   nummer: '3–3.1.4', titel: 'Vergabe von Dienstleistungen & Verträge', desc: 'Outsourcing & Make or Buy, Outsourcing-Phasen, Standardisierung, Internetauktion, Ausschreibung, öffentliches Vergaberecht, Vertragsarten, Liefervertrag, Mustervertrag.', heft: 'assets/hefte/gruber-5-vergabe.pdf', audios: [
       { titel: 'Make or Buy und Ausschreibung', datei: 'assets/audio/gruber-5-a-outsourcing.mp3', dauer: '3:30' },
       { titel: 'Vertragsarten und öffentliche Vergabe', datei: 'assets/audio/gruber-5-b-vertraege.mp3', dauer: '3:41' }
     ] },
-    { id: 'kroul-0',     datei: 'kroul-0-einfuehrung.html',        fach: 'kroul',    nummer: 'Kapitel 0', titel: 'Einführung in die Logistik',       desc: 'Prüfungsstruktur, Entwicklung der Logistik, Definition, 7 R, Fachdisziplinen, xPL, OPP, SCM, Bullwhip.', audios: [
+    { id: 'kroul-0',     datei: 'kroul-0-einfuehrung.html',        fach: 'kroul',    nummer: 'Kapitel 0', titel: 'Einführung in die Logistik',       desc: 'Prüfungsstruktur, Entwicklung der Logistik, Definition, 7 R, Fachdisziplinen, xPL, OPP, SCM, Bullwhip.', heft: 'assets/hefte/kroul-0-einfuehrung.pdf', audios: [
       { titel: 'Grundbegriffe und logistische Kette', datei: 'assets/audio/kroul-0-einfuehrung.mp3', dauer: '3:37' }
     ] },
-    { id: 'kroul-1',     datei: 'kroul-1-changemanagement.html',   fach: 'kroul',    nummer: '1.1–1.2',  titel: 'Veränderungsprozesse gestalten',   desc: 'Changemanagement, Kondratieff, PDCA, Arten des Wandels, Kotter, Lewin, Streich, Krüger, Widerstände.', audios: [
+    { id: 'kroul-1',     datei: 'kroul-1-changemanagement.html',   fach: 'kroul',    nummer: '1.1–1.2',  titel: 'Veränderungsprozesse gestalten',   desc: 'Changemanagement, Kondratieff, PDCA, Arten des Wandels, Kotter, Lewin, Streich, Krüger, Widerstände.', heft: 'assets/hefte/kroul-1-changemanagement.pdf', audios: [
       { titel: 'Wandel gestalten', datei: 'assets/audio/kroul-1-a-wandel.mp3', dauer: '3:34' },
       { titel: 'Widerstand verstehen', datei: 'assets/audio/kroul-1-b-widerstand.mp3', dauer: '3:17' }
     ] },
-    { id: 'kroul-2',     datei: 'kroul-2-zweck-und-ziel.html',      fach: 'kroul',    nummer: '1.3',     titel: 'Zweck und Ziel der Veränderung vermitteln', desc: 'Warum Changeprojekte scheitern, Kotters typische Fehler, der 7-Stufen-Fahrplan, Mitarbeiterbeteiligung, Widerstände erkennen und überwinden, Top-down und Bottom-up.', audios: [
+    { id: 'kroul-2',     datei: 'kroul-2-zweck-und-ziel.html',      fach: 'kroul',    nummer: '1.3',     titel: 'Zweck und Ziel der Veränderung vermitteln', desc: 'Warum Changeprojekte scheitern, Kotters typische Fehler, der 7-Stufen-Fahrplan, Mitarbeiterbeteiligung, Widerstände erkennen und überwinden, Top-down und Bottom-up.', heft: 'assets/hefte/kroul-2-zweck-und-ziel.pdf', audios: [
       { titel: 'Beteiligung und klare Ziele', datei: 'assets/audio/kroul-2-beteiligung.mp3', dauer: '3:44' }
     ] },
-    { id: 'gruchala-1',  datei: 'gruchala-1-kommunikation.html',   fach: 'gruchala', nummer: 'Kap. 1',  titel: 'Kommunikation',                      desc: 'Watzlawick, Schulz von Thun, Feedback, Moderation, Konflikte, Mobbing, Präsentation, interkulturell.', audios: [
+    { id: 'gruchala-1',  datei: 'gruchala-1-kommunikation.html',   fach: 'gruchala', nummer: 'Kap. 1',  titel: 'Kommunikation',                      desc: 'Watzlawick, Schulz von Thun, Feedback, Moderation, Konflikte, Mobbing, Präsentation, interkulturell.', heft: 'assets/hefte/gruchala-1-kommunikation.pdf', audios: [
       { titel: 'Eine Nachricht, mehrere Deutungen', datei: 'assets/audio/gruchala-1-a-kommunikation.mp3', dauer: '3:13' },
       { titel: 'Konflikte moderieren und Ergebnisse zeigen', datei: 'assets/audio/gruchala-1-b-konflikt.mp3', dauer: '3:32' }
     ] },
-    { id: 'gruchala-2',  datei: 'gruchala-2-personal.html',        fach: 'gruchala', nummer: 'Kap. 2',  titel: 'Personal & Planung',                 desc: 'Handlungskompetenzen, Personalbedarf, Beschaffung, Auswahl, Personalmarketing, Employer Branding.', audios: [
+    { id: 'gruchala-2',  datei: 'gruchala-2-personal.html',        fach: 'gruchala', nummer: 'Kap. 2',  titel: 'Personal & Planung',                 desc: 'Handlungskompetenzen, Personalbedarf, Beschaffung, Auswahl, Personalmarketing, Employer Branding.', heft: 'assets/hefte/gruchala-2-personal.pdf', audios: [
       { titel: 'Personalbedarf bestimmen', datei: 'assets/audio/gruchala-2-a-personalbedarf.mp3', dauer: '3:29' },
       { titel: 'Die passende Person auswählen', datei: 'assets/audio/gruchala-2-b-auswahl.mp3', dauer: '3:26' }
     ] },
-    { id: 'gruchala-3',  datei: 'gruchala-3-arbeitsrecht.html',    fach: 'gruchala', nummer: 'Kap. 3',  titel: 'Arbeitszeit & Mitbestimmung',        desc: 'Arbeitszeitgesetz, Arbeitszeitmodelle, Betriebsverfassungsgesetz, Betriebsrat.', audios: [
+    { id: 'gruchala-3',  datei: 'gruchala-3-arbeitsrecht.html',    fach: 'gruchala', nummer: 'Kap. 3',  titel: 'Arbeitszeit & Mitbestimmung',        desc: 'Arbeitszeitgesetz, Arbeitszeitmodelle, Betriebsverfassungsgesetz, Betriebsrat.', heft: 'assets/hefte/gruchala-3-arbeitsrecht.pdf', audios: [
       { titel: 'Einen Schichtplan prüfen', datei: 'assets/audio/gruchala-3-arbeitszeit.mp3', dauer: '3:23' }
     ] },
-    { id: 'gruchala-4',  datei: 'gruchala-4-fuehrung.html',        fach: 'gruchala', nummer: 'Kap. 4',  titel: 'Führung & Motivation',               desc: 'Führungsstile, Blake & Mouton, Hersey & Blanchard, Maslow & Co., Führungsinstrumente, Management-by, Tuckman.', audios: [
+    { id: 'gruchala-4',  datei: 'gruchala-4-fuehrung.html',        fach: 'gruchala', nummer: 'Kap. 4',  titel: 'Führung & Motivation',               desc: 'Führungsstile, Blake & Mouton, Hersey & Blanchard, Maslow & Co., Führungsinstrumente, Management-by, Tuckman.', heft: 'assets/hefte/gruchala-4-fuehrung.pdf', audios: [
       { titel: 'Führen passend zur Situation', datei: 'assets/audio/gruchala-4-a-fuehrung.mp3', dauer: '3:17' },
       { titel: 'Teams, Ziele und Gespräche', datei: 'assets/audio/gruchala-4-b-team.mp3', dauer: '3:29' }
     ] },
-    { id: 'gruchala-5',  datei: 'gruchala-5-ausbildung.html',      fach: 'gruchala', nummer: 'Kap. 5–7', titel: 'Ausbildung & Arbeitsschutz',        desc: 'BBiG, Lehrmethoden, Prüfung, berufliche Entwicklung, Arbeitsschutz, Gefährdungsbeurteilung, STOP-Prinzip.', audios: [
+    { id: 'gruchala-5',  datei: 'gruchala-5-ausbildung.html',      fach: 'gruchala', nummer: 'Kap. 5–7', titel: 'Ausbildung & Arbeitsschutz',        desc: 'BBiG, Lehrmethoden, Prüfung, berufliche Entwicklung, Arbeitsschutz, Gefährdungsbeurteilung, STOP-Prinzip.', heft: 'assets/hefte/gruchala-5-ausbildung.pdf', audios: [
       { titel: 'Lernen im Betrieb begleiten', datei: 'assets/audio/gruchala-5-a-ausbildung.mp3', dauer: '3:23' },
       { titel: 'Arbeitsschutz im Lager', datei: 'assets/audio/gruchala-5-b-arbeitsschutz.mp3', dauer: '3:24' }
     ] },
-    { id: 'mathe',       datei: 'mathe-grundlagen.html',           fach: 'werkzeug', nummer: 'Basis',   titel: 'Mathe-Grundlagen',                   desc: 'Rechenreihenfolge, Brüche, Prozent, Wurzeln, Gleichungen umstellen – von Null an erklärt.', audios: [
+    { id: 'mathe',       datei: 'mathe-grundlagen.html',           fach: 'werkzeug', nummer: 'Basis',   titel: 'Mathe-Grundlagen',                   desc: 'Rechenreihenfolge, Brüche, Prozent, Wurzeln, Gleichungen umstellen – von Null an erklärt.', heft: 'assets/hefte/mathe-grundlagen.pdf', audios: [
       { titel: 'Rechenaufgaben ruhig sortieren', datei: 'assets/audio/mathe-grundlagen.mp3', dauer: '3:45' }
     ] },
     { id: 'formeln',     datei: 'formelsammlung.html',             fach: 'werkzeug', nummer: 'Referenz', titel: 'Formelsammlung',                    desc: 'Alle prüfungsrelevanten Formeln mit Bedeutung, Einheiten und Rechenbeispiel.' },
@@ -261,8 +261,8 @@
     if (!eintrag) return;
     if (eintrag.heft) {
       var heft = el('div', 'lernheft-box');
-      heft.appendChild(el('strong', '', 'Ausfüllbares Lernheft · Grundlagen und Kapitel ' + K.nummer));
-      heft.appendChild(el('span', '', 'Kurze Erklärungen, 28 Notizfelder und freie Seiten für den Unterricht. Zum Bearbeiten die PDF herunterladen und in einer PDF-App öffnen.'));
+      heft.appendChild(el('strong', '', eintrag.id === 'plab-1' ? 'Ausfüllbares Lernheft · Grundlagen und Kapitel 1.1' : 'Ausfüllbares Unterrichtsheft · ' + K.titel));
+      heft.appendChild(el('span', '', eintrag.id === 'plab-1' ? 'Kurze Erklärungen, 28 Notizfelder und freie Seiten für den Unterricht. Zum Bearbeiten die PDF herunterladen und in einer PDF-App öffnen.' : 'Eine Notizseite pro Abschnitt mit Kernaussage und Abruffragen. Lade die PDF herunter, fülle sie in einer PDF-App aus und speichere sie lokal.'));
       var heftLink = el('a', '', 'PDF herunterladen');
       heftLink.href = eintrag.heft;
       heftLink.download = '';

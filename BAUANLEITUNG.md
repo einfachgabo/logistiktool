@@ -267,6 +267,8 @@ fehlende Selbstabfragen, Quizfragen ohne richtige Antwort).
 
 **Ausfüllbares Lernheft:** Eine selbst verfasste PDF unter `assets/hefte/` ablegen und im passenden Eintrag von `KAPITEL_LISTE` mit `heft` verknüpfen. Vor der Veröffentlichung prüfen, dass keine Originalfolien und keine privaten Unterrichtsnotizen enthalten sind.
 
+Die 17 neuen Kapitelhefte erzeugt `python tools/generate_workbooks.py` aus dem Lernportal. Jedes Heft hat eine ausfüllbare Seite pro Abschnitt mit Kernaussage, bis zu zwei Abruffragen, Notizfeld und Statusfeldern. Nach Änderungen am Kapitel das zugehörige Heft neu erzeugen und die PDF visuell prüfen. Das Heft zu Plabs Kapitel 1.1 ist separat gestaltet.
+
 ---
 
 ## 8. Was ausdrücklich verboten ist

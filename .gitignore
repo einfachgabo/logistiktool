@@ -2,3 +2,5 @@ quellen/
 alt/
 .DS_Store
 .podcast-build/
+tmp/
+__pycache__/

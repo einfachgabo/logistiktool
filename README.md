@@ -19,7 +19,7 @@ direkt über GitHub Pages.
 | `assets/portal.css` | das gesamte Design |
 | `assets/portal.js` | die Engine: Navigation, Notizen, Lernstand, Quiz, Karteikarten |
 | `assets/audio/` | 34 kurze Hörfolgen zu allen 18 Lernkapiteln und die bisherige Gesamtfolge |
-| `assets/hefte/` | ausfüllbare Lernhefte als PDF; bisher Grundlagen und Kapitel 1.1 |
+| `assets/hefte/` | ausfüllbare Unterrichtshefte als PDF zu allen 18 Lernkapiteln |
 | `podcasts/manuskripte/` | bearbeitbare Texte der Hörfolgen |
 | `podcasts/lesen.html` | lesefreundliche Ansicht der Manuskripte mit PDF-Druck |
 
@@ -33,7 +33,7 @@ direkt über GitHub Pages.
 * **Unterrichtsansicht** – zeigt Abschnittstitel, Status und das Notizfeld; der Volltext bleibt erreichbar.
 * **5 Fragen üben** – Antworten erst selbst abrufen. Nach der Selbsteinschätzung erscheinen Karten nach 1, 3, 7, 14, 30 oder 60 Tagen wieder. Diese Abstände sind eine praktische Voreinstellung.
 * **Hörfolgen** – alle Lernkapitel haben einen oder mehrere kurze Teile. Im Player kannst du die MP3 herunterladen oder den Text lesen und als PDF sichern.
-* **Lernheft** – die PDF-Datei aus dem Kapitel herunterladen, in einer PDF-App ausfüllen und lokal speichern. Die Notizen in der Website bleiben getrennt davon.
+* **Lernheft** – jedes Lernkapitel hat ein ausfüllbares PDF mit kurzer Kernaussage, Abruffragen und Notizfeld pro Abschnitt. Das Heft herunterladen, in einer PDF-App ausfüllen und lokal speichern. Die Notizen in der Website bleiben getrennt davon.
 
 ## Wichtig: Notizen sichern
 
@@ -64,3 +64,5 @@ Das Portal nutzt kurze Selbsttests und zeitlich verteilte Wiederholungen. Die Au
 Jede Folge hat ein eigenes Manuskript unter `podcasts/manuskripte/` und eine gleichnamige MP3 unter `assets/audio/`. Die MP3s verwenden die KI-generierte Stimme Microsoft Katja Neural. Die neuen Folgen dauern meist drei bis vier Minuten und enthalten ein Praxisbeispiel und zwei Abruffragen. Für breite Kapitel gibt es mehrere Teile. Auch Kapitel 1.1 liegt in drei kurzen Teilen vor; die bisherige Gesamtfolge bleibt erhalten. Die Manuskripte können vor einer Neuaufnahme direkt als Textdatei bearbeitet werden.
 
 Zur Neuerzeugung der MP3s `edge-tts` und `imageio-ffmpeg` installieren, dann `python tools/generate_podcasts.py FOLGENNAME --force` ausführen. Anschließend die Dauer beim Kapitel in `KAPITEL_LISTE` aktualisieren und `python pruefen.py` laufen lassen. Für mehrere Folgen `audios: [{ titel, datei, dauer }, ...]` verwenden. Die bestehenden Felder `audio` und `audioDauer` bleiben für ältere Einzelfolgen gültig. Quellen und redaktionelle Regeln stehen in `podcasts/QUELLEN.md`.
+
+Die 17 weiteren ausfüllbaren Hefte werden mit `python tools/generate_workbooks.py` aus den Kapitelüberschriften, Kernaussagen und Selbstabfragen des Portals erzeugt. Dafür werden `lxml`, `reportlab` und `pypdf` benötigt. Die PDF-Dateien liegen unter `assets/hefte/` und sind in `KAPITEL_LISTE` beim jeweiligen Kapitel verlinkt. Die bisherige PDF zu Kapitel 1.1 bleibt erhalten.
