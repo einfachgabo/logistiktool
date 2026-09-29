@@ -17,6 +17,13 @@ if not block:
 else:
     for m in re.finditer(r"\{\s*id:\s*'([^']+)'.*?datei:\s*'([^']+)'", block.group(1), re.S):
         registriert[m.group(1)] = m.group(2)
+    for asset in re.findall(r"'(assets/(?:audio|hefte)/[^']+)'", block.group(1)):
+        if not os.path.isfile(os.path.join(ROOT, asset)):
+            f('assets/portal.js', f'fehlendes Kapitelmaterial {asset}')
+        if asset.endswith('.mp3'):
+            skript = os.path.join(ROOT, 'podcasts', 'manuskripte', os.path.basename(asset)[:-4] + '.txt')
+            if not os.path.isfile(skript):
+                f('assets/portal.js', f'Podcast ohne Lesetext {asset}')
 
 seiten = sorted(p for p in glob.glob(os.path.join(ROOT, '*.html')))
 alle_dateien = {os.path.basename(p) for p in seiten}

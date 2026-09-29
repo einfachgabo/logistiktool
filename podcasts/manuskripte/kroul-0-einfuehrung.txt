@@ -1,0 +1,19 @@
+Einführung in die Logistik, Kapitel null. Diese Folge ordnet die Grundbegriffe ein, damit du spätere Themen leichter verbinden kannst.
+
+Stell dir ein Unternehmen vor, das Fahrradteile verkauft. Ein Kunde bestellt einen Reifen. Auf dem Weg vom Lieferanten zum Kunden wird der Reifen transportiert, umgeschlagen und gelagert. Diese drei Tätigkeiten heißen kurz TUL. Doch damit allein ist die Aufgabe nicht gelöst. Der richtige Artikel muss in passender Menge, zur richtigen Zeit, am richtigen Ort, in passender Qualität und mit passenden Informationen verfügbar sein. Die sogenannten R-Regeln erinnern an diese Bedingungen. Die genaue Zählweise kann je nach Skript variieren; der Gedanke ist immer derselbe: Mehrere Bedingungen müssen gleichzeitig stimmen.
+
+Informationen steuern die physische Kette. Eine Bestellung löst den Auftrag aus. Ein Bestand zeigt, ob Ware verfügbar ist. Ein Scan bestätigt eine Übergabe. Eine Rechnung bildet die wirtschaftliche Seite ab. Logistik verbindet deshalb Material, Daten und Werte. Sie reicht über die Grenzen einer Abteilung und häufig über mehrere Unternehmen hinweg.
+
+Wenn ein Dienstleister Aufgaben übernimmt, begegnen dir die Kürzel mit PL. Ein Transporteur kann eine einzelne Leistung erbringen. Ein stärker eingebundener Logistikdienstleister übernimmt weitere Prozesse, etwa Lagerung, Kommissionierung oder die Koordination einer Kette. Für die Prüfung ist die Kernfrage wichtiger als das Kürzel: Wer plant, wer führt aus, und wer trägt die Verantwortung für die Abstimmung?
+
+Ein weiterer Gedanke ist der Order Penetration Point. Das ist der Punkt, an dem ein konkreter Kundenauftrag in die Leistungserstellung eingreift. Vor diesem Punkt wird eher auf Vorrat gearbeitet, dahinter stärker nach dem konkreten Auftrag. Beim Fahrrad könnte ein Standardrahmen vorproduziert sein, die Farbwahl und Endmontage aber erst nach Bestellung erfolgen. Das nennt man eine späte Festlegung oder Postponement. Der Vorteil: weniger fertige Varianten auf Lager. Der Nachteil: Die letzten Schritte müssen schnell und zuverlässig funktionieren.
+
+Supply Chain Management, kurz SCM, betrachtet mehrere Unternehmen als zusammenhängende Kette. Ein lokaler Vorteil kann der Kette schaden. Wenn jeder Partner aus Vorsicht etwas mehr bestellt, wachsen die Bestellungen nach hinten stärker als die tatsächliche Nachfrage. Das ist der Bullwhip-Effekt. Gemeinsame, aktuelle Informationen und abgestimmte Entscheidungen können ihn dämpfen.
+
+Pausiere jetzt für zwei Fragen.
+
+Erstens: Warum reichen Transportieren, Umschlagen und Lagern ohne gute Informationen nicht aus?
+
+Zweitens: Was ändert sich beim Order Penetration Point, wenn ein Kundenauftrag in die Produktion eingeht?
+
+Wenn du diese Fragen mit dem Fahrradbeispiel erklären kannst, hast du eine gute Landkarte für die nächsten Kapitel. Beim zweiten Hören brauchst du vielleicht nur noch die Fragen am Ende.

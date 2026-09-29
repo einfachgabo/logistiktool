@@ -1,0 +1,21 @@
+Produktion, Lager und Distribution, Teil eins. Folge heute einmal der Ware durch den Betrieb.
+
+Ein Hersteller bekommt Bleche und Schrauben. In der Produktion werden daraus Gehäuse. Fertige Gehäuse gehen ins Lager, später zum Händler und schließlich zum Kunden. Beschaffung, Produktion, Lager, Transport und Distribution sind keine getrennten Inseln. Jede Stufe übernimmt das Ergebnis der vorherigen. Eine verspätete Schraubenlieferung kann die Fertigung stoppen, selbst wenn das Fertigwarenlager hervorragend organisiert ist.
+
+Die Produktionslogistik sorgt dafür, dass Material in richtiger Menge und Reihenfolge an der richtigen Stelle bereitsteht. Zu viel Material an der Linie blockiert Fläche und bindet Kapital. Zu wenig Material stoppt die Arbeit. Die Distributionslogistik übernimmt die Versorgung der nächsten Stufe oder des Kunden. Sie verbindet Lagerstandort, Auftragsbearbeitung, Verpackung und Transport mit dem Serviceversprechen.
+
+Bei der Transportwahl vergleichst du Verkehrsträger und konkrete Ketten. Ein Lkw erreicht viele Ziele direkt. Schiene und Wasser können große Mengen bündeln, brauchen aber passende Zugänge und meist einen Vor- und Nachlauf. Luftfracht spart Zeit, ist aber teuer. Eine Entscheidung nur nach Frachtpreis übersieht Umschlag, Laufzeit, Zuverlässigkeit und Schadenrisiko.
+
+Das Lager erfüllt mehrere Funktionen. Es sichert Versorgung, gleicht verschiedene Rhythmen aus und kann Ware sortieren oder für Aufträge zusammenstellen. Je nach Aufgabe braucht es andere Bauweisen, Standorte und Einrichtungen. Ein zentrales Lager kann Bestand bündeln. Ein regionales Lager bringt Ware näher zum Kunden, kostet aber zusätzliche Fläche und häufig mehr Puffer. Entscheidend ist, welchen Ausgleich das Lager im konkreten Prozess leisten soll.
+
+Im Lager selbst helfen Ordnung und Zonung. Schnelldreher gehören oft in gut erreichbare Bereiche, schwere Güter an sichere Plätze. Eine chaotische Lagerung ist nicht ungeordnet, wenn das System jeden Platz zuverlässig kennt. Ein fester Lagerplatz ist nicht automatisch effizient, wenn ein selten genutzter Artikel dauerhaft den besten Platz blockiert.
+
+Denke bei einem Verbesserungsvorschlag an die ganze Kette. Kürzere Wege bei der Kommissionierung können gut sein. Wenn die Packstation danach zum Engpass wird, ist die Gesamtlieferung nicht schneller. Messen solltest du deshalb Durchlaufzeit, Fehler, Bestand und Kosten über die Übergaben hinweg.
+
+Jetzt zwei Fragen. Pausiere.
+
+Erstens: Welche Folgen kann eine verspätete Schraubenlieferung bis zum Kunden haben?
+
+Zweitens: Warum kann ein regionales Lager die Lieferzeit senken und gleichzeitig die Kapitalbindung erhöhen?
+
+Wenn du beide Wirkungen nennen kannst, bist du bei einer Bewertungsaufgabe schon einen großen Schritt weiter.

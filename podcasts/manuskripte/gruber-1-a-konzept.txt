@@ -1,0 +1,21 @@
+Logistikkonzepte und Analysemethoden, Teil eins. Heute bauen wir ein Logistikkonzept aus einem konkreten Problem.
+
+Ein Händler wächst. Mehr Aufträge kommen herein, aber die Ware erreicht Kunden oft zu spät. Der erste Reflex lautet: Wir brauchen ein größeres Lager. Das kann richtig sein, muss es aber nicht. Vielleicht fehlen aktuelle Bestandsdaten. Vielleicht warten Pakete lange an der Packstation. Vielleicht verspricht der Vertrieb Termine, die der Einkauf nicht halten kann. Ein Logistikkonzept beginnt deshalb mit einer Analyse des gesamten Ablaufs.
+
+Die Bereiche Beschaffung, Produktion, Lager, Transport, Distribution und Entsorgung greifen ineinander. Je nach Betrieb sind manche größer, andere kleiner. Entscheidend ist die Verbindung. Material bewegt sich, Informationen steuern die Bewegung, und Kosten oder Erlöse zeigen die wirtschaftliche Wirkung. Wenn du nur einen Bereich optimierst, kann der Engpass an die nächste Stelle wandern.
+
+Am Anfang stehen Anforderungen interner und externer Kunden. Extern ist etwa die zugesagte Lieferzeit. Intern braucht die Kommissionierung klare Aufträge und richtig gebuchte Bestände. Frage daher bei jeder Anforderung: Wer braucht welches Ergebnis, in welcher Qualität, bis wann? Erst danach legst du Maßnahmen fest.
+
+Ein Konzept beschreibt die Ausgangslage, Ziele, Varianten, Entscheidung und Kontrolle. Beim Händler könnte Variante eins ein zweites Lager sein. Variante zwei verbessert den Informationsfluss und die Pickwege. Variante drei nutzt einen Dienstleister für den Versand. Jede Variante hat andere Kosten, Risiken und Voraussetzungen. Eine gute Empfehlung erklärt, warum sie im konkreten Fall passt.
+
+Wertschöpfung hilft, den Nutzen einer Aktivität zu beurteilen. Ware mehrfach suchen, umpacken und wieder abstellen kostet Zeit, ohne den Kundennutzen zu erhöhen. Die Wertstromanalyse macht solche Wege und Wartezeiten sichtbar. Der Begriff Muda steht für Verschwendung. Dabei geht es nicht darum, jede Unterstützungsarbeit zu streichen. Eine Qualitätskontrolle kann notwendig sein, obwohl sie die Ware nicht physisch verändert.
+
+Auch die Belieferungsstrategie gehört zum Konzept. Soll Ware aus einem zentralen Lager kommen, aus regionalen Lagern oder direkt vom Lieferanten? Zentralisierung kann Bestände bündeln, aber Lieferwege verlängern. Dezentrale Lager können schneller sein, brauchen meist mehr Bestand und Abstimmung. Entscheide anhand von Artikeln, Nachfrage, Serviceversprechen und Kosten.
+
+Jetzt zwei Fragen. Pausiere kurz.
+
+Erstens: Welche drei Ursachen für verspätete Lieferungen würdest du prüfen, bevor du ein neues Lager vorschlägst?
+
+Zweitens: Warum kann eine notwendige Qualitätskontrolle keine bloße Verschwendung sein?
+
+Wenn du eine Maßnahme erst nach einer Analyse begründest, denkst du bereits in Logistikkonzepten.

@@ -1,0 +1,19 @@
+Kapitel 1.1, Teil drei. Lieferkette, Umfeld und Organisation.
+
+Kommen wir zur Supply Chain. Supply Chain Management verbindet die Prozesse vom Lieferanten bis zum Endkunden. Es betrachtet den Materialfluss, den Informationsfluss und den Geldfluss gemeinsam. Das Ziel ist ein guter Gesamtprozess mit angemessenen Beständen, kurzen Durchlaufzeiten und zuverlässiger Versorgung.
+
+Der Bullwhip-Effekt, also der Peitscheneffekt, zeigt, was bei fehlender Abstimmung passiert. Beim Endkunden steigt die Nachfrage vielleicht nur leicht. Der Händler bestellt vorsichtshalber etwas mehr. Der Großhändler erhöht zusätzlich. Der Hersteller interpretiert die große Bestellung als starken Marktanstieg und plant noch mehr. Kleine Schwankungen werden entlang der Lieferkette immer größer.
+
+Typische Ursachen sind verzögerte Informationen, Sicherheitszuschläge, große Bestelllose, Verkaufsaktionen und fehlende Transparenz. Gegenmaßnahmen sind gemeinsame aktuelle Daten, abgestimmte Prognosen, kleinere Lose, kürzere Lieferzeiten und klarer Austausch zwischen den Partnern.
+
+Logistik wird von Umweltfaktoren beeinflusst. Dazu gehören Absatzmarkt, Beschaffungsmarkt, Technologie, Arbeitsmarkt, Wettbewerb, Gesellschaft und Ökologie, Kapitalmarkt und staatliche Regeln. In der Prüfung solltest du den Faktor nicht nur nennen. Erkläre die Wirkung. Hohe Zinsen machen große Bestände und Investitionen teurer. Fachkräftemangel kann für Automatisierung oder Qualifizierung sprechen. Neue Umweltvorgaben können Fahrzeuge, Verpackung oder Lagergebäude verändern.
+
+Daneben gibt es Systemfaktoren wie Produkteigenschaften, Personal, Fläche, Technik, Lager, Transport und Informationssysteme. Lange schwere Bauteile benötigen andere Regale, Flächen und Transportmittel als kleine hochwertige Elektronik. Das Logistiksystem muss zum Gut und zum Prozess passen.
+
+Zum Schluss die Organisation. Die Aufbauorganisation beschreibt Stellen, Hierarchie und Weisungswege. Das Organigramm ist eine typische Darstellung. Die Ablauforganisation beschreibt Reihenfolge, Zeit, Ort und Übergaben eines Prozesses. Eine Prozessbeschreibung ist eine typische Darstellung.
+
+Bei einem Einliniensystem hat jede Stelle einen Vorgesetzten. Das schafft Klarheit, kann aber lange Dienstwege erzeugen. Im Mehrliniensystem können mehrere Fachvorgesetzte Anweisungen geben. Das verkürzt Wege, kann jedoch widersprüchliche Anweisungen verursachen. Im Stabliniensystem beraten Spezialisten die Linie, ohne grundsätzlich selbst Weisungen zu geben.
+
+Eine Spartenorganisation gliedert nach Produkten, Märkten oder Regionen. Sie reagiert oft schnell, kann aber Funktionen doppelt aufbauen. Eine Matrix verbindet zwei Dimensionen, etwa Produkt und Region. Eine Tensororganisation ergänzt eine dritte Dimension. Mit jeder zusätzlichen Dimension steigen mögliche Perspektiven und zugleich Abstimmungsaufwand und Konfliktrisiko.
+
+Zwei Fragen für dich. Wie kann eine kleine Nachfrageschwankung zum Bullwhip-Effekt werden? Und was unterscheidet Aufbauorganisation von Ablauforganisation? Pausiere und finde für beides ein Beispiel aus deinem Betrieb.

@@ -135,8 +135,12 @@ body.unterrichtsmodus section.abschnitt > .notiz-hook .notiz-btn { opacity: 1; }
 .podcast-kicker { color: var(--teal); font-size: 10px; font-weight: 800; letter-spacing: .12em; }
 .podcast-titel { font-size: 17px; line-height: 1.3; margin: .28rem 0 .2rem; }
 .podcast-hinweis { color: var(--text-2); font-size: 12.5px; margin-bottom: .6rem; }
+.podcast-folge { padding: .65rem 0; border-top: 1px solid var(--teal-line); }
+.podcast-folge h3 { display: inline; font-size: 13.5px; margin: 0 .45rem 0 0; }
+.podcast-dauer { color: var(--text-3); font-size: 11.5px; }
 .podcast-player { display: block; width: 100%; height: 42px; }
 .podcast-download { display: inline-block; margin-top: .45rem; color: var(--teal); font-size: 12px; font-weight: 700; }
+.podcast-leselink { display: inline-block; margin: .45rem 0 0 1rem; color: var(--teal); font-size: 12px; font-weight: 700; }
 
 .flussbild { border: 1px solid var(--border); border-radius: var(--radius); background: var(--surface); padding: .9rem; margin: 1rem 0 1.3rem; }
 .flussbild-orte { display: grid; grid-template-columns: repeat(3, 1fr); text-align: center; color: var(--text-2); font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: .06em; margin: 0 0 .55rem; }
@@ -435,6 +439,12 @@ footer.portal-foot { text-align: center; padding: 2rem 1rem 3rem; font-size: 12p
 @media (max-width: 900px) {
   body.mit-sidebar { display: block; }
   aside.sidebar { position: static; width: 100%; min-width: 0; height: auto; max-height: 62vh; }
+  aside.sidebar .sb-head { padding: .65rem .9rem .5rem; }
+  aside.sidebar .sb-back { margin-bottom: .2rem; }
+  aside.sidebar .sb-dozent { display: none; }
+  aside.sidebar .sb-progress { padding: .4rem .9rem .55rem; }
+  aside.sidebar .sb-foot { margin-top: 0; padding: .35rem .7rem .5rem; flex-direction: row; flex-wrap: wrap; gap: .15rem .45rem; }
+  aside.sidebar .sb-foot a, aside.sidebar .sb-foot button { width: auto; font-size: 11px; padding: .25rem .3rem; }
   aside.sidebar .sb-nav { display: none; }
   aside.sidebar.auf .sb-nav, aside.sidebar.auf .sb-gruppe { display: block; }
   aside.sidebar .sb-gruppe { display: none; }

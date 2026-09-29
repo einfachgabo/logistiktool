@@ -1,0 +1,21 @@
+Beschaffung und Bedarfsermittlung, Teil zwei. Prognosen und Bestellentscheidungen verständlich verbunden.
+
+Bei einem Teil mit festem Produktionsplan kannst du den Bedarf aus Stücklisten ableiten. Du weißt, wie viele Endprodukte geplant sind und wie viele Teile jedes Produkt braucht. Das ist deterministische Bedarfsermittlung. Wenn die Nachfrage nicht feststeht, schaust du auf vergangene Verbräuche und schätzt die Zukunft. Das ist stochastische Bedarfsermittlung. Beide Wege können Fehler enthalten; sie nutzen nur verschiedene Informationen.
+
+Stell dir vor, ein Ersatzteil wurde in den letzten Monaten in den Mengen zehn, zwölf, elf und dreißig verkauft. Ein einfacher Durchschnitt wird durch die dreißig stark angehoben. War dieser Monat eine einmalige Aktion? Dann solltest du ihn nicht unbesehen fortschreiben. Ein gleitender Mittelwert bezieht nur die jüngsten Zeiträume ein. Ein gewogener Mittelwert gibt einzelnen Monaten mehr Gewicht. Exponentielle Glättung aktualisiert die Schätzung fortlaufend und lässt neuere Beobachtungen stärker wirken. Keine Methode ersetzt die Frage, warum die Werte schwanken.
+
+Die Prognose führt zur Bestellregel. Beim Bestellpunktverfahren wird bestellt, wenn der Bestand einen festgelegten Punkt erreicht. Dieser Punkt muss Verbrauch während der Lieferzeit und einen passenden Sicherheitsbestand abdecken. Beim Bestellrhythmusverfahren prüfst oder bestellst du zu festen Terminen. Das kann Abläufe bündeln, verlangt aber einen Puffer bis zum nächsten Termin. Welches Verfahren passt, hängt von Verbrauch, Lieferzeit, Aufwand und Risiko ab.
+
+Dann stellt sich die Frage nach der Bestellmenge. Viele kleine Bestellungen senken den durchschnittlichen Bestand, verursachen aber öfter Bestellaufwand. Große Bestellungen sparen Vorgänge oder Mengenrabatte, erhöhen jedoch Lagerkosten und Kapitalbindung. Die Andlersche Formel beschreibt einen rechnerischen Ausgleich zwischen Bestell- und Lagerhaltungskosten unter vereinfachten Annahmen. In der Praxis musst du prüfen, ob diese Annahmen für den Fall überhaupt passen.
+
+Ein Beispiel aus dem Alltag: Ein günstiger Standardartikel mit gleichmäßigem Verbrauch eignet sich eher für eine einfache regelmäßige Regel. Ein seltenes, teures Teil mit unregelmäßiger Nachfrage braucht eine bewusstere Entscheidung. Ein hoher Sicherheitsbestand kann dort teuer sein. Ein Fehlbestand kann aber eine Maschine stilllegen. Der wirtschaftlich richtige Bestand ergibt sich erst aus beiden Seiten.
+
+Wenn du eine Aufgabe löst, trenne drei Fragen. Wie hoch ist der Bedarf? Wann wird bestellt? Wie viel wird bestellt? Viele Fehler entstehen, weil diese drei Antworten in einen Topf geworfen werden.
+
+Zum Schluss zwei Abruffragen. Pausiere die Folge.
+
+Erstens: Wann nutzt du eine Stückliste, wann eine Verbrauchsprognose?
+
+Zweitens: Was passiert mit Bestellkosten und Lagerkosten, wenn du sehr große Mengen auf einmal bestellst?
+
+Wenn du den Zielkonflikt erklären kannst, ist die Formel später leichter zu merken.

@@ -1,0 +1,21 @@
+Kapitel 1.3, Teil zwei. Analysieren und bewerten. Dieses Kapitel enthält viele Methoden. Du musst sie nicht als isolierte Liste lernen. Jede Methode beantwortet eine andere Frage.
+
+Nimm einen Händler mit fünftausend Artikeln. Er möchte Bestände senken, ohne wichtige Kunden zu verlieren. Zuerst fragt er: Welche Artikel sind wirtschaftlich besonders bedeutsam? Dafür eignet sich die ABC-Analyse. A-Artikel haben einen hohen Anteil am betrachteten Wert, obwohl es oft vergleichsweise wenige sind. Aber der Wert allein zeigt nicht, wie gut sich der Bedarf vorhersagen lässt. Dafür hilft die XYZ-Analyse: X bedeutet gleichmäßiger, Z unregelmäßiger Verbrauch. Zusammen zeigen beide Analysen, wo sorgfältige Planung lohnt und wo Standardregeln gefährlich werden.
+
+Jetzt will der Händler zwischen zwei Lagerkonzepten wählen. Ein Konzept kostet weniger, das andere ist schneller und robuster. Hier kann eine Nutzwertanalyse helfen. Er legt Kriterien fest, gewichtet sie und bewertet die Alternativen. Das Ergebnis ist eine Entscheidungshilfe, keine Wahrheit aus dem Taschenrechner. Wer die Gewichte ändert, kann das Ergebnis ändern. Deshalb müssen die Kriterien aus dem Ziel und dem konkreten Fall kommen.
+
+Für eine strategische Frage reicht der Blick auf einzelne Artikel nicht. Die SWOT-Analyse ordnet Stärken und Schwächen des eigenen Unternehmens sowie Chancen und Risiken aus dem Umfeld. Erst die Verbindung der Felder macht daraus eine Handlungsoption. Eine Stärke wie gute IT kann helfen, eine Chance wie neue Onlinekunden zu nutzen. Eine Schwäche wie zu wenig Lagerfläche kann bei steigender Nachfrage zum Risiko werden.
+
+Wenn die Zukunft unsicher ist, kann man mehrere plausible Szenarien durchdenken. Was passiert bei normalem Absatz? Was bei einem starken Einbruch? Was bei einem Lieferausfall? Die Szenariotechnik ersetzt keine Prognose, aber sie zeigt, ob eine Lösung nur unter einer einzigen Annahme funktioniert. Benchmarking ergänzt den Blick nach außen: Wie machen andere einen vergleichbaren Prozess? Ein bloßer Zahlenvergleich ohne gleiche Definitionen führt allerdings leicht in die Irre.
+
+Im Skript kommen weitere Perspektiven hinzu: Produktlebenszyklus, Portfolios und Balanced Scorecard. Dahinter steht derselbe Grundgedanke. Ein Produkt in der Einführung braucht andere Bestände und Lieferwege als ein Auslaufartikel. Ein Portfolio zeigt, wohin Aufmerksamkeit und Mittel fließen sollen. Eine Balanced Scorecard verhindert, dass nur eine einzige Zahl, etwa Kosten, die Entscheidung steuert.
+
+Merke dir für die Prüfung nicht zuerst das Schaubild einer Methode. Frage: Welches Problem soll gelöst werden? Geht es um Artikelprioritäten, um die Unsicherheit der Nachfrage, um die Auswahl zwischen Alternativen oder um eine strategische Lage? Dann wählst du ABC, XYZ, Nutzwert oder SWOT passend aus und begründest diese Wahl.
+
+Zwei Fragen zum Abschluss. Pausiere die Folge.
+
+Erstens: Was ergänzt die XYZ-Analyse, das die ABC-Analyse allein nicht zeigt?
+
+Zweitens: Warum darfst du das Ergebnis einer Nutzwertanalyse nicht ohne Blick auf die Gewichte übernehmen?
+
+Wenn du diese Unterschiede selbst erklären kannst, musst du weniger Methodennamen auswendig lernen. Du erkennst im Fall, welches Werkzeug du brauchst.

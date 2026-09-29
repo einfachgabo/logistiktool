@@ -1,0 +1,21 @@
+Kapitel 2.1, Teil eins. Von der Lage zur Logistikstrategie.
+
+Eine Strategie ist eine begründete Richtung für längerfristige Entscheidungen. Sie beginnt nicht bei der Frage, welche Software man kaufen möchte. Sie beginnt bei der Ausgangslage und bei einem Ziel. Stell dir einen regionalen Ersatzteilhändler vor: Kunden erwarten Lieferung am nächsten Tag, der Bestand bindet viel Geld, und neue Anbieter konkurrieren online. Was soll das Unternehmen in drei Jahren zuverlässig leisten können? Diese Frage steht vor jeder Maßnahme.
+
+Zuerst klärst du, wer von der Strategie betroffen ist. Kunden wollen Verfügbarkeit. Die Geschäftsführung achtet auf Ergebnis und Risiko. Mitarbeitende brauchen machbare Prozesse. Lieferanten müssen Daten und Termine liefern. Eine Stakeholderanalyse macht diese Interessen sichtbar. Sie hilft auch, Zielkonflikte früh zu erkennen. Eine Strategie, die nur einen Beteiligten betrachtet, scheitert oft bei der Umsetzung.
+
+Danach trennst du Außen und Innen. Außen liegen Markt, Wettbewerb, Technik, Regeln und gesellschaftliche Erwartungen. Innen liegen Fähigkeiten, Ressourcen, Organisation und Prozesse. In der SWOT-Analyse werden daraus Chancen und Risiken sowie Stärken und Schwächen. Wichtig ist die Kombination. Eine gute IT ist erst dann strategisch wertvoll, wenn sie eine konkrete Chance erschließt oder ein Risiko mindert. Ein wachsender Markt ist nicht automatisch eine Chance, wenn Kapazität und Lieferfähigkeit fehlen.
+
+Für den Ersatzteilhändler könnte eine Stärke die hohe Datenqualität im Artikelstamm sein. Eine Chance wäre ein digitaler Bestellkanal für Werkstätten. Eine Schwäche ist die langsame Kommissionierung. Ein Risiko sind Lieferausfälle bei einem einzigen wichtigen Hersteller. Daraus lassen sich unterschiedliche Maßnahmen ableiten: Bestellkanal ausbauen, Pickwege verbessern und einen zweiten Bezugsweg prüfen. Die Maßnahmen gehören zusammen, weil sie dasselbe Ziel bedienen: verlässliche Versorgung mit vertretbarer Kapitalbindung.
+
+Anschließend werden Alternativen bewertet. Kosten allein reichen nicht. Prüfe Wirkung auf Lieferzeit, Qualität, Bestand, Investition, Risiko und Umsetzbarkeit. Wenn du eine Empfehlung gibst, nenne die Voraussetzungen. Ein zweites Lager kann Lieferzeiten verkürzen, braucht aber zusätzliche Fläche, Personal und Bestand. Eine digitale Anbindung kann Bestände transparenter machen, setzt jedoch saubere Daten und Zusammenarbeit voraus.
+
+Eine Strategie ist erst vollständig, wenn man ihre Wirkung später prüfen kann. Ein Ziel wie „hohe Servicequalität“ braucht messbare Größen, etwa Termintreue, Verfügbarkeit und Fehlerquote. Daneben gehören Kosten und Bestände. So siehst du, ob eine Verbesserung an einer Stelle eine Verschlechterung an anderer Stelle erzeugt.
+
+Pausiere jetzt für zwei Fragen.
+
+Erstens: Was gehört bei SWOT nach innen, was nach außen?
+
+Zweitens: Welche Gegenwirkung kann ein zusätzliches Lager bei kürzerer Lieferzeit haben?
+
+Antworte mit dem Händlerbeispiel. Wenn du Ursache, Maßnahme und Gegenwirkung verbinden kannst, hast du den strategischen Gedankengang verstanden.

@@ -1,0 +1,21 @@
+Mathe-Grundlagen für den Fachwirt. Diese Folge hilft dir, Rechenaufgaben ruhig zu sortieren, bevor du Zahlen eintippst.
+
+Viele Fehler entstehen nicht, weil jemand „kein Mathe kann“, sondern weil die Frage und die Einheiten unklar bleiben. Nimm eine Lageraufgabe: Ein Artikel kostet achtzig Euro, der Preis steigt um zehn Prozent. Zehn Prozent von achtzig sind acht Euro. Der neue Preis ist achtundachtzig Euro. Wenn er danach um zehn Prozent sinkt, ziehst du zehn Prozent von achtundachtzig ab, also acht Euro achtzig. Du landest bei neunundsiebzig Euro zwanzig, nicht wieder bei achtzig. Der Grundwert hat sich geändert.
+
+Bei Prozentaufgaben frage zuerst: Was ist das Ganze? Welcher Teil ist gesucht? Und ist die Veränderung ein Zuschlag oder Abschlag? Prozentpunkte sind etwas anderes als eine prozentuale Veränderung. Steigt eine Quote von zwanzig auf fünfundzwanzig Prozent, sind das fünf Prozentpunkte. Relativ zum Ausgangswert ist der Anstieg größer. Diese Unterscheidung ist bei Kennzahlen wichtig.
+
+Der Dreisatz hilft, wenn Größen im gleichen Verhältnis wachsen oder fallen. Doppelt so viele gleiche Kartons brauchen bei gleichem Preis doppelt so viel Geld. Mehr Mitarbeitende brauchen für dieselbe einfache Arbeit unter idealen Bedingungen weniger Zeit; das ist ein gegenläufiger Zusammenhang. In echten Prozessen sind solche Annahmen oft nur näherungsweise richtig. Prüfe deshalb, ob der Sachverhalt wirklich proportional ist.
+
+Formeln umstellen funktioniert wie eine Waage. Was du auf einer Seite tust, musst du auf der anderen ebenfalls tun. Steht in einer Formel Kosten gleich Menge mal Preis und du suchst die Menge, teilst du beide Seiten durch den Preis. Setze danach Einheiten ein: Euro geteilt durch Euro je Stück ergibt Stück. Wenn die Einheit nicht passt, stimmt oft der Rechenweg nicht.
+
+Beim Durchschnitt kommt es darauf an, was gemittelt wird. Drei Monatsbestände einfach zu addieren und durch drei zu teilen kann sinnvoll sein, wenn die Zeitabstände gleich sind. Haben Beobachtungen unterschiedliche Gewichte, brauchst du einen gewogenen Mittelwert. Ein häufiger Taschenrechnerfehler ist, Klammern zu vergessen. Schreibe den Rechenweg zuerst auf und überschlage, ob das Ergebnis ungefähr passen kann.
+
+Für jede Aufgabe kannst du fünf Schritte nutzen. Gesucht markieren. Gegebene Zahlen mit Einheiten notieren. Passende Beziehung oder Formel wählen. Einsetzen und rechnen. Ergebnis mit Einheit und Plausibilitätsprüfung hinschreiben. Wenn ein Lagerbestand plötzlich negativ oder ein Prozentsatz unplausibel groß wird, stoppe und prüfe den Ansatz.
+
+Jetzt zwei Fragen. Pausiere die Folge.
+
+Erstens: Warum kommst du nach plus zehn Prozent und minus zehn Prozent nicht zum ursprünglichen Preis zurück?
+
+Zweitens: Welche Einheit muss herauskommen, wenn du Euro durch Euro je Stück teilst?
+
+Mathe wird leichter, wenn du die Bedeutung jeder Zahl kennst. Die Übungen im Portal helfen dir dann, die Schritte selbst zu rechnen.

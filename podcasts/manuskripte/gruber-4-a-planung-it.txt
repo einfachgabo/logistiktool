@@ -1,0 +1,21 @@
+Strategie, IT und Projekte, Teil eins. Wie werden Anforderungen zu einer tragfähigen Lösung?
+
+Ein Unternehmen möchte Bestellungen schneller bearbeiten. Ein Anbieter empfiehlt sofort ein neues IT-System. Bevor du kaufst, brauchst du ein Ziel und eine Beschreibung des Problems. Wo geht Zeit verloren? Bei der Freigabe, bei falschen Stammdaten, bei der Lagerbuchung oder beim Transport? Eine Vision beschreibt die gewünschte Richtung. Ein messbares Ziel sagt, woran du die Verbesserung erkennst.
+
+Kundenanforderungen können in technische Anforderungen übersetzt werden. Dafür behandelt das Skript QFD. Der Grundgedanke: Eine Aussage wie „ich brauche verlässliche Liefertermine“ muss auf konkrete Merkmale des Prozesses zurückgeführt werden, etwa Datenqualität, Verfügbarkeit oder Rückmeldung bei Störungen. Sonst baut das Projekt eine Funktion, die der Kunde gar nicht braucht.
+
+FMEA hilft, mögliche Fehler vor der Einführung zu betrachten. Wo kann der neue Ablauf versagen? Wie schwer wäre die Folge, wie wahrscheinlich der Fehler, und wie gut würde man ihn entdecken? Eine Rangfolge unterstützt die Priorisierung. Sie ersetzt aber keine fachliche Prüfung der Risiken. Ein seltener Fehler mit schwerer Folge kann weiterhin besondere Aufmerksamkeit verlangen.
+
+Audits prüfen, ob festgelegte Anforderungen und Prozesse tatsächlich eingehalten werden. Eine Ausschreibung beschreibt dann klar, welche Leistung ein externer Anbieter erbringen soll. Je ungenauer die Aufgabe, desto schwerer lassen sich Angebote vergleichen. „Wir brauchen ein modernes System“ ist zu vage. „Bestandsänderungen müssen an allen Lagerplätzen zeitnah und nachvollziehbar sichtbar sein“ ist prüfbarer.
+
+Ein ERP-System verbindet betriebliche Daten und Prozesse. Ein APS-System unterstützt eine genauere Planung, etwa bei Kapazitäten und Reihenfolgen. Beide brauchen verlässliche Daten und klare Zuständigkeiten. Ein neues System korrigiert keine widersprüchlichen Artikelstämme von selbst. Datenschutz und IT-Sicherheit gehören deshalb nicht als Zusatz am Ende, sondern als Anforderungen von Anfang an in das Konzept.
+
+Auch die Organisation muss passen. Wer entscheidet über Stammdaten? Wer bearbeitet Ausnahmen? Wie wird ein Fehler gemeldet? Aufbauorganisation beschreibt Zuständigkeiten, Ablauforganisation den Prozess. Unternehmenskultur beeinflusst, ob Mitarbeitende einen Fehler offen melden oder verbergen. Diese weichen und harten Faktoren wirken zusammen.
+
+Zwei Fragen zum Abrufen. Pausiere.
+
+Erstens: Warum solltest du vor der Ausschreibung eines IT-Systems den heutigen Prozess messen?
+
+Zweitens: Was unterscheidet die Fragestellung einer FMEA von der einer QFD?
+
+Wenn du diese Fragen beantworten kannst, siehst du schon, warum gute Planung vor der Technik beginnt.

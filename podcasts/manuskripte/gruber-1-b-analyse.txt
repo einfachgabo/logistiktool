@@ -1,0 +1,23 @@
+Logistikkonzepte und Analysemethoden, Teil zwei. Fünf Werkzeuge, fünf unterschiedliche Fragen.
+
+Ein Großhändler hat tausende Artikel und viele Lieferprobleme. Bevor er handelt, muss er seine Daten ordnen. Die ABC-Analyse fragt: Welche Artikel haben einen hohen Anteil am betrachteten Wert? Die XYZ-Analyse fragt: Wie regelmäßig ist der Verbrauch? Ein teurer Artikel mit schwankender Nachfrage braucht eine andere Planung als ein günstiger Artikel mit gleichmäßigem Verbrauch. Die kombinierte Matrix hilft, diese Fälle zu unterscheiden.
+
+Wenn nicht klar ist, warum ein Prozess stockt, kann ein Ishikawa-Diagramm Ursachen sammeln. In der Mitte steht das Problem, etwa „zu viele Fehlkommissionierungen“. Mögliche Äste sind Mensch, Methode, Material, Maschine oder Umfeld. Das Diagramm beweist keine Ursache. Es sorgt dafür, dass du mehrere Möglichkeiten prüfst, statt die erste Vermutung zur Wahrheit zu machen.
+
+Die GAP-Analyse vergleicht den erwarteten Verlauf mit dem Ziel. Angenommen, die Termintreue steigt ohne Änderungen nur auf zweiundachtzig Prozent, das Ziel sind fünfundneunzig Prozent. Diese Lücke ist der Handlungsbedarf. Die Methode sagt noch nicht, welche Maßnahme die Lücke schließt. Dafür brauchst du die Ursachenanalyse und einen Variantenvergleich.
+
+Die SWOT-Analyse erweitert den Blick. Innen liegen Stärken und Schwächen, außen Chancen und Risiken. Gute Stammdaten sind eine Stärke. Ein neuer Markt kann eine Chance sein. Eine Abhängigkeit von einem einzigen Lieferanten ist eine Schwäche, ein möglicher Ausfall ein Risiko. Erst wenn du diese Felder verbindest, entstehen sinnvolle Strategien.
+
+Beim Benchmarking vergleichst du deinen Prozess mit anderen. Das kann Ideen liefern, aber Zahlen sind nur vergleichbar, wenn sie dasselbe messen. „Kosten je Auftrag“ ist wertlos, wenn ein Unternehmen Retouren und Verpackung einrechnet und das andere nicht. Frage immer nach Definition und Bedingungen.
+
+Nachhaltigkeit gehört ebenfalls in eine Analyse. Eine kürzere Strecke, eine bessere Fahrzeugauslastung oder weniger Ausschuss können Kosten und Umweltwirkung gleichzeitig verbessern. Manchmal entstehen Zielkonflikte, etwa zwischen einer schnellen Einzelsendung und gebündelten Transporten. Eine gute Bewertung nennt diese Wirkung offen.
+
+Welche Methode wählst du nun? Für Artikelprioritäten ABC und XYZ. Für mögliche Ursachen Ishikawa. Für die Lücke zum Ziel GAP. Für die strategische Lage SWOT. Für den Vergleich mit anderen Benchmarking. Merke dir jeweils die Frage, nicht nur den Namen.
+
+Pausiere für zwei Fragen.
+
+Erstens: Warum beantwortet ABC nicht dieselbe Frage wie XYZ?
+
+Zweitens: Welches Werkzeug würdest du zuerst einsetzen, wenn die Ursache vieler Fehlkommissionierungen noch unbekannt ist?
+
+Beim nächsten Hören kannst du versuchen, jedes Werkzeug schon zu nennen, bevor ich es ausspreche.

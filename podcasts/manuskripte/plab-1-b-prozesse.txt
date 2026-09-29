@@ -1,0 +1,15 @@
+Kapitel 1.1, Teil zwei. Prozesse und Leistung.
+
+Ein wichtiger Prüfungsbegriff ist der Prozess. Ein Prozess hat einen Auslöser, einen Input, mehrere zusammenhängende Tätigkeiten und einen Output. Beim Bestellprozess kann das Unterschreiten des Meldebestands der Auslöser sein. Bedarf, Bestandsdaten und Artikeldaten sind Input. Prüfen, bestellen und Termin verfolgen sind Tätigkeiten. Die bestätigte Bestellung oder später die verfügbare Ware ist der Output.
+
+Schnittstellen liegen dort, wo Informationen, Material oder Verantwortung übergeben werden. Genau dort entstehen viele Fehler. Wenn die Arbeitsvorbereitung einen Bedarf in einer Excel-Liste pflegt, der Einkauf aber andere Lieferzeiten im ERP verwendet, haben wir eine kritische Schnittstelle und widersprüchliche Datenquellen.
+
+Prozesse werden in vier Schritten umgesetzt. Erstens gestalten: Zweck und Umfang bestimmen. Zweitens strukturieren: Teilprozesse, Reihenfolge, Schnittstellen und Verantwortung festlegen. Drittens realisieren: einführen und überwachen. Viertens optimieren: Soll und Ist vergleichen, Abweichungen analysieren und gute Abläufe standardisieren.
+
+Jetzt ein besonders wichtiges Begriffspaar. Effektivität bedeutet, die richtigen Dinge zu tun. Effizienz bedeutet, die Dinge mit möglichst wenig Aufwand richtig zu tun. Ein Expressversand, der einen Stillstand verhindert, ist effektiv. Wenn er nur wegen falscher Stammdaten notwendig wurde und zehnmal so viel kostet, war der Gesamtprozess nicht effizient.
+
+Das Skript unterscheidet vier Leistungsarten. Nutzleistung schafft direkten Kundennutzen, zum Beispiel die Montage eines bestellten Produkts. Stützleistung unterstützt diese Leistung, zum Beispiel notwendiges Rüsten oder innerbetrieblicher Transport. Blindleistung entsteht ohne Wertbeitrag, zum Beispiel doppelte Dateneingabe oder unnötige Suche. Fehlleistung war sinnvoll geplant, ist durch einen Fehler aber unbrauchbar, zum Beispiel falsche Kommissionierung oder Ausschuss.
+
+Eine gute Verbesserung reduziert zuerst Blind- und Fehlleistung. Bei Stützleistung musst du vorsichtig sein. Eine Qualitätsprüfung wirkt vielleicht nicht direkt wertsteigernd, kann aber für Sicherheit und Fehlervermeidung unverzichtbar sein.
+
+Zwei Fragen für dich. Worin unterscheiden sich Effektivität und Effizienz? Und welche der vier Leistungsarten würdest du bei einer Verbesserung zuerst reduzieren? Pausiere und erkläre deine Antwort laut.

@@ -1,0 +1,21 @@
+Veränderungsprozesse gestalten, Teil eins. Was ist eigentlich Changemanagement?
+
+Ein Lager stellt von Papierlisten auf Scanner um. Die neue Technik ist nur ein Teil der Veränderung. Wege ändern sich, Fehler werden anders sichtbar, manche Mitarbeitende müssen neue Handgriffe lernen, und Führungskräfte müssen erklären, warum der Ablauf umgestellt wird. Changemanagement ist die bewusste Gestaltung dieses Übergangs. Es betrifft Strukturen, Verhalten und oft die Kultur eines Betriebs.
+
+Der Anlass kann von außen kommen, etwa neue Kundenanforderungen oder ein Wettbewerber. Er kann auch innen liegen, etwa eine hohe Fehlerquote, lange Durchlaufzeit oder eine neue Strategie. Für eine Fallaufgabe musst du zuerst den Anlass und das Ziel trennen. „Wir führen Scanner ein“ ist eine Maßnahme. „Wir senken Fehlbuchungen und machen Bestände verlässlicher“ ist das Ziel.
+
+Der PDCA-Zyklus hilft beim kleinen, wiederholten Verbessern. Plan: Problem und Maßnahme beschreiben. Do: in einem begrenzten Bereich ausprobieren. Check: Wirkung mit Daten prüfen. Act: wirksame Lösung sichern oder den Plan anpassen. Beim Scannerprojekt könnte zuerst eine Produktgruppe getestet werden. Man misst Fehlbuchungen und Bearbeitungszeit. Danach entscheidet man über die Ausweitung. Ein bloßes „Geräte verteilen“ überspringt die Prüfung der Wirkung.
+
+Veränderungen können begrenzt bleiben oder das System grundlegend betreffen. Ein neues Formular verändert einen Schritt. Eine Umstellung von Abteilungsdenken auf durchgängige Kundenprozesse verändert Zuständigkeiten und Zusammenarbeit. Je tiefer der Eingriff, desto mehr Orientierung, Übung und Beteiligung brauchen die Betroffenen.
+
+Im Skript erscheinen mehrere Phasenmodelle, etwa von Kotter, Lewin, Streich und Krüger. Lerne sie nicht als vier lange Zahlenreihen. Frage, welchen Blickwinkel das Modell bietet. Lewin beschreibt grob das Lösen, Verändern und Stabilisieren. Kotter beschreibt Führungsaufgaben bei der Umsetzung. Streich macht emotionale Reaktionen sichtbar. Krüger ordnet Schritte des Wandels. In einer Fallaufgabe hilft dir das passende Modell, einen Fehler im Vorgehen zu benennen.
+
+Beim Scannerprojekt wäre ein typischer Fehler, nur die Zielvorgabe zu verkünden. Mitarbeitende wissen dann nicht, wie der neue Ablauf ihre Schicht betrifft. Eine bessere Einführung zeigt das Problem, lässt Fragen zu, übt reale Fälle und misst danach die Ergebnisse.
+
+Jetzt zwei Fragen zum Abrufen. Pausiere die Folge.
+
+Erstens: Was ist beim Scannerprojekt das Ziel, was ist nur die Maßnahme?
+
+Zweitens: Welcher Schritt im PDCA-Zyklus verhindert, dass ein misslungener Test sofort im ganzen Lager ausgerollt wird?
+
+Antworte ohne Fachwörter, wenn es leichter ist. Die Fachwörter kannst du danach zuordnen.

@@ -1,0 +1,21 @@
+Strategie, IT und Projekte, Teil zwei. Ein Logistikprojekt so planen, dass es im Betrieb funktioniert.
+
+Ein Projekt ist eine zeitlich begrenzte Aufgabe mit einem besonderen Ziel. Die Einführung eines Lagerverwaltungssystems ist ein Projekt. Das tägliche Buchen von Wareneingängen ist laufender Betrieb. Der Unterschied hilft bei der Planung: Ein Projekt braucht klare Verantwortung, Termine, Ressourcen und eine Entscheidung darüber, wann es erfolgreich abgeschlossen ist.
+
+Am Anfang steht der Auftrag. Was soll erreicht werden? Welche Bereiche sind betroffen? Was gehört ausdrücklich nicht dazu? Wenn das Ziel „weniger Fehlbuchungen“ lautet, reicht die Aussage „System eingeführt“ später nicht als Erfolg. Du brauchst einen Ausgangswert und eine Zielgröße. Dazu kommen Budget, Zeitrahmen und Anforderungen der Nutzer.
+
+Danach wird die Arbeit in Schritte zerlegt. Für das Lagerprojekt könnten das Prozessaufnahme, Datenbereinigung, Systemauswahl, Konfiguration, Schulung, Test und Einführung sein. Manche Schritte hängen voneinander ab. Schulung vor einer stabilen Testumgebung bringt wenig. Ein Zeitplan macht diese Abhängigkeiten sichtbar. Die Netzplantechnik kann helfen, besonders kritische Vorgänge zu erkennen, bei denen Verzögerungen den Endtermin verschieben.
+
+Risikomanagement fragt früh, was schiefgehen könnte. Artikelstämme sind unvollständig. Scanner funktionieren in einem Hallenbereich nicht. Die Einführung fällt in die Hochsaison. Für jedes wesentliche Risiko brauchst du eine Gegenmaßnahme oder einen Plan für den Fall, dass es eintritt. Ein Testlauf mit einer kleinen Artikelgruppe senkt das Risiko einer vollständigen Umstellung an einem Tag.
+
+Während der Durchführung vergleichst du Soll und Ist. Werden Termine erreicht? Bleiben Kosten im Rahmen? Funktioniert der Prozess für die Mitarbeitenden? Ein Projektleiter sollte Probleme sichtbar machen und Entscheidungen herbeiführen, nicht nur einen Plan pflegen. Nach der Einführung prüfst du die Wirkung. Sind Fehlbuchungen gesunken? Ist die Bearbeitungszeit besser? Sind neue Kosten entstanden?
+
+Auch die Wirtschaftlichkeit gehört dazu. Eine Investition kann Zeit und Fehler sparen, verursacht aber Anschaffung, Pflege, Schulung und Umstellung. Rechne daher nicht nur den Kaufpreis gegen einen erwarteten Nutzen. Betrachte die gesamten Kosten und einen realistischen Zeitraum. Bei einer Bewertung gehört Unsicherheit offen dazu.
+
+Zum Schluss zwei Fragen. Pausiere.
+
+Erstens: Warum ist „Das System läuft“ kein ausreichendes Erfolgskriterium für dieses Projekt?
+
+Zweitens: Was würdest du vor einer Einführung in der Hochsaison testen?
+
+Wenn du Ziel, Schritte, Risiken und Wirkung in dieser Reihenfolge erzählen kannst, hast du das Grundgerüst für viele Projektaufgaben.

@@ -1,0 +1,23 @@
+Kapitel 1.2, Teil drei. Lager, Kommissionierung und Materialfluss.
+
+Ein Lager ist mehr als ein Raum mit Regalen. Es nimmt Ware an, prüft sie, hält sie verfügbar, stellt Aufträge zusammen und gibt sie wieder ab. Die Gestaltung des Lagers soll diese Schritte sicher und mit möglichst wenig unnötiger Bewegung verbinden. Deshalb beginnt die Planung nicht mit der Frage, welches Regal schön aussieht. Sie beginnt bei Gütern, Mengen, Aufträgen und Wegen.
+
+Stell dir ein Lager mit schweren Paletten und vielen kleinen Ersatzteilen vor. Die Paletten brauchen tragfähige Flächen und geeignete Fördermittel. Die Ersatzteile brauchen eindeutige Plätze oder ein System, das ihre Plätze sicher kennt. Werden beide Güterarten gleich behandelt, entstehen Suchwege, blockierte Flächen und Fehler. Bauart, Lagertechnik und Lagerstrategie müssen zum Materialfluss passen.
+
+Der Wareneingang ist die erste wichtige Schnittstelle. Anlieferung anmelden, Ware entladen, Menge und Zustand prüfen, Abweichungen dokumentieren und Bestand korrekt buchen: Jeder Schritt beeinflusst, was später als verfügbar angezeigt wird. Ein beschädigtes Teil gehört nicht einfach in den normalen Bestand. Sonst wird aus einem Fehler im Wareneingang ein Fehler im Kundenauftrag.
+
+Im Lager selbst gibt es verschiedene Ordnungsprinzipien. Bei festen Plätzen weiß jeder, wo ein Artikel liegt, aber freie Fläche kann ungenutzt bleiben. Bei dynamischer Lagerung werden freie Plätze flexibler verwendet; dafür muss die Buchung besonders zuverlässig sein. Die beste Strategie hängt von Sortiment, Umschlag, Technik und Personal ab. Ein System ist nicht automatisch modern oder alt, weil es einen bestimmten Namen trägt.
+
+Kommissionierung heißt: Aus dem Lagerbestand die für einen Auftrag benötigten Artikel in richtiger Art und Menge zusammenstellen. Häufig frisst nicht das Greifen die meiste Zeit, sondern das Laufen und Suchen. Eine gute Verbesserung verkürzt Wege und macht Fehler seltener. Schnelldreher gehören deshalb oft in gut erreichbare Bereiche. Aber prüfe immer die gesamte Kette: Eine schnellere Entnahme nützt wenig, wenn danach die Packstation überlastet ist.
+
+Zum Materialfluss gehört auch der Rückweg. Retouren, Mehrwegverpackungen oder beschädigte Ware müssen getrennt, geprüft und richtig gebucht werden. Reverse Logistik ist nicht bloß ein umgedrehter Versandprozess. Der Zustand und die weitere Verwendung der Ware sind oft erst nach der Rücknahme klar.
+
+Wenn du ein Lager beurteilen sollst, zeichne einen einfachen Weg: Wareneingang, Prüfung, Einlagerung, Bereitstellung, Kommissionierung, Verpackung, Warenausgang. Markiere jeden unnötigen Richtungswechsel, jede Wartezeit und jede unklare Datenübergabe. Danach kannst du Maßnahmen begründen, statt nur Technik aufzuzählen.
+
+Jetzt zwei Fragen für dich. Pausiere die Folge.
+
+Erstens: Warum hängt die Wahl zwischen festen und dynamischen Lagerplätzen von der Datenqualität ab?
+
+Zweitens: Welcher Fehler im Wareneingang kann später zu einer falschen Lieferzusage führen?
+
+Wenn du ein eigenes Beispiel aus deiner Arbeit findest, bleibt der Zusammenhang besser im Gedächtnis. Notiere dieses Beispiel im Abschnitt Wareneingang oder Kommissionierung deines Portals.

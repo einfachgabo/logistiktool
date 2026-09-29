@@ -1,0 +1,23 @@
+Produktion, Lager und Distribution, Teil zwei. Lagerkennzahlen und der Weg zum Kunden.
+
+Ein Lagerleiter sagt: „Unser Bestand ist zu hoch.“ Bevor du eine Maßnahme vorschlägst, brauchst du eine Bezugsgröße. Wie viel wird verbraucht oder verkauft? Wie schnell dreht sich der Bestand? Wie lange liegt ein Artikel durchschnittlich? Welche Lieferbereitschaft wird erreicht? Erst zusammen ergeben diese Kennzahlen ein brauchbares Bild.
+
+Der durchschnittliche Lagerbestand glättet Momentaufnahmen. Die Umschlagshäufigkeit setzt Verbrauch oder Wareneinsatz ins Verhältnis zum durchschnittlichen Bestand. Eine hohe Umschlagshäufigkeit bedeutet meist, dass Bestand kürzer gebunden ist. Sie kann aber auch ein Warnsignal sein, wenn der Puffer für Lieferstörungen fehlt. Lagerdauer übersetzt denselben Zusammenhang in Zeit. Bei jeder Rechnung müssen Mengen oder Werte auf beiden Seiten zusammenpassen.
+
+Gebundener Bestand verursacht Kosten: Fläche, Versicherung, Handling und gegebenenfalls Zinsen. Wenn du eine Senkung bewertest, denke zugleich an Servicegrad und Fehlmengen. Ein sehr kleiner Bestand sieht in der Bilanz gut aus, hilft aber nicht, wenn Kundenaufträge regelmäßig ausfallen. Das ist der Zielkonflikt zwischen Versorgung und Kapitalbindung.
+
+Lagerorganisation beeinflusst auch die Entnahmereihenfolge. FIFO bedeutet: zuerst eingelagerte Ware wird zuerst entnommen. Das ist besonders bei Alterung oder Verfallsdatum wichtig. Andere Verbrauchsfolgeverfahren ordnen nach anderen Kriterien und werden im Skript für Rechen- und Bewertungsaufgaben verglichen. Verwechsele die rechnerische Bewertung nicht mit der tatsächlichen physischen Bewegung einer Palette.
+
+Beim Kommissionieren stellst du den Auftrag aus einzelnen Positionen zusammen. Fehler beim Greifen, Zählen oder Zuordnen führen zu Retouren und Nacharbeit. Eine gute Verbesserung verkürzt Wege und macht die richtige Entnahme leichter. Verpackung schützt die Ware, bildet Ladeeinheiten und übermittelt Informationen. Zu wenig Verpackung erhöht Schäden, zu viel kostet Material und Platz. Auch hier gibt es keinen guten Einheitswert für alle Güter.
+
+Am Ende der Kette steht nicht einfach „weg“. Retouren, Verpackungen und Reststoffe gehen in Rücknahme, Wiederverwendung, Recycling oder Entsorgung. Wer diese Wege schon bei der Gestaltung berücksichtigt, vermeidet später unnötige Transporte und Abfälle.
+
+Für die Prüfung kannst du einen Satz als Gerüst nutzen: Die Kennzahl zeigt eine Veränderung, mögliche Ursache ist diese, die Maßnahme wirkt so, und ihr Risiko ist jenes. Damit machst du aus einer Zahl eine begründete Entscheidung.
+
+Zwei Fragen zum Schluss. Pausiere.
+
+Erstens: Warum ist eine hohe Umschlagshäufigkeit allein noch kein Beweis für ein gutes Lager?
+
+Zweitens: Welche zwei Aufgaben erfüllt Verpackung außer dem bloßen Umhüllen eines Produkts?
+
+Prüfe danach im Kapitel, welche Kennzahl oder welches Beispiel dir noch schwerfällt.

@@ -1,0 +1,13 @@
+Kapitel 1.1, Teil eins. Grundlagen und Zielkonflikte.
+
+Stell dir für den Einstieg einen ganz normalen Artikel aus deinem Arbeitsalltag vor. Der Bestand sinkt. Du erkennst den Bedarf, prüfst Daten, löst eine Bestellung aus, kontrollierst den Termin und sorgst dafür, dass die Ware später richtig gebucht wird. Genau darin steckt bereits ein großer Teil der Logistik. Logistik ist nicht nur ein Lastwagen oder ein Lager. Logistik verbindet Material, Informationen und wirtschaftliche Werte zu einem funktionierenden Ablauf.
+
+Das Skript beschreibt die Logistikaufgabe mit fünf richtigen Größen. Das richtige Produkt oder die richtige Leistung soll in der richtigen Menge, am richtigen Ort, zur richtigen Zeit und in der richtigen Qualität verfügbar sein. Für eine Prüfungsantwort reicht diese Liste allein meist nicht. Du solltest ergänzen, dass Informationen den Materialfluss auslösen und steuern. Eine falsche Lieferzeit im Artikelstamm kann deshalb genauso kritisch sein wie ein verspäteter Lastwagen.
+
+Logistische Ziele können sich unterstützen oder widersprechen. Weniger Fehler senken häufig Kosten und erhöhen zugleich die Kundenzufriedenheit. Diese Ziele sind komplementär. Eine sehr hohe Lieferbereitschaft und ein sehr niedriger Bestand stehen dagegen häufig in Konkurrenz. Mehr Puffer erhöht die Sicherheit, bindet aber Kapital. In einer Fallaufgabe solltest du deshalb nie nur ein Ziel betrachten. Frage immer: Welche Auswirkung hat die Maßnahme auf Zeit, Bestand, Kosten, Qualität und Kunde?
+
+Die Unternehmenslogistik besteht aus Beschaffung, Produktion, Absatz und Entsorgung. Sie ist eine Querschnittsfunktion. Eine Entscheidung im Einkauf kann das Lager, die Produktion und den Kunden betreffen. Bestellt der Einkauf sehr große Mengen wegen eines günstigen Stückpreises, sinkt vielleicht der Einkaufspreis. Gleichzeitig steigen Lagerbestand, Kapitalbindung, Flächenbedarf und Risiko. Die beste Einzellösung ist deshalb nicht automatisch die beste Gesamtlösung.
+
+Nun zur Wertschöpfung. Vereinfacht ist die Bruttowertschöpfung der Produktionswert minus der eingekauften Vorleistungen. Zieht man zusätzlich Abschreibungen ab, erhält man die Nettowertschöpfung. Die Wertschöpfungskette reicht von Vorprodukten über Beschaffung und Fertigung bis zu Handel und Kunde. Vorgelagerte Stufen heißen upstream. Nachgelagerte Stufen heißen downstream.
+
+Zwei Fragen für dich. Welche fünf richtigen Größen gehören zur Logistikaufgabe? Und warum kann ein günstiger Einkaufspreis insgesamt teuer werden? Pausiere und antworte mit einem eigenen Beispiel.

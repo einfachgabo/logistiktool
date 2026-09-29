@@ -263,7 +263,7 @@ Gabriel bekommt eine Liste der entfallenen Slugs, damit er die zugehörigen Noti
 **Immer am Ende:** `pruefen.py` laufen lassen (prüft doppelte IDs/Slugs, tote Links,
 fehlende Selbstabfragen, Quizfragen ohne richtige Antwort).
 
-**Podcast pro Kapitel:** Eine Folge behandelt genau ein Kapitel, in eigenen Worten und mit einem Praxisbeispiel. Die MP3 liegt unter `assets/audio/`; der Eintrag in `KAPITEL_LISTE` erhält `audio` und `audioDauer`. Der Player wird von `portal.js` eingefügt. Keine Originalfolien oder vorgelesenen Dozententexte veröffentlichen.
+**Podcast pro Kapitel:** Kurze Folgen behandeln ein Kapitel oder einen klar abgegrenzten Teil davon, in eigenen Worten, mit Praxisbeispiel und zwei Abruffragen. Manuskript und MP3 haben denselben Dateinamen unter `podcasts/manuskripte/` bzw. `assets/audio/`. Der Eintrag in `KAPITEL_LISTE` erhält für mehrere Folgen `audios: [{ titel, datei, dauer }, ...]`; `audio` und `audioDauer` bleiben für eine ältere Einzelfolge gültig. Der Player und der Link zum Lesetext werden von `portal.js` eingefügt. Nach einer Neuaufnahme die Dauer aktualisieren und `pruefen.py` ausführen. Keine Originalfolien oder vorgelesenen Dozententexte veröffentlichen.
 
 **Ausfüllbares Lernheft:** Eine selbst verfasste PDF unter `assets/hefte/` ablegen und im passenden Eintrag von `KAPITEL_LISTE` mit `heft` verknüpfen. Vor der Veröffentlichung prüfen, dass keine Originalfolien und keine privaten Unterrichtsnotizen enthalten sind.
 

@@ -1,0 +1,23 @@
+Kapitel 1.2, Teil eins. Logistiksysteme und Informationsfluss. Eine kurze Folge für den Weg zur Arbeit.
+
+Stell dir vor, ein Kunde braucht ein Ersatzteil für eine Maschine. Er bestellt es am Montag. Damit es am Dienstag ankommt, reicht es nicht, dass irgendwo ein Karton liegt. Der Artikel muss richtig bezeichnet sein, der Bestand muss stimmen, der Auftrag muss an das Lager gehen, ein Transport muss geplant werden, und am Ende muss die Rechnung zur tatsächlichen Lieferung passen. Das ist ein Logistiksystem: Menschen, Güter, Flächen, Technik, Daten und Regeln arbeiten zusammen, um einen Bedarf zu erfüllen.
+
+Ein guter Anfang für die Analyse ist die Frage: Was kommt hinein, was passiert dazwischen, und was kommt heraus? Beim Ersatzteil sind Auftrag und verfügbarer Bestand der Input. Prüfen, reservieren, kommissionieren und versenden sind die Verarbeitung. Eine richtige, pünktliche Lieferung mit passenden Daten ist der Output. Wenn der Output nicht stimmt, suchst du nicht blind nach Schuldigen. Du prüfst die Schritte und besonders die Übergaben.
+
+Der ganze Ablauf vom Auftrag bis zur Zahlung heißt Order to Payment. Im Skript wird er mit einem kurzen, einem mittleren und einem langen S betrachtet. Der Gedanke dahinter ist einfach: Je nach Blickwinkel siehst du nur den unmittelbaren Auftragsweg oder zusätzlich vor- und nachgelagerte Schritte. Für eine Fallaufgabe ist wichtig, die Grenze deines betrachteten Prozesses ausdrücklich zu nennen. Sonst übersiehst du etwa den Rückweg einer Reklamation oder die Zahlungsinformation.
+
+Der Informationsfluss ist das Nervensystem dieses Ablaufs. Daten können einen Vorgang auslösen, ihn begleiten und ihn abschließen. Die Bestellung löst den Auftrag aus. Das Lieferavis kündigt Ware an. Der Scan beim Warenausgang bestätigt, was tatsächlich verladen wurde. Eine Bestandszahl ist nur dann hilfreich, wenn sie aktuell, eindeutig und für die nächste Stelle erreichbar ist.
+
+Hier kommen Informations- und Kommunikationssysteme ins Spiel. Ein ERP-System verbindet beispielsweise Einkauf, Lager und Buchhaltung auf einer gemeinsamen Datenbasis. Scanner und mobile Geräte erfassen Vorgänge dort, wo sie passieren. EDI übermittelt strukturierte Geschäftsdokumente zwischen Unternehmen. Die Technik allein löst jedoch keinen Prozessfehler. Wenn zwei Abteilungen denselben Artikel unterschiedlich benennen, verteilt ein schnelles System den Fehler nur schneller.
+
+Nimm dieses Beispiel: Im ERP stehen zehn Stück. Tatsächlich liegen acht im Regal, weil zwei beschädigte Teile nicht gesperrt wurden. Der Verkauf verspricht zehn Stück, das Lager findet acht, der Transport wartet, und der Kunde muss erneut informiert werden. Der Fehler beginnt bei der Erfassung. Er wirkt aber durch das gesamte System.
+
+Für die Prüfung hilft dir deshalb ein Dreischritt. Erstens: Welche Information wird benötigt? Zweitens: Wer erfasst und nutzt sie? Drittens: Was geschieht, wenn sie falsch oder zu spät ankommt? Diese Fragen sind nützlicher als eine lange Liste von Geräten und Abkürzungen.
+
+Jetzt zwei Fragen zum Selberdenken. Pausiere kurz und antworte laut.
+
+Erstens: Was sind bei einer Ersatzteilbestellung Input, Verarbeitung und Output?
+
+Zweitens: Warum kann ein gemeinsames ERP-System trotzdem falsche Lieferzusagen erzeugen?
+
+Wenn du die zweite Frage beantworten kannst, hast du den Kern: Gute Logistik braucht passende Technik und verlässliche Daten an jeder Schnittstelle. Morgen kannst du die beiden Fragen ohne diese Folge noch einmal beantworten.

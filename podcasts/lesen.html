@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hörtext · Fachwirt für Logistiksysteme</title>
+<link rel="stylesheet" href="../assets/portal.css">
+<link rel="stylesheet" href="../assets/podcast-lesetext.css">
+</head>
+<body class="podcast-leseseite">
+<main class="podcast-leseinhalt">
+  <nav class="podcast-lesenav"><a id="zurueck" href="../index.html">← Zum Lernportal</a><button type="button" id="drucken">Drucken / als PDF sichern</button></nav>
+  <div class="podcast-lesekicker">HÖRTEXT · KURZE WIEDERHOLUNG</div>
+  <h1 id="titel">Text wird geladen …</h1>
+  <p class="podcast-lesehinweis">Lies erst einen Abschnitt, dann schließe den Text gedanklich und erkläre die Idee mit eigenen Worten. Die Fragen am Ende eignen sich zum Wiederholen.</p>
+  <article id="manuskript" aria-live="polite"></article>
+</main>
+<script>
+(function () {
+  'use strict';
+  var params = new URLSearchParams(location.search);
+  var folge = params.get('folge') || '';
+  var kapitel = params.get('kapitel') || '';
+  var titel = document.getElementById('titel');
+  var artikel = document.getElementById('manuskript');
+  if (/^[a-z0-9-]+\.html$/.test(kapitel)) document.getElementById('zurueck').href = '../' + kapitel;
+  document.getElementById('drucken').addEventListener('click', function () { window.print(); });
+  if (!/^[a-z0-9-]+$/.test(folge)) { titel.textContent = 'Hörtext nicht gefunden'; return; }
+  fetch('manuskripte/' + folge + '.txt').then(function (antwort) {
+    if (!antwort.ok) throw new Error('Der Hörtext ist nicht verfügbar.');
+    return antwort.text();
+  }).then(function (text) {
+    var teile = text.trim().split(/\n\s*\n/).map(function (s) { return s.trim(); }).filter(Boolean);
+    titel.textContent = teile.shift() || 'Hörtext';
+    document.title = titel.textContent + ' · Fachwirt für Logistiksysteme';
+    teile.forEach(function (absatz) {
+      var p = document.createElement('p');
+      p.textContent = absatz;
+      artikel.appendChild(p);
+    });
+  }).catch(function (fehler) { titel.textContent = fehler.message; });
+})();
+</script>
+</body>
+</html>

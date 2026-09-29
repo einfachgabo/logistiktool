@@ -1,0 +1,18 @@
+.podcast-leseseite { background: var(--bg); }
+.podcast-leseinhalt { max-width: 780px; margin: 0 auto; padding: 2rem 1.4rem 5rem; }
+.podcast-lesenav { display: flex; align-items: center; justify-content: space-between; gap: 1rem; margin-bottom: 2.5rem; }
+.podcast-lesenav a, .podcast-lesenav button { color: var(--blue); font: 700 13px var(--sans); text-decoration: none; }
+.podcast-lesenav button { background: var(--surface); border: 1px solid var(--border); border-radius: 7px; padding: .5rem .7rem; cursor: pointer; }
+.podcast-lesekicker { color: var(--teal); font: 800 11px var(--sans); letter-spacing: .11em; margin-bottom: .5rem; }
+.podcast-leseinhalt h1 { max-width: 30ch; font-size: clamp(1.7rem, 4vw, 2.35rem); line-height: 1.2; }
+.podcast-lesehinweis { background: var(--blue-bg); border-left: 3px solid var(--blue); border-radius: 4px; padding: .85rem 1rem; color: var(--text-2); font-size: 14px; line-height: 1.6; margin: 1.4rem 0 2rem; }
+#manuskript { font-size: 16px; line-height: 1.85; }
+#manuskript p { margin: 0 0 1.15rem; }
+#manuskript p:last-child { font-weight: 600; color: var(--teal); }
+@media print {
+  .podcast-leseseite { background: #fff; }
+  .podcast-leseinhalt { max-width: none; padding: 0; }
+  .podcast-lesenav { display: none; }
+  #manuskript { font-size: 11pt; line-height: 1.55; }
+  #manuskript p { break-inside: avoid; }
+}

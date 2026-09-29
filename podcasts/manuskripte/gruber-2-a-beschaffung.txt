@@ -1,0 +1,21 @@
+Beschaffung und Bedarfsermittlung, Teil eins. Von der Frage „Was fehlt?“ zur passenden Beschaffungsart.
+
+Ein Betrieb braucht regelmäßig Schrauben und gelegentlich eine teure Spezialpumpe. Beide Artikel einfach gleich zu bestellen wäre bequem, aber selten sinnvoll. Bei den Schrauben kann ein kleiner laufender Vorrat die Arbeit sichern. Die Pumpe könnte erst für einen konkreten Auftrag beschafft werden. Beschaffung ist immer ein Ausgleich zwischen Verfügbarkeit, Kapitalbindung, Kosten und Risiko.
+
+Der Bedarf hat mehrere Ebenen. Primärbedarf meint die Produkte, die am Ende benötigt oder verkauft werden. Sekundärbedarf beschreibt die Teile und Materialien dafür. Hilfs- und Betriebsstoffe unterstützen die Herstellung. Für die Rechnung ist außerdem wichtig, zwischen Brutto- und Nettobedarf zu unterscheiden. Vom gesamten Bedarf ziehst du verfügbaren Bestand und bereits sichere Zugänge ab. Erst der Rest muss neu beschafft werden. Dabei müssen Reservierungen, Ausschuss und Sicherheitsbestand korrekt berücksichtigt werden.
+
+Ein Beispiel: Für zehn Pumpen braucht die Fertigung je vier Dichtungen. Der Bruttobedarf beträgt vierzig Dichtungen. Zwölf sind nutzbar vorhanden, acht sind verbindlich bestellt. Ohne weitere Faktoren bleiben zwanzig neu zu beschaffen. Wer nur die vierzig sieht, bestellt zu viel. Wer gesperrte Bestände mitzählt, bestellt möglicherweise zu wenig.
+
+Woher kommen die Teile? Single Sourcing nutzt einen Lieferanten. Das kann die Zusammenarbeit vereinfachen, schafft aber Abhängigkeit. Dual oder Multiple Sourcing verteilt das Risiko, erhöht jedoch Abstimmungsaufwand. Auch Nähe, Qualität, Preis und Lieferzeit spielen eine Rolle. Eine Prüfungsantwort sollte nicht pauschal „mehr Lieferanten sind besser“ sagen. Erkläre, welches Risiko oder Ziel im Fall entscheidend ist.
+
+Beschaffung kann auf Vorrat, für einen einzelnen Auftrag oder eng am Produktionsrhythmus erfolgen. Vorrat schützt gegen Unsicherheit, bindet aber Geld. Einzelbeschaffung hält Bestände klein, benötigt dafür ausreichende Lieferzeit. Fertigungssynchrone Versorgung spart Puffer, verlangt verlässliche Daten und Termine. Kanban nutzt ein Verbrauchssignal für Nachschub: Der leere Behälter oder ein digitales Signal löst eine festgelegte Wiederauffüllung aus.
+
+Für die Praxis helfen vier Fragen. Welcher Bedarf ist wirklich da? Was ist bereits verfügbar oder sicher unterwegs? Wie kritisch ist ein Ausfall? Und welche Beschaffungsart passt zur Schwankung des Bedarfs? Wer diese Fragen sauber beantwortet, vermeidet sowohl Fehlmengen als auch blinden Vorratsaufbau.
+
+Jetzt zwei Fragen ohne Text. Pausiere.
+
+Erstens: Wie kommst du vom Bruttobedarf zum Nettobedarf der Dichtungen?
+
+Zweitens: Warum könnte Single Sourcing für die Spezialpumpe zugleich Vorteil und Risiko sein?
+
+Antworte möglichst mit den Zahlen und dem Beispiel. Danach kannst du den Rechenweg im Kapitel vertiefen.
