@@ -267,6 +267,10 @@
       heftLink.href = eintrag.heft;
       heftLink.download = '';
       heft.appendChild(heftLink);
+      var volltextPdf = el('button', '', 'Volltext drucken / als PDF');
+      volltextPdf.type = 'button';
+      volltextPdf.addEventListener('click', function () { window.print(); });
+      heft.appendChild(volltextPdf);
       leiste.insertAdjacentElement('afterend', heft);
     }
     var folgen = eintrag.audios || (eintrag.audio ? [{ titel: 'Kapitelüberblick', datei: eintrag.audio, dauer: eintrag.audioDauer }] : []);

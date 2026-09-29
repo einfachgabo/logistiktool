@@ -33,7 +33,7 @@ direkt über GitHub Pages.
 * **Unterrichtsansicht** – zeigt Abschnittstitel, Status und das Notizfeld; der Volltext bleibt erreichbar.
 * **5 Fragen üben** – Antworten erst selbst abrufen. Nach der Selbsteinschätzung erscheinen Karten nach 1, 3, 7, 14, 30 oder 60 Tagen wieder. Diese Abstände sind eine praktische Voreinstellung.
 * **Hörfolgen** – alle Lernkapitel haben einen oder mehrere kurze Teile. Im Player kannst du die MP3 herunterladen oder den Text lesen und als PDF sichern.
-* **Lernheft** – jedes Lernkapitel hat ein ausfüllbares PDF mit kurzer Kernaussage, Abruffragen und Notizfeld pro Abschnitt. Das Heft herunterladen, in einer PDF-App ausfüllen und lokal speichern. Die Notizen in der Website bleiben getrennt davon.
+* **Lernheft** – jedes Lernkapitel hat ein ausfüllbares PDF mit kurzer Kernaussage, Abruffragen und Notizfeld pro Abschnitt. Das Heft herunterladen, in einer PDF-App ausfüllen und lokal speichern. Mit **Volltext drucken / als PDF** kannst du zusätzlich das ausführliche Kapitel aus dem Browser drucken. Die Notizen in der Website bleiben getrennt vom ausfüllbaren Heft.
 
 ## Wichtig: Notizen sichern
 

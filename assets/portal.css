@@ -129,7 +129,8 @@ body.unterrichtsmodus section.abschnitt > .notiz-hook .notiz-btn { opacity: 1; }
 .lernheft-box { display: flex; align-items: center; gap: .6rem 1rem; flex-wrap: wrap; background: var(--blue-bg); border: 1px solid var(--blue-line); border-radius: var(--radius); padding: .8rem 1rem; margin: 0 0 1rem; }
 .lernheft-box strong { font-size: 14px; }
 .lernheft-box span { color: var(--text-2); font-size: 12.5px; flex: 1 1 240px; }
-.lernheft-box a { color: var(--blue); font-size: 12.5px; font-weight: 700; white-space: nowrap; }
+.lernheft-box a, .lernheft-box button { color: var(--blue); font-size: 12.5px; font-weight: 700; white-space: nowrap; }
+.lernheft-box button { border: 0; background: none; padding: 0; cursor: pointer; font-family: inherit; text-decoration: underline; }
 
 .podcast-box { background: var(--teal-bg); border: 1px solid var(--teal-line); border-radius: var(--radius); padding: 1rem 1.15rem; margin: 0 0 1.8rem; }
 .podcast-kicker { color: var(--teal); font-size: 10px; font-weight: 800; letter-spacing: .12em; }
