@@ -10,6 +10,7 @@ voice_id-Werte aus dem eigenen ElevenLabs-Konto übergeben:
 
 Die Ausgabe bekommt den Zusatz -elevenlabs und ersetzt nie automatisch die
 bereits veröffentlichte Folge. API-Schlüssel gehören nicht ins Repository.
+--sample erzeugt mit vier Sprecherbeiträgen eine lokale Hörprobe im Build-Ordner.
 """
 
 from __future__ import annotations
@@ -134,12 +135,23 @@ def main() -> None:
     parser.add_argument("--female-voice", help="ElevenLabs voice_id für Mara")
     parser.add_argument("--male-voice", help="ElevenLabs voice_id für Jonas")
     parser.add_argument("--key-file", type=Path, default=DEFAULT_KEY_FILE, help="Private Schlüsseldatei außerhalb des Repositories")
+    parser.add_argument("--sample", action="store_true", help="Nur vier Sprecherbeiträge als lokale Hörprobe")
     parser.add_argument("--dry-run", action="store_true", help="Abschnitte und Zeichenzahl zeigen, ohne API-Anfrage")
     args = parser.parse_args()
     script = SOURCE / f"{args.name}.txt"
     if not script.is_file() or not args.name.startswith("gespraech-"):
         parser.error(f"Gesprächsmanuskript fehlt: {script}")
-    parts = chunks(parse(script))
+    turns = parse(script)
+    if args.sample:
+        sample = []
+        for speaker, content in turns:
+            if speaker == "Pause":
+                continue
+            sample.append((speaker, content))
+            if len(sample) == 4:
+                break
+        turns = sample
+    parts = chunks(turns)
     voiced = [p for p in parts if isinstance(p, list)]
     total = sum(len(str(value)) for part in voiced for _, value in part)
     print(f"{args.name}: {len(voiced)} API-Abschnitte, {len(parts) - len(voiced)} Denkpausen, {total} Textzeichen")
@@ -150,6 +162,8 @@ def main() -> None:
     key = read_key(args.key_file)
     if not key:
         parser.error(f"ElevenLabs-Schlüssel fehlt. Lokal unter {args.key_file} speichern oder ELEVENLABS_API_KEY setzen; nie in Git eintragen.")
+    if not key.startswith("sk_"):
+        parser.error("Die Datei enthält keine gültige API-Schlüsselzeichenfolge. Bitte den bei ElevenLabs nur einmal angezeigten Schlüssel statt der Key-ID speichern.")
     if not args.female_voice or not args.male_voice:
         parser.error("Bitte --female-voice und --male-voice aus dem eigenen ElevenLabs-Konto angeben.")
     if args.female_voice == args.male_voice:
@@ -186,9 +200,9 @@ def main() -> None:
             generate(part, voices, key, clip)
         clips.append(clip)
         print(f"  {index}/{len(parts)} fertig", flush=True)
-    listing = BUILD / f"{args.name}-concat.txt"
+    listing = BUILD / f"{args.name}-{'sample' if args.sample else 'full'}-concat.txt"
     listing.write_text("".join(f"file '{clip.resolve().as_posix()}'\n" for clip in clips), encoding="utf-8")
-    output = OUTPUT / f"{args.name}-elevenlabs.mp3"
+    output = (BUILD if args.sample else OUTPUT) / f"{args.name}-elevenlabs{'-probe' if args.sample else ''}.mp3"
     subprocess.run([ffmpeg, "-v", "error", "-y", "-f", "concat", "-safe", "0", "-i", str(listing), "-c:a", "libmp3lame", "-b:a", "128k", str(output)], check=True)
     print(f"Hörprobe fertig: {output}")
 
