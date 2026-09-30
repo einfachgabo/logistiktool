@@ -30,7 +30,7 @@ ROOT = Path(__file__).resolve().parents[1]
 SOURCE = ROOT / "podcasts" / "manuskripte"
 BUILD = ROOT / ".podcast-build" / "elevenlabs"
 OUTPUT = ROOT / "assets" / "audio"
-MODEL = "eleven_v3"
+MODEL = "eleven_v4"
 MAX_CHARS = 1900  # ElevenLabs empfiehlt höchstens 2.000 Zeichen je Anfrage.
 DEFAULT_KEY_FILE = Path.home() / ".codex" / "elevenlabs.key.txt"
 
