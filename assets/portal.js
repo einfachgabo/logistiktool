@@ -58,6 +58,11 @@
     ] },
     { id: 'plab-2',      datei: 'plab-2-logistiksysteme.html',     fach: 'plab',     nummer: '1.2',   titel: 'Logistiksysteme',                      desc: 'I&K-Systeme, Transport & Umschlag, Fördermittel, Verkehrsträger, Lager & Kommissionierung, Incoterms.', heft: 'assets/hefte/plab-2-logistiksysteme.pdf', audios: [
       { titel: 'Gespräch · Vom Auftrag bis zur Lieferung', datei: 'assets/audio/gespraech-plab-2-logistiksysteme-elevenlabs.mp3', dauer: '8:58', gesamt: true, stimmen: 'Mara und Jonas · Susi und Christian Plasa' },
+      { titel: 'Vertiefung · Auftrag und Information', datei: 'assets/audio/gespraech-plab-2-vertiefung-info-elevenlabs.mp3', dauer: '4:14', stimmen: 'Mara und Jonas · Susi und Christian Plasa' },
+      { titel: 'Vertiefung · Fördertechnik', datei: 'assets/audio/gespraech-plab-2-vertiefung-foerdertechnik-elevenlabs.mp3', dauer: '3:04', stimmen: 'Mara und Jonas · Susi und Christian Plasa' },
+      { titel: 'Vertiefung · Externer Transport', datei: 'assets/audio/gespraech-plab-2-vertiefung-transport-elevenlabs.mp3', dauer: '3:23', stimmen: 'Mara und Jonas · Susi und Christian Plasa' },
+      { titel: 'Vertiefung · Lager und Kommissionierung', datei: 'assets/audio/gespraech-plab-2-vertiefung-lager-elevenlabs.mp3', dauer: '3:17', stimmen: 'Mara und Jonas · Susi und Christian Plasa' },
+      { titel: 'Vertiefung · Die ganze Kette', datei: 'assets/audio/gespraech-plab-2-vertiefung-kette-elevenlabs.mp3', dauer: '2:45', stimmen: 'Mara und Jonas · Susi und Christian Plasa' },
       { titel: 'Kurzcheck · System, Transport und Lager', datei: 'assets/audio/gespraech-plab-2-kurzcheck-elevenlabs.mp3', dauer: '1:50', kurzcheck: true, stimmen: 'Mara und Jonas · Susi und Christian Plasa' },
       { titel: 'Logistiksysteme und Informationsfluss', datei: 'assets/audio/plab-2-a-informationssysteme.mp3', dauer: '4:28' },
       { titel: 'Transport und Umschlag', datei: 'assets/audio/plab-2-b-transport.mp3', dauer: '4:13' },
@@ -65,12 +70,15 @@
     ] },
     { id: 'plab-3',      datei: 'plab-3-logistische-ablaeufe.html', fach: 'plab',    nummer: '1.3',   titel: 'Logistische Abläufe',                  desc: 'Zielbildung (SMART), Kennzahlen, Leistungsfähigkeit, Bewertungssysteme, Entwicklung.', heft: 'assets/hefte/plab-3-logistische-ablaeufe.pdf', audios: [
       { titel: 'Gespräch · Zahlen, die Entscheidungen tragen', datei: 'assets/audio/gespraech-plab-3-kennzahlen-elevenlabs.mp3', dauer: '7:36', gesamt: true, stimmen: 'Mara und Jonas · Susi und Christian Plasa' },
+      { titel: 'Vertiefung · Kennzahlen rechnen', datei: 'assets/audio/gespraech-plab-3-vertiefung-kennzahlen-elevenlabs.mp3', dauer: '3:01', stimmen: 'Mara und Jonas · Susi und Christian Plasa' },
+      { titel: 'Vertiefung · Analyseverfahren wählen', datei: 'assets/audio/gespraech-plab-3-vertiefung-entscheidungen-elevenlabs.mp3', dauer: '3:24', stimmen: 'Mara und Jonas · Susi und Christian Plasa' },
       { titel: 'Kurzcheck · Ziele und Kennzahlen', datei: 'assets/audio/gespraech-plab-3-kurzcheck-elevenlabs.mp3', dauer: '2:03', kurzcheck: true, stimmen: 'Mara und Jonas · Susi und Christian Plasa' },
       { titel: 'Ziele und Kennzahlen', datei: 'assets/audio/plab-3-a-ziele-kennzahlen.mp3', dauer: '3:51' },
       { titel: 'Analysieren und bewerten', datei: 'assets/audio/plab-3-b-bewerten.mp3', dauer: '4:14' }
     ] },
     { id: 'plab-4',      datei: 'plab-4-strategie.html',           fach: 'plab',     nummer: '2.1',   titel: 'Leistungsfähigkeit & Strategie',       desc: 'Strategiebildung, Stakeholderanalyse, SWOT-Matrix, Ethik & Leitbild, Corporate Identity, Porter, Entwicklungsstufen, VARIO, Logistikportfolio, Lebenszyklus, Distribution.', heft: 'assets/hefte/plab-4-strategie.pdf', audios: [
       { titel: 'Gespräch · Logistikstrategie im Alltag', datei: 'assets/audio/gespraech-plab-4-strategie-elevenlabs.mp3', dauer: '6:53', gesamt: true, stimmen: 'Mara und Jonas · Susi und Christian Plasa' },
+      { titel: 'Vertiefung · Strategie aus dem Fall ableiten', datei: 'assets/audio/gespraech-plab-4-vertiefung-strategie-elevenlabs.mp3', dauer: '3:36', stimmen: 'Mara und Jonas · Susi und Christian Plasa' },
       { titel: 'Von der Lage zur Strategie', datei: 'assets/audio/plab-4-a-strategieprozess.mp3', dauer: '4:01' },
       { titel: 'Strategie im Alltag umsetzen', datei: 'assets/audio/plab-4-b-umsetzung.mp3', dauer: '3:52' }
     ] },
@@ -81,6 +89,7 @@
     ] },
     { id: 'gruber-2',    datei: 'gruber-2-beschaffung.html',       fach: 'gruber',   nummer: '1.12–1.23', titel: 'Beschaffung & Bedarfsermittlung',  desc: 'Beschaffungsarten, Kanban, Bedarfsarten, deterministisch/stochastisch, Mittelwerte, Glättung, Bestellverfahren, Andler.', heft: 'assets/hefte/gruber-2-beschaffung.pdf', audios: [
       { titel: 'Gespräch · Erst rechnen, dann bestellen', datei: 'assets/audio/gespraech-gruber-2-beschaffung-elevenlabs.mp3', dauer: '6:12', gesamt: true, stimmen: 'Mara und Jonas · Susi und Christian Plasa' },
+      { titel: 'Vertiefung · Bedarf und Bestellmenge', datei: 'assets/audio/gespraech-gruber-2-vertiefung-bedarf-elevenlabs.mp3', dauer: '2:52', stimmen: 'Mara und Jonas · Susi und Christian Plasa' },
       { titel: 'Bedarf und Beschaffungsart', datei: 'assets/audio/gruber-2-a-beschaffung.mp3', dauer: '3:42' },
       { titel: 'Prognosen und Bestellentscheidungen', datei: 'assets/audio/gruber-2-b-prognose.mp3', dauer: '3:43' }
     ] },
@@ -107,6 +116,7 @@
     ] },
     { id: 'kroul-1',     datei: 'kroul-1-changemanagement.html',   fach: 'kroul',    nummer: '1.1–1.2',  titel: 'Veränderungsprozesse gestalten',   desc: 'Changemanagement, Kondratieff, PDCA, Arten des Wandels, Kotter, Lewin, Streich, Krüger, Widerstände.', heft: 'assets/hefte/kroul-1-changemanagement.pdf', audios: [
       { titel: 'Gespräch · Veränderungen zum Laufen bringen', datei: 'assets/audio/gespraech-kroul-1-wandel-elevenlabs.mp3', dauer: '4:17', gesamt: true, stimmen: 'Mara und Jonas · Susi und Christian Plasa' },
+      { titel: 'Vertiefung · Ein neues Verfahren einführen', datei: 'assets/audio/gespraech-kroul-1-vertiefung-wandel-elevenlabs.mp3', dauer: '2:39', stimmen: 'Mara und Jonas · Susi und Christian Plasa' },
       { titel: 'Kurzcheck · Veränderung umsetzen', datei: 'assets/audio/gespraech-kroul-1-kurzcheck-elevenlabs.mp3', dauer: '1:08', kurzcheck: true, stimmen: 'Mara und Jonas · Susi und Christian Plasa' },
       { titel: 'Wandel gestalten', datei: 'assets/audio/kroul-1-a-wandel.mp3', dauer: '3:34' },
       { titel: 'Widerstand verstehen', datei: 'assets/audio/kroul-1-b-widerstand.mp3', dauer: '3:17' }
@@ -132,6 +142,7 @@
     ] },
     { id: 'gruchala-4',  datei: 'gruchala-4-fuehrung.html',        fach: 'gruchala', nummer: 'Kap. 4',  titel: 'Führung & Motivation',               desc: 'Führungsstile, Blake & Mouton, Hersey & Blanchard, Maslow & Co., Führungsinstrumente, Management-by, Tuckman.', heft: 'assets/hefte/gruchala-4-fuehrung.pdf', audios: [
       { titel: 'Gespräch · Führung im Lageralltag', datei: 'assets/audio/gespraech-gruchala-4-fuehrung-elevenlabs.mp3', dauer: '2:11', gesamt: true, stimmen: 'Mara und Jonas · Susi und Christian Plasa' },
+      { titel: 'Vertiefung · Durch eine schwierige Schicht führen', datei: 'assets/audio/gespraech-gruchala-4-vertiefung-fuehrung-elevenlabs.mp3', dauer: '2:56', stimmen: 'Mara und Jonas · Susi und Christian Plasa' },
       { titel: 'Führen passend zur Situation', datei: 'assets/audio/gruchala-4-a-fuehrung.mp3', dauer: '3:17' },
       { titel: 'Teams, Ziele und Gespräche', datei: 'assets/audio/gruchala-4-b-team.mp3', dauer: '3:29' }
     ] },

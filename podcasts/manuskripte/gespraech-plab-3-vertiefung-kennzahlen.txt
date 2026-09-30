@@ -1,0 +1,25 @@
+Gesprächsfolge: Vertiefung 1.3 – Mit Kennzahlen richtig entscheiden
+
+Mara: Der Ersatzteilhändler will schneller liefern und weniger Kapital im Lager binden. Das klingt nach zwei Zielen, die sich widersprechen können. Wie machen wir sie prüfbar?
+
+Jonas: Wir formulieren sie konkret: Bis zum Jahresende sollen fünfundneunzig Prozent der vorrätigen Standardteile innerhalb von zwei Werktagen beim Kunden sein, während der durchschnittliche Lagerwert nicht steigt. Das ist spezifisch, messbar und terminiert. Ob es erreichbar und sinnvoll ist, prüfen wir mit Ausgangswerten und Ressourcen.
+
+Mara: Eine Zahl kann täuschen. Wenn nur die schnellen Aufträge gezählt werden, wirkt die Termintreue gut. Wenn wir Expressfahrten bezahlen, steigt sie vielleicht bei explodierenden Kosten. Also brauchen wir einen kleinen Satz zusammengehöriger Kennzahlen.
+
+Jonas: Genau. Leistung kann man etwa an Liefertermintreue, Fehlerrate und Durchlaufzeit sehen. Kosten entstehen unter anderem für Personal, Raum, Transport und Kapitalbindung. Jede Kennzahl braucht Definition, Einheit, Zeitraum und Datenquelle. Absolute Zahlen wie hundert verspätete Aufträge sagen ohne Gesamtmenge wenig; die Quote setzt sie ins Verhältnis.
+
+Mara: Lass uns Lagerzahlen an einem einfachen Jahr rechnen. Anfangsbestand hundert Stück, Endbestand zweihundert Stück. Die grobe Durchschnittsformel ergibt hundertfünfzig Stück. Wenn es Monatswerte gibt, ist deren Durchschnitt oft aussagekräftiger als nur zwei Stichtage.
+
+Jonas: Bei einem Jahresverbrauch von neunhundert Stück ergibt sich die Umschlagshäufigkeit neunhundert geteilt durch hundertfünfzig, also sechs. Mit der im Unterricht verwendeten Rechenkonvention von dreihundertsechzig Tagen beträgt die durchschnittliche Lagerdauer dreihundertsechzig geteilt durch sechs: sechzig Tage.
+
+Mara: Das heißt nicht, dass jedes einzelne Teil genau sechzig Tage lag. Es ist ein Durchschnitt. Wenn die Drehzahl steigt, kann weniger Kapital gebunden sein. Zu wenig Bestand kann aber Fehlmengen und Expresskosten auslösen.
+
+Jonas: Bei der Bestellmenge liegt derselbe Zielkonflikt: Häufig kleine Bestellungen erhöhen Bestellkosten, seltene große Bestellungen erhöhen Lagerhaltungskosten. Die Andlersche Formel sucht unter ihren Annahmen eine kostenarme Menge. Sie ist kein Automatismus; Preise, Lieferzeiten, Mindestmengen und unsichere Nachfrage müssen im Fall geprüft werden.
+
+PAUSE: 7
+
+Jonas: Deine Rechnung: Durchschnittsbestand zweihundert Stück, Jahresverbrauch tausend Stück. Wie oft wird der Bestand rechnerisch umgeschlagen, und wie viele Tage Lagerdauer ergeben sich bei dreihundertsechzig Tagen?
+
+Mara: Tausend geteilt durch zweihundert ergibt fünf Umschläge. Dreihundertsechzig geteilt durch fünf ergibt zweiundsiebzig Tage. Ich nenne immer Einheiten und die Rechenkonvention dazu.
+
+Jonas: Sehr gut. Und vor jeder Maßnahme fragst du: Was soll besser werden, welche zweite Zahl könnte schlechter werden, und ist die Änderung im ganzen System wirklich vorteilhaft? Genau dazu dienen Kennzahlen.

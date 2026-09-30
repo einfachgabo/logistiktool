@@ -1,0 +1,23 @@
+Gesprächsfolge: Vertiefung 1.2 – Die Kette als Ganzes verbessern
+
+Mara: Unser Ersatzteilhändler hat nun einen guten Wareneingang und einen schnellen Versand. Trotzdem fehlen ständig Teile. Die Geschäftsführung will einfach mehr Lagerfläche. Wo würdest du beginnen?
+
+Jonas: Beim Materialfluss über die Grenzen der Abteilungen. Beschaffungslogistik bringt Material und Informationen vom Lieferanten ins Unternehmen. Produktionslogistik versorgt und steuert die Verarbeitung, falls wir selbst fertigen. Distributionslogistik bringt fertige Ware zum Kunden. Reverse Logistik führt Rücksendungen, Verpackungen oder Altteile zurück.
+
+Mara: Bei uns gibt es kaum Produktion. Aber Beschaffung, Lager und Distribution hängen eng zusammen. Wenn Einkauf große Mengen für einen Rabatt bestellt, steigen Bestand und Flächenbedarf. Wenn Vertrieb morgen Lieferung verspricht, ohne den Einkauf zu informieren, entstehen Expresskosten.
+
+Jonas: Genau. Eine lokale Kennzahl kann das Gesamtsystem verschlechtern. Der billigste Einkaufspreis je Stück hilft wenig, wenn Kapitalbindung, Schwund und Entsorgung wachsen. Wir zeichnen daher den Weg vom Lieferanten über Wareneingang, Lager, Kommissionierung und Transport bis zum Kunden.
+
+Mara: Für jeden Schritt notieren wir Menge, Zeit, Weg, Bestände und Rückmeldungen. Die Materialflussanalyse macht sichtbar, wo Ware wartet, mehrfach angefasst wird oder unnötig hin und her fährt. Die Informationsflussanalyse zeigt, ob ein Auftrag schon im System angekommen ist, während die Ware noch auf einer anderen Rampe steht.
+
+Jonas: In einer einfachen Prozessskizze fallen uns drei Dinge auf: Teile laufen erst zur Zwischenzone, dann zurück zum Hauptregal. Die Verpackung wartet auf Etiketten. Retouren landen im gleichen Fach wie verkaufsfähige Ware. Nicht alle drei Probleme löst ein neues Regal.
+
+Mara: Wir könnten häufige Artikel näher an Packplätze legen, Etiketten rechtzeitig bereitstellen und Retouren bis zur Prüfung trennen. Dann testen wir, ob Durchlaufzeit und Fehler wirklich sinken. Eine Maßnahme ohne Vorher-Nachher-Vergleich bleibt eine Vermutung.
+
+PAUSE: 6
+
+Jonas: Frage für unterwegs: Der Einkauf senkt seinen Stückpreis um fünf Prozent, aber der durchschnittliche Bestand verdoppelt sich. Ist die Logistik damit sicher besser geworden?
+
+Mara: Nein. Ich brauche mindestens die zusätzlichen Lager- und Kapitalkosten, Verderb oder Veralterung, Lieferfähigkeit und den gesamten Prozess. Vielleicht lohnt der Rabatt, vielleicht nicht. Eine Abteilung allein kann das nicht entscheiden.
+
+Jonas: So denkst du in der Prüfung: Systemgrenze festlegen, Material- und Informationsfluss zeichnen, Engpass und Verschwendung begründen, eine passende Änderung vorschlagen und ihren Effekt mit wenigen Kennzahlen kontrollieren.

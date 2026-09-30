@@ -33,16 +33,19 @@ CHAPTERS_1 = [
 CHAPTERS_2 = [
     ("Rückblick · Logistikkonzepte", "gespraech-gruber-1-konzept-elevenlabs.mp3", "gruber-1-konzepte.html"),
     ("Rückblick · Beschaffung", "gespraech-gruber-2-beschaffung-elevenlabs.mp3", "gruber-2-beschaffung.html"),
+    ("Beschaffung · Bedarf vertiefen", "gespraech-gruber-2-vertiefung-bedarf-elevenlabs.mp3", "gruber-2-beschaffung.html"),
     ("Rückblick · Lager und Transport", "gespraech-gruber-3-lager-elevenlabs.mp3", "gruber-3-lager-transport.html"),
     ("Strategie, IT und Projekte", "gespraech-gruber-4-projekt-elevenlabs.mp3", "gruber-4-strategie.html"),
     ("Dienstleistungen und Verträge", "gespraech-gruber-5-vergabe-elevenlabs.mp3", "gruber-5-vergabe.html"),
     ("Logistik als System", "gespraech-kroul-0-einfuehrung-elevenlabs.mp3", "kroul-0-einfuehrung.html"),
     ("Veränderungsprozesse", "gespraech-kroul-1-wandel-elevenlabs.mp3", "kroul-1-changemanagement.html"),
+    ("Wandel · Scanner einführen", "gespraech-kroul-1-vertiefung-wandel-elevenlabs.mp3", "kroul-1-changemanagement.html"),
     ("Menschen beteiligen", "gespraech-kroul-2-beteiligung-elevenlabs.mp3", "kroul-2-zweck-und-ziel.html"),
     ("Kommunikation und Konflikte", "gespraech-gruchala-1-kommunikation-elevenlabs.mp3", "gruchala-1-kommunikation.html"),
     ("Personalbedarf und Auswahl", "gespraech-gruchala-2-personal-elevenlabs.mp3", "gruchala-2-personal.html"),
     ("Arbeitszeit", "gespraech-gruchala-3-arbeitszeit-elevenlabs.mp3", "gruchala-3-arbeitsrecht.html"),
     ("Führung", "gespraech-gruchala-4-fuehrung-elevenlabs.mp3", "gruchala-4-fuehrung.html"),
+    ("Führung · schwierige Schicht", "gespraech-gruchala-4-vertiefung-fuehrung-elevenlabs.mp3", "gruchala-4-fuehrung.html"),
     ("Ausbildung und Arbeitsschutz", "gespraech-gruchala-5-ausbildung-elevenlabs.mp3", "gruchala-5-ausbildung.html"),
     ("Mathe-Grundlagen", "gespraech-mathe-grundlagen-elevenlabs.mp3", "mathe-grundlagen.html"),
     ("Kurzcheck · Projekt", "gespraech-gruber-4-kurzcheck-elevenlabs.mp3", "gruber-4-strategie.html"),
@@ -50,6 +53,20 @@ CHAPTERS_2 = [
     ("Kurzcheck · Veränderung", "gespraech-kroul-1-kurzcheck-elevenlabs.mp3", "kroul-1-changemanagement.html"),
     ("Kurzcheck · Schichtplan", "gespraech-gruchala-3-kurzcheck-elevenlabs.mp3", "gruchala-3-arbeitsrecht.html"),
     ("Kurzcheck · Mathe", "gespraech-mathe-kurzcheck-elevenlabs.mp3", "mathe-grundlagen.html"),
+]
+CHAPTERS_3 = [
+    ("Einstieg · Logistikstruktur", "gespraech-plab-1-logistikstruktur-elevenlabs.mp3", "plab-1-logistikstruktur.html"),
+    ("1.2 · Überblick Logistiksysteme", "gespraech-plab-2-logistiksysteme-elevenlabs.mp3", "plab-2-logistiksysteme.html"),
+    ("1.2 · Information und Auftrag", "gespraech-plab-2-vertiefung-info-elevenlabs.mp3", "plab-2-logistiksysteme.html"),
+    ("1.2 · Fördertechnik", "gespraech-plab-2-vertiefung-foerdertechnik-elevenlabs.mp3", "plab-2-logistiksysteme.html"),
+    ("1.2 · Externer Transport", "gespraech-plab-2-vertiefung-transport-elevenlabs.mp3", "plab-2-logistiksysteme.html"),
+    ("1.2 · Lager und Kommissionierung", "gespraech-plab-2-vertiefung-lager-elevenlabs.mp3", "plab-2-logistiksysteme.html"),
+    ("1.2 · Die ganze Kette", "gespraech-plab-2-vertiefung-kette-elevenlabs.mp3", "plab-2-logistiksysteme.html"),
+    ("1.3 · Überblick Kennzahlen", "gespraech-plab-3-kennzahlen-elevenlabs.mp3", "plab-3-logistische-ablaeufe.html"),
+    ("1.3 · Kennzahlen rechnen", "gespraech-plab-3-vertiefung-kennzahlen-elevenlabs.mp3", "plab-3-logistische-ablaeufe.html"),
+    ("1.3 · Analyseverfahren", "gespraech-plab-3-vertiefung-entscheidungen-elevenlabs.mp3", "plab-3-logistische-ablaeufe.html"),
+    ("2.1 · Überblick Strategie", "gespraech-plab-4-strategie-elevenlabs.mp3", "plab-4-strategie.html"),
+    ("2.1 · Strategie anwenden", "gespraech-plab-4-vertiefung-strategie-elevenlabs.mp3", "plab-4-strategie.html"),
 ]
 
 
@@ -64,11 +81,11 @@ def duration_ms(ffmpeg: str, path: Path) -> int:
 
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--fahrt", choices=("1", "2"), default="1")
+    parser.add_argument("--fahrt", choices=("1", "2", "3"), default="1")
     args = parser.parse_args()
     nummer = args.fahrt.zfill(2)
-    chapters = CHAPTERS_1 if args.fahrt == "1" else CHAPTERS_2
-    name = "logistikgrundlagen" if args.fahrt == "1" else "planung-wandel-fuehrung"
+    chapters = {"1": CHAPTERS_1, "2": CHAPTERS_2, "3": CHAPTERS_3}[args.fahrt]
+    name = {"1": "logistikgrundlagen", "2": "planung-wandel-fuehrung", "3": "logistiksysteme-vertiefung"}[args.fahrt]
     output = AUDIO / f"lernfahrt-{nummer}-{name}.mp3"
     index_path = AUDIO / f"lernfahrt-{nummer}-kapitel.json"
     ffmpeg = imageio_ffmpeg.get_ffmpeg_exe()
@@ -83,7 +100,7 @@ def main() -> None:
         encoding="utf-8",
     )
     metadata = BUILD / f"lernfahrt-{nummer}-chapters.txt"
-    title = "Logistikgrundlagen" if args.fahrt == "1" else "Planung, Wandel und Führung"
+    title = {"1": "Logistikgrundlagen", "2": "Planung, Wandel und Führung", "3": "Logistiksysteme vertiefen"}[args.fahrt]
     lines = [";FFMETADATA1", f"title=Lernfahrt {args.fahrt}: {title}", "artist=Mara und Jonas", "comment=Kapitelgespraeche und Denkpausen fuer unterwegs"]
     position = 0
     index = []

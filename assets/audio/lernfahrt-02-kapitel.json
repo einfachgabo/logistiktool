@@ -14,120 +14,141 @@
     "page": "gruber-2-beschaffung.html"
   },
   {
-    "title": "Rückblick · Lager und Transport",
+    "title": "Beschaffung · Bedarf vertiefen",
     "startSeconds": 745.02,
+    "durationSeconds": 172.28,
+    "audio": "gespraech-gruber-2-vertiefung-bedarf-elevenlabs.mp3",
+    "page": "gruber-2-beschaffung.html"
+  },
+  {
+    "title": "Rückblick · Lager und Transport",
+    "startSeconds": 917.3,
     "durationSeconds": 383.09,
     "audio": "gespraech-gruber-3-lager-elevenlabs.mp3",
     "page": "gruber-3-lager-transport.html"
   },
   {
     "title": "Strategie, IT und Projekte",
-    "startSeconds": 1128.11,
+    "startSeconds": 1300.39,
     "durationSeconds": 285.68,
     "audio": "gespraech-gruber-4-projekt-elevenlabs.mp3",
     "page": "gruber-4-strategie.html"
   },
   {
     "title": "Dienstleistungen und Verträge",
-    "startSeconds": 1413.79,
+    "startSeconds": 1586.07,
     "durationSeconds": 295.97,
     "audio": "gespraech-gruber-5-vergabe-elevenlabs.mp3",
     "page": "gruber-5-vergabe.html"
   },
   {
     "title": "Logistik als System",
-    "startSeconds": 1709.76,
+    "startSeconds": 1882.04,
     "durationSeconds": 216.03,
     "audio": "gespraech-kroul-0-einfuehrung-elevenlabs.mp3",
     "page": "kroul-0-einfuehrung.html"
   },
   {
     "title": "Veränderungsprozesse",
-    "startSeconds": 1925.79,
+    "startSeconds": 2098.07,
     "durationSeconds": 257.23,
     "audio": "gespraech-kroul-1-wandel-elevenlabs.mp3",
     "page": "kroul-1-changemanagement.html"
   },
   {
+    "title": "Wandel · Scanner einführen",
+    "startSeconds": 2355.3,
+    "durationSeconds": 159.4,
+    "audio": "gespraech-kroul-1-vertiefung-wandel-elevenlabs.mp3",
+    "page": "kroul-1-changemanagement.html"
+  },
+  {
     "title": "Menschen beteiligen",
-    "startSeconds": 2183.02,
+    "startSeconds": 2514.7,
     "durationSeconds": 154.49,
     "audio": "gespraech-kroul-2-beteiligung-elevenlabs.mp3",
     "page": "kroul-2-zweck-und-ziel.html"
   },
   {
     "title": "Kommunikation und Konflikte",
-    "startSeconds": 2337.51,
+    "startSeconds": 2669.19,
     "durationSeconds": 131.03,
     "audio": "gespraech-gruchala-1-kommunikation-elevenlabs.mp3",
     "page": "gruchala-1-kommunikation.html"
   },
   {
     "title": "Personalbedarf und Auswahl",
-    "startSeconds": 2468.54,
+    "startSeconds": 2800.22,
     "durationSeconds": 126.33,
     "audio": "gespraech-gruchala-2-personal-elevenlabs.mp3",
     "page": "gruchala-2-personal.html"
   },
   {
     "title": "Arbeitszeit",
-    "startSeconds": 2594.87,
+    "startSeconds": 2926.55,
     "durationSeconds": 125.68,
     "audio": "gespraech-gruchala-3-arbeitszeit-elevenlabs.mp3",
     "page": "gruchala-3-arbeitsrecht.html"
   },
   {
     "title": "Führung",
-    "startSeconds": 2720.55,
+    "startSeconds": 3052.23,
     "durationSeconds": 131.0,
     "audio": "gespraech-gruchala-4-fuehrung-elevenlabs.mp3",
     "page": "gruchala-4-fuehrung.html"
   },
   {
+    "title": "Führung · schwierige Schicht",
+    "startSeconds": 3183.23,
+    "durationSeconds": 176.85,
+    "audio": "gespraech-gruchala-4-vertiefung-fuehrung-elevenlabs.mp3",
+    "page": "gruchala-4-fuehrung.html"
+  },
+  {
     "title": "Ausbildung und Arbeitsschutz",
-    "startSeconds": 2851.55,
+    "startSeconds": 3360.08,
     "durationSeconds": 134.11,
     "audio": "gespraech-gruchala-5-ausbildung-elevenlabs.mp3",
     "page": "gruchala-5-ausbildung.html"
   },
   {
     "title": "Mathe-Grundlagen",
-    "startSeconds": 2985.66,
+    "startSeconds": 3494.19,
     "durationSeconds": 127.87,
     "audio": "gespraech-mathe-grundlagen-elevenlabs.mp3",
     "page": "mathe-grundlagen.html"
   },
   {
     "title": "Kurzcheck · Projekt",
-    "startSeconds": 3113.53,
+    "startSeconds": 3622.06,
     "durationSeconds": 73.25,
     "audio": "gespraech-gruber-4-kurzcheck-elevenlabs.mp3",
     "page": "gruber-4-strategie.html"
   },
   {
     "title": "Kurzcheck · Vergabe",
-    "startSeconds": 3186.78,
+    "startSeconds": 3695.31,
     "durationSeconds": 73.25,
     "audio": "gespraech-gruber-5-kurzcheck-elevenlabs.mp3",
     "page": "gruber-5-vergabe.html"
   },
   {
     "title": "Kurzcheck · Veränderung",
-    "startSeconds": 3260.03,
+    "startSeconds": 3768.56,
     "durationSeconds": 67.97,
     "audio": "gespraech-kroul-1-kurzcheck-elevenlabs.mp3",
     "page": "kroul-1-changemanagement.html"
   },
   {
     "title": "Kurzcheck · Schichtplan",
-    "startSeconds": 3328.0,
+    "startSeconds": 3836.53,
     "durationSeconds": 71.97,
     "audio": "gespraech-gruchala-3-kurzcheck-elevenlabs.mp3",
     "page": "gruchala-3-arbeitsrecht.html"
   },
   {
     "title": "Kurzcheck · Mathe",
-    "startSeconds": 3399.97,
+    "startSeconds": 3908.5,
     "durationSeconds": 63.56,
     "audio": "gespraech-mathe-kurzcheck-elevenlabs.mp3",
     "page": "mathe-grundlagen.html"

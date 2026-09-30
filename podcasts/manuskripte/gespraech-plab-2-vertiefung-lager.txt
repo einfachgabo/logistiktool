@@ -1,0 +1,27 @@
+Gesprächsfolge: Vertiefung 1.2 – Ein Auftrag durch das Lager
+
+Jonas: Heute kommt unser Ersatzteil im Lager an. Der Lkw-Fahrer sagt: Die Ware ist doch da, also steht sie ab sofort zum Verkauf. Stimmt das?
+
+Mara: Noch nicht. Beim Wareneingang vergleichen wir Bestellung, Lieferung und Begleitpapiere. Wir prüfen Menge, Identität und sichtbare Schäden. Abweichungen werden dokumentiert; beschädigte Ware kommt in einen gesperrten Bestand. Erst nach Buchung und geeigneter Einlagerung ist sie verlässlich verfügbar.
+
+Jonas: Genau. Stell dir vor, zwanzig Kartons kommen an, zwei sind beschädigt. Wenn das System zwanzig verkaufsfähige Stücke meldet, verspricht der Vertrieb zu viel. Die Qualität des Informationsflusses entscheidet hier direkt über die Lieferleistung.
+
+Mara: Wo lagern wir die achtzehn guten Stücke? Bei fester Lagerplatzvergabe ist ein Artikel immer an einem bekannten Platz. Das ist einfach, kann aber Fläche verschwenden. Bei chaotischer Lagerung ist der Platz flexibel, dafür müssen Platz und Bestand präzise im System stehen.
+
+Jonas: Und die Gestaltung hängt von Umschlag, Abmessungen, Zugriffsbedarf und Sicherheit ab. Schnelldreher nahe an der Kommissionierung sparen Wege. Sperrige oder schwere Ware braucht geeignete Regale und Fördermittel. Die perfekte Anordnung für einen Monat muss zu den nächsten Spitzen passen.
+
+Mara: Dann kommt ein Kundenauftrag mit fünf Positionen. Bei der Kommissionierung stellen wir die bestellten Artikel zusammen. Wenn jede Person pro Auftrag durch das ganze Lager läuft, entstehen viele Wege. Wir können Aufträge bündeln, nach Zonen trennen oder die Ware zur Person bringen. Aber jede Methode erzeugt andere Sortier- und Abstimmungsaufwände.
+
+Jonas: Richtig. Ein Pickfehler ist nicht nur eine falsche Entnahme. Er verursacht Suche, Nachsendung, Reklamation und möglicherweise Stillstand beim Kunden. Darum prüfen wir neben Picks pro Stunde auch Fehlerquote und Termintreue. Barcode-Scan am Platz kann helfen, wenn Stammdaten und Etiketten stimmen.
+
+Mara: Für die Entnahmereihenfolge denke ich an FIFO: zuerst eingelagerte Ware zuerst raus. Bei Ware mit Verfallsdatum ist FEFO oft sinnvoller: zuerst ablaufende Ware zuerst raus. Welche Regel passt, hängt vom Gut ab; das Lagerverwaltungssystem muss sie unterstützen.
+
+PAUSE: 6
+
+Jonas: Kurzfall: Im System liegen achtzehn gute Stücke, im Regal findest du nur sechzehn. Was tust du vor der Zusage für einen Auftrag über zehn Stück?
+
+Mara: Ich prüfe Reservierungen, Buchungen, Sperrbestand und den physischen Bestand. Der Auftrag über zehn kann möglicherweise erfüllt werden, aber die Differenz von zwei muss geklärt und korrigiert werden. Eine bloße Systemzahl reicht für eine verlässliche Zusage nicht.
+
+Jonas: Genau. Beim Warenausgang werden richtige Artikel und Mengen nochmals geprüft, passend verpackt, gekennzeichnet und mit Dokumenten übergeben. Die Inventur und laufende Bestandskontrolle schließen den Kreis: physische Ware und Buchbestand sollen übereinstimmen.
+
+Mara: Mein Merkpfad lautet: annehmen, prüfen, buchen, lagern, kommissionieren, kontrollieren, versenden und Bestand abgleichen. Bei jeder Station frage ich, welche Information an die nächste muss und welche Fehler dort noch entdeckt werden können.

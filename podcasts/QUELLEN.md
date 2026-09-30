@@ -1,6 +1,6 @@
 # Quellen und redaktionelle Regeln der Hörfolgen
 
-Die Hörfolgen fassen die Kapitel des Lernportals in eigenen Worten zusammen. Beispiele und Abruffragen sind neu formuliert. Die Folgen sind kurze Einstiege und Wiederholungen; für Rechenwege, vollständige Modelle und Aufgaben bleibt das jeweilige Kapitel maßgeblich.
+Die Hörfolgen erklären die Kapitel des Lernportals in eigenen Worten. Beispiele und Abruffragen sind neu formuliert. Es gibt kurze Wiederholungen, ausführlichere Kapitelgespräche und Vertiefungen; für vollständige Rechenwege, Modelle und Aufgaben bleibt das jeweilige Kapitel maßgeblich.
 
 ## Lernmethode
 
@@ -15,7 +15,9 @@ Die zwei Fragen am Ende einer Folge sollen aktiv beantwortet werden. Die festen 
 
 Die neu aufgenommenen Gesprächsfolgen verwenden die im ElevenLabs-Konto des Lernenden gespeicherte, in der Voice Library angebotene Stimme „Christian Plasa – Soft and Mild“ und die deutsche Stimme „Susi – Effortless and Confident“. Die Dialoge sind KI-generierte Vertonungen, keine echten Gespräche der Sprecher. Die neuen Manuskripte stützen sich auf die jeweiligen Kapitel und vorhandenen Hörtexte des Lernportals; Beispiele und Fragen sind eigenständig formuliert. Kurzchecks enthalten Denkpausen mit nachfolgender Auflösung. Die Lernfahrt bündelt zuerst längere Erklärungen und am Schluss Kurzchecks zu früheren Kapiteln. Der Abruf am Folgetag erfolgt getrennt vom Hören; die Folge selbst ersetzt keine Aufgabenbearbeitung.
 
-Die zweite Lernfahrt beginnt mit drei bereits veröffentlichten Gesprächen als Wiederholung, führt dann durch elf neue Kapitel und endet mit fünf Kurzchecks. Die Folgen erläutern jeweils einen konkreten Betriebsfall und lassen vor der Auflösung Zeit für eigene Antworten. Fachliche Details und vollständige Rechenwege stehen weiterhin im verlinkten Kapitel.
+Die zweite Lernfahrt beginnt mit drei bereits veröffentlichten Gesprächen als Wiederholung, führt dann durch elf Kapitelgespräche und drei Vertiefungen und endet mit fünf Kurzchecks. Die Folgen erläutern jeweils einen konkreten Betriebsfall und lassen vor der Auflösung Zeit für eigene Antworten. Fachliche Details und vollständige Rechenwege stehen weiterhin im verlinkten Kapitel.
+
+Die dritte Lernfahrt vertieft die dichten Kapitel 1.2, 1.3 und 2.1. Ein Ersatzteilhändler dient als durchgehender Fall. Die Folge zu Transport und Incoterms wurde zusätzlich mit den [Incoterms® 2020 der ICC](https://iccwbo.org/business-solutions/incoterms-rules/) und dem [ICC-Regeltext zu CPT](https://library.iccwbo.org/content/tfb/BOOKS/BK_0049/BK_0049_04_RulesAny.htm) abgeglichen. Die Rollen von Frachtführer und Spediteur folgen [§ 407 HGB](https://www.gesetze-im-internet.de/hgb/__407.html) und [§ 453 HGB](https://www.gesetze-im-internet.de/hgb/__453.html). Für die Prüfung bleiben die vollständigen Kapitel, Rechenaufgaben und die Originalskripte maßgeblich.
 
 ## Rechtsbezogene Folgen
 

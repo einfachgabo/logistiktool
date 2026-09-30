@@ -1,0 +1,37 @@
+Gesprächsfolge: Vertiefung 1.2 – Vom Auftrag zur richtigen Information
+
+Mara: Heute verfolgen wir eine Bestellung für ein Ersatzteil. Eine Werkstatt braucht es morgen früh. Im System stehen zwölf Stück. Klingt einfach: eins entnehmen, verschicken, fertig.
+
+Jonas: Nur wenn die Zahl stimmt und alle Beteiligten dasselbe Teil meinen. Ein Logistiksystem besteht aus festen Elementen wie Gebäuden und Regalen, beweglichen Elementen wie Ware und Fahrzeugen und aus Menschen, Regeln und Informationen. Für den Kunden zählt das Ergebnis der ganzen Kette.
+
+Mara: Dann schauen wir auf Input, Verarbeitung und Output. Input ist der Auftrag samt Artikelnummer, Menge und Termin. Im Prozess werden Verfügbarkeit geprüft, Ware reserviert, entnommen, verpackt und transportiert. Output ist die richtige Lieferung samt verlässlichem Nachweis und Rechnung.
+
+Jonas: Genau. Das Skript unterscheidet beim Order-to-Payment-S drei Grundtypen. Beim kurzen S ist die Ware schon auf Vorrat produziert: Make to Stock. Beim mittleren S startet die Produktion erst nach dem Auftrag, aber auf vorhandener Konstruktion: Make to Order. Beim langen S wird erst nach Kundenwunsch entwickelt und dann produziert: Engineer to Order. Je später du nach dem Auftrag liefern kannst, desto länger ist der Weg bis zur Zahlung. Unser Standard-Ersatzteil liegt hoffentlich bereits im Lager: kurzes S.
+
+Mara: Unsere Werkstatt bekommt das Ersatzteil zu spät. Ich könnte sofort den Fahrer verantwortlich machen.
+
+Jonas: Besser prüfst du die Schnittstellen. Wann ging der Auftrag ein? Wann wurde Bestand reserviert? Wann bestätigte das Lager die Entnahme? Wann bekam der Transport die Daten? Ein Zeitstempel allein beweist noch nicht, dass die Ware physisch bewegt wurde.
+
+Mara: Im Skript gibt es verschiedene Informationsarten. Ich merke sie mir am Ablauf: Der Kundenauftrag löst etwas aus. Die Packliste begleitet die Ausführung. Eine Bestandsmeldung zeigt den Zustand. Der Zustellnachweis bestätigt ein Ergebnis. Entscheidend ist, dass jede Information zur richtigen Zeit bei der richtigen Stelle ankommt.
+
+Jonas: Und eindeutig ist. Stell dir vor, Einkauf nennt das Teil A siebzehn, Lager führt es unter einer alten Nummer, und Vertrieb verspricht aufgrund eines veralteten Bestands zwölf Stück. Im Regal liegen nur zehn verkaufsfähige Stücke. Zwei beschädigte wurden nie gesperrt. Die schnelle Software verteilt jetzt nur den Fehler schneller.
+
+Mara: Das ERP verbindet Einkauf, Lager, Verkauf und Buchhaltung. Ein Lagerverwaltungssystem steuert Plätze und Bewegungen genauer. Mobile Datenerfassung per Scanner bucht Vorgänge direkt am Ort. EDI überträgt strukturierte Geschäftsdokumente zwischen Unternehmen, ohne dass jemand die Bestellung erneut abtippt.
+
+Jonas: Genau. Ein Barcode ist eine optisch gelesene Kennung. RFID kann Daten kontaktlos erfassen. Die Auswahl hängt von Prozess, Kosten und Fehlerursache ab. Es wäre Unsinn, teure Technik einzuführen, wenn die Artikelstammdaten ungeklärt sind.
+
+Mara: Bei der Einführung eines Informationssystems frage ich also nicht zuerst nach Geräten. Erst Ziel und Prozess beschreiben, Daten und Zuständigkeiten klären, Menschen schulen, testen und die Wirkung messen.
+
+Jonas: Hörfrage eins: Unsere Bestandsanzeige zeigt zwölf, im Regal liegen zehn nutzbare Teile. An welcher Stelle könnte der Fehler entstanden sein, und welche spätere Entscheidung beeinflusst er?
+
+PAUSE: 6
+
+Mara: Zum Beispiel beim Wareneingang, bei einer Beschädigung oder einer fehlenden Sperrbuchung. Der Verkauf verspricht zu viel; Lager und Transport planen mit falschen Mengen. Deshalb muss die Ursache im Prozess gefunden werden.
+
+Jonas: Hörfrage zwei: Was verbessert EDI, und was kann EDI allein nicht reparieren?
+
+PAUSE: 6
+
+Mara: EDI beschleunigt und standardisiert den Austausch von Geschäftsdokumenten zwischen Partnern. Es macht falsche Stammdaten oder unklare Verantwortlichkeiten nicht richtig.
+
+Jonas: Wenn du morgen nur eine Sache wiederholst, zeichne den Weg vom Auftrag zur Zahlung und markiere drei Übergaben. Dort liegen in Prüfungsfällen oft die wichtigsten Fehler.

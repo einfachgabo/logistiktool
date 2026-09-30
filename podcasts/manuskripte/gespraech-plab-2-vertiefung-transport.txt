@@ -1,0 +1,27 @@
+Gesprächsfolge: Vertiefung 1.2 – Eine Lieferung über die ganze Strecke planen
+
+Mara: Unser Ersatzteilhändler beliefert jetzt eine Werkstatt in Portugal. Die Ware muss zuverlässig ankommen. Der Chef sagt: Nimm einfach den billigsten Transport. Was fehlt an dieser Entscheidung?
+
+Jonas: Fast alles: Gewicht und Menge, gewünschter Termin, Empfindlichkeit, Strecke, Erreichbarkeit und die Kosten der gesamten Kette. Ein günstiger Hauptlauf hilft wenig, wenn Vorlauf, Umschlag und Nachlauf teuer oder langsam sind.
+
+Mara: Wir könnten auf der Straße direkt fahren. Die Schiene oder das Schiff sind auf langen Strecken interessant, benötigen aber oft einen Lkw davor und danach. Luftfracht ist schnell und meist teuer. Eine Pipeline passt zu geeigneten flüssigen oder gasförmigen Gütern, nicht zu Ersatzteilen.
+
+Jonas: Genau. Beim kombinierten Verkehr wechselt die Ladeeinheit den Verkehrsträger. Sie bleibt als Einheit zusammen, etwa ein Container vom Lkw auf den Zug. So spart man wiederholtes Umpacken. Umschlag kostet trotzdem Zeit und Geld. Die Entscheidung hängt auch von Frequenz und Infrastruktur ab.
+
+Mara: Beim eigenen Fuhrpark habe ich Kontrolle, aber Anschaffung, Personal und Auslastungsrisiko. Beim Fremdtransport kaufe ich Leistung ein. Für unsere seltene Portugal-Lieferung dürfte ein Dienstleister naheliegen. Ich würde Angebote nach Gesamtkosten, Laufzeit, Zuverlässigkeit und Haftungsfragen vergleichen.
+
+Jonas: Und nach dem Netz. Ein Hub-and-Spoke-System sammelt Sendungen an einem Knoten und verteilt sie weiter. Das kann Auslastung verbessern, führt aber über einen Umweg und schafft eine zusätzliche Schnittstelle. Für eine besonders eilige Sendung kann ein direkter Lauf besser sein.
+
+Mara: Die Werkstatt fragt, wer bis zu welchem Ort die Kosten und das Risiko trägt. Das klären wir im Kaufvertrag mit einer passenden Incoterms-Regel und einem genau benannten Ort. Ein Drei-Buchstaben-Kürzel ohne Ort ist zu ungenau.
+
+Jonas: Wichtig: Kostenübergang und Gefahrübergang sind nicht immer identisch. Bei manchen C-Klauseln bezahlt der Verkäufer den Transport bis zum benannten Bestimmungsort, während die Gefahr schon früher auf den Käufer übergeht. Darum darf man aus „Fracht bezahlt“ nicht automatisch „Risiko bis ans Ziel beim Verkäufer“ ableiten.
+
+Mara: Und Incoterms ersetzen nicht den ganzen Kaufvertrag. Preis, Zahlung, Eigentum und konkrete Transportleistung gehören ebenfalls sauber geklärt. Spediteur und Frachtführer haben unterschiedliche Rollen: Der Spediteur organisiert typischerweise die Versendung, der Frachtführer führt die Beförderung aus.
+
+PAUSE: 6
+
+Jonas: Stell dir vor, die Schiene spart im Hauptlauf zweihundert Euro, braucht aber einen zusätzlichen Umschlag für hundertfünfzig Euro und einen längeren Nachlauf für achtzig Euro. Ist sie in diesem Fall günstiger?
+
+Mara: Nein. Der Hauptlauf ist zweihundert Euro günstiger, die zusätzlichen Teile kosten zusammen zweihundertdreißig Euro. Insgesamt ist die Variante dreißig Euro teurer. Dazu muss ich Termin und Zuverlässigkeit prüfen. Genau deshalb rechne ich die Transportkette statt nur einen Tarif.
+
+Jonas: Gute Prüfungsantwort: Anforderungen nennen, realistische Verkehrsträger vergleichen, Vorlauf und Nachlauf einbeziehen, dann eine begründete Wahl treffen. Bei Außenhandel zusätzlich Regel, benannten Ort, Kosten und Gefahr bewusst auseinanderhalten.

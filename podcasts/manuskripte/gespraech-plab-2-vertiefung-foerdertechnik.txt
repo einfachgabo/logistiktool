@@ -1,0 +1,31 @@
+Gesprächsfolge: Vertiefung 1.2 – Wie Ware im Betrieb bewegt wird
+
+Jonas: Wir stehen in einem Lager mit zwei Bereichen. Links fahren täglich viele gleiche Kartons auf derselben Strecke. Rechts werden Paletten an wechselnde Plätze gebracht. Würdest du überall Förderbänder bauen?
+
+Mara: Nein. Für die gleichen Kartons auf festem Weg kann ein Stetigförderer passen. Bei Paletten mit wechselnden Zielen ist ein Unstetigförderer wie ein Stapler flexibler. Die Entscheidung hängt von Menge, Gewicht, Takt, Weg, Fläche und Veränderlichkeit ab.
+
+Jonas: Das ist der Kern. Transport ist die Ortsveränderung. Umschlag ist das Wechseln zwischen Fahrzeugen, Ladeeinheiten oder Verkehrsträgern. Lagern überbrückt Zeit. Diese TUL-Aktivitäten gehören zusammen. Ein Förderband spart vielleicht Fahrten, verursacht aber Kosten und legt Wege fest.
+
+Mara: Ladeeinheiten bündeln einzelne Güter. Eine Palette macht viele Kartons mit geeigneter Technik bewegbar. Förderhilfsmittel wie Palette oder Behälter tragen die Ware; Fördermittel bewegen sie. Das verwechselt man leicht.
+
+Jonas: Genau. Ein Gabelstapler ist ein Flurförderfahrzeug. Krane und Hebezeuge sind weitere Unstetigförderer. Rollenbahnen und Förderbänder gehören zu den Stetigförderern. Beim Vergleich frage ich nicht, welches Gerät modern klingt, sondern welcher Materialfluss gebraucht wird.
+
+Mara: Nehmen wir zehn Aufträge je Stunde mit derselben Kartongröße, alle von der Kommissionierung zur Packstation. Ein Förderband könnte die Strecke gleichmäßig bedienen. Aber wenn die Packstation nur fünf Aufträge schafft, verlagert sich der Stau ans Ende.
+
+Jonas: Gute Beobachtung. Eine lokale Beschleunigung verbessert das Gesamtsystem nur, wenn der Engpass mitwandert oder beseitigt wird. Vor der Technikentscheidung zeichnen wir Materialfluss und Wege. Wie oft wird transportiert? Wo wird gewartet? Wo kreuzen sich Personen und Fahrzeuge? Welche Spitzen müssen bewältigt werden?
+
+Mara: Und wir beachten Sicherheit. Schwere Paletten, enge Kurven und Fußwege brauchen geeignete Lastgrenzen, Verkehrswege und Unterweisung. Eine Kapazitätsrechnung ohne sichere Bewegung wäre unvollständig.
+
+Jonas: Jetzt verändert sich das Sortiment. Statt gleicher Kartons kommen unterschiedlich große Ersatzteile an. Das Band hat nur einen festen Weg, ein flexibler Transport kann neue Ziele bedienen. Die Entscheidung von gestern muss heute überprüft werden.
+
+Mara: Hörfrage: Worin liegt der Unterschied zwischen Förderhilfsmittel und Fördermittel? Nenne je ein Beispiel.
+
+PAUSE: 6
+
+Jonas: Die Palette ist ein Hilfsmittel zum Bündeln und Tragen. Der Stapler ist ein Fördermittel, das die Palette bewegt.
+
+Mara: Zweite Frage: Wann wäre ein Förderband sinnvoll, und welchen Nachteil erkaufst du dir?
+
+PAUSE: 6
+
+Jonas: Bei hohem, gleichmäßigem Durchsatz auf festem Weg. Dafür bindest du Kapital und legst dich räumlich fest. Bei stark wechselnden Zielen kann ein Stapler besser passen. Merke: erst Materialfluss, dann Technik.

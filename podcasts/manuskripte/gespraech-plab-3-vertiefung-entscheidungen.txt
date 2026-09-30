@@ -1,0 +1,27 @@
+Gesprächsfolge: Vertiefung 1.3 – Welche Analyse hilft bei welcher Entscheidung?
+
+Jonas: Wir haben tausend verschiedene Ersatzteile. Soll der Einkauf jedes mit demselben Aufwand planen?
+
+Mara: Wahrscheinlich nicht. Die ABC-Analyse sortiert nach Wertanteil, oft Jahresverbrauch mal Stückwert. Wenige A-Teile können einen großen Wertanteil ausmachen. Für sie lohnt genaue Steuerung. C-Teile sind einzeln weniger wertvoll, können aber trotzdem kritisch sein, wenn ein fehlendes Teil eine Maschine stoppt.
+
+Jonas: Genau. Die XYZ-Analyse beantwortet eine andere Frage: Wie gleichmäßig und vorhersagbar ist der Verbrauch? X ist eher regelmäßig, Z eher unregelmäßig. Eine Kombination aus Wert und Vorhersagbarkeit hilft bei Disposition und Kontrolle. Ein A-Z-Teil bindet viel Wert und ist schwer planbar; es braucht eine andere Strategie als ein günstiges X-Teil.
+
+Mara: Die Buchstaben entscheiden noch nichts von selbst. Wir müssen Lieferzeit, Kritikalität und mögliche Ersatzteile ansehen. Für ein seltenes, aber existenzielles Ersatzteil kann ein Sicherheitsbestand sinnvoll sein, obwohl der Verbrauch sprunghaft ist.
+
+Jonas: Nächste Entscheidung: Wir suchen ein neues Lagerverwaltungssystem. Drei Anbieter versprechen alles. Eine Nutzwertanalyse zwingt uns, Kriterien offen zu legen: zum Beispiel Bedienbarkeit, Schnittstellen, Verfügbarkeit des Supports und Preis. Wir gewichten sie, bewerten jede Alternative nach derselben Skala und rechnen die gewichteten Punkte zusammen.
+
+Mara: Ein paarweiser Vergleich kann helfen, Gewichte zu finden: Wir vergleichen jeweils zwei Kriterien und fragen, welches wichtiger ist. Die Zahl am Ende ist aber nur so gut wie unsere Kriterien und Bewertungen. Wenn ein zwingendes Datenschutz- oder Sicherheitsmerkmal fehlt, darf eine hohe Punktzahl das nicht wegzaubern.
+
+Jonas: Für die größere Lage schauen wir mit SWOT auf Stärken und Schwächen im Inneren sowie Chancen und Risiken außerhalb. Starke Lagerdaten sind eine Stärke; ein unsicherer Lieferant ist eher ein externes Risiko. Daraus leiten wir Maßnahmen ab, statt nur vier Listen zu füllen.
+
+Mara: Szenarien helfen bei unsicherer Zukunft: Was tun wir, wenn Nachfrage stark steigt, normal bleibt oder sinkt? Eine Risikoanalyse fragt zusätzlich nach Eintrittswahrscheinlichkeit und Auswirkung. Benchmarking vergleicht passende Prozesse mit anderen und fragt anschließend nach Ursachen, nicht nur nach Rangplätzen.
+
+Jonas: Und Produktlebenszyklus oder Portfolioanalysen ordnen Produkte und Geschäftsfelder ein. Das kann Lager- und Distributionsentscheidungen beeinflussen, ist aber ein vereinfachtes Modell. Die Balanced Scorecard übersetzt Strategie in mehrere Blickrichtungen, damit nicht nur Finanzzahlen zählen.
+
+PAUSE: 6
+
+Jonas: Kurzer Abruf: Welches Werkzeug nimmst du für Wertanteile, welches für Nachfrageschwankungen und welches für die transparente Wahl zwischen drei IT-Angeboten?
+
+Mara: ABC für Wertanteile, XYZ für Regelmäßigkeit der Nachfrage und Nutzwertanalyse für die Alternativen. Danach prüfe ich den konkreten Fall, vor allem Kritikalität und Mindestanforderungen.
+
+Jonas: Genau. Ein Werkzeug ist eine Fragehilfe. Sag in der Prüfung zuerst, welche Entscheidung ansteht, dann warum dieses Verfahren dazu passt, welche Daten nötig sind und wo seine Grenzen liegen.

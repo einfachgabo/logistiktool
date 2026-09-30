@@ -1,0 +1,27 @@
+Gesprächsfolge: Vertiefung 2.1 – Aus einer Lage eine Logistikstrategie machen
+
+Mara: Unser Ersatzteilhändler will künftig die zuverlässigste Quelle für zeitkritische Werkstattteile in der Region sein. Ist das schon eine Strategie?
+
+Jonas: Es ist zunächst eine Richtung. Im Strategiebildungsprozess definieren wir Ziele, analysieren Umfeld und eigene Möglichkeiten, bewerten Optionen, wählen eine Strategie und setzen sie mit Kontrolle um. Eine schicke Leitbildformulierung allein verändert noch keinen Materialfluss.
+
+Mara: Wer muss mitgedacht werden? Werkstätten brauchen Teile pünktlich. Lieferanten brauchen realistische Abrufe. Mitarbeitende müssen neue Abläufe schaffen. Die Geschäftsführung achtet auf Ergebnis und Risiko. Die Stakeholder-Matrix hilft, Einfluss und Interesse zu ordnen; Gespräche ersetzen kann sie nicht.
+
+Jonas: Außen prüfen wir etwa Nachfrage, Konkurrenz, Regeln und Liefermärkte. Innen prüfen wir Bestände, IT, Personal, Prozesse und besondere Fähigkeiten. SWOT verbindet beides. Beispiel: Unsere Stärke sind gute Echtzeitdaten; eine Chance sind regionale Werkstätten mit Bedarf an verlässlicher Zustellung. Daraus könnte ein glaubwürdiges Serviceangebot entstehen.
+
+Mara: Die Schwäche sind lange Kommissionierwege, das Risiko ist ein einziger Lieferant für kritische Teile. Daraus folgen andere Maßnahmen: Lagerlayout ändern und Lieferfähigkeit absichern. Ein SWOT-Feld ist erst nützlich, wenn es zu einer Entscheidung führt.
+
+Jonas: Bei Porter schauen wir auf Wettbewerbsdruck: bestehende Anbieter, neue Anbieter, Ersatzangebote sowie Verhandlungsmacht von Kunden und Lieferanten. Eine Logistikstrategie kann auf niedrige Gesamtkosten oder auf einen besonderen Servicevorteil zielen. Für unseren Händler ist die verlässliche Verfügbarkeit kritischer Teile wahrscheinlich wichtiger als der billigste Versand für jedes Produkt.
+
+Mara: Ressourcen prüfen wir ebenfalls. Ein gutes IT-System kann man kaufen. Schwerer nachzuahmen sind saubere Daten, eingespielte Prozesse und Lieferantenbeziehungen zusammen. Der Foliensatz nutzt dafür VARIO als Frageraster. Ein einzelnes Etikett ist noch kein dauerhafter Vorteil.
+
+Jonas: Dann segmentieren wir das Sortiment. Kritische Teile mit hoher Nachfrage brauchen andere Bestands- und Lieferregeln als seltene Standardteile. In einem Portfolio wird sichtbar, wo Logistikleistung strategisch wichtig und wo Wirtschaftlichkeit besonders eng ist. Die Matrix gibt Handlungshinweise; sie ersetzt nicht die betriebliche Rechnung.
+
+PAUSE: 7
+
+Jonas: Prüfungsfall: Der Händler will morgen landesweit liefern, hat aber nur ein regionales Lager und unzuverlässige Bestandsdaten. Welche zwei Schritte kommen vor einer teuren Werbekampagne?
+
+Mara: Erst den tatsächlichen Service und die Datenqualität messen. Dann Kapazität, Netz und Kosten für das Versprechen prüfen. Vielleicht beginne ich mit einer klar definierten Region oder mit wenigen kritischen Artikeln und baue erst nach einem erfolgreichen Test aus.
+
+Jonas: Genau. In der Umsetzung brauchen wir Zuständigkeiten, Zeitplan, Investitionen und Kennzahlen. Termintreue allein genügt nicht; Fehler, Bestand, Kosten und Kundennutzen gehören dazu. Kultur und Ethik spielen mit: Ein unerfüllbares Lieferverprechen ist kein guter Wettbewerbsvorteil.
+
+Mara: Mein Prüfpfad lautet: Ziel, Umfeld, eigene Lage, Optionen, Wahl, Umsetzung, Kontrolle. Für jede Stufe nenne ich einen konkreten Befund aus dem Fall. So wird aus einer Modellsammlung eine begründete Logistikentscheidung.

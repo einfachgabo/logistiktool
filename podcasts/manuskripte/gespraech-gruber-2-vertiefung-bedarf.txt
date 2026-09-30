@@ -1,0 +1,23 @@
+Gesprächsfolge: Vertiefung Beschaffung – Wie viel bestellen wir wirklich?
+
+Mara: Unsere Werkstattkette plant hundert Reparatursets. Jedes Set braucht zwei Dichtungen. Sind zweihundert Dichtungen schon die Bestellmenge?
+
+Jonas: Nein. Zweihundert ist der Bruttobedarf aus der Stückliste. Vom Bruttobedarf gehen verfügbare Bestände und fest zugesagte Zugänge ab; Rückstände und ein gewünschter Sicherheitsbestand können den Nettobedarf erhöhen. Erst dann wissen wir, was zusätzlich beschafft werden muss.
+
+Mara: Also: Zweihundert benötigt, vierzig frei am Lager und dreißig rechtzeitig bestellt. Ohne weitere Vorgaben bleiben hundertdreißig Dichtungen Nettobedarf. Wenn zwanzig als Sicherheitsbestand erhalten bleiben sollen, sind es hundertfünfzig. Ich muss prüfen, ob die dreißig wirklich rechtzeitig kommen.
+
+Jonas: Genau. Das ist deterministische Bedarfsermittlung: Ein bekannter Produktionsplan wird mit einer Stückliste auf Teile heruntergebrochen. Bei Ersatzteilen für ungeplante Reparaturen fehlt dieser feste Plan. Dann schätzen wir aus Vergangenheitswerten und nennen das stochastisch.
+
+Mara: Für gleichmäßigen Bedarf kann ein Mittelwert helfen. Ein gleitender Mittelwert nimmt nur die letzten Perioden. Eine Gewichtung oder exponentielle Glättung reagiert stärker auf neue Werte. Wenn die Nachfrage plötzlich springt, macht keine Formel die Zukunft sicher. Wir müssen Prognosefehler beobachten.
+
+Jonas: Bei der Bestellung unterscheiden wir Auslöser. Beim Bestellpunktverfahren wird bestellt, wenn der verfügbare Bestand eine Schwelle erreicht; die Schwelle muss Bedarf während der Lieferzeit und gegebenenfalls Sicherheitsbestand berücksichtigen. Beim Bestellrhythmusverfahren prüfen und bestellen wir zu festen Zeitpunkten. Das ist planbar, muss aber den Verbrauch bis zum nächsten Termin mitdenken.
+
+Mara: Kanban passt zu regelmäßigem Verbrauch und stabilen Abläufen: Ein leerer Behälter oder ein Signal löst Nachschub aus. Bei stark wechselndem Bedarf oder störanfälligen Lieferungen brauchen wir Puffer und klare Regeln. Fertigungssynchrone Beschaffung spart Bestand, erhöht aber die Abhängigkeit von pünktlicher Lieferung.
+
+PAUSE: 6
+
+Jonas: Denkfrage: Für ein Teil werden zweihundert Stück gebraucht. Vierzig sind frei, dreißig kommen rechtzeitig, zwanzig Stück Sicherheitsbestand sollen nach der Entnahme bleiben. Wie groß ist der zusätzliche Bedarf?
+
+Mara: Hundertfünfzig Stück. Ich rechne zweihundert plus zwanzig minus vierzig minus dreißig. Vor dem Bestellen prüfe ich, ob Reservierungen oder bereits ausgelöste Bestellungen in den Angaben stecken, damit ich nichts doppelt zähle.
+
+Jonas: Die optimale Bestellmenge nach Andler balanciert Bestellkosten gegen Lagerhaltungskosten. Sie beantwortet, wie groß einzelne Bestellungen unter bestimmten Annahmen sein sollen. Sie beantwortet nicht allein, wann bestellt wird, und sie ersetzt keine Prüfung von Lieferzeit, Mindestmenge und Unsicherheit.
