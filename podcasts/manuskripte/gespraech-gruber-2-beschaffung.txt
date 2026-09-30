@@ -1,0 +1,71 @@
+Gesprächsfolge: Beschaffung und Bedarf - Erst rechnen, dann bestellen
+
+Mara: Ich habe zwei Artikel auf dem Tisch: Schrauben, die wir jeden Tag brauchen, und eine teure Spezialpumpe, die nur gelegentlich ausfällt. Kann ich beide mit derselben Bestellregel versorgen?
+
+Jonas: Das wäre einfach, aber selten gut. Bei Schrauben kann ein kleiner laufender Vorrat sinnvoll sein. Die Pumpe könnte für einen konkreten Auftrag beschafft werden, sofern die Lieferzeit reicht. Entscheidend sind Bedarfsmuster, Ausfallfolgen, Lieferzeit und Kapitalbindung.
+
+Mara: Bevor wir über Lieferanten reden, muss ich wissen, wie viel wirklich fehlt.
+
+Jonas: Genau. Der Primärbedarf beschreibt die fertigen Produkte. Sekundärbedarf sind Teile dafür. Hilfs- und Betriebsstoffe unterstützen die Herstellung. In einer Aufgabe solltest du zuerst erkennen, welche Ebene gegeben ist und welche du berechnen musst.
+
+Mara: Rechenfall: Wir fertigen zehn Pumpen. Jede braucht vier Dichtungen. Wie hoch ist der Bruttobedarf?
+
+PAUSE: 5
+
+Mara: Vierzig Dichtungen. Zehn mal vier.
+
+Jonas: Richtig. Zwölf nutzbare Dichtungen liegen bereit, acht weitere sind verbindlich bestellt. Ohne zusätzliche Reservierungen, Ausschuss oder Sicherheitsbestand: Wie viel müssen wir neu beschaffen?
+
+PAUSE: 5
+
+Mara: Zwanzig. Vom Bruttobedarf vierzig ziehe ich zwölf verfügbare und acht sichere Zugänge ab. Das ist der Nettobedarf unter diesen Annahmen.
+
+Jonas: Genau. Prüfe das Wort „nutzbar“. Gesperrte oder beschädigte Teile gehören nicht in den verfügbaren Bestand. Und wenn ein Sicherheitsbestand erhalten bleiben soll, musst du ihn in der Planung berücksichtigen.
+
+Mara: Jetzt die Lieferantenseite. Ein einziger Lieferant für die Pumpe kann die Abstimmung erleichtern. Aber wenn er ausfällt, stehen wir ohne Ersatz da.
+
+Jonas: Das ist Single Sourcing mit Vorteil und Risiko. Dual oder Multiple Sourcing verteilt das Risiko, kann aber Preis, Qualität und Abstimmung verändern. Nenne in der Prüfung das entscheidende Ziel: Brauchen wir Versorgungssicherheit, enge Zusammenarbeit, günstigen Preis oder kurze Lieferzeit?
+
+Mara: Und Beschaffung auf Vorrat schützt gegen Unsicherheit, bindet aber Geld. Einzelbeschaffung hält Bestände klein, wenn ich Zeit zum Warten habe.
+
+Jonas: Genau. Fertigungssynchrone Versorgung spart Puffer, verlangt besonders zuverlässige Termine und Daten. Kanban ist eine andere Idee: Ein Verbrauchssignal, etwa ein leerer Behälter, löst eine festgelegte Wiederauffüllung aus.
+
+Mara: Ein Kanban-Signal ist also kein Zauber. Der Nachschub muss auch rechtzeitig und in passender Menge kommen.
+
+Jonas: Richtig. Ein System mit schönen Karten hilft nicht, wenn Lieferzeit und Behältermenge nicht zum Verbrauch passen. Du prüfst immer die Voraussetzungen.
+
+Mara: Beim Bedarf höre ich „deterministisch“ und „stochastisch“. Kannst du es ohne Fachwortnebel erklären?
+
+Jonas: Wenn ein Produktionsplan feststeht, leitest du Teile aus Stücklisten ab. Das ist deterministische Ermittlung. Wenn die künftige Nachfrage unbekannt ist, schätzt du sie aus früherem Verbrauch. Das ist stochastisch. Beide Wege können irren, aber sie verwenden unterschiedliche Informationen.
+
+Mara: Für ein Ersatzteil hatten wir Monatsverkäufe von zehn, zwölf, elf und dreißig. Der einfache Durchschnitt liegt deutlich über den ersten drei Monaten.
+
+Jonas: Genau. War die dreißig eine einmalige Aktion oder beginnt ein Trend? Ohne diese Frage ist jede Formel blind. Ein gleitender Mittelwert nimmt nur jüngere Zeiträume. Ein gewogener Mittelwert gibt manchen Beobachtungen mehr Gewicht. Exponentielle Glättung aktualisiert die Schätzung fortlaufend. Wähle nicht nur nach Formelname, sondern nach dem Muster der Daten.
+
+Mara: Was mache ich mit der Prognose? Sie sagt ja noch nicht, wann ich bestelle.
+
+Jonas: Richtig. Trenne drei Fragen: Wie hoch ist der Bedarf? Wann wird bestellt? Wie viel wird bestellt? Beim Bestellpunktverfahren löst ein bestimmter Bestand den Auftrag aus. Der Punkt muss den Verbrauch während der Lieferzeit und einen passenden Sicherheitsbestand abdecken.
+
+Mara: Beim Bestellrhythmusverfahren prüfe ich zu festen Terminen. Das bündelt Arbeit, aber ich muss bis zum nächsten Termin überbrücken können.
+
+Jonas: Genau. Ein langer Prüfungsrhythmus bei schwankendem Verbrauch braucht mehr Puffer oder riskiert Fehlmengen. Der Bestellpunkt reagiert auf Bestandsänderungen, braucht dafür zuverlässige Buchungen. Kein Verfahren ist für jeden Artikel automatisch besser.
+
+Mara: Und wie viel bestelle ich? Große Mengen können Bestellvorgänge und Stückpreise senken, aber sie erhöhen den durchschnittlichen Lagerbestand.
+
+Jonas: Damit steigen häufig Lagerhaltung und Kapitalbindung. Kleine Mengen drehen es um: weniger Bestand, mehr Bestellaufwand. Die Andlersche Formel sucht unter vereinfachten Annahmen einen rechnerischen Ausgleich dieser Kosten. In einem Fall musst du prüfen, ob die Annahmen passen, etwa gleichmäßiger Bedarf und stabile Kosten.
+
+Mara: Testfrage: Der Einkauf feiert einen Mengenrabatt für die Spezialpumpe. Was fehlt in der Bewertung?
+
+PAUSE: 5
+
+Mara: Lagerkosten, Kapitalbindung und das Risiko, dass die Pumpe lange liegt oder sich ändert. Außerdem die Ausfallfolge, falls wir zu wenig vorrätig haben.
+
+Jonas: Genau. Für einen günstigen Standardartikel mit gleichmäßigem Verbrauch kann eine einfache Regel gut sein. Ein seltenes teures Teil braucht eine bewusstere Entscheidung. Der größte Fehler wäre, alle Artikel gleich zu behandeln.
+
+Mara: Ich fasse zusammen: Zuerst Brutto- und Nettobedarf sauber rechnen. Dann die passende Lieferanten- und Beschaffungsstrategie. Danach Bedarf schätzen, Bestellzeitpunkt wählen und Menge abwägen.
+
+Jonas: Drei Fragen für morgen: Wie wurden aus vierzig Dichtungen zwanzig neu zu beschaffende? Wann nutzt du eine Stückliste statt einer Verbrauchsprognose? Und was passiert mit Bestell- und Lagerkosten, wenn die Bestellmenge stark steigt?
+
+PAUSE: 6
+
+Mara: Wenn ich diese Antworten ohne Aufnahme erklären kann, merke ich mir die Formeln leichter. Dann übe ich die Zahlen im Kapitel selbst.

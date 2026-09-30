@@ -1,0 +1,27 @@
+Gesprächsfolge: Kapitel 1.2 - Kurzcheck zu System, Transport und Lager
+
+Mara: Ein Kunde bestellt zehn Ersatzteile. Das ERP zeigt zehn an, im Regal liegen aber nur acht. Wo beginnt deine Analyse?
+
+Jonas: Beim Ablauf. Der Auftrag und der Bestand sind Input. Prüfen, reservieren, kommissionieren und versenden sind Verarbeitung. Der korrekt belieferte Kunde ist der Output. Welche Übergabe könnte den Fehler weitergegeben haben?
+
+PAUSE: 4
+
+Mara: Zwei beschädigte Teile wurden im Wareneingang vielleicht nicht gesperrt. Dann verspricht der Verkauf eine Menge, die gar nicht verfügbar ist.
+
+Jonas: Richtig. Ein ERP macht Daten gemeinsam sichtbar. Es macht falsche Daten nicht automatisch richtig.
+
+Mara: Für die acht verfügbaren Teile droht jetzt ein Stillstand beim Kunden. Direktfahrt oder Sammeltransport?
+
+Jonas: Entscheide nach Folgen, nicht nur nach dem Frachtpreis. Wenn der Stillstand sehr teuer wird, kann eine Direktfahrt wirtschaftlich sein. Nenne aber auch ihren höheren Transportaufwand. Und was ist der Unterschied zwischen Transport und Umschlag?
+
+PAUSE: 4
+
+Mara: Transport bewegt Güter zwischen Orten. Beim Umschlag wechselt die Ladeeinheit, das Fahrzeug oder der Verkehrsträger. Jede Übergabe kostet Zeit und kann Fehler erzeugen.
+
+Jonas: Sehr gut. Letzter Blick ins Lager: Für kleine Ersatzteile gibt es feste oder dynamische Plätze. Wann wird die dynamische Lagerung gefährlich?
+
+PAUSE: 4
+
+Mara: Wenn der tatsächliche Platz nicht zuverlässig gebucht wird. Dann spart man vielleicht Fläche, verliert aber Zeit durch Suchen und macht Lieferzusagen auf falscher Grundlage.
+
+Jonas: Genau. Merke dir für die Prüfung den Weg vom Wareneingang bis zum Kunden. Zeige an einer konkreten Schnittstelle, wie ein Datenfehler Materialfluss und Liefertermin verändert.

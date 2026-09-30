@@ -204,7 +204,7 @@ def main() -> None:
     listing.write_text("".join(f"file '{clip.resolve().as_posix()}'\n" for clip in clips), encoding="utf-8")
     output = (BUILD if args.sample else OUTPUT) / f"{args.name}-elevenlabs{'-probe' if args.sample else ''}.mp3"
     subprocess.run([ffmpeg, "-v", "error", "-y", "-f", "concat", "-safe", "0", "-i", str(listing), "-c:a", "libmp3lame", "-b:a", "128k", str(output)], check=True)
-    print(f"Hörprobe fertig: {output}")
+    print(f"{'Hörprobe' if args.sample else 'Folge'} fertig: {output}")
 
 
 if __name__ == "__main__":

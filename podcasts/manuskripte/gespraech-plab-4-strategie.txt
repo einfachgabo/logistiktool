@@ -1,0 +1,69 @@
+Gesprächsfolge: Kapitel 2.1 - Eine Logistikstrategie, die im Alltag trägt
+
+Mara: Stell dir einen regionalen Ersatzteilhändler vor. Kunden wollen morgen beliefert werden. Gleichzeitig bindet der Bestand viel Geld, und Onlineanbieter machen Druck. Die Geschäftsführung fragt nach einer neuen Logistikstrategie. Kaufen wir erst mal Software?
+
+Jonas: Noch nicht. Eine Strategie beginnt mit Ausgangslage und Ziel, nicht mit einem Produktkatalog. Was soll der Händler in drei Jahren zuverlässig leisten können? Vielleicht kritische Ersatzteile schnell liefern, ohne den gesamten Bestand pauschal aufzublähen.
+
+Mara: Dann muss ich wissen, für wen das wichtig ist.
+
+Jonas: Genau. Kunden brauchen Verfügbarkeit. Die Geschäftsführung achtet auf Ergebnis und Risiko. Mitarbeitende brauchen einen machbaren Ablauf. Lieferanten müssen Termine und Daten liefern. Eine Stakeholderanalyse zeigt, wo Interessen zusammenpassen und wo sie sich widersprechen.
+
+Mara: Wenn ich nur den Kundenwunsch „morgen“ betrachte, könnte ich überall hohe Bestände und Expressfahrten einplanen.
+
+Jonas: Und damit die Kosten aus dem Blick verlieren. Wenn du nur die Bestände senkst, könnte der Service leiden. Eine gute Strategie benennt den Zielkonflikt. Kurzer Selbsttest: Nenne für den Händler ein Ziel und eine mögliche Gegenwirkung.
+
+PAUSE: 5
+
+Mara: Ziel: Die wichtigsten Teile zuverlässig am nächsten Tag liefern. Gegenwirkung: Ein größerer Sicherheitsbestand bindet Kapital und braucht Fläche.
+
+Jonas: Sehr gut. Jetzt trennen wir Außen und Innen. Außen sind Markt, Wettbewerb, Technik, Regeln und gesellschaftliche Erwartungen. Innen sind Fähigkeiten, Bestände, IT, Menschen und Prozesse. Aus dieser Trennung entsteht eine brauchbare SWOT-Analyse.
+
+Mara: Stärke und Schwäche sind innen. Chance und Risiko außen. Eine gute Artikelstammdatenqualität wäre eine Stärke. Neue Onlinekunden könnten eine Chance sein.
+
+Jonas: Genau. Aber die vier Wörter allein lösen nichts. Du verbindest sie. Mit guten Daten kannst du einen digitalen Bestellkanal nutzen. Eine langsame Kommissionierung als Schwäche wird bei wachsender Online-Nachfrage zum Engpass. Und ein einziger Hersteller für kritische Teile ist ein Risiko, wenn seine Lieferungen ausfallen.
+
+Mara: Dann könnten wir den Bestellkanal ausbauen, Pickwege verbessern und für kritische Teile einen zweiten Bezugsweg prüfen. Drei Maßnahmen, ein gemeinsames Ziel.
+
+Jonas: So wird eine Strategie stimmig. Aber Alternativen bleiben zu bewerten. Ein zweites Lager verkürzt vielleicht Wege zum Kunden, braucht jedoch Fläche, Personal und zusätzlichen Bestand. Eine digitale Anbindung verbessert Transparenz nur, wenn Daten und Zusammenarbeit sauber sind.
+
+Mara: Wie halte ich fest, ob die Strategie tatsächlich funktioniert?
+
+Jonas: Mit wenigen passenden Größen: Termintreue, Verfügbarkeit und Fehlerquote für die Leistung; Bestand und Kosten für den Aufwand. Keine einzelne Zahl reicht. Wenn Lieferungen schneller werden, aber Fehler und Retouren steigen, ist das kein klarer Erfolg.
+
+Mara: Im Leitbild steht „zuverlässig und verantwortlich“. Das klingt erst mal nach Werbung.
+
+Jonas: Es wird konkret, wenn es Entscheidungen steuert. Welche kritischen Teile halten wir vorrätig? Wie informieren wir einen Kunden bei Verzögerung? Welche Lieferanten erfüllen unsere Qualitätsanforderungen? Unternehmensphilosophie und Kultur sollen im Verhalten sichtbar werden, nicht nur im Text.
+
+Mara: Unser Händler konkurriert über Verfügbarkeit alter Ersatzteile. Er ist vielleicht teurer als andere. Muss er trotzdem auf den niedrigsten Preis zielen?
+
+Jonas: Nein. Ein Unternehmen kann mit Kosten, besonderem Service oder einer klaren Kundengruppe erfolgreich sein. Wenn der Kundennutzen im schnellen Finden seltener Teile liegt, kann eine pauschale Lagerkürzung den Vorteil zerstören. Digitaler Bestand, passende Verpackung und ein verlässlicher Expressprozess unterstützen ihn.
+
+Mara: Was wäre die Prüfungsfrage hinter Produktlebenszyklus und Logistikportfolio?
+
+Jonas: Ob du unterschiedliche Artikel sinnvoll unterschiedlich behandelst. Ein Auslaufprodukt braucht meist keine ständig wachsende Fläche. Ein kritisches Ersatzteil mit unregelmäßigem Bedarf kann trotzdem einen gezielten Puffer rechtfertigen. Das Portfolio hilft, Aufmerksamkeit und Mittel zuzuordnen, statt alles gleich zu behandeln.
+
+Mara: Und die Wertkette fragt nach dem Beitrag einer Tätigkeit für Kunde und Ergebnis?
+
+Jonas: Richtig. Eine Aktivität kostet nicht nur; sie kann den Service sichern. Eine Qualitätsprüfung braucht Zeit, verhindert aber vielleicht teure Fehlversände. Beurteile den Gesamtbeitrag. So vermeidest du, aus einer Einzelzahl eine falsche Strategie abzuleiten.
+
+Mara: Ich habe noch das Wort Distributionslogistik. Wo wird die Strategie dort sichtbar?
+
+Jonas: Bei Lagerstandorten, Lieferwegen, Touren, Serviceversprechen und Dienstleistern. „Lieferung morgen“ ist nur glaubwürdig, wenn Bestand, Auftragseingang, Kommissionierung, Abholung und Transport auch an einem vollen Montag zusammenpassen.
+
+Mara: Dann bitte eine Entscheidung zum Üben. Der Händler kann entweder ein zweites Lager eröffnen oder sein bestehendes Lager besser organisieren. Welche Lösung wählst du?
+
+PAUSE: 6
+
+Jonas: Zuerst frage ich nach Region der Kunden, heutigen Lieferzeiten, Engpässen, Bestand, Investition und Personal. Vielleicht reicht ein späterer Cut-off mit besseren Pickwegen. Vielleicht braucht die entfernte Region wirklich einen zusätzlichen Standort. Ohne diese Daten wäre eine eindeutige Wahl geraten. In der Prüfung ist es stark, die entscheidende Voraussetzung zu nennen.
+
+Mara: Und ich sollte einen Nachteil meiner Empfehlung offen ansprechen.
+
+Jonas: Genau. Ein zweites Lager kann schneller liefern, aber Bestand und Fixkosten erhöhen. Die Optimierung eines Standorts kostet weniger, erreicht vielleicht nicht jeden entfernten Kunden rechtzeitig. Das ist keine Schwäche der Antwort, sondern eine ehrliche Abwägung.
+
+Mara: Lass uns die Strategie in vier Sätzen bauen. Erstens: Unser Ziel sind verlässliche Ersatzteillieferungen am nächsten Tag für definierte kritische Artikel. Zweitens: Wir verbessern Daten, Pickwege und Lieferantenabsicherung. Drittens: Wir erwarten höhere Termintreue und prüfen sie zusammen mit Kosten und Bestand. Viertens: Wir achten auf Investition und zusätzliche Komplexität.
+
+Jonas: Genau diese Kette aus Ziel, Maßnahme, Wirkung und Risiko ist prüfungstauglich. Zum Schluss zwei Fragen an dich: Was gehört bei SWOT nach innen und was nach außen? Und warum kann ein zusätzliches Lager gleichzeitig Service verbessern und Wirtschaftlichkeit verschlechtern?
+
+PAUSE: 6
+
+Mara: Antworte morgen noch einmal ohne die Folge. Dann erkennst du, ob du die Strategie wirklich erklären kannst oder nur die Wörter wiedererkennst.

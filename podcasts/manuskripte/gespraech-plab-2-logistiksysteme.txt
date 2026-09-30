@@ -1,0 +1,91 @@
+Gesprächsfolge: Kapitel 1.2 - Vom Auftrag bis zur Lieferung
+
+Mara: Es ist Montagmorgen. Ein Kunde bestellt zehn Ersatzteile und braucht sie morgen. Im ERP stehen zehn Stück. Im Regal liegen acht. Würdest du sofort den Einkauf anrufen?
+
+Jonas: Ich würde zuerst den Weg des Auftrags verfolgen. Ein Logistiksystem besteht nicht nur aus Regalen und Lkw. Menschen, Güter, Technik, Daten, Flächen und Regeln müssen zusammenarbeiten. Der Fehler könnte an mehreren Stellen entstanden sein.
+
+Mara: Dann gib mir ein Raster, mit dem ich anfangen kann.
+
+Jonas: Input, Verarbeitung, Output. Der Auftrag und die Bestandsinformation kommen hinein. Dann wird geprüft, reserviert, kommissioniert und versendet. Herauskommen soll eine richtige und pünktliche Lieferung. Wenn das Ergebnis nicht stimmt, gehst du die Schritte und Übergaben rückwärts durch.
+
+Mara: Ich denke an den Wareneingang. Vielleicht wurden zwei beschädigte Teile nicht gesperrt. Der Computer zeigt sie weiter als verfügbar an.
+
+Jonas: Genau. Sag jetzt in einem Satz, warum ein gemeinsames ERP-System diesen Fehler nicht verhindert hat.
+
+PAUSE: 4
+
+Mara: Weil das System die falsche Buchung gemeinsam sichtbar macht. Die Daten müssen dort stimmen, wo sie erfasst werden.
+
+Jonas: Das ist eine starke Prüfungsantwort. Technik verbindet Abläufe. Sie ersetzt keine eindeutigen Artikel, aktuellen Bestände und klaren Verantwortlichkeiten. Der Verkauf braucht eine verlässliche Zahl; das Lager muss Abweichungen sofort buchen können.
+
+Mara: Welche Rolle spielt der Informationsfluss noch, außer Bestände anzuzeigen?
+
+Jonas: Er löst Vorgänge aus, begleitet sie und bestätigt sie. Die Bestellung startet den Prozess. Ein Lieferavis kündigt Ware an. Der Scan am Warenausgang bestätigt die tatsächliche Sendung. EDI kann strukturierte Dokumente zwischen Unternehmen übertragen. Aber wenn beide Seiten unterschiedliche Artikelnummern verwenden, wird der Fehler nur schneller verschickt.
+
+Mara: Der Ablauf geht noch weiter als bis zum Warenausgang, oder?
+
+Jonas: Ja. Vom Auftrag bis zur Zahlung sprechen wir von Order to Payment. Je nach Betrachtungsgrenze gehören vorgelagerte Planung und nachgelagerte Reklamation dazu. In einer Fallaufgabe nennst du die Grenze ausdrücklich: Welche Schritte bewertest du, und welche Folgen liegen außerhalb?
+
+Mara: Unser Kunde hat jetzt acht statt zehn Teilen. Der Vertrieb verspricht eine Lieferung der fehlenden zwei. Was wäre an diesem Punkt eine schlechte Reaktion?
+
+Jonas: Einfach noch einmal zehn Stück als verfügbar zu melden. Erst den Istbestand klären, beschädigte Ware sperren, Beschaffung und Termin prüfen und den Kunden mit einer belastbaren Zusage informieren. Mehr Geschwindigkeit hilft nicht, wenn die Information unzuverlässig bleibt.
+
+Mara: Wechseln wir zur Fahrt. Vier Paletten für einen anderen Kunden müssen morgen ankommen. Es gibt eine direkte Lkw-Fahrt oder einen günstigeren Sammeltransport. Welche nimmst du?
+
+Jonas: Ohne Folgen des verspäteten Eintreffens kann ich das nicht seriös entscheiden. Wenn beim Kunden eine Maschine stillsteht und das viel kostet, kann die teurere Direktfahrt wirtschaftlich sein. Hat der Termin Spielraum, kann ein Sammeltransport sinnvoller sein. Die Entscheidung vergleicht Zeit, Kosten, Zuverlässigkeit, Kapazität und Schadenrisiko.
+
+Mara: Und die Distanz allein reicht nicht, weil auf dem Weg umgeladen werden kann.
+
+Jonas: Genau. Transport bewegt Güter räumlich. Umschlag ist die Übergabe auf eine andere Ladeeinheit, ein Fahrzeug oder einen Verkehrsträger. Umschlag kann Sendungen bündeln. Er braucht aber Zeit, Personal und saubere Daten. Jede Übergabe ist eine mögliche Fehlerstelle.
+
+Mara: Kurzer Selbsttest: Ein Container fährt erst per Lkw zum Terminal, dann per Zug und später wieder per Lkw zum Kunden. Was gehört alles in den Vergleich mit einer Direktfahrt?
+
+PAUSE: 5
+
+Jonas: Nicht nur die lange Zugstrecke. Vorlauf, zwei Übergaben, Hauptlauf, Nachlauf, Wartezeiten, Terminrisiko und Gesamtkosten. Kombinierter Verkehr kann sinnvoll sein, wenn Mengen und Strecken passen. Die gesamte Kette muss den Kundenbedarf erfüllen.
+
+Mara: Im Betrieb bewegen wir Paletten mit Staplern. Für gleiche Kartons auf festem Weg wird ein Förderband vorgeschlagen. Was ist der Gedanke dahinter?
+
+Jonas: Fördermittel müssen zum Materialfluss passen. Ein Band fördert stetig auf einem festen Weg. Ein Stapler arbeitet einzelne Fahrten flexibel ab. Für hohe, gleichförmige Mengen kann das Band gut sein. Bei wechselnden Zielen oder Paletten ist der Stapler beweglicher. Beurteile Menge, Takt, Gewicht, Wege, Fläche und Veränderbarkeit.
+
+Mara: Außen haben wir Straße, Schiene, Wasser und Luft. Muss ich bloß die Vor- und Nachteile auswendig lernen?
+
+Jonas: Besser ist eine Fallentscheidung. Straße erreicht die Rampe flexibel. Schiene bündelt große Mengen auf festen Verbindungen. Wasser ist an Häfen und Fahrwege gebunden und oft langsamer. Luft ist schnell, aber teuer. Frage bei jedem Verkehrsträger, ob er für das Gut, die Menge, die Entfernung und den Termin geeignet ist. Dann begründest du deine Wahl und nennst einen Nachteil.
+
+Mara: Was ändert sich, wenn der Auftrag über eine Landesgrenze geht?
+
+Jonas: Dann werden Vertrag, Dokumente und Übergabepunkt noch wichtiger. Incoterms beschreiben vereinbarte Pflichten sowie Kosten- und Risikoübergänge. In einer Aufgabe liest du immer die konkrete Klausel und den benannten Ort. Drei Buchstaben ohne Ort reichen nicht, um eine Lieferung zu beurteilen.
+
+Mara: Zurück zu den zehn Ersatzteilen. Wir haben den falschen Bestand im Wareneingang gefunden. Wie sollte ein Lager aufgebaut sein, damit solche Fehler seltener werden?
+
+Jonas: Der Materialweg muss klar sein: anmelden, entladen, prüfen, Abweichung dokumentieren, buchen, einlagern, später entnehmen, packen und versenden. Beschädigte Ware braucht einen getrennten Status. Wenn Prüfung und Buchung unklar sind, entsteht später eine falsche Lieferzusage.
+
+Mara: Ich habe viele kleine Ersatzteile und schwere Paletten. Kann ich beide gleich lagern, solange noch Platz ist?
+
+Jonas: Das wäre bequem, aber nicht sinnvoll. Paletten brauchen passende Tragfähigkeit und Fördermittel. Kleinteile brauchen schnelle, eindeutige Entnahme. Die Lagertechnik folgt den Gütern und Aufträgen. Prüfe außerdem Laufwege, Sicherheit und die Auslastung der Packstation. Eine schnellere Entnahme nützt wenig, wenn sich danach alles staut.
+
+Mara: Feste Plätze oder dynamische Lagerung? Ich höre oft, dynamisch sei automatisch moderner.
+
+Jonas: Der Name entscheidet nichts. Feste Plätze sind leicht zu finden, lassen aber unter Umständen Fläche leer. Dynamische Plätze nutzen freie Fläche flexibler. Dafür muss jede Einlagerung und Entnahme zuverlässig gebucht werden. Welche Variante passt, hängt von Sortiment, Umschlag, Datenqualität und Mitarbeitenden ab.
+
+Mara: Hier eine Prüfungsfrage für mich: Warum kann eine dynamische Lagerung bei schlechter Datenqualität sogar langsamer sein?
+
+PAUSE: 5
+
+Mara: Weil der gebuchte Platz dann nicht mehr dem echten Platz entspricht. Suchzeit und Fehlkommissionierung steigen. Die gesparte Fläche wird durch Fehler an anderer Stelle teuer.
+
+Jonas: Genau. Kommissionierung heißt, die Artikel für einen Auftrag in richtiger Art und Menge zusammenzustellen. Häufig kosten Suchen und Wege mehr Zeit als das Greifen. Schnelldreher gut erreichbar zu platzieren kann helfen. Prüfe aber, ob die gesamte Kette bis Verpackung und Versand schneller und fehlerärmer wird.
+
+Mara: Und was ist mit einer Retoure? Die kommt ja in die Gegenrichtung.
+
+Jonas: Der Rückweg ist mehr als rückwärts versenden. Eine Retoure muss identifiziert, auf Zustand geprüft und korrekt gebucht werden. Vielleicht ist sie wieder verkaufbar, vielleicht muss sie repariert oder entsorgt werden. Bis das feststeht, darf sie nicht als normal verfügbar gelten.
+
+Mara: Ich fasse den Fall zusammen. Zehn im System, acht im Regal. Der Fehler beginnt bei der Erfassung, wirkt auf Verkauf, Kommissionierung, Transport und Kunde. Die Lösung ist nicht bloß ein neues Gerät.
+
+Jonas: Genau. Für eine Fallaufgabe gehst du in vier Schritten vor: Bedarf und Ziel klären. Den tatsächlichen Material- und Informationsweg zeichnen. Kritische Übergaben und Varianten prüfen. Eine Maßnahme mit Wirkung auf Zeit, Kosten, Qualität und Kunde begründen.
+
+Mara: Zum Abschluss drei Fragen ohne Spickzettel. Was sind Input, Verarbeitung und Output unserer Ersatzteilbestellung? Wann ist eine teure Direktfahrt trotzdem sinnvoll? Und warum braucht dynamische Lagerung gute Buchungen?
+
+PAUSE: 6
+
+Jonas: Wenn du diese drei Fragen morgen noch einmal aus dem Gedächtnis beantworten kannst, sitzt der Zusammenhang. Einzelne Techniknamen kannst du danach im Kapitel nachschlagen. Erst der Zusammenhang macht aus einer Liste eine brauchbare Entscheidung.

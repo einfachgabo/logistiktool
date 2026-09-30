@@ -1,0 +1,35 @@
+Gesprächsfolge: Kapitel 1.3 - Kurzcheck zu Zielen und Kennzahlen
+
+Mara: Die Leitung sagt: Unser Lager muss besser werden. Was würdest du zuerst zurückfragen?
+
+Jonas: Woran wollen wir besser erkennen? Aus der Richtung braucht es ein messbares Ziel mit Wert und Termin. Formuliere eines für die Lieferleistung.
+
+PAUSE: 4
+
+Mara: Bis Ende Juni sollen neun von zehn Aufträgen innerhalb von zwei Tagen das Lager verlassen. Jetzt kann ich prüfen, ob wir es erreicht haben.
+
+Jonas: Genau. Aber die Geschwindigkeit allein reicht nicht. Wenn wir jeden Auftrag per Express verschicken, steigen Kosten. Welche zweite Kennzahl würdest du danebenlegen?
+
+PAUSE: 4
+
+Mara: Zum Beispiel Transportkosten je Auftrag. Und vielleicht die Fehlerquote, damit schneller nicht ungenauer wird.
+
+Jonas: Gut. Rechenfrage: Im Jahr werden eintausendzweihundert Stück verbraucht. Im Durchschnitt liegen einhundert Stück im Lager. Wie hoch ist der Lagerumschlag?
+
+PAUSE: 5
+
+Mara: Zwölfmal im Jahr. Verbrauch durch durchschnittlichen Bestand: eintausendzweihundert durch einhundert.
+
+Jonas: Wenn der Durchschnittsbestand auf zweihundert steigt, sinkt der Umschlag auf sechs. Ist das automatisch schlecht?
+
+PAUSE: 4
+
+Mara: Nein. Vielleicht schützt ein bewusster Puffer vor Lieferausfällen. Die Kennzahl zeigt eine Veränderung, erklärt aber nicht allein die Ursache.
+
+Jonas: Genau. Noch ein Werkzeugtest: ABC und XYZ. Welche Frage beantwortet XYZ, die ABC nicht beantwortet?
+
+PAUSE: 4
+
+Mara: ABC ordnet Artikel nach ihrem betrachteten Wert. XYZ zeigt, wie regelmäßig ihr Bedarf ist. Ein wertvoller Artikel kann trotzdem unregelmäßig nachgefragt werden.
+
+Jonas: Das ist eine gute Prüfungsantwort. Wähle eine Kennzahl oder Methode immer passend zum Problem und erkläre danach, was die Zahl aussagt und was sie offenlässt.

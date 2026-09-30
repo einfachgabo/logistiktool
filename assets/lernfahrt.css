@@ -1,0 +1,24 @@
+.lernfahrt-seite { background: var(--bg); }
+.lernfahrt-inhalt { max-width: 760px; margin: 0 auto; padding: 1.4rem 1.2rem 5rem; }
+.lernfahrt-nav { margin-bottom: 2.2rem; }
+.lernfahrt-nav a { color: var(--blue); font-size: 13px; font-weight: 700; text-decoration: none; }
+.lernfahrt-kicker { color: var(--teal); font-size: 11px; font-weight: 800; letter-spacing: .12em; }
+.lernfahrt-inhalt h1 { font: 700 clamp(2rem, 5vw, 3rem)/1.15 var(--serif); margin: .35rem 0 .8rem; }
+.lernfahrt-intro { color: var(--text-2); max-width: 67ch; margin-bottom: 1.6rem; }
+.lernfahrt-playerkarte { background: var(--surface); border: 1px solid var(--teal-line); border-radius: 12px; padding: 1rem 1.1rem; box-shadow: 0 8px 30px rgba(0, 0, 0, .04); }
+.lernfahrt-playerkopf { display: flex; justify-content: space-between; gap: 1rem; align-items: baseline; margin-bottom: .5rem; }
+.lernfahrt-playerkopf strong { font-size: 16px; }
+.lernfahrt-playerkopf span { color: var(--text-2); font-size: 13px; }
+.lernfahrt-playerkarte audio { display: block; width: 100%; }
+.lernfahrt-gesamt { display: inline-block; margin: .55rem .9rem 0 0; padding: 0; border: 0; background: none; color: var(--teal); font: 700 13px var(--sans); text-decoration: underline; cursor: pointer; }
+.lernfahrt-gesamt[hidden] { display: none; }
+.lernfahrt-download { display: inline-block; margin-top: .55rem; color: var(--teal); font-size: 13px; font-weight: 700; }
+.lernfahrt-hinweis { background: var(--blue-bg); border-left: 3px solid var(--blue); padding: .85rem 1rem; margin: 1.5rem 0 2rem; border-radius: 4px; color: var(--text-2); font-size: 14px; }
+.lernfahrt-inhalt h2 { font: 700 1.6rem/1.25 var(--serif); margin-bottom: .8rem; }
+.lernfahrt-kapitel { list-style: none; counter-reset: kapitel; }
+.lernfahrt-kapitel li { counter-increment: kapitel; background: var(--surface); border: 1px solid var(--border); border-radius: 9px; padding: .65rem .9rem .7rem; margin: 0 0 .55rem; }
+.lernfahrt-kapitel li::before { content: counter(kapitel, decimal-leading-zero); color: var(--teal); font: 800 11px var(--sans); letter-spacing: .08em; margin-right: .55rem; }
+.lernfahrt-sprung { background: none; border: 0; color: var(--text); font: 700 14px var(--sans); text-align: left; cursor: pointer; padding: .15rem 0; }
+.lernfahrt-sprung:hover, .lernfahrt-sprung:focus-visible { color: var(--teal); text-decoration: underline; }
+.lernfahrt-kapitel li a { color: var(--teal); display: inline-block; font-size: 12px; font-weight: 700; margin: .35rem .9rem 0 1.8rem; }
+@media (max-width: 500px) { .lernfahrt-playerkopf { display: block; } .lernfahrt-playerkopf span { display: block; } .lernfahrt-kapitel li a { margin-left: 0; } }

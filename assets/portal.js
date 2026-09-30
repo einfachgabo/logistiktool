@@ -48,34 +48,44 @@
      und die Kapitel-Navigation lesen ausschließlich diese Liste. */
   var KAPITEL_LISTE = [
     { id: 'plab-1',      datei: 'plab-1-logistikstruktur.html',    fach: 'plab',     nummer: '1.1',   titel: 'Logistikstruktur & Grundlagen',        desc: 'Begriff, Ziele, Wertschöpfung, Prozessmanagement, SCM, Bullwhip, Umfeld- und Systemfaktoren, Organisation.', heft: 'assets/hefte/grundlagen-und-kapitel-1-1.pdf', audios: [
-      { titel: 'Gesprächsfolge · Das ganze Kapitel', datei: 'assets/audio/gespraech-plab-1-logistikstruktur.mp3', dauer: '14:06', gesamt: true, gespraech: true },
+      { titel: 'Gespräch · Das ganze Kapitel', datei: 'assets/audio/gespraech-plab-1-logistikstruktur-elevenlabs.mp3', dauer: '13:20', gesamt: true, stimmen: 'Mara und Jonas · Susi und Christian Plasa' },
+      { titel: 'Kurzcheck · Grundlagen', datei: 'assets/audio/gespraech-plab-1-kurzcheck-elevenlabs.mp3', dauer: '1:38', kurzcheck: true, stimmen: 'Mara und Jonas · Susi und Christian Plasa' },
+      { titel: 'Bisherige Gesprächsfolge', datei: 'assets/audio/gespraech-plab-1-logistikstruktur.mp3', dauer: '14:06', gesamt: true, gespraech: true },
       { titel: 'Grundlagen und Zielkonflikte', datei: 'assets/audio/plab-1-a-grundlagen.mp3', dauer: '3:15' },
       { titel: 'Prozesse und Leistung', datei: 'assets/audio/plab-1-b-prozesse.mp3', dauer: '3:06' },
       { titel: 'Lieferkette, Umfeld und Organisation', datei: 'assets/audio/plab-1-c-lieferkette.mp3', dauer: '4:04' },
       { titel: 'Bisherige Gesamtfolge', datei: 'assets/audio/plab-1-logistikstruktur.mp3', dauer: '10:13', gesamt: true }
     ] },
     { id: 'plab-2',      datei: 'plab-2-logistiksysteme.html',     fach: 'plab',     nummer: '1.2',   titel: 'Logistiksysteme',                      desc: 'I&K-Systeme, Transport & Umschlag, Fördermittel, Verkehrsträger, Lager & Kommissionierung, Incoterms.', heft: 'assets/hefte/plab-2-logistiksysteme.pdf', audios: [
+      { titel: 'Gespräch · Vom Auftrag bis zur Lieferung', datei: 'assets/audio/gespraech-plab-2-logistiksysteme-elevenlabs.mp3', dauer: '8:58', gesamt: true, stimmen: 'Mara und Jonas · Susi und Christian Plasa' },
+      { titel: 'Kurzcheck · System, Transport und Lager', datei: 'assets/audio/gespraech-plab-2-kurzcheck-elevenlabs.mp3', dauer: '1:50', kurzcheck: true, stimmen: 'Mara und Jonas · Susi und Christian Plasa' },
       { titel: 'Logistiksysteme und Informationsfluss', datei: 'assets/audio/plab-2-a-informationssysteme.mp3', dauer: '4:28' },
       { titel: 'Transport und Umschlag', datei: 'assets/audio/plab-2-b-transport.mp3', dauer: '4:13' },
       { titel: 'Lager und Materialfluss', datei: 'assets/audio/plab-2-c-lager.mp3', dauer: '4:01' }
     ] },
     { id: 'plab-3',      datei: 'plab-3-logistische-ablaeufe.html', fach: 'plab',    nummer: '1.3',   titel: 'Logistische Abläufe',                  desc: 'Zielbildung (SMART), Kennzahlen, Leistungsfähigkeit, Bewertungssysteme, Entwicklung.', heft: 'assets/hefte/plab-3-logistische-ablaeufe.pdf', audios: [
+      { titel: 'Gespräch · Zahlen, die Entscheidungen tragen', datei: 'assets/audio/gespraech-plab-3-kennzahlen-elevenlabs.mp3', dauer: '7:36', gesamt: true, stimmen: 'Mara und Jonas · Susi und Christian Plasa' },
+      { titel: 'Kurzcheck · Ziele und Kennzahlen', datei: 'assets/audio/gespraech-plab-3-kurzcheck-elevenlabs.mp3', dauer: '2:03', kurzcheck: true, stimmen: 'Mara und Jonas · Susi und Christian Plasa' },
       { titel: 'Ziele und Kennzahlen', datei: 'assets/audio/plab-3-a-ziele-kennzahlen.mp3', dauer: '3:51' },
       { titel: 'Analysieren und bewerten', datei: 'assets/audio/plab-3-b-bewerten.mp3', dauer: '4:14' }
     ] },
     { id: 'plab-4',      datei: 'plab-4-strategie.html',           fach: 'plab',     nummer: '2.1',   titel: 'Leistungsfähigkeit & Strategie',       desc: 'Strategiebildung, Stakeholderanalyse, SWOT-Matrix, Ethik & Leitbild, Corporate Identity, Porter, Entwicklungsstufen, VARIO, Logistikportfolio, Lebenszyklus, Distribution.', heft: 'assets/hefte/plab-4-strategie.pdf', audios: [
+      { titel: 'Gespräch · Logistikstrategie im Alltag', datei: 'assets/audio/gespraech-plab-4-strategie-elevenlabs.mp3', dauer: '6:53', gesamt: true, stimmen: 'Mara und Jonas · Susi und Christian Plasa' },
       { titel: 'Von der Lage zur Strategie', datei: 'assets/audio/plab-4-a-strategieprozess.mp3', dauer: '4:01' },
       { titel: 'Strategie im Alltag umsetzen', datei: 'assets/audio/plab-4-b-umsetzung.mp3', dauer: '3:52' }
     ] },
     { id: 'gruber-1',    datei: 'gruber-1-konzepte.html',          fach: 'gruber',   nummer: '1.1–1.11', titel: 'Logistikkonzepte & Analysemethoden', desc: 'Logistikbereiche, Konzept, Wertschöpfung, Belieferung, Benchmarking, SWOT/GAP, Ishikawa, ABC, XYZ, Nachhaltigkeit.', heft: 'assets/hefte/gruber-1-konzepte.pdf', audios: [
+      { titel: 'Gespräch · Erst verstehen, dann bauen', datei: 'assets/audio/gespraech-gruber-1-konzept-elevenlabs.mp3', dauer: '6:13', gesamt: true, stimmen: 'Mara und Jonas · Susi und Christian Plasa' },
       { titel: 'Ein Logistikkonzept bauen', datei: 'assets/audio/gruber-1-a-konzept.mp3', dauer: '3:40' },
       { titel: 'Analysemethoden passend wählen', datei: 'assets/audio/gruber-1-b-analyse.mp3', dauer: '3:44' }
     ] },
     { id: 'gruber-2',    datei: 'gruber-2-beschaffung.html',       fach: 'gruber',   nummer: '1.12–1.23', titel: 'Beschaffung & Bedarfsermittlung',  desc: 'Beschaffungsarten, Kanban, Bedarfsarten, deterministisch/stochastisch, Mittelwerte, Glättung, Bestellverfahren, Andler.', heft: 'assets/hefte/gruber-2-beschaffung.pdf', audios: [
+      { titel: 'Gespräch · Erst rechnen, dann bestellen', datei: 'assets/audio/gespraech-gruber-2-beschaffung-elevenlabs.mp3', dauer: '6:12', gesamt: true, stimmen: 'Mara und Jonas · Susi und Christian Plasa' },
       { titel: 'Bedarf und Beschaffungsart', datei: 'assets/audio/gruber-2-a-beschaffung.mp3', dauer: '3:42' },
       { titel: 'Prognosen und Bestellentscheidungen', datei: 'assets/audio/gruber-2-b-prognose.mp3', dauer: '3:43' }
     ] },
     { id: 'gruber-3',    datei: 'gruber-3-lager-transport.html',   fach: 'gruber',   nummer: '1.24–1.36', titel: 'Produktion, Lager & Distribution', desc: 'Produktions-, Distributions- und Transportlogistik, Lagerarten, FIFO/LIFO, Kennzahlen, Kommissionierung, Verpackung, Entsorgung.', heft: 'assets/hefte/gruber-3-lager-transport.pdf', audios: [
+      { titel: 'Gespräch · Folge der Ware', datei: 'assets/audio/gespraech-gruber-3-lager-elevenlabs.mp3', dauer: '6:23', gesamt: true, stimmen: 'Mara und Jonas · Susi und Christian Plasa' },
       { titel: 'Der Weg der Ware', datei: 'assets/audio/gruber-3-a-logistikkette.mp3', dauer: '3:30' },
       { titel: 'Lagerkennzahlen und Kundenauftrag', datei: 'assets/audio/gruber-3-b-lagerkennzahlen.mp3', dauer: '3:39' }
     ] },
@@ -283,11 +293,12 @@
     box.appendChild(el('p', 'podcast-hinweis', 'Kurze Erklärungen und, wo vorhanden, längere Gespräche mit Praxisbeispielen und Denkfragen · KI-generierte Stimmen'));
     var teilNr = 0;
     folgen.forEach(function (folge) {
-      if (!folge.gesamt) teilNr += 1;
+      if (!folge.gesamt && !folge.kurzcheck) teilNr += 1;
       var reihe = el('div', 'podcast-folge');
-      reihe.appendChild(el('h3', '', (folgen.length > 1 && !folge.gesamt ? 'Teil ' + teilNr + ' · ' : '') + folge.titel));
+      reihe.appendChild(el('h3', '', (folgen.length > 1 && !folge.gesamt && !folge.kurzcheck ? 'Teil ' + teilNr + ' · ' : '') + folge.titel));
       reihe.appendChild(el('span', 'podcast-dauer', folge.dauer + ' Min.'));
-      if (folge.gespraech) reihe.appendChild(el('p', 'podcast-stimmen', 'Mit Mara und Jonas · KI-Stimmen Seraphina und Florian'));
+      if (folge.stimmen) reihe.appendChild(el('p', 'podcast-stimmen', folge.stimmen + ' · KI-generiert'));
+      else if (folge.gespraech) reihe.appendChild(el('p', 'podcast-stimmen', 'Mit Mara und Jonas · KI-Stimmen Seraphina und Florian'));
       var player = el('audio', 'podcast-player');
       player.controls = true;
       player.preload = 'none';
@@ -299,7 +310,7 @@
       download.download = '';
       reihe.appendChild(download);
       var lesetext = el('a', 'podcast-leselink', 'Text lesen / als PDF sichern');
-      var dateiname = folge.datei.split('/').pop().replace(/\.mp3$/, '');
+      var dateiname = folge.datei.split('/').pop().replace(/\.mp3$/, '').replace(/-elevenlabs$/, '');
       lesetext.href = 'podcasts/lesen.html?folge=' + encodeURIComponent(dateiname) + '&kapitel=' + encodeURIComponent(location.pathname.split('/').pop());
       reihe.appendChild(lesetext);
       box.appendChild(reihe);

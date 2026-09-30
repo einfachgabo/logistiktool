@@ -1,0 +1,73 @@
+Gesprächsfolge: Produktion, Lager und Distribution - Folge der Ware
+
+Mara: Heute beginnt unser Fall mit einer Schraube. Ein Hersteller bekommt Bleche und Schrauben, baut daraus Gehäuse und liefert sie an Händler. Eine Schraubenlieferung kommt zu spät. Ist das nur ein Einkaufsproblem?
+
+Jonas: Nein. Die Produktion wartet, der Fertigbestand bleibt leer, der Versand kann den Auftrag nicht erfüllen und am Ende wartet der Kunde. Beschaffung, Produktion, Lager und Distribution sind eine Kette. Jede Stufe übernimmt das Ergebnis der vorherigen.
+
+Mara: Die Produktionslogistik muss Material am richtigen Arbeitsplatz bereitstellen. Möglichst viel direkt an die Linie legen wäre doch sicher.
+
+Jonas: Bis die Fläche voll ist und niemand mehr arbeiten kann. Zu viel Material bindet Kapital und blockiert Wege. Zu wenig stoppt die Fertigung. Die passende Menge hängt von Takt, Nachschubzeit und Störungsrisiko ab.
+
+Mara: Angenommen, die Gehäuse sind fertig. Jetzt soll die Distributionslogistik sie an Händler und Kunden bringen.
+
+Jonas: Genau. Sie verbindet Lagerstandort, Auftragsbearbeitung, Verpackung und Transport mit dem Serviceversprechen. Eine günstige Fracht hilft nicht, wenn der Kunde dadurch seinen Termin verpasst.
+
+Mara: Dann vergleichen wir die ganze Transportkette. Lkw erreicht viele Ziele direkt. Schiene und Wasser bündeln große Mengen, brauchen aber passende Zugänge und oft Vor- und Nachlauf. Luft ist schnell und teuer.
+
+Jonas: Richtig. Nenne bei einer Entscheidung immer Termin, Menge, Kosten, Zuverlässigkeit, Umschlag und Schadenrisiko. Ein einzelner Preis pro Kilometer reicht nicht.
+
+Mara: Warum lagern wir die Gehäuse überhaupt? Könnten wir alles sofort weiterleiten?
+
+Jonas: Manchmal, aber ein Lager gleicht unterschiedliche Rhythmen aus, sichert Versorgung und stellt Aufträge zusammen. Es kann zentral organisiert sein oder näher am Kunden liegen. Ein zentrales Lager bündelt Bestand. Regionale Lager verkürzen möglicherweise Lieferwege, brauchen aber oft zusätzlichen Puffer und Fläche.
+
+Mara: Kurzer Test: Warum kann ein regionales Lager die Lieferzeit verbessern und zugleich Kapital binden?
+
+PAUSE: 5
+
+Mara: Die Ware liegt näher am Kunden. Aber dieselben Artikel müssen womöglich an mehreren Orten vorrätig sein. Das erhöht den Gesamtbestand.
+
+Jonas: Genau. Im Lager selbst entscheidet die Platzierung über Wege und Fehler. Schnelldreher gehören häufig in gut erreichbare Zonen. Schwere Güter brauchen sichere Plätze und passende Fördermittel. Ein seltenes Teil muss nicht dauerhaft die beste Fläche belegen.
+
+Mara: „Chaotische Lagerung“ klingt nach Durcheinander. Ist sie das?
+
+Jonas: Nicht, wenn das System jeden tatsächlichen Platz zuverlässig kennt. Dynamische Platzvergabe kann Fläche flexibel nutzen. Ohne saubere Buchung wird sie wirklich chaotisch. Feste Plätze sind leichter zu finden, können aber Fläche ungenutzt lassen. Wieder entscheidet der konkrete Materialfluss.
+
+Mara: Der Lagerleiter sagt: Unser Bestand ist zu hoch. Was fragst du?
+
+Jonas: Wie viel wird im gleichen Zeitraum verbraucht oder verkauft? Wie hoch ist der durchschnittliche Bestand? Wie oft schlägt er um? Wie zuverlässig bedienen wir Kunden? Ein bloßer Bestandswert ohne Bezugsgröße ist keine fertige Bewertung.
+
+Mara: Nehmen wir eintausendzweihundert Stück Jahresverbrauch und durchschnittlich einhundert Stück Bestand. Dann ist der Umschlag zwölf pro Jahr.
+
+Jonas: Genau. Bei durchschnittlich zweihundert Stück sinkt er auf sechs, wenn der Verbrauch gleich bleibt. Das zeigt längere Bindung. Es beweist aber nicht allein eine falsche Entscheidung. Vielleicht schützt ein Puffer vor Lieferausfall. Prüfe also Lagerdauer, Lieferbereitschaft und Fehlmengen mit.
+
+Mara: Was kostet der Bestand außer dem Kaufpreis?
+
+Jonas: Fläche, Handling, Versicherung und gegebenenfalls Zinsen. Außerdem kann Ware altern oder beschädigt werden. Umgekehrt kann ein Fehlbestand einen Kunden oder die Produktion teuer treffen. Eine gute Maßnahme wägt beide Seiten ab.
+
+Mara: Im Skript tauchen FIFO und andere Verbrauchsfolgen auf. Was muss ich bei FIFO sicher können?
+
+Jonas: FIFO bedeutet: Zuerst eingelagerte Ware wird zuerst entnommen. Das ist besonders bei Alterung oder Verfallsdatum wichtig. Verwechsle aber eine rechnerische Bewertungsregel nicht mit dem tatsächlichen Weg einer Palette. In einer Aufgabe liest du genau, ob nach Bestandbewertung oder physischer Entnahme gefragt ist.
+
+Mara: Dann kommt der Kundenauftrag. Kommissionierung stellt die richtigen Artikel in der richtigen Menge zusammen. Eine falsche Entnahme erzeugt Retoure und Nacharbeit.
+
+Jonas: Ja. Verkürze Wege und mache die richtige Entnahme leicht. Aber schau bis zur Packstation. Wenn alle schneller picken und dort ein Stau entsteht, geht der Auftrag nicht früher raus. Die Durchlaufzeit der gesamten Kette zählt.
+
+Mara: Verpackung ist mehr als Umhüllen. Sie schützt, bildet Ladeeinheiten und trägt Informationen, etwa eine Kennzeichnung.
+
+Jonas: Genau. Zu wenig Schutz erhöht Schäden. Zu viel Material kostet und braucht Platz. Die Verpackung muss zum Gut, Transportweg und Kundenbedarf passen.
+
+Mara: Am Ende kommt vielleicht eine Retoure oder eine Mehrwegverpackung zurück. Dann ist die Kette noch nicht zu Ende.
+
+Jonas: Richtig. Rücknahme, Wiederverwendung, Recycling und Entsorgung gehören zur Gestaltung. Je früher du sie mitdenkst, desto weniger unnötige Transporte und Abfälle entstehen später.
+
+Mara: Abschlussfall: Eine neue Pickmethode verkürzt die Wege um zwanzig Prozent, aber der Warenausgang ist weiter überlastet. Darf ich eine um zwanzig Prozent kürzere Lieferzeit versprechen?
+
+PAUSE: 5
+
+Mara: Nein. Die Pickwege sind nur ein Teil. Ich messe die gesamte Durchlaufzeit und prüfe den Engpass am Warenausgang, die Fehler und die Kosten.
+
+Jonas: Genau. Ein guter Prüfungssatz lautet: Die Kennzahl zeigt diese Veränderung; mögliche Ursache ist jene; die Maßnahme wirkt so; und dieses Risiko muss ich beachten. Morgen beantwortest du ohne Aufnahme zwei Fragen: Welche Folgen hat die verspätete Schraube bis zum Kunden? Und warum ist ein hoher Lagerumschlag allein kein Beweis für ein gutes Lager?
+
+PAUSE: 6
+
+Mara: Wenn du den Weg der Ware vor Augen hast, musst du weniger einzelne Begriffe auswendig lernen. Du kannst die Wirkung einer Entscheidung erklären.

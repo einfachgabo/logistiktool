@@ -21,7 +21,8 @@ else:
         if not os.path.isfile(os.path.join(ROOT, asset)):
             f('assets/portal.js', f'fehlendes Kapitelmaterial {asset}')
         if asset.endswith('.mp3'):
-            skript = os.path.join(ROOT, 'podcasts', 'manuskripte', os.path.basename(asset)[:-4] + '.txt')
+            manuskriptname = os.path.basename(asset)[:-4].removesuffix('-elevenlabs')
+            skript = os.path.join(ROOT, 'podcasts', 'manuskripte', manuskriptname + '.txt')
             if not os.path.isfile(skript):
                 f('assets/portal.js', f'Podcast ohne Lesetext {asset}')
 

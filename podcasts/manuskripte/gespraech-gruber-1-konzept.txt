@@ -1,0 +1,71 @@
+Gesprächsfolge: Logistikkonzepte und Analysemethoden - Erst verstehen, dann bauen
+
+Mara: Unser Händler wächst. Täglich kommen mehr Aufträge, und immer öfter gehen Pakete zu spät raus. Der Chef sagt: Wir brauchen ein größeres Lager. Klingt vernünftig?
+
+Jonas: Vielleicht. Aber zunächst ist das eine Vermutung. Ein größeres Lager löst kein Problem mit falschen Beständen oder einer überlasteten Packstation. Ein Logistikkonzept beginnt mit der Ausgangslage, den Anforderungen und dem tatsächlichen Prozess.
+
+Mara: Dann frage ich zuerst die Kunden, was sie brauchen.
+
+Jonas: Und die internen Kunden. Der externe Kunde braucht eine verlässliche Lieferzeit. Die Kommissionierung braucht eindeutige Aufträge und korrekte Bestände. Die Packstation braucht genug Kapazität. Für jede Anforderung fragst du: Wer braucht welches Ergebnis, in welcher Qualität, bis wann?
+
+Mara: Wie folge ich dem Problem durch den Betrieb?
+
+Jonas: Vom Bedarf über Beschaffung, Lager und Versand bis zum Kunden. Material bewegt sich, Informationen steuern die Bewegung, und Kosten zeigen die wirtschaftliche Wirkung. Ein Engpass kann an jeder Übergabe liegen. Wenn du nur den Pickvorgang beschleunigst, kann der Stau an der Packstation größer werden.
+
+Mara: Nenne drei Ursachen für eine verspätete Lieferung, die ich vor dem Lagerneubau prüfen sollte.
+
+PAUSE: 5
+
+Mara: Falsche Bestandsdaten, lange Suchwege und eine zu kleine Packkapazität. Außerdem könnten Liefertermine zugesagt werden, die der Einkauf nicht halten kann.
+
+Jonas: Genau. Beobachte den Weg einer Bestellung und markiere Wartezeiten, Rückwege, doppelte Eingaben und Fehler. Eine Wertstromanalyse kann solche Abläufe sichtbar machen. Muda nennt man Verschwendung, etwa unnötiges Suchen oder wiederholtes Umpacken.
+
+Mara: Eine Qualitätskontrolle kostet aber auch Zeit. Wäre sie dann Verschwendung?
+
+Jonas: Nicht automatisch. Sie kann Fehlversände verhindern und den Kunden schützen. Beurteile ihren Beitrag für den Gesamtprozess. Das Konzept soll Blindleistung und Fehler reduzieren, nicht notwendige Unterstützung blind streichen.
+
+Mara: Jetzt haben wir mehrere Varianten. Ein zweites Lager, bessere Daten und Pickwege oder ein Dienstleister für den Versand.
+
+Jonas: Genau. Für jede Variante beschreibst du Wirkung, Kosten, Risiko und Voraussetzungen. Ein zentrales Lager bündelt Bestand, hat aber möglicherweise lange Wege. Regionale Lager können Kunden schneller erreichen, brauchen oft mehr Bestand und Abstimmung. Direktlieferung vom Lieferanten spart einen Lagerweg, verlangt dafür verlässliche Partner.
+
+Mara: Eine gute Empfehlung hat also fünf Teile: Ausgangslage, Ziel, Varianten, Entscheidung und Kontrolle.
+
+Jonas: So ist es. Aber wir brauchen noch Werkzeuge, um Daten zu ordnen. Nehmen wir tausende Artikel. Welche sind wirtschaftlich besonders wichtig?
+
+Mara: ABC-Analyse. Sie ordnet Artikel nach ihrem Anteil am betrachteten Wert.
+
+Jonas: Und wenn du wissen willst, wie gleichmäßig sie gebraucht werden?
+
+Mara: XYZ-Analyse. X ist eher gleichmäßiger, Z eher unregelmäßiger Bedarf. Ein A-Z-Artikel ist wertvoll und schwerer planbar als ein A-X-Artikel.
+
+Jonas: Gut. Beim zweiten Problem kennen wir die Ursache noch nicht: Im Lager häufen sich Fehlkommissionierungen. Welches Werkzeug hilft uns, mögliche Ursachen systematisch zu sammeln?
+
+PAUSE: 5
+
+Mara: Das Ishikawa-Diagramm. Ich kann nach Mensch, Methode, Material, Maschine und Umfeld fragen. Aber das Diagramm beweist noch keine Ursache.
+
+Jonas: Genau. Danach prüfen wir Daten und beobachten den Prozess. Vielleicht fehlt eine eindeutige Platzkennzeichnung. Vielleicht stehen zwei ähnlich aussehende Artikel direkt nebeneinander. Erst nach der Prüfung wählen wir eine Maßnahme.
+
+Mara: Die Leitung will eine Termintreue von fünfundneunzig Prozent. Ohne Änderung erwarten wir nur zweiundachtzig Prozent. Das ist die GAP-Analyse: die Lücke zwischen erwartetem Verlauf und Ziel.
+
+Jonas: Richtig. Die Lücke zeigt Handlungsbedarf, aber sie sagt nicht, wie du ihn schließt. Dafür brauchst du die Ursachen und Varianten. Viele Prüfungsfehler entstehen, wenn ein Werkzeug mehr versprechen soll, als es leisten kann.
+
+Mara: Und SWOT wäre für die größere strategische Lage: Stärken und Schwächen innen, Chancen und Risiken außen.
+
+Jonas: Ja. Auch hier entsteht eine Strategie erst durch Verbindung. Gute Bestandsdaten können eine Chance im Onlinehandel nutzbar machen. Eine Lieferantenabhängigkeit wird zum Problem, wenn dieser Lieferant ausfällt. Die vier Felder sind Ausgangspunkt, kein fertiger Maßnahmenplan.
+
+Mara: Benchmarking heißt, unseren Ablauf mit anderen zu vergleichen. Dann kopieren wir einfach den besten Wert?
+
+Jonas: Nein. Vergleiche zuerst die Definitionen. Rechnet der andere Betrieb Retouren und Verpackung in die Kosten je Auftrag ein? Wie ähnlich sind Sortiment und Service? Ein Zahlenvergleich ohne gleiche Grundlage kann in die falsche Richtung führen.
+
+Mara: Noch ein Zielkonflikt: Eine einzelne Expressfahrt hilft dem Kunden, aber viele Einzelfahrten kosten Geld und können die Umwelt stärker belasten als gebündelte Transporte.
+
+Jonas: Genau. Nachhaltigkeit kann mit Wirtschaftlichkeit zusammengehen, etwa durch weniger Ausschuss oder bessere Auslastung. Sie kann aber auch mit einem sehr engen Termin kollidieren. Eine Bewertung benennt beide Wirkungen.
+
+Mara: Letzte Fallfrage. Der Chef möchte den Lagerneubau beschließen. Wie antworte ich, ohne ihn einfach abzublocken?
+
+PAUSE: 6
+
+Mara: Ich zeige die gemessenen Engpässe, beschreibe Kundenanforderung und Ziel, vergleiche den Neubau mit Prozess- und Datenverbesserungen und empfehle eine Lösung mit Kosten, Wirkung und Risiko.
+
+Jonas: Das ist ein Logistikkonzept. Merke dir für die Methoden je eine Frage: ABC für Wert, XYZ für Bedarfsregelmäßigkeit, Ishikawa für mögliche Ursachen, GAP für die Ziel-Lücke, SWOT für die strategische Lage und Benchmarking für den Vergleich mit anderen. Morgen nennst du die Fragen ohne Audio noch einmal laut.

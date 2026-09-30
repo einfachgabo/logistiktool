@@ -1,0 +1,27 @@
+Gesprächsfolge: Kapitel 1.1 - Kurzcheck für unterwegs
+
+Mara: Eine Minute vor der Arbeit. Im System stehen achtzig Ersatzteile, im Regal liegen keine. Ist das jetzt einfach ein Lagerproblem?
+
+Jonas: Noch nicht entschieden. Geh die fünf richtigen Größen durch: Produkt, Menge, Ort, Zeit und Qualität. Welche Größe scheitert hier zuerst?
+
+PAUSE: 4
+
+Mara: Der Ort vielleicht. Oder die Menge, wenn die achtzig nur falsch gebucht sind.
+
+Jonas: Genau. Und der Informationsfluss verbindet alles. Prüfe Buchung, Lagerplatz und Übergabe an den Vertrieb, bevor du eine Expressbestellung auslöst.
+
+Mara: Der Einkauf bietet jetzt einen Mengenrabatt an. Mehr bestellen klingt doch gut.
+
+Jonas: Nur wenn du die Gesamtkette betrachtest. Ein niedriger Stückpreis kann mehr Kapitalbindung, Fläche und Veraltungsrisiko bedeuten. Wie würdest du den Vorschlag in einer Fallaufgabe prüfen?
+
+PAUSE: 4
+
+Mara: Ich vergleiche Ersparnis und Folgekosten. Und ich prüfe, ob die Lieferbereitschaft dadurch wirklich steigt.
+
+Jonas: Gut. Noch eine Falle: Ein Expressversand rettet den Kundenauftrag. Effektiv oder effizient?
+
+PAUSE: 4
+
+Mara: Effektiv, weil der Auftrag rechtzeitig ankommt. Effizient vielleicht nicht, wenn falsche Stammdaten den Expressversand überhaupt erst nötig gemacht haben.
+
+Jonas: Das ist der Kern. Effektivität fragt, ob du das richtige Ziel erreichst. Effizienz fragt, mit welchem Aufwand. Denk morgen ohne Aufnahme noch einmal an die achtzig Teile: Welche Information brauchst du zuerst, und welches Ziel darfst du beim Verbessern nicht vergessen?
