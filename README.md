@@ -18,7 +18,7 @@ direkt über GitHub Pages.
 | `notizen.html` | alle Notizen an einem Ort, Suche, Sicherung |
 | `assets/portal.css` | das gesamte Design |
 | `assets/portal.js` | die Engine: Navigation, Notizen, Lernstand, Quiz, Karteikarten |
-| `assets/audio/` | 34 kurze Hörfolgen zu allen 18 Lernkapiteln und die bisherige Gesamtfolge |
+| `assets/audio/` | 34 kurze Hörfolgen zu allen 18 Lernkapiteln, die bisherige Gesamtfolge und eine neue Gesprächsfolge zu Kapitel 1.1 |
 | `assets/hefte/` | ausfüllbare Unterrichtshefte als PDF zu allen 18 Lernkapiteln |
 | `podcasts/manuskripte/` | bearbeitbare Texte der Hörfolgen |
 | `podcasts/lesen.html` | lesefreundliche Ansicht der Manuskripte mit PDF-Druck |
@@ -32,7 +32,7 @@ direkt über GitHub Pages.
 * **🌓** – Hell/Dunkel. **🖨** – Druck bzw. PDF, inklusive Notizen und Lösungen.
 * **Unterrichtsansicht** – zeigt Abschnittstitel, Status und das Notizfeld; der Volltext bleibt erreichbar.
 * **5 Fragen üben** – Antworten erst selbst abrufen. Nach der Selbsteinschätzung erscheinen Karten nach 1, 3, 7, 14, 30 oder 60 Tagen wieder. Diese Abstände sind eine praktische Voreinstellung.
-* **Hörfolgen** – alle Lernkapitel haben einen oder mehrere kurze Teile. Im Player kannst du die MP3 herunterladen oder den Text lesen und als PDF sichern.
+* **Hörfolgen** – alle Lernkapitel haben einen oder mehrere kurze Teile. Zu Kapitel 1.1 gibt es zusätzlich eine längere Gesprächsfolge mit zwei Stimmen. Im Player kannst du die MP3 herunterladen oder den Text lesen und als PDF sichern.
 * **Lernheft** – jedes Lernkapitel hat ein ausfüllbares PDF mit kurzer Kernaussage, Abruffragen und Notizfeld pro Abschnitt. Das Heft herunterladen, in einer PDF-App ausfüllen und lokal speichern. Mit **Volltext drucken / als PDF** kannst du zusätzlich das ausführliche Kapitel aus dem Browser drucken. Die Notizen in der Website bleiben getrennt vom ausfüllbaren Heft.
 
 ## Wichtig: Notizen sichern
@@ -61,8 +61,10 @@ Repository – sie sind Material des Bildungsträgers. Die `.gitignore` schließ
 
 Das Portal nutzt kurze Selbsttests und zeitlich verteilte Wiederholungen. Die Auswahl stützt sich auf Forschung zu [Testeffekten](https://www.psychologicalscience.org/journals/psychological-science/j.1467-9280.2006.01693.x/) und [verteiltem Üben](https://pubmed.ncbi.nlm.nih.gov/16719566/). Podcasts sind eine Ergänzung für unterwegs; sie ersetzen weder Abruffragen noch Fallaufgaben.
 
-Jede Folge hat ein eigenes Manuskript unter `podcasts/manuskripte/` und eine gleichnamige MP3 unter `assets/audio/`. Die MP3s verwenden die KI-generierte Stimme Microsoft Katja Neural. Die neuen Folgen dauern meist drei bis vier Minuten und enthalten ein Praxisbeispiel und zwei Abruffragen. Für breite Kapitel gibt es mehrere Teile. Auch Kapitel 1.1 liegt in drei kurzen Teilen vor; die bisherige Gesamtfolge bleibt erhalten. Die Manuskripte können vor einer Neuaufnahme direkt als Textdatei bearbeitet werden.
+Jede Folge hat ein eigenes Manuskript unter `podcasts/manuskripte/` und eine gleichnamige MP3 unter `assets/audio/`. Die kurzen MP3s verwenden die KI-generierte Stimme Microsoft Katja Neural. Sie dauern meist drei bis vier Minuten und enthalten ein Praxisbeispiel und zwei Abruffragen. Für breite Kapitel gibt es mehrere Teile. Kapitel 1.1 liegt in drei kurzen Teilen und einer 14-minütigen Gesprächsfolge vor; die bisherige Gesamtfolge bleibt erhalten. In der Gesprächsfolge sprechen die KI-Stimmen Microsoft Seraphina und Florian die Figuren Mara und Jonas. Die Manuskripte können vor einer Neuaufnahme direkt als Textdatei bearbeitet werden.
 
 Zur Neuerzeugung der MP3s `edge-tts` und `imageio-ffmpeg` installieren, dann `python tools/generate_podcasts.py FOLGENNAME --force` ausführen. Anschließend die Dauer beim Kapitel in `KAPITEL_LISTE` aktualisieren und `python pruefen.py` laufen lassen. Für mehrere Folgen `audios: [{ titel, datei, dauer }, ...]` verwenden. Die bestehenden Felder `audio` und `audioDauer` bleiben für ältere Einzelfolgen gültig. Quellen und redaktionelle Regeln stehen in `podcasts/QUELLEN.md`.
+
+Gesprächsmanuskripte beginnen mit `Gesprächsfolge:`. Jeder weitere Absatz beginnt mit `Mara:` oder `Jonas:`; `PAUSE: 3` fügt eine Denkpause ein. Mit `python tools/generate_dialogue_podcasts.py gespraech-plab-1-logistikstruktur --force` wird die MP3 aus den beiden Stimmen neu erzeugt. Das Skript speichert Zwischenstücke im ignorierten Ordner `.podcast-build/gespraeche/`. Die Stimmen sind synthetisch und bilden keine reale Person nach.
 
 Die 17 weiteren ausfüllbaren Hefte werden mit `python tools/generate_workbooks.py` aus den Kapitelüberschriften, Kernaussagen und Selbstabfragen des Portals erzeugt. Dafür werden `lxml`, `reportlab` und `pypdf` benötigt. Die PDF-Dateien liegen unter `assets/hefte/` und sind in `KAPITEL_LISTE` beim jeweiligen Kapitel verlinkt. Die bisherige PDF zu Kapitel 1.1 bleibt erhalten.

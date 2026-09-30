@@ -48,6 +48,7 @@
      und die Kapitel-Navigation lesen ausschließlich diese Liste. */
   var KAPITEL_LISTE = [
     { id: 'plab-1',      datei: 'plab-1-logistikstruktur.html',    fach: 'plab',     nummer: '1.1',   titel: 'Logistikstruktur & Grundlagen',        desc: 'Begriff, Ziele, Wertschöpfung, Prozessmanagement, SCM, Bullwhip, Umfeld- und Systemfaktoren, Organisation.', heft: 'assets/hefte/grundlagen-und-kapitel-1-1.pdf', audios: [
+      { titel: 'Gesprächsfolge · Das ganze Kapitel', datei: 'assets/audio/gespraech-plab-1-logistikstruktur.mp3', dauer: '14:06', gesamt: true, gespraech: true },
       { titel: 'Grundlagen und Zielkonflikte', datei: 'assets/audio/plab-1-a-grundlagen.mp3', dauer: '3:15' },
       { titel: 'Prozesse und Leistung', datei: 'assets/audio/plab-1-b-prozesse.mp3', dauer: '3:06' },
       { titel: 'Lieferkette, Umfeld und Organisation', datei: 'assets/audio/plab-1-c-lieferkette.mp3', dauer: '4:04' },
@@ -279,11 +280,14 @@
     box.setAttribute('aria-label', 'Podcast zu diesem Kapitel');
     box.appendChild(el('div', 'podcast-kicker', 'HÖRFOLGEN ZU DIESEM KAPITEL'));
     box.appendChild(el('h2', 'podcast-titel', K.titel));
-    box.appendChild(el('p', 'podcast-hinweis', 'Kurze Erklärungen mit Praxisbeispiel und Fragen zum Mitdenken · KI-generierte Stimme Microsoft Katja Neural'));
-    folgen.forEach(function (folge, i) {
+    box.appendChild(el('p', 'podcast-hinweis', 'Kurze Erklärungen und, wo vorhanden, längere Gespräche mit Praxisbeispielen und Denkfragen · KI-generierte Stimmen'));
+    var teilNr = 0;
+    folgen.forEach(function (folge) {
+      if (!folge.gesamt) teilNr += 1;
       var reihe = el('div', 'podcast-folge');
-      reihe.appendChild(el('h3', '', (folgen.length > 1 && !folge.gesamt ? 'Teil ' + (i + 1) + ' · ' : '') + folge.titel));
+      reihe.appendChild(el('h3', '', (folgen.length > 1 && !folge.gesamt ? 'Teil ' + teilNr + ' · ' : '') + folge.titel));
       reihe.appendChild(el('span', 'podcast-dauer', folge.dauer + ' Min.'));
+      if (folge.gespraech) reihe.appendChild(el('p', 'podcast-stimmen', 'Mit Mara und Jonas · KI-Stimmen Seraphina und Florian'));
       var player = el('audio', 'podcast-player');
       player.controls = true;
       player.preload = 'none';
@@ -794,11 +798,12 @@
       kaps.forEach(function (k) {
         var fo = kapitelFortschritt(k.id);
         var kurzeFolgen = k.audios && k.audios.filter(function (a) { return !a.gesamt; }).length;
+        var langeFolgen = k.audios && k.audios.filter(function (a) { return a.gesamt; }).length;
         html += '<a class="kapitel-karte ' + f.farbe + '" href="' + esc(k.datei) + '">' +
           '<span class="kk-nr">' + esc(k.nummer) + '</span>' +
           '<span class="kk-titel">' + esc(k.titel) + '</span>' +
           '<span class="kk-desc">' + esc(k.desc) + '</span>' +
-          (k.audios ? '<span class="kk-audio">▶ ' + kurzeFolgen + (kurzeFolgen === 1 ? ' kurze Hörfolge' : ' kurze Hörfolgen') + (kurzeFolgen < k.audios.length ? ' + Gesamtfolge' : '') + '</span>' : k.audio ? '<span class="kk-audio">▶ Podcast · ' + esc(k.audioDauer) + ' Min.</span>' : '') +
+          (k.audios ? '<span class="kk-audio">▶ ' + kurzeFolgen + (kurzeFolgen === 1 ? ' kurze Hörfolge' : ' kurze Hörfolgen') + (langeFolgen ? ' + ' + langeFolgen + (langeFolgen === 1 ? ' lange Folge' : ' lange Folgen') : '') + '</span>' : k.audio ? '<span class="kk-audio">▶ Podcast · ' + esc(k.audioDauer) + ' Min.</span>' : '') +
           '<span class="kk-fort"><span class="kk-track">' +
             '<span class="done" style="width:' + (fo ? fo.pctBehandelt - fo.pctVerstanden : 0) + '%"></span>' +
             '<span class="got" style="width:' + (fo ? fo.pctVerstanden : 0) + '%"></span>' +

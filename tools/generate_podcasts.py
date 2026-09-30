@@ -109,10 +109,12 @@ def main() -> None:
     parser.add_argument("names", nargs="*", help="Manuskriptname ohne .txt; leer = alle")
     parser.add_argument("--force", action="store_true", help="fertige MP3 neu erzeugen")
     args = parser.parse_args()
-    scripts = [SCRIPTS / (name + ".txt") for name in args.names] if args.names else sorted(SCRIPTS.glob("*.txt"))
+    scripts = [SCRIPTS / (name + ".txt") for name in args.names] if args.names else sorted(script for script in SCRIPTS.glob("*.txt") if not script.stem.startswith("gespraech-"))
     for script in scripts:
         if not script.exists():
             raise FileNotFoundError(script)
+        if script.stem.startswith("gespraech-"):
+            raise ValueError(f"Gesprächsfolgen mit tools/generate_dialogue_podcasts.py erzeugen: {script.name}")
         build_episode(script, args.force)
 
 

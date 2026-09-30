@@ -1,0 +1,131 @@
+Gesprächsfolge: Kapitel 1.1 - Logistikstruktur und Grundlagen
+
+Mara: Stell dir vor, im System stehen noch achtzig Stück eines Ersatzteils. In der Halle findet aber niemand eines. Der Kunde wartet, der Einkauf bestellt im Eilverfahren, und die Spedition fährt extra. Ist das einfach ein Lagerfehler?
+
+Jonas: Vielleicht. Aber für die Prüfung wäre „Lagerfehler“ eine zu schnelle Antwort. Wir müssen den gesamten Ablauf ansehen: Wer hat den Bedarf erkannt? Wer hat den Bestand gebucht? War die Ware am richtigen Ort? Und welche Information hat der nächste Bereich bekommen? Genau dafür brauchen wir die Grundlagen der Logistik.
+
+Mara: Also ist Logistik mehr als Ware von A nach B zu bringen.
+
+Jonas: Genau. Ein verbreitetes Grundmodell fragt nach fünf richtigen Größen: das richtige Produkt, die richtige Menge, der richtige Ort, die richtige Zeit und die richtige Qualität. Beim Ersatzteil können vier davon stimmen und der Kunde ist trotzdem nicht versorgt. Achtzig Stück in der falschen Halle sind am falschen Ort. Achtzig Stück, die nur im System existieren, sind nicht verfügbar.
+
+Mara: Und die Information gehört dazu, obwohl sie nicht als sechste Größe in dieser Liste steht?
+
+Jonas: Unbedingt. Informationen lösen Materialbewegungen aus, steuern sie und bestätigen sie. Ein falscher Lagerort im Artikelstamm wirkt wie ein defektes Regal: Die Ware ist für den Auftrag praktisch unbrauchbar. Wenn du in einer Prüfung die fünf Größen aufzählst, erkläre immer auch den Informationsfluss.
+
+Mara: Welche Ziele hat Logistik dann? Möglichst wenig Bestand und gleichzeitig jeden Kunden sofort bedienen?
+
+Jonas: Da steckt schon ein Zielkonflikt drin. Ein hoher Bestand kann die Lieferbereitschaft verbessern, bindet aber Kapital, braucht Fläche und kann veralten. Ein niedriger Bestand spart Kosten, erhöht aber das Risiko eines Fehlbestands. Eine gute Entscheidung betrachtet mehrere Ziele gemeinsam: Zeit, Kosten, Qualität, Bestand und Kundennutzen.
+
+Mara: Gib mir einen Fall, in dem eine Maßnahme zwei Ziele gleichzeitig verbessert.
+
+Jonas: Wenn eine bessere Bestandsbuchung Suchzeiten und Fehlversände reduziert, sinken Kosten und die Lieferqualität steigt. Solche Ziele unterstützen sich. Beim Sicherheitsbestand ziehen sie häufig in unterschiedliche Richtungen. Die Prüfungsfrage lautet dann nicht: Welches Ziel ist immer richtig? Sondern: Welche Lösung passt zu den Folgen eines Fehlbestands und zu den Kosten des Puffers?
+
+Mara: Kurz zum Selbstcheck. Warum wäre „Wir halbieren den Bestand“ allein noch kein überzeugender Verbesserungsvorschlag?
+
+PAUSE: 3
+
+Jonas: Weil die Wirkung auf Verfügbarkeit, Fehlmengen und Kunden geprüft werden muss. Die Bestandszahl allein sagt noch nicht, ob das ganze System besser arbeitet.
+
+Mara: Wie zerlegt man dieses ganze System? Im Unterricht tauchen Beschaffung, Produktion, Absatz und Entsorgung auf.
+
+Jonas: Das sind die vier großen Bereiche der Unternehmenslogistik. Beschaffung bringt Güter hinein. Produktionslogistik bewegt und stellt sie innerhalb der Fertigung bereit. Absatz oder Distribution bringt die fertige Leistung zum Kunden. Entsorgung kümmert sich um Rückläufe und Reststoffe. Die Logistik verläuft quer durch diese Bereiche.
+
+Mara: Heißt: Eine Einkaufentscheidung endet nicht an der Eingangstür.
+
+Jonas: Richtig. Nehmen wir einen Preisnachlass für eine sehr große Bestellung. Der Einkaufspreis pro Stück sinkt. Gleichzeitig steigen Lagerbestand, Kapitalbindung, Flächenbedarf und womöglich das Risiko, dass Teile unbrauchbar werden. Eine Abteilung meldet Erfolg, während die Gesamtkette teurer wird. Das ist ein klassischer Prüfungsfall.
+
+Mara: Und wo passt Wertschöpfung hinein? Das Wort klingt sehr nach Bilanz.
+
+Jonas: Im Kern fragt es, welcher Wert im Unternehmen zusätzlich entsteht. Vereinfacht: Produktionswert minus eingekaufte Vorleistungen ergibt die Bruttowertschöpfung. Ziehst du Abschreibungen ab, erhältst du die Nettowertschöpfung. Für die Logistik ist der Blick auf die Kette wichtig: Vor dem eigenen Unternehmen liegen vorgelagerte Stufen, also upstream. Danach kommen Handel und Kunde, also downstream.
+
+Mara: Bei einem Fahrradbauer wären Rahmen und Bremsen upstream, und der Händler wäre downstream.
+
+Jonas: Genau. Und jede Übergabe kann den Ablauf verbessern oder stören. Damit sind wir bei Prozessen. Ein Prozess hat einen Auslöser, einen Input, zusammenhängende Tätigkeiten und einen Output. Beim Einkauf kann der Meldebestand der Auslöser sein. Bestands- und Artikeldaten sind Input. Bedarf prüfen, bestellen und Termin verfolgen sind Tätigkeiten. Die bestätigte Bestellung ist ein erster Output.
+
+Mara: Das klingt ordentlich auf Papier. In der Praxis springen Daten aber gern zwischen Tabellen, Mails und ERP hin und her.
+
+Jonas: Das sind Schnittstellen. Dort werden Material, Information oder Verantwortung übergeben. Wenn die Arbeitsvorbereitung eine Lieferzeit von drei Wochen annimmt und der Einkauf im ERP sechs Wochen sieht, arbeiten beide am selben Teil mit unterschiedlichen Wirklichkeiten. Der Fehler zeigt sich vielleicht erst als fehlendes Material an der Linie.
+
+Mara: Was würde man tun, wenn man den Prozess neu aufbauen soll?
+
+Jonas: Vier Schritte helfen. Erst gestalten: Zweck und Umfang festlegen. Dann strukturieren: Teilprozesse, Reihenfolge, Schnittstellen und Verantwortung beschreiben. Danach realisieren: einführen und überwachen. Schließlich optimieren: Soll und Ist vergleichen, Abweichungen untersuchen und einen besseren Ablauf festhalten. Das ist kein einmaliges Zeichnen eines Flussbilds, sondern ein laufender Kreislauf.
+
+Mara: Ich stolpere immer über Effektivität und Effizienz. Kannst du es am Ersatzteil erklären?
+
+Jonas: Effektivität heißt, die richtigen Dinge zu tun. Wenn ein Expressversand den Stillstand einer Maschine verhindert, erfüllt er sein Ziel. Effizienz heißt, dieses Ziel mit möglichst wenig Aufwand zu erreichen. Wenn der Expressversand nur wegen eines jahrelang falschen Lagerbestands nötig wurde, war die Rettung effektiv, aber der Gesamtprozess nicht effizient.
+
+Mara: Also kann eine einzelne Handlung gut sein und der gesamte Ablauf trotzdem schlecht.
+
+Jonas: Genau. Dazu passen vier Leistungsarten. Nutzleistung schafft direkten Nutzen für den Kunden, etwa ein korrekt montiertes Produkt. Stützleistung ermöglicht sie, etwa notwendiges Rüsten oder Transportieren. Blindleistung verbraucht Aufwand ohne Wertbeitrag, zum Beispiel doppelte Dateneingabe oder unnötige Suche. Fehlleistung entsteht, wenn eine eigentlich sinnvolle Tätigkeit durch einen Fehler unbrauchbar wird, etwa eine falsche Kommissionierung.
+
+Mara: Sollte man dann jede Stützleistung streichen, damit der Prozess schlanker wird?
+
+Jonas: Nein. Eine Qualitätsprüfung kann nötig sein, obwohl sie das Produkt nicht direkt verändert. Zuerst suchst du Blind- und Fehlleistung. Bei Stützleistung fragst du, ob sie erforderlich ist und wie sie besser organisiert werden kann. Wer pauschal jede Kontrolle abschafft, produziert vielleicht mehr Fehlleistung.
+
+Mara: Pausieren wir kurz. Nenne für deine Arbeit je ein Beispiel für Nutzleistung, Stützleistung, Blindleistung und Fehlleistung.
+
+PAUSE: 4
+
+Jonas: Wenn du bei einem Begriff hängen geblieben bist, notiere genau den. Das ist ein guter Ausgangspunkt für die nächste Wiederholung.
+
+Mara: Bisher betrachten wir einen Betrieb. Supply Chain Management schaut über Unternehmensgrenzen hinaus, oder?
+
+Jonas: Ja. Es verbindet die Prozesse vom Lieferanten bis zum Endkunden. Dabei fließen Güter, Informationen und Geld. Eine lokale Verbesserung kann der ganzen Kette schaden. Beispiel: Ein Händler bestellt nur einmal im Monat große Mengen, um seine eigenen Bestellkosten zu senken. Beim Hersteller entstehen starke Auftragsspitzen und zusätzliche Lagerbestände.
+
+Mara: Ist das schon der Bullwhip-Effekt?
+
+Jonas: Das kann ein Auslöser sein. Stell dir vor, die Nachfrage beim Endkunden steigt von hundert auf hundertfünf Stück. Der Händler bestellt vorsichtshalber hundertfünfzehn. Der Großhändler sieht diese Bestellung und erhöht auf hundertdreißig. Der Hersteller interpretiert das als Trend und plant noch mehr. Eine kleine Schwankung am Ende der Kette wird nach oben immer größer, wie die Bewegung einer Peitsche.
+
+Mara: Warum wissen die Beteiligten nicht einfach, dass der Endkunde nur fünf Stück mehr wollte?
+
+Jonas: Weil sie häufig nur die Bestellung ihres direkten Kunden sehen. Dazu kommen Zeitverzug, Sicherheitszuschläge, große Bestelllose und Verkaufsaktionen. Gegenmaßnahmen sind aktuelle gemeinsame Daten, abgestimmte Prognosen, kleinere Lose und kürzere Reaktionszeiten. Wichtig ist: Nicht jede höhere Bestellung beweist höhere echte Nachfrage.
+
+Mara: Dann ist Transparenz ein Teil der Lösung. Was kommt noch von außen auf das Logistiksystem zu?
+
+Jonas: Umweltfaktoren. Dazu gehören Absatz- und Beschaffungsmärkte, Technologie, Arbeitsmarkt, Wettbewerb, ökologische Anforderungen, Kapitalmarkt und staatliche Regeln. In der Prüfung reicht es nicht, „Arbeitsmarkt“ zu nennen. Du musst die Wirkung erklären. Fachkräftemangel kann Qualifizierung, veränderte Schichten oder passende Automatisierung erforderlich machen. Hohe Zinsen verteuern Kapitalbindung durch große Bestände.
+
+Mara: Und Systemfaktoren sind die Dinge im konkreten Betrieb?
+
+Jonas: Ja: Produkteigenschaften, Personal, Fläche, Lager- und Transporttechnik sowie Informationssysteme. Lange schwere Stahlträger brauchen andere Regale und Fördermittel als kleine Elektronikbauteile. Erst wenn du Ware, Menge und Prozess kennst, kannst du ein sinnvolles System entwerfen.
+
+Mara: Jetzt wird es organisatorisch. Was unterscheidet Aufbau- und Ablauforganisation?
+
+Jonas: Die Aufbauorganisation ordnet Stellen, Hierarchie und Weisungswege. Ein Organigramm zeigt sie. Die Ablauforganisation beschreibt, in welcher Reihenfolge, zu welcher Zeit und an welchem Ort Tätigkeiten ausgeführt und übergeben werden. Eine Prozessbeschreibung zeigt sie. Kurz: Aufbau fragt „Wer ist wofür zuständig?“, Ablauf fragt „Wie kommt die Arbeit Schritt für Schritt voran?“
+
+Mara: Und die Linienorganisationen? Die Namen klingen ähnlich.
+
+Jonas: Im Einliniensystem hat jede Stelle genau einen Vorgesetzten. Das schafft klare Weisungen, kann Entscheidungen aber verlangsamen. Im Mehrliniensystem kommen Anweisungen von mehreren Fachvorgesetzten. Das kann Wege verkürzen, aber auch widersprüchliche Aufträge erzeugen. Im Stabliniensystem beraten Spezialisten die Linie; die Weisungsbefugnis bleibt grundsätzlich in der Linie.
+
+Mara: Wenn ein Betrieb nach Produkten oder Regionen gegliedert ist, sprechen wir von Sparten?
+
+Jonas: Genau. Eine Sparte kann schnell auf ihren Markt reagieren, baut aber möglicherweise Funktionen doppelt auf. Die Matrix verbindet zwei Gliederungsdimensionen, zum Beispiel Produkt und Region. Eine Tensororganisation ergänzt eine dritte. Mehr Perspektiven können nützlich sein, erhöhen aber Abstimmung und Konfliktpotenzial. In einer Fallaufgabe solltest du immer Vor- und Nachteil an der Situation erklären.
+
+Mara: Noch einmal zurück zu unseren achtzig Ersatzteilen, die niemand findet. Wie würdest du jetzt vorgehen?
+
+Jonas: Erst den tatsächlichen Materialfluss und den Informationsfluss verfolgen. Wurde die Ware geliefert, geprüft, eingelagert, umgelagert oder entnommen? Welche Buchung wurde wann ausgelöst? Dann die Schnittstelle suchen, an der physischer Bestand und Systembestand auseinanderliefen. Als Sofortmaßnahme kann ein Expresskauf effektiv sein. Als dauerhafte Verbesserung müssen Buchung, Verantwortung und Kontrolle so gestaltet werden, dass der Fehler nicht wiederkehrt.
+
+Mara: Das ist eigentlich der rote Faden des Kapitels: Nie nur eine Abteilung oder eine Zahl betrachten.
+
+Jonas: Genau. Denk in Zielen, Prozessen, Schnittstellen und der ganzen Lieferkette. Zum Abschluss drei Fragen. Antworte möglichst laut, bevor ich die Lösung andeute.
+
+Mara: Frage eins: Ein Unternehmen senkt Einkaufspreise durch riesige Lose. Welche möglichen Folgen musst du für die gesamte Logistik mitprüfen?
+
+PAUSE: 4
+
+Jonas: Bestand, Kapitalbindung, Fläche, Veralterung, Versorgungssicherheit und die Wirkung auf andere Bereiche. Der niedrige Stückpreis ist nur ein Teil der Rechnung.
+
+Mara: Frage zwei: Ein Expressversand rettet einen Kundenauftrag, weil vorher falsch gebucht wurde. Was war effektiv, und was war ineffizient?
+
+PAUSE: 4
+
+Jonas: Der Expressversand erreicht das unmittelbare Ziel und ist damit effektiv. Der gesamte Prozess verursacht vermeidbare Zusatzkosten und war deshalb ineffizient.
+
+Mara: Frage drei: Wodurch kann eine kleine Schwankung beim Endkunden zu großen Produktionsschwankungen beim Hersteller werden?
+
+PAUSE: 4
+
+Jonas: Durch verzögerte oder fehlende Nachfrageinformationen, Sicherheitszuschläge und große Bestelllose entlang der Kette. Das nennen wir Bullwhip-Effekt.
+
+Mara: Wenn ich eine Antwort nicht wusste, höre ich dann einfach die ganze Folge noch einmal?
+
+Jonas: Besser gezielt. Öffne den betreffenden Abschnitt im Lernportal, beantworte die Frage ohne Vorlage und notiere einen eigenen Betriebsfall. Die kurze Hörfolge zum Thema kannst du morgen erneut hören. So wird aus passivem Hören eine echte Erinnerung.

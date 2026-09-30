@@ -9,6 +9,11 @@
 #manuskript { font-size: 16px; line-height: 1.85; }
 #manuskript p { margin: 0 0 1.15rem; }
 #manuskript p:last-child { font-weight: 600; color: var(--teal); }
+#manuskript .podcast-dialog { margin-bottom: .95rem; }
+#manuskript .podcast-dialog strong { color: var(--blue); }
+#manuskript .podcast-dialog-mara strong { color: var(--teal); }
+#manuskript .podcast-denkpause { font: 700 12px var(--sans); letter-spacing: .04em; color: var(--text-2); border-left: 2px solid var(--border); padding-left: .8rem; margin: .2rem 0 1rem; }
+#manuskript .podcast-dialog:last-child { font-weight: normal; color: inherit; }
 @media print {
   .podcast-leseseite { background: #fff; }
   .podcast-leseinhalt { max-width: none; padding: 0; }

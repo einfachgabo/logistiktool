@@ -10,7 +10,7 @@
 <body class="podcast-leseseite">
 <main class="podcast-leseinhalt">
   <nav class="podcast-lesenav"><a id="zurueck" href="../index.html">← Zum Lernportal</a><button type="button" id="drucken">Drucken / als PDF sichern</button></nav>
-  <div class="podcast-lesekicker">HÖRTEXT · KURZE WIEDERHOLUNG</div>
+  <div class="podcast-lesekicker" id="lesekicker">HÖRTEXT · KURZE WIEDERHOLUNG</div>
   <h1 id="titel">Text wird geladen …</h1>
   <p class="podcast-lesehinweis">Lies erst einen Abschnitt, dann schließe den Text gedanklich und erkläre die Idee mit eigenen Worten. Die Fragen am Ende eignen sich zum Wiederholen.</p>
   <article id="manuskript" aria-live="polite"></article>
@@ -33,9 +33,23 @@
     var teile = text.trim().split(/\n\s*\n/).map(function (s) { return s.trim(); }).filter(Boolean);
     titel.textContent = teile.shift() || 'Hörtext';
     document.title = titel.textContent + ' · Fachwirt für Logistiksysteme';
+    if (folge.indexOf('gespraech-') === 0) document.getElementById('lesekicker').textContent = 'HÖRTEXT · GESPRÄCHSFOLGE';
     teile.forEach(function (absatz) {
       var p = document.createElement('p');
-      p.textContent = absatz;
+      var sprecher = absatz.match(/^(Mara|Jonas):\s*([\s\S]*)$/);
+      var pause = absatz.match(/^PAUSE:\s*(\d+)$/);
+      if (sprecher) {
+        p.className = 'podcast-dialog podcast-dialog-' + sprecher[1].toLowerCase();
+        var name = document.createElement('strong');
+        name.textContent = sprecher[1] + ': ';
+        p.appendChild(name);
+        p.appendChild(document.createTextNode(sprecher[2]));
+      } else if (pause) {
+        p.className = 'podcast-denkpause';
+        p.textContent = 'Denkpause · ' + pause[1] + ' Sekunden';
+      } else {
+        p.textContent = absatz;
+      }
       artikel.appendChild(p);
     });
   }).catch(function (fehler) { titel.textContent = fehler.message; });
