@@ -3,8 +3,9 @@
 Beispiel ohne API-Kosten:
   python tools/generate_elevenlabs_dialogue.py --dry-run
 
-Zur Aufnahme ELEVENLABS_API_KEY lokal als Umgebungsvariable setzen und zwei
-deutschsprachige voice_id-Werte aus dem eigenen ElevenLabs-Konto übergeben:
+Zur Aufnahme ELEVENLABS_API_KEY lokal als Umgebungsvariable setzen oder den
+Schlüssel in ~/.codex/elevenlabs.key.txt speichern. Zwei deutschsprachige
+voice_id-Werte aus dem eigenen ElevenLabs-Konto übergeben:
   python tools/generate_elevenlabs_dialogue.py --female-voice ID --male-voice ID
 
 Die Ausgabe bekommt den Zusatz -elevenlabs und ersetzt nie automatisch die
@@ -30,6 +31,16 @@ BUILD = ROOT / ".podcast-build" / "elevenlabs"
 OUTPUT = ROOT / "assets" / "audio"
 MODEL = "eleven_v3"
 MAX_CHARS = 1900  # ElevenLabs empfiehlt höchstens 2.000 Zeichen je Anfrage.
+DEFAULT_KEY_FILE = Path.home() / ".codex" / "elevenlabs.key.txt"
+
+
+def read_key(path: Path) -> str:
+    value = os.environ.get("ELEVENLABS_API_KEY", "").strip()
+    if not value and path.is_file():
+        value = path.read_text(encoding="utf-8-sig").strip()
+    if value.startswith("ELEVENLABS_API_KEY="):
+        value = value.split("=", 1)[1].strip()
+    return value.strip('"\'')
 
 
 def parse(path: Path) -> list[tuple[str, str | int]]:
@@ -122,6 +133,7 @@ def main() -> None:
     parser.add_argument("name", nargs="?", default="gespraech-plab-1-logistikstruktur", help="Manuskriptname ohne .txt")
     parser.add_argument("--female-voice", help="ElevenLabs voice_id für Mara")
     parser.add_argument("--male-voice", help="ElevenLabs voice_id für Jonas")
+    parser.add_argument("--key-file", type=Path, default=DEFAULT_KEY_FILE, help="Private Schlüsseldatei außerhalb des Repositories")
     parser.add_argument("--dry-run", action="store_true", help="Abschnitte und Zeichenzahl zeigen, ohne API-Anfrage")
     args = parser.parse_args()
     script = SOURCE / f"{args.name}.txt"
@@ -135,9 +147,9 @@ def main() -> None:
         for index, part in enumerate(voiced, 1):
             print(f"  Abschnitt {index}: {sum(len(str(value)) for _, value in part)} Zeichen, {len(part)} Sprecherbeiträge")
         return
-    key = os.environ.get("ELEVENLABS_API_KEY", "")
+    key = read_key(args.key_file)
     if not key:
-        parser.error("ELEVENLABS_API_KEY ist nicht gesetzt. Den Schlüssel nie in Git eintragen.")
+        parser.error(f"ElevenLabs-Schlüssel fehlt. Lokal unter {args.key_file} speichern oder ELEVENLABS_API_KEY setzen; nie in Git eintragen.")
     if not args.female_voice or not args.male_voice:
         parser.error("Bitte --female-voice und --male-voice aus dem eigenen ElevenLabs-Konto angeben.")
     if args.female_voice == args.male_voice:
