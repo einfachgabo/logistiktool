@@ -1,0 +1,17 @@
+Gesprächsfolge: Kurzcheck – Prozent und Einheiten
+
+Mara: Rechne kurz im Kopf. Ein Preis beträgt hundert Euro und steigt um zehn Prozent. Was kostet der Artikel jetzt?
+
+PAUSE: 6
+
+Jonas: Hundertzehn Euro. Zweite Frage: Er sinkt danach um zehn Prozent. Wo landen wir?
+
+PAUSE: 6
+
+Mara: Bei neunundneunzig Euro, denn zehn Prozent von hundertzehn sind elf Euro. Der Grundwert hat sich geändert.
+
+Jonas: Dritte Frage: Du teilst Gesamtkosten in Euro durch den Preis in Euro je Stück. Welche Einheit muss herauskommen?
+
+PAUSE: 6
+
+Mara: Stück. Wenn deine Einheit nicht stimmt, prüfe den Rechenweg. Und noch eine Unterscheidung: Von zwanzig auf fünfundzwanzig Prozent sind fünf Prozentpunkte, aber relativ zum Anfangswert ein Anstieg um fünfundzwanzig Prozent. Morgen rechne das Preisbeispiel noch einmal ohne Aufnahme.

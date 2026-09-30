@@ -1,0 +1,27 @@
+Gesprächsfolge: Mathe – Zahlen verstehen statt Formeln raten
+
+Mara: Ein Ersatzteil kostet achtzig Euro. Der Preis steigt um zehn Prozent und sinkt danach um zehn Prozent. Sind wir wieder bei achtzig Euro?
+
+PAUSE: 6
+
+Jonas: Nein. Erst plus acht Euro ergibt achtundachtzig. Zehn Prozent davon sind acht Euro achtzig. Danach kostet es neunundsiebzig Euro zwanzig. Der Grundwert hat sich geändert.
+
+Mara: Das ist die wichtigste Frage bei Prozentaufgaben: Von welchem Ganzen rechne ich gerade? Und wenn eine Quote von zwanzig auf fünfundzwanzig Prozent steigt, sind das fünf Prozentpunkte. Die relative Steigerung wäre fünfundzwanzig Prozent des Ausgangswerts.
+
+Jonas: Genau. Vor jeder Rechnung notierst du Gesucht, Gegebenes und Einheiten. Wenn Kosten gleich Menge mal Preis je Stück sind, ist Menge gleich Kosten geteilt durch Preis je Stück. Euro geteilt durch Euro je Stück ergibt Stück.
+
+Mara: Das ist ein guter Fehlersensor. Kommt bei einer Stückzahl plötzlich Euro heraus, stimmt die Formel oder das Einsetzen nicht.
+
+Jonas: Beim Dreisatz prüfst du zuerst die Beziehung. Doppelt so viele gleiche Kartons kosten bei gleichem Stückpreis doppelt so viel. Mehr Beschäftigte halbieren die Arbeitszeit aber nur unter idealen Annahmen. Im Lager können Wege und Maschinen Grenzen setzen.
+
+Mara: Und ein Durchschnitt braucht passende Gewichte. Drei Messungen mit gleichen Zeitabständen kann ich einfach mitteln. Wenn eine Messung für einen Tag und eine für einen Monat steht, darf ich sie nicht gleich behandeln.
+
+Jonas: Frage an dich: Welche Einheit ergibt Euro geteilt durch Euro je Stück?
+
+PAUSE: 5
+
+Mara: Stück. Letzte Frage: Weshalb bringen plus zehn und minus zehn Prozent den Anfangspreis nicht zurück?
+
+PAUSE: 5
+
+Jonas: Weil der Abschlag vom neuen, höheren Grundwert berechnet wird. Schreib bei deiner nächsten Aufgabe zuerst die Einheiten hin und schätze das Ergebnis grob, bevor du den Taschenrechner nutzt.

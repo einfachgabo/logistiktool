@@ -17,10 +17,12 @@ from __future__ import annotations
 
 import argparse
 import hashlib
+import http.client
 import json
 import os
 import re
 import subprocess
+import time
 import urllib.error
 import urllib.request
 from pathlib import Path
@@ -99,12 +101,19 @@ def generate(chunk: list[tuple[str, str | int]], voices: dict[str, str], key: st
         headers={"xi-api-key": key, "Content-Type": "application/json", "Accept": "audio/mpeg"},
         method="POST",
     )
-    try:
-        with urllib.request.urlopen(request, timeout=180) as response:
-            data = response.read()
-    except urllib.error.HTTPError as error:
-        detail = error.read(1000).decode("utf-8", errors="replace")
-        raise RuntimeError(f"ElevenLabs meldet HTTP {error.code}: {detail}") from None
+    for attempt in range(3):
+        try:
+            with urllib.request.urlopen(request, timeout=180) as response:
+                data = response.read()
+            break
+        except urllib.error.HTTPError as error:
+            detail = error.read(1000).decode("utf-8", errors="replace")
+            if error.code not in (429, 500, 502, 503, 504) or attempt == 2:
+                raise RuntimeError(f"ElevenLabs meldet HTTP {error.code}: {detail}") from None
+        except (http.client.IncompleteRead, TimeoutError, ConnectionError) as error:
+            if attempt == 2:
+                raise RuntimeError(f"ElevenLabs-Audio konnte nicht vollständig geladen werden: {error}") from None
+        time.sleep(3 * (attempt + 1))
     if not data.startswith(b"ID3") and data[:2] not in (b"\xff\xfb", b"\xff\xf3", b"\xff\xf2"):
         raise RuntimeError("ElevenLabs hat keine erkennbare MP3-Datei geliefert.")
     path.write_bytes(data)

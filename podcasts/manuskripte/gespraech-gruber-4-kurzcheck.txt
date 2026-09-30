@@ -1,0 +1,19 @@
+Gesprächsfolge: Kurzcheck – Projekt, Daten und Risiken
+
+Mara: Drei Fragen zu deinem Logistikprojekt. Antworte laut, auch wenn du unsicher bist. Erste Frage: Ein neues Lagerverwaltungssystem wird vorgeschlagen. Was klärst du vor der Softwareauswahl?
+
+PAUSE: 6
+
+Jonas: Das konkrete Problem, das Ziel und die Anforderungen aus den Abläufen. Sonst kaufst du vielleicht eine Funktion, die am Engpass vorbeigeht.
+
+Mara: Zweite Frage: Ein Projektteam kennt das Ziel, aber niemand hat die Daten geprüft. Warum ist das riskant?
+
+PAUSE: 6
+
+Jonas: Weil falsche oder unvollständige Stammdaten auch mit guter Software falsche Bestände, Wege oder Planungen erzeugen. Datenqualität ist Teil der Umsetzung.
+
+Mara: Dritte Frage: Wie unterscheidest du eine Risikoanalyse von einer Erfolgskontrolle?
+
+PAUSE: 6
+
+Jonas: Die Risikoanalyse fragt vorab, was schiefgehen kann und wie du vorbeugst. Die Erfolgskontrolle prüft später, ob die Ziele tatsächlich erreicht wurden. Morgen nur die drei Stichwörter wiederholen: Ziel, Daten, Risiko.

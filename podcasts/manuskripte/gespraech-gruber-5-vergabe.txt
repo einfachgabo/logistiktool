@@ -1,0 +1,53 @@
+Gesprächsfolge: Dienstleistungen vergeben - Preis ist nur eine Zahl
+
+Mara: Unser Betrieb hat eigene Lkw. Manche stehen oft still, Wartung und Fahrplanung kosten Zeit. Ein Dienstleister bietet an, alle Lieferungen zu übernehmen. Ist der niedrigere Kilometerpreis schon die Entscheidung?
+
+Jonas: Nein. Das ist Make or Buy: selbst machen oder vergeben. Vergleiche Leistung, Gesamtkosten, Flexibilität, Qualität, Risiko und Abhängigkeit. Ein niedriger Preis hilft wenig, wenn wichtige Kunden am Wochenende nicht beliefert werden.
+
+Mara: Dann schreibe ich zuerst auf, was wir heute leisten: Mengen, Regionen, Zeitfenster, Sonderfälle und die Lieferungen, die unbedingt funktionieren müssen.
+
+Jonas: Genau. Danach formulierst du die künftige Leistung. „Schnell liefern“ ist zu ungenau. Ein bestimmtes Zeitfenster, eine Rückmeldung bei Störungen und der Umgang mit beschädigter Ware lassen sich prüfen und später steuern.
+
+Mara: Wir könnten nur den Transport vergeben und die Tourenplanung behalten. Oder Lager und Transport zusammen abgeben. Oder einen Partner nur für Spitzen einsetzen.
+
+Jonas: Das sind echte Varianten. Eine größere Vergabe kann Skaleneffekte bringen, aber auch mehr Abhängigkeit. Frage, welche Fähigkeit Kernkompetenz ist und wer die Kundenschnittstelle behält. Verantwortung für das Serviceversprechen verschwindet nicht mit der Unterschrift.
+
+Mara: Anbieter A ist günstiger, fährt aber samstags nicht. Anbieter B kostet mehr und versorgt die kritischen Werkstattkunden am Wochenende. Welche Information entscheidet?
+
+PAUSE: 5
+
+Mara: Was ein Ausfall beim Kunden und für unser eigenes Versprechen kostet. Wenn Samstag wesentlich ist, kann B trotz höherem Preis wirtschaftlich besser sein.
+
+Jonas: Richtig. Der Vergabeprozess beginnt mit Anforderungen, dann Marktprüfung, vergleichbaren Angeboten, Auswahl, Vertrag und späterer Kontrolle. Bei standardisierten Leistungen können elektronische Verfahren helfen. Bei komplexen Dienstleistungen müssen die Unterschiede im Angebot genau geklärt werden.
+
+Mara: Welche Punkte im Angebot sehe ich außer dem Preis an?
+
+Jonas: Enthaltene Leistungen, Ausnahmen, Kapazität, Haftung, Datenzugang und messbare Serviceziele. Gerade die Ausnahmen können teuer werden. Ohne klare Leistungsbeschreibung ist ein vermeintlich günstiges Angebot schwer mit einem anderen vergleichbar.
+
+Mara: Jetzt zu den Verträgen. Hundert gleiche Kartons bestellen, eine Förderanlage reparieren lassen, eine Lagerfläche mieten: drei verschiedene Hauptleistungen.
+
+Jonas: Genau. Beim Kaufvertrag geht es um Übergabe und Eigentum an einer Sache gegen Kaufpreis. Beim Werkvertrag wird ein bestimmter Erfolg geschuldet, etwa die funktionierende Reparatur. Beim Dienstvertrag steht die vereinbarte Tätigkeit im Mittelpunkt. Beim Mietvertrag wird der Gebrauch einer Sache für eine Zeit überlassen.
+
+Mara: Testfrage: Ein Betrieb beauftragt einen Techniker, eine Förderanlage wieder funktionsfähig zu machen. Welche Frage hilft mir, Werk- und Dienstvertrag zu unterscheiden?
+
+PAUSE: 5
+
+Mara: Ob ein bestimmter Erfolg, nämlich die funktionierende Anlage, geschuldet wird oder ob die vereinbarte Tätigkeit selbst im Mittelpunkt steht.
+
+Jonas: Genau. In echten Verträgen kommt es auf die konkrete Vereinbarung an. Für die Prüfung ordnest du zuerst die geschuldete Hauptleistung zu. Danach prüfst du Menge, Qualität, Ort, Termin, Preis, Abweichungen und Verantwortlichkeiten.
+
+Mara: Und wenn eine Kommune einen Entsorgungsdienstleister sucht, gelten für die Auswahl zusätzliche Vergaberegeln.
+
+Jonas: Ja. Bei öffentlichen Aufträgen sind Wettbewerb, transparente Verfahren, Wirtschaftlichkeit, Verhältnismäßigkeit und Gleichbehandlung wichtige Grundsätze. Eine Kommune darf nicht einfach das niedrigste Angebot wählen, ohne zu prüfen, ob es die geforderte Leistung an allen Standorten erfüllt.
+
+Mara: Also zuerst Eignung und Anforderungen der konkreten Ausschreibung prüfen, dann nach den bekanntgemachten Kriterien werten.
+
+Jonas: Genau. Welches Verfahren zulässig ist, hängt vom konkreten Auftrag und der aktuellen Rechtslage ab. Für unser Lernbeispiel ist die Logik wichtig: Die Leistung muss vorab so beschrieben sein, dass Angebote fair und nachvollziehbar verglichen werden können.
+
+Mara: Letzter Kurzfall: Der Dienstleister meldet seit drei Monaten sinkende Termintreue. Ist die Vergabe mit Vertragsabschluss erledigt?
+
+PAUSE: 4
+
+Mara: Nein. Wir müssen die vereinbarte Leistung messen, Abweichungen besprechen und Maßnahmen steuern. Die Verantwortung für unsere Kunden bleibt bei uns.
+
+Jonas: Genau. Beantworte morgen ohne Audio zwei Fragen: Warum ist ein Kilometerpreis kein vollständiger Make-or-Buy-Vergleich? Und was wird bei Kauf-, Werk-, Dienst- und Mietvertrag jeweils hauptsächlich geschuldet?

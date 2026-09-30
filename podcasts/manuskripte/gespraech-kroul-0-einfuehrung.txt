@@ -1,0 +1,43 @@
+Gesprächsfolge: Einführung in die Logistik - Ein Reifen als Landkarte
+
+Mara: Ein Kunde bestellt einen Fahrradreifen. Was muss passieren, damit er zufrieden ist?
+
+Jonas: Der Reifen bewegt sich vom Lieferanten über Lager und Transport zum Kunden. Aber Bewegung allein genügt nicht. Richtiger Artikel, passende Menge und Qualität, richtiger Ort und Zeitpunkt sowie verlässliche Informationen müssen zusammenkommen.
+
+Mara: Transportieren, Umschlagen und Lagern heißen kurz TUL. Wo liegt der Haken, wenn ich nur diese drei Tätigkeiten optimiere?
+
+Jonas: Du könntest den falschen Reifen sehr effizient transportieren. Oder den richtigen Reifen lagern, ohne dass das System seinen Platz kennt. Logistik verbindet Materialfluss, Informationsfluss und wirtschaftliche Wirkung über Abteilungen und Firmen hinweg.
+
+Mara: Der Kunde bestellt also nicht nur einen Karton. Seine Bestellung löst einen Ablauf aus. Bestandsbuchungen und Scans begleiten ihn, Rechnung und Zahlung gehören zur wirtschaftlichen Seite.
+
+Jonas: Genau. Die sogenannten R-Regeln sind eine Gedächtnisstütze für die richtigen Bedingungen. Die Anzahl variiert je nach Darstellung. Für eine Fallaufgabe ist entscheidend, welche Bedingung verletzt ist und wie sich das auf den Kunden auswirkt.
+
+Mara: Mini-Fall: Der Reifen liegt im richtigen Lager, wird aber mit der falschen Artikelnummer gebucht. Was stimmt und was stimmt nicht?
+
+PAUSE: 5
+
+Mara: Der physische Ort kann stimmen. Die Information stimmt nicht. Dadurch ist der Reifen für den Auftrag praktisch nicht verfügbar oder der falsche wird ausgewählt.
+
+Jonas: Richtig. Oft übernimmt ein Dienstleister einen Teil der Kette. Die Kürzel mit PL ordnen unterschiedliche Umfänge ein. Ein Transporteur fährt nur die Sendung, ein stärker eingebundener Partner kann auch lagern, kommissionieren oder andere Partner koordinieren.
+
+Mara: Statt ein Kürzel blind zu merken, frage ich: Wer plant, wer führt aus und wer stimmt die Übergaben ab?
+
+Jonas: Genau. Jetzt zum Order Penetration Point. Das ist der Punkt, an dem ein konkreter Kundenauftrag in die Leistungserstellung eingreift. Vorher arbeiten wir eher auf Vorrat, danach stärker für diesen Auftrag.
+
+Mara: Beim Fahrrad können Standardrahmen schon vorhanden sein. Farbe und Endmontage werden erst nach Bestellung festgelegt.
+
+Jonas: Das ist eine späte Festlegung, auch Postponement genannt. Sie kann die Zahl fertiger Varianten im Lager senken. Dafür müssen die letzten Schritte schnell und zuverlässig sein. Was wäre das Risiko, wenn die Endmontage regelmäßig stockt?
+
+PAUSE: 5
+
+Mara: Der Kunde wartet trotz vorhandener Standardteile. Weniger Fertigbestand nützt dann nicht, wenn die Restarbeit den zugesagten Termin gefährdet.
+
+Jonas: Genau. Supply Chain Management betrachtet die ganze Kette über mehrere Unternehmen. Ein lokaler Erfolg kann der Kette schaden. Wenn Händler aus Vorsicht mehr bestellen, Großhändler darauf noch mehr und Hersteller das als Nachfrageboom deuten, verstärken sich kleine Schwankungen. Das ist der Bullwhip-Effekt.
+
+Mara: Gemeinsame aktuelle Nachfrageinformationen und abgestimmte Entscheidungen können diese Übertreibung dämpfen.
+
+Jonas: Richtig. Zum Schluss drei Fragen ohne Vorlage: Warum reicht TUL allein nicht? Was ändert sich am Order Penetration Point? Und wie kann aus einer kleinen Nachfrageänderung eine große Bestellung beim Hersteller werden?
+
+PAUSE: 6
+
+Mara: Wenn du die Antworten mit dem Reifen erklären kannst, hast du eine Landkarte für die späteren Kapitel. Die Details kannst du danach gezielt ergänzen.

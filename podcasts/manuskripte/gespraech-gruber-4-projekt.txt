@@ -1,0 +1,53 @@
+Gesprächsfolge: Strategie, IT und Projekte - Erst das Problem, dann die Software
+
+Mara: Ein Anbieter zeigt uns ein neues Lagerverwaltungssystem. Auf der Folie steht: schneller, sicherer, moderner. Der Chef möchte sofort unterschreiben. Was fragst du zuerst?
+
+Jonas: Welches Problem lösen wir, und woran erkennen wir eine Verbesserung? „Wir kaufen Software“ ist eine Maßnahme. „Fehlbuchungen halbieren und Bestände verlässlich anzeigen“ wäre ein prüfbares Ziel. Vorher brauchen wir einen Ausgangswert.
+
+Mara: Vielleicht hängt es an Freigaben, vielleicht an falschen Artikelstammdaten oder an Scannern, die in einer Hallenecke nicht funktionieren.
+
+Jonas: Genau. Beschreibe den heutigen Ablauf und miss Wartezeiten und Fehler. Sonst schreibt die Ausschreibung eine Lösung vor, bevor das Problem verstanden ist. Eine Vision gibt die Richtung; das konkrete Ziel sagt, was besser sein soll.
+
+Mara: Ein Kunde sagt: Ich will verlässliche Liefertermine. Wie übersetzen wir das in Technik?
+
+Jonas: QFD hilft, Kundenanforderungen in Merkmale und Prozesse zu übertragen. Für verlässliche Termine könnten aktuelle Bestände, erkennbare Reservierungen und schnelle Rückmeldungen bei Störungen wichtig sein. Die Frage lautet: Welche Eigenschaft der Lösung trägt zu welchem Kundenwunsch bei?
+
+Mara: FMEA klingt ähnlich, fragt aber nach Fehlern?
+
+Jonas: Ja. Bei FMEA schauen wir vor der Einführung, wo ein Ablauf versagen kann, wie schwer die Folge wäre, wie wahrscheinlich der Fehler ist und ob wir ihn bemerken. Eine Rangfolge hilft beim Priorisieren. Sie ersetzt keine Prüfung: Ein seltener Fehler mit schwerer Folge bleibt wichtig.
+
+Mara: Mini-Test: Ein neues System zeigt Bestände schnell an, aber beschädigte Ware wird nicht gesperrt. Was würden QFD und FMEA jeweils fragen?
+
+PAUSE: 5
+
+Mara: QFD fragt, ob der Prozess den Kundenwunsch nach verlässlicher Lieferzusage erfüllt. FMEA fragt, wie die falsche Verfügbarkeit entstehen kann und wie wir den Fehler entdecken oder verhindern.
+
+Jonas: Genau. Ein Audit kann danach prüfen, ob festgelegte Abläufe tatsächlich eingehalten werden. Für die Ausschreibung formulierst du eine überprüfbare Leistung, nicht „modernes System“. Etwa: Bestandsänderungen sollen an jedem Lagerplatz zeitnah und nachvollziehbar sichtbar sein.
+
+Mara: ERP verbindet Daten und Prozesse im Betrieb. APS unterstützt eine feinere Planung von Kapazität und Reihenfolge. Aber beide übernehmen die Fehler aus schlechten Daten.
+
+Jonas: Richtig. Deshalb gehören Datenbereinigung, Zuständigkeiten, Datenschutz und IT-Sicherheit von Anfang an in das Projekt. Wer pflegt Artikel? Wer meldet Ausnahmen? Was passiert, wenn ein Scan fehlschlägt?
+
+Mara: Das tägliche Buchen von Wareneingängen ist laufender Betrieb. Die Einführung des neuen Systems ist ein Projekt, weil sie ein besonderes Ziel, einen Anfang und ein Ende hat.
+
+Jonas: Genau. Ein Projektauftrag nennt Ziel, Umfang, betroffene Bereiche, Zeitrahmen, Budget und Erfolgskriterium. Wenn das Ziel weniger Fehlbuchungen ist, beweist „Software läuft“ noch keinen Erfolg.
+
+Mara: Welche Schritte würdest du planen?
+
+Jonas: Prozessaufnahme, Datenbereinigung, Auswahl, Einrichtung, Test, Schulung und Einführung. Manche Schritte hängen voneinander ab. Eine Schulung ohne stabile Testumgebung bringt wenig. Ein Zeitplan zeigt diese Abhängigkeiten; kritische Verzögerungen gefährden den Endtermin.
+
+Mara: Die Einführung soll ausgerechnet in der Hochsaison stattfinden. Das ist doch ein Risiko.
+
+Jonas: Ja. Teste erst eine kleine Artikelgruppe und die schwierigen Fälle: beschädigte Ware, Retouren, fehlender Funkempfang, parallele Aufträge. Plane, wie der Betrieb weiterläuft, wenn etwas ausfällt. Ein Risiko gehört mit Gegenmaßnahme in den Plan.
+
+Mara: Währenddessen vergleiche ich Soll und Ist: Termin, Kosten, Fehler, Akzeptanz und Bearbeitungszeit.
+
+Jonas: Genau. Die Projektleitung muss Probleme sichtbar machen und Entscheidungen herbeiführen. Nach der Einführung prüft sie erneut die Wirkung. Weniger Fehlbuchungen? Kürzere Suchzeit? Neue laufende Kosten? Nur so erkennst du, ob der Nutzen die Investition trägt.
+
+Mara: Und die Wirtschaftlichkeit umfasst Kauf, Pflege, Schulung und Umstellung, nicht nur die Lizenz.
+
+Jonas: Richtig. Letzter Abruf: Warum solltest du den heutigen Prozess vor einer IT-Ausschreibung messen? Und was würdest du vor dem Start in der Hochsaison testen?
+
+PAUSE: 6
+
+Mara: Morgen beantworte ich die Fragen ohne Audio. Dann merke ich, ob ich das Projekt als Entscheidungskette verstanden habe: Problem, Ziel, Anforderungen, Risiken, Test und Wirkung.

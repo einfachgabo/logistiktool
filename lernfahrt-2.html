@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lernfahrt 2 · Fachwirt für Logistiksysteme</title>
+  <link rel="stylesheet" href="assets/portal.css">
+  <link rel="stylesheet" href="assets/lernfahrt.css">
+</head>
+<body class="lernfahrt-seite">
+  <main class="lernfahrt-inhalt">
+    <nav class="lernfahrt-nav"><a href="index.html">← Zum Lernportal</a> · <a href="lernfahrt.html">Lernfahrt 1</a></nav>
+    <div class="lernfahrt-kicker">PODCAST · FÜR UNTERWEGS</div>
+    <h1>Lernfahrt 2: Planung, Wandel und Führung</h1>
+    <p class="lernfahrt-intro">Drei bekannte Gespräche frischen Konzepte, Beschaffung und Lager auf. Danach hörst du elf neue Gespräche über Projekte, Wandel, Kommunikation, Führung, Arbeitsschutz und Mathe. Fünf kurze Abrufrunden schließen die Fahrt ab. In den Denkpausen antwortest du selbst. Mara und Jonas sprechen mit den KI-Stimmen Susi und Christian Plasa.</p>
+    <div class="lernfahrt-playerkarte">
+      <div class="lernfahrt-playerkopf"><strong id="lernfahrt-aktueller-titel">Die ganze Fahrt</strong><span id="lernfahrt-dauer">Dauer wird geladen</span></div>
+      <audio id="lernfahrt-audio" controls preload="none" src="assets/audio/lernfahrt-02-planung-wandel-fuehrung.mp3" aria-label="Lernfahrt 2 abspielen"></audio>
+      <button type="button" id="lernfahrt-gesamt" class="lernfahrt-gesamt" hidden>Ganze Fahrt abspielen</button>
+      <a class="lernfahrt-download" href="assets/audio/lernfahrt-02-planung-wandel-fuehrung.mp3" download>Komplette MP3 herunterladen</a>
+    </div>
+    <div class="lernfahrt-hinweis">Die Denkpausen sind für eigene Antworten gedacht. Sprich die Antwort möglichst aus, bevor Mara und Jonas sie besprechen. Für Rechenwege und Notizen öffne anschließend das jeweilige Kapitel.</div>
+    <h2>Kapitel der Fahrt</h2>
+    <ol id="lernfahrt-kapitel" class="lernfahrt-kapitel"><li>Kapitel werden geladen …</li></ol>
+  </main>
+  <script>
+  (function () {
+    'use strict';
+    var audio = document.getElementById('lernfahrt-audio');
+    var liste = document.getElementById('lernfahrt-kapitel');
+    var gesamt = document.getElementById('lernfahrt-gesamt');
+    var aktuellerTitel = document.getElementById('lernfahrt-aktueller-titel');
+    gesamt.addEventListener('click', function () {
+      audio.src = 'assets/audio/lernfahrt-02-planung-wandel-fuehrung.mp3';
+      audio.play().catch(function () {});
+      aktuellerTitel.textContent = 'Die ganze Fahrt';
+      gesamt.hidden = true;
+    });
+    function zeit(sekunden) {
+      var s = Math.round(sekunden);
+      return Math.floor(s / 60) + ':' + String(s % 60).padStart(2, '0');
+    }
+    fetch('assets/audio/lernfahrt-02-kapitel.json').then(function (antwort) {
+      if (!antwort.ok) throw new Error('Kapitelübersicht nicht verfügbar.');
+      return antwort.json();
+    }).then(function (kapitel) {
+      liste.textContent = '';
+      kapitel.forEach(function (eintrag) {
+        var zeile = document.createElement('li');
+        var knopfdruck = document.createElement('button');
+        knopfdruck.type = 'button';
+        knopfdruck.className = 'lernfahrt-sprung';
+        knopfdruck.textContent = zeit(eintrag.startSeconds) + ' · ' + eintrag.title;
+        knopfdruck.addEventListener('click', function () {
+          audio.src = 'assets/audio/' + eintrag.audio;
+          audio.play().catch(function () {});
+          aktuellerTitel.textContent = eintrag.title;
+          gesamt.hidden = false;
+        });
+        var einzel = document.createElement('a');
+        einzel.href = 'assets/audio/' + eintrag.audio;
+        einzel.download = '';
+        einzel.textContent = 'Einzel-MP3';
+        var lesen = document.createElement('a');
+        lesen.href = eintrag.page;
+        lesen.textContent = 'Kapitel lesen';
+        zeile.appendChild(knopfdruck);
+        zeile.appendChild(document.createElement('br'));
+        zeile.appendChild(einzel);
+        zeile.appendChild(lesen);
+        liste.appendChild(zeile);
+      });
+      var gesamtDauer = kapitel.reduce(function (summe, eintrag) { return summe + eintrag.durationSeconds; }, 0);
+      document.getElementById('lernfahrt-dauer').textContent = 'ca. ' + Math.round(gesamtDauer / 60) + ' Minuten';
+    }).catch(function () { liste.textContent = 'Die Kapitelübersicht konnte nicht geladen werden. Die komplette MP3 steht oben bereit.'; });
+  })();
+  </script>
+</body>
+</html>

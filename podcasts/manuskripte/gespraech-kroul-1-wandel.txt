@@ -1,0 +1,51 @@
+Gesprächsfolge: Wandel im Lager - Scanner sind nicht die Veränderung
+
+Mara: Ein Lager ersetzt Papierlisten durch Scanner. Die Geräte sind da, doch einige buchen weiter auf Papier. Hat das Projekt einfach unmotivierte Mitarbeitende?
+
+Jonas: Das wäre eine vorschnelle Diagnose. Neue Technik verändert Wege, Rollen, Fehlererkennung und Lernbedarf. Changemanagement gestaltet diesen Übergang. Zuerst trennen wir Ziel und Maßnahme.
+
+Mara: Die Scanner sind die Maßnahme. Das Ziel wäre, Fehlbuchungen zu senken und Bestände verlässlicher zu machen.
+
+Jonas: Genau. Dann fragen wir, warum die Mitarbeitenden Papier weiter nutzen. Funktionieren Scanner überall? Sind Artikel eindeutig gekennzeichnet? Wurde der neue Ablauf an echten Fällen geübt? Oder fürchten manche, dass ihre Erfahrung weniger zählt?
+
+Mara: Bei fehlendem Funkempfang hilft kein Motivationsgespräch. Bei Angst um die Rolle hilft eine technische Schulung allein nicht.
+
+Jonas: Richtig. Widerstand ist ein Hinweis auf ein Problem, nicht automatisch eine Charaktereigenschaft. Er kann offen sein, etwa Widerspruch, oder leise, etwa Rückzug und Umwege. Beschreibe die Beobachtung, suche eine belegbare Ursache und wähle eine passende Reaktion.
+
+Mara: Wie gehen wir mit dem neuen Ablauf klein und kontrolliert vor?
+
+Jonas: Mit PDCA. Plan: Problem, Ziel und Maßnahme festlegen. Do: an einer Artikelgruppe ausprobieren. Check: Fehlbuchungen, Zeit und Rückmeldungen prüfen. Act: verbessern und dann sichern oder den Plan anpassen.
+
+Mara: Testfrage: Welcher Schritt verhindert, dass ein misslungener Versuch sofort im ganzen Lager ausgerollt wird?
+
+PAUSE: 5
+
+Mara: Check. Wir vergleichen die Wirkung mit dem Ziel, bevor wir ausweiten. Und bei Act passen wir den Ablauf an.
+
+Jonas: Genau. Je tiefer eine Änderung eingreift, desto mehr Orientierung brauchen Betroffene. Ein anderes Formular ist etwas anderes als ein durchgängiger Kundenprozess mit neuen Zuständigkeiten.
+
+Mara: Im Unterricht stehen Lewin, Kotter, Streich und Krüger. Vier Modelle, viele Stufen. Wie behalte ich sie auseinander?
+
+Jonas: Frage nach dem Blickwinkel. Lewin skizziert Lösen, Verändern und Stabilisieren. Kotter beschreibt Führungsaufgaben beim Wandel. Streich macht emotionale Reaktionen sichtbar. Krüger ordnet Schritte des Wandels. Die Modelle ersetzen nicht den konkreten Fall.
+
+Mara: Also darf ich nicht sagen: „Dieser Kollege ist jetzt in Phase drei.“ Menschen reagieren unterschiedlich und vielleicht auf ganz verschiedene Folgen.
+
+Jonas: Genau. Eine Rückfrage nach Zahlen kann Informationsbedarf sein. Stille kann Unsicherheit bedeuten, aber auch bloß Zuhören. Sprich mit den Menschen und beobachte den Prozess, statt ihnen ein Etikett zu geben.
+
+Mara: Zweiter Fall: Ein neues Schichtmodell wird in einer Besprechung vorgestellt. Niemand widerspricht. Danach entstehen Gerüchte und getauschte Dienstpläne.
+
+Jonas: Schweigen war offenbar keine gesicherte Zustimmung. Vielleicht sind neue Zeiten für Fahrgemeinschaften oder Kinderbetreuung schwierig. Vielleicht fehlt Information. Was würdest du tun, bevor du noch eine Präsentation hältst?
+
+PAUSE: 5
+
+Mara: Ich frage nach konkreten Folgen, höre in kleinen Gesprächen zu und prüfe die Übergaben im Schichtplan. Dann erkläre ich, was feststeht und was noch gestaltet werden kann.
+
+Jonas: Gut. Beteiligung heißt nicht, dass jede Entscheidung offen ist. Aber Erfahrung aus der Arbeit soll in die Umsetzung einfließen. Beschäftigte kennen Ausnahmen, die im Organigramm nicht stehen.
+
+Mara: Am Ende messen wir nicht nur, ob jeder einen Scanner hat, sondern ob Fehler sinken und der Ablauf tragfähig ist.
+
+Jonas: Genau. Für die Prüfung: Anlass beschreiben, Ziel nennen, Maßnahme vom Ziel trennen, Betroffene und Widerstände konkret analysieren, klein testen und Wirkung prüfen. Morgen beantworte zwei Fragen ohne Audio: Was war beim Scannerprojekt das Ziel? Und warum kann Schulung allein einen Widerstand nicht immer lösen?
+
+PAUSE: 6
+
+Mara: Wenn ich das an einem eigenen Arbeitsbeispiel erklären kann, sitzen die Modelle besser als nach zehnmaligem Aufsagen ihrer Stufen.

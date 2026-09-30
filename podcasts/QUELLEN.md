@@ -15,6 +15,8 @@ Die zwei Fragen am Ende einer Folge sollen aktiv beantwortet werden. Die festen 
 
 Die neu aufgenommenen Gesprächsfolgen verwenden die im ElevenLabs-Konto des Lernenden gespeicherte, in der Voice Library angebotene Stimme „Christian Plasa – Soft and Mild“ und die deutsche Stimme „Susi – Effortless and Confident“. Die Dialoge sind KI-generierte Vertonungen, keine echten Gespräche der Sprecher. Die neuen Manuskripte stützen sich auf die jeweiligen Kapitel und vorhandenen Hörtexte des Lernportals; Beispiele und Fragen sind eigenständig formuliert. Kurzchecks enthalten Denkpausen mit nachfolgender Auflösung. Die Lernfahrt bündelt zuerst längere Erklärungen und am Schluss Kurzchecks zu früheren Kapiteln. Der Abruf am Folgetag erfolgt getrennt vom Hören; die Folge selbst ersetzt keine Aufgabenbearbeitung.
 
+Die zweite Lernfahrt beginnt mit drei bereits veröffentlichten Gesprächen als Wiederholung, führt dann durch elf neue Kapitel und endet mit fünf Kurzchecks. Die Folgen erläutern jeweils einen konkreten Betriebsfall und lassen vor der Auflösung Zeit für eigene Antworten. Fachliche Details und vollständige Rechenwege stehen weiterhin im verlinkten Kapitel.
+
 ## Rechtsbezogene Folgen
 
 Die Manuskripte `gruber-5-b-vertraege`, `gruchala-2-b-auswahl`, `gruchala-3-arbeitszeit`, `gruchala-5-a-ausbildung` und `gruchala-5-b-arbeitsschutz` wurden am 29.09.2026 zusätzlich mit folgenden Primärquellen abgeglichen:
@@ -27,3 +29,5 @@ Die Manuskripte `gruber-5-b-vertraege`, `gruchala-2-b-auswahl`, `gruchala-3-arbe
 - [BAuA: Rangfolge der Schutzmaßnahmen (STOP)](https://www.baua.de/DE/Angebote/Regelwerk/Glossar/Glossar_table?lv2=6942565585ec843c18713af0)
 
 Bei späteren Aktualisierungen rechtlicher Kapitel sind diese Quellen erneut zu prüfen.
+
+Die neuen Gespräche zu Vergabe, Arbeitszeit, Ausbildung und Arbeitsschutz wurden am 30.09.2026 anhand der oben verlinkten amtlichen Gesetzestexte erneut geprüft. Bei Arbeitszeitfällen nennen sie die Grundregeln und weisen auf mögliche gesetzliche Ausnahmen nur hin, wenn der konkrete Fall dafür Angaben liefert.
