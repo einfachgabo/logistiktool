@@ -35,6 +35,9 @@ OUTPUT = ROOT / "assets" / "audio"
 MODEL = "eleven_v4"
 MAX_CHARS = 1900  # ElevenLabs empfiehlt höchstens 2.000 Zeichen je Anfrage.
 DEFAULT_KEY_FILE = Path.home() / ".codex" / "elevenlabs.key.txt"
+DESKTOP_KEY_FILE = Path.home() / "OneDrive" / "Desktop" / "elevenlabs.key.txt"
+if not DEFAULT_KEY_FILE.is_file() and DESKTOP_KEY_FILE.is_file():
+    DEFAULT_KEY_FILE = DESKTOP_KEY_FILE
 
 
 def read_key(path: Path) -> str:
@@ -143,14 +146,18 @@ def main() -> None:
     parser.add_argument("name", nargs="?", default="gespraech-plab-1-logistikstruktur", help="Manuskriptname ohne .txt")
     parser.add_argument("--female-voice", help="ElevenLabs voice_id für Mara")
     parser.add_argument("--male-voice", help="ElevenLabs voice_id für Jonas")
+    parser.add_argument("--single-voice", help="Bestehenden Lesetext unverändert mit dieser ElevenLabs-Stimme aufnehmen")
     parser.add_argument("--key-file", type=Path, default=DEFAULT_KEY_FILE, help="Private Schlüsseldatei außerhalb des Repositories")
     parser.add_argument("--sample", action="store_true", help="Nur vier Sprecherbeiträge als lokale Hörprobe")
     parser.add_argument("--dry-run", action="store_true", help="Abschnitte und Zeichenzahl zeigen, ohne API-Anfrage")
     args = parser.parse_args()
     script = SOURCE / f"{args.name}.txt"
-    if not script.is_file() or not args.name.startswith("gespraech-"):
+    if not script.is_file() or (not args.single_voice and not args.name.startswith("gespraech-")):
         parser.error(f"Gesprächsmanuskript fehlt: {script}")
-    turns = parse(script)
+    if args.single_voice:
+        turns = [("Jonas", re.sub(r"\s+", " ", p).strip()) for p in re.split(r"\n\s*\n", script.read_text(encoding="utf-8-sig")) if p.strip()]
+    else:
+        turns = parse(script)
     if args.sample:
         sample = []
         for speaker, content in turns:
@@ -173,11 +180,11 @@ def main() -> None:
         parser.error(f"ElevenLabs-Schlüssel fehlt. Lokal unter {args.key_file} speichern oder ELEVENLABS_API_KEY setzen; nie in Git eintragen.")
     if not key.startswith("sk_"):
         parser.error("Die Datei enthält keine gültige API-Schlüsselzeichenfolge. Bitte den bei ElevenLabs nur einmal angezeigten Schlüssel statt der Key-ID speichern.")
-    if not args.female_voice or not args.male_voice:
+    if not args.single_voice and (not args.female_voice or not args.male_voice):
         parser.error("Bitte --female-voice und --male-voice aus dem eigenen ElevenLabs-Konto angeben.")
-    if args.female_voice == args.male_voice:
+    if not args.single_voice and args.female_voice == args.male_voice:
         parser.error("Für das Gespräch sind zwei verschiedene Stimmen nötig.")
-    voices = {"Mara": args.female_voice, "Jonas": args.male_voice}
+    voices = {"Jonas": args.single_voice} if args.single_voice else {"Mara": args.female_voice, "Jonas": args.male_voice}
     import imageio_ffmpeg  # Erst bei einer tatsächlichen Aufnahme benötigt.
 
     ffmpeg = imageio_ffmpeg.get_ffmpeg_exe()

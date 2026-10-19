@@ -48,7 +48,7 @@
      und die Kapitel-Navigation lesen ausschließlich diese Liste. */
   var KAPITEL_LISTE = [
     { id: 'plab-1',      datei: 'plab-1-logistikstruktur.html',    fach: 'plab',     nummer: '1.1',   titel: 'Logistikstruktur & Grundlagen',        desc: 'Begriff, Ziele, Wertschöpfung, Prozessmanagement, SCM, Bullwhip, Umfeld- und Systemfaktoren, Organisation.', heft: 'assets/hefte/grundlagen-und-kapitel-1-1.pdf', audios: [
-      { titel: 'Gespräch · Das ganze Kapitel', datei: 'assets/audio/gespraech-plab-1-logistikstruktur-elevenlabs.mp3', dauer: '13:20', gesamt: true, stimmen: 'Mara und Jonas · Susi und Christian Plasa' },
+      { titel: 'Gespräch · Kapitelüberblick', datei: 'assets/audio/gespraech-plab-1-logistikstruktur-elevenlabs.mp3', dauer: '13:20', gesamt: true, stimmen: 'Mara und Jonas · Susi und Christian Plasa' },
       { titel: 'Kurzcheck · Grundlagen', datei: 'assets/audio/gespraech-plab-1-kurzcheck-elevenlabs.mp3', dauer: '1:38', kurzcheck: true, stimmen: 'Mara und Jonas · Susi und Christian Plasa' },
       { titel: 'Bisherige Gesprächsfolge', datei: 'assets/audio/gespraech-plab-1-logistikstruktur.mp3', dauer: '14:06', gesamt: true, gespraech: true },
       { titel: 'Grundlagen und Zielkonflikte', datei: 'assets/audio/plab-1-a-grundlagen.mp3', dauer: '3:15' },
@@ -107,8 +107,8 @@
     { id: 'gruber-5',    datei: 'gruber-5-vergabe.html',           fach: 'gruber',   nummer: '3–3.1.4', titel: 'Vergabe von Dienstleistungen & Verträge', desc: 'Outsourcing & Make or Buy, Outsourcing-Phasen, Standardisierung, Internetauktion, Ausschreibung, öffentliches Vergaberecht, Vertragsarten, Liefervertrag, Mustervertrag.', heft: 'assets/hefte/gruber-5-vergabe.pdf', audios: [
       { titel: 'Gespräch · Dienstleister auswählen', datei: 'assets/audio/gespraech-gruber-5-vergabe-elevenlabs.mp3', dauer: '4:56', gesamt: true, stimmen: 'Mara und Jonas · Susi und Christian Plasa' },
       { titel: 'Kurzcheck · Dienstleistung vergeben', datei: 'assets/audio/gespraech-gruber-5-kurzcheck-elevenlabs.mp3', dauer: '1:13', kurzcheck: true, stimmen: 'Mara und Jonas · Susi und Christian Plasa' },
-      { titel: 'Make or Buy und Ausschreibung', datei: 'assets/audio/gruber-5-a-outsourcing.mp3', dauer: '3:30' },
-      { titel: 'Vertragsarten und öffentliche Vergabe', datei: 'assets/audio/gruber-5-b-vertraege.mp3', dauer: '3:41' }
+      { titel: 'Make or Buy und Ausschreibung', datei: 'assets/audio/gruber-5-a-outsourcing-elevenlabs.mp3', dauer: '2:56', stimmen: 'Christian Plasa' },
+      { titel: 'Vertragsarten und öffentliche Vergabe', datei: 'assets/audio/gruber-5-b-vertraege-elevenlabs.mp3', dauer: '3:08', stimmen: 'Christian Plasa' }
     ] },
     { id: 'kroul-0',     datei: 'kroul-0-einfuehrung.html',        fach: 'kroul',    nummer: 'Kapitel 0', titel: 'Einführung in die Logistik',       desc: 'Prüfungsstruktur, Entwicklung der Logistik, Definition, 7 R, Fachdisziplinen, xPL, OPP, SCM, Bullwhip.', heft: 'assets/hefte/kroul-0-einfuehrung.pdf', audios: [
       { titel: 'Gespräch · Logistik als System', datei: 'assets/audio/gespraech-kroul-0-einfuehrung-elevenlabs.mp3', dauer: '3:36', gesamt: true, stimmen: 'Mara und Jonas · Susi und Christian Plasa' },
@@ -278,6 +278,17 @@
     if (!intro) return;
     var eintrag = kapById(K.id);
     var leiste = el('div', 'lernleiste');
+    var kartenDruck = el('button', 'lernleiste-knopf', 'Karteikarten drucken / als PDF');
+    kartenDruck.type = 'button';
+    kartenDruck.addEventListener('click', function () { karteikartenDrucken(K); });
+    leiste.appendChild(kartenDruck);
+    document.querySelectorAll('section.abschnitt').forEach(function (sec) {
+      if (!sec.querySelector('details.abfrage')) return;
+      var knopf = el('button', 'lernleiste-knopf', 'Karten zu diesem Thema drucken');
+      knopf.type = 'button';
+      knopf.addEventListener('click', function () { karteikartenDrucken(K, sec.id); });
+      sec.appendChild(knopf);
+    });
     var modus = el('button', 'lernleiste-knopf');
     modus.type = 'button';
     function modusText() {
@@ -317,7 +328,7 @@
     box.setAttribute('aria-label', 'Podcast zu diesem Kapitel');
     box.appendChild(el('div', 'podcast-kicker', 'HÖRFOLGEN ZU DIESEM KAPITEL'));
     box.appendChild(el('h2', 'podcast-titel', K.titel));
-    box.appendChild(el('p', 'podcast-hinweis', 'Kurze Erklärungen und, wo vorhanden, längere Gespräche mit Praxisbeispielen und Denkfragen · KI-generierte Stimmen'));
+    box.appendChild(el('p', 'podcast-hinweis', 'Überblick und Wiederholung mit Praxisbeispielen und Denkfragen · KI-generierte Stimmen. Die Folgen behandeln ausgewählte Inhalte. Erarbeite den vollständigen Stoff im Kapiteltext und prüfe dich anschließend mit Karteikarten und Aufgaben.'));
     var teilNr = 0;
     folgen.forEach(function (folge) {
       if (!folge.gesamt && !folge.kurzcheck) teilNr += 1;
@@ -326,6 +337,7 @@
       reihe.appendChild(el('span', 'podcast-dauer', folge.dauer + ' Min.'));
       if (folge.stimmen) reihe.appendChild(el('p', 'podcast-stimmen', folge.stimmen + ' · KI-generiert'));
       else if (folge.gespraech) reihe.appendChild(el('p', 'podcast-stimmen', 'Mit Mara und Jonas · KI-Stimmen Seraphina und Florian'));
+      else reihe.appendChild(el('p', 'podcast-stimmen', 'Sprecherin: Microsoft Katja Neural · KI-generiert'));
       var player = el('audio', 'podcast-player');
       player.controls = true;
       player.preload = 'none';
@@ -645,6 +657,39 @@
     return karten;
   }
 
+  function karteikartenDrucken(K, abschnitt) {
+    var karten = karteikartenSammeln().filter(function (k) { return !abschnitt || k.sect === abschnitt; });
+    if (!karten.length) { alert('Hier sind noch keine Selbstabfragen vorhanden.'); return; }
+    var alt = document.getElementById('kk-druck');
+    if (alt) alt.remove();
+    var druck = el('section', '', '');
+    druck.id = 'kk-druck';
+    druck.appendChild(el('h1', '', K.titel + ' · Karteikarten'));
+    druck.appendChild(el('p', '', 'Einseitig auf A4 bei 100 % drucken. An den Außenlinien ausschneiden, in der Mitte falten: Frage vorne, Antwort hinten. Erst selbst antworten, dann kontrollieren.'));
+    karten.forEach(function (k, i) {
+      var karte = el('article', 'kk-druck-karte');
+      var frage = el('div', 'kk-druck-haelfte');
+      frage.appendChild(el('small', '', K.nummer + ' · Karte ' + (i + 1) + ' · ' + k.sect));
+      frage.appendChild(el('h2', '', k.frage));
+      var antwort = el('div', 'kk-druck-haelfte');
+      antwort.appendChild(el('small', '', 'Antwort · Karte ' + (i + 1)));
+      var inhalt = el('div', 'kk-druck-antwort');
+      inhalt.innerHTML = k.antwort;
+      inhalt.querySelectorAll('.notiz-hook, button, textarea').forEach(function (e) { e.remove(); });
+      antwort.appendChild(inhalt);
+      karte.appendChild(frage); karte.appendChild(antwort); druck.appendChild(karte);
+    });
+    document.body.appendChild(druck);
+    document.body.classList.add('kk-druckmodus');
+    function aufraeumen() {
+      document.body.classList.remove('kk-druckmodus');
+      druck.remove();
+      window.removeEventListener('afterprint', aufraeumen);
+    }
+    window.addEventListener('afterprint', aufraeumen);
+    window.print();
+  }
+
   function karteikartenStarten(K) {
     var alle = karteikartenSammeln();
     if (!alle.length) { alert('In diesem Kapitel sind noch keine Selbstabfragen hinterlegt.'); return; }
@@ -687,7 +732,7 @@
         return;
       }
       if (pos >= stapel.length) {
-        box.innerHTML = '<div class="kk-zaehler"><span>Fünf Fragen bearbeitet</span></div>' +
+        box.innerHTML = '<div class="kk-zaehler"><span>' + stapel.length + ' Fragen bearbeitet</span></div>' +
           '<div class="kk-frage">' + gewusst + ' von ' + stapel.length + ' gewusst</div>' +
           '<p class="kk-hinweis">Die nächsten Fragen warten morgen oder an deinem Wiederholungstag.</p>' +
           '<div class="kk-aktionen"><button class="primaer" data-akt="weitere">Weitere 5 Fragen</button><button class="zu" data-akt="zu">Schließen</button></div>';
@@ -900,6 +945,23 @@
 
   /* ═══════════════ Start ═══════════════ */
   function start() {
+    var druckDetails = [], druckNotizen = [];
+    window.addEventListener('beforeprint', function () {
+      if (document.body.classList.contains('kk-druckmodus') || document.body.classList.contains('volltext-druckmodus')) return;
+      document.querySelectorAll('main details:not([open])').forEach(function (d) {
+        druckDetails.push(d); d.open = true;
+      });
+      document.querySelectorAll('main .notiz-feld').forEach(function (feld) {
+        var text = el('div', 'notiz-drucktext', feld.value);
+        feld.insertAdjacentElement('afterend', text); druckNotizen.push(text);
+      });
+      document.body.classList.add('volltext-druckmodus');
+    });
+    window.addEventListener('afterprint', function () {
+      druckDetails.forEach(function (d) { d.open = false; }); druckDetails = [];
+      druckNotizen.forEach(function (n) { n.remove(); }); druckNotizen = [];
+      document.body.classList.remove('volltext-druckmodus');
+    });
     if (window.KAPITEL) kapitelSeite();
     startSeite();
     if (typeof window.seiteFertig === 'function') window.seiteFertig();

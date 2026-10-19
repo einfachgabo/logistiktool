@@ -525,7 +525,7 @@
         <strong>P</strong> = Verbrauch pro Periode, üblicherweise pro Tag [Stück/Tag]<br>
         <strong>BS</strong> = Sicherheitsbestand [Stück]<br><br>
         <strong>Einheitenkontrolle:</strong> Tage × Stück/Tag = Stück. Die Tage kürzen sich weg. Bleibt „Tage“ übrig, ist eine Größe falsch eingesetzt.<br><br>
-        <strong>Aussage:</strong> Ein <em>hoher</em> Meldebestand heißt: Es wird früh bestellt – hohe Versorgungssicherheit, aber mehr gebundenes Kapital. Ein <em>niedriger</em> Meldebestand heißt: knapp disponiert – wenig Kapitalbindung, aber jede Lieferverzögerung führt zum Fehlbestand. Richtig ist er, wenn er genau den Verbrauch der Wiederbeschaffungszeit plus den Puffer abdeckt.<br><br>
+        <strong>Aussage:</strong> Bei sonst gleichen Bedingungen löst ein höherer Meldebestand die Bestellung früher aus. Ein niedriger Meldebestand erhöht das Fehlmengenrisiko; ob eine Lieferverzögerung zum Fehlbestand führt, hängt auch vom Sicherheitsbestand und vom tatsächlichen Verbrauch ab. Der Meldebestand deckt im Modell den erwarteten Verbrauch während der Wiederbeschaffungszeit plus Puffer ab.<br><br>
         <strong>Umstellungen:</strong><br>
         nach BS: &nbsp;BS = BM − (T<sub>W</sub> + T<sub>U</sub>) × P<br>
         nach P: &nbsp;P = ( BM − BS ) ÷ ( T<sub>W</sub> + T<sub>U</sub> )<br>
@@ -549,7 +549,7 @@
         <strong>V</strong> = Verbrauch pro Tag [Stück/Tag]<br>
         <strong>T<sub>P</sub></strong> = Vorhersageperiode, also das Prüf- bzw. Bestellintervall [Tage]<br><br>
         <strong>Warum T<sub>P</sub> dazukommt:</strong> Beim Bestellpunktverfahren wird der Bestand laufend überwacht, es muss nur die Wiederbeschaffungszeit überbrückt werden. Beim Bestellrhythmusverfahren schaut niemand zwischendurch hin – wer heute knapp am Bestellpunkt vorbeirutscht, kann erst beim nächsten Termin nachbestellen und muss auch diese Wartezeit überbrücken.<br><br>
-        <strong>Aussage:</strong> Der Höchstbestand des Rhythmusverfahrens ist <em>immer</em> größer als der Meldebestand des Punktverfahrens – um genau V × T<sub>P</sub>. Das ist der große Nachteil des Verfahrens: dauerhaft höherer Lagerbestand. Deshalb setzt man es nur bei geringwertigen Materialien ein, wo der Mehrbestand kaum Geld kostet.<br><br>
+        <strong>Aussage:</strong> Bei gleichem Verbrauch, gleicher Wiederbeschaffungszeit und gleichem Sicherheitsbestand liegt dieser Richtbestand um V × T<sub>P</sub> über dem Meldebestand des Punktverfahrens. Das Verfahren muss zusätzlich das Prüfintervall absichern. Es eignet sich häufig für geringwertige Materialien und gebündelte Bestellungen; die Wahl hängt auch von Bedarf, Kosten und Überwachungsaufwand ab.<br><br>
         <strong>Umstellung:</strong> T<sub>P</sub> = ( B<sub>max</sub> − BS ) ÷ V − T<sub>W</sub> − T<sub>U</sub>
       </div>
     </div>
@@ -739,7 +739,7 @@
       <div class="f-erklaerung">
         <strong>V</strong> = Verbrauchsabweichungen [Mengeneinheiten] · <strong>L</strong> = Lieferzeitabweichungen [ME] · <strong>M</strong> = Minderlieferungen [ME] · <strong>B</strong> = Bestandsabweichungen [ME]<br>
         <strong>TV, TL, TM, TB</strong> = dieselben vier Risiken, in Tagen ausgedrückt [Tage]<br><br>
-        <strong>Warum quadriert und Wurzel gezogen wird:</strong> Die vier Risiken treten selten <em>alle gleichzeitig</em> im schlimmsten Fall auf. Würde man sie einfach addieren, ergäbe sich ein unrealistisch großer Puffer. Die Wurzel aus der Quadratsumme liefert einen Wert, der immer <em>kleiner</em> als die einfache Summe und größer als die größte Einzelabweichung ist.<br><br>
+        <strong>Warum quadriert und Wurzel gezogen wird:</strong> Das Modell fasst voneinander unabhängige beziehungsweise unkorrelierte Streuungen über ihre Quadratsumme zusammen. Die einfache Summe würde dagegen gleichzeitige Ausschläge in dieselbe Richtung absichern. Bei zusammenhängenden Risiken darf die Wurzelformel nicht ungeprüft verwendet werden. Für nichtnegative Eingabewerte liegt die Wurzel aus der Quadratsumme zwischen dem größten Einzelwert und der einfachen Summe, einschließlich der Grenzen.<br><br>
         <strong>Kontrolle:</strong> Im Beispiel unten: größter Einzelwert 120, einfache Summe 320, Ergebnis 169,12 – es muss dazwischen liegen. Liegt dein Ergebnis außerhalb dieses Bereichs, hast du dich verrechnet.
       </div>
     </div>
@@ -755,7 +755,7 @@
         <strong>MAD</strong> = mittlere absolute Abweichung aus der Fehlerrechnung (F.5) [Stück]<br>
         <strong>Sicherheitskoeffizient</strong> = Anteil des Puffers am durchschnittlichen Lagerbestand [Prozent]<br><br>
         <strong>Aussage:</strong> Der Sicherheitsfaktor wächst mit dem gewünschten Servicegrad – und zwar überproportional. Von 95 % auf 99 % Servicegrad steigt SF spürbar, der Sicherheitsbestand also ebenfalls. Das ist die rechnerische Fassung eines Kernsatzes der Logistik: <strong>Die letzten Prozentpunkte Lieferfähigkeit sind die teuersten.</strong> Der Sicherheitsfaktor wird in der Aufgabe vorgegeben, er ist nicht zu berechnen.<br><br>
-        <strong>Sicherheitskoeffizient – Aussage:</strong> Ein <em>hoher</em> Wert (etwa über 40 %) heißt: Der Lagerbestand besteht überwiegend aus Puffer, der sich kaum bewegt – teuer und ein Zeichen für unsichere Prozesse oder unzuverlässige Lieferanten. Ein <em>niedriger</em> Wert heißt: Der Bestand arbeitet – gut, solange keine Fehlmengen auftreten.
+        <strong>Sicherheitskoeffizient – Aussage:</strong> Bei 40 % sind vier Zehntel des durchschnittlichen Bestands Sicherheitsbestand; erst über 50 % ist es die Mehrheit. Ein hoher Anteil bindet Kapital, kann aber durch einen hohen geforderten Servicegrad oder schwankende Bedarfe und Lieferzeiten begründet sein. Eine allgemeine Gut-schlecht-Grenze gibt es nicht. Prüfe Pufferkosten, Fehlmengenrisiko und Versorgungsvorgaben gemeinsam.
       </div>
     </div>
   </div>
@@ -823,7 +823,7 @@
     <details class="abfrage"><summary>Nenne die drei Wege, den Sicherheitsbestand zu bestimmen.</summary>
       <div class="antwort"><p>1. Nach Verbrauchswerten: Ø Tagesverbrauch × Sicherheitszeit. 2. Nach dem Fehlerfortpflanzungsgesetz: √(V² + L² + M² + B²). 3. Statistisch: Sicherheitsfaktor × MAD.</p></div></details>
     <details class="abfrage"><summary>Warum werden beim Fehlerfortpflanzungsgesetz die Abweichungen quadriert statt addiert?</summary>
-      <div class="antwort"><p>Weil die vier Risiken selten gleichzeitig im schlimmsten Fall eintreten. Die einfache Summe ergäbe einen unrealistisch hohen und damit unwirtschaftlichen Puffer. Das Ergebnis liegt zwischen dem größten Einzelwert und der einfachen Summe.</p></div></details>
+      <div class="antwort"><p>Die Quadratsumme fasst im Modell unabhängige beziehungsweise unkorrelierte Streuungen zusammen. Bei zusammenhängenden Risiken muss ihre Abhängigkeit berücksichtigt werden. Für nichtnegative Werte liegt das Ergebnis zwischen dem größten Einzelwert und der einfachen Summe, einschließlich der Grenzen.</p></div></details>
     <details class="abfrage"><summary>Worin unterscheiden sich Lieferbereitschaftsgrad und Servicegrad?</summary>
       <div class="antwort"><p>Der Lieferbereitschaftsgrad misst Mengen (sofort ausgelieferte Menge ÷ nachgefragte Menge), der Servicegrad misst Vorgänge (sofort bediente Bedarfssituationen ÷ alle Bedarfssituationen).</p></div></details>
     <details class="abfrage"><summary>Was sagt ein Sicherheitskoeffizient von 60 % aus?</summary>
@@ -963,7 +963,7 @@
     <div class="b-label">Typischer Fehler</div>
     <p><strong>Durch 12 statt durch 13 teilen.</strong> Anfangsbestand plus zwölf Monatsendbestände sind dreizehn Werte. Das ist der häufigste Fehler der ganzen Lagerkennzahlenfamilie, weil er sich in alle Folgerechnungen fortpflanzt.</p>
     <p><strong>365 statt 360 Tage.</strong> Die Lagerdauer wird kaufmännisch mit 360 gerechnet. Mit 365 wären es hier 76 statt 75 Tage – ein kleiner, aber vermeidbarer Punktverlust.</p>
-    <p><strong>Zähler und Nenner vertauschen.</strong> Ø Lagerbestand ÷ Verbrauch ergibt keine Umschlagshäufigkeit, sondern einen Bruchteil eines Jahres. Merkhilfe: Die Umschlagshäufigkeit ist fast immer <em>größer als 1</em> – kommt 0,2 heraus, ist der Bruch umgedreht.</p>
+    <p><strong>Zähler und Nenner vertauschen.</strong> Die Umschlagshäufigkeit ist Verbrauch der Periode ÷ durchschnittlicher Lagerbestand. Auch ein Wert unter 1 kann richtig sein: 200 Stück Jahresverbrauch bei 1.000 Stück Durchschnittsbestand ergeben 0,2 Umschläge pro Jahr. Prüfe deshalb Formel, Zeitraum und Einheiten statt nur die Größe des Ergebnisses.</p>
     <p><strong>Mengen und Werte mischen.</strong> Jahresverbrauch in € geteilt durch Ø Lagerbestand in Stück ergibt Unsinn. Beide Größen müssen dieselbe Einheit haben.</p>
     <p><strong>Den Sicherheitsbestand doppelt zählen.</strong> Ist er in den genannten Beständen schon enthalten, wird er nicht noch einmal addiert. Nur bei der Fassung x ÷ 2 + BS kommt er ausdrücklich hinzu.</p>
     <p><a class="link" href="gruber-3-lager-transport.html#lagerbestand-grundlagen">Durchschnittsbestand im Kapitel nachlesen</a> · <a class="link" href="gruber-3-lager-transport.html#umschlag-lagerdauer">Umschlag und Lagerdauer nachlesen</a> · <a class="link" href="plab-3-logistische-ablaeufe.html#lagerkennzahlen">Lagerkennzahlen bei Plab nachlesen</a></p>

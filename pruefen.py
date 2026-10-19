@@ -42,6 +42,8 @@ for pfad in seiten:
 
     # --- Links prüfen ---
     for href in re.findall(r'href="([^"#?]+\.html)[^"]*"', html):
+        if re.match(r'^(?:[a-z][a-z0-9+.-]*:|//)', href, re.I):
+            continue  # Externe Quellen sind keine lokalen Kapitelseiten.
         if href not in alle_dateien:
             f(name, f'toter Link auf {href}')
     for src in re.findall(r'(?:src|href)="(assets/[^"]+)"', html):

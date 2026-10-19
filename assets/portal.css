@@ -459,15 +459,32 @@ footer.portal-foot { text-align: center; padding: 2rem 1rem 3rem; font-size: 12p
 }
 
 /* ─────────────── Druck ─────────────── */
+.notiz-drucktext { display: none; }
 @media print {
   aside.sidebar, .werkzeuge, .scroll-bar, .notiz-btn, .ab-status, .loesung-btn, .lernleiste, .lernheft-box, .podcast-box { display: none !important; }
   body.unterrichtsmodus section.abschnitt > * { display: revert !important; }
   body { background: #fff; font-size: 11pt; }
   main.inhalt { max-width: none; padding: 0; }
   .loesung { display: block !important; }
-  details { open: true; }
   details > summary { font-weight: 700; }
   details .antwort, details.vertiefung > div { display: block !important; }
   .notiz-feld { display: block !important; background: #fffdf3; }
+  body.volltext-druckmodus .notiz-feld { display: none !important; }
+  body.volltext-druckmodus .notiz-drucktext { display: block; white-space: pre-wrap; overflow-wrap: anywhere; border: 1px solid #aaa; padding: 3mm; }
+  .notiz-drucktext:empty, section.abschnitt > .lernleiste-knopf, body.unterrichtsmodus section.abschnitt > .lernleiste-knopf { display: none !important; }
   section.abschnitt { break-inside: avoid-page; }
+}
+#kk-druck { display: none; }
+@media print {
+  body.kk-druckmodus > :not(#kk-druck) { display: none !important; }
+  body.kk-druckmodus { margin: 0 !important; padding: 0 !important; background: white !important; color: black !important; }
+  body.kk-druckmodus #kk-druck { display: block !important; font: 10pt/1.35 Arial, sans-serif; color: black; }
+  #kk-druck h1 { font-size: 16pt; }
+  #kk-druck .kk-druck-karte { display: flex; width: 100%; border: 1px dashed #555; margin: 0 0 5mm; break-inside: avoid; page-break-inside: avoid; }
+  #kk-druck .kk-druck-haelfte { box-sizing: border-box; width: 50%; padding: 5mm; min-height: 45mm; overflow-wrap: anywhere; }
+  #kk-druck .kk-druck-haelfte + .kk-druck-haelfte { border-left: 1px dotted #555; }
+  #kk-druck h2 { font-size: 12pt; margin: 3mm 0; }
+  #kk-druck small { font-size: 8pt; }
+  #kk-druck p, #kk-druck ul, #kk-druck ol { margin: 2mm 0; }
+  #kk-druck table { width: 100%; font-size: 9pt; }
 }

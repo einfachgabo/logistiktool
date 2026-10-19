@@ -29,6 +29,7 @@ direkt über GitHub Pages.
 * **im Unterricht dran / verstanden / nochmal ansehen** – Status je Abschnitt. Daraus entsteht der Lernplan.
 * **✏ Notiz** – an jedem Block. Speichert automatisch, bleibt bei Skript-Updates erhalten.
 * **Taste K** – Karteikarten aus allen Selbstabfragen des Kapitels.
+* **Karteikarten drucken / als PDF** – alle Frage-Antwort-Karten des Kapitels; mit **Karten zu diesem Thema drucken** nur den jeweiligen Abschnitt. Auf A4 einseitig bei 100 % drucken, ausschneiden und an der Mittellinie falten. Die Druckkarten verändern den digitalen Wiederholungsstand nicht.
 * **🌓** – Hell/Dunkel. **🖨** – Druck bzw. PDF, inklusive Notizen und Lösungen.
 * **Unterrichtsansicht** – zeigt Abschnittstitel, Status und das Notizfeld; der Volltext bleibt erreichbar.
 * **5 Fragen üben** – Antworten erst selbst abrufen. Nach der Selbsteinschätzung erscheinen Karten nach 1, 3, 7, 14, 30 oder 60 Tagen wieder. Diese Abstände sind eine praktische Voreinstellung.
@@ -74,3 +75,5 @@ Mit `--sample` werden nur vier Sprecherbeiträge als lokale Hörprobe erzeugt. E
 Für Resemble AI gibt es `tools/generate_resemble_dialogue.py`. Die vorgewählten deutschen Stimmen heißen Anita und Ulrich; ihre IDs können per `--mara-voice` und `--jonas-voice` geändert werden. `python tools/generate_resemble_dialogue.py --dry-run` plant eine lokale Hörprobe mit sechs Sprecherbeiträgen. Mit `--key-file PFAD` liest das Skript den Schlüssel aus einer privaten Datei **außerhalb** des Repositories. Es prüft das verfügbare Guthaben, bevor es Sprachabschnitte erzeugt. `--full` nimmt die ganze Folge auf; die Resemble-MP3 wird erst nach Hörprüfung im Portal verlinkt. Zwischendateien und die Hörprobe liegen im ignorierten Ordner `.podcast-build/resemble/`.
 
 Die 17 weiteren ausfüllbaren Hefte werden mit `python tools/generate_workbooks.py` aus den Kapitelüberschriften, Kernaussagen und Selbstabfragen des Portals erzeugt. Dafür werden `lxml`, `reportlab` und `pypdf` benötigt. Die PDF-Dateien liegen unter `assets/hefte/` und sind in `KAPITEL_LISTE` beim jeweiligen Kapitel verlinkt. Die bisherige PDF zu Kapitel 1.1 bleibt erhalten.
+
+Bestehende Einzelsprecher-Lesetexte können mit `python tools/generate_elevenlabs_dialogue.py FOLGENNAME --single-voice VOICE_ID` ohne Textänderung neu aufgenommen werden. Der Generator sucht den privaten Schlüssel zuerst unter `~/.codex/elevenlabs.key.txt`, ersatzweise unter `~/OneDrive/Desktop/elevenlabs.key.txt`; `--key-file` überschreibt den Pfad. Die beiden Vergabe-Teile `gruber-5-a-outsourcing` und `gruber-5-b-vertraege` verwenden seit dem 19. Oktober 2026 Christian Plasa.
