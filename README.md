@@ -25,6 +25,8 @@ direkt über GitHub Pages.
 
 ## Bedienung
 
+* **Karteikarten für unterwegs** (`lernkarten.html`) – mobile Lernseite mit allen vorhandenen Selbstabfragen, Kapitelwahl, 5/10/20 Karten oder einer ganzen Runde, Vorlesen und Fortsetzen. Bewertungen verwenden dieselben `lp.review.`- und `lp.kk.`-Schlüssel wie die Kapitelkarten. Nach Inhaltsänderungen `python tools/generate_cards.py` ausführen; der Export in `assets/lernkarten-data.js` enthält nur die bestehenden Fragen und Antworten. Nach dem Laden läuft die offene Seite ohne weitere Netzabrufe; ein erneutes Öffnen benötigt Internet. Die Vorlesestimme kommt vom Gerät.
+
 * **📍 wir sind hier** – im Unterricht antippen. Die Startseite merkt sich die Stelle.
 * **im Unterricht dran / verstanden / nochmal ansehen** – Status je Abschnitt. Daraus entsteht der Lernplan.
 * **✏ Notiz** – an jedem Block. Speichert automatisch, bleibt bei Skript-Updates erhalten.

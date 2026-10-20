@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#1c6b6b">
+<title>Lernkarten für unterwegs · Fachwirt</title>
+<link rel="stylesheet" href="assets/portal.css">
+<link rel="stylesheet" href="assets/lernkarten.css">
+</head>
+<body class="lernkarten-seite">
+<main class="karten-app">
+  <nav class="karten-nav" aria-label="Seitennavigation"><a href="index.html">← Lernportal</a><button id="theme" type="button" aria-label="Hell und Dunkel umschalten">Hell / Dunkel</button></nav>
+  <header><p class="karten-label">DEIN FACHWIRT · FÜR UNTERWEGS</p><h1>Eine Karte.<br>Ein Stück weiter.</h1><p class="karten-intro">Frage lesen oder anhören, selbst antworten, dann umdrehen. In deinem Tempo.</p></header>
+  <section id="auswahl" aria-label="Lernrunde auswählen">
+    <div class="karten-filter">
+      <label>Dein Kapitel<select id="kapitel"><option value="alle">Alle Kapitel mischen</option></select></label>
+      <label>Deine Runde<select id="modus"><option value="faellig">Fällige & neue Karten</option><option value="alle">Alle Karten üben</option><option value="schwer">Nur „nochmal üben“</option></select></label>
+      <label>Umfang<select id="umfang"><option value="10">10 Karten · kleine Runde</option><option value="20">20 Karten · längerer Weg</option><option value="5">5 Karten · kurzer Check</option><option value="0">Alle passenden Karten</option></select></label>
+    </div>
+    <p id="vorrat" class="karten-meta" role="status"></p>
+    <button id="start" class="karten-primaer">Lernrunde starten →</button>
+    <button id="fortsetzen" class="karten-sekundaer" hidden>Letzte Runde fortsetzen</button>
+  </section>
+  <section id="runde" aria-label="Aktuelle Lernkarte" hidden>
+    <div class="karten-fortschritt"><span id="zaehler"></span><button id="beenden" type="button">Runde verlassen</button></div>
+    <progress id="fortschritt" max="10" value="0" aria-label="Fortschritt der Runde"></progress>
+    <article class="lernkarte" id="karte" aria-labelledby="frage">
+      <a id="quelle" class="karten-meta"></a><p class="karten-label" id="seite">FRAGE</p>
+      <h2 id="frage" tabindex="-1"></h2><div id="antwort" hidden></div>
+      <p id="denkhilfe" class="karten-meta">Antworte erst laut oder im Kopf.</p>
+    </article>
+    <div class="karten-aktionen">
+      <button id="aufdecken" class="karten-primaer">Antwort zeigen</button>
+      <div id="bewertung" class="karten-bewertung" hidden><button id="nochmal">Nochmal üben</button><button id="gewusst">Gewusst ✓</button></div>
+      <div class="karten-audio"><button id="vorlesen">Vorlesen</button><button id="stopp">Stopp</button></div>
+    </div>
+  </section>
+  <section id="abschluss" class="lernkarte" hidden aria-live="polite"><p class="karten-label">RUNDE GESCHAFFT</p><h2 id="ergebnis"></h2><p id="bilanz"></p><button id="weiter" class="karten-primaer">Neue Runde auswählen →</button></section>
+  <p id="meldung" class="karten-meta" role="status"></p>
+  <footer><p>Dein Stand bleibt in diesem Browser. Er passt zu den Karteikarten im Kapitel. <a href="notizen.html">Stand sichern</a></p><p>Nach dem Laden kannst du die Karten in dieser geöffneten Seite auch ohne Netz durcharbeiten. Vorlesen nutzt die Stimme deines Geräts; Verfügbarkeit und Offlinebetrieb hängen vom Browser ab.</p></footer>
+</main>
+<script src="assets/portal.js" defer></script>
+<script src="assets/lernkarten-data.js" defer></script>
+<script src="assets/lernkarten.js" defer></script>
+</body>
+</html>
